@@ -11,15 +11,17 @@ const char* password_AP = "clave1234";
 // TCP Server
 WiFiServer server(3333);
 
-// LED interno (GPIO2 en NodeMCU V3)
-const int led = LED_BUILTIN; // usualmente GPIO2, en NodeMCU se enciende con LOW
+// LED interno
+const int led = LED_BUILTIN;
+
+WiFiClient client;
 
 void setup() {
   Serial.begin(9600);
   pinMode(led, OUTPUT);
-  digitalWrite(led, HIGH); // Apagado por defecto
+  digitalWrite(led, HIGH); // LED apagado
 
-  // Modo cliente - conectar al WiFi de casa
+  // Modo cliente (STA)
   WiFi.begin(ssid_STA, password_STA);
   Serial.print("Conectando a red WiFi: ");
   Serial.println(ssid_STA);
@@ -32,7 +34,7 @@ void setup() {
   Serial.print("IP local: ");
   Serial.println(WiFi.localIP());
 
-  // Iniciar punto de acceso
+  // Modo AP
   WiFi.softAP(ssid_AP, password_AP);
   Serial.print("Punto de acceso iniciado: ");
   Serial.println(ssid_AP);
@@ -45,17 +47,26 @@ void setup() {
 }
 
 void loop() {
-  WiFiClient client = server.available(); // Espera cliente
-
-  if (client) {
-    Serial.println("Cliente conectado (ESP32)");
-    digitalWrite(led, LOW); // Encender LED
-
-    while (client.connected()) {
-      // En este punto podrías leer datos si lo deseas
-      delay(10); // evitar watchdog
+  // Si no hay cliente, intenta aceptarlo
+  if (!client || !client.connected()) {
+    client = server.available();
+    if (client) {
+      Serial.println("Cliente conectado (ESP32)");
+      digitalWrite(led, LOW); // Encender LED
     }
+  }
 
+  // Si hay cliente conectado, leer datos
+  if (client && client.connected()) {
+    while (client.available()) {
+      String mensaje = client.readStringUntil('\n'); // Leer hasta salto de línea
+      Serial.print("Mensaje recibido: ");
+      Serial.println(mensaje);
+    }
+  }
+
+  // Si el cliente se desconectó
+  if (client && !client.connected()) {
     Serial.println("Cliente desconectado");
     digitalWrite(led, HIGH); // Apagar LED
     client.stop();
