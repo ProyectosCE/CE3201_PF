@@ -1,40 +1,31 @@
 #include <ESP8266WiFi.h>
 
-// Configura el Access Point
+// 🔧 Reemplaza con los datos de tu red
 const char* ssid = "Jose Barquero";
 const char* password = "pass1234";
 
-WiFiServer server(3333);  // Puerto TCP
-
 void setup() {
-  Serial.begin(9600); // Ajustado a 9600 baudios
+  Serial.begin(9600);  // Inicializa comunicación serial
+  delay(100);
 
-  // Iniciar AP
-  WiFi.softAP(ssid, password);
   Serial.println();
-  Serial.print("AP iniciado: ");
-  Serial.println(ssid);
-  Serial.print("IP local: ");
-  Serial.println(WiFi.softAPIP());
+  Serial.println("Conectando a WiFi...");
 
-  // Inicia servidor
-  server.begin();
-  Serial.println("Esperando conexión del ESP32...");
+  WiFi.begin(ssid, password);  // Inicia conexión
+
+  // Espera hasta que se conecte
+  while (WiFi.status() != WL_CONNECTED) {
+    delay(500);
+    Serial.print(".");
+  }
+
+  // Conexión exitosa
+  Serial.println();
+  Serial.println("¡Conectado a la red WiFi!");
+  Serial.print("Dirección IP local: ");
+  Serial.println(WiFi.localIP());
 }
 
 void loop() {
-  WiFiClient client = server.available();
-
-  if (client) {
-    Serial.println("ESP32 conectado.");
-    while (client.connected()) {
-      if (client.available()) {
-        String dato = client.readStringUntil('\n');
-        Serial.print("Dato recibido: ");
-        Serial.println(dato);
-      }
-    }
-    Serial.println("ESP32 desconectado.");
-    client.stop();
-  }
+  // Nada que hacer en el loop para esta prueba
 }
