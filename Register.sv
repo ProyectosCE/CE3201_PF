@@ -14,5 +14,4 @@ always_ff @(negedge clk or posedge rst)
 		Q <= D;
 
 
-
 endmodule 

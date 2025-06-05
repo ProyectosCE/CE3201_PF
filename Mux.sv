@@ -8,9 +8,7 @@ module Mux #(parameter N = 4)(
 
 );
 
-
 assign C = S? A: B;
-
 
 
 endmodule 

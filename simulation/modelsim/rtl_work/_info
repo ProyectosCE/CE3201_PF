@@ -1,0 +1,218 @@
+m255
+K4
+z2
+13
+!s112 1.1
+!i10d 8192
+!i10e 25
+!i10f 100
+cModel Technology
+Z0 dC:/Users/josee/CE3201_PF/simulation/modelsim
+vAdder
+Z1 DXx6 sv_std 3 std 0 22 AD7iAPLo6nTIKk<N0eo=D3
+Z2 !s110 1749098644
+!i10b 1
+!s100 8QVUnY5[dPPgP^cR9nYl12
+IWYDL]Ge[?FgELQ1K^`I7=3
+Z3 VDg1SIo80bB@j0V0VzS_@n1
+!s105 Adder_sv_unit
+S1
+R0
+w1749094808
+8C:/Users/josee/CE3201_PF/Adder.sv
+FC:/Users/josee/CE3201_PF/Adder.sv
+L0 1
+Z4 OV;L;10.5b;63
+r1
+!s85 0
+31
+Z5 !s108 1749098644.000000
+!s107 C:/Users/josee/CE3201_PF/Adder.sv|
+!s90 -reportprogress|300|-sv|-work|work|+incdir+C:/Users/josee/CE3201_PF|C:/Users/josee/CE3201_PF/Adder.sv|
+!i113 1
+Z6 o-sv -work work
+Z7 !s92 -sv -work work +incdir+C:/Users/josee/CE3201_PF
+Z8 tCvgOpt 0
+n@adder
+vALU
+R1
+R2
+!i10b 1
+!s100 7>FIP8aO=O9zdm4jNCBN>0
+I;:C^^fD5G[zflm_Mi3;]N2
+R3
+!s105 ALU_sv_unit
+S1
+R0
+w1749094805
+8C:/Users/josee/CE3201_PF/ALU.sv
+FC:/Users/josee/CE3201_PF/ALU.sv
+L0 1
+R4
+r1
+!s85 0
+31
+R5
+!s107 C:/Users/josee/CE3201_PF/ALU.sv|
+!s90 -reportprogress|300|-sv|-work|work|+incdir+C:/Users/josee/CE3201_PF|C:/Users/josee/CE3201_PF/ALU.sv|
+!i113 1
+R6
+R7
+R8
+n@a@l@u
+vCPU
+R1
+R2
+!i10b 1
+!s100 WfWKL=0AoU?lHfl1A3O>?0
+IZSAg1f:G88=5ViZIjSj5M3
+R3
+!s105 CPU_sv_unit
+S1
+R0
+w1749097970
+8C:/Users/josee/CE3201_PF/CPU.sv
+FC:/Users/josee/CE3201_PF/CPU.sv
+L0 1
+R4
+r1
+!s85 0
+31
+R5
+!s107 C:/Users/josee/CE3201_PF/CPU.sv|
+!s90 -reportprogress|300|-sv|-work|work|+incdir+C:/Users/josee/CE3201_PF|C:/Users/josee/CE3201_PF/CPU.sv|
+!i113 1
+R6
+R7
+R8
+n@c@p@u
+vCPU_tb
+R1
+!s110 1749098645
+!i10b 1
+!s100 ;:V_j8`llC=LdgG@`eEo]0
+Il4QI;SMz[iSHNWCBhoDgG1
+R3
+!s105 CPU_tb_sv_unit
+S1
+R0
+w1749098255
+8C:/Users/josee/CE3201_PF/CPU_tb.sv
+FC:/Users/josee/CE3201_PF/CPU_tb.sv
+L0 3
+R4
+r1
+!s85 0
+31
+R5
+!s107 C:/Users/josee/CE3201_PF/CPU_tb.sv|
+!s90 -reportprogress|300|-sv|-work|work|+incdir+C:/Users/josee/CE3201_PF|C:/Users/josee/CE3201_PF/CPU_tb.sv|
+!i113 1
+R6
+R7
+R8
+n@c@p@u_tb
+vExtender
+R1
+R2
+!i10b 1
+!s100 2Q:9nMQ^JoeeB>?46LzGj2
+IF;R;[od[_LUQZoFH>i=^93
+R3
+!s105 Extender_sv_unit
+S1
+R0
+w1749094807
+8C:/Users/josee/CE3201_PF/Extender.sv
+FC:/Users/josee/CE3201_PF/Extender.sv
+L0 1
+R4
+r1
+!s85 0
+31
+R5
+!s107 C:/Users/josee/CE3201_PF/Extender.sv|
+!s90 -reportprogress|300|-sv|-work|work|+incdir+C:/Users/josee/CE3201_PF|C:/Users/josee/CE3201_PF/Extender.sv|
+!i113 1
+R6
+R7
+R8
+n@extender
+vMux
+R1
+R2
+!i10b 1
+!s100 g9?:56LQdSLdjim_9mO7U3
+IXR55mBjSzN@EeVJ>hUhcK2
+R3
+!s105 Mux_sv_unit
+S1
+R0
+w1749094804
+8C:/Users/josee/CE3201_PF/Mux.sv
+FC:/Users/josee/CE3201_PF/Mux.sv
+L0 1
+R4
+r1
+!s85 0
+31
+R5
+!s107 C:/Users/josee/CE3201_PF/Mux.sv|
+!s90 -reportprogress|300|-sv|-work|work|+incdir+C:/Users/josee/CE3201_PF|C:/Users/josee/CE3201_PF/Mux.sv|
+!i113 1
+R6
+R7
+R8
+n@mux
+vRegister
+R1
+R2
+!i10b 1
+!s100 PhgM5E5?7YR[FdD_>n1zN1
+IMScI=_e=f?NYI5`R@PEM70
+R3
+!s105 Register_sv_unit
+S1
+R0
+w1749092769
+8C:/Users/josee/CE3201_PF/Register.sv
+FC:/Users/josee/CE3201_PF/Register.sv
+L0 1
+R4
+r1
+!s85 0
+31
+R5
+!s107 C:/Users/josee/CE3201_PF/Register.sv|
+!s90 -reportprogress|300|-sv|-work|work|+incdir+C:/Users/josee/CE3201_PF|C:/Users/josee/CE3201_PF/Register.sv|
+!i113 1
+R6
+R7
+R8
+n@register
+vRegister_File
+R1
+R2
+!i10b 1
+!s100 0[ZfEVRRWELQj8jjgCZ<G2
+Iie>W2Q=@:SLY4Z?RkhUbM2
+R3
+!s105 Register_File_sv_unit
+S1
+R0
+w1749098622
+8C:/Users/josee/CE3201_PF/Register_File.sv
+FC:/Users/josee/CE3201_PF/Register_File.sv
+L0 2
+R4
+r1
+!s85 0
+31
+R5
+!s107 C:/Users/josee/CE3201_PF/Register_File.sv|
+!s90 -reportprogress|300|-sv|-work|work|+incdir+C:/Users/josee/CE3201_PF|C:/Users/josee/CE3201_PF/Register_File.sv|
+!i113 1
+R6
+R7
+R8
+n@register_@file

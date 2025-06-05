@@ -1,0 +1,44 @@
+module CPU_tb;
+
+  logic clk, rst;
+  CPU dut(.clk(clk), .rst(rst));
+
+  // Generador de reloj
+  initial begin
+    clk = 0;
+    forever #5 clk = ~clk;
+  end
+
+  // Inicialización
+  initial begin
+    rst = 1;
+    #10;
+    rst = 0;
+
+    // Configuración manual de registros y memorias
+    // LDR R1, [R2, #0]
+    // R2 = 2 (por ejemplo), offset = 0
+    // Codificación simple: suponemos que el decodificador saca Rn=2, Rt=1, offset=0
+    dut.Instr_Mem.mem[0] = 32'b1110_0101_1001_0001_0000_0000_0000_0000; // LDR R1, [R2, #0] (falsa codificación si no usas real)
+    
+    // Inicializamos R2 = 8
+    dut.Register_File.registers[2] = 32'd8;
+
+    // En la posición 8 de la RAM estará el valor a cargar
+    dut.Data_Memory.mem[8 >> 2] = 32'h12345678; // dirección 8 alineada en palabra
+
+    // Esperamos algunos ciclos
+    #50;
+
+    // Comprobamos si R1 recibió el valor
+    if (dut.Register_File.registers[1] == 32'h12345678)
+      $display("✅ Test PASSED: LDR cargó correctamente");
+    else begin
+      $display("❌ Test FAILED: LDR no cargó correctamente");
+      $display("R1 = %h", dut.Register_File.registers[1]);
+    end
+
+    $finish;
+  end
+
+endmodule
