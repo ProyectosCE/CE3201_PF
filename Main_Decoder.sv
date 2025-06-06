@@ -69,7 +69,6 @@ module Main_Decoder(
                 RegSrc  = {1'bX, 1'b1}; // X1
                 // RegW, MemW, MemtoReg = 0 por defecto
             end
-
             default: begin
 
             end
