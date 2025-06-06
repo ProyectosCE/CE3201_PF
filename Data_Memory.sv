@@ -1,5 +1,5 @@
 
-module Data_Memory #(parameter N = 6, M=32)(
+module Data_Memory #(parameter N = 4, M=32)(
 input logic [N-1:0] A1,
 input logic [M-1:0] WD,
 input logic clk, WE,

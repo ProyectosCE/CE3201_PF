@@ -7,20 +7,16 @@ module CPU(
     output logic [31:0] PC_Addres,
     output logic [31:0] Addres
 
-    
 );
 
 
 
-assign MemWrite = 1'b0;
-assign WriteData = 32'b0;
-
-
+logic [3:0] A2, A1;
 logic [31:0] PC, next_PC, PC_4, PC_8;
 logic [31:0] RD1, RD2, WD3;
 logic [31:0] Extd;
 logic [31:0] ALUResult;
-logic ALUZero;
+logic [3:0] AluFlags;
 assign PC_Addres = PC;
 assign WriteData = RD2;
 
@@ -33,12 +29,33 @@ Register #(.N(32)) PC_Register(
 );
 
 
+
+
+Mux #(.N(4)) RegSrc_ins(
+    .A(Instruction[3:0]),
+    .B(Instruction[15:12]),
+	.S(1'b0),
+	.C(A2)
+
+);
+
+
+Mux #(.N(4)) RegSrcA1(
+    .A(4'd15),
+    .B(Instruction[19:16]),
+	.S(1'b0),
+	.C(A1)
+
+);
+
+
+
 Register_File #(.N(4), .M(32)) Reg_file(
-    .A1(Instruction[19:16]),
-    .A2(Instruction[15:12]),
+    .A1(A1),
+    .A2(A2),
     .A3(Instruction[15:12]),
     .clk(clk),
-    .WE3(1'b1),
+    .WE3(RegWrite),
     .R15(PC_8),
     .RD1(RD1),
     .RD2(RD2), 
@@ -46,19 +63,32 @@ Register_File #(.N(4), .M(32)) Reg_file(
 );
 
 
-Extender #(.N(12), .M(32)) Extender(
-    .A(Instruction[11:0]),
-    .Out(Extd)
+logic [31:0] ALU_B;
+
+Mux #(.N(32)) ALUSrc_ins(
+    .A(Extd),
+    .B(RD2),
+	.S(ALUSrc),
+	.C(ALU_B)
+
+);
+
+
+
+Extender Extender_ins(
+    .A(Instruction[23:0]),
+	.ImmSrc(ImmSrc),
+    .Out(Extd),
 );
 
 assign Addres = ALUResult;
 
 ALU #(.N(32)) ALU_ins(
     .A(RD1),      
-    .B(Extd),      
-    .ALUCtrl(2'b00), 
+    .B(ALU_B),      
+    .ALUCtrl(ALUControl), 
     .Result(ALUResult), 
-    .Zero(ALUZero)    
+    .Flags(AluFlags)    
 );
 
 
@@ -77,9 +107,9 @@ Adder #(.N(32)) PCPlus8(
 
 
 Mux #(.N(32)) PCsource(
-    .A(readData),
-    .B(ALUResult),
-	.S(1'b1),
+    .A(WD3),
+    .B(PC_4),
+	.S(PCSrc),
 	.C(next_PC)
 
 );
@@ -87,9 +117,57 @@ Mux #(.N(32)) PCsource(
 
 Mux #(.N(32)) MemToReg(
     .A(readData),
-    .B(PC_4),
-	.S(1'b0),
+    .B(ALUResult),
+	.S(MemtoReg),
 	.C(WD3)
 
 );
+
+
+
+
+
+
+logic  PCSrc;
+logic MemtoReg;
+logic [1:0] ALUControl;
+logic ALUSrc;
+logic [1:0] ImmSrc;
+logic  RegWrite;
+logic [1:0] RegSrc;
+
+
+
+Control_Unit CU_Inst(
+
+.Cond(Instruction[31:28]),
+.Op(Instruction[27:26]),
+.Funct(Instruction[25:20]),
+.Rd(Instruction[15:12]),
+.Flags(AluFlags),
+
+
+.PCSrc(PCSrc),
+.MemtoReg(MemtoReg),
+.MemWrite(MemWrite),
+.ALUControl(ALUControl),
+.ALUSrc(ALUSrc),
+.ImmSrc(ImmSrc),
+.RegWrite(RegWrite),
+.RegSrc(RegSrc)
+
+);
+
+
+
+
+
+
+
+
+
+
+
+
+
 endmodule
