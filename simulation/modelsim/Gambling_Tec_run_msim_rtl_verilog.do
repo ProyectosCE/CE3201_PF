@@ -5,6 +5,10 @@ if {[file exists rtl_work]} {
 vlib rtl_work
 vmap work rtl_work
 
+vlog -sv -work work +incdir+C:/Users/josee/CE3201_PF {C:/Users/josee/CE3201_PF/PC_Logic.sv}
+vlog -sv -work work +incdir+C:/Users/josee/CE3201_PF {C:/Users/josee/CE3201_PF/Main_Decoder.sv}
+vlog -sv -work work +incdir+C:/Users/josee/CE3201_PF {C:/Users/josee/CE3201_PF/Condition_Check.sv}
+vlog -sv -work work +incdir+C:/Users/josee/CE3201_PF {C:/Users/josee/CE3201_PF/Alu_Deco.sv}
 vlog -sv -work work +incdir+C:/Users/josee/CE3201_PF {C:/Users/josee/CE3201_PF/Register_File.sv}
 vlog -sv -work work +incdir+C:/Users/josee/CE3201_PF {C:/Users/josee/CE3201_PF/Register.sv}
 vlog -sv -work work +incdir+C:/Users/josee/CE3201_PF {C:/Users/josee/CE3201_PF/Mux.sv}
@@ -12,6 +16,7 @@ vlog -sv -work work +incdir+C:/Users/josee/CE3201_PF {C:/Users/josee/CE3201_PF/E
 vlog -sv -work work +incdir+C:/Users/josee/CE3201_PF {C:/Users/josee/CE3201_PF/CPU.sv}
 vlog -sv -work work +incdir+C:/Users/josee/CE3201_PF {C:/Users/josee/CE3201_PF/ALU.sv}
 vlog -sv -work work +incdir+C:/Users/josee/CE3201_PF {C:/Users/josee/CE3201_PF/Adder.sv}
+vlog -sv -work work +incdir+C:/Users/josee/CE3201_PF {C:/Users/josee/CE3201_PF/Control_Unit.sv}
 
 vlog -sv -work work +incdir+C:/Users/josee/CE3201_PF {C:/Users/josee/CE3201_PF/CPU_tb.sv}
 

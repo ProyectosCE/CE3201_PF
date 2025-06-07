@@ -16,9 +16,18 @@ logic [31:0] PC, next_PC, PC_4, PC_8;
 logic [31:0] RD1, RD2, WD3;
 logic [31:0] Extd;
 logic [31:0] ALUResult;
-logic [3:0] AluFlags;
+logic [3:0] AluFlags; 
 assign PC_Addres = PC;
 assign WriteData = RD2;
+
+logic  PCSrc;
+logic MemtoReg;
+logic [1:0] ALUControl;
+logic ALUSrc;
+logic [1:0] ImmSrc;
+logic  RegWrite;
+logic [1:0] RegSrc;
+logic [31:0] ALU_B;
 
 Register #(.N(32)) PC_Register(
 	.clk(clk), 
@@ -64,7 +73,7 @@ Register_File  Reg_file(
 );
 
 
-logic [31:0] ALU_B;
+
 
 Mux #(.N(32)) ALUSrc_ins(
     .A(Extd),
@@ -79,7 +88,7 @@ Mux #(.N(32)) ALUSrc_ins(
 Extender Extender_ins(
     .A(Instruction[23:0]),
 	.ImmSrc(ImmSrc),
-    .Out(Extd),
+    .Out(Extd)
 );
 
 assign Addres = ALUResult;
@@ -125,17 +134,6 @@ Mux #(.N(32)) MemToReg(
 );
 
 
-
-
-
-
-logic  PCSrc;
-logic MemtoReg;
-logic [1:0] ALUControl;
-logic ALUSrc;
-logic [1:0] ImmSrc;
-logic  RegWrite;
-logic [1:0] RegSrc;
 
 
 
