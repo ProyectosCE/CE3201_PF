@@ -50,11 +50,12 @@ Mux #(.N(4)) RegSrcA1(
 
 
 
-Register_File #(.N(4), .M(32)) Reg_file(
+Register_File  Reg_file(
     .A1(A1),
     .A2(A2),
     .A3(Instruction[15:12]),
     .clk(clk),
+	 .rst(rst),
     .WE3(RegWrite),
     .R15(PC_8),
     .RD1(RD1),

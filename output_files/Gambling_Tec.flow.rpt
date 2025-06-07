@@ -1,5 +1,5 @@
 Flow report for Gambling_Tec
-Thu Jun 05 22:09:19 2025
+Fri Jun 06 18:38:04 2025
 Quartus Prime Version 18.1.0 Build 625 09/12/2018 SJ Lite Edition
 
 
@@ -40,15 +40,15 @@ refer to the applicable agreement for further details.
 +-------------------------------------------------------------------------------+
 ; Flow Summary                                                                  ;
 +---------------------------------+---------------------------------------------+
-; Flow Status                     ; Successful - Thu Jun 05 22:09:19 2025       ;
+; Flow Status                     ; Successful - Fri Jun 06 18:38:04 2025       ;
 ; Quartus Prime Version           ; 18.1.0 Build 625 09/12/2018 SJ Lite Edition ;
 ; Revision Name                   ; Gambling_Tec                                ;
 ; Top-level Entity Name           ; CPU                                         ;
 ; Family                          ; Cyclone V                                   ;
 ; Device                          ; 5CSXFC6D6F31C6                              ;
 ; Timing Models                   ; Final                                       ;
-; Logic utilization (in ALMs)     ; 16 / 41,910 ( < 1 % )                       ;
-; Total registers                 ; 40                                          ;
+; Logic utilization (in ALMs)     ; 475 / 41,910 ( 1 % )                        ;
+; Total registers                 ; 512                                         ;
 ; Total pins                      ; 163 / 499 ( 33 % )                          ;
 ; Total virtual pins              ; 0                                           ;
 ; Total block memory bits         ; 0 / 5,662,720 ( 0 % )                       ;
@@ -67,7 +67,7 @@ refer to the applicable agreement for further details.
 +-------------------+---------------------+
 ; Option            ; Setting             ;
 +-------------------+---------------------+
-; Start date & time ; 06/05/2025 22:08:00 ;
+; Start date & time ; 06/06/2025 18:35:21 ;
 ; Main task         ; Compilation         ;
 ; Revision Name     ; Gambling_Tec        ;
 +-------------------+---------------------+
@@ -78,7 +78,7 @@ refer to the applicable agreement for further details.
 +--------------------------------------+----------------------------------------+---------------+-------------+----------------+
 ; Assignment Name                      ; Value                                  ; Default Value ; Entity Name ; Section Id     ;
 +--------------------------------------+----------------------------------------+---------------+-------------+----------------+
-; COMPILER_SIGNATURE_ID                ; 153951931180250.174918288005152        ; --            ; --          ; --             ;
+; COMPILER_SIGNATURE_ID                ; 153951931180250.174925652104136        ; --            ; --          ; --             ;
 ; EDA_DESIGN_INSTANCE_NAME             ; NA                                     ; --            ; --          ; CPU_tb         ;
 ; EDA_NATIVELINK_SIMULATION_TEST_BENCH ; CPU_tb                                 ; --            ; --          ; eda_simulation ;
 ; EDA_OUTPUT_DATA_FORMAT               ; Systemverilog Hdl                      ; --            ; --          ; eda_simulation ;
@@ -105,12 +105,12 @@ refer to the applicable agreement for further details.
 +----------------------+--------------+-------------------------+---------------------+------------------------------------+
 ; Module Name          ; Elapsed Time ; Average Processors Used ; Peak Virtual Memory ; Total CPU Time (on all processors) ;
 +----------------------+--------------+-------------------------+---------------------+------------------------------------+
-; Analysis & Synthesis ; 00:00:12     ; 1.0                     ; 4833 MB             ; 00:00:25                           ;
-; Fitter               ; 00:00:47     ; 1.0                     ; 6626 MB             ; 00:01:24                           ;
-; Assembler            ; 00:00:08     ; 1.0                     ; 4839 MB             ; 00:00:07                           ;
-; Timing Analyzer      ; 00:00:08     ; 1.0                     ; 5136 MB             ; 00:00:08                           ;
-; EDA Netlist Writer   ; 00:00:01     ; 1.0                     ; 4746 MB             ; 00:00:02                           ;
-; Total                ; 00:01:16     ; --                      ; --                  ; 00:02:06                           ;
+; Analysis & Synthesis ; 00:00:30     ; 1.0                     ; 4838 MB             ; 00:00:51                           ;
+; Fitter               ; 00:01:38     ; 1.1                     ; 6642 MB             ; 00:03:27                           ;
+; Assembler            ; 00:00:13     ; 1.0                     ; 4841 MB             ; 00:00:09                           ;
+; Timing Analyzer      ; 00:00:12     ; 1.6                     ; 5157 MB             ; 00:00:16                           ;
+; EDA Netlist Writer   ; 00:00:03     ; 1.0                     ; 4764 MB             ; 00:00:02                           ;
+; Total                ; 00:02:36     ; --                      ; --                  ; 00:04:45                           ;
 +----------------------+--------------+-------------------------+---------------------+------------------------------------+
 
 

@@ -1,8 +1,20 @@
-module Bit_cell(
-
-
-
+module Register32 (
+    input logic clk, rst,
+    input logic [31:0] D,
+    input logic enW,
+    input logic enR,
+    output logic [31:0] Q
 );
 
+    logic [31:0] Q_internal;
 
-endmodule 
+    assign Q = enR ? Q_internal : 32'd0;  // Usar 0 en lugar de Z
+
+    always_ff @(negedge clk or posedge rst) begin
+        if (rst)
+            Q_internal <= 32'd0;
+        else if (enW)
+            Q_internal <= D;
+    end
+
+endmodule
