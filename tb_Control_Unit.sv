@@ -2,71 +2,107 @@
 
 module tb_Control_Unit;
 
-    // Entradas
-    logic [3:0] Cond;
-    logic [1:0] Op;
-    logic [5:0] Funct;
-    logic [3:0] Rd;
-    logic [3:0] Flags;
-    logic clk, rst;
+  logic [3:0] Cond, Rd, Flags;
+  logic [1:0] Op;
+  logic [5:0] Funct;
+  logic clk, rst;
 
-    // Salidas
-    logic PCSrc;
-    logic MemtoReg;
-    logic MemWrite;
-    logic [1:0] ALUControl;
-    logic ALUSrc;
-    logic [1:0] ImmSrc;
-    logic RegWrite;
-    logic [1:0] RegSrc;
+  logic PCSrc, MemtoReg, MemWrite, ALUSrc, RegWrite;
+  logic [1:0] ALUControl, ImmSrc, RegSrc;
 
-    // Instancia del DUT
-    Control_Unit dut (
-        .Cond(Cond),
-        .Op(Op),
-        .Funct(Funct),
-        .Rd(Rd),
-        .Flags(Flags),
-        .clk(clk),
-        .rst(rst),
+  Control_Unit dut (
+    .Cond(Cond), .Op(Op), .Funct(Funct), .Rd(Rd), .Flags(Flags),
+    .clk(clk), .rst(rst),
+    .PCSrc(PCSrc), .MemtoReg(MemtoReg), .MemWrite(MemWrite),
+    .ALUControl(ALUControl), .ALUSrc(ALUSrc), .ImmSrc(ImmSrc),
+    .RegWrite(RegWrite), .RegSrc(RegSrc)
+  );
 
-        .PCSrc(PCSrc),
-        .MemtoReg(MemtoReg),
-        .MemWrite(MemWrite),
-        .ALUControl(ALUControl),
-        .ALUSrc(ALUSrc),
-        .ImmSrc(ImmSrc),
-        .RegWrite(RegWrite),
-        .RegSrc(RegSrc)
-    );
+  // Clock
+  always #5 clk = ~clk;
 
-    // Reloj
-    initial clk = 0;
-    always #5 clk = ~clk;
+  // Helper
+  task check(string name, logic cond);
+    if (!cond)
+      $display("  %s incorrecto", name);
+  endtask
 
-    // Pruebas
-    initial begin
-        $dumpfile("tb_control_unit.vcd");
-        $dumpvars(0, tb_Control_Unit);
+  int fails = 0;
 
-        $display("=== TEST CONTROL UNIT ===");
+  initial begin
+    $display("=== TEST CONTROL UNIT (autochequeo) ===");
 
-        // Inicialización
-        rst = 1;
-        Cond = 4'b1110;    // ALWAYS (en ARM)
-        Op = 2'b01;        // Supuesto tipo de operación (Data Processing)
-        Funct = 6'b000100; // Supuesto código para ADD
-        Rd = 4'd0;         // Registro destino R0
-        Flags = 4'b0000;
+    clk = 0;
+    rst = 1;
+    Flags = 4'b0000;
+    #10 rst = 0;
 
-        #10 rst = 0;
+    // ==== Test 1: ADD ====
+    // Op = 00 (Data Proc), Funct = 0b010000 (ADD sin S), Rd ≠ 15
+    Op = 2'b00;
+    Funct = 6'b010000;
+    Rd = 4'd1;
+    Cond = 4'b1110; // Always
 
+    #10;
 
-    
-
-
-        $display("=== FIN DE TEST ===");
-        $finish;
+    $display("# Test: ADD");
+    if (ALUControl !== 2'b00) begin
+      $display("  ALUControl incorrecto");
+      fails++;
     end
+    if (MemtoReg !== 0) begin
+      $display("  MemtoReg incorrecto");
+      fails++;
+    end
+    if (RegSrc !== 2'b00) begin
+      $display("  RegSrc incorrecto");
+      fails++;
+    end
+
+    // ==== Test 2: STR ====
+    // Op = 01, Funct[0] = 0 -> STR
+    Op = 2'b01;
+    Funct = 6'b000000;
+    Rd = 4'd2;
+
+    #10;
+
+    $display("# Test: STR");
+    if (MemtoReg !== 0) begin
+      $display("  MemtoReg incorrecto");
+      fails++;
+    end
+    if (RegSrc !== 2'b10) begin
+      $display("  RegSrc incorrecto");
+      fails++;
+    end
+
+    // ==== Test 3: LDR ====
+    // Op = 01, Funct[0] = 1 -> LDR
+    Op = 2'b01;
+    Funct = 6'b000001;
+    Rd = 4'd3;
+
+    #10;
+
+    $display("# Test: LDR");
+    if (MemtoReg !== 1) begin
+      $display("  MemtoReg incorrecto");
+      fails++;
+    end
+    if (RegSrc !== 2'b00) begin
+      $display("  RegSrc incorrecto");
+      fails++;
+    end
+
+    // ==== Result ====
+    if (fails == 0)
+      $display("TODAS LAS PRUEBAS PASARON");
+    else
+      $display("%0d PRUEBA(S) FALLARON", fails);
+
+    $finish;
+  end
 
 endmodule

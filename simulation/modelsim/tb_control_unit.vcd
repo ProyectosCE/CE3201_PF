@@ -1,5 +1,5 @@
 $date
-	Fri Jun 06 23:49:49 2025
+	Sat Jun 07 23:33:04 2025
 $end
 $version
 	ModelSim Version 10.5b
@@ -24,121 +24,161 @@ $var reg 1 , ALUSrc $end
 $var reg 2 - ImmSrc [1:0] $end
 $var reg 1 . RegWrite $end
 $var reg 2 / RegSrc [1:0] $end
+$var integer 32 0 errores $end
+
+$scope task verificar $end
+$var reg 1 1 esperado_PC $end
+$var reg 1 2 esperado_MemtoReg $end
+$var reg 1 3 esperado_MemWrite $end
+$var reg 2 4 esperado_ALUControl [1:0] $end
+$var reg 1 5 esperado_ALUSrc $end
+$var reg 2 6 esperado_ImmSrc [1:0] $end
+$var reg 1 7 esperado_RegWrite $end
+$var reg 2 8 esperado_RegSrc [1:0] $end
+$upscope $end
 
 $scope module dut $end
-$var wire 1 0 Cond [3] $end
-$var wire 1 1 Cond [2] $end
-$var wire 1 2 Cond [1] $end
-$var wire 1 3 Cond [0] $end
-$var wire 1 4 Op [1] $end
-$var wire 1 5 Op [0] $end
-$var wire 1 6 Funct [5] $end
-$var wire 1 7 Funct [4] $end
-$var wire 1 8 Funct [3] $end
-$var wire 1 9 Funct [2] $end
-$var wire 1 : Funct [1] $end
-$var wire 1 ; Funct [0] $end
-$var wire 1 < Rd [3] $end
-$var wire 1 = Rd [2] $end
-$var wire 1 > Rd [1] $end
-$var wire 1 ? Rd [0] $end
-$var wire 1 @ Flags [3] $end
-$var wire 1 A Flags [2] $end
-$var wire 1 B Flags [1] $end
-$var wire 1 C Flags [0] $end
-$var wire 1 D clk $end
-$var wire 1 E rst $end
-$var reg 1 F PCSrc $end
-$var reg 1 G MemtoReg $end
-$var reg 1 H MemWrite $end
-$var reg 2 I ALUControl [1:0] $end
-$var reg 1 J ALUSrc $end
-$var reg 2 K ImmSrc [1:0] $end
-$var reg 1 L RegWrite $end
-$var reg 2 M RegSrc [1:0] $end
-$var reg 1 N RegW $end
-$var reg 1 O MemW $end
-$var reg 1 P ALUOP $end
-$var reg 1 Q Branch $end
-$var reg 1 R PCS $end
-$var reg 1 S CondEx $end
-$var reg 2 T FlagW [1:0] $end
-$var reg 4 U ALUfLags [3:0] $end
+$var wire 1 9 Cond [3] $end
+$var wire 1 : Cond [2] $end
+$var wire 1 ; Cond [1] $end
+$var wire 1 < Cond [0] $end
+$var wire 1 = Op [1] $end
+$var wire 1 > Op [0] $end
+$var wire 1 ? Funct [5] $end
+$var wire 1 @ Funct [4] $end
+$var wire 1 A Funct [3] $end
+$var wire 1 B Funct [2] $end
+$var wire 1 C Funct [1] $end
+$var wire 1 D Funct [0] $end
+$var wire 1 E Rd [3] $end
+$var wire 1 F Rd [2] $end
+$var wire 1 G Rd [1] $end
+$var wire 1 H Rd [0] $end
+$var wire 1 I Flags [3] $end
+$var wire 1 J Flags [2] $end
+$var wire 1 K Flags [1] $end
+$var wire 1 L Flags [0] $end
+$var wire 1 M clk $end
+$var wire 1 N rst $end
+$var reg 1 O PCSrc $end
+$var reg 1 P MemtoReg $end
+$var reg 1 Q MemWrite $end
+$var reg 2 R ALUControl [1:0] $end
+$var reg 1 S ALUSrc $end
+$var reg 2 T ImmSrc [1:0] $end
+$var reg 1 U RegWrite $end
+$var reg 2 V RegSrc [1:0] $end
+$var reg 1 W RegW $end
+$var reg 1 X MemW $end
+$var reg 1 Y ALUOP $end
+$var reg 1 Z Branch $end
+$var reg 1 [ PCS $end
+$var reg 1 \ CondEx $end
+$var reg 2 ] FlagW [1:0] $end
+$var reg 4 ^ ALUfLags [3:0] $end
 
-$scope module inst_PCLogic $end
-$var wire 1 < Rd [3] $end
-$var wire 1 = Rd [2] $end
-$var wire 1 > Rd [1] $end
-$var wire 1 ? Rd [0] $end
-$var wire 1 V RegW $end
-$var wire 1 W Branch $end
-$var reg 1 X PCS $end
+$scope module decoder_inst $end
+$var wire 1 = Op [1] $end
+$var wire 1 > Op [0] $end
+$var wire 1 ? Funct [5] $end
+$var wire 1 @ Funct [4] $end
+$var wire 1 A Funct [3] $end
+$var wire 1 B Funct [2] $end
+$var wire 1 C Funct [1] $end
+$var wire 1 D Funct [0] $end
+$var wire 1 E Rd [3] $end
+$var wire 1 F Rd [2] $end
+$var wire 1 G Rd [1] $end
+$var wire 1 H Rd [0] $end
+$var reg 2 _ FlagW [1:0] $end
+$var reg 1 ` PCS $end
+$var reg 1 a RegW $end
+$var reg 1 b MemW $end
+$var reg 1 c MemtoReg $end
+$var reg 1 d ALUSrc $end
+$var reg 2 e ImmSrc [1:0] $end
+$var reg 2 f RegSrc [1:0] $end
+$var reg 2 g ALUControl [1:0] $end
+$var reg 1 h Branch $end
+$var reg 1 i ALUOp $end
+$var wire 1 j ALUOP $end
+
+$scope module pc_logic_inst $end
+$var wire 1 E Rd [3] $end
+$var wire 1 F Rd [2] $end
+$var wire 1 G Rd [1] $end
+$var wire 1 H Rd [0] $end
+$var wire 1 k Branch $end
+$var wire 1 l RegW $end
+$var reg 1 m PCS $end
 $upscope $end
 
-$scope module inst_Main_Deco $end
-$var wire 1 4 Op [1] $end
-$var wire 1 5 Op [0] $end
-$var wire 1 6 Funct [5] $end
-$var wire 1 7 Funct [4] $end
-$var wire 1 8 Funct [3] $end
-$var wire 1 9 Funct [2] $end
-$var wire 1 : Funct [1] $end
-$var wire 1 ; Funct [0] $end
-$var reg 1 Y RegW $end
-$var reg 1 Z MemW $end
-$var reg 1 [ MemtoReg $end
-$var reg 1 \ ALUSrc $end
-$var reg 2 ] ImmSrc [1:0] $end
-$var reg 2 ^ RegSrc [1:0] $end
-$var reg 1 _ ALUOP $end
-$var reg 1 ` Branch $end
+$scope module main_decoder_inst $end
+$var wire 1 = Op [1] $end
+$var wire 1 > Op [0] $end
+$var wire 1 ? Funct [5] $end
+$var wire 1 @ Funct [4] $end
+$var wire 1 A Funct [3] $end
+$var wire 1 B Funct [2] $end
+$var wire 1 C Funct [1] $end
+$var wire 1 D Funct [0] $end
+$var reg 1 n Branch $end
+$var reg 1 o RegW $end
+$var reg 1 p MemW $end
+$var reg 1 q MemtoReg $end
+$var reg 1 r ALUSrc $end
+$var reg 2 s ImmSrc [1:0] $end
+$var reg 2 t RegSrc [1:0] $end
+$var reg 1 u ALUOP $end
 $upscope $end
 
-$scope module inst_ALU_Deco $end
-$var wire 1 a ALUOP $end
-$var wire 1 7 Funct [4] $end
-$var wire 1 8 Funct [3] $end
-$var wire 1 9 Funct [2] $end
-$var wire 1 : Funct [1] $end
-$var wire 1 ; Funct [0] $end
-$var reg 2 b ALUControl [1:0] $end
-$var reg 2 c FlagW [1:0] $end
+$scope module alu_decoder_inst $end
+$var wire 1 j ALUOP $end
+$var wire 1 v Funct [5] $end
+$var wire 1 @ Funct [4] $end
+$var wire 1 A Funct [3] $end
+$var wire 1 B Funct [2] $end
+$var wire 1 C Funct [1] $end
+$var wire 1 D Funct [0] $end
+$var reg 2 w ALUControl [1:0] $end
+$var reg 2 x FlagW [1:0] $end
+$upscope $end
 $upscope $end
 
 $scope module Register_Flag1 $end
-$var parameter 32 d N $end
-$var wire 1 D clk $end
-$var wire 1 E rst $end
-$var wire 1 @ D [1] $end
-$var wire 1 A D [0] $end
-$var wire 1 e en $end
-$var reg 2 f Q [1:0] $end
+$var parameter 32 y N $end
+$var wire 1 M clk $end
+$var wire 1 N rst $end
+$var wire 1 I D [1] $end
+$var wire 1 J D [0] $end
+$var wire 1 z en $end
+$var reg 2 { Q [1:0] $end
 $upscope $end
 
 $scope module Register_Flag2 $end
-$var parameter 32 g N $end
-$var wire 1 D clk $end
-$var wire 1 E rst $end
-$var wire 1 B D [1] $end
-$var wire 1 C D [0] $end
-$var wire 1 h en $end
-$var reg 2 i Q [1:0] $end
+$var parameter 32 | N $end
+$var wire 1 M clk $end
+$var wire 1 N rst $end
+$var wire 1 K D [1] $end
+$var wire 1 L D [0] $end
+$var wire 1 } en $end
+$var reg 2 ~ Q [1:0] $end
 $upscope $end
 
 $scope module inst_Condition_Check $end
-$var wire 1 j Flag [3] $end
-$var wire 1 k Flag [2] $end
-$var wire 1 l Flag [1] $end
-$var wire 1 m Flag [0] $end
-$var wire 1 0 Cond [3] $end
-$var wire 1 1 Cond [2] $end
-$var wire 1 2 Cond [1] $end
-$var wire 1 3 Cond [0] $end
-$var reg 1 n CondEx $end
-$var reg 1 o V $end
-$var reg 1 p C $end
-$var reg 1 q N $end
-$var reg 1 r Z $end
+$var wire 1 !! Flag [3] $end
+$var wire 1 "! Flag [2] $end
+$var wire 1 #! Flag [1] $end
+$var wire 1 $! Flag [0] $end
+$var wire 1 9 Cond [3] $end
+$var wire 1 : Cond [2] $end
+$var wire 1 ; Cond [1] $end
+$var wire 1 < Cond [0] $end
+$var reg 1 %! CondEx $end
+$var reg 1 &! V $end
+$var reg 1 '! C $end
+$var reg 1 (! N $end
+$var reg 1 )! Z $end
 $upscope $end
 $upscope $end
 $upscope $end
@@ -146,90 +186,198 @@ $enddefinitions $end
 #0
 $dumpvars
 b1110 !
-b1 "
-b100 #
+b0 "
+b0 #
 b0 $
 b0 %
 0&
 1'
 0(
 0)
-1*
-b0 +
-1,
-b1 -
-0.
-b10 /
-0F
-0G
-1H
-b0 I
-1J
-b1 K
-0L
-b10 M
-0N
-1O
+0*
+b10 +
+0,
+b0 -
+1.
+b0 /
+0O
 0P
 0Q
-0R
-1S
+b10 R
+0S
 b0 T
-b0 U
+1U
+b0 V
+1W
 0X
-0Y
-1Z
+xY
+xZ
 0[
 1\
-b1 ]
-b10 ^
-0_
+b0 ]
+b0 ^
+b0 _
 0`
-b0 b
-b0 c
+1a
+0b
+0c
+0d
+b0 e
 b0 f
-b0 i
-1n
-0o
+b10 g
+0h
+xi
+0m
+0n
+1o
 0p
 0q
 0r
-b10 d
-b10 g
-03
-12
-11
-10
-15
-04
-0;
-0:
+b0 s
+b0 t
+1u
+b10 w
+b0 x
+b0 {
+b0 ~
+1%!
+0&!
+0'!
+0(!
+0)!
+x1
+x2
+x3
+bx 4
+x5
+bx 6
+x7
+bx 8
+b10 y
+b10 |
+b0 0
+1j
+0<
+1;
+1:
 19
-08
-07
-06
-0?
 0>
 0=
-0<
+0D
 0C
 0B
 0A
 0@
-0D
-1E
-0h
-0e
-0V
-0W
-0a
-0m
-0l
+0?
+0H
+0G
+0F
+0E
+0L
+0K
+0J
+0I
+0M
+1N
+0}
+0z
 0k
-0j
+1l
+zv
+0$!
+0#!
+0"!
+0!!
 $end
 #5000
 1&
-1D
+1M
 #10000
+0&
+0M
+#12000
 0'
+b100 #
+b1 $
+1H
+0N
+1B
+b1 w
+b1 g
+b1 R
+b1 +
+#15000
+1&
+1M
+#20000
+0&
+0M
+#22000
+01
+02
+03
+b0 4
+05
+b0 6
+17
+b0 8
+#24000
+b1 0
+b1 "
+b0 #
+b10 $
+0H
+1G
+0B
+1>
+0o
+0u
+1r
+b1 s
+1p
+b10 t
+b10 w
+b10 g
+b10 f
+1b
+b1 e
+1d
+0a
+0W
+1S
+b1 T
+1X
+b10 V
+b10 R
+0l
+b10 +
+b10 /
+1Q
+b1 -
+1,
+0U
+0.
+1*
+0j
+b0 w
+b0 g
+b0 R
+b0 +
+#25000
+1&
+1M
+#30000
+0&
+0M
+#34000
+x2
+13
+15
+b1 6
+07
+#35000
+1&
+1M
+#36000
+b10 0
+b11 0

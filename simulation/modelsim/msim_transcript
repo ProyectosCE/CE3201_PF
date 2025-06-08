@@ -10,159 +10,133 @@
 # Copying C:/intelFPGA_lite/18.1/modelsim_ase/win32aloem/../modelsim.ini to modelsim.ini
 # Modifying modelsim.ini
 # 
-# vlog -sv -work work +incdir+C:/Users/josee/CE3201_PF {C:/Users/josee/CE3201_PF/PC_Logic.sv}
+# vlog -sv -work work +incdir+C:/Users/jimmy/GitHub/CE3201_PF {C:/Users/jimmy/GitHub/CE3201_PF/Condition_Check.sv}
 # Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
-# Start time: 00:27:42 on Jun 07,2025
-# vlog -reportprogress 300 -sv -work work "+incdir+C:/Users/josee/CE3201_PF" C:/Users/josee/CE3201_PF/PC_Logic.sv 
-# -- Compiling module PC_Logic
-# 
-# Top level modules:
-# 	PC_Logic
-# End time: 00:27:42 on Jun 07,2025, Elapsed time: 0:00:00
-# Errors: 0, Warnings: 0
-# vlog -sv -work work +incdir+C:/Users/josee/CE3201_PF {C:/Users/josee/CE3201_PF/Main_Decoder.sv}
-# Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
-# Start time: 00:27:42 on Jun 07,2025
-# vlog -reportprogress 300 -sv -work work "+incdir+C:/Users/josee/CE3201_PF" C:/Users/josee/CE3201_PF/Main_Decoder.sv 
-# -- Compiling module Main_Decoder
-# 
-# Top level modules:
-# 	Main_Decoder
-# End time: 00:27:42 on Jun 07,2025, Elapsed time: 0:00:00
-# Errors: 0, Warnings: 0
-# vlog -sv -work work +incdir+C:/Users/josee/CE3201_PF {C:/Users/josee/CE3201_PF/Condition_Check.sv}
-# Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
-# Start time: 00:27:42 on Jun 07,2025
-# vlog -reportprogress 300 -sv -work work "+incdir+C:/Users/josee/CE3201_PF" C:/Users/josee/CE3201_PF/Condition_Check.sv 
+# Start time: 02:41:51 on Jun 08,2025
+# vlog -reportprogress 300 -sv -work work "+incdir+C:/Users/jimmy/GitHub/CE3201_PF" C:/Users/jimmy/GitHub/CE3201_PF/Condition_Check.sv 
 # -- Compiling module Condition_Check
 # 
 # Top level modules:
 # 	Condition_Check
-# End time: 00:27:42 on Jun 07,2025, Elapsed time: 0:00:00
+# End time: 02:41:51 on Jun 08,2025, Elapsed time: 0:00:00
 # Errors: 0, Warnings: 0
-# vlog -sv -work work +incdir+C:/Users/josee/CE3201_PF {C:/Users/josee/CE3201_PF/Alu_Deco.sv}
+# vlog -sv -work work +incdir+C:/Users/jimmy/GitHub/CE3201_PF {C:/Users/jimmy/GitHub/CE3201_PF/Register_File.sv}
 # Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
-# Start time: 00:27:43 on Jun 07,2025
-# vlog -reportprogress 300 -sv -work work "+incdir+C:/Users/josee/CE3201_PF" C:/Users/josee/CE3201_PF/Alu_Deco.sv 
-# -- Compiling module Alu_Deco
-# 
-# Top level modules:
-# 	Alu_Deco
-# End time: 00:27:43 on Jun 07,2025, Elapsed time: 0:00:00
-# Errors: 0, Warnings: 0
-# vlog -sv -work work +incdir+C:/Users/josee/CE3201_PF {C:/Users/josee/CE3201_PF/Register_File.sv}
-# Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
-# Start time: 00:27:43 on Jun 07,2025
-# vlog -reportprogress 300 -sv -work work "+incdir+C:/Users/josee/CE3201_PF" C:/Users/josee/CE3201_PF/Register_File.sv 
+# Start time: 02:41:51 on Jun 08,2025
+# vlog -reportprogress 300 -sv -work work "+incdir+C:/Users/jimmy/GitHub/CE3201_PF" C:/Users/jimmy/GitHub/CE3201_PF/Register_File.sv 
 # -- Compiling module Register_File
 # 
 # Top level modules:
 # 	Register_File
-# End time: 00:27:43 on Jun 07,2025, Elapsed time: 0:00:00
+# End time: 02:41:51 on Jun 08,2025, Elapsed time: 0:00:00
 # Errors: 0, Warnings: 0
-# vlog -sv -work work +incdir+C:/Users/josee/CE3201_PF {C:/Users/josee/CE3201_PF/Register.sv}
+# vlog -sv -work work +incdir+C:/Users/jimmy/GitHub/CE3201_PF {C:/Users/jimmy/GitHub/CE3201_PF/Register.sv}
 # Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
-# Start time: 00:27:43 on Jun 07,2025
-# vlog -reportprogress 300 -sv -work work "+incdir+C:/Users/josee/CE3201_PF" C:/Users/josee/CE3201_PF/Register.sv 
+# Start time: 02:41:51 on Jun 08,2025
+# vlog -reportprogress 300 -sv -work work "+incdir+C:/Users/jimmy/GitHub/CE3201_PF" C:/Users/jimmy/GitHub/CE3201_PF/Register.sv 
 # -- Compiling module Register
 # 
 # Top level modules:
 # 	Register
-# End time: 00:27:43 on Jun 07,2025, Elapsed time: 0:00:00
+# End time: 02:41:51 on Jun 08,2025, Elapsed time: 0:00:00
 # Errors: 0, Warnings: 0
-# vlog -sv -work work +incdir+C:/Users/josee/CE3201_PF {C:/Users/josee/CE3201_PF/Mux.sv}
+# vlog -sv -work work +incdir+C:/Users/jimmy/GitHub/CE3201_PF {C:/Users/jimmy/GitHub/CE3201_PF/Mux.sv}
 # Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
-# Start time: 00:27:43 on Jun 07,2025
-# vlog -reportprogress 300 -sv -work work "+incdir+C:/Users/josee/CE3201_PF" C:/Users/josee/CE3201_PF/Mux.sv 
+# Start time: 02:41:51 on Jun 08,2025
+# vlog -reportprogress 300 -sv -work work "+incdir+C:/Users/jimmy/GitHub/CE3201_PF" C:/Users/jimmy/GitHub/CE3201_PF/Mux.sv 
 # -- Compiling module Mux
 # 
 # Top level modules:
 # 	Mux
-# End time: 00:27:43 on Jun 07,2025, Elapsed time: 0:00:00
+# End time: 02:41:51 on Jun 08,2025, Elapsed time: 0:00:00
 # Errors: 0, Warnings: 0
-# vlog -sv -work work +incdir+C:/Users/josee/CE3201_PF {C:/Users/josee/CE3201_PF/Extender.sv}
+# vlog -sv -work work +incdir+C:/Users/jimmy/GitHub/CE3201_PF {C:/Users/jimmy/GitHub/CE3201_PF/Extender.sv}
 # Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
-# Start time: 00:27:43 on Jun 07,2025
-# vlog -reportprogress 300 -sv -work work "+incdir+C:/Users/josee/CE3201_PF" C:/Users/josee/CE3201_PF/Extender.sv 
+# Start time: 02:41:51 on Jun 08,2025
+# vlog -reportprogress 300 -sv -work work "+incdir+C:/Users/jimmy/GitHub/CE3201_PF" C:/Users/jimmy/GitHub/CE3201_PF/Extender.sv 
 # -- Compiling module Extender
 # 
 # Top level modules:
 # 	Extender
-# End time: 00:27:43 on Jun 07,2025, Elapsed time: 0:00:00
+# End time: 02:41:51 on Jun 08,2025, Elapsed time: 0:00:00
 # Errors: 0, Warnings: 0
-# vlog -sv -work work +incdir+C:/Users/josee/CE3201_PF {C:/Users/josee/CE3201_PF/CPU.sv}
+# vlog -sv -work work +incdir+C:/Users/jimmy/GitHub/CE3201_PF {C:/Users/jimmy/GitHub/CE3201_PF/CPU.sv}
 # Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
-# Start time: 00:27:43 on Jun 07,2025
-# vlog -reportprogress 300 -sv -work work "+incdir+C:/Users/josee/CE3201_PF" C:/Users/josee/CE3201_PF/CPU.sv 
+# Start time: 02:41:51 on Jun 08,2025
+# vlog -reportprogress 300 -sv -work work "+incdir+C:/Users/jimmy/GitHub/CE3201_PF" C:/Users/jimmy/GitHub/CE3201_PF/CPU.sv 
 # -- Compiling module CPU
 # 
 # Top level modules:
 # 	CPU
-# End time: 00:27:43 on Jun 07,2025, Elapsed time: 0:00:00
+# End time: 02:41:51 on Jun 08,2025, Elapsed time: 0:00:00
 # Errors: 0, Warnings: 0
-# vlog -sv -work work +incdir+C:/Users/josee/CE3201_PF {C:/Users/josee/CE3201_PF/ALU.sv}
+# vlog -sv -work work +incdir+C:/Users/jimmy/GitHub/CE3201_PF {C:/Users/jimmy/GitHub/CE3201_PF/ALU.sv}
 # Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
-# Start time: 00:27:43 on Jun 07,2025
-# vlog -reportprogress 300 -sv -work work "+incdir+C:/Users/josee/CE3201_PF" C:/Users/josee/CE3201_PF/ALU.sv 
+# Start time: 02:41:51 on Jun 08,2025
+# vlog -reportprogress 300 -sv -work work "+incdir+C:/Users/jimmy/GitHub/CE3201_PF" C:/Users/jimmy/GitHub/CE3201_PF/ALU.sv 
 # -- Compiling module ALU
 # 
 # Top level modules:
 # 	ALU
-# End time: 00:27:43 on Jun 07,2025, Elapsed time: 0:00:00
+# End time: 02:41:51 on Jun 08,2025, Elapsed time: 0:00:00
 # Errors: 0, Warnings: 0
-# vlog -sv -work work +incdir+C:/Users/josee/CE3201_PF {C:/Users/josee/CE3201_PF/Adder.sv}
+# vlog -sv -work work +incdir+C:/Users/jimmy/GitHub/CE3201_PF {C:/Users/jimmy/GitHub/CE3201_PF/Adder.sv}
 # Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
-# Start time: 00:27:43 on Jun 07,2025
-# vlog -reportprogress 300 -sv -work work "+incdir+C:/Users/josee/CE3201_PF" C:/Users/josee/CE3201_PF/Adder.sv 
+# Start time: 02:41:51 on Jun 08,2025
+# vlog -reportprogress 300 -sv -work work "+incdir+C:/Users/jimmy/GitHub/CE3201_PF" C:/Users/jimmy/GitHub/CE3201_PF/Adder.sv 
 # -- Compiling module Adder
 # 
 # Top level modules:
 # 	Adder
-# End time: 00:27:43 on Jun 07,2025, Elapsed time: 0:00:00
+# End time: 02:41:51 on Jun 08,2025, Elapsed time: 0:00:00
 # Errors: 0, Warnings: 0
-# vlog -sv -work work +incdir+C:/Users/josee/CE3201_PF {C:/Users/josee/CE3201_PF/Control_Unit.sv}
+# vlog -sv -work work +incdir+C:/Users/jimmy/GitHub/CE3201_PF {C:/Users/jimmy/GitHub/CE3201_PF/Control_Unit.sv}
 # Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
-# Start time: 00:27:44 on Jun 07,2025
-# vlog -reportprogress 300 -sv -work work "+incdir+C:/Users/josee/CE3201_PF" C:/Users/josee/CE3201_PF/Control_Unit.sv 
+# Start time: 02:41:51 on Jun 08,2025
+# vlog -reportprogress 300 -sv -work work "+incdir+C:/Users/jimmy/GitHub/CE3201_PF" C:/Users/jimmy/GitHub/CE3201_PF/Control_Unit.sv 
 # -- Compiling module Control_Unit
 # 
 # Top level modules:
 # 	Control_Unit
-# End time: 00:27:44 on Jun 07,2025, Elapsed time: 0:00:00
+# End time: 02:41:51 on Jun 08,2025, Elapsed time: 0:00:00
 # Errors: 0, Warnings: 0
-# 
-# vlog -sv -work work +incdir+C:/Users/josee/CE3201_PF {C:/Users/josee/CE3201_PF/CPU_tb.sv}
+# vlog -sv -work work +incdir+C:/Users/jimmy/GitHub/CE3201_PF {C:/Users/jimmy/GitHub/CE3201_PF/Decoder.sv}
 # Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
-# Start time: 00:27:44 on Jun 07,2025
-# vlog -reportprogress 300 -sv -work work "+incdir+C:/Users/josee/CE3201_PF" C:/Users/josee/CE3201_PF/CPU_tb.sv 
-# -- Compiling module CPU_tb
+# Start time: 02:41:51 on Jun 08,2025
+# vlog -reportprogress 300 -sv -work work "+incdir+C:/Users/jimmy/GitHub/CE3201_PF" C:/Users/jimmy/GitHub/CE3201_PF/Decoder.sv 
+# -- Compiling module Decoder
+# -- Compiling module PC_Logic
+# -- Compiling module Main_Decoder
+# -- Compiling module ALU_Decoder
 # 
 # Top level modules:
-# 	CPU_tb
-# End time: 00:27:44 on Jun 07,2025, Elapsed time: 0:00:00
+# 	Decoder
+# End time: 02:41:51 on Jun 08,2025, Elapsed time: 0:00:00
 # Errors: 0, Warnings: 0
 # 
-# vsim -t 1ps -L altera_ver -L lpm_ver -L sgate_ver -L altera_mf_ver -L altera_lnsim_ver -L cyclonev_ver -L cyclonev_hssi_ver -L cyclonev_pcie_hip_ver -L rtl_work -L work -voptargs="+acc"  CPU_tb
-# vsim -t 1ps -L altera_ver -L lpm_ver -L sgate_ver -L altera_mf_ver -L altera_lnsim_ver -L cyclonev_ver -L cyclonev_hssi_ver -L cyclonev_pcie_hip_ver -L rtl_work -L work -voptargs=""+acc"" CPU_tb 
-# Start time: 00:27:44 on Jun 07,2025
+# vlog -sv -work work +incdir+C:/Users/jimmy/GitHub/CE3201_PF {C:/Users/jimmy/GitHub/CE3201_PF/tb_Control_Unit.sv}
+# Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
+# Start time: 02:41:51 on Jun 08,2025
+# vlog -reportprogress 300 -sv -work work "+incdir+C:/Users/jimmy/GitHub/CE3201_PF" C:/Users/jimmy/GitHub/CE3201_PF/tb_Control_Unit.sv 
+# -- Compiling module tb_Control_Unit
+# 
+# Top level modules:
+# 	tb_Control_Unit
+# End time: 02:41:51 on Jun 08,2025, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# 
+# vsim -t 1ps -L altera_ver -L lpm_ver -L sgate_ver -L altera_mf_ver -L altera_lnsim_ver -L cyclonev_ver -L cyclonev_hssi_ver -L cyclonev_pcie_hip_ver -L rtl_work -L work -voptargs="+acc"  tb_Control_Unit
+# vsim -t 1ps -L altera_ver -L lpm_ver -L sgate_ver -L altera_mf_ver -L altera_lnsim_ver -L cyclonev_ver -L cyclonev_hssi_ver -L cyclonev_pcie_hip_ver -L rtl_work -L work -voptargs=""+acc"" tb_Control_Unit 
+# Start time: 02:41:51 on Jun 08,2025
 # Loading sv_std.std
-# Loading work.CPU_tb
-# Loading work.CPU
-# Loading work.Register
-# Loading work.Mux
-# Loading work.Register_File
-# Loading work.Extender
-# Loading work.ALU
-# Loading work.Adder
+# Loading work.tb_Control_Unit
 # Loading work.Control_Unit
+# Loading work.Decoder
 # Loading work.PC_Logic
 # Loading work.Main_Decoder
-# Loading work.Alu_Deco
+# Loading work.ALU_Decoder
+# Loading work.Register
 # Loading work.Condition_Check
-# ** Warning: (vsim-3017) C:/Users/josee/CE3201_PF/CPU.sv(140): [TFMPC] - Too few port connections. Expected 15, found 13.
-#    Time: 0 ps  Iteration: 0  Instance: /CPU_tb/dut/CU_Inst File: C:/Users/josee/CE3201_PF/Control_Unit.sv
-# ** Warning: (vsim-3722) C:/Users/josee/CE3201_PF/CPU.sv(140): [TFMPC] - Missing connection for port 'clk'.
-# ** Warning: (vsim-3722) C:/Users/josee/CE3201_PF/CPU.sv(140): [TFMPC] - Missing connection for port 'rst'.
 # 
 # add wave *
 # view structure
@@ -170,16 +144,14 @@
 # view signals
 # .main_pane.objects.interior.cs.body.tree
 # run -all
-# ==== INICIO TEST CPU ====
-# ✅ MemWrite activado.
-# ❌ Error: Dirección incorrecta. Esperado 0x00001000, recibido 00000000
-# ❌ Error: WriteData incorrecto. Esperado 4, recibido       4096
-# ==== FIN TEST ====
-# ** Note: $finish    : C:/Users/josee/CE3201_PF/CPU_tb.sv(84)
-#    Time: 30 ns  Iteration: 0  Instance: /CPU_tb
+# === TEST CONTROL UNIT (autochequeo) ===
+# Test: ADD
+# Test: STR
+# Test: LDR
+# TODAS LAS PRUEBAS PASARON
+# ** Note: $finish    : C:/Users/jimmy/GitHub/CE3201_PF/tb_Control_Unit.sv(105)
+#    Time: 40 ns  Iteration: 0  Instance: /tb_Control_Unit
 # 1
-# Break in Module CPU_tb at C:/Users/josee/CE3201_PF/CPU_tb.sv line 84
-# A time value could not be extracted from the current line
-# A time value could not be extracted from the current line
-# End time: 00:28:38 on Jun 07,2025, Elapsed time: 0:00:54
-# Errors: 0, Warnings: 3
+# Break in Module tb_Control_Unit at C:/Users/jimmy/GitHub/CE3201_PF/tb_Control_Unit.sv line 105
+# End time: 02:41:59 on Jun 08,2025, Elapsed time: 0:00:08
+# Errors: 0, Warnings: 0

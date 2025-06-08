@@ -27,35 +27,23 @@ module Control_Unit(
     logic [1:0] FlagW;
     logic [3:0] ALUfLags;
 
-    // Instancia del módulo PC_Logic
-    PC_Logic inst_PCLogic(
-        .Rd(Rd),
-        .RegW(RegW), 
-        .Branch(Branch),
-        .PCS(PCS)
-    );
-
-    // Instancia del decodificador principal
-    Main_Decoder inst_Main_Deco(
-        .Op(Op),
-        .Funct(Funct),
-        .RegW(RegW),
-        .MemW(MemW),
-        .MemtoReg(MemtoReg),
-        .ALUSrc(ALUSrc),
-        .ImmSrc(ImmSrc),
-        .RegSrc(RegSrc),
-        .ALUOP(ALUOP),
-        .Branch(Branch)
-    );
-
-    // Instancia del decodificador de la ALU
-    Alu_Deco inst_ALU_Deco(
-        .ALUOP(ALUOP),
-        .Funct(Funct[4:0]),
-        .ALUControl(ALUControl),
-        .FlagW(FlagW)
-    );
+	 
+	// Instancia del decodificador
+	Decoder decoder_inst (
+		.Op(Op),
+		.Funct(Funct),
+		.Rd(Rd),
+		
+		.FlagW(FlagW),
+		.PCS(PCS), 
+		.RegW(RegW), 
+		.MemW(MemW), 
+		.MemtoReg(MemtoReg), 
+		.ALUSrc(ALUSrc), 
+		.ImmSrc(ImmSrc), 
+		.RegSrc(RegSrc), 
+		.ALUControl(ALUControl)
+	);
 
     // Registros para guardar banderas de la ALU
     Register #(2) Register_Flag1(
