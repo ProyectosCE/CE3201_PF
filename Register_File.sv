@@ -8,23 +8,13 @@ module Register_File(
     output logic [31:0] RD1, RD2
 );
 
-    logic [31:0] registers [15:0];
+   logic[31:0]rf[14:0];
 
-    // Escritura y reset sincrónico
-    always_ff @(posedge clk) begin
-        if (rst) begin
-            for (int i = 0; i < 16; i++) begin
-                registers[i] <= 32'd0;
-            end
-        end else if (WE3 && A3 != 4'd15) begin
-            registers[A3] <= WD3;
-        end
-    end
-
-    // Lectura combinacional
-    always_comb begin
-        RD1 = (A1 == 4'd15) ? R15 : registers[A1];
-        RD2 = (A2 == 4'd15) ? R15 : registers[A2];
-    end
-
+ always_ff@(posedge clk)
+	 if(WE3)rf[A3]<=WD3;
+		 assign RD1 =(A1==4'b1111)?R15:rf[A1];
+		 assign RD2 =(A2==4'b1111)?R15:rf[A2];
+		 
+		 
 endmodule
+

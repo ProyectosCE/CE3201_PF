@@ -7,368 +7,420 @@ z2
 !i10e 25
 !i10f 100
 cModel Technology
-Z0 dC:/Users/jimmy/GitHub/CE3201_PF/simulation/modelsim
+Z0 dC:/Users/josee/CE3201_PF/simulation/modelsim
 vAdder
 Z1 DXx6 sv_std 3 std 0 22 AD7iAPLo6nTIKk<N0eo=D3
-Z2 !s110 1749372111
+Z2 !s110 1749662187
 !i10b 1
 !s100 8QVUnY5[dPPgP^cR9nYl12
-I9HVTNZUSQdBEC@Hd=_:oc1
+IWYDL]Ge[?FgELQ1K^`I7=3
 Z3 VDg1SIo80bB@j0V0VzS_@n1
 !s105 Adder_sv_unit
 S1
 R0
-Z4 w1749347748
-8C:/Users/jimmy/GitHub/CE3201_PF/Adder.sv
-FC:/Users/jimmy/GitHub/CE3201_PF/Adder.sv
+w1749100284
+8C:/Users/josee/CE3201_PF/Adder.sv
+FC:/Users/josee/CE3201_PF/Adder.sv
 L0 1
-Z5 OV;L;10.5b;63
+Z4 OV;L;10.5b;63
 r1
 !s85 0
 31
-Z6 !s108 1749372111.000000
-!s107 C:/Users/jimmy/GitHub/CE3201_PF/Adder.sv|
-!s90 -reportprogress|300|-sv|-work|work|+incdir+C:/Users/jimmy/GitHub/CE3201_PF|C:/Users/jimmy/GitHub/CE3201_PF/Adder.sv|
+Z5 !s108 1749662187.000000
+!s107 C:/Users/josee/CE3201_PF/Adder.sv|
+!s90 -reportprogress|300|-sv|-work|work|+incdir+C:/Users/josee/CE3201_PF|C:/Users/josee/CE3201_PF/Adder.sv|
 !i113 1
-Z7 o-sv -work work
-Z8 !s92 -sv -work work +incdir+C:/Users/jimmy/GitHub/CE3201_PF
-Z9 tCvgOpt 0
+Z6 o-sv -work work
+Z7 !s92 -sv -work work +incdir+C:/Users/josee/CE3201_PF
+Z8 tCvgOpt 0
 n@adder
 vALU
 R1
 R2
 !i10b 1
 !s100 67i5[Z[Zn>]B2z84VIc203
-IPfQ>@IQ7J<[4[Q5m4e]k:2
+IDQ6lG]AZFXT=joocoY0U92
 R3
 !s105 ALU_sv_unit
 S1
 R0
-R4
-8C:/Users/jimmy/GitHub/CE3201_PF/ALU.sv
-FC:/Users/jimmy/GitHub/CE3201_PF/ALU.sv
+w1749256241
+8C:/Users/josee/CE3201_PF/ALU.sv
+FC:/Users/josee/CE3201_PF/ALU.sv
 L0 1
-R5
+R4
 r1
 !s85 0
 31
-R6
-!s107 C:/Users/jimmy/GitHub/CE3201_PF/ALU.sv|
-!s90 -reportprogress|300|-sv|-work|work|+incdir+C:/Users/jimmy/GitHub/CE3201_PF|C:/Users/jimmy/GitHub/CE3201_PF/ALU.sv|
+R5
+!s107 C:/Users/josee/CE3201_PF/ALU.sv|
+!s90 -reportprogress|300|-sv|-work|work|+incdir+C:/Users/josee/CE3201_PF|C:/Users/josee/CE3201_PF/ALU.sv|
 !i113 1
+R6
 R7
 R8
-R9
 n@a@l@u
 vALU_Decoder
 R1
 R2
 !i10b 1
 !s100 >bQ881gI7d=7c2L1KD>4R3
-IM5FKT3Y_ZUMWF[`SgE2GV3
+I?g>;>ZTfn0aDJkNYz:YHh2
 R3
-Z10 !s105 Decoder_sv_unit
+Z9 !s105 Decoder_sv_unit
 S1
 R0
-Z11 w1749364381
-Z12 8C:/Users/jimmy/GitHub/CE3201_PF/Decoder.sv
-Z13 FC:/Users/jimmy/GitHub/CE3201_PF/Decoder.sv
+Z10 w1749656493
+Z11 8C:/Users/josee/CE3201_PF/Decoder.sv
+Z12 FC:/Users/josee/CE3201_PF/Decoder.sv
 L0 131
-R5
+R4
 r1
 !s85 0
 31
-R6
-Z14 !s107 C:/Users/jimmy/GitHub/CE3201_PF/Decoder.sv|
-Z15 !s90 -reportprogress|300|-sv|-work|work|+incdir+C:/Users/jimmy/GitHub/CE3201_PF|C:/Users/jimmy/GitHub/CE3201_PF/Decoder.sv|
+R5
+Z13 !s107 C:/Users/josee/CE3201_PF/Decoder.sv|
+Z14 !s90 -reportprogress|300|-sv|-work|work|+incdir+C:/Users/josee/CE3201_PF|C:/Users/josee/CE3201_PF/Decoder.sv|
 !i113 1
+R6
 R7
 R8
-R9
 n@a@l@u_@decoder
 vCondition_Check
 R1
-R2
+Z15 !s110 1749662186
 !i10b 1
 !s100 J]D3JPXNdD6ngjC7IeINL0
-IBVHXoUnAz5li<E;PRd_KF1
+Io<V7BV9c6_CfkDFX9kI241
 R3
 !s105 Condition_Check_sv_unit
 S1
 R0
-R4
-8C:/Users/jimmy/GitHub/CE3201_PF/Condition_Check.sv
-FC:/Users/jimmy/GitHub/CE3201_PF/Condition_Check.sv
+w1749256446
+8C:/Users/josee/CE3201_PF/Condition_Check.sv
+FC:/Users/josee/CE3201_PF/Condition_Check.sv
 L0 1
-R5
+R4
 r1
 !s85 0
 31
-R6
-!s107 C:/Users/jimmy/GitHub/CE3201_PF/Condition_Check.sv|
-!s90 -reportprogress|300|-sv|-work|work|+incdir+C:/Users/jimmy/GitHub/CE3201_PF|C:/Users/jimmy/GitHub/CE3201_PF/Condition_Check.sv|
+Z16 !s108 1749662186.000000
+!s107 C:/Users/josee/CE3201_PF/Condition_Check.sv|
+!s90 -reportprogress|300|-sv|-work|work|+incdir+C:/Users/josee/CE3201_PF|C:/Users/josee/CE3201_PF/Condition_Check.sv|
 !i113 1
+R6
 R7
 R8
-R9
 n@condition_@check
 vControl_Unit
 R1
 R2
 !i10b 1
 !s100 nGBie[FVC@<]Mn]Je=gYb1
-IY`V`80kNN]3WV6I=^nE811
+IKgY:Pi:Rl^ghaJ3o?[7F83
 R3
 !s105 Control_Unit_sv_unit
 S1
 R0
-w1749359713
-8C:/Users/jimmy/GitHub/CE3201_PF/Control_Unit.sv
-FC:/Users/jimmy/GitHub/CE3201_PF/Control_Unit.sv
+R10
+8C:/Users/josee/CE3201_PF/Control_Unit.sv
+FC:/Users/josee/CE3201_PF/Control_Unit.sv
 L0 1
-R5
+R4
 r1
 !s85 0
 31
-R6
-!s107 C:/Users/jimmy/GitHub/CE3201_PF/Control_Unit.sv|
-!s90 -reportprogress|300|-sv|-work|work|+incdir+C:/Users/jimmy/GitHub/CE3201_PF|C:/Users/jimmy/GitHub/CE3201_PF/Control_Unit.sv|
+R5
+!s107 C:/Users/josee/CE3201_PF/Control_Unit.sv|
+!s90 -reportprogress|300|-sv|-work|work|+incdir+C:/Users/josee/CE3201_PF|C:/Users/josee/CE3201_PF/Control_Unit.sv|
 !i113 1
+R6
 R7
 R8
-R9
 n@control_@unit
 vCPU
 R1
 R2
 !i10b 1
 !s100 2?jD[lXU:GRM3<]`l`zk^2
-I^0YP6eY2IHo?<4=dQTUd]0
+I7i0^agV;Qb5XG6haM4h@80
 R3
 !s105 CPU_sv_unit
 S1
 R0
-w1749371717
-8C:/Users/jimmy/GitHub/CE3201_PF/CPU.sv
-FC:/Users/jimmy/GitHub/CE3201_PF/CPU.sv
+R10
+8C:/Users/josee/CE3201_PF/CPU.sv
+FC:/Users/josee/CE3201_PF/CPU.sv
 L0 1
-R5
+R4
 r1
 !s85 0
 31
-R6
-!s107 C:/Users/jimmy/GitHub/CE3201_PF/CPU.sv|
-!s90 -reportprogress|300|-sv|-work|work|+incdir+C:/Users/jimmy/GitHub/CE3201_PF|C:/Users/jimmy/GitHub/CE3201_PF/CPU.sv|
+R5
+!s107 C:/Users/josee/CE3201_PF/CPU.sv|
+!s90 -reportprogress|300|-sv|-work|work|+incdir+C:/Users/josee/CE3201_PF|C:/Users/josee/CE3201_PF/CPU.sv|
 !i113 1
+R6
 R7
 R8
-R9
 n@c@p@u
+vData_Memory
+R1
+R15
+!i10b 1
+!s100 O5i?dJ3VM:_bi7IkzARJI0
+IQm6O?eW0NL<8dBPOT>DlP1
+R3
+!s105 Data_Memory_sv_unit
+S1
+R0
+w1749660069
+8C:/Users/josee/CE3201_PF/Data_Memory.sv
+FC:/Users/josee/CE3201_PF/Data_Memory.sv
+L0 1
+R4
+r1
+!s85 0
+31
+R16
+!s107 C:/Users/josee/CE3201_PF/Data_Memory.sv|
+!s90 -reportprogress|300|-sv|-work|work|+incdir+C:/Users/josee/CE3201_PF|C:/Users/josee/CE3201_PF/Data_Memory.sv|
+!i113 1
+R6
+R7
+R8
+n@data_@memory
 vDecoder
 R1
 R2
 !i10b 1
 !s100 lRV?=?m4@7VI`5XB7ImS:3
-IIzTK8JUTlEG5>0K?fd2DA3
+ImBHOQhT5ZKF?YiMU7ML4<2
 R3
-R10
+R9
 S1
 R0
+R10
 R11
 R12
-R13
 L0 2
-R5
+R4
 r1
 !s85 0
 31
-R6
+R5
+R13
 R14
-R15
 !i113 1
+R6
 R7
 R8
-R9
 n@decoder
 vExtender
 R1
-R2
+R15
 !i10b 1
 !s100 HP4djRhS1Vg5o:fjRO1QD0
-IS]RD67AOVNhl;Kg=2Gz9W3
+IFTB^iU1fl]dX2c:ma6n463
 R3
 !s105 Extender_sv_unit
 S1
 R0
-R4
-8C:/Users/jimmy/GitHub/CE3201_PF/Extender.sv
-FC:/Users/jimmy/GitHub/CE3201_PF/Extender.sv
+w1749253660
+8C:/Users/josee/CE3201_PF/Extender.sv
+FC:/Users/josee/CE3201_PF/Extender.sv
 L0 1
-R5
+R4
 r1
 !s85 0
 31
-R6
-!s107 C:/Users/jimmy/GitHub/CE3201_PF/Extender.sv|
-!s90 -reportprogress|300|-sv|-work|work|+incdir+C:/Users/jimmy/GitHub/CE3201_PF|C:/Users/jimmy/GitHub/CE3201_PF/Extender.sv|
+R16
+!s107 C:/Users/josee/CE3201_PF/Extender.sv|
+!s90 -reportprogress|300|-sv|-work|work|+incdir+C:/Users/josee/CE3201_PF|C:/Users/josee/CE3201_PF/Extender.sv|
 !i113 1
+R6
 R7
 R8
-R9
 n@extender
+vGambling_Tec
+R1
+R2
+!i10b 1
+!s100 6X55RhoK?H36T:TIFSIb11
+IJVJO>8`[gEX@TkV9eHPW20
+R3
+!s105 Gambling_Tec_sv_unit
+S1
+R0
+w1749661644
+8C:/Users/josee/CE3201_PF/Gambling_Tec.sv
+FC:/Users/josee/CE3201_PF/Gambling_Tec.sv
+L0 1
+R4
+r1
+!s85 0
+31
+R5
+!s107 C:/Users/josee/CE3201_PF/Gambling_Tec.sv|
+!s90 -reportprogress|300|-sv|-work|work|+incdir+C:/Users/josee/CE3201_PF|C:/Users/josee/CE3201_PF/Gambling_Tec.sv|
+!i113 1
+R6
+R7
+R8
+n@gambling_@tec
 vMain_Decoder
 R1
 R2
 !i10b 1
 !s100 Qn8o9m@fTUFGmV:@mISfT3
-I=Ro8PJSR=HP]XQ^U8^UO`0
+IPR85`RQ6iK:]WZceiNL4z0
 R3
-R10
+R9
 S1
 R0
+R10
 R11
 R12
-R13
 L0 57
-R5
+R4
 r1
 !s85 0
 31
-R6
+R5
+R13
 R14
-R15
 !i113 1
+R6
 R7
 R8
-R9
 n@main_@decoder
 vMux
 R1
-R2
+R15
 !i10b 1
 !s100 g9?:56LQdSLdjim_9mO7U3
-I:F;7ImodCLl:Z3FPokhSo2
+IXR55mBjSzN@EeVJ>hUhcK2
 R3
 !s105 Mux_sv_unit
 S1
 R0
-w1749365226
-8C:/Users/jimmy/GitHub/CE3201_PF/Mux.sv
-FC:/Users/jimmy/GitHub/CE3201_PF/Mux.sv
+R10
+8C:/Users/josee/CE3201_PF/Mux.sv
+FC:/Users/josee/CE3201_PF/Mux.sv
 L0 1
-R5
+R4
 r1
 !s85 0
 31
-R6
-!s107 C:/Users/jimmy/GitHub/CE3201_PF/Mux.sv|
-!s90 -reportprogress|300|-sv|-work|work|+incdir+C:/Users/jimmy/GitHub/CE3201_PF|C:/Users/jimmy/GitHub/CE3201_PF/Mux.sv|
+R16
+!s107 C:/Users/josee/CE3201_PF/Mux.sv|
+!s90 -reportprogress|300|-sv|-work|work|+incdir+C:/Users/josee/CE3201_PF|C:/Users/josee/CE3201_PF/Mux.sv|
 !i113 1
+R6
 R7
 R8
-R9
 n@mux
 vPC_Logic
 R1
 R2
 !i10b 1
 !s100 Eekl4Aj[Y8E:b<5WPS7e42
-I]bELKJzUS6@XYh;gKPWME2
+IfUPm1dD^8PAj5F9QK]iNc0
 R3
-R10
+R9
 S1
 R0
+R10
 R11
 R12
-R13
 L0 46
-R5
+R4
 r1
 !s85 0
 31
-R6
+R5
+R13
 R14
-R15
 !i113 1
+R6
 R7
 R8
-R9
 n@p@c_@logic
 vRegister
 R1
-R2
+R15
 !i10b 1
 !s100 PhgM5E5?7YR[FdD_>n1zN1
-IPaJOa2R5?0kT`S<BZ6co@1
+IMScI=_e=f?NYI5`R@PEM70
 R3
 !s105 Register_sv_unit
 S1
 R0
-R4
-8C:/Users/jimmy/GitHub/CE3201_PF/Register.sv
-FC:/Users/jimmy/GitHub/CE3201_PF/Register.sv
+w1749256242
+8C:/Users/josee/CE3201_PF/Register.sv
+FC:/Users/josee/CE3201_PF/Register.sv
 L0 1
-R5
+R4
 r1
 !s85 0
 31
-R6
-!s107 C:/Users/jimmy/GitHub/CE3201_PF/Register.sv|
-!s90 -reportprogress|300|-sv|-work|work|+incdir+C:/Users/jimmy/GitHub/CE3201_PF|C:/Users/jimmy/GitHub/CE3201_PF/Register.sv|
+R16
+!s107 C:/Users/josee/CE3201_PF/Register.sv|
+!s90 -reportprogress|300|-sv|-work|work|+incdir+C:/Users/josee/CE3201_PF|C:/Users/josee/CE3201_PF/Register.sv|
 !i113 1
+R6
 R7
 R8
-R9
 n@register
 vRegister_File
 R1
-R2
+R15
 !i10b 1
-!s100 ;8Ml5gAGM;6GjckQ7VMiN0
-Ia2hdh><^Ng=A=D6KA^jIF2
+!s100 ih2`Z?DO_[hb19dGE9fa<2
+IK_h@_fnnYF[;UlLg=]F[30
 R3
 !s105 Register_File_sv_unit
 S1
 R0
-R4
-8C:/Users/jimmy/GitHub/CE3201_PF/Register_File.sv
-FC:/Users/jimmy/GitHub/CE3201_PF/Register_File.sv
+w1749657618
+8C:/Users/josee/CE3201_PF/Register_File.sv
+FC:/Users/josee/CE3201_PF/Register_File.sv
 L0 1
-R5
+R4
 r1
 !s85 0
 31
-R6
-!s107 C:/Users/jimmy/GitHub/CE3201_PF/Register_File.sv|
-!s90 -reportprogress|300|-sv|-work|work|+incdir+C:/Users/jimmy/GitHub/CE3201_PF|C:/Users/jimmy/GitHub/CE3201_PF/Register_File.sv|
+R16
+!s107 C:/Users/josee/CE3201_PF/Register_File.sv|
+!s90 -reportprogress|300|-sv|-work|work|+incdir+C:/Users/josee/CE3201_PF|C:/Users/josee/CE3201_PF/Register_File.sv|
 !i113 1
+R6
 R7
 R8
-R9
 n@register_@file
-vtb_Control_Unit
+vtb_Gambling_Tec
 R1
 R2
 !i10b 1
-!s100 i@7WJ>ViQ0]4NgGC;74b41
-Ilh6:DkjBR03h3o^LnG`mB2
+!s100 lGm1]4i:H[zGad0Hbfk]N2
+I1X_98fN2oeU?CnJi0FGdf1
 R3
-!s105 tb_Control_Unit_sv_unit
+!s105 tb_Gambling_Tec_sv_unit
 S1
 R0
-w1749361119
-8C:/Users/jimmy/GitHub/CE3201_PF/tb_Control_Unit.sv
-FC:/Users/jimmy/GitHub/CE3201_PF/tb_Control_Unit.sv
+w1749661876
+8C:/Users/josee/CE3201_PF/tb_Gambling_Tec.sv
+FC:/Users/josee/CE3201_PF/tb_Gambling_Tec.sv
 L0 3
-R5
+R4
 r1
 !s85 0
 31
-R6
-!s107 C:/Users/jimmy/GitHub/CE3201_PF/tb_Control_Unit.sv|
-!s90 -reportprogress|300|-sv|-work|work|+incdir+C:/Users/jimmy/GitHub/CE3201_PF|C:/Users/jimmy/GitHub/CE3201_PF/tb_Control_Unit.sv|
+R5
+!s107 C:/Users/josee/CE3201_PF/tb_Gambling_Tec.sv|
+!s90 -reportprogress|300|-sv|-work|work|+incdir+C:/Users/josee/CE3201_PF|C:/Users/josee/CE3201_PF/tb_Gambling_Tec.sv|
 !i113 1
+R6
 R7
 R8
-R9
-ntb_@control_@unit
+ntb_@gambling_@tec

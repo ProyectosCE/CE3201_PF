@@ -1,21 +1,24 @@
+module Data_Memory(
 
-module Data_Memory #(parameter N = 4, M=32)(
-input logic [N-1:0] A1,
-input logic [M-1:0] WD,
-input logic clk, WE,
-output logic [M-1:0] RD
-
-);
-
-logic [M-1:0] mem [2**N-1:0];
-
-always_ff @(posedge clk) begin
-    if (WE) begin
-        mem[A1] <= WD;
-    end
-
-end
-
-assign RD = mem[A1];
-
-endmodule 
+	input logic clk,we,
+	input logic [31:0] a,wd,
+	
+	output logic [31:0] rd
+	
+	
+	);
+	
+	
+ logic[31:0]RAM[63:0];
+ 
+ assign rd =RAM[a[31:2]];
+ 
+ 
+ always_ff@(posedge clk)
+ 
+ if(we) 
+   RAM[a[31:2]]<=wd;
+ 
+ 
+ endmodule
+ 
