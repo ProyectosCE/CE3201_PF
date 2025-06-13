@@ -1,9 +1,10 @@
 module Gambling_Tec(
-	input [31:0] Instruction
+	input logic [31:0] Instruction,
+	input logic clk, rst
 );
 
 
-logic clk, rst;
+
 
 logic [31:0] ReadData;
 
@@ -16,7 +17,7 @@ logic [31:0] Result;
 
 
 
-CPU processs(
+CPU process(
 	.clk(clk), 
 	.rst(rst),
 	.Instr(Instruction),
@@ -29,13 +30,13 @@ CPU processs(
 
 );
 
-Data_Memory(
+Data_Memory data_mem(
 
 	.clk(clk),
     .we(MemWrite),
 	.a(ALUResult),
     .wd(WriteData),
-	.rd(readData)
+	.rd(ReadData)
 	);
 
 

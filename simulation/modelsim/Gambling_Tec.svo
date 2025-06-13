@@ -16,7 +16,7 @@
 // PROGRAM "Quartus Prime"
 // VERSION "Version 18.1.0 Build 625 09/12/2018 SJ Lite Edition"
 
-// DATE "06/11/2025 11:15:12"
+// DATE "06/13/2025 11:40:26"
 
 // 
 // Device: Altera 5CSXFC6D6F31C6 Package FBGA896
@@ -29,42 +29,48 @@
 `timescale 1 ps/ 1 ps
 
 module Gambling_Tec (
-	Instruction);
-input 	[31:0] Instruction;
+	Instruction,
+	clk,
+	rst);
+input 	logic [31:0] Instruction ;
+input 	logic clk ;
+input 	logic rst ;
 
 // Design Ports Information
 // Instruction[0]	=>  Location: PIN_E1,	 I/O Standard: 2.5 V,	 Current Strength: Default
-// Instruction[1]	=>  Location: PIN_G8,	 I/O Standard: 2.5 V,	 Current Strength: Default
-// Instruction[2]	=>  Location: PIN_AK19,	 I/O Standard: 2.5 V,	 Current Strength: Default
+// Instruction[1]	=>  Location: PIN_E13,	 I/O Standard: 2.5 V,	 Current Strength: Default
+// Instruction[2]	=>  Location: PIN_AF19,	 I/O Standard: 2.5 V,	 Current Strength: Default
 // Instruction[3]	=>  Location: PIN_AB17,	 I/O Standard: 2.5 V,	 Current Strength: Default
-// Instruction[4]	=>  Location: PIN_AD10,	 I/O Standard: 2.5 V,	 Current Strength: Default
-// Instruction[5]	=>  Location: PIN_AF18,	 I/O Standard: 2.5 V,	 Current Strength: Default
-// Instruction[6]	=>  Location: PIN_AF28,	 I/O Standard: 2.5 V,	 Current Strength: Default
-// Instruction[7]	=>  Location: PIN_AF23,	 I/O Standard: 2.5 V,	 Current Strength: Default
+// Instruction[4]	=>  Location: PIN_AG8,	 I/O Standard: 2.5 V,	 Current Strength: Default
+// Instruction[5]	=>  Location: PIN_AD10,	 I/O Standard: 2.5 V,	 Current Strength: Default
+// Instruction[6]	=>  Location: PIN_D7,	 I/O Standard: 2.5 V,	 Current Strength: Default
+// Instruction[7]	=>  Location: PIN_H13,	 I/O Standard: 2.5 V,	 Current Strength: Default
 // Instruction[8]	=>  Location: PIN_AE26,	 I/O Standard: 2.5 V,	 Current Strength: Default
-// Instruction[9]	=>  Location: PIN_AC25,	 I/O Standard: 2.5 V,	 Current Strength: Default
-// Instruction[10]	=>  Location: PIN_AF5,	 I/O Standard: 2.5 V,	 Current Strength: Default
-// Instruction[11]	=>  Location: PIN_AC18,	 I/O Standard: 2.5 V,	 Current Strength: Default
-// Instruction[12]	=>  Location: PIN_K7,	 I/O Standard: 2.5 V,	 Current Strength: Default
-// Instruction[13]	=>  Location: PIN_AJ7,	 I/O Standard: 2.5 V,	 Current Strength: Default
-// Instruction[14]	=>  Location: PIN_AE16,	 I/O Standard: 2.5 V,	 Current Strength: Default
-// Instruction[15]	=>  Location: PIN_B1,	 I/O Standard: 2.5 V,	 Current Strength: Default
-// Instruction[16]	=>  Location: PIN_AF15,	 I/O Standard: 2.5 V,	 Current Strength: Default
-// Instruction[17]	=>  Location: PIN_AJ24,	 I/O Standard: 2.5 V,	 Current Strength: Default
-// Instruction[18]	=>  Location: PIN_AH22,	 I/O Standard: 2.5 V,	 Current Strength: Default
-// Instruction[19]	=>  Location: PIN_AF14,	 I/O Standard: 2.5 V,	 Current Strength: Default
-// Instruction[20]	=>  Location: PIN_B13,	 I/O Standard: 2.5 V,	 Current Strength: Default
-// Instruction[21]	=>  Location: PIN_A5,	 I/O Standard: 2.5 V,	 Current Strength: Default
-// Instruction[22]	=>  Location: PIN_AB25,	 I/O Standard: 2.5 V,	 Current Strength: Default
-// Instruction[23]	=>  Location: PIN_AG21,	 I/O Standard: 2.5 V,	 Current Strength: Default
-// Instruction[24]	=>  Location: PIN_AH25,	 I/O Standard: 2.5 V,	 Current Strength: Default
-// Instruction[25]	=>  Location: PIN_AH18,	 I/O Standard: 2.5 V,	 Current Strength: Default
-// Instruction[26]	=>  Location: PIN_AA20,	 I/O Standard: 2.5 V,	 Current Strength: Default
-// Instruction[27]	=>  Location: PIN_J14,	 I/O Standard: 2.5 V,	 Current Strength: Default
-// Instruction[28]	=>  Location: PIN_C7,	 I/O Standard: 2.5 V,	 Current Strength: Default
-// Instruction[29]	=>  Location: PIN_AC22,	 I/O Standard: 2.5 V,	 Current Strength: Default
-// Instruction[30]	=>  Location: PIN_J12,	 I/O Standard: 2.5 V,	 Current Strength: Default
-// Instruction[31]	=>  Location: PIN_AB27,	 I/O Standard: 2.5 V,	 Current Strength: Default
+// Instruction[9]	=>  Location: PIN_AJ11,	 I/O Standard: 2.5 V,	 Current Strength: Default
+// Instruction[10]	=>  Location: PIN_AC25,	 I/O Standard: 2.5 V,	 Current Strength: Default
+// Instruction[11]	=>  Location: PIN_AF5,	 I/O Standard: 2.5 V,	 Current Strength: Default
+// Instruction[12]	=>  Location: PIN_AH4,	 I/O Standard: 2.5 V,	 Current Strength: Default
+// Instruction[13]	=>  Location: PIN_C3,	 I/O Standard: 2.5 V,	 Current Strength: Default
+// Instruction[14]	=>  Location: PIN_B3,	 I/O Standard: 2.5 V,	 Current Strength: Default
+// Instruction[15]	=>  Location: PIN_AE16,	 I/O Standard: 2.5 V,	 Current Strength: Default
+// Instruction[16]	=>  Location: PIN_B1,	 I/O Standard: 2.5 V,	 Current Strength: Default
+// Instruction[17]	=>  Location: PIN_AF15,	 I/O Standard: 2.5 V,	 Current Strength: Default
+// Instruction[18]	=>  Location: PIN_AG20,	 I/O Standard: 2.5 V,	 Current Strength: Default
+// Instruction[19]	=>  Location: PIN_A9,	 I/O Standard: 2.5 V,	 Current Strength: Default
+// Instruction[20]	=>  Location: PIN_AJ24,	 I/O Standard: 2.5 V,	 Current Strength: Default
+// Instruction[21]	=>  Location: PIN_AF14,	 I/O Standard: 2.5 V,	 Current Strength: Default
+// Instruction[22]	=>  Location: PIN_A3,	 I/O Standard: 2.5 V,	 Current Strength: Default
+// Instruction[23]	=>  Location: PIN_AB25,	 I/O Standard: 2.5 V,	 Current Strength: Default
+// Instruction[24]	=>  Location: PIN_AJ21,	 I/O Standard: 2.5 V,	 Current Strength: Default
+// Instruction[25]	=>  Location: PIN_AG7,	 I/O Standard: 2.5 V,	 Current Strength: Default
+// Instruction[26]	=>  Location: PIN_AG25,	 I/O Standard: 2.5 V,	 Current Strength: Default
+// Instruction[27]	=>  Location: PIN_D10,	 I/O Standard: 2.5 V,	 Current Strength: Default
+// Instruction[28]	=>  Location: PIN_Y24,	 I/O Standard: 2.5 V,	 Current Strength: Default
+// Instruction[29]	=>  Location: PIN_J14,	 I/O Standard: 2.5 V,	 Current Strength: Default
+// Instruction[30]	=>  Location: PIN_C7,	 I/O Standard: 2.5 V,	 Current Strength: Default
+// Instruction[31]	=>  Location: PIN_AF8,	 I/O Standard: 2.5 V,	 Current Strength: Default
+// clk	=>  Location: PIN_J12,	 I/O Standard: 2.5 V,	 Current Strength: Default
+// rst	=>  Location: PIN_AB27,	 I/O Standard: 2.5 V,	 Current Strength: Default
 
 
 wire gnd;
@@ -110,6 +116,8 @@ wire \Instruction[28]~input_o ;
 wire \Instruction[29]~input_o ;
 wire \Instruction[30]~input_o ;
 wire \Instruction[31]~input_o ;
+wire \clk~input_o ;
+wire \rst~input_o ;
 wire \~QUARTUS_CREATED_GND~I_combout ;
 
 
@@ -124,7 +132,7 @@ defparam \Instruction[0]~input .bus_hold = "false";
 defparam \Instruction[0]~input .simulate_z_as = "z";
 // synopsys translate_on
 
-// Location: IOIBUF_X24_Y81_N18
+// Location: IOIBUF_X26_Y81_N58
 cyclonev_io_ibuf \Instruction[1]~input (
 	.i(Instruction[1]),
 	.ibar(gnd),
@@ -135,7 +143,7 @@ defparam \Instruction[1]~input .bus_hold = "false";
 defparam \Instruction[1]~input .simulate_z_as = "z";
 // synopsys translate_on
 
-// Location: IOIBUF_X60_Y0_N52
+// Location: IOIBUF_X62_Y0_N1
 cyclonev_io_ibuf \Instruction[2]~input (
 	.i(Instruction[2]),
 	.ibar(gnd),
@@ -157,7 +165,7 @@ defparam \Instruction[3]~input .bus_hold = "false";
 defparam \Instruction[3]~input .simulate_z_as = "z";
 // synopsys translate_on
 
-// Location: IOIBUF_X4_Y0_N18
+// Location: IOIBUF_X8_Y0_N52
 cyclonev_io_ibuf \Instruction[4]~input (
 	.i(Instruction[4]),
 	.ibar(gnd),
@@ -168,7 +176,7 @@ defparam \Instruction[4]~input .bus_hold = "false";
 defparam \Instruction[4]~input .simulate_z_as = "z";
 // synopsys translate_on
 
-// Location: IOIBUF_X50_Y0_N58
+// Location: IOIBUF_X4_Y0_N18
 cyclonev_io_ibuf \Instruction[5]~input (
 	.i(Instruction[5]),
 	.ibar(gnd),
@@ -179,7 +187,7 @@ defparam \Instruction[5]~input .bus_hold = "false";
 defparam \Instruction[5]~input .simulate_z_as = "z";
 // synopsys translate_on
 
-// Location: IOIBUF_X89_Y13_N55
+// Location: IOIBUF_X18_Y81_N92
 cyclonev_io_ibuf \Instruction[6]~input (
 	.i(Instruction[6]),
 	.ibar(gnd),
@@ -190,7 +198,7 @@ defparam \Instruction[6]~input .bus_hold = "false";
 defparam \Instruction[6]~input .simulate_z_as = "z";
 // synopsys translate_on
 
-// Location: IOIBUF_X74_Y0_N41
+// Location: IOIBUF_X20_Y81_N1
 cyclonev_io_ibuf \Instruction[7]~input (
 	.i(Instruction[7]),
 	.ibar(gnd),
@@ -212,7 +220,7 @@ defparam \Instruction[8]~input .bus_hold = "false";
 defparam \Instruction[8]~input .simulate_z_as = "z";
 // synopsys translate_on
 
-// Location: IOIBUF_X89_Y4_N61
+// Location: IOIBUF_X34_Y0_N41
 cyclonev_io_ibuf \Instruction[9]~input (
 	.i(Instruction[9]),
 	.ibar(gnd),
@@ -223,7 +231,7 @@ defparam \Instruction[9]~input .bus_hold = "false";
 defparam \Instruction[9]~input .simulate_z_as = "z";
 // synopsys translate_on
 
-// Location: IOIBUF_X8_Y0_N18
+// Location: IOIBUF_X89_Y4_N61
 cyclonev_io_ibuf \Instruction[10]~input (
 	.i(Instruction[10]),
 	.ibar(gnd),
@@ -234,7 +242,7 @@ defparam \Instruction[10]~input .bus_hold = "false";
 defparam \Instruction[10]~input .simulate_z_as = "z";
 // synopsys translate_on
 
-// Location: IOIBUF_X64_Y0_N1
+// Location: IOIBUF_X8_Y0_N18
 cyclonev_io_ibuf \Instruction[11]~input (
 	.i(Instruction[11]),
 	.ibar(gnd),
@@ -245,7 +253,7 @@ defparam \Instruction[11]~input .bus_hold = "false";
 defparam \Instruction[11]~input .simulate_z_as = "z";
 // synopsys translate_on
 
-// Location: IOIBUF_X8_Y81_N1
+// Location: IOIBUF_X6_Y0_N52
 cyclonev_io_ibuf \Instruction[12]~input (
 	.i(Instruction[12]),
 	.ibar(gnd),
@@ -256,7 +264,7 @@ defparam \Instruction[12]~input .bus_hold = "false";
 defparam \Instruction[12]~input .simulate_z_as = "z";
 // synopsys translate_on
 
-// Location: IOIBUF_X26_Y0_N92
+// Location: IOIBUF_X14_Y81_N35
 cyclonev_io_ibuf \Instruction[13]~input (
 	.i(Instruction[13]),
 	.ibar(gnd),
@@ -267,7 +275,7 @@ defparam \Instruction[13]~input .bus_hold = "false";
 defparam \Instruction[13]~input .simulate_z_as = "z";
 // synopsys translate_on
 
-// Location: IOIBUF_X52_Y0_N35
+// Location: IOIBUF_X14_Y81_N52
 cyclonev_io_ibuf \Instruction[14]~input (
 	.i(Instruction[14]),
 	.ibar(gnd),
@@ -278,7 +286,7 @@ defparam \Instruction[14]~input .bus_hold = "false";
 defparam \Instruction[14]~input .simulate_z_as = "z";
 // synopsys translate_on
 
-// Location: IOIBUF_X16_Y81_N52
+// Location: IOIBUF_X52_Y0_N35
 cyclonev_io_ibuf \Instruction[15]~input (
 	.i(Instruction[15]),
 	.ibar(gnd),
@@ -289,7 +297,7 @@ defparam \Instruction[15]~input .bus_hold = "false";
 defparam \Instruction[15]~input .simulate_z_as = "z";
 // synopsys translate_on
 
-// Location: IOIBUF_X32_Y0_N18
+// Location: IOIBUF_X16_Y81_N52
 cyclonev_io_ibuf \Instruction[16]~input (
 	.i(Instruction[16]),
 	.ibar(gnd),
@@ -300,7 +308,7 @@ defparam \Instruction[16]~input .bus_hold = "false";
 defparam \Instruction[16]~input .simulate_z_as = "z";
 // synopsys translate_on
 
-// Location: IOIBUF_X74_Y0_N75
+// Location: IOIBUF_X32_Y0_N18
 cyclonev_io_ibuf \Instruction[17]~input (
 	.i(Instruction[17]),
 	.ibar(gnd),
@@ -311,7 +319,7 @@ defparam \Instruction[17]~input .bus_hold = "false";
 defparam \Instruction[17]~input .simulate_z_as = "z";
 // synopsys translate_on
 
-// Location: IOIBUF_X66_Y0_N92
+// Location: IOIBUF_X62_Y0_N18
 cyclonev_io_ibuf \Instruction[18]~input (
 	.i(Instruction[18]),
 	.ibar(gnd),
@@ -322,7 +330,7 @@ defparam \Instruction[18]~input .bus_hold = "false";
 defparam \Instruction[18]~input .simulate_z_as = "z";
 // synopsys translate_on
 
-// Location: IOIBUF_X32_Y0_N1
+// Location: IOIBUF_X34_Y81_N75
 cyclonev_io_ibuf \Instruction[19]~input (
 	.i(Instruction[19]),
 	.ibar(gnd),
@@ -333,7 +341,7 @@ defparam \Instruction[19]~input .bus_hold = "false";
 defparam \Instruction[19]~input .simulate_z_as = "z";
 // synopsys translate_on
 
-// Location: IOIBUF_X40_Y81_N35
+// Location: IOIBUF_X74_Y0_N75
 cyclonev_io_ibuf \Instruction[20]~input (
 	.i(Instruction[20]),
 	.ibar(gnd),
@@ -344,7 +352,7 @@ defparam \Instruction[20]~input .bus_hold = "false";
 defparam \Instruction[20]~input .simulate_z_as = "z";
 // synopsys translate_on
 
-// Location: IOIBUF_X26_Y81_N92
+// Location: IOIBUF_X32_Y0_N1
 cyclonev_io_ibuf \Instruction[21]~input (
 	.i(Instruction[21]),
 	.ibar(gnd),
@@ -355,7 +363,7 @@ defparam \Instruction[21]~input .bus_hold = "false";
 defparam \Instruction[21]~input .simulate_z_as = "z";
 // synopsys translate_on
 
-// Location: IOIBUF_X89_Y11_N61
+// Location: IOIBUF_X24_Y81_N52
 cyclonev_io_ibuf \Instruction[22]~input (
 	.i(Instruction[22]),
 	.ibar(gnd),
@@ -366,7 +374,7 @@ defparam \Instruction[22]~input .bus_hold = "false";
 defparam \Instruction[22]~input .simulate_z_as = "z";
 // synopsys translate_on
 
-// Location: IOIBUF_X54_Y0_N1
+// Location: IOIBUF_X89_Y11_N61
 cyclonev_io_ibuf \Instruction[23]~input (
 	.i(Instruction[23]),
 	.ibar(gnd),
@@ -377,7 +385,7 @@ defparam \Instruction[23]~input .bus_hold = "false";
 defparam \Instruction[23]~input .simulate_z_as = "z";
 // synopsys translate_on
 
-// Location: IOIBUF_X78_Y0_N52
+// Location: IOIBUF_X62_Y0_N52
 cyclonev_io_ibuf \Instruction[24]~input (
 	.i(Instruction[24]),
 	.ibar(gnd),
@@ -388,7 +396,7 @@ defparam \Instruction[24]~input .bus_hold = "false";
 defparam \Instruction[24]~input .simulate_z_as = "z";
 // synopsys translate_on
 
-// Location: IOIBUF_X56_Y0_N52
+// Location: IOIBUF_X10_Y0_N92
 cyclonev_io_ibuf \Instruction[25]~input (
 	.i(Instruction[25]),
 	.ibar(gnd),
@@ -399,7 +407,7 @@ defparam \Instruction[25]~input .bus_hold = "false";
 defparam \Instruction[25]~input .simulate_z_as = "z";
 // synopsys translate_on
 
-// Location: IOIBUF_X84_Y0_N18
+// Location: IOIBUF_X78_Y0_N35
 cyclonev_io_ibuf \Instruction[26]~input (
 	.i(Instruction[26]),
 	.ibar(gnd),
@@ -410,7 +418,7 @@ defparam \Instruction[26]~input .bus_hold = "false";
 defparam \Instruction[26]~input .simulate_z_as = "z";
 // synopsys translate_on
 
-// Location: IOIBUF_X32_Y81_N18
+// Location: IOIBUF_X34_Y81_N58
 cyclonev_io_ibuf \Instruction[27]~input (
 	.i(Instruction[27]),
 	.ibar(gnd),
@@ -421,7 +429,7 @@ defparam \Instruction[27]~input .bus_hold = "false";
 defparam \Instruction[27]~input .simulate_z_as = "z";
 // synopsys translate_on
 
-// Location: IOIBUF_X32_Y81_N35
+// Location: IOIBUF_X89_Y13_N21
 cyclonev_io_ibuf \Instruction[28]~input (
 	.i(Instruction[28]),
 	.ibar(gnd),
@@ -432,7 +440,7 @@ defparam \Instruction[28]~input .bus_hold = "false";
 defparam \Instruction[28]~input .simulate_z_as = "z";
 // synopsys translate_on
 
-// Location: IOIBUF_X86_Y0_N1
+// Location: IOIBUF_X32_Y81_N18
 cyclonev_io_ibuf \Instruction[29]~input (
 	.i(Instruction[29]),
 	.ibar(gnd),
@@ -443,7 +451,7 @@ defparam \Instruction[29]~input .bus_hold = "false";
 defparam \Instruction[29]~input .simulate_z_as = "z";
 // synopsys translate_on
 
-// Location: IOIBUF_X12_Y81_N18
+// Location: IOIBUF_X32_Y81_N35
 cyclonev_io_ibuf \Instruction[30]~input (
 	.i(Instruction[30]),
 	.ibar(gnd),
@@ -454,7 +462,7 @@ defparam \Instruction[30]~input .bus_hold = "false";
 defparam \Instruction[30]~input .simulate_z_as = "z";
 // synopsys translate_on
 
-// Location: IOIBUF_X89_Y23_N21
+// Location: IOIBUF_X10_Y0_N75
 cyclonev_io_ibuf \Instruction[31]~input (
 	.i(Instruction[31]),
 	.ibar(gnd),
@@ -463,6 +471,28 @@ cyclonev_io_ibuf \Instruction[31]~input (
 // synopsys translate_off
 defparam \Instruction[31]~input .bus_hold = "false";
 defparam \Instruction[31]~input .simulate_z_as = "z";
+// synopsys translate_on
+
+// Location: IOIBUF_X12_Y81_N18
+cyclonev_io_ibuf \clk~input (
+	.i(clk),
+	.ibar(gnd),
+	.dynamicterminationcontrol(gnd),
+	.o(\clk~input_o ));
+// synopsys translate_off
+defparam \clk~input .bus_hold = "false";
+defparam \clk~input .simulate_z_as = "z";
+// synopsys translate_on
+
+// Location: IOIBUF_X89_Y23_N21
+cyclonev_io_ibuf \rst~input (
+	.i(rst),
+	.ibar(gnd),
+	.dynamicterminationcontrol(gnd),
+	.o(\rst~input_o ));
+// synopsys translate_off
+defparam \rst~input .bus_hold = "false";
+defparam \rst~input .simulate_z_as = "z";
 // synopsys translate_on
 
 // Location: LABCELL_X35_Y11_N3

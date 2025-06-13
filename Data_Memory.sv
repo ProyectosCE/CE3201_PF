@@ -5,7 +5,7 @@ module Data_Memory(
 	
 	output logic [31:0] rd
 	
-	
+
 	);
 	
 	

@@ -31,9 +31,11 @@ Instruction[28] => Instruction[28].IN1
 Instruction[29] => Instruction[29].IN1
 Instruction[30] => Instruction[30].IN1
 Instruction[31] => Instruction[31].IN1
+clk => clk.IN2
+rst => rst.IN1
 
 
-|Gambling_Tec|CPU:processs
+|Gambling_Tec|CPU:process
 clk => clk.IN3
 rst => rst.IN3
 Instr[0] => Instr[0].IN2
@@ -231,7 +233,7 @@ Result[30] <= Result[30].DB_MAX_OUTPUT_PORT_TYPE
 Result[31] <= Result[31].DB_MAX_OUTPUT_PORT_TYPE
 
 
-|Gambling_Tec|CPU:processs|Mux:next_PC_inst
+|Gambling_Tec|CPU:process|Mux:next_PC_inst
 A[0] => C.DATAB
 A[1] => C.DATAB
 A[2] => C.DATAB
@@ -362,7 +364,7 @@ C[30] <= C.DB_MAX_OUTPUT_PORT_TYPE
 C[31] <= C.DB_MAX_OUTPUT_PORT_TYPE
 
 
-|Gambling_Tec|CPU:processs|Register:PC_Register
+|Gambling_Tec|CPU:process|Register:PC_Register
 clk => Q[0]~reg0.CLK
 clk => Q[1]~reg0.CLK
 clk => Q[2]~reg0.CLK
@@ -525,7 +527,7 @@ Q[30] <= Q[30]~reg0.DB_MAX_OUTPUT_PORT_TYPE
 Q[31] <= Q[31]~reg0.DB_MAX_OUTPUT_PORT_TYPE
 
 
-|Gambling_Tec|CPU:processs|Mux:RA1_inst
+|Gambling_Tec|CPU:process|Mux:RA1_inst
 A[0] => C.DATAB
 A[1] => C.DATAB
 A[2] => C.DATAB
@@ -544,7 +546,7 @@ C[2] <= C.DB_MAX_OUTPUT_PORT_TYPE
 C[3] <= C.DB_MAX_OUTPUT_PORT_TYPE
 
 
-|Gambling_Tec|CPU:processs|Mux:RA2_inst
+|Gambling_Tec|CPU:process|Mux:RA2_inst
 A[0] => C.DATAB
 A[1] => C.DATAB
 A[2] => C.DATAB
@@ -563,7 +565,7 @@ C[2] <= C.DB_MAX_OUTPUT_PORT_TYPE
 C[3] <= C.DB_MAX_OUTPUT_PORT_TYPE
 
 
-|Gambling_Tec|CPU:processs|Adder:PCPlus4_inst
+|Gambling_Tec|CPU:process|Adder:PCPlus4_inst
 A[0] => Add0.IN32
 A[1] => Add0.IN31
 A[2] => Add0.IN30
@@ -662,7 +664,7 @@ C[30] <= Add0.DB_MAX_OUTPUT_PORT_TYPE
 C[31] <= Add0.DB_MAX_OUTPUT_PORT_TYPE
 
 
-|Gambling_Tec|CPU:processs|Adder:PCPlus8_inst
+|Gambling_Tec|CPU:process|Adder:PCPlus8_inst
 A[0] => Add0.IN32
 A[1] => Add0.IN31
 A[2] => Add0.IN30
@@ -761,7 +763,7 @@ C[30] <= Add0.DB_MAX_OUTPUT_PORT_TYPE
 C[31] <= Add0.DB_MAX_OUTPUT_PORT_TYPE
 
 
-|Gambling_Tec|CPU:processs|Register_File:Reg_file_inst
+|Gambling_Tec|CPU:process|Register_File:Reg_file_inst
 A1[0] => Equal0.IN3
 A1[0] => rf.RADDR
 A1[1] => Equal0.IN2
@@ -1021,7 +1023,7 @@ RD2[30] <= RD2.DB_MAX_OUTPUT_PORT_TYPE
 RD2[31] <= RD2.DB_MAX_OUTPUT_PORT_TYPE
 
 
-|Gambling_Tec|CPU:processs|Extender:Extender_ins
+|Gambling_Tec|CPU:process|Extender:Extender_ins
 A[0] => Mux9.IN3
 A[0] => Out.DATAA
 A[1] => Mux8.IN3
@@ -1128,7 +1130,7 @@ Out[30] <= Out.DB_MAX_OUTPUT_PORT_TYPE
 Out[31] <= Out.DB_MAX_OUTPUT_PORT_TYPE
 
 
-|Gambling_Tec|CPU:processs|Mux:ALUSrc_inst
+|Gambling_Tec|CPU:process|Mux:ALUSrc_inst
 A[0] => C.DATAB
 A[1] => C.DATAB
 A[2] => C.DATAB
@@ -1259,7 +1261,7 @@ C[30] <= C.DB_MAX_OUTPUT_PORT_TYPE
 C[31] <= C.DB_MAX_OUTPUT_PORT_TYPE
 
 
-|Gambling_Tec|CPU:processs|ALU:ALU_inst
+|Gambling_Tec|CPU:process|ALU:ALU_inst
 A[0] => Result.IN0
 A[0] => Result.IN0
 A[0] => Add0.IN32
@@ -1626,7 +1628,7 @@ Flags[2] <= Mux33.DB_MAX_OUTPUT_PORT_TYPE
 Flags[3] <= Mux32.DB_MAX_OUTPUT_PORT_TYPE
 
 
-|Gambling_Tec|CPU:processs|Mux:MemToReg_inst
+|Gambling_Tec|CPU:process|Mux:MemToReg_inst
 A[0] => C.DATAB
 A[1] => C.DATAB
 A[2] => C.DATAB
@@ -1757,7 +1759,7 @@ C[30] <= C.DB_MAX_OUTPUT_PORT_TYPE
 C[31] <= C.DB_MAX_OUTPUT_PORT_TYPE
 
 
-|Gambling_Tec|CPU:processs|Control_Unit:CU_Inst
+|Gambling_Tec|CPU:process|Control_Unit:CU_Inst
 Cond[0] => Cond[0].IN1
 Cond[1] => Cond[1].IN1
 Cond[2] => Cond[2].IN1
@@ -1793,7 +1795,7 @@ RegSrc[0] <= Decoder:decoder_inst.RegSrc
 RegSrc[1] <= Decoder:decoder_inst.RegSrc
 
 
-|Gambling_Tec|CPU:processs|Control_Unit:CU_Inst|Decoder:decoder_inst
+|Gambling_Tec|CPU:process|Control_Unit:CU_Inst|Decoder:decoder_inst
 Op[0] => Op[0].IN1
 Op[1] => Op[1].IN1
 Funct[0] => Funct[0].IN2
@@ -1821,7 +1823,7 @@ ALUControl[0] <= ALU_Decoder:alu_decoder_inst.ALUControl
 ALUControl[1] <= ALU_Decoder:alu_decoder_inst.ALUControl
 
 
-|Gambling_Tec|CPU:processs|Control_Unit:CU_Inst|Decoder:decoder_inst|PC_Logic:pc_logic_inst
+|Gambling_Tec|CPU:process|Control_Unit:CU_Inst|Decoder:decoder_inst|PC_Logic:pc_logic_inst
 Rd[0] => Equal0.IN3
 Rd[1] => Equal0.IN2
 Rd[2] => Equal0.IN1
@@ -1831,7 +1833,7 @@ RegW => PCS.IN1
 PCS <= PCS.DB_MAX_OUTPUT_PORT_TYPE
 
 
-|Gambling_Tec|CPU:processs|Control_Unit:CU_Inst|Decoder:decoder_inst|Main_Decoder:main_decoder_inst
+|Gambling_Tec|CPU:process|Control_Unit:CU_Inst|Decoder:decoder_inst|Main_Decoder:main_decoder_inst
 Op[0] => Decoder0.IN1
 Op[0] => Mux0.IN4
 Op[0] => Mux1.IN4
@@ -1859,7 +1861,7 @@ RegSrc[1] <= RegSrc.DB_MAX_OUTPUT_PORT_TYPE
 ALUOP <= Decoder0.DB_MAX_OUTPUT_PORT_TYPE
 
 
-|Gambling_Tec|CPU:processs|Control_Unit:CU_Inst|Decoder:decoder_inst|ALU_Decoder:alu_decoder_inst
+|Gambling_Tec|CPU:process|Control_Unit:CU_Inst|Decoder:decoder_inst|ALU_Decoder:alu_decoder_inst
 ALUOP => Decoder1.IN0
 Funct[0] => Mux0.IN16
 Funct[0] => Mux1.IN18
@@ -1885,7 +1887,7 @@ FlagW[0] <= FlagW.DB_MAX_OUTPUT_PORT_TYPE
 FlagW[1] <= FlagW.DB_MAX_OUTPUT_PORT_TYPE
 
 
-|Gambling_Tec|CPU:processs|Control_Unit:CU_Inst|Register:Register_Flag1
+|Gambling_Tec|CPU:process|Control_Unit:CU_Inst|Register:Register_Flag1
 clk => Q[0]~reg0.CLK
 clk => Q[1]~reg0.CLK
 rst => Q[0]~reg0.ACLR
@@ -1898,7 +1900,7 @@ Q[0] <= Q[0]~reg0.DB_MAX_OUTPUT_PORT_TYPE
 Q[1] <= Q[1]~reg0.DB_MAX_OUTPUT_PORT_TYPE
 
 
-|Gambling_Tec|CPU:processs|Control_Unit:CU_Inst|Register:Register_Flag2
+|Gambling_Tec|CPU:process|Control_Unit:CU_Inst|Register:Register_Flag2
 clk => Q[0]~reg0.CLK
 clk => Q[1]~reg0.CLK
 rst => Q[0]~reg0.ACLR
@@ -1911,7 +1913,7 @@ Q[0] <= Q[0]~reg0.DB_MAX_OUTPUT_PORT_TYPE
 Q[1] <= Q[1]~reg0.DB_MAX_OUTPUT_PORT_TYPE
 
 
-|Gambling_Tec|CPU:processs|Control_Unit:CU_Inst|Condition_Check:inst_Condition_Check
+|Gambling_Tec|CPU:process|Control_Unit:CU_Inst|Condition_Check:inst_Condition_Check
 Flag[0] => CondEx.IN0
 Flag[0] => CondEx.IN1
 Flag[0] => Mux0.IN19
@@ -1935,7 +1937,7 @@ Cond[3] => Mux0.IN12
 CondEx <= Mux0.DB_MAX_OUTPUT_PORT_TYPE
 
 
-|Gambling_Tec|Data_Memory:comb_3
+|Gambling_Tec|Data_Memory:data_mem
 clk => RAM.we_a.CLK
 clk => RAM.waddr_a[5].CLK
 clk => RAM.waddr_a[4].CLK

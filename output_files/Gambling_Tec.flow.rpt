@@ -1,5 +1,5 @@
 Flow report for Gambling_Tec
-Wed Jun 11 11:15:31 2025
+Fri Jun 13 11:40:47 2025
 Quartus Prime Version 18.1.0 Build 625 09/12/2018 SJ Lite Edition
 
 
@@ -40,7 +40,7 @@ refer to the applicable agreement for further details.
 +---------------------------------------------------------------------------+
 ; Flow Summary                                                              ;
 +-----------------------------+---------------------------------------------+
-; Flow Status                 ; Successful - Wed Jun 11 11:15:31 2025       ;
+; Flow Status                 ; Successful - Fri Jun 13 11:40:47 2025       ;
 ; Quartus Prime Version       ; 18.1.0 Build 625 09/12/2018 SJ Lite Edition ;
 ; Revision Name               ; Gambling_Tec                                ;
 ; Top-level Entity Name       ; Gambling_Tec                                ;
@@ -62,7 +62,7 @@ refer to the applicable agreement for further details.
 +-------------------+---------------------+
 ; Option            ; Setting             ;
 +-------------------+---------------------+
-; Start date & time ; 06/11/2025 11:15:21 ;
+; Start date & time ; 06/13/2025 11:40:37 ;
 ; Main task         ; Compilation         ;
 ; Revision Name     ; Gambling_Tec        ;
 +-------------------+---------------------+
@@ -73,7 +73,7 @@ refer to the applicable agreement for further details.
 +--------------------------------------+----------------------------------------+---------------+-------------+-----------------+
 ; Assignment Name                      ; Value                                  ; Default Value ; Entity Name ; Section Id      ;
 +--------------------------------------+----------------------------------------+---------------+-------------+-----------------+
-; COMPILER_SIGNATURE_ID                ; 40607220251654.174966212004244         ; --            ; --          ; --              ;
+; COMPILER_SIGNATURE_ID                ; 153951931180250.174983643714844        ; --            ; --          ; --              ;
 ; EDA_DESIGN_INSTANCE_NAME             ; NA                                     ; --            ; --          ; tb_Gambling_Tec ;
 ; EDA_NATIVELINK_SIMULATION_TEST_BENCH ; tb_Gambling_Tec                        ; --            ; --          ; eda_simulation  ;
 ; EDA_OUTPUT_DATA_FORMAT               ; Systemverilog Hdl                      ; --            ; --          ; eda_simulation  ;
@@ -99,8 +99,8 @@ refer to the applicable agreement for further details.
 +------------------------+--------------+-------------------------+---------------------+------------------------------------+
 ; Module Name            ; Elapsed Time ; Average Processors Used ; Peak Virtual Memory ; Total CPU Time (on all processors) ;
 +------------------------+--------------+-------------------------+---------------------+------------------------------------+
-; Analysis & Elaboration ; 00:00:11     ; 1.0                     ; 4778 MB             ; 00:00:24                           ;
-; Total                  ; 00:00:11     ; --                      ; --                  ; 00:00:24                           ;
+; Analysis & Elaboration ; 00:00:10     ; 1.0                     ; 4777 MB             ; 00:00:23                           ;
+; Total                  ; 00:00:10     ; --                      ; --                  ; 00:00:23                           ;
 +------------------------+--------------+-------------------------+---------------------+------------------------------------+
 
 

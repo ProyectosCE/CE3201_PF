@@ -1,5 +1,5 @@
 Timing Analyzer report for Gambling_Tec
-Wed Jun 11 11:15:09 2025
+Fri Jun 13 11:40:23 2025
 Quartus Prime Version 18.1.0 Build 625 09/12/2018 SJ Lite Edition
 
 
@@ -324,6 +324,8 @@ No synchronizer chains to report.
 ; Instruction[29] ; 2.5 V        ; 2000 ps         ; 2000 ps         ;
 ; Instruction[30] ; 2.5 V        ; 2000 ps         ; 2000 ps         ;
 ; Instruction[31] ; 2.5 V        ; 2000 ps         ; 2000 ps         ;
+; clk             ; 2.5 V        ; 2000 ps         ; 2000 ps         ;
+; rst             ; 2.5 V        ; 2000 ps         ; 2000 ps         ;
 +-----------------+--------------+-----------------+-----------------+
 
 
@@ -393,7 +395,7 @@ No non-DPA dedicated SERDES Receiver circuitry present in device or used in desi
 Info: *******************************************************************
 Info: Running Quartus Prime Timing Analyzer
     Info: Version 18.1.0 Build 625 09/12/2018 SJ Lite Edition
-    Info: Processing started: Wed Jun 11 11:15:06 2025
+    Info: Processing started: Fri Jun 13 11:40:19 2025
 Info: Command: quartus_sta Gambling_Tec -c Gambling_Tec
 Info: qsta_default_script.tcl version: #1
 Warning (18236): Number of processors has not been specified which may cause overloading on shared machines.  Set the global assignment NUM_PARALLEL_PROCESSORS in your QSF to an appropriate value for best performance.
@@ -453,9 +455,9 @@ Info (332140): No Minimum Pulse Width paths to report
 Info (332101): Design is fully constrained for setup requirements
 Info (332101): Design is fully constrained for hold requirements
 Info: Quartus Prime Timing Analyzer was successful. 0 errors, 6 warnings
-    Info: Peak virtual memory: 5105 megabytes
-    Info: Processing ended: Wed Jun 11 11:15:09 2025
-    Info: Elapsed time: 00:00:03
+    Info: Peak virtual memory: 5104 megabytes
+    Info: Processing ended: Fri Jun 13 11:40:23 2025
+    Info: Elapsed time: 00:00:04
     Info: Total CPU time (on all processors): 00:00:04
 
 

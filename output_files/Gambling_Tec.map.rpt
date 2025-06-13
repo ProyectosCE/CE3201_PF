@@ -1,5 +1,5 @@
 Analysis & Elaboration report for Gambling_Tec
-Wed Jun 11 11:15:31 2025
+Fri Jun 13 11:40:47 2025
 Quartus Prime Version 18.1.0 Build 625 09/12/2018 SJ Lite Edition
 
 
@@ -9,25 +9,24 @@ Quartus Prime Version 18.1.0 Build 625 09/12/2018 SJ Lite Edition
   1. Legal Notice
   2. Analysis & Elaboration Summary
   3. Parallel Compilation
-  4. Parameter Settings for User Entity Instance: CPU:processs|Mux:next_PC_inst
-  5. Parameter Settings for User Entity Instance: CPU:processs|Register:PC_Register
-  6. Parameter Settings for User Entity Instance: CPU:processs|Mux:RA1_inst
-  7. Parameter Settings for User Entity Instance: CPU:processs|Mux:RA2_inst
-  8. Parameter Settings for User Entity Instance: CPU:processs|Adder:PCPlus4_inst
-  9. Parameter Settings for User Entity Instance: CPU:processs|Adder:PCPlus8_inst
- 10. Parameter Settings for User Entity Instance: CPU:processs|Mux:ALUSrc_inst
- 11. Parameter Settings for User Entity Instance: CPU:processs|ALU:ALU_inst
- 12. Parameter Settings for User Entity Instance: CPU:processs|Mux:MemToReg_inst
- 13. Parameter Settings for User Entity Instance: CPU:processs|Control_Unit:CU_Inst|Register:Register_Flag1
- 14. Parameter Settings for User Entity Instance: CPU:processs|Control_Unit:CU_Inst|Register:Register_Flag2
+  4. Parameter Settings for User Entity Instance: CPU:process|Mux:next_PC_inst
+  5. Parameter Settings for User Entity Instance: CPU:process|Register:PC_Register
+  6. Parameter Settings for User Entity Instance: CPU:process|Mux:RA1_inst
+  7. Parameter Settings for User Entity Instance: CPU:process|Mux:RA2_inst
+  8. Parameter Settings for User Entity Instance: CPU:process|Adder:PCPlus4_inst
+  9. Parameter Settings for User Entity Instance: CPU:process|Adder:PCPlus8_inst
+ 10. Parameter Settings for User Entity Instance: CPU:process|Mux:ALUSrc_inst
+ 11. Parameter Settings for User Entity Instance: CPU:process|ALU:ALU_inst
+ 12. Parameter Settings for User Entity Instance: CPU:process|Mux:MemToReg_inst
+ 13. Parameter Settings for User Entity Instance: CPU:process|Control_Unit:CU_Inst|Register:Register_Flag1
+ 14. Parameter Settings for User Entity Instance: CPU:process|Control_Unit:CU_Inst|Register:Register_Flag2
  15. Analysis & Elaboration Settings
- 16. Port Connectivity Checks: "Data_Memory:comb_3"
- 17. Port Connectivity Checks: "CPU:processs|Adder:PCPlus8_inst"
- 18. Port Connectivity Checks: "CPU:processs|Adder:PCPlus4_inst"
- 19. Port Connectivity Checks: "CPU:processs|Mux:RA1_inst"
- 20. Port Connectivity Checks: "CPU:processs|Register:PC_Register"
- 21. Port Connectivity Checks: "CPU:processs"
- 22. Analysis & Elaboration Messages
+ 16. Port Connectivity Checks: "CPU:process|Adder:PCPlus8_inst"
+ 17. Port Connectivity Checks: "CPU:process|Adder:PCPlus4_inst"
+ 18. Port Connectivity Checks: "CPU:process|Mux:RA1_inst"
+ 19. Port Connectivity Checks: "CPU:process|Register:PC_Register"
+ 20. Port Connectivity Checks: "CPU:process"
+ 21. Analysis & Elaboration Messages
 
 
 
@@ -53,7 +52,7 @@ refer to the applicable agreement for further details.
 +-----------------------------------------------------------------------------+
 ; Analysis & Elaboration Summary                                              ;
 +-------------------------------+---------------------------------------------+
-; Analysis & Elaboration Status ; Successful - Wed Jun 11 11:15:31 2025       ;
+; Analysis & Elaboration Status ; Successful - Fri Jun 13 11:40:47 2025       ;
 ; Quartus Prime Version         ; 18.1.0 Build 625 09/12/2018 SJ Lite Edition ;
 ; Revision Name                 ; Gambling_Tec                                ;
 ; Top-level Entity Name         ; Gambling_Tec                                ;
@@ -84,68 +83,8 @@ refer to the applicable agreement for further details.
 +----------------------------+-------------+
 
 
-+----------------------------------------------------------------------------+
-; Parameter Settings for User Entity Instance: CPU:processs|Mux:next_PC_inst ;
-+----------------+-------+---------------------------------------------------+
-; Parameter Name ; Value ; Type                                              ;
-+----------------+-------+---------------------------------------------------+
-; N              ; 32    ; Signed Integer                                    ;
-+----------------+-------+---------------------------------------------------+
-Note: In order to hide this table in the UI and the text report file, please set the "Show Parameter Settings in Synthesis Report" option in "Analysis and Synthesis Settings -> More Settings" to "Off".
-
-
-+--------------------------------------------------------------------------------+
-; Parameter Settings for User Entity Instance: CPU:processs|Register:PC_Register ;
-+----------------+-------+-------------------------------------------------------+
-; Parameter Name ; Value ; Type                                                  ;
-+----------------+-------+-------------------------------------------------------+
-; N              ; 32    ; Signed Integer                                        ;
-+----------------+-------+-------------------------------------------------------+
-Note: In order to hide this table in the UI and the text report file, please set the "Show Parameter Settings in Synthesis Report" option in "Analysis and Synthesis Settings -> More Settings" to "Off".
-
-
-+------------------------------------------------------------------------+
-; Parameter Settings for User Entity Instance: CPU:processs|Mux:RA1_inst ;
-+----------------+-------+-----------------------------------------------+
-; Parameter Name ; Value ; Type                                          ;
-+----------------+-------+-----------------------------------------------+
-; N              ; 4     ; Signed Integer                                ;
-+----------------+-------+-----------------------------------------------+
-Note: In order to hide this table in the UI and the text report file, please set the "Show Parameter Settings in Synthesis Report" option in "Analysis and Synthesis Settings -> More Settings" to "Off".
-
-
-+------------------------------------------------------------------------+
-; Parameter Settings for User Entity Instance: CPU:processs|Mux:RA2_inst ;
-+----------------+-------+-----------------------------------------------+
-; Parameter Name ; Value ; Type                                          ;
-+----------------+-------+-----------------------------------------------+
-; N              ; 4     ; Signed Integer                                ;
-+----------------+-------+-----------------------------------------------+
-Note: In order to hide this table in the UI and the text report file, please set the "Show Parameter Settings in Synthesis Report" option in "Analysis and Synthesis Settings -> More Settings" to "Off".
-
-
-+------------------------------------------------------------------------------+
-; Parameter Settings for User Entity Instance: CPU:processs|Adder:PCPlus4_inst ;
-+----------------+-------+-----------------------------------------------------+
-; Parameter Name ; Value ; Type                                                ;
-+----------------+-------+-----------------------------------------------------+
-; N              ; 32    ; Signed Integer                                      ;
-+----------------+-------+-----------------------------------------------------+
-Note: In order to hide this table in the UI and the text report file, please set the "Show Parameter Settings in Synthesis Report" option in "Analysis and Synthesis Settings -> More Settings" to "Off".
-
-
-+------------------------------------------------------------------------------+
-; Parameter Settings for User Entity Instance: CPU:processs|Adder:PCPlus8_inst ;
-+----------------+-------+-----------------------------------------------------+
-; Parameter Name ; Value ; Type                                                ;
-+----------------+-------+-----------------------------------------------------+
-; N              ; 32    ; Signed Integer                                      ;
-+----------------+-------+-----------------------------------------------------+
-Note: In order to hide this table in the UI and the text report file, please set the "Show Parameter Settings in Synthesis Report" option in "Analysis and Synthesis Settings -> More Settings" to "Off".
-
-
 +---------------------------------------------------------------------------+
-; Parameter Settings for User Entity Instance: CPU:processs|Mux:ALUSrc_inst ;
+; Parameter Settings for User Entity Instance: CPU:process|Mux:next_PC_inst ;
 +----------------+-------+--------------------------------------------------+
 ; Parameter Name ; Value ; Type                                             ;
 +----------------+-------+--------------------------------------------------+
@@ -154,18 +93,38 @@ Note: In order to hide this table in the UI and the text report file, please set
 Note: In order to hide this table in the UI and the text report file, please set the "Show Parameter Settings in Synthesis Report" option in "Analysis and Synthesis Settings -> More Settings" to "Off".
 
 
-+------------------------------------------------------------------------+
-; Parameter Settings for User Entity Instance: CPU:processs|ALU:ALU_inst ;
-+----------------+-------+-----------------------------------------------+
-; Parameter Name ; Value ; Type                                          ;
-+----------------+-------+-----------------------------------------------+
-; N              ; 32    ; Signed Integer                                ;
-+----------------+-------+-----------------------------------------------+
++-------------------------------------------------------------------------------+
+; Parameter Settings for User Entity Instance: CPU:process|Register:PC_Register ;
++----------------+-------+------------------------------------------------------+
+; Parameter Name ; Value ; Type                                                 ;
++----------------+-------+------------------------------------------------------+
+; N              ; 32    ; Signed Integer                                       ;
++----------------+-------+------------------------------------------------------+
+Note: In order to hide this table in the UI and the text report file, please set the "Show Parameter Settings in Synthesis Report" option in "Analysis and Synthesis Settings -> More Settings" to "Off".
+
+
++-----------------------------------------------------------------------+
+; Parameter Settings for User Entity Instance: CPU:process|Mux:RA1_inst ;
++----------------+-------+----------------------------------------------+
+; Parameter Name ; Value ; Type                                         ;
++----------------+-------+----------------------------------------------+
+; N              ; 4     ; Signed Integer                               ;
++----------------+-------+----------------------------------------------+
+Note: In order to hide this table in the UI and the text report file, please set the "Show Parameter Settings in Synthesis Report" option in "Analysis and Synthesis Settings -> More Settings" to "Off".
+
+
++-----------------------------------------------------------------------+
+; Parameter Settings for User Entity Instance: CPU:process|Mux:RA2_inst ;
++----------------+-------+----------------------------------------------+
+; Parameter Name ; Value ; Type                                         ;
++----------------+-------+----------------------------------------------+
+; N              ; 4     ; Signed Integer                               ;
++----------------+-------+----------------------------------------------+
 Note: In order to hide this table in the UI and the text report file, please set the "Show Parameter Settings in Synthesis Report" option in "Analysis and Synthesis Settings -> More Settings" to "Off".
 
 
 +-----------------------------------------------------------------------------+
-; Parameter Settings for User Entity Instance: CPU:processs|Mux:MemToReg_inst ;
+; Parameter Settings for User Entity Instance: CPU:process|Adder:PCPlus4_inst ;
 +----------------+-------+----------------------------------------------------+
 ; Parameter Name ; Value ; Type                                               ;
 +----------------+-------+----------------------------------------------------+
@@ -174,23 +133,63 @@ Note: In order to hide this table in the UI and the text report file, please set
 Note: In order to hide this table in the UI and the text report file, please set the "Show Parameter Settings in Synthesis Report" option in "Analysis and Synthesis Settings -> More Settings" to "Off".
 
 
-+--------------------------------------------------------------------------------------------------------+
-; Parameter Settings for User Entity Instance: CPU:processs|Control_Unit:CU_Inst|Register:Register_Flag1 ;
-+----------------+-------+-------------------------------------------------------------------------------+
-; Parameter Name ; Value ; Type                                                                          ;
-+----------------+-------+-------------------------------------------------------------------------------+
-; N              ; 2     ; Signed Integer                                                                ;
-+----------------+-------+-------------------------------------------------------------------------------+
++-----------------------------------------------------------------------------+
+; Parameter Settings for User Entity Instance: CPU:process|Adder:PCPlus8_inst ;
++----------------+-------+----------------------------------------------------+
+; Parameter Name ; Value ; Type                                               ;
++----------------+-------+----------------------------------------------------+
+; N              ; 32    ; Signed Integer                                     ;
++----------------+-------+----------------------------------------------------+
 Note: In order to hide this table in the UI and the text report file, please set the "Show Parameter Settings in Synthesis Report" option in "Analysis and Synthesis Settings -> More Settings" to "Off".
 
 
-+--------------------------------------------------------------------------------------------------------+
-; Parameter Settings for User Entity Instance: CPU:processs|Control_Unit:CU_Inst|Register:Register_Flag2 ;
-+----------------+-------+-------------------------------------------------------------------------------+
-; Parameter Name ; Value ; Type                                                                          ;
-+----------------+-------+-------------------------------------------------------------------------------+
-; N              ; 2     ; Signed Integer                                                                ;
-+----------------+-------+-------------------------------------------------------------------------------+
++--------------------------------------------------------------------------+
+; Parameter Settings for User Entity Instance: CPU:process|Mux:ALUSrc_inst ;
++----------------+-------+-------------------------------------------------+
+; Parameter Name ; Value ; Type                                            ;
++----------------+-------+-------------------------------------------------+
+; N              ; 32    ; Signed Integer                                  ;
++----------------+-------+-------------------------------------------------+
+Note: In order to hide this table in the UI and the text report file, please set the "Show Parameter Settings in Synthesis Report" option in "Analysis and Synthesis Settings -> More Settings" to "Off".
+
+
++-----------------------------------------------------------------------+
+; Parameter Settings for User Entity Instance: CPU:process|ALU:ALU_inst ;
++----------------+-------+----------------------------------------------+
+; Parameter Name ; Value ; Type                                         ;
++----------------+-------+----------------------------------------------+
+; N              ; 32    ; Signed Integer                               ;
++----------------+-------+----------------------------------------------+
+Note: In order to hide this table in the UI and the text report file, please set the "Show Parameter Settings in Synthesis Report" option in "Analysis and Synthesis Settings -> More Settings" to "Off".
+
+
++----------------------------------------------------------------------------+
+; Parameter Settings for User Entity Instance: CPU:process|Mux:MemToReg_inst ;
++----------------+-------+---------------------------------------------------+
+; Parameter Name ; Value ; Type                                              ;
++----------------+-------+---------------------------------------------------+
+; N              ; 32    ; Signed Integer                                    ;
++----------------+-------+---------------------------------------------------+
+Note: In order to hide this table in the UI and the text report file, please set the "Show Parameter Settings in Synthesis Report" option in "Analysis and Synthesis Settings -> More Settings" to "Off".
+
+
++-------------------------------------------------------------------------------------------------------+
+; Parameter Settings for User Entity Instance: CPU:process|Control_Unit:CU_Inst|Register:Register_Flag1 ;
++----------------+-------+------------------------------------------------------------------------------+
+; Parameter Name ; Value ; Type                                                                         ;
++----------------+-------+------------------------------------------------------------------------------+
+; N              ; 2     ; Signed Integer                                                               ;
++----------------+-------+------------------------------------------------------------------------------+
+Note: In order to hide this table in the UI and the text report file, please set the "Show Parameter Settings in Synthesis Report" option in "Analysis and Synthesis Settings -> More Settings" to "Off".
+
+
++-------------------------------------------------------------------------------------------------------+
+; Parameter Settings for User Entity Instance: CPU:process|Control_Unit:CU_Inst|Register:Register_Flag2 ;
++----------------+-------+------------------------------------------------------------------------------+
+; Parameter Name ; Value ; Type                                                                         ;
++----------------+-------+------------------------------------------------------------------------------+
+; N              ; 2     ; Signed Integer                                                               ;
++----------------+-------+------------------------------------------------------------------------------+
 Note: In order to hide this table in the UI and the text report file, please set the "Show Parameter Settings in Synthesis Report" option in "Analysis and Synthesis Settings -> More Settings" to "Off".
 
 
@@ -281,58 +280,48 @@ Note: In order to hide this table in the UI and the text report file, please set
 +---------------------------------------------------------------------------------+--------------------+--------------------+
 
 
-+----------------------------------------------------------------------------------------------------------------------------------------------------+
-; Port Connectivity Checks: "Data_Memory:comb_3"                                                                                                     ;
-+------+--------+----------+-------------------------------------------------------------------------------------------------------------------------+
-; Port ; Type   ; Severity ; Details                                                                                                                 ;
-+------+--------+----------+-------------------------------------------------------------------------------------------------------------------------+
-; rd   ; Output ; Warning  ; Output or bidir port (32 bits) is wider than the port expression (1 bits) it drives; bit(s) "rd[31..1]" have no fanouts ;
-; rd   ; Output ; Info     ; Connected to dangling logic. Logic that only feeds a dangling port will be removed.                                     ;
-+------+--------+----------+-------------------------------------------------------------------------------------------------------------------------+
++------------------------------------------------------------+
+; Port Connectivity Checks: "CPU:process|Adder:PCPlus8_inst" ;
++----------+-------+----------+------------------------------+
+; Port     ; Type  ; Severity ; Details                      ;
++----------+-------+----------+------------------------------+
+; A[31..3] ; Input ; Info     ; Stuck at GND                 ;
+; A[1..0]  ; Input ; Info     ; Stuck at GND                 ;
+; A[2]     ; Input ; Info     ; Stuck at VCC                 ;
++----------+-------+----------+------------------------------+
 
 
-+-------------------------------------------------------------+
-; Port Connectivity Checks: "CPU:processs|Adder:PCPlus8_inst" ;
-+----------+-------+----------+-------------------------------+
-; Port     ; Type  ; Severity ; Details                       ;
-+----------+-------+----------+-------------------------------+
-; A[31..3] ; Input ; Info     ; Stuck at GND                  ;
-; A[1..0]  ; Input ; Info     ; Stuck at GND                  ;
-; A[2]     ; Input ; Info     ; Stuck at VCC                  ;
-+----------+-------+----------+-------------------------------+
++------------------------------------------------------------+
+; Port Connectivity Checks: "CPU:process|Adder:PCPlus4_inst" ;
++----------+-------+----------+------------------------------+
+; Port     ; Type  ; Severity ; Details                      ;
++----------+-------+----------+------------------------------+
+; B[31..3] ; Input ; Info     ; Stuck at GND                 ;
+; B[1..0]  ; Input ; Info     ; Stuck at GND                 ;
+; B[2]     ; Input ; Info     ; Stuck at VCC                 ;
++----------+-------+----------+------------------------------+
 
 
-+-------------------------------------------------------------+
-; Port Connectivity Checks: "CPU:processs|Adder:PCPlus4_inst" ;
-+----------+-------+----------+-------------------------------+
-; Port     ; Type  ; Severity ; Details                       ;
-+----------+-------+----------+-------------------------------+
-; B[31..3] ; Input ; Info     ; Stuck at GND                  ;
-; B[1..0]  ; Input ; Info     ; Stuck at GND                  ;
-; B[2]     ; Input ; Info     ; Stuck at VCC                  ;
-+----------+-------+----------+-------------------------------+
++------------------------------------------------------+
+; Port Connectivity Checks: "CPU:process|Mux:RA1_inst" ;
++------+-------+----------+----------------------------+
+; Port ; Type  ; Severity ; Details                    ;
++------+-------+----------+----------------------------+
+; A    ; Input ; Info     ; Stuck at VCC               ;
++------+-------+----------+----------------------------+
 
 
-+-------------------------------------------------------+
-; Port Connectivity Checks: "CPU:processs|Mux:RA1_inst" ;
-+------+-------+----------+-----------------------------+
-; Port ; Type  ; Severity ; Details                     ;
-+------+-------+----------+-----------------------------+
-; A    ; Input ; Info     ; Stuck at VCC                ;
-+------+-------+----------+-----------------------------+
-
-
-+---------------------------------------------------------------+
-; Port Connectivity Checks: "CPU:processs|Register:PC_Register" ;
-+------+-------+----------+-------------------------------------+
-; Port ; Type  ; Severity ; Details                             ;
-+------+-------+----------+-------------------------------------+
-; en   ; Input ; Info     ; Stuck at VCC                        ;
-+------+-------+----------+-------------------------------------+
++--------------------------------------------------------------+
+; Port Connectivity Checks: "CPU:process|Register:PC_Register" ;
++------+-------+----------+------------------------------------+
+; Port ; Type  ; Severity ; Details                            ;
++------+-------+----------+------------------------------------+
+; en   ; Input ; Info     ; Stuck at VCC                       ;
++------+-------+----------+------------------------------------+
 
 
 +------------------------------------------------------------------------------------------------------------------+
-; Port Connectivity Checks: "CPU:processs"                                                                         ;
+; Port Connectivity Checks: "CPU:process"                                                                          ;
 +--------+--------+----------+-------------------------------------------------------------------------------------+
 ; Port   ; Type   ; Severity ; Details                                                                             ;
 +--------+--------+----------+-------------------------------------------------------------------------------------+
@@ -347,7 +336,7 @@ Note: In order to hide this table in the UI and the text report file, please set
 Info: *******************************************************************
 Info: Running Quartus Prime Analysis & Elaboration
     Info: Version 18.1.0 Build 625 09/12/2018 SJ Lite Edition
-    Info: Processing started: Wed Jun 11 11:15:20 2025
+    Info: Processing started: Fri Jun 13 11:40:37 2025
 Info: Command: quartus_map --read_settings_files=on --write_settings_files=off Gambling_Tec -c Gambling_Tec --analysis_and_elaboration
 Warning (18236): Number of processors has not been specified which may cause overloading on shared machines.  Set the global assignment NUM_PARALLEL_PROCESSORS in your QSF to an appropriate value for best performance.
 Info (20030): Parallel compilation is enabled and will use 4 of the 4 processors detected
@@ -391,35 +380,32 @@ Info (12021): Found 4 design units, including 4 entities, in source file decoder
     Info (12023): Found entity 4: ALU_Decoder File: C:/Users/josee/CE3201_PF/Decoder.sv Line: 131
 Info (12021): Found 1 design units, including 1 entities, in source file tb_gambling_tec.sv
     Info (12023): Found entity 1: tb_Gambling_Tec File: C:/Users/josee/CE3201_PF/tb_Gambling_Tec.sv Line: 3
-Warning (10236): Verilog HDL Implicit Net warning at Gambling_Tec.sv(38): created implicit net for "readData" File: C:/Users/josee/CE3201_PF/Gambling_Tec.sv Line: 38
+Info (12021): Found 1 design units, including 1 entities, in source file tb_data_memory.sv
+    Info (12023): Found entity 1: tb_Data_Memory File: C:/Users/josee/CE3201_PF/tb_Data_Memory.sv Line: 3
 Warning (10236): Verilog HDL Implicit Net warning at Decoder.sv(33): created implicit net for "ALUOP" File: C:/Users/josee/CE3201_PF/Decoder.sv Line: 33
-Critical Warning (10846): Verilog HDL Instantiation warning at Gambling_Tec.sv(39): instance has no name File: C:/Users/josee/CE3201_PF/Gambling_Tec.sv Line: 39
 Info (12127): Elaborating entity "Gambling_Tec" for the top level hierarchy
-Info (12128): Elaborating entity "CPU" for hierarchy "CPU:processs" File: C:/Users/josee/CE3201_PF/Gambling_Tec.sv Line: 30
-Info (12128): Elaborating entity "Mux" for hierarchy "CPU:processs|Mux:next_PC_inst" File: C:/Users/josee/CE3201_PF/CPU.sv Line: 36
-Info (12128): Elaborating entity "Register" for hierarchy "CPU:processs|Register:PC_Register" File: C:/Users/josee/CE3201_PF/CPU.sv Line: 44
-Info (12128): Elaborating entity "Mux" for hierarchy "CPU:processs|Mux:RA1_inst" File: C:/Users/josee/CE3201_PF/CPU.sv Line: 53
-Info (12128): Elaborating entity "Adder" for hierarchy "CPU:processs|Adder:PCPlus4_inst" File: C:/Users/josee/CE3201_PF/CPU.sv Line: 69
-Info (12128): Elaborating entity "Register_File" for hierarchy "CPU:processs|Register_File:Reg_file_inst" File: C:/Users/josee/CE3201_PF/CPU.sv Line: 89
-Info (12128): Elaborating entity "Extender" for hierarchy "CPU:processs|Extender:Extender_ins" File: C:/Users/josee/CE3201_PF/CPU.sv Line: 95
-Info (12128): Elaborating entity "ALU" for hierarchy "CPU:processs|ALU:ALU_inst" File: C:/Users/josee/CE3201_PF/CPU.sv Line: 113
-Info (12128): Elaborating entity "Control_Unit" for hierarchy "CPU:processs|Control_Unit:CU_Inst" File: C:/Users/josee/CE3201_PF/CPU.sv Line: 145
-Info (12128): Elaborating entity "Decoder" for hierarchy "CPU:processs|Control_Unit:CU_Inst|Decoder:decoder_inst" File: C:/Users/josee/CE3201_PF/Control_Unit.sv Line: 46
-Info (12128): Elaborating entity "PC_Logic" for hierarchy "CPU:processs|Control_Unit:CU_Inst|Decoder:decoder_inst|PC_Logic:pc_logic_inst" File: C:/Users/josee/CE3201_PF/Decoder.sv Line: 20
-Info (12128): Elaborating entity "Main_Decoder" for hierarchy "CPU:processs|Control_Unit:CU_Inst|Decoder:decoder_inst|Main_Decoder:main_decoder_inst" File: C:/Users/josee/CE3201_PF/Decoder.sv Line: 34
+Info (12128): Elaborating entity "CPU" for hierarchy "CPU:process" File: C:/Users/josee/CE3201_PF/Gambling_Tec.sv Line: 31
+Info (12128): Elaborating entity "Mux" for hierarchy "CPU:process|Mux:next_PC_inst" File: C:/Users/josee/CE3201_PF/CPU.sv Line: 36
+Info (12128): Elaborating entity "Register" for hierarchy "CPU:process|Register:PC_Register" File: C:/Users/josee/CE3201_PF/CPU.sv Line: 44
+Info (12128): Elaborating entity "Mux" for hierarchy "CPU:process|Mux:RA1_inst" File: C:/Users/josee/CE3201_PF/CPU.sv Line: 53
+Info (12128): Elaborating entity "Adder" for hierarchy "CPU:process|Adder:PCPlus4_inst" File: C:/Users/josee/CE3201_PF/CPU.sv Line: 69
+Info (12128): Elaborating entity "Register_File" for hierarchy "CPU:process|Register_File:Reg_file_inst" File: C:/Users/josee/CE3201_PF/CPU.sv Line: 89
+Info (12128): Elaborating entity "Extender" for hierarchy "CPU:process|Extender:Extender_ins" File: C:/Users/josee/CE3201_PF/CPU.sv Line: 95
+Info (12128): Elaborating entity "ALU" for hierarchy "CPU:process|ALU:ALU_inst" File: C:/Users/josee/CE3201_PF/CPU.sv Line: 113
+Info (12128): Elaborating entity "Control_Unit" for hierarchy "CPU:process|Control_Unit:CU_Inst" File: C:/Users/josee/CE3201_PF/CPU.sv Line: 145
+Info (12128): Elaborating entity "Decoder" for hierarchy "CPU:process|Control_Unit:CU_Inst|Decoder:decoder_inst" File: C:/Users/josee/CE3201_PF/Control_Unit.sv Line: 46
+Info (12128): Elaborating entity "PC_Logic" for hierarchy "CPU:process|Control_Unit:CU_Inst|Decoder:decoder_inst|PC_Logic:pc_logic_inst" File: C:/Users/josee/CE3201_PF/Decoder.sv Line: 20
+Info (12128): Elaborating entity "Main_Decoder" for hierarchy "CPU:process|Control_Unit:CU_Inst|Decoder:decoder_inst|Main_Decoder:main_decoder_inst" File: C:/Users/josee/CE3201_PF/Decoder.sv Line: 34
 Warning (10270): Verilog HDL Case Statement warning at Decoder.sv(75): incomplete case statement has no default case item File: C:/Users/josee/CE3201_PF/Decoder.sv Line: 75
-Info (12128): Elaborating entity "ALU_Decoder" for hierarchy "CPU:processs|Control_Unit:CU_Inst|Decoder:decoder_inst|ALU_Decoder:alu_decoder_inst" File: C:/Users/josee/CE3201_PF/Decoder.sv Line: 42
-Info (12128): Elaborating entity "Register" for hierarchy "CPU:processs|Control_Unit:CU_Inst|Register:Register_Flag1" File: C:/Users/josee/CE3201_PF/Control_Unit.sv Line: 55
+Info (12128): Elaborating entity "ALU_Decoder" for hierarchy "CPU:process|Control_Unit:CU_Inst|Decoder:decoder_inst|ALU_Decoder:alu_decoder_inst" File: C:/Users/josee/CE3201_PF/Decoder.sv Line: 42
+Info (12128): Elaborating entity "Register" for hierarchy "CPU:process|Control_Unit:CU_Inst|Register:Register_Flag1" File: C:/Users/josee/CE3201_PF/Control_Unit.sv Line: 55
 Warning (10230): Verilog HDL assignment warning at Register.sv(12): truncated value with size 10 to match size of target (2) File: C:/Users/josee/CE3201_PF/Register.sv Line: 12
-Info (12128): Elaborating entity "Condition_Check" for hierarchy "CPU:processs|Control_Unit:CU_Inst|Condition_Check:inst_Condition_Check" File: C:/Users/josee/CE3201_PF/Control_Unit.sv Line: 70
-Info (12128): Elaborating entity "Data_Memory" for hierarchy "Data_Memory:comb_3" File: C:/Users/josee/CE3201_PF/Gambling_Tec.sv Line: 39
-Warning (12011): Net is missing source, defaulting to GND
-    Warning (12110): Net "clk" is missing source, defaulting to GND File: C:/Users/josee/CE3201_PF/Gambling_Tec.sv Line: 6
-Warning (12241): 1 hierarchies have connectivity warnings - see the Connectivity Checks report folder
-Info: Quartus Prime Analysis & Elaboration was successful. 0 errors, 10 warnings
-    Info: Peak virtual memory: 4778 megabytes
-    Info: Processing ended: Wed Jun 11 11:15:31 2025
-    Info: Elapsed time: 00:00:11
-    Info: Total CPU time (on all processors): 00:00:24
+Info (12128): Elaborating entity "Condition_Check" for hierarchy "CPU:process|Control_Unit:CU_Inst|Condition_Check:inst_Condition_Check" File: C:/Users/josee/CE3201_PF/Control_Unit.sv Line: 70
+Info (12128): Elaborating entity "Data_Memory" for hierarchy "Data_Memory:data_mem" File: C:/Users/josee/CE3201_PF/Gambling_Tec.sv Line: 40
+Info: Quartus Prime Analysis & Elaboration was successful. 0 errors, 5 warnings
+    Info: Peak virtual memory: 4777 megabytes
+    Info: Processing ended: Fri Jun 13 11:40:47 2025
+    Info: Elapsed time: 00:00:10
+    Info: Total CPU time (on all processors): 00:00:23
 
 

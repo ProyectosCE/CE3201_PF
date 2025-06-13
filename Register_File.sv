@@ -8,7 +8,7 @@ module Register_File(
     output logic [31:0] RD1, RD2
 );
 
-   logic[31:0]rf[14:0];
+   logic[31:0] rf [14:0];
 
  always_ff@(posedge clk)
 	 if(WE3)rf[A3]<=WD3;
