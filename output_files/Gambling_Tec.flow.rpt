@@ -1,5 +1,5 @@
 Flow report for Gambling_Tec
-Fri Jun 13 21:46:10 2025
+Fri Jun 13 22:55:17 2025
 Quartus Prime Version 23.1std.1 Build 993 05/14/2024 SC Lite Edition
 
 
@@ -41,7 +41,7 @@ https://fpgasoftware.intel.com/eula.
 +----------------------------------------------------------------------------------+
 ; Flow Summary                                                                     ;
 +---------------------------------+------------------------------------------------+
-; Flow Status                     ; Successful - Fri Jun 13 21:46:10 2025          ;
+; Flow Status                     ; Successful - Fri Jun 13 22:55:17 2025          ;
 ; Quartus Prime Version           ; 23.1std.1 Build 993 05/14/2024 SC Lite Edition ;
 ; Revision Name                   ; Gambling_Tec                                   ;
 ; Top-level Entity Name           ; Gambling_Tec                                   ;
@@ -50,7 +50,7 @@ https://fpgasoftware.intel.com/eula.
 ; Timing Models                   ; Final                                          ;
 ; Logic utilization (in ALMs)     ; 1 / 41,910 ( < 1 % )                           ;
 ; Total registers                 ; 0                                              ;
-; Total pins                      ; 34 / 499 ( 7 % )                               ;
+; Total pins                      ; 2 / 499 ( < 1 % )                              ;
 ; Total virtual pins              ; 0                                              ;
 ; Total block memory bits         ; 0 / 5,662,720 ( 0 % )                          ;
 ; Total DSP Blocks                ; 0 / 112 ( 0 % )                                ;
@@ -68,7 +68,7 @@ https://fpgasoftware.intel.com/eula.
 +-------------------+---------------------+
 ; Option            ; Setting             ;
 +-------------------+---------------------+
-; Start date & time ; 06/13/2025 21:44:22 ;
+; Start date & time ; 06/13/2025 22:54:07 ;
 ; Main task         ; Compilation         ;
 ; Revision Name     ; Gambling_Tec        ;
 +-------------------+---------------------+
@@ -79,7 +79,7 @@ https://fpgasoftware.intel.com/eula.
 +--------------------------------------+----------------------------------------+---------------+-------------+-----------------+
 ; Assignment Name                      ; Value                                  ; Default Value ; Entity Name ; Section Id      ;
 +--------------------------------------+----------------------------------------+---------------+-------------+-----------------+
-; COMPILER_SIGNATURE_ID                ; 53671021772497.174987266102384         ; --            ; --          ; --              ;
+; COMPILER_SIGNATURE_ID                ; 53671021772497.174987684716188         ; --            ; --          ; --              ;
 ; EDA_DESIGN_INSTANCE_NAME             ; NA                                     ; --            ; --          ; tb_Gambling_Tec ;
 ; EDA_NATIVELINK_SIMULATION_TEST_BENCH ; tb_Gambling_Tec                        ; --            ; --          ; eda_simulation  ;
 ; EDA_OUTPUT_DATA_FORMAT               ; Systemverilog Hdl                      ; --            ; --          ; eda_simulation  ;
@@ -105,12 +105,12 @@ https://fpgasoftware.intel.com/eula.
 +----------------------+--------------+-------------------------+---------------------+------------------------------------+
 ; Module Name          ; Elapsed Time ; Average Processors Used ; Peak Virtual Memory ; Total CPU Time (on all processors) ;
 +----------------------+--------------+-------------------------+---------------------+------------------------------------+
-; Analysis & Synthesis ; 00:00:12     ; 1.0                     ; 4787 MB             ; 00:00:31                           ;
-; Fitter               ; 00:01:05     ; 1.0                     ; 6906 MB             ; 00:02:56                           ;
-; Assembler            ; 00:00:17     ; 1.0                     ; 4872 MB             ; 00:00:11                           ;
-; Timing Analyzer      ; 00:00:06     ; 1.0                     ; 5172 MB             ; 00:00:06                           ;
-; EDA Netlist Writer   ; 00:00:02     ; 1.0                     ; 4716 MB             ; 00:00:02                           ;
-; Total                ; 00:01:42     ; --                      ; --                  ; 00:03:46                           ;
+; Analysis & Synthesis ; 00:00:12     ; 1.0                     ; 4785 MB             ; 00:00:29                           ;
+; Fitter               ; 00:00:40     ; 1.0                     ; 6875 MB             ; 00:02:02                           ;
+; Assembler            ; 00:00:08     ; 1.0                     ; 4866 MB             ; 00:00:08                           ;
+; Timing Analyzer      ; 00:00:04     ; 1.0                     ; 5154 MB             ; 00:00:04                           ;
+; EDA Netlist Writer   ; 00:00:01     ; 1.0                     ; 4713 MB             ; 00:00:01                           ;
+; Total                ; 00:01:05     ; --                      ; --                  ; 00:02:44                           ;
 +----------------------+--------------+-------------------------+---------------------+------------------------------------+
 
 

@@ -1,4 +1,4 @@
-Fitter Status : Successful - Fri Jun 13 21:45:39 2025
+Fitter Status : Successful - Fri Jun 13 22:54:59 2025
 Quartus Prime Version : 23.1std.1 Build 993 05/14/2024 SC Lite Edition
 Revision Name : Gambling_Tec
 Top-level Entity Name : Gambling_Tec
@@ -7,7 +7,7 @@ Device : 5CSXFC6D6F31C6
 Timing Models : Final
 Logic utilization (in ALMs) : 1 / 41,910 ( < 1 % )
 Total registers : 0
-Total pins : 34 / 499 ( 7 % )
+Total pins : 2 / 499 ( < 1 % )
 Total virtual pins : 0
 Total block memory bits : 0 / 5,662,720 ( 0 % )
 Total RAM Blocks : 0 / 553 ( 0 % )

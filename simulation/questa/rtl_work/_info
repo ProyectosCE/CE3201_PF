@@ -1,6 +1,8 @@
 m255
 K4
 z2
+!s12c _opt
+Z0 !s99 nomlopt
 !s11f vlog 2023.3 2023.07, Jul 17 2023
 13
 !s112 1.1
@@ -8,185 +10,386 @@ z2
 !i10e 25
 !i10f 100
 cModel Technology
-Z0 dC:/Users/joseb/Documents/GitHub/CE3201_PF/simulation/questa
+Z1 dC:/Users/joseb/Documents/GitHub/CE3201_PF/simulation/questa
+T_opt
+!s110 1749877103
+VzWDVI<Yhz[VV6VDVJf:;i3
+04 15 4 work tb_Gambling_Tec fast 0
+=1-30d0422ffed1-684d016e-2c7-1a50
+R0
+!s12b OEM100
+!s124 OEM10U24 
+o-quiet -auto_acc_if_foreign -work work -L altera_ver -L lpm_ver -L sgate_ver -L altera_mf_ver -L altera_lnsim_ver -L cyclonev_ver -L cyclonev_hssi_ver -L cyclonev_pcie_hip_ver -L rtl_work -L work +acc
+Z2 tCvgOpt 0
+n@_opt
+OL;O;2023.3;77
+vAdder
+2C:/Users/joseb/Documents/GitHub/CE3201_PF/Adder.sv
+Z3 DXx6 sv_std 3 std 0 22 9oUSJO;AeEaW`l:M@^WG92
+Z4 !s110 1749877100
+!i10b 1
+!s100 9gbl8ZXj_onncZ4WUgEb?3
+IoLGUBD541OT2_U8DQ_3Vm0
+S1
+R1
+Z5 w1749875364
+8C:/Users/joseb/Documents/GitHub/CE3201_PF/Adder.sv
+FC:/Users/joseb/Documents/GitHub/CE3201_PF/Adder.sv
+!i122 8
+L0 1 9
+Z6 VDg1SIo80bB@j0V0VzS_@n1
+Z7 OL;L;2023.3;77
+r1
+!s85 0
+31
+Z8 !s108 1749877100.000000
+!s107 C:/Users/joseb/Documents/GitHub/CE3201_PF/Adder.sv|
+!s90 -reportprogress|300|-sv|-work|work|+incdir+C:/Users/joseb/Documents/GitHub/CE3201_PF|C:/Users/joseb/Documents/GitHub/CE3201_PF/Adder.sv|
+!i113 0
+Z9 o-sv -work work -L mtiAvm -L mtiRnm -L mtiOvm -L mtiUvm -L mtiUPF -L infact
+Z10 !s92 -sv -work work +incdir+C:/Users/joseb/Documents/GitHub/CE3201_PF -L mtiAvm -L mtiRnm -L mtiOvm -L mtiUvm -L mtiUPF -L infact
+R2
+n@adder
 vALU
 2C:/Users/joseb/Documents/GitHub/CE3201_PF/ALU.sv
-Z1 DXx6 sv_std 3 std 0 22 9oUSJO;AeEaW`l:M@^WG92
-!s110 1749872577
+R3
+R4
 !i10b 1
 !s100 Deo41V67W^CJSZ16n:^jS2
 IOY;M5MKDE@R_[X8hnCSDQ3
 S1
-R0
-Z2 w1749872175
+R1
+R5
 8C:/Users/joseb/Documents/GitHub/CE3201_PF/ALU.sv
 FC:/Users/joseb/Documents/GitHub/CE3201_PF/ALU.sv
 !i122 7
 L0 1 49
-Z3 VDg1SIo80bB@j0V0VzS_@n1
-Z4 OL;L;2023.3;77
+R6
+R7
 r1
 !s85 0
 31
-Z5 !s108 1749872576.000000
+Z11 !s108 1749877099.000000
 !s107 C:/Users/joseb/Documents/GitHub/CE3201_PF/ALU.sv|
 !s90 -reportprogress|300|-sv|-work|work|+incdir+C:/Users/joseb/Documents/GitHub/CE3201_PF|C:/Users/joseb/Documents/GitHub/CE3201_PF/ALU.sv|
 !i113 0
-Z6 o-sv -work work -L mtiAvm -L mtiRnm -L mtiOvm -L mtiUvm -L mtiUPF -L infact
-Z7 !s92 -sv -work work +incdir+C:/Users/joseb/Documents/GitHub/CE3201_PF -L mtiAvm -L mtiRnm -L mtiOvm -L mtiUvm -L mtiUPF -L infact
-Z8 tCvgOpt 0
+R9
+R10
+R2
 n@a@l@u
+vALU_Decoder
+Z12 2C:/Users/joseb/Documents/GitHub/CE3201_PF/Decoder.sv
+R3
+R4
+!i10b 1
+!s100 m?]99j``^;iT@J0fCz[XE3
+I]o]Q^<DWY499RW5zNH`1N1
+S1
+R1
+R5
+Z13 8C:/Users/joseb/Documents/GitHub/CE3201_PF/Decoder.sv
+Z14 FC:/Users/joseb/Documents/GitHub/CE3201_PF/Decoder.sv
+!i122 11
+L0 131 43
+R6
+R7
+r1
+!s85 0
+31
+R8
+Z15 !s107 C:/Users/joseb/Documents/GitHub/CE3201_PF/Decoder.sv|
+Z16 !s90 -reportprogress|300|-sv|-work|work|+incdir+C:/Users/joseb/Documents/GitHub/CE3201_PF|C:/Users/joseb/Documents/GitHub/CE3201_PF/Decoder.sv|
+!i113 0
+R9
+R10
+R2
+n@a@l@u_@decoder
 vCondition_Check
 2C:/Users/joseb/Documents/GitHub/CE3201_PF/Condition_Check.sv
-R1
-Z9 !s110 1749872575
+R3
+Z17 !s110 1749877098
 !i10b 1
 !s100 41S4DC^ki^N_<cmJJZB8e1
 I674cX0[X9BFdmd[oZLnj:1
 S1
-R0
-R2
+R1
+R5
 8C:/Users/joseb/Documents/GitHub/CE3201_PF/Condition_Check.sv
 FC:/Users/joseb/Documents/GitHub/CE3201_PF/Condition_Check.sv
 !i122 0
 L0 1 32
-R3
-R4
+R6
+R7
 r1
 !s85 0
 31
-!s108 1749872574.000000
+Z18 !s108 1749877098.000000
 !s107 C:/Users/joseb/Documents/GitHub/CE3201_PF/Condition_Check.sv|
 !s90 -reportprogress|300|-sv|-work|work|+incdir+C:/Users/joseb/Documents/GitHub/CE3201_PF|C:/Users/joseb/Documents/GitHub/CE3201_PF/Condition_Check.sv|
 !i113 0
+R9
+R10
+R2
+n@condition_@check
+vControl_Unit
+2C:/Users/joseb/Documents/GitHub/CE3201_PF/Control_Unit.sv
+R3
+R4
+!i10b 1
+!s100 ?^z@fChR^Je:I`z9oWBd`1
+I5o`2Jg2JcMN38mLk[D9eT2
+S1
+R1
+R5
+8C:/Users/joseb/Documents/GitHub/CE3201_PF/Control_Unit.sv
+FC:/Users/joseb/Documents/GitHub/CE3201_PF/Control_Unit.sv
+!i122 10
+L0 1 77
 R6
 R7
+r1
+!s85 0
+31
 R8
-n@condition_@check
+!s107 C:/Users/joseb/Documents/GitHub/CE3201_PF/Control_Unit.sv|
+!s90 -reportprogress|300|-sv|-work|work|+incdir+C:/Users/joseb/Documents/GitHub/CE3201_PF|C:/Users/joseb/Documents/GitHub/CE3201_PF/Control_Unit.sv|
+!i113 0
+R9
+R10
+R2
+n@control_@unit
 vCPU
 2C:/Users/joseb/Documents/GitHub/CE3201_PF/CPU.sv
-R1
-Z10 !s110 1749872576
+R3
+Z19 !s110 1749877099
 !i10b 1
 !s100 ionZK9VX15]]aiS@bG;Id2
 I[bWlbVG4GWnSXnE`:7>]m0
 S1
-R0
-R2
+R1
+R5
 8C:/Users/joseb/Documents/GitHub/CE3201_PF/CPU.sv
 FC:/Users/joseb/Documents/GitHub/CE3201_PF/CPU.sv
 !i122 6
 L0 1 149
-R3
-R4
+R6
+R7
 r1
 !s85 0
 31
-R5
+R11
 !s107 C:/Users/joseb/Documents/GitHub/CE3201_PF/CPU.sv|
 !s90 -reportprogress|300|-sv|-work|work|+incdir+C:/Users/joseb/Documents/GitHub/CE3201_PF|C:/Users/joseb/Documents/GitHub/CE3201_PF/CPU.sv|
 !i113 0
-R6
-R7
-R8
+R9
+R10
+R2
 n@c@p@u
 vData_Memory
 2C:/Users/joseb/Documents/GitHub/CE3201_PF/Data_Memory.sv
-R1
-R10
+R3
+R19
 !i10b 1
 !s100 1Li_a8Yb_5fdfHOmPhUDM2
 I`ULP2NUSK^97@VH__f7fZ3
 S1
-R0
-R2
+R1
+R5
 8C:/Users/joseb/Documents/GitHub/CE3201_PF/Data_Memory.sv
 FC:/Users/joseb/Documents/GitHub/CE3201_PF/Data_Memory.sv
 !i122 5
 L0 1 23
-R3
-R4
+R6
+R7
 r1
 !s85 0
 31
-R5
+R11
 !s107 C:/Users/joseb/Documents/GitHub/CE3201_PF/Data_Memory.sv|
 !s90 -reportprogress|300|-sv|-work|work|+incdir+C:/Users/joseb/Documents/GitHub/CE3201_PF|C:/Users/joseb/Documents/GitHub/CE3201_PF/Data_Memory.sv|
 !i113 0
+R9
+R10
+R2
+n@data_@memory
+vDecoder
+R12
+R3
+R4
+!i10b 1
+!s100 ;41JaB>c]hhAd=OWUb8Jg1
+IVkKEm_dR2kab?Ui[eiBFj2
+S1
+R1
+R5
+R13
+R14
+!i122 11
+L0 2 43
 R6
 R7
+r1
+!s85 0
+31
 R8
-n@data_@memory
+R15
+R16
+!i113 0
+R9
+R10
+R2
+n@decoder
 vExtender
 2C:/Users/joseb/Documents/GitHub/CE3201_PF/Extender.sv
-R1
-R10
+R3
+R19
 !i10b 1
 !s100 db??B84l^1zGjmO:?Vo?Z2
 IH3<zBVm:Ve58LDi0VC;lP2
 S1
-R0
-R2
+R1
+R5
 8C:/Users/joseb/Documents/GitHub/CE3201_PF/Extender.sv
 FC:/Users/joseb/Documents/GitHub/CE3201_PF/Extender.sv
 !i122 4
 L0 1 16
-R3
-R4
+R6
+R7
 r1
 !s85 0
 31
-R5
+R11
 !s107 C:/Users/joseb/Documents/GitHub/CE3201_PF/Extender.sv|
 !s90 -reportprogress|300|-sv|-work|work|+incdir+C:/Users/joseb/Documents/GitHub/CE3201_PF|C:/Users/joseb/Documents/GitHub/CE3201_PF/Extender.sv|
 !i113 0
+R9
+R10
+R2
+n@extender
+vGambling_Tec
+2C:/Users/joseb/Documents/GitHub/CE3201_PF/Gambling_Tec.sv
+R3
+R4
+!i10b 1
+!s100 1;Pd41I7=OC65a1C]S`7j3
+ILQ0X^jM]DYMC[WaTlWg8o1
+S1
+R1
+w1749875905
+8C:/Users/joseb/Documents/GitHub/CE3201_PF/Gambling_Tec.sv
+FC:/Users/joseb/Documents/GitHub/CE3201_PF/Gambling_Tec.sv
+!i122 9
+L0 1 43
 R6
 R7
+r1
+!s85 0
+31
 R8
-n@extender
+!s107 C:/Users/joseb/Documents/GitHub/CE3201_PF/Gambling_Tec.sv|
+!s90 -reportprogress|300|-sv|-work|work|+incdir+C:/Users/joseb/Documents/GitHub/CE3201_PF|C:/Users/joseb/Documents/GitHub/CE3201_PF/Gambling_Tec.sv|
+!i113 0
+R9
+R10
+R2
+n@gambling_@tec
+vMain_Decoder
+R12
+R3
+R4
+!i10b 1
+!s100 R5Yd7=J`2Oj_CRPZ3FY0M3
+I1a5CdDVe]XnTSeOCFCJOX3
+S1
+R1
+R5
+R13
+R14
+!i122 11
+L0 57 72
+R6
+R7
+r1
+!s85 0
+31
+R8
+R15
+R16
+!i113 0
+R9
+R10
+R2
+n@main_@decoder
 vMux
 2C:/Users/joseb/Documents/GitHub/CE3201_PF/Mux.sv
-R1
-R10
+R3
+R19
 !i10b 1
 !s100 66Lh_[jcEWV6dh7S4RL<h0
 Iz<HN9ORi5FCCg[mOaZSAb0
 S1
-R0
-R2
+R1
+R5
 8C:/Users/joseb/Documents/GitHub/CE3201_PF/Mux.sv
 FC:/Users/joseb/Documents/GitHub/CE3201_PF/Mux.sv
 !i122 3
 L0 1 14
-R3
-R4
+R6
+R7
 r1
 !s85 0
 31
-Z11 !s108 1749872575.000000
+R11
 !s107 C:/Users/joseb/Documents/GitHub/CE3201_PF/Mux.sv|
 !s90 -reportprogress|300|-sv|-work|work|+incdir+C:/Users/joseb/Documents/GitHub/CE3201_PF|C:/Users/joseb/Documents/GitHub/CE3201_PF/Mux.sv|
 !i113 0
+R9
+R10
+R2
+n@mux
+vPC_Logic
+R12
+R3
+R4
+!i10b 1
+!s100 TP[N8n=6>i:JOfeezzozT0
+IFocD_A5Rk_U8ReaYgcf[E2
+S1
+R1
+R5
+R13
+R14
+!i122 11
+L0 46 10
 R6
 R7
+r1
+!s85 0
+31
 R8
-n@mux
+R15
+R16
+!i113 0
+R9
+R10
+R2
+n@p@c_@logic
 vRegister
 2C:/Users/joseb/Documents/GitHub/CE3201_PF/Register.sv
-R1
-R9
+R3
+R19
 !i10b 1
 !s100 E4W1`1G37];8UEO=g?ODI2
 IWzdk25MPYR@CVbRfKT==N3
 S1
-R0
-Z12 w1749872176
+R1
+R5
 8C:/Users/joseb/Documents/GitHub/CE3201_PF/Register.sv
 FC:/Users/joseb/Documents/GitHub/CE3201_PF/Register.sv
 !i122 2
 L0 1 17
-R3
-R4
+R6
+R7
 r1
 !s85 0
 31
@@ -194,34 +397,88 @@ R11
 !s107 C:/Users/joseb/Documents/GitHub/CE3201_PF/Register.sv|
 !s90 -reportprogress|300|-sv|-work|work|+incdir+C:/Users/joseb/Documents/GitHub/CE3201_PF|C:/Users/joseb/Documents/GitHub/CE3201_PF/Register.sv|
 !i113 0
-R6
-R7
-R8
+R9
+R10
+R2
 n@register
 vRegister_File
 2C:/Users/joseb/Documents/GitHub/CE3201_PF/Register_File.sv
-R1
-R9
+R3
+R17
 !i10b 1
 !s100 f2=j0jXz`li6ebV<>4R2d1
 IPePSDUNaMQKnU][]?Hj0Y3
 S1
-R0
-R12
+R1
+R5
 8C:/Users/joseb/Documents/GitHub/CE3201_PF/Register_File.sv
 FC:/Users/joseb/Documents/GitHub/CE3201_PF/Register_File.sv
 !i122 1
 L0 1 19
-R3
-R4
+R6
+R7
 r1
 !s85 0
 31
-R11
+R18
 !s107 C:/Users/joseb/Documents/GitHub/CE3201_PF/Register_File.sv|
 !s90 -reportprogress|300|-sv|-work|work|+incdir+C:/Users/joseb/Documents/GitHub/CE3201_PF|C:/Users/joseb/Documents/GitHub/CE3201_PF/Register_File.sv|
 !i113 0
+R9
+R10
+R2
+n@register_@file
+vROM
+2C:/Users/joseb/Documents/GitHub/CE3201_PF/ROM.sv
+R3
+R4
+!i10b 1
+!s100 To2=Wg8hIdWd_?Z_dD_Sk2
+IQ^dSdUlk1f^@4[2_Rn]V;1
+S1
+R1
+R5
+8C:/Users/joseb/Documents/GitHub/CE3201_PF/ROM.sv
+FC:/Users/joseb/Documents/GitHub/CE3201_PF/ROM.sv
+!i122 12
+L0 1 20
 R6
 R7
+r1
+!s85 0
+31
 R8
-n@register_@file
+!s107 C:/Users/joseb/Documents/GitHub/CE3201_PF/ROM.sv|
+!s90 -reportprogress|300|-sv|-work|work|+incdir+C:/Users/joseb/Documents/GitHub/CE3201_PF|C:/Users/joseb/Documents/GitHub/CE3201_PF/ROM.sv|
+!i113 0
+R9
+R10
+R2
+n@r@o@m
+vtb_Gambling_Tec
+2C:/Users/joseb/Documents/GitHub/CE3201_PF/tb_Gambling_Tec.sv
+R3
+!s110 1749877101
+!i10b 1
+!s100 Z1LTTOB:1z27V=5>0Ub`d3
+Ii?@SlMko1mSEUhXMbjbnO2
+S1
+R1
+w1749876835
+8C:/Users/joseb/Documents/GitHub/CE3201_PF/tb_Gambling_Tec.sv
+FC:/Users/joseb/Documents/GitHub/CE3201_PF/tb_Gambling_Tec.sv
+!i122 13
+L0 3 46
+R6
+R7
+r1
+!s85 0
+31
+!s108 1749877101.000000
+!s107 C:/Users/joseb/Documents/GitHub/CE3201_PF/tb_Gambling_Tec.sv|
+!s90 -reportprogress|300|-sv|-work|work|+incdir+C:/Users/joseb/Documents/GitHub/CE3201_PF|C:/Users/joseb/Documents/GitHub/CE3201_PF/tb_Gambling_Tec.sv|
+!i113 0
+R9
+R10
+R2
+ntb_@gambling_@tec

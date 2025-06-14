@@ -1,5 +1,5 @@
 Analysis & Synthesis report for Gambling_Tec
-Fri Jun 13 21:44:33 2025
+Fri Jun 13 22:54:18 2025
 Quartus Prime Version 23.1std.1 Build 993 05/14/2024 SC Lite Edition
 
 
@@ -14,25 +14,26 @@ Quartus Prime Version 23.1std.1 Build 993 05/14/2024 SC Lite Edition
   6. Analysis & Synthesis Resource Usage Summary
   7. Analysis & Synthesis Resource Utilization by Entity
   8. General Register Statistics
-  9. Parameter Settings for User Entity Instance: CPU:process|Mux:next_PC_inst
- 10. Parameter Settings for User Entity Instance: CPU:process|Register:PC_Register
- 11. Parameter Settings for User Entity Instance: CPU:process|Mux:RA1_inst
- 12. Parameter Settings for User Entity Instance: CPU:process|Mux:RA2_inst
- 13. Parameter Settings for User Entity Instance: CPU:process|Adder:PCPlus4_inst
- 14. Parameter Settings for User Entity Instance: CPU:process|Adder:PCPlus8_inst
- 15. Parameter Settings for User Entity Instance: CPU:process|Mux:ALUSrc_inst
- 16. Parameter Settings for User Entity Instance: CPU:process|ALU:ALU_inst
- 17. Parameter Settings for User Entity Instance: CPU:process|Mux:MemToReg_inst
- 18. Parameter Settings for User Entity Instance: CPU:process|Control_Unit:CU_Inst|Register:Register_Flag1
- 19. Parameter Settings for User Entity Instance: CPU:process|Control_Unit:CU_Inst|Register:Register_Flag2
- 20. Port Connectivity Checks: "CPU:process|Adder:PCPlus8_inst"
- 21. Port Connectivity Checks: "CPU:process|Adder:PCPlus4_inst"
- 22. Port Connectivity Checks: "CPU:process|Mux:RA1_inst"
- 23. Port Connectivity Checks: "CPU:process|Register:PC_Register"
- 24. Port Connectivity Checks: "CPU:process"
- 25. Post-Synthesis Netlist Statistics for Top Partition
- 26. Elapsed Time Per Partition
- 27. Analysis & Synthesis Messages
+  9. Parameter Settings for User Entity Instance: ROM:rom0
+ 10. Parameter Settings for User Entity Instance: CPU:process|Mux:next_PC_inst
+ 11. Parameter Settings for User Entity Instance: CPU:process|Register:PC_Register
+ 12. Parameter Settings for User Entity Instance: CPU:process|Mux:RA1_inst
+ 13. Parameter Settings for User Entity Instance: CPU:process|Mux:RA2_inst
+ 14. Parameter Settings for User Entity Instance: CPU:process|Adder:PCPlus4_inst
+ 15. Parameter Settings for User Entity Instance: CPU:process|Adder:PCPlus8_inst
+ 16. Parameter Settings for User Entity Instance: CPU:process|Mux:ALUSrc_inst
+ 17. Parameter Settings for User Entity Instance: CPU:process|ALU:ALU_inst
+ 18. Parameter Settings for User Entity Instance: CPU:process|Mux:MemToReg_inst
+ 19. Parameter Settings for User Entity Instance: CPU:process|Control_Unit:CU_Inst|Register:Register_Flag1
+ 20. Parameter Settings for User Entity Instance: CPU:process|Control_Unit:CU_Inst|Register:Register_Flag2
+ 21. Port Connectivity Checks: "CPU:process|Adder:PCPlus8_inst"
+ 22. Port Connectivity Checks: "CPU:process|Adder:PCPlus4_inst"
+ 23. Port Connectivity Checks: "CPU:process|Mux:RA1_inst"
+ 24. Port Connectivity Checks: "CPU:process|Register:PC_Register"
+ 25. Port Connectivity Checks: "CPU:process"
+ 26. Post-Synthesis Netlist Statistics for Top Partition
+ 27. Elapsed Time Per Partition
+ 28. Analysis & Synthesis Messages
 
 
 
@@ -59,14 +60,14 @@ https://fpgasoftware.intel.com/eula.
 +----------------------------------------------------------------------------------+
 ; Analysis & Synthesis Summary                                                     ;
 +---------------------------------+------------------------------------------------+
-; Analysis & Synthesis Status     ; Successful - Fri Jun 13 21:44:33 2025          ;
+; Analysis & Synthesis Status     ; Successful - Fri Jun 13 22:54:18 2025          ;
 ; Quartus Prime Version           ; 23.1std.1 Build 993 05/14/2024 SC Lite Edition ;
 ; Revision Name                   ; Gambling_Tec                                   ;
 ; Top-level Entity Name           ; Gambling_Tec                                   ;
 ; Family                          ; Cyclone V                                      ;
 ; Logic utilization (in ALMs)     ; N/A                                            ;
 ; Total registers                 ; 0                                              ;
-; Total pins                      ; 34                                             ;
+; Total pins                      ; 2                                              ;
 ; Total virtual pins              ; 0                                              ;
 ; Total block memory bits         ; 0                                              ;
 ; Total DSP Blocks                ; 0                                              ;
@@ -182,51 +183,53 @@ https://fpgasoftware.intel.com/eula.
 +----------------------------+-------------+
 
 
-+------------------------------------------------------------------------------------------------------------------------------------------------------------+
-; Analysis & Synthesis Source Files Read                                                                                                                     ;
-+----------------------------------+-----------------+------------------------------+--------------------------------------------------------------+---------+
-; File Name with User-Entered Path ; Used in Netlist ; File Type                    ; File Name with Absolute Path                                 ; Library ;
-+----------------------------------+-----------------+------------------------------+--------------------------------------------------------------+---------+
-; Condition_Check.sv               ; yes             ; User SystemVerilog HDL File  ; C:/Users/joseb/Documents/GitHub/CE3201_PF/Condition_Check.sv ;         ;
-; Register_File.sv                 ; yes             ; User SystemVerilog HDL File  ; C:/Users/joseb/Documents/GitHub/CE3201_PF/Register_File.sv   ;         ;
-; Register.sv                      ; yes             ; User SystemVerilog HDL File  ; C:/Users/joseb/Documents/GitHub/CE3201_PF/Register.sv        ;         ;
-; Mux.sv                           ; yes             ; User SystemVerilog HDL File  ; C:/Users/joseb/Documents/GitHub/CE3201_PF/Mux.sv             ;         ;
-; Extender.sv                      ; yes             ; User SystemVerilog HDL File  ; C:/Users/joseb/Documents/GitHub/CE3201_PF/Extender.sv        ;         ;
-; Data_Memory.sv                   ; yes             ; User SystemVerilog HDL File  ; C:/Users/joseb/Documents/GitHub/CE3201_PF/Data_Memory.sv     ;         ;
-; CPU.sv                           ; yes             ; User SystemVerilog HDL File  ; C:/Users/joseb/Documents/GitHub/CE3201_PF/CPU.sv             ;         ;
-; ALU.sv                           ; yes             ; User SystemVerilog HDL File  ; C:/Users/joseb/Documents/GitHub/CE3201_PF/ALU.sv             ;         ;
-; Adder.sv                         ; yes             ; User SystemVerilog HDL File  ; C:/Users/joseb/Documents/GitHub/CE3201_PF/Adder.sv           ;         ;
-; Gambling_Tec.sv                  ; yes             ; User SystemVerilog HDL File  ; C:/Users/joseb/Documents/GitHub/CE3201_PF/Gambling_Tec.sv    ;         ;
-; Control_Unit.sv                  ; yes             ; User SystemVerilog HDL File  ; C:/Users/joseb/Documents/GitHub/CE3201_PF/Control_Unit.sv    ;         ;
-; Decoder.sv                       ; yes             ; User SystemVerilog HDL File  ; C:/Users/joseb/Documents/GitHub/CE3201_PF/Decoder.sv         ;         ;
-+----------------------------------+-----------------+------------------------------+--------------------------------------------------------------+---------+
++---------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+; Analysis & Synthesis Source Files Read                                                                                                                              ;
++----------------------------------+-----------------+---------------------------------------+--------------------------------------------------------------+---------+
+; File Name with User-Entered Path ; Used in Netlist ; File Type                             ; File Name with Absolute Path                                 ; Library ;
++----------------------------------+-----------------+---------------------------------------+--------------------------------------------------------------+---------+
+; prog.hex                         ; yes             ; User Hexadecimal (Intel-Format) File  ; C:/Users/joseb/Documents/GitHub/CE3201_PF/prog.hex           ;         ;
+; Condition_Check.sv               ; yes             ; User SystemVerilog HDL File           ; C:/Users/joseb/Documents/GitHub/CE3201_PF/Condition_Check.sv ;         ;
+; Register_File.sv                 ; yes             ; User SystemVerilog HDL File           ; C:/Users/joseb/Documents/GitHub/CE3201_PF/Register_File.sv   ;         ;
+; Register.sv                      ; yes             ; User SystemVerilog HDL File           ; C:/Users/joseb/Documents/GitHub/CE3201_PF/Register.sv        ;         ;
+; Mux.sv                           ; yes             ; User SystemVerilog HDL File           ; C:/Users/joseb/Documents/GitHub/CE3201_PF/Mux.sv             ;         ;
+; Extender.sv                      ; yes             ; User SystemVerilog HDL File           ; C:/Users/joseb/Documents/GitHub/CE3201_PF/Extender.sv        ;         ;
+; Data_Memory.sv                   ; yes             ; User SystemVerilog HDL File           ; C:/Users/joseb/Documents/GitHub/CE3201_PF/Data_Memory.sv     ;         ;
+; CPU.sv                           ; yes             ; User SystemVerilog HDL File           ; C:/Users/joseb/Documents/GitHub/CE3201_PF/CPU.sv             ;         ;
+; ALU.sv                           ; yes             ; User SystemVerilog HDL File           ; C:/Users/joseb/Documents/GitHub/CE3201_PF/ALU.sv             ;         ;
+; Adder.sv                         ; yes             ; User SystemVerilog HDL File           ; C:/Users/joseb/Documents/GitHub/CE3201_PF/Adder.sv           ;         ;
+; Gambling_Tec.sv                  ; yes             ; User SystemVerilog HDL File           ; C:/Users/joseb/Documents/GitHub/CE3201_PF/Gambling_Tec.sv    ;         ;
+; Control_Unit.sv                  ; yes             ; User SystemVerilog HDL File           ; C:/Users/joseb/Documents/GitHub/CE3201_PF/Control_Unit.sv    ;         ;
+; Decoder.sv                       ; yes             ; User SystemVerilog HDL File           ; C:/Users/joseb/Documents/GitHub/CE3201_PF/Decoder.sv         ;         ;
+; ROM.sv                           ; yes             ; User SystemVerilog HDL File           ; C:/Users/joseb/Documents/GitHub/CE3201_PF/ROM.sv             ;         ;
++----------------------------------+-----------------+---------------------------------------+--------------------------------------------------------------+---------+
 
 
-+--------------------------------------------------------------+
-; Analysis & Synthesis Resource Usage Summary                  ;
-+---------------------------------------------+----------------+
-; Resource                                    ; Usage          ;
-+---------------------------------------------+----------------+
-; Estimate of Logic utilization (ALMs needed) ; 0              ;
-;                                             ;                ;
-; Combinational ALUT usage for logic          ; 0              ;
-;     -- 7 input functions                    ; 0              ;
-;     -- 6 input functions                    ; 0              ;
-;     -- 5 input functions                    ; 0              ;
-;     -- 4 input functions                    ; 0              ;
-;     -- <=3 input functions                  ; 0              ;
-;                                             ;                ;
-; Dedicated logic registers                   ; 0              ;
-;                                             ;                ;
-; I/O pins                                    ; 34             ;
-;                                             ;                ;
-; Total DSP Blocks                            ; 0              ;
-;                                             ;                ;
-; Maximum fan-out node                        ; Instruction[0] ;
-; Maximum fan-out                             ; 1              ;
-; Total fan-out                               ; 34             ;
-; Average fan-out                             ; 0.50           ;
-+---------------------------------------------+----------------+
++-----------------------------------------------------+
+; Analysis & Synthesis Resource Usage Summary         ;
++---------------------------------------------+-------+
+; Resource                                    ; Usage ;
++---------------------------------------------+-------+
+; Estimate of Logic utilization (ALMs needed) ; 0     ;
+;                                             ;       ;
+; Combinational ALUT usage for logic          ; 0     ;
+;     -- 7 input functions                    ; 0     ;
+;     -- 6 input functions                    ; 0     ;
+;     -- 5 input functions                    ; 0     ;
+;     -- 4 input functions                    ; 0     ;
+;     -- <=3 input functions                  ; 0     ;
+;                                             ;       ;
+; Dedicated logic registers                   ; 0     ;
+;                                             ;       ;
+; I/O pins                                    ; 2     ;
+;                                             ;       ;
+; Total DSP Blocks                            ; 0     ;
+;                                             ;       ;
+; Maximum fan-out node                        ; clk   ;
+; Maximum fan-out                             ; 1     ;
+; Total fan-out                               ; 2     ;
+; Average fan-out                             ; 0.50  ;
++---------------------------------------------+-------+
 
 
 +-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
@@ -234,7 +237,7 @@ https://fpgasoftware.intel.com/eula.
 +----------------------------+---------------------+---------------------------+-------------------+------------+------+--------------+---------------------+--------------+--------------+
 ; Compilation Hierarchy Node ; Combinational ALUTs ; Dedicated Logic Registers ; Block Memory Bits ; DSP Blocks ; Pins ; Virtual Pins ; Full Hierarchy Name ; Entity Name  ; Library Name ;
 +----------------------------+---------------------+---------------------------+-------------------+------------+------+--------------+---------------------+--------------+--------------+
-; |Gambling_Tec              ; 0 (0)               ; 0 (0)                     ; 0                 ; 0          ; 34   ; 0            ; |Gambling_Tec       ; Gambling_Tec ; work         ;
+; |Gambling_Tec              ; 0 (0)               ; 0 (0)                     ; 0                 ; 0          ; 2    ; 0            ; |Gambling_Tec       ; Gambling_Tec ; work         ;
 +----------------------------+---------------------+---------------------------+-------------------+------------+------+--------------+---------------------+--------------+--------------+
 Note: For table entries with two numbers listed, the numbers in parentheses indicate the number of resources of the given type used by the specific entity alone. The numbers listed outside of parentheses indicate the total resources of the given type used by the specific entity and all of its sub-entities in the hierarchy.
 
@@ -252,6 +255,17 @@ Note: For table entries with two numbers listed, the numbers in parentheses indi
 ; Number of registers using Clock Enable       ; 0     ;
 ; Number of registers using Preset             ; 0     ;
 +----------------------------------------------+-------+
+
+
++-------------------------------------------------------+
+; Parameter Settings for User Entity Instance: ROM:rom0 ;
++----------------+-------+------------------------------+
+; Parameter Name ; Value ; Type                         ;
++----------------+-------+------------------------------+
+; AW             ; 10    ; Signed Integer               ;
+; DW             ; 32    ; Signed Integer               ;
++----------------+-------+------------------------------+
+Note: In order to hide this table in the UI and the text report file, please set the "Show Parameter Settings in Synthesis Report" option in "Analysis and Synthesis Settings -> More Settings" to "Off".
 
 
 +---------------------------------------------------------------------------+
@@ -404,14 +418,15 @@ Note: In order to hide this table in the UI and the text report file, please set
 +------+-------+----------+------------------------------------+
 
 
-+------------------------------------------------------------------------------------------------------------------+
-; Port Connectivity Checks: "CPU:process"                                                                          ;
-+--------+--------+----------+-------------------------------------------------------------------------------------+
-; Port   ; Type   ; Severity ; Details                                                                             ;
-+--------+--------+----------+-------------------------------------------------------------------------------------+
-; PC     ; Output ; Info     ; Connected to dangling logic. Logic that only feeds a dangling port will be removed. ;
-; Result ; Output ; Info     ; Explicitly unconnected                                                              ;
-+--------+--------+----------+-------------------------------------------------------------------------------------+
++----------------------------------------------------------------------------------------------------------------------+
+; Port Connectivity Checks: "CPU:process"                                                                              ;
++------------+--------+----------+-------------------------------------------------------------------------------------+
+; Port       ; Type   ; Severity ; Details                                                                             ;
++------------+--------+----------+-------------------------------------------------------------------------------------+
+; PC[31..12] ; Output ; Info     ; Connected to dangling logic. Logic that only feeds a dangling port will be removed. ;
+; PC[1..0]   ; Output ; Info     ; Connected to dangling logic. Logic that only feeds a dangling port will be removed. ;
+; Result     ; Output ; Info     ; Connected to dangling logic. Logic that only feeds a dangling port will be removed. ;
++------------+--------+----------+-------------------------------------------------------------------------------------+
 
 
 +-----------------------------------------------------+
@@ -419,7 +434,7 @@ Note: In order to hide this table in the UI and the text report file, please set
 +-------------------+---------------------------------+
 ; Type              ; Count                           ;
 +-------------------+---------------------------------+
-; boundary_port     ; 34                              ;
+; boundary_port     ; 2                               ;
 ;                   ;                                 ;
 ; Max LUT depth     ; 0.00                            ;
 ; Average LUT depth ; 0.00                            ;
@@ -441,7 +456,7 @@ Note: In order to hide this table in the UI and the text report file, please set
 Info: *******************************************************************
 Info: Running Quartus Prime Analysis & Synthesis
     Info: Version 23.1std.1 Build 993 05/14/2024 SC Lite Edition
-    Info: Processing started: Fri Jun 13 21:44:21 2025
+    Info: Processing started: Fri Jun 13 22:54:06 2025
 Info: Command: quartus_map --read_settings_files=on --write_settings_files=off Gambling_Tec -c Gambling_Tec
 Warning (18236): Number of processors has not been specified which may cause overloading on shared machines.  Set the global assignment NUM_PARALLEL_PROCESSORS in your QSF to an appropriate value for best performance.
 Info (20030): Parallel compilation is enabled and will use 8 of the 8 processors detected
@@ -487,9 +502,16 @@ Info (12021): Found 1 design units, including 1 entities, in source file tb_gamb
     Info (12023): Found entity 1: tb_Gambling_Tec File: C:/Users/joseb/Documents/GitHub/CE3201_PF/tb_Gambling_Tec.sv Line: 3
 Info (12021): Found 1 design units, including 1 entities, in source file tb_data_memory.sv
     Info (12023): Found entity 1: tb_Data_Memory File: C:/Users/joseb/Documents/GitHub/CE3201_PF/tb_Data_Memory.sv Line: 3
+Info (12021): Found 1 design units, including 1 entities, in source file rom.sv
+    Info (12023): Found entity 1: ROM File: C:/Users/joseb/Documents/GitHub/CE3201_PF/ROM.sv Line: 1
 Warning (10236): Verilog HDL Implicit Net warning at Decoder.sv(33): created implicit net for "ALUOP" File: C:/Users/joseb/Documents/GitHub/CE3201_PF/Decoder.sv Line: 33
 Info (12127): Elaborating entity "Gambling_Tec" for the top level hierarchy
-Info (12128): Elaborating entity "CPU" for hierarchy "CPU:process" File: C:/Users/joseb/Documents/GitHub/CE3201_PF/Gambling_Tec.sv Line: 31
+Info (12128): Elaborating entity "ROM" for hierarchy "ROM:rom0" File: C:/Users/joseb/Documents/GitHub/CE3201_PF/Gambling_Tec.sv Line: 19
+Warning (10850): Verilog HDL warning at ROM.sv(14): number of words (2) in memory file does not match the number of elements in the address range [0:1023] File: C:/Users/joseb/Documents/GitHub/CE3201_PF/ROM.sv Line: 14
+Warning (10030): Net "mem.data_a" at ROM.sv(10) has no driver or initial value, using a default initial value '0' File: C:/Users/joseb/Documents/GitHub/CE3201_PF/ROM.sv Line: 10
+Warning (10030): Net "mem.waddr_a" at ROM.sv(10) has no driver or initial value, using a default initial value '0' File: C:/Users/joseb/Documents/GitHub/CE3201_PF/ROM.sv Line: 10
+Warning (10030): Net "mem.we_a" at ROM.sv(10) has no driver or initial value, using a default initial value '0' File: C:/Users/joseb/Documents/GitHub/CE3201_PF/ROM.sv Line: 10
+Info (12128): Elaborating entity "CPU" for hierarchy "CPU:process" File: C:/Users/joseb/Documents/GitHub/CE3201_PF/Gambling_Tec.sv Line: 32
 Info (12128): Elaborating entity "Mux" for hierarchy "CPU:process|Mux:next_PC_inst" File: C:/Users/joseb/Documents/GitHub/CE3201_PF/CPU.sv Line: 36
 Info (12128): Elaborating entity "Register" for hierarchy "CPU:process|Register:PC_Register" File: C:/Users/joseb/Documents/GitHub/CE3201_PF/CPU.sv Line: 44
 Info (12128): Elaborating entity "Mux" for hierarchy "CPU:process|Mux:RA1_inst" File: C:/Users/joseb/Documents/GitHub/CE3201_PF/CPU.sv Line: 53
@@ -506,51 +528,19 @@ Info (12128): Elaborating entity "ALU_Decoder" for hierarchy "CPU:process|Contro
 Info (12128): Elaborating entity "Register" for hierarchy "CPU:process|Control_Unit:CU_Inst|Register:Register_Flag1" File: C:/Users/joseb/Documents/GitHub/CE3201_PF/Control_Unit.sv Line: 55
 Warning (10230): Verilog HDL assignment warning at Register.sv(12): truncated value with size 10 to match size of target (2) File: C:/Users/joseb/Documents/GitHub/CE3201_PF/Register.sv Line: 12
 Info (12128): Elaborating entity "Condition_Check" for hierarchy "CPU:process|Control_Unit:CU_Inst|Condition_Check:inst_Condition_Check" File: C:/Users/joseb/Documents/GitHub/CE3201_PF/Control_Unit.sv Line: 70
-Info (12128): Elaborating entity "Data_Memory" for hierarchy "Data_Memory:data_mem" File: C:/Users/joseb/Documents/GitHub/CE3201_PF/Gambling_Tec.sv Line: 40
+Info (12128): Elaborating entity "Data_Memory" for hierarchy "Data_Memory:data_mem" File: C:/Users/joseb/Documents/GitHub/CE3201_PF/Gambling_Tec.sv Line: 41
 Info (16010): Generating hard_block partition "hard_block:auto_generated_inst"
     Info (16011): Adding 0 node(s), including 0 DDIO, 0 PLL, 0 transceiver and 0 LCELL
-Warning (21074): Design contains 34 input pin(s) that do not drive logic
-    Warning (15610): No output dependent on input pin "Instruction[0]" File: C:/Users/joseb/Documents/GitHub/CE3201_PF/Gambling_Tec.sv Line: 2
-    Warning (15610): No output dependent on input pin "Instruction[1]" File: C:/Users/joseb/Documents/GitHub/CE3201_PF/Gambling_Tec.sv Line: 2
-    Warning (15610): No output dependent on input pin "Instruction[2]" File: C:/Users/joseb/Documents/GitHub/CE3201_PF/Gambling_Tec.sv Line: 2
-    Warning (15610): No output dependent on input pin "Instruction[3]" File: C:/Users/joseb/Documents/GitHub/CE3201_PF/Gambling_Tec.sv Line: 2
-    Warning (15610): No output dependent on input pin "Instruction[4]" File: C:/Users/joseb/Documents/GitHub/CE3201_PF/Gambling_Tec.sv Line: 2
-    Warning (15610): No output dependent on input pin "Instruction[5]" File: C:/Users/joseb/Documents/GitHub/CE3201_PF/Gambling_Tec.sv Line: 2
-    Warning (15610): No output dependent on input pin "Instruction[6]" File: C:/Users/joseb/Documents/GitHub/CE3201_PF/Gambling_Tec.sv Line: 2
-    Warning (15610): No output dependent on input pin "Instruction[7]" File: C:/Users/joseb/Documents/GitHub/CE3201_PF/Gambling_Tec.sv Line: 2
-    Warning (15610): No output dependent on input pin "Instruction[8]" File: C:/Users/joseb/Documents/GitHub/CE3201_PF/Gambling_Tec.sv Line: 2
-    Warning (15610): No output dependent on input pin "Instruction[9]" File: C:/Users/joseb/Documents/GitHub/CE3201_PF/Gambling_Tec.sv Line: 2
-    Warning (15610): No output dependent on input pin "Instruction[10]" File: C:/Users/joseb/Documents/GitHub/CE3201_PF/Gambling_Tec.sv Line: 2
-    Warning (15610): No output dependent on input pin "Instruction[11]" File: C:/Users/joseb/Documents/GitHub/CE3201_PF/Gambling_Tec.sv Line: 2
-    Warning (15610): No output dependent on input pin "Instruction[12]" File: C:/Users/joseb/Documents/GitHub/CE3201_PF/Gambling_Tec.sv Line: 2
-    Warning (15610): No output dependent on input pin "Instruction[13]" File: C:/Users/joseb/Documents/GitHub/CE3201_PF/Gambling_Tec.sv Line: 2
-    Warning (15610): No output dependent on input pin "Instruction[14]" File: C:/Users/joseb/Documents/GitHub/CE3201_PF/Gambling_Tec.sv Line: 2
-    Warning (15610): No output dependent on input pin "Instruction[15]" File: C:/Users/joseb/Documents/GitHub/CE3201_PF/Gambling_Tec.sv Line: 2
-    Warning (15610): No output dependent on input pin "Instruction[16]" File: C:/Users/joseb/Documents/GitHub/CE3201_PF/Gambling_Tec.sv Line: 2
-    Warning (15610): No output dependent on input pin "Instruction[17]" File: C:/Users/joseb/Documents/GitHub/CE3201_PF/Gambling_Tec.sv Line: 2
-    Warning (15610): No output dependent on input pin "Instruction[18]" File: C:/Users/joseb/Documents/GitHub/CE3201_PF/Gambling_Tec.sv Line: 2
-    Warning (15610): No output dependent on input pin "Instruction[19]" File: C:/Users/joseb/Documents/GitHub/CE3201_PF/Gambling_Tec.sv Line: 2
-    Warning (15610): No output dependent on input pin "Instruction[20]" File: C:/Users/joseb/Documents/GitHub/CE3201_PF/Gambling_Tec.sv Line: 2
-    Warning (15610): No output dependent on input pin "Instruction[21]" File: C:/Users/joseb/Documents/GitHub/CE3201_PF/Gambling_Tec.sv Line: 2
-    Warning (15610): No output dependent on input pin "Instruction[22]" File: C:/Users/joseb/Documents/GitHub/CE3201_PF/Gambling_Tec.sv Line: 2
-    Warning (15610): No output dependent on input pin "Instruction[23]" File: C:/Users/joseb/Documents/GitHub/CE3201_PF/Gambling_Tec.sv Line: 2
-    Warning (15610): No output dependent on input pin "Instruction[24]" File: C:/Users/joseb/Documents/GitHub/CE3201_PF/Gambling_Tec.sv Line: 2
-    Warning (15610): No output dependent on input pin "Instruction[25]" File: C:/Users/joseb/Documents/GitHub/CE3201_PF/Gambling_Tec.sv Line: 2
-    Warning (15610): No output dependent on input pin "Instruction[26]" File: C:/Users/joseb/Documents/GitHub/CE3201_PF/Gambling_Tec.sv Line: 2
-    Warning (15610): No output dependent on input pin "Instruction[27]" File: C:/Users/joseb/Documents/GitHub/CE3201_PF/Gambling_Tec.sv Line: 2
-    Warning (15610): No output dependent on input pin "Instruction[28]" File: C:/Users/joseb/Documents/GitHub/CE3201_PF/Gambling_Tec.sv Line: 2
-    Warning (15610): No output dependent on input pin "Instruction[29]" File: C:/Users/joseb/Documents/GitHub/CE3201_PF/Gambling_Tec.sv Line: 2
-    Warning (15610): No output dependent on input pin "Instruction[30]" File: C:/Users/joseb/Documents/GitHub/CE3201_PF/Gambling_Tec.sv Line: 2
-    Warning (15610): No output dependent on input pin "Instruction[31]" File: C:/Users/joseb/Documents/GitHub/CE3201_PF/Gambling_Tec.sv Line: 2
-    Warning (15610): No output dependent on input pin "clk" File: C:/Users/joseb/Documents/GitHub/CE3201_PF/Gambling_Tec.sv Line: 3
+Warning (21074): Design contains 2 input pin(s) that do not drive logic
+    Warning (15610): No output dependent on input pin "clk" File: C:/Users/joseb/Documents/GitHub/CE3201_PF/Gambling_Tec.sv Line: 2
     Warning (15610): No output dependent on input pin "rst" File: C:/Users/joseb/Documents/GitHub/CE3201_PF/Gambling_Tec.sv Line: 4
-Info (21057): Implemented 34 device resources after synthesis - the final resource count might be different
-    Info (21058): Implemented 34 input pins
+Info (21057): Implemented 2 device resources after synthesis - the final resource count might be different
+    Info (21058): Implemented 2 input pins
     Info (21059): Implemented 0 output pins
-Info: Quartus Prime Analysis & Synthesis was successful. 0 errors, 40 warnings
-    Info: Peak virtual memory: 4800 megabytes
-    Info: Processing ended: Fri Jun 13 21:44:33 2025
+Info: Quartus Prime Analysis & Synthesis was successful. 0 errors, 12 warnings
+    Info: Peak virtual memory: 4798 megabytes
+    Info: Processing ended: Fri Jun 13 22:54:18 2025
     Info: Elapsed time: 00:00:12
-    Info: Total CPU time (on all processors): 00:00:31
+    Info: Total CPU time (on all processors): 00:00:29
 
 

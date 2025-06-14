@@ -1,38 +1,51 @@
 |Gambling_Tec
-Instruction[0] => Instruction[0].IN1
-Instruction[1] => Instruction[1].IN1
-Instruction[2] => Instruction[2].IN1
-Instruction[3] => Instruction[3].IN1
-Instruction[4] => Instruction[4].IN1
-Instruction[5] => Instruction[5].IN1
-Instruction[6] => Instruction[6].IN1
-Instruction[7] => Instruction[7].IN1
-Instruction[8] => Instruction[8].IN1
-Instruction[9] => Instruction[9].IN1
-Instruction[10] => Instruction[10].IN1
-Instruction[11] => Instruction[11].IN1
-Instruction[12] => Instruction[12].IN1
-Instruction[13] => Instruction[13].IN1
-Instruction[14] => Instruction[14].IN1
-Instruction[15] => Instruction[15].IN1
-Instruction[16] => Instruction[16].IN1
-Instruction[17] => Instruction[17].IN1
-Instruction[18] => Instruction[18].IN1
-Instruction[19] => Instruction[19].IN1
-Instruction[20] => Instruction[20].IN1
-Instruction[21] => Instruction[21].IN1
-Instruction[22] => Instruction[22].IN1
-Instruction[23] => Instruction[23].IN1
-Instruction[24] => Instruction[24].IN1
-Instruction[25] => Instruction[25].IN1
-Instruction[26] => Instruction[26].IN1
-Instruction[27] => Instruction[27].IN1
-Instruction[28] => Instruction[28].IN1
-Instruction[29] => Instruction[29].IN1
-Instruction[30] => Instruction[30].IN1
-Instruction[31] => Instruction[31].IN1
 clk => clk.IN2
 rst => rst.IN1
+
+
+|Gambling_Tec|ROM:rom0
+address[0] => mem.RADDR
+address[1] => mem.RADDR1
+address[2] => mem.RADDR2
+address[3] => mem.RADDR3
+address[4] => mem.RADDR4
+address[5] => mem.RADDR5
+address[6] => mem.RADDR6
+address[7] => mem.RADDR7
+address[8] => mem.RADDR8
+address[9] => mem.RADDR9
+data[0] <= mem.DATAOUT
+data[1] <= mem.DATAOUT1
+data[2] <= mem.DATAOUT2
+data[3] <= mem.DATAOUT3
+data[4] <= mem.DATAOUT4
+data[5] <= mem.DATAOUT5
+data[6] <= mem.DATAOUT6
+data[7] <= mem.DATAOUT7
+data[8] <= mem.DATAOUT8
+data[9] <= mem.DATAOUT9
+data[10] <= mem.DATAOUT10
+data[11] <= mem.DATAOUT11
+data[12] <= mem.DATAOUT12
+data[13] <= mem.DATAOUT13
+data[14] <= mem.DATAOUT14
+data[15] <= mem.DATAOUT15
+data[16] <= mem.DATAOUT16
+data[17] <= mem.DATAOUT17
+data[18] <= mem.DATAOUT18
+data[19] <= mem.DATAOUT19
+data[20] <= mem.DATAOUT20
+data[21] <= mem.DATAOUT21
+data[22] <= mem.DATAOUT22
+data[23] <= mem.DATAOUT23
+data[24] <= mem.DATAOUT24
+data[25] <= mem.DATAOUT25
+data[26] <= mem.DATAOUT26
+data[27] <= mem.DATAOUT27
+data[28] <= mem.DATAOUT28
+data[29] <= mem.DATAOUT29
+data[30] <= mem.DATAOUT30
+data[31] <= mem.DATAOUT31
 
 
 |Gambling_Tec|CPU:process
