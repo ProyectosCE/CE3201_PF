@@ -1821,6 +1821,7 @@ RegSrc[0] <= Main_Decoder:main_decoder_inst.RegSrc
 RegSrc[1] <= Main_Decoder:main_decoder_inst.RegSrc
 ALUControl[0] <= ALU_Decoder:alu_decoder_inst.ALUControl
 ALUControl[1] <= ALU_Decoder:alu_decoder_inst.ALUControl
+NoWrite <= ALU_Decoder:alu_decoder_inst.NoWrite
 
 
 |Gambling_Tec|CPU:process|Control_Unit:CU_Inst|Decoder:decoder_inst|PC_Logic:pc_logic_inst
@@ -1885,6 +1886,7 @@ ALUControl[0] <= ALUControl.DB_MAX_OUTPUT_PORT_TYPE
 ALUControl[1] <= ALUControl.DB_MAX_OUTPUT_PORT_TYPE
 FlagW[0] <= FlagW.DB_MAX_OUTPUT_PORT_TYPE
 FlagW[1] <= FlagW.DB_MAX_OUTPUT_PORT_TYPE
+NoWrite <= NoWrite.DB_MAX_OUTPUT_PORT_TYPE
 
 
 |Gambling_Tec|CPU:process|Control_Unit:CU_Inst|Register:Register_Flag1

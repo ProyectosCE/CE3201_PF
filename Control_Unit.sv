@@ -26,6 +26,7 @@ module Control_Unit(
     logic       CondEx;
     logic [1:0] FlagW;
     logic [3:0] ALUfLags;
+	 logic NoWrite;
 
 	 
 	// Instancia del decodificador
@@ -42,7 +43,8 @@ module Control_Unit(
 		.ALUSrc(ALUSrc), 
 		.ImmSrc(ImmSrc), 
 		.RegSrc(RegSrc), 
-		.ALUControl(ALUControl)
+		.ALUControl(ALUControl),
+		.NoWrite(NoWrite)
 	);
 
     // Registros para guardar banderas de la ALU
@@ -70,7 +72,7 @@ module Control_Unit(
     );
 
     // Señales de control finales
-    assign PCSrc     = PCS & CondEx;
+    assign PCSrc     = PCS & CondEx & ~NoWrite;
     assign RegWrite  = RegW & CondEx;
     assign MemWrite  = MemW & CondEx;
 

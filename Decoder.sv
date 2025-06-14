@@ -6,7 +6,9 @@ module Decoder (
 	
 	output logic [1:0] FlagW,
 	output logic PCS, RegW, MemW, MemtoReg, ALUSrc, 
-	output logic [1:0] ImmSrc, RegSrc, ALUControl
+	output logic [1:0] ImmSrc, RegSrc, ALUControl,
+	
+	output logic NoWrite
 );
 
 	logic Branch, ALUOp;
@@ -38,7 +40,8 @@ module Decoder (
 		.Funct(Funct[4:0]),
 			
 		.ALUControl(ALUControl), 
-		.FlagW(FlagW)
+		.FlagW(FlagW),
+		.NoWrite(NoWrite)
 	);
 
 endmodule 
@@ -132,7 +135,8 @@ module ALU_Decoder (
 	input logic ALUOP,
 	input logic [4:0] Funct,
 	
-	output logic [1:0] ALUControl, FlagW
+	output logic [1:0] ALUControl, FlagW,
+	output logic NoWrite
 );
 
 	always_comb begin
@@ -140,6 +144,7 @@ module ALU_Decoder (
 			  1'b0: begin
 					ALUControl = 2'b00;
 					FlagW      = 2'b00;
+					NoWrite    = 1'b0;
 			  end
 
 			  1'b1: begin
@@ -147,22 +152,32 @@ module ALU_Decoder (
 						 4'b0100: begin
 							  ALUControl = 2'b00;
 							  FlagW      = Funct[0] ? 2'b11 : 2'b00;
+							  NoWrite    = 1'b0;
 						 end
 						 4'b0010: begin
 							  ALUControl = 2'b01;
 							  FlagW      = Funct[0] ? 2'b11 : 2'b00;
+							  NoWrite    = 1'b0;
 						 end
 						 4'b0000: begin
 							  ALUControl = 2'b10;
 							  FlagW      = Funct[0] ? 2'b10 : 2'b00;
+							  NoWrite    = 1'b0;
 						 end
 						 4'b1100: begin
 							  ALUControl = 2'b11;
 							  FlagW      = Funct[0] ? 2'b10 : 2'b00;
+							  NoWrite    = 1'b0;
+						 end
+						 4'b1010: begin 
+							  ALUControl = 2'b01;
+							  FlagW = 2'b11;
+							  NoWrite = 1'b1;
 						 end
 						 default: begin
 							  ALUControl = 2'b00;
 							  FlagW      = 2'b00;
+							  NoWrite    = 1'b0;
 						 end
 					endcase
 			  end
