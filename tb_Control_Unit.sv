@@ -102,6 +102,7 @@ module tb_Control_Unit;
     else
       $display("%0d PRUEBA(S) FALLARON", fails);
 
+
     $finish;
   end
 

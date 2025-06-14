@@ -147,10 +147,48 @@ module CPU_tb;
 			 $display("PC despues del branch: %h", PC);
 			 $display("PC esperado: %h", pc_esperado);
 
+		 // =====================================================
+		 // PRUEBA CMP
+		 // =====================================================
+		 
+			 @(posedge clk);
+			 exec_cmp(0 , 0 , 2'b01); // N=0 Z=1 
+			 exec_cmp(100, 20 , 2'b00); // N=0 Z=0 
+			 exec_cmp(5  , 20 , 2'b10); // N=1 Z=0 
 
 
-        $display("==== FIN TEST ====");
-        $finish;
+
+         $display("==== FIN TEST ====");
+         $finish;
     end
+	 
+	task automatic exec_cmp;
+		 input [31:0] rn_val, rm_val;   // valores de R0 y R1
+		 input [1:0]  exp_NZ;           // {N, Z} esperados
+	begin
+		 // operandos 
+		 dut.Reg_file_inst.rf[0] = rn_val;
+		 dut.Reg_file_inst.rf[1] = rm_val;
+		 
+		 // Instr
+		 Instr = 32'hE1500001;          // CMP R0, R1
+
+		 @(posedge clk);
+		 #1;                            // pequeño margen de asentamiento
+		 $display("CMP Operands: A=%0d B=%0d", dut.SrcA, dut.SrcB);
+
+
+		 // Comprobar Flags
+		 $display("DEBUG CMP A=%0d B=%0d  N=%0b Z=%0b",
+					 rn_val, rm_val, dut.AluFlags[1], dut.AluFlags[0]);
+
+		 if (dut.AluFlags[1:0] !== exp_NZ)
+			  $display("ERROR CMP (%0d vs %0d): N,Z esperados = %b  obtenidos = %b",
+						  rn_val, rm_val, exp_NZ, dut.AluFlags[1:0]);
+		 else
+			  $display("OK    CMP (%0d vs %0d)", rn_val, rm_val);
+	end
+	endtask
+
 
 endmodule
