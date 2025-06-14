@@ -156,7 +156,25 @@ module CPU_tb;
 			 exec_cmp(100, 20 , 2'b00); // N=0 Z=0 
 			 exec_cmp(5  , 20 , 2'b10); // N=1 Z=0 
 
+		 // =====================================================
+		 // PRUEBA BNE
+		 // =====================================================
+		 
 
+			 // Ejecutar cmp
+			 exec_cmp(0, 0 , 2'b00); // N=0 Z=0 
+			 @(posedge clk);
+
+		 	// Guardar PC antes del branch
+			 pc_before_branch = PC;
+			 
+			// Ejecutar branch
+			 Instr = 32'h1A000000;
+			 @(posedge clk);
+			 
+			 $display("PC antes del branch: %h", pc_before_branch);
+			 $display("PC despues del branch: %h", PC);
+			 
 
          $display("==== FIN TEST ====");
          $finish;

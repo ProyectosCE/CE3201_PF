@@ -10,7 +10,7 @@ cModel Technology
 Z0 dC:/Users/jimmy/GitHub/CE3201_PF/simulation/modelsim
 vAdder
 Z1 DXx6 sv_std 3 std 0 22 AD7iAPLo6nTIKk<N0eo=D3
-Z2 !s110 1749926210
+Z2 !s110 1749927365
 !i10b 1
 !s100 8QVUnY5[dPPgP^cR9nYl12
 I9HVTNZUSQdBEC@Hd=_:oc1
@@ -26,7 +26,7 @@ Z5 OV;L;10.5b;63
 r1
 !s85 0
 31
-Z6 !s108 1749926210.000000
+Z6 !s108 1749927365.000000
 !s107 C:/Users/jimmy/GitHub/CE3201_PF/Adder.sv|
 !s90 -reportprogress|300|-sv|-work|work|+incdir+C:/Users/jimmy/GitHub/CE3201_PF|C:/Users/jimmy/GitHub/CE3201_PF/Adder.sv|
 !i113 1
@@ -62,25 +62,25 @@ R9
 n@a@l@u
 vALU_Decoder
 R1
-R2
+Z10 !s110 1749927366
 !i10b 1
 !s100 ZD5EGZZ<6mjz3c^JXURRA2
 ISRU9zm6Oo7`z6[1iCT`ZL0
 R3
-Z10 !s105 Decoder_sv_unit
+Z11 !s105 Decoder_sv_unit
 S1
 R0
-Z11 w1749923268
-Z12 8C:/Users/jimmy/GitHub/CE3201_PF/Decoder.sv
-Z13 FC:/Users/jimmy/GitHub/CE3201_PF/Decoder.sv
+Z12 w1749923268
+Z13 8C:/Users/jimmy/GitHub/CE3201_PF/Decoder.sv
+Z14 FC:/Users/jimmy/GitHub/CE3201_PF/Decoder.sv
 L0 134
 R5
 r1
 !s85 0
 31
-R6
-Z14 !s107 C:/Users/jimmy/GitHub/CE3201_PF/Decoder.sv|
-Z15 !s90 -reportprogress|300|-sv|-work|work|+incdir+C:/Users/jimmy/GitHub/CE3201_PF|C:/Users/jimmy/GitHub/CE3201_PF/Decoder.sv|
+Z15 !s108 1749927366.000000
+Z16 !s107 C:/Users/jimmy/GitHub/CE3201_PF/Decoder.sv|
+Z17 !s90 -reportprogress|300|-sv|-work|work|+incdir+C:/Users/jimmy/GitHub/CE3201_PF|C:/Users/jimmy/GitHub/CE3201_PF/Decoder.sv|
 !i113 1
 R7
 R8
@@ -88,7 +88,7 @@ R9
 n@a@l@u_@decoder
 vCondition_Check
 R1
-Z16 !s110 1749926209
+R2
 !i10b 1
 !s100 J]D3JPXNdD6ngjC7IeINL0
 IBVHXoUnAz5li<E;PRd_KF1
@@ -104,7 +104,7 @@ R5
 r1
 !s85 0
 31
-Z17 !s108 1749926209.000000
+R6
 !s107 C:/Users/jimmy/GitHub/CE3201_PF/Condition_Check.sv|
 !s90 -reportprogress|300|-sv|-work|work|+incdir+C:/Users/jimmy/GitHub/CE3201_PF|C:/Users/jimmy/GitHub/CE3201_PF/Condition_Check.sv|
 !i113 1
@@ -114,7 +114,7 @@ R9
 n@condition_@check
 vControl_Unit
 R1
-R2
+R10
 !i10b 1
 !s100 1Ga@Dz4S<BfTXakPVP:TK2
 I[1HgERZ>?P[;44UCOE`HV3
@@ -166,15 +166,15 @@ R9
 n@c@p@u
 vCPU_tb
 R1
-R2
+R10
 !i10b 1
-!s100 A`U8z7h_V6>e;cM00>J5J3
-Id[zE<N9RUCoQ2e>Yoe>e<0
+!s100 i6@ji2^>lGhVA5[o5b]mT3
+IbUI`;dmb_?KlmTOo]:oY;3
 R3
 !s105 CPU_tb_sv_unit
 S1
 R0
-w1749926205
+w1749927361
 8C:/Users/jimmy/GitHub/CE3201_PF/CPU_tb.sv
 FC:/Users/jimmy/GitHub/CE3201_PF/CPU_tb.sv
 L0 3
@@ -182,7 +182,7 @@ R5
 r1
 !s85 0
 31
-R6
+R15
 !s107 C:/Users/jimmy/GitHub/CE3201_PF/CPU_tb.sv|
 !s90 -reportprogress|300|-sv|-work|work|+incdir+C:/Users/jimmy/GitHub/CE3201_PF|C:/Users/jimmy/GitHub/CE3201_PF/CPU_tb.sv|
 !i113 1
@@ -218,25 +218,25 @@ R9
 n@data_@memory
 vDecoder
 R1
-R2
+R10
 !i10b 1
 !s100 T>RS7713`<NF]SfEQPAkJ1
 I=VG^8nV[bRMKSmTiD_`A?0
 R3
-R10
+R11
 S1
 R0
-R11
 R12
 R13
+R14
 L0 2
 R5
 r1
 !s85 0
 31
-R6
-R14
 R15
+R16
+R17
 !i113 1
 R7
 R8
@@ -296,25 +296,25 @@ R9
 n@gambling_@tec
 vMain_Decoder
 R1
-R2
+R10
 !i10b 1
 !s100 jNjR=n8NDIM[UH@FoZV1g2
 I^_i7zUJ6Bz<Vm;oiJa23?2
 R3
-R10
+R11
 S1
 R0
-R11
 R12
 R13
+R14
 L0 60
 R5
 r1
 !s85 0
 31
-R6
-R14
 R15
+R16
+R17
 !i113 1
 R7
 R8
@@ -322,7 +322,7 @@ R9
 n@main_@decoder
 vMux
 R1
-R16
+R2
 !i10b 1
 !s100 g9?:56LQdSLdjim_9mO7U3
 I:F;7ImodCLl:Z3FPokhSo2
@@ -338,7 +338,7 @@ R5
 r1
 !s85 0
 31
-R17
+R6
 !s107 C:/Users/jimmy/GitHub/CE3201_PF/Mux.sv|
 !s90 -reportprogress|300|-sv|-work|work|+incdir+C:/Users/jimmy/GitHub/CE3201_PF|C:/Users/jimmy/GitHub/CE3201_PF/Mux.sv|
 !i113 1
@@ -348,25 +348,25 @@ R9
 n@mux
 vPC_Logic
 R1
-R2
+R10
 !i10b 1
 !s100 K=OETM58:kLOg9XDKIg;>0
 Ij>bRECcScIfhTLU^8@@JT3
 R3
-R10
+R11
 S1
 R0
-R11
 R12
 R13
+R14
 L0 49
 R5
 r1
 !s85 0
 31
-R6
-R14
 R15
+R16
+R17
 !i113 1
 R7
 R8
@@ -374,7 +374,7 @@ R9
 n@p@c_@logic
 vRegister
 R1
-R16
+R2
 !i10b 1
 !s100 PhgM5E5?7YR[FdD_>n1zN1
 IPaJOa2R5?0kT`S<BZ6co@1
@@ -390,7 +390,7 @@ R5
 r1
 !s85 0
 31
-R17
+R6
 !s107 C:/Users/jimmy/GitHub/CE3201_PF/Register.sv|
 !s90 -reportprogress|300|-sv|-work|work|+incdir+C:/Users/jimmy/GitHub/CE3201_PF|C:/Users/jimmy/GitHub/CE3201_PF/Register.sv|
 !i113 1
@@ -400,7 +400,7 @@ R9
 n@register
 vRegister_File
 R1
-R16
+R2
 !i10b 1
 !s100 ih2`Z?DO_[hb19dGE9fa<2
 IU1XUSkNo[XH0Bb0Z?]6Y?1
@@ -416,7 +416,7 @@ R5
 r1
 !s85 0
 31
-R17
+R6
 !s107 C:/Users/jimmy/GitHub/CE3201_PF/Register_File.sv|
 !s90 -reportprogress|300|-sv|-work|work|+incdir+C:/Users/jimmy/GitHub/CE3201_PF|C:/Users/jimmy/GitHub/CE3201_PF/Register_File.sv|
 !i113 1
