@@ -12,10 +12,10 @@ Z0 !s99 nomlopt
 cModel Technology
 Z1 dC:/Users/joseb/Documents/GitHub/CE3201_PF/simulation/questa
 T_opt
-!s110 1750009706
-VnbRHfF9DW1:2^NOke^P`c2
+!s110 1750012862
+V8OgkS=WMRjMCehi9PJ0he0
 04 15 4 work tb_Gambling_Tec fast 0
-=1-30d0422ffed1-684f076a-1e8-4414
+=1-30d0422ffed1-684f13be-144-33d4
 R0
 !s12b OEM100
 !s124 OEM10U24 
@@ -26,7 +26,7 @@ OL;O;2023.3;77
 vAdder
 2C:/Users/joseb/Documents/GitHub/CE3201_PF/Adder.sv
 Z3 DXx6 sv_std 3 std 0 22 9oUSJO;AeEaW`l:M@^WG92
-Z4 !s110 1750009703
+Z4 !s110 1750012859
 !i10b 1
 !s100 9gbl8ZXj_onncZ4WUgEb?3
 IoLGUBD541OT2_U8DQ_3Vm0
@@ -42,7 +42,7 @@ Z7 OL;L;2023.3;77
 r1
 !s85 0
 31
-Z8 !s108 1750009703.000000
+Z8 !s108 1750012859.000000
 !s107 C:/Users/joseb/Documents/GitHub/CE3201_PF/Adder.sv|
 !s90 -reportprogress|300|-sv|-work|work|+incdir+C:/Users/joseb/Documents/GitHub/CE3201_PF|C:/Users/joseb/Documents/GitHub/CE3201_PF/Adder.sv|
 !i113 0
@@ -80,7 +80,7 @@ n@a@l@u
 vALU_Decoder
 Z11 2C:/Users/joseb/Documents/GitHub/CE3201_PF/Decoder.sv
 R3
-Z12 !s110 1750009704
+Z12 !s110 1750012860
 !i10b 1
 !s100 m?]99j``^;iT@J0fCz[XE3
 I]o]Q^<DWY499RW5zNH`1N1
@@ -96,7 +96,7 @@ R7
 r1
 !s85 0
 31
-Z15 !s108 1750009704.000000
+Z15 !s108 1750012860.000000
 Z16 !s107 C:/Users/joseb/Documents/GitHub/CE3201_PF/Decoder.sv|
 Z17 !s90 -reportprogress|300|-sv|-work|work|+incdir+C:/Users/joseb/Documents/GitHub/CE3201_PF|C:/Users/joseb/Documents/GitHub/CE3201_PF/Decoder.sv|
 !i113 0
@@ -107,7 +107,7 @@ n@a@l@u_@decoder
 vCondition_Check
 2C:/Users/joseb/Documents/GitHub/CE3201_PF/Condition_Check.sv
 R3
-Z18 !s110 1750009702
+Z18 !s110 1750012858
 !i10b 1
 !s100 41S4DC^ki^N_<cmJJZB8e1
 I674cX0[X9BFdmd[oZLnj:1
@@ -123,7 +123,7 @@ R7
 r1
 !s85 0
 31
-Z19 !s108 1750009702.000000
+Z19 !s108 1750012858.000000
 !s107 C:/Users/joseb/Documents/GitHub/CE3201_PF/Condition_Check.sv|
 !s90 -reportprogress|300|-sv|-work|work|+incdir+C:/Users/joseb/Documents/GitHub/CE3201_PF|C:/Users/joseb/Documents/GitHub/CE3201_PF/Condition_Check.sv|
 !i113 0
@@ -285,7 +285,7 @@ R7
 r1
 !s85 0
 31
-R8
+R15
 !s107 C:/Users/joseb/Documents/GitHub/CE3201_PF/Gambling_Tec.sv|
 !s90 -reportprogress|300|-sv|-work|work|+incdir+C:/Users/joseb/Documents/GitHub/CE3201_PF|C:/Users/joseb/Documents/GitHub/CE3201_PF/Gambling_Tec.sv|
 !i113 0
@@ -323,7 +323,7 @@ n@main_@decoder
 vMux
 2C:/Users/joseb/Documents/GitHub/CE3201_PF/Mux.sv
 R3
-R18
+R4
 !i10b 1
 !s100 66Lh_[jcEWV6dh7S4RL<h0
 Iz<HN9ORi5FCCg[mOaZSAb0
