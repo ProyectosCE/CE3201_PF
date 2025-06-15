@@ -1,5 +1,5 @@
 Flow report for Gambling_Tec
-Fri Jun 13 22:55:17 2025
+Sun Jun 15 11:21:39 2025
 Quartus Prime Version 23.1std.1 Build 993 05/14/2024 SC Lite Edition
 
 
@@ -41,7 +41,7 @@ https://fpgasoftware.intel.com/eula.
 +----------------------------------------------------------------------------------+
 ; Flow Summary                                                                     ;
 +---------------------------------+------------------------------------------------+
-; Flow Status                     ; Successful - Fri Jun 13 22:55:17 2025          ;
+; Flow Status                     ; Successful - Sun Jun 15 11:21:39 2025          ;
 ; Quartus Prime Version           ; 23.1std.1 Build 993 05/14/2024 SC Lite Edition ;
 ; Revision Name                   ; Gambling_Tec                                   ;
 ; Top-level Entity Name           ; Gambling_Tec                                   ;
@@ -68,7 +68,7 @@ https://fpgasoftware.intel.com/eula.
 +-------------------+---------------------+
 ; Option            ; Setting             ;
 +-------------------+---------------------+
-; Start date & time ; 06/13/2025 22:54:07 ;
+; Start date & time ; 06/15/2025 11:20:14 ;
 ; Main task         ; Compilation         ;
 ; Revision Name     ; Gambling_Tec        ;
 +-------------------+---------------------+
@@ -79,15 +79,19 @@ https://fpgasoftware.intel.com/eula.
 +--------------------------------------+----------------------------------------+---------------+-------------+-----------------+
 ; Assignment Name                      ; Value                                  ; Default Value ; Entity Name ; Section Id      ;
 +--------------------------------------+----------------------------------------+---------------+-------------+-----------------+
-; COMPILER_SIGNATURE_ID                ; 53671021772497.174987684716188         ; --            ; --          ; --              ;
+; COMPILER_SIGNATURE_ID                ; 53671021772497.175000801413888         ; --            ; --          ; --              ;
+; EDA_DESIGN_INSTANCE_NAME             ; NA                                     ; --            ; --          ; tb_ROM          ;
 ; EDA_DESIGN_INSTANCE_NAME             ; NA                                     ; --            ; --          ; tb_Gambling_Tec ;
-; EDA_NATIVELINK_SIMULATION_TEST_BENCH ; tb_Gambling_Tec                        ; --            ; --          ; eda_simulation  ;
+; EDA_NATIVELINK_SIMULATION_TEST_BENCH ; tb_ROM                                 ; --            ; --          ; eda_simulation  ;
 ; EDA_OUTPUT_DATA_FORMAT               ; Systemverilog Hdl                      ; --            ; --          ; eda_simulation  ;
 ; EDA_SIMULATION_TOOL                  ; Questa Intel FPGA (SystemVerilog)      ; <None>        ; --          ; --              ;
 ; EDA_TEST_BENCH_ENABLE_STATUS         ; TEST_BENCH_MODE                        ; --            ; --          ; eda_simulation  ;
+; EDA_TEST_BENCH_FILE                  ; tb_ROM.sv                              ; --            ; --          ; tb_ROM          ;
 ; EDA_TEST_BENCH_FILE                  ; tb_Gambling_Tec.sv                     ; --            ; --          ; tb_Gambling_Tec ;
+; EDA_TEST_BENCH_MODULE_NAME           ; tb_ROM                                 ; --            ; --          ; tb_ROM          ;
 ; EDA_TEST_BENCH_MODULE_NAME           ; tb_Gambling_Tec                        ; --            ; --          ; tb_Gambling_Tec ;
 ; EDA_TEST_BENCH_NAME                  ; tb_Gambling_Tec                        ; --            ; --          ; eda_simulation  ;
+; EDA_TEST_BENCH_NAME                  ; tb_ROM                                 ; --            ; --          ; eda_simulation  ;
 ; EDA_TIME_SCALE                       ; 1 ps                                   ; --            ; --          ; eda_simulation  ;
 ; MAX_CORE_JUNCTION_TEMP               ; 85                                     ; --            ; --          ; --              ;
 ; MIN_CORE_JUNCTION_TEMP               ; 0                                      ; --            ; --          ; --              ;
@@ -105,12 +109,12 @@ https://fpgasoftware.intel.com/eula.
 +----------------------+--------------+-------------------------+---------------------+------------------------------------+
 ; Module Name          ; Elapsed Time ; Average Processors Used ; Peak Virtual Memory ; Total CPU Time (on all processors) ;
 +----------------------+--------------+-------------------------+---------------------+------------------------------------+
-; Analysis & Synthesis ; 00:00:12     ; 1.0                     ; 4785 MB             ; 00:00:29                           ;
-; Fitter               ; 00:00:40     ; 1.0                     ; 6875 MB             ; 00:02:02                           ;
-; Assembler            ; 00:00:08     ; 1.0                     ; 4866 MB             ; 00:00:08                           ;
+; Analysis & Synthesis ; 00:00:13     ; 1.0                     ; 4785 MB             ; 00:00:29                           ;
+; Fitter               ; 00:00:48     ; 1.0                     ; 6875 MB             ; 00:01:57                           ;
+; Assembler            ; 00:00:13     ; 1.0                     ; 4855 MB             ; 00:00:08                           ;
 ; Timing Analyzer      ; 00:00:04     ; 1.0                     ; 5154 MB             ; 00:00:04                           ;
 ; EDA Netlist Writer   ; 00:00:01     ; 1.0                     ; 4713 MB             ; 00:00:01                           ;
-; Total                ; 00:01:05     ; --                      ; --                  ; 00:02:44                           ;
+; Total                ; 00:01:19     ; --                      ; --                  ; 00:02:39                           ;
 +----------------------+--------------+-------------------------+---------------------+------------------------------------+
 
 

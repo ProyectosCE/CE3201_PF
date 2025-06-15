@@ -1,0 +1,77 @@
+$date
+	Sun Jun 15 11:23:57 2025
+$end
+$version
+	Questa Intel Starter FPGA Edition Version 2023.3
+$end
+$timescale
+	1ps
+$end
+
+$scope module tb_ROM $end
+$var reg 10 ! address [9:0] $end
+$var reg 32 " data [31:0] $end
+
+$scope module dut $end
+$var parameter 32 # AW $end
+$var parameter 32 $ DW $end
+$var wire 1 % address [9] $end
+$var wire 1 & address [8] $end
+$var wire 1 ' address [7] $end
+$var wire 1 ( address [6] $end
+$var wire 1 ) address [5] $end
+$var wire 1 * address [4] $end
+$var wire 1 + address [3] $end
+$var wire 1 , address [2] $end
+$var wire 1 - address [1] $end
+$var wire 1 . address [0] $end
+$var reg 32 / data [31:0] $end
+$upscope $end
+$upscope $end
+$enddefinitions $end
+#0
+$dumpvars
+bx !
+bx "
+bx /
+b1010 #
+b100000 $
+x.
+x-
+x,
+x+
+x*
+x)
+x(
+x'
+x&
+x%
+$end
+#10000
+b0 !
+0.
+0-
+0,
+0+
+0*
+0)
+0(
+0'
+0&
+0%
+b1000000001000000011100010 /
+b1000000001000000011100010 "
+#15000
+b1 !
+1.
+b11111101111111111111111111101010 /
+b11111101111111111111111111101010 "
+#20000
+b10 !
+0.
+1-
+bx /
+bx "
+#25000
+b11 !
+1.
