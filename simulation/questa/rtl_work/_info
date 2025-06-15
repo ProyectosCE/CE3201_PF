@@ -12,10 +12,10 @@ Z0 !s99 nomlopt
 cModel Technology
 Z1 dC:/Users/joseb/Documents/GitHub/CE3201_PF/simulation/questa
 T_opt
-!s110 1750012862
-V8OgkS=WMRjMCehi9PJ0he0
-04 15 4 work tb_Gambling_Tec fast 0
-=1-30d0422ffed1-684f13be-144-33d4
+!s110 1750029719
+VCRR8eQ2E>D_Ajn84An=M?2
+04 19 4 work tb_Gambling_Tec_ROM fast 0
+=1-30d0422ffed1-684f5597-121-4e0
 R0
 !s12b OEM100
 !s124 OEM10U24 
@@ -26,7 +26,7 @@ OL;O;2023.3;77
 vAdder
 2C:/Users/joseb/Documents/GitHub/CE3201_PF/Adder.sv
 Z3 DXx6 sv_std 3 std 0 22 9oUSJO;AeEaW`l:M@^WG92
-Z4 !s110 1750012859
+Z4 !s110 1750029715
 !i10b 1
 !s100 9gbl8ZXj_onncZ4WUgEb?3
 IoLGUBD541OT2_U8DQ_3Vm0
@@ -42,7 +42,7 @@ Z7 OL;L;2023.3;77
 r1
 !s85 0
 31
-Z8 !s108 1750012859.000000
+Z8 !s108 1750029715.000000
 !s107 C:/Users/joseb/Documents/GitHub/CE3201_PF/Adder.sv|
 !s90 -reportprogress|300|-sv|-work|work|+incdir+C:/Users/joseb/Documents/GitHub/CE3201_PF|C:/Users/joseb/Documents/GitHub/CE3201_PF/Adder.sv|
 !i113 0
@@ -80,7 +80,7 @@ n@a@l@u
 vALU_Decoder
 Z11 2C:/Users/joseb/Documents/GitHub/CE3201_PF/Decoder.sv
 R3
-Z12 !s110 1750012860
+Z12 !s110 1750029716
 !i10b 1
 !s100 m?]99j``^;iT@J0fCz[XE3
 I]o]Q^<DWY499RW5zNH`1N1
@@ -96,7 +96,7 @@ R7
 r1
 !s85 0
 31
-Z15 !s108 1750012860.000000
+Z15 !s108 1750029716.000000
 Z16 !s107 C:/Users/joseb/Documents/GitHub/CE3201_PF/Decoder.sv|
 Z17 !s90 -reportprogress|300|-sv|-work|work|+incdir+C:/Users/joseb/Documents/GitHub/CE3201_PF|C:/Users/joseb/Documents/GitHub/CE3201_PF/Decoder.sv|
 !i113 0
@@ -107,7 +107,7 @@ n@a@l@u_@decoder
 vCondition_Check
 2C:/Users/joseb/Documents/GitHub/CE3201_PF/Condition_Check.sv
 R3
-Z18 !s110 1750012858
+!s110 1750029713
 !i10b 1
 !s100 41S4DC^ki^N_<cmJJZB8e1
 I674cX0[X9BFdmd[oZLnj:1
@@ -123,7 +123,7 @@ R7
 r1
 !s85 0
 31
-Z19 !s108 1750012858.000000
+!s108 1750029713.000000
 !s107 C:/Users/joseb/Documents/GitHub/CE3201_PF/Condition_Check.sv|
 !s90 -reportprogress|300|-sv|-work|work|+incdir+C:/Users/joseb/Documents/GitHub/CE3201_PF|C:/Users/joseb/Documents/GitHub/CE3201_PF/Condition_Check.sv|
 !i113 0
@@ -242,7 +242,7 @@ n@decoder
 vExtender
 2C:/Users/joseb/Documents/GitHub/CE3201_PF/Extender.sv
 R3
-R4
+Z18 !s110 1750029714
 !i10b 1
 !s100 db??B84l^1zGjmO:?Vo?Z2
 IH3<zBVm:Ve58LDi0VC;lP2
@@ -258,7 +258,7 @@ R7
 r1
 !s85 0
 31
-R8
+Z19 !s108 1750029714.000000
 !s107 C:/Users/joseb/Documents/GitHub/CE3201_PF/Extender.sv|
 !s90 -reportprogress|300|-sv|-work|work|+incdir+C:/Users/joseb/Documents/GitHub/CE3201_PF|C:/Users/joseb/Documents/GitHub/CE3201_PF/Extender.sv|
 !i113 0
@@ -275,7 +275,7 @@ R12
 ILQ0X^jM]DYMC[WaTlWg8o1
 S1
 R1
-w1749875905
+w1750027041
 8C:/Users/joseb/Documents/GitHub/CE3201_PF/Gambling_Tec.sv
 FC:/Users/joseb/Documents/GitHub/CE3201_PF/Gambling_Tec.sv
 !i122 9
@@ -285,7 +285,7 @@ R7
 r1
 !s85 0
 31
-R15
+R8
 !s107 C:/Users/joseb/Documents/GitHub/CE3201_PF/Gambling_Tec.sv|
 !s90 -reportprogress|300|-sv|-work|work|+incdir+C:/Users/joseb/Documents/GitHub/CE3201_PF|C:/Users/joseb/Documents/GitHub/CE3201_PF/Gambling_Tec.sv|
 !i113 0
@@ -323,7 +323,7 @@ n@main_@decoder
 vMux
 2C:/Users/joseb/Documents/GitHub/CE3201_PF/Mux.sv
 R3
-R4
+R18
 !i10b 1
 !s100 66Lh_[jcEWV6dh7S4RL<h0
 Iz<HN9ORi5FCCg[mOaZSAb0
@@ -383,7 +383,7 @@ R18
 IWzdk25MPYR@CVbRfKT==N3
 S1
 R1
-R5
+w1750028370
 8C:/Users/joseb/Documents/GitHub/CE3201_PF/Register.sv
 FC:/Users/joseb/Documents/GitHub/CE3201_PF/Register.sv
 !i122 2
@@ -455,30 +455,30 @@ R9
 R10
 R2
 n@r@o@m
-vtb_Gambling_Tec
-2C:/Users/joseb/Documents/GitHub/CE3201_PF/tb_Gambling_Tec.sv
+vtb_Gambling_Tec_ROM
+2C:/Users/joseb/Documents/GitHub/CE3201_PF/tb_Gambling_Tec_ROM.sv
 R3
-R12
+!s110 1750029717
 !i10b 1
-!s100 Z1LTTOB:1z27V=5>0Ub`d3
-Ii?@SlMko1mSEUhXMbjbnO2
+!s100 62W90f7]g8Wbd<UEg5hn13
+Ie?KkT7Y:g_]o`X[Rh4cXM0
 S1
 R1
-w1749876835
-8C:/Users/joseb/Documents/GitHub/CE3201_PF/tb_Gambling_Tec.sv
-FC:/Users/joseb/Documents/GitHub/CE3201_PF/tb_Gambling_Tec.sv
+w1750029445
+8C:/Users/joseb/Documents/GitHub/CE3201_PF/tb_Gambling_Tec_ROM.sv
+FC:/Users/joseb/Documents/GitHub/CE3201_PF/tb_Gambling_Tec_ROM.sv
 !i122 13
-L0 3 46
+L0 3 62
 R6
 R7
 r1
 !s85 0
 31
 R15
-!s107 C:/Users/joseb/Documents/GitHub/CE3201_PF/tb_Gambling_Tec.sv|
-!s90 -reportprogress|300|-sv|-work|work|+incdir+C:/Users/joseb/Documents/GitHub/CE3201_PF|C:/Users/joseb/Documents/GitHub/CE3201_PF/tb_Gambling_Tec.sv|
+!s107 C:/Users/joseb/Documents/GitHub/CE3201_PF/tb_Gambling_Tec_ROM.sv|
+!s90 -reportprogress|300|-sv|-work|work|+incdir+C:/Users/joseb/Documents/GitHub/CE3201_PF|C:/Users/joseb/Documents/GitHub/CE3201_PF/tb_Gambling_Tec_ROM.sv|
 !i113 0
 R9
 R10
 R2
-ntb_@gambling_@tec
+ntb_@gambling_@tec_@r@o@m

@@ -3,21 +3,21 @@
 module tb_ROM;
 
     logic [9:0] address;         // 10 bits = 1024 instrucciones (4 KB)
-    logic [31:0] data;           // Instrucción entregada por la ROM
+    logic [31:0] data;           // Instruccion entregada por la ROM
 
-    // Instancia del módulo ROM
+    // Instancia del modulo ROM
     ROM #(.AW(10)) dut (
         .address(address),
         .data(data)
     );
 
-    // Simulación
+    // Simulacion
     initial begin
         $display("==== INICIO TEST ROM ====");
         $dumpfile("tb_ROM.vcd");
         $dumpvars(0, tb_ROM);
 
-        // Esperamos que se cargue la ROM
+        // Esperando que se cargue la ROM
         #10;
 
         // Leer las primeras 4 instrucciones
