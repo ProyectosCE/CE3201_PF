@@ -1,1 +1,2 @@
-Info (10281): Verilog HDL Declaration information at CPU.sv(24): object "MemtoReg" differs only in case from object "MemToReg" in the same scope File: C:/Users/josee/CE3201_PF/CPU.sv Line: 24
+Info (10281): Verilog HDL Declaration information at Vga_Controller.sv(19): object "Q_X" differs only in case from object "Q_x" in the same scope File: C:/Users/josee/CE3201_PF/Vga_Controller.sv Line: 19
+Info (10281): Verilog HDL Declaration information at Vga_Controller.sv(19): object "Q_Y" differs only in case from object "Q_y" in the same scope File: C:/Users/josee/CE3201_PF/Vga_Controller.sv Line: 19

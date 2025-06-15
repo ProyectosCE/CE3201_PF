@@ -1,0 +1,41 @@
+`timescale 1ns/1ps
+
+module tb_Rom_tile;
+
+  // Entradas
+  logic [9:0] Q_X, Q_Y;
+
+  // Salidas
+  logic [7:0] R, G, B;
+  logic visible;
+
+  // Instancia del DUT (Device Under Test)
+  Rom_tile dut (
+    .Q_X(Q_X),
+    .Q_Y(Q_Y),
+    .R(R),
+    .G(G),
+    .B(B),
+    .visible(visible)
+  );
+
+  initial begin
+    $display("---- Testbench para Rom_tile ----");
+    $display(" Q_X | Q_Y | Visible |    R   G   B");
+
+    // Probar posiciones dentro y fuera del área
+    foreach (Q_Xi[10]) begin : loop_x
+      foreach (Q_Yi[10]) begin : loop_y
+        Q_X = 420 + loop_x.index;
+        Q_Y = 160 + loop_y.index;
+
+        #1; // Esperar a que se actualicen salidas
+
+        $display("%4d | %4d |    %1b    | %3d %3d %3d", Q_X, Q_Y, visible, R, G, B);
+      end
+    end
+
+    $finish;
+  end
+
+endmodule

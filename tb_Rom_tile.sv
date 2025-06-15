@@ -1,0 +1,41 @@
+`timescale 1ns/1ps
+
+module tb_Rom_tile;
+
+  // Entradas
+  reg [9:0] Q_X, Q_Y;
+
+  // Salidas
+  wire [7:0] R, G, B;
+  wire visible;
+
+  // Instancia del DUT
+  Rom_tile dut (
+    .Q_X(Q_X),
+    .Q_Y(Q_Y),
+    .R(R),
+    .G(G),
+    .B(B),
+    .visible(visible)
+  );
+
+  integer i, j;
+
+  initial begin
+    $display("---- Testbench para Rom_tile ----");
+    $display(" Q_X | Q_Y | Visible |   R   G   B");
+
+    // Recorrer un área cercana al tile
+    for (i = 418; i <= 442; i = i + 1) begin
+      for (j = 158; j <= 162; j = j + 1) begin
+        Q_X = i;
+        Q_Y = j;
+        #1;
+        $display("%4d | %4d |    %b    | %3d %3d %3d", Q_X, Q_Y, visible, R, G, B);
+      end
+    end
+
+    $finish;
+  end
+
+endmodule

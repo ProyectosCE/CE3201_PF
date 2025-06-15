@@ -10,159 +10,34 @@
 # Copying C:/intelFPGA_lite/18.1/modelsim_ase/win32aloem/../modelsim.ini to modelsim.ini
 # Modifying modelsim.ini
 # 
-# vlog -sv -work work +incdir+C:/Users/jimmy/GitHub/CE3201_PF {C:/Users/jimmy/GitHub/CE3201_PF/Condition_Check.sv}
+# vlog -sv -work work +incdir+C:/Users/josee/CE3201_PF {C:/Users/josee/CE3201_PF/Rom_tile.sv}
 # Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
-# Start time: 12:56:05 on Jun 14,2025
-# vlog -reportprogress 300 -sv -work work "+incdir+C:/Users/jimmy/GitHub/CE3201_PF" C:/Users/jimmy/GitHub/CE3201_PF/Condition_Check.sv 
-# -- Compiling module Condition_Check
+# Start time: 00:06:41 on Jun 15,2025
+# vlog -reportprogress 300 -sv -work work "+incdir+C:/Users/josee/CE3201_PF" C:/Users/josee/CE3201_PF/Rom_tile.sv 
+# -- Compiling module Rom_tile
 # 
 # Top level modules:
-# 	Condition_Check
-# End time: 12:56:05 on Jun 14,2025, Elapsed time: 0:00:00
+# 	Rom_tile
+# End time: 00:06:41 on Jun 15,2025, Elapsed time: 0:00:00
 # Errors: 0, Warnings: 0
-# vlog -sv -work work +incdir+C:/Users/jimmy/GitHub/CE3201_PF {C:/Users/jimmy/GitHub/CE3201_PF/Register_File.sv}
+# 
+# vlog -sv -work work +incdir+C:/Users/josee/CE3201_PF {C:/Users/josee/CE3201_PF/tb_Rom_tile.sv}
 # Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
-# Start time: 12:56:05 on Jun 14,2025
-# vlog -reportprogress 300 -sv -work work "+incdir+C:/Users/jimmy/GitHub/CE3201_PF" C:/Users/jimmy/GitHub/CE3201_PF/Register_File.sv 
-# -- Compiling module Register_File
+# Start time: 00:06:41 on Jun 15,2025
+# vlog -reportprogress 300 -sv -work work "+incdir+C:/Users/josee/CE3201_PF" C:/Users/josee/CE3201_PF/tb_Rom_tile.sv 
+# -- Compiling module tb_Rom_tile
 # 
 # Top level modules:
-# 	Register_File
-# End time: 12:56:05 on Jun 14,2025, Elapsed time: 0:00:00
-# Errors: 0, Warnings: 0
-# vlog -sv -work work +incdir+C:/Users/jimmy/GitHub/CE3201_PF {C:/Users/jimmy/GitHub/CE3201_PF/Register.sv}
-# Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
-# Start time: 12:56:05 on Jun 14,2025
-# vlog -reportprogress 300 -sv -work work "+incdir+C:/Users/jimmy/GitHub/CE3201_PF" C:/Users/jimmy/GitHub/CE3201_PF/Register.sv 
-# -- Compiling module Register
-# 
-# Top level modules:
-# 	Register
-# End time: 12:56:05 on Jun 14,2025, Elapsed time: 0:00:00
-# Errors: 0, Warnings: 0
-# vlog -sv -work work +incdir+C:/Users/jimmy/GitHub/CE3201_PF {C:/Users/jimmy/GitHub/CE3201_PF/Mux.sv}
-# Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
-# Start time: 12:56:05 on Jun 14,2025
-# vlog -reportprogress 300 -sv -work work "+incdir+C:/Users/jimmy/GitHub/CE3201_PF" C:/Users/jimmy/GitHub/CE3201_PF/Mux.sv 
-# -- Compiling module Mux
-# 
-# Top level modules:
-# 	Mux
-# End time: 12:56:05 on Jun 14,2025, Elapsed time: 0:00:00
-# Errors: 0, Warnings: 0
-# vlog -sv -work work +incdir+C:/Users/jimmy/GitHub/CE3201_PF {C:/Users/jimmy/GitHub/CE3201_PF/Extender.sv}
-# Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
-# Start time: 12:56:05 on Jun 14,2025
-# vlog -reportprogress 300 -sv -work work "+incdir+C:/Users/jimmy/GitHub/CE3201_PF" C:/Users/jimmy/GitHub/CE3201_PF/Extender.sv 
-# -- Compiling module Extender
-# 
-# Top level modules:
-# 	Extender
-# End time: 12:56:05 on Jun 14,2025, Elapsed time: 0:00:00
-# Errors: 0, Warnings: 0
-# vlog -sv -work work +incdir+C:/Users/jimmy/GitHub/CE3201_PF {C:/Users/jimmy/GitHub/CE3201_PF/Data_Memory.sv}
-# Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
-# Start time: 12:56:05 on Jun 14,2025
-# vlog -reportprogress 300 -sv -work work "+incdir+C:/Users/jimmy/GitHub/CE3201_PF" C:/Users/jimmy/GitHub/CE3201_PF/Data_Memory.sv 
-# -- Compiling module Data_Memory
-# 
-# Top level modules:
-# 	Data_Memory
-# End time: 12:56:05 on Jun 14,2025, Elapsed time: 0:00:00
-# Errors: 0, Warnings: 0
-# vlog -sv -work work +incdir+C:/Users/jimmy/GitHub/CE3201_PF {C:/Users/jimmy/GitHub/CE3201_PF/CPU.sv}
-# Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
-# Start time: 12:56:05 on Jun 14,2025
-# vlog -reportprogress 300 -sv -work work "+incdir+C:/Users/jimmy/GitHub/CE3201_PF" C:/Users/jimmy/GitHub/CE3201_PF/CPU.sv 
-# -- Compiling module CPU
-# 
-# Top level modules:
-# 	CPU
-# End time: 12:56:05 on Jun 14,2025, Elapsed time: 0:00:00
-# Errors: 0, Warnings: 0
-# vlog -sv -work work +incdir+C:/Users/jimmy/GitHub/CE3201_PF {C:/Users/jimmy/GitHub/CE3201_PF/ALU.sv}
-# Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
-# Start time: 12:56:05 on Jun 14,2025
-# vlog -reportprogress 300 -sv -work work "+incdir+C:/Users/jimmy/GitHub/CE3201_PF" C:/Users/jimmy/GitHub/CE3201_PF/ALU.sv 
-# -- Compiling module ALU
-# 
-# Top level modules:
-# 	ALU
-# End time: 12:56:05 on Jun 14,2025, Elapsed time: 0:00:00
-# Errors: 0, Warnings: 0
-# vlog -sv -work work +incdir+C:/Users/jimmy/GitHub/CE3201_PF {C:/Users/jimmy/GitHub/CE3201_PF/Adder.sv}
-# Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
-# Start time: 12:56:05 on Jun 14,2025
-# vlog -reportprogress 300 -sv -work work "+incdir+C:/Users/jimmy/GitHub/CE3201_PF" C:/Users/jimmy/GitHub/CE3201_PF/Adder.sv 
-# -- Compiling module Adder
-# 
-# Top level modules:
-# 	Adder
-# End time: 12:56:05 on Jun 14,2025, Elapsed time: 0:00:00
-# Errors: 0, Warnings: 0
-# vlog -sv -work work +incdir+C:/Users/jimmy/GitHub/CE3201_PF {C:/Users/jimmy/GitHub/CE3201_PF/Gambling_Tec.sv}
-# Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
-# Start time: 12:56:05 on Jun 14,2025
-# vlog -reportprogress 300 -sv -work work "+incdir+C:/Users/jimmy/GitHub/CE3201_PF" C:/Users/jimmy/GitHub/CE3201_PF/Gambling_Tec.sv 
-# -- Compiling module Gambling_Tec
-# 
-# Top level modules:
-# 	Gambling_Tec
-# End time: 12:56:05 on Jun 14,2025, Elapsed time: 0:00:00
-# Errors: 0, Warnings: 0
-# vlog -sv -work work +incdir+C:/Users/jimmy/GitHub/CE3201_PF {C:/Users/jimmy/GitHub/CE3201_PF/Control_Unit.sv}
-# Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
-# Start time: 12:56:05 on Jun 14,2025
-# vlog -reportprogress 300 -sv -work work "+incdir+C:/Users/jimmy/GitHub/CE3201_PF" C:/Users/jimmy/GitHub/CE3201_PF/Control_Unit.sv 
-# -- Compiling module Control_Unit
-# 
-# Top level modules:
-# 	Control_Unit
-# End time: 12:56:06 on Jun 14,2025, Elapsed time: 0:00:01
-# Errors: 0, Warnings: 0
-# vlog -sv -work work +incdir+C:/Users/jimmy/GitHub/CE3201_PF {C:/Users/jimmy/GitHub/CE3201_PF/Decoder.sv}
-# Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
-# Start time: 12:56:06 on Jun 14,2025
-# vlog -reportprogress 300 -sv -work work "+incdir+C:/Users/jimmy/GitHub/CE3201_PF" C:/Users/jimmy/GitHub/CE3201_PF/Decoder.sv 
-# -- Compiling module Decoder
-# -- Compiling module PC_Logic
-# -- Compiling module Main_Decoder
-# -- Compiling module ALU_Decoder
-# 
-# Top level modules:
-# 	Decoder
-# End time: 12:56:06 on Jun 14,2025, Elapsed time: 0:00:00
+# 	tb_Rom_tile
+# End time: 00:06:41 on Jun 15,2025, Elapsed time: 0:00:00
 # Errors: 0, Warnings: 0
 # 
-# vlog -sv -work work +incdir+C:/Users/jimmy/GitHub/CE3201_PF {C:/Users/jimmy/GitHub/CE3201_PF/CPU_tb.sv}
-# Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
-# Start time: 12:56:06 on Jun 14,2025
-# vlog -reportprogress 300 -sv -work work "+incdir+C:/Users/jimmy/GitHub/CE3201_PF" C:/Users/jimmy/GitHub/CE3201_PF/CPU_tb.sv 
-# -- Compiling module CPU_tb
-# 
-# Top level modules:
-# 	CPU_tb
-# End time: 12:56:06 on Jun 14,2025, Elapsed time: 0:00:00
-# Errors: 0, Warnings: 0
-# 
-# vsim -t 1ps -L altera_ver -L lpm_ver -L sgate_ver -L altera_mf_ver -L altera_lnsim_ver -L cyclonev_ver -L cyclonev_hssi_ver -L cyclonev_pcie_hip_ver -L rtl_work -L work -voptargs="+acc"  CPU_tb
-# vsim -t 1ps -L altera_ver -L lpm_ver -L sgate_ver -L altera_mf_ver -L altera_lnsim_ver -L cyclonev_ver -L cyclonev_hssi_ver -L cyclonev_pcie_hip_ver -L rtl_work -L work -voptargs=""+acc"" CPU_tb 
-# Start time: 12:56:06 on Jun 14,2025
+# vsim -t 1ps -L altera_ver -L lpm_ver -L sgate_ver -L altera_mf_ver -L altera_lnsim_ver -L cyclonev_ver -L cyclonev_hssi_ver -L cyclonev_pcie_hip_ver -L rtl_work -L work -voptargs="+acc"  tb_Rom_tile
+# vsim -t 1ps -L altera_ver -L lpm_ver -L sgate_ver -L altera_mf_ver -L altera_lnsim_ver -L cyclonev_ver -L cyclonev_hssi_ver -L cyclonev_pcie_hip_ver -L rtl_work -L work -voptargs=""+acc"" tb_Rom_tile 
+# Start time: 00:06:41 on Jun 15,2025
 # Loading sv_std.std
-# Loading work.CPU_tb
-# Loading work.CPU
-# Loading work.Mux
-# Loading work.Register
-# Loading work.Adder
-# Loading work.Register_File
-# Loading work.Extender
-# Loading work.ALU
-# Loading work.Control_Unit
-# Loading work.Decoder
-# Loading work.PC_Logic
-# Loading work.Main_Decoder
-# Loading work.ALU_Decoder
-# Loading work.Condition_Check
+# Loading work.tb_Rom_tile
+# Loading work.Rom_tile
 # 
 # add wave *
 # view structure
@@ -170,43 +45,136 @@
 # view signals
 # .main_pane.objects.interior.cs.body.tree
 # run -all
-# ==== INICIO TEST CPU ====
-# iniciando r2 en 0000000c
-# r1 deberia tener 4, tiene: 00000004
-# PC actual: 00000004: 
-# Reg[1] = 4
-# Reg[2] = 12
-# Reg[3] = 16
-# PC actual: 8: 
-# deberia escribir 16: 16
-# deberia escribir en 12: 12
-# PC actual: 12: 
-# OK: MemWrite activado.
-# ADD: Reg[2] = 15 (esperado 15)
-# SUB: Reg[2] = 15 (esperado 15)
-# AND: Reg[2] = 0 (esperado 0)
-# ORR: Reg[2] = 15 (esperado 15)
-# PC antes del branch: 0000001c
-# PC despues del branch: 0000003c
-# PC esperado: 0000002c
-# CMP Operands: A=0 B=0
-# DEBUG CMP A=0 B=0  N=0 Z=1
-# OK    CMP (0 vs 0)
-# CMP Operands: A=80 B=20
-# DEBUG CMP A=100 B=20  N=0 Z=0
-# OK    CMP (100 vs 20)
-# CMP Operands: A=4294967281 B=20
-# DEBUG CMP A=5 B=20  N=1 Z=0
-# OK    CMP (5 vs 20)
-# CMP Operands: A=0 B=0
-# DEBUG CMP A=0 B=0  N=0 Z=1
-# ERROR CMP (0 vs 0): N,Z esperados = 00  obtenidos = 01
-# PC antes del branch: 00000050
-# PC despues del branch: 00000054
-# ==== FIN TEST ====
-# ** Note: $finish    : C:/Users/jimmy/GitHub/CE3201_PF/CPU_tb.sv(180)
-#    Time: 155 ns  Iteration: 1  Instance: /CPU_tb
+# ---- Testbench para Rom_tile ----
+#  Q_X | Q_Y | Visible |   R   G   B
+#  418 |  158 |    0    |   0   0   0
+#  418 |  159 |    0    |   0   0   0
+#  418 |  160 |    0    |   0   0   0
+#  418 |  161 |    0    |   0   0   0
+#  418 |  162 |    0    |   0   0   0
+#  419 |  158 |    0    |   0   0   0
+#  419 |  159 |    0    |   0   0   0
+#  419 |  160 |    0    |   0   0   0
+#  419 |  161 |    0    |   0   0   0
+#  419 |  162 |    0    |   0   0   0
+#  420 |  158 |    0    |   0   0   0
+#  420 |  159 |    0    |   0   0   0
+#  420 |  160 |    0    |   0   0   0
+#  420 |  161 |    0    |   0   0   0
+#  420 |  162 |    0    |   0   0   0
+#  421 |  158 |    0    |   0   0   0
+#  421 |  159 |    0    |   0   0   0
+#  421 |  160 |    0    |   0   0   0
+#  421 |  161 |    1    |   0   0   0
+#  421 |  162 |    1    |   0   0   0
+#  422 |  158 |    0    |   0   0   0
+#  422 |  159 |    0    |   0   0   0
+#  422 |  160 |    0    |   0   0   0
+#  422 |  161 |    1    |   0   0   0
+#  422 |  162 |    1    |   0   0   0
+#  423 |  158 |    0    |   0   0   0
+#  423 |  159 |    0    |   0   0   0
+#  423 |  160 |    0    |   0   0   0
+#  423 |  161 |    1    |   0   0   0
+#  423 |  162 |    1    |   0   0   0
+#  424 |  158 |    0    |   0   0   0
+#  424 |  159 |    0    |   0   0   0
+#  424 |  160 |    0    |   0   0   0
+#  424 |  161 |    1    |   0   0   0
+#  424 |  162 |    1    |   0   0   0
+#  425 |  158 |    0    |   0   0   0
+#  425 |  159 |    0    |   0   0   0
+#  425 |  160 |    0    |   0   0   0
+#  425 |  161 |    1    | 255 255   0
+#  425 |  162 |    1    |   0   0   0
+#  426 |  158 |    0    |   0   0   0
+#  426 |  159 |    0    |   0   0   0
+#  426 |  160 |    0    |   0   0   0
+#  426 |  161 |    1    |   0   0   0
+#  426 |  162 |    1    |   0   0   0
+#  427 |  158 |    0    |   0   0   0
+#  427 |  159 |    0    |   0   0   0
+#  427 |  160 |    0    |   0   0   0
+#  427 |  161 |    1    |   0   0 255
+#  427 |  162 |    1    |   0   0   0
+#  428 |  158 |    0    |   0   0   0
+#  428 |  159 |    0    |   0   0   0
+#  428 |  160 |    0    |   0   0   0
+#  428 |  161 |    1    |   0   0   0
+#  428 |  162 |    1    |   0   0   0
+#  429 |  158 |    0    |   0   0   0
+#  429 |  159 |    0    |   0   0   0
+#  429 |  160 |    0    |   0   0   0
+#  429 |  161 |    1    |   0   0 255
+#  429 |  162 |    1    |   0   0   0
+#  430 |  158 |    0    |   0   0   0
+#  430 |  159 |    0    |   0   0   0
+#  430 |  160 |    0    |   0   0   0
+#  430 |  161 |    1    |   0   0 255
+#  430 |  162 |    1    |   0   0   0
+#  431 |  158 |    0    |   0   0   0
+#  431 |  159 |    0    |   0   0   0
+#  431 |  160 |    0    |   0   0   0
+#  431 |  161 |    1    |   0   0 255
+#  431 |  162 |    1    |   0   0   0
+#  432 |  158 |    0    |   0   0   0
+#  432 |  159 |    0    |   0   0   0
+#  432 |  160 |    0    |   0   0   0
+#  432 |  161 |    1    |   0   0   0
+#  432 |  162 |    1    |   0   0   0
+#  433 |  158 |    0    |   0   0   0
+#  433 |  159 |    0    |   0   0   0
+#  433 |  160 |    0    |   0   0   0
+#  433 |  161 |    1    |   0   0 255
+#  433 |  162 |    1    |   0   0   0
+#  434 |  158 |    0    |   0   0   0
+#  434 |  159 |    0    |   0   0   0
+#  434 |  160 |    0    |   0   0   0
+#  434 |  161 |    1    |   0   0   0
+#  434 |  162 |    1    |   0   0   0
+#  435 |  158 |    0    |   0   0   0
+#  435 |  159 |    0    |   0   0   0
+#  435 |  160 |    0    |   0   0   0
+#  435 |  161 |    1    |   0   0   0
+#  435 |  162 |    1    |   0   0   0
+#  436 |  158 |    0    |   0   0   0
+#  436 |  159 |    0    |   0   0   0
+#  436 |  160 |    0    |   0   0   0
+#  436 |  161 |    1    | 255 255   0
+#  436 |  162 |    1    |   0   0   0
+#  437 |  158 |    0    |   0   0   0
+#  437 |  159 |    0    |   0   0   0
+#  437 |  160 |    0    |   0   0   0
+#  437 |  161 |    1    |   0   0   0
+#  437 |  162 |    1    |   0   0   0
+#  438 |  158 |    0    |   0   0   0
+#  438 |  159 |    0    |   0   0   0
+#  438 |  160 |    0    |   0   0   0
+#  438 |  161 |    1    |   0   0   0
+#  438 |  162 |    1    |   0   0   0
+#  439 |  158 |    0    |   0   0   0
+#  439 |  159 |    0    |   0   0   0
+#  439 |  160 |    0    |   0   0   0
+#  439 |  161 |    1    | 255 255   0
+#  439 |  162 |    1    |   0   0   0
+#  440 |  158 |    0    |   0   0   0
+#  440 |  159 |    0    |   0   0   0
+#  440 |  160 |    0    |   0   0   0
+#  440 |  161 |    0    |   0   0   0
+#  440 |  162 |    0    |   0   0   0
+#  441 |  158 |    0    |   0   0   0
+#  441 |  159 |    0    |   0   0   0
+#  441 |  160 |    0    |   0   0   0
+#  441 |  161 |    0    |   0   0   0
+#  441 |  162 |    0    |   0   0   0
+#  442 |  158 |    0    |   0   0   0
+#  442 |  159 |    0    |   0   0   0
+#  442 |  160 |    0    |   0   0   0
+#  442 |  161 |    0    |   0   0   0
+#  442 |  162 |    0    |   0   0   0
+# ** Note: $finish    : C:/Users/josee/CE3201_PF/tb_Rom_tile.sv(38)
+#    Time: 125 ns  Iteration: 0  Instance: /tb_Rom_tile
 # 1
-# Break in Module CPU_tb at C:/Users/jimmy/GitHub/CE3201_PF/CPU_tb.sv line 180
-# End time: 12:56:19 on Jun 14,2025, Elapsed time: 0:00:13
+# Break in Module tb_Rom_tile at C:/Users/josee/CE3201_PF/tb_Rom_tile.sv line 38
+# End time: 00:10:12 on Jun 15,2025, Elapsed time: 0:03:31
 # Errors: 0, Warnings: 0

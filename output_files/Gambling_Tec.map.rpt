@@ -1,5 +1,5 @@
 Analysis & Synthesis report for Gambling_Tec
-Sat Jun 14 12:56:35 2025
+Sun Jun 15 00:25:24 2025
 Quartus Prime Version 18.1.0 Build 625 09/12/2018 SJ Lite Edition
 
 
@@ -14,25 +14,49 @@ Quartus Prime Version 18.1.0 Build 625 09/12/2018 SJ Lite Edition
   6. Analysis & Synthesis Resource Usage Summary
   7. Analysis & Synthesis Resource Utilization by Entity
   8. General Register Statistics
-  9. Parameter Settings for User Entity Instance: CPU:process|Mux:next_PC_inst
- 10. Parameter Settings for User Entity Instance: CPU:process|Register:PC_Register
- 11. Parameter Settings for User Entity Instance: CPU:process|Mux:RA1_inst
- 12. Parameter Settings for User Entity Instance: CPU:process|Mux:RA2_inst
- 13. Parameter Settings for User Entity Instance: CPU:process|Adder:PCPlus4_inst
- 14. Parameter Settings for User Entity Instance: CPU:process|Adder:PCPlus8_inst
- 15. Parameter Settings for User Entity Instance: CPU:process|Mux:ALUSrc_inst
- 16. Parameter Settings for User Entity Instance: CPU:process|ALU:ALU_inst
- 17. Parameter Settings for User Entity Instance: CPU:process|Mux:MemToReg_inst
- 18. Parameter Settings for User Entity Instance: CPU:process|Control_Unit:CU_Inst|Register:Register_Flag1
- 19. Parameter Settings for User Entity Instance: CPU:process|Control_Unit:CU_Inst|Register:Register_Flag2
- 20. Port Connectivity Checks: "CPU:process|Adder:PCPlus8_inst"
- 21. Port Connectivity Checks: "CPU:process|Adder:PCPlus4_inst"
- 22. Port Connectivity Checks: "CPU:process|Mux:RA1_inst"
- 23. Port Connectivity Checks: "CPU:process|Register:PC_Register"
- 24. Port Connectivity Checks: "CPU:process"
- 25. Post-Synthesis Netlist Statistics for Top Partition
- 26. Elapsed Time Per Partition
- 27. Analysis & Synthesis Messages
+  9. Multiplexer Restructuring Statistics (Restructuring Performed)
+ 10. Parameter Settings for User Entity Instance: Vga_Controller:vga_control
+ 11. Parameter Settings for User Entity Instance: Vga_Controller:vga_control|Counter:count_y
+ 12. Parameter Settings for User Entity Instance: Vga_Controller:vga_control|Counter:count_x
+ 13. Parameter Settings for User Entity Instance: Vga_Controller:vga_control|Register:reg_x
+ 14. Parameter Settings for User Entity Instance: Vga_Controller:vga_control|Register:reg_y
+ 15. Parameter Settings for User Entity Instance: Vga_Controller:vga_control|Comparator:cmp_x
+ 16. Parameter Settings for User Entity Instance: Vga_Controller:vga_control|Comparator:cmp_y
+ 17. Parameter Settings for User Entity Instance: Vga_Controller:vga_control|Square_Area:cua_D
+ 18. Parameter Settings for User Entity Instance: Vga_Controller:vga_control|Square_Area:Sombra
+ 19. Parameter Settings for User Entity Instance: Vga_Controller:vga_control|Square_Area:cua_D2
+ 20. Parameter Settings for User Entity Instance: Vga_Controller:vga_control|Square_Area:cua_D3
+ 21. Parameter Settings for User Entity Instance: Vga_Controller:vga_control|Square_Area:cua_D4
+ 22. Parameter Settings for User Entity Instance: Vga_Controller:vga_control|Square_Area:Cua_Btn
+ 23. Parameter Settings for User Entity Instance: CPU:process|Mux:next_PC_inst
+ 24. Parameter Settings for User Entity Instance: CPU:process|Register:PC_Register
+ 25. Parameter Settings for User Entity Instance: CPU:process|Mux:RA1_inst
+ 26. Parameter Settings for User Entity Instance: CPU:process|Mux:RA2_inst
+ 27. Parameter Settings for User Entity Instance: CPU:process|Adder:PCPlus4_inst
+ 28. Parameter Settings for User Entity Instance: CPU:process|Adder:PCPlus8_inst
+ 29. Parameter Settings for User Entity Instance: CPU:process|Mux:ALUSrc_inst
+ 30. Parameter Settings for User Entity Instance: CPU:process|ALU:ALU_inst
+ 31. Parameter Settings for User Entity Instance: CPU:process|Mux:MemToReg_inst
+ 32. Parameter Settings for User Entity Instance: CPU:process|Control_Unit:CU_Inst|Register:Register_Flag1
+ 33. Parameter Settings for User Entity Instance: CPU:process|Control_Unit:CU_Inst|Register:Register_Flag2
+ 34. Parameter Settings for Inferred Entity Instance: Vga_Controller:vga_control|Rom_tile:rom_tile|lpm_divide:Mod0
+ 35. Port Connectivity Checks: "CPU:process|Adder:PCPlus8_inst"
+ 36. Port Connectivity Checks: "CPU:process|Adder:PCPlus4_inst"
+ 37. Port Connectivity Checks: "CPU:process|Mux:RA1_inst"
+ 38. Port Connectivity Checks: "CPU:process|Register:PC_Register"
+ 39. Port Connectivity Checks: "CPU:process"
+ 40. Port Connectivity Checks: "Vga_Controller:vga_control|Rom_tile:rom_tile"
+ 41. Port Connectivity Checks: "Vga_Controller:vga_control|Comparator:cmp_y"
+ 42. Port Connectivity Checks: "Vga_Controller:vga_control|Comparator:cmp_x"
+ 43. Port Connectivity Checks: "Vga_Controller:vga_control|Register:reg_y"
+ 44. Port Connectivity Checks: "Vga_Controller:vga_control|Register:reg_x"
+ 45. Port Connectivity Checks: "Vga_Controller:vga_control|Counter:count_x"
+ 46. Port Connectivity Checks: "Vga_Controller:vga_control|Counter:count_y"
+ 47. Port Connectivity Checks: "Vga_Controller:vga_control"
+ 48. Post-Synthesis Netlist Statistics for Top Partition
+ 49. Elapsed Time Per Partition
+ 50. Analysis & Synthesis Messages
+ 51. Analysis & Synthesis Suppressed Messages
 
 
 
@@ -58,14 +82,14 @@ refer to the applicable agreement for further details.
 +-------------------------------------------------------------------------------+
 ; Analysis & Synthesis Summary                                                  ;
 +---------------------------------+---------------------------------------------+
-; Analysis & Synthesis Status     ; Successful - Sat Jun 14 12:56:35 2025       ;
+; Analysis & Synthesis Status     ; Successful - Sun Jun 15 00:25:24 2025       ;
 ; Quartus Prime Version           ; 18.1.0 Build 625 09/12/2018 SJ Lite Edition ;
 ; Revision Name                   ; Gambling_Tec                                ;
 ; Top-level Entity Name           ; Gambling_Tec                                ;
 ; Family                          ; Cyclone V                                   ;
 ; Logic utilization (in ALMs)     ; N/A                                         ;
-; Total registers                 ; 0                                           ;
-; Total pins                      ; 34                                          ;
+; Total registers                 ; 41                                          ;
+; Total pins                      ; 63                                          ;
 ; Total virtual pins              ; 0                                           ;
 ; Total block memory bits         ; 0                                           ;
 ; Total DSP Blocks                ; 0                                           ;
@@ -170,71 +194,103 @@ refer to the applicable agreement for further details.
 +----------------------------+-------------+
 ; Processors                 ; Number      ;
 +----------------------------+-------------+
-; Number detected on machine ; 16          ;
-; Maximum allowed            ; 10          ;
+; Number detected on machine ; 8           ;
+; Maximum allowed            ; 4           ;
 ;                            ;             ;
 ; Average used               ; 1.00        ;
-; Maximum used               ; 1           ;
+; Maximum used               ; 4           ;
 ;                            ;             ;
 ; Usage by Processor         ; % Time Used ;
 ;     Processor 1            ; 100.0%      ;
+;     Processors 2-4         ;   0.0%      ;
 +----------------------------+-------------+
 
 
-+--------------------------------------------------------------------------------------------------------------------------------------------------+
-; Analysis & Synthesis Source Files Read                                                                                                           ;
-+----------------------------------+-----------------+------------------------------+----------------------------------------------------+---------+
-; File Name with User-Entered Path ; Used in Netlist ; File Type                    ; File Name with Absolute Path                       ; Library ;
-+----------------------------------+-----------------+------------------------------+----------------------------------------------------+---------+
-; Condition_Check.sv               ; yes             ; User SystemVerilog HDL File  ; C:/Users/jimmy/GitHub/CE3201_PF/Condition_Check.sv ;         ;
-; Register_File.sv                 ; yes             ; User SystemVerilog HDL File  ; C:/Users/jimmy/GitHub/CE3201_PF/Register_File.sv   ;         ;
-; Register.sv                      ; yes             ; User SystemVerilog HDL File  ; C:/Users/jimmy/GitHub/CE3201_PF/Register.sv        ;         ;
-; Mux.sv                           ; yes             ; User SystemVerilog HDL File  ; C:/Users/jimmy/GitHub/CE3201_PF/Mux.sv             ;         ;
-; Extender.sv                      ; yes             ; User SystemVerilog HDL File  ; C:/Users/jimmy/GitHub/CE3201_PF/Extender.sv        ;         ;
-; Data_Memory.sv                   ; yes             ; User SystemVerilog HDL File  ; C:/Users/jimmy/GitHub/CE3201_PF/Data_Memory.sv     ;         ;
-; CPU.sv                           ; yes             ; User SystemVerilog HDL File  ; C:/Users/jimmy/GitHub/CE3201_PF/CPU.sv             ;         ;
-; ALU.sv                           ; yes             ; User SystemVerilog HDL File  ; C:/Users/jimmy/GitHub/CE3201_PF/ALU.sv             ;         ;
-; Adder.sv                         ; yes             ; User SystemVerilog HDL File  ; C:/Users/jimmy/GitHub/CE3201_PF/Adder.sv           ;         ;
-; Gambling_Tec.sv                  ; yes             ; User SystemVerilog HDL File  ; C:/Users/jimmy/GitHub/CE3201_PF/Gambling_Tec.sv    ;         ;
-; Control_Unit.sv                  ; yes             ; User SystemVerilog HDL File  ; C:/Users/jimmy/GitHub/CE3201_PF/Control_Unit.sv    ;         ;
-; Decoder.sv                       ; yes             ; User SystemVerilog HDL File  ; C:/Users/jimmy/GitHub/CE3201_PF/Decoder.sv         ;         ;
-+----------------------------------+-----------------+------------------------------+----------------------------------------------------+---------+
++--------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+; Analysis & Synthesis Source Files Read                                                                                                                                   ;
++----------------------------------+-----------------+------------------------------+----------------------------------------------------------------------------+---------+
+; File Name with User-Entered Path ; Used in Netlist ; File Type                    ; File Name with Absolute Path                                               ; Library ;
++----------------------------------+-----------------+------------------------------+----------------------------------------------------------------------------+---------+
+; Square_Area.sv                   ; yes             ; User SystemVerilog HDL File  ; C:/Users/josee/CE3201_PF/Square_Area.sv                                    ;         ;
+; Condition_Check.sv               ; yes             ; User SystemVerilog HDL File  ; C:/Users/josee/CE3201_PF/Condition_Check.sv                                ;         ;
+; Register_File.sv                 ; yes             ; User SystemVerilog HDL File  ; C:/Users/josee/CE3201_PF/Register_File.sv                                  ;         ;
+; Register.sv                      ; yes             ; User SystemVerilog HDL File  ; C:/Users/josee/CE3201_PF/Register.sv                                       ;         ;
+; Mux.sv                           ; yes             ; User SystemVerilog HDL File  ; C:/Users/josee/CE3201_PF/Mux.sv                                            ;         ;
+; Extender.sv                      ; yes             ; User SystemVerilog HDL File  ; C:/Users/josee/CE3201_PF/Extender.sv                                       ;         ;
+; Data_Memory.sv                   ; yes             ; User SystemVerilog HDL File  ; C:/Users/josee/CE3201_PF/Data_Memory.sv                                    ;         ;
+; CPU.sv                           ; yes             ; User SystemVerilog HDL File  ; C:/Users/josee/CE3201_PF/CPU.sv                                            ;         ;
+; ALU.sv                           ; yes             ; User SystemVerilog HDL File  ; C:/Users/josee/CE3201_PF/ALU.sv                                            ;         ;
+; Adder.sv                         ; yes             ; User SystemVerilog HDL File  ; C:/Users/josee/CE3201_PF/Adder.sv                                          ;         ;
+; Gambling_Tec.sv                  ; yes             ; User SystemVerilog HDL File  ; C:/Users/josee/CE3201_PF/Gambling_Tec.sv                                   ;         ;
+; Control_Unit.sv                  ; yes             ; User SystemVerilog HDL File  ; C:/Users/josee/CE3201_PF/Control_Unit.sv                                   ;         ;
+; Decoder.sv                       ; yes             ; User SystemVerilog HDL File  ; C:/Users/josee/CE3201_PF/Decoder.sv                                        ;         ;
+; Vga_Controller.sv                ; yes             ; User SystemVerilog HDL File  ; C:/Users/josee/CE3201_PF/Vga_Controller.sv                                 ;         ;
+; Comparator.sv                    ; yes             ; User SystemVerilog HDL File  ; C:/Users/josee/CE3201_PF/Comparator.sv                                     ;         ;
+; Counter.sv                       ; yes             ; User SystemVerilog HDL File  ; C:/Users/josee/CE3201_PF/Counter.sv                                        ;         ;
+; clk_div.sv                       ; yes             ; User SystemVerilog HDL File  ; C:/Users/josee/CE3201_PF/clk_div.sv                                        ;         ;
+; Rom_tile.sv                      ; yes             ; User SystemVerilog HDL File  ; C:/Users/josee/CE3201_PF/Rom_tile.sv                                       ;         ;
+; lpm_divide.tdf                   ; yes             ; Megafunction                 ; c:/intelfpga_lite/18.1/quartus/libraries/megafunctions/lpm_divide.tdf      ;         ;
+; abs_divider.inc                  ; yes             ; Megafunction                 ; c:/intelfpga_lite/18.1/quartus/libraries/megafunctions/abs_divider.inc     ;         ;
+; sign_div_unsign.inc              ; yes             ; Megafunction                 ; c:/intelfpga_lite/18.1/quartus/libraries/megafunctions/sign_div_unsign.inc ;         ;
+; aglobal181.inc                   ; yes             ; Megafunction                 ; c:/intelfpga_lite/18.1/quartus/libraries/megafunctions/aglobal181.inc      ;         ;
+; db/lpm_divide_h3m.tdf            ; yes             ; Auto-Generated Megafunction  ; C:/Users/josee/CE3201_PF/db/lpm_divide_h3m.tdf                             ;         ;
+; db/sign_div_unsign_klh.tdf       ; yes             ; Auto-Generated Megafunction  ; C:/Users/josee/CE3201_PF/db/sign_div_unsign_klh.tdf                        ;         ;
+; db/alt_u_div_eve.tdf             ; yes             ; Auto-Generated Megafunction  ; C:/Users/josee/CE3201_PF/db/alt_u_div_eve.tdf                              ;         ;
++----------------------------------+-----------------+------------------------------+----------------------------------------------------------------------------+---------+
 
 
-+--------------------------------------------------------------+
-; Analysis & Synthesis Resource Usage Summary                  ;
-+---------------------------------------------+----------------+
-; Resource                                    ; Usage          ;
-+---------------------------------------------+----------------+
-; Estimate of Logic utilization (ALMs needed) ; 0              ;
-;                                             ;                ;
-; Combinational ALUT usage for logic          ; 0              ;
-;     -- 7 input functions                    ; 0              ;
-;     -- 6 input functions                    ; 0              ;
-;     -- 5 input functions                    ; 0              ;
-;     -- 4 input functions                    ; 0              ;
-;     -- <=3 input functions                  ; 0              ;
-;                                             ;                ;
-; Dedicated logic registers                   ; 0              ;
-;                                             ;                ;
-; I/O pins                                    ; 34             ;
-;                                             ;                ;
-; Total DSP Blocks                            ; 0              ;
-;                                             ;                ;
-; Maximum fan-out node                        ; Instruction[0] ;
-; Maximum fan-out                             ; 1              ;
-; Total fan-out                               ; 34             ;
-; Average fan-out                             ; 0.50           ;
-+---------------------------------------------+----------------+
++---------------------------------------------------------------------+
+; Analysis & Synthesis Resource Usage Summary                         ;
++---------------------------------------------+-----------------------+
+; Resource                                    ; Usage                 ;
++---------------------------------------------+-----------------------+
+; Estimate of Logic utilization (ALMs needed) ; 107                   ;
+;                                             ;                       ;
+; Combinational ALUT usage for logic          ; 197                   ;
+;     -- 7 input functions                    ; 0                     ;
+;     -- 6 input functions                    ; 14                    ;
+;     -- 5 input functions                    ; 43                    ;
+;     -- 4 input functions                    ; 45                    ;
+;     -- <=3 input functions                  ; 95                    ;
+;                                             ;                       ;
+; Dedicated logic registers                   ; 41                    ;
+;                                             ;                       ;
+; I/O pins                                    ; 63                    ;
+;                                             ;                       ;
+; Total DSP Blocks                            ; 0                     ;
+;                                             ;                       ;
+; Maximum fan-out node                        ; clk_div:div_clo|clk25 ;
+; Maximum fan-out                             ; 42                    ;
+; Total fan-out                               ; 920                   ;
+; Average fan-out                             ; 2.53                  ;
++---------------------------------------------+-----------------------+
 
 
-+-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
-; Analysis & Synthesis Resource Utilization by Entity                                                                                                                                     ;
-+----------------------------+---------------------+---------------------------+-------------------+------------+------+--------------+---------------------+--------------+--------------+
-; Compilation Hierarchy Node ; Combinational ALUTs ; Dedicated Logic Registers ; Block Memory Bits ; DSP Blocks ; Pins ; Virtual Pins ; Full Hierarchy Name ; Entity Name  ; Library Name ;
-+----------------------------+---------------------+---------------------------+-------------------+------------+------+--------------+---------------------+--------------+--------------+
-; |Gambling_Tec              ; 0 (0)               ; 0 (0)                     ; 0                 ; 0          ; 34   ; 0            ; |Gambling_Tec       ; Gambling_Tec ; work         ;
-+----------------------------+---------------------+---------------------------+-------------------+------------+------+--------------+---------------------+--------------+--------------+
++---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+; Analysis & Synthesis Resource Utilization by Entity                                                                                                                                                                                                                                                                                                     ;
++----------------------------------------------+---------------------+---------------------------+-------------------+------------+------+--------------+------------------------------------------------------------------------------------------------------------------------------------------------------------+---------------------+--------------+
+; Compilation Hierarchy Node                   ; Combinational ALUTs ; Dedicated Logic Registers ; Block Memory Bits ; DSP Blocks ; Pins ; Virtual Pins ; Full Hierarchy Name                                                                                                                                        ; Entity Name         ; Library Name ;
++----------------------------------------------+---------------------+---------------------------+-------------------+------------+------+--------------+------------------------------------------------------------------------------------------------------------------------------------------------------------+---------------------+--------------+
+; |Gambling_Tec                                ; 197 (0)             ; 41 (0)                    ; 0                 ; 0          ; 63   ; 0            ; |Gambling_Tec                                                                                                                                              ; Gambling_Tec        ; work         ;
+;    |Vga_Controller:vga_control|              ; 196 (42)            ; 40 (0)                    ; 0                 ; 0          ; 0    ; 0            ; |Gambling_Tec|Vga_Controller:vga_control                                                                                                                   ; Vga_Controller      ; work         ;
+;       |Comparator:cmp_x|                     ; 4 (4)               ; 0 (0)                     ; 0                 ; 0          ; 0    ; 0            ; |Gambling_Tec|Vga_Controller:vga_control|Comparator:cmp_x                                                                                                  ; Comparator          ; work         ;
+;       |Counter:count_x|                      ; 10 (10)             ; 10 (10)                   ; 0                 ; 0          ; 0    ; 0            ; |Gambling_Tec|Vga_Controller:vga_control|Counter:count_x                                                                                                   ; Counter             ; work         ;
+;       |Counter:count_y|                      ; 10 (10)             ; 10 (10)                   ; 0                 ; 0          ; 0    ; 0            ; |Gambling_Tec|Vga_Controller:vga_control|Counter:count_y                                                                                                   ; Counter             ; work         ;
+;       |Register:reg_x|                       ; 0 (0)               ; 10 (10)                   ; 0                 ; 0          ; 0    ; 0            ; |Gambling_Tec|Vga_Controller:vga_control|Register:reg_x                                                                                                    ; Register            ; work         ;
+;       |Register:reg_y|                       ; 0 (0)               ; 10 (10)                   ; 0                 ; 0          ; 0    ; 0            ; |Gambling_Tec|Vga_Controller:vga_control|Register:reg_y                                                                                                    ; Register            ; work         ;
+;       |Rom_tile:rom_tile|                    ; 78 (10)             ; 0 (0)                     ; 0                 ; 0          ; 0    ; 0            ; |Gambling_Tec|Vga_Controller:vga_control|Rom_tile:rom_tile                                                                                                 ; Rom_tile            ; work         ;
+;          |lpm_divide:Mod0|                   ; 68 (0)              ; 0 (0)                     ; 0                 ; 0          ; 0    ; 0            ; |Gambling_Tec|Vga_Controller:vga_control|Rom_tile:rom_tile|lpm_divide:Mod0                                                                                 ; lpm_divide          ; work         ;
+;             |lpm_divide_h3m:auto_generated|  ; 68 (0)              ; 0 (0)                     ; 0                 ; 0          ; 0    ; 0            ; |Gambling_Tec|Vga_Controller:vga_control|Rom_tile:rom_tile|lpm_divide:Mod0|lpm_divide_h3m:auto_generated                                                   ; lpm_divide_h3m      ; work         ;
+;                |sign_div_unsign_klh:divider| ; 68 (0)              ; 0 (0)                     ; 0                 ; 0          ; 0    ; 0            ; |Gambling_Tec|Vga_Controller:vga_control|Rom_tile:rom_tile|lpm_divide:Mod0|lpm_divide_h3m:auto_generated|sign_div_unsign_klh:divider                       ; sign_div_unsign_klh ; work         ;
+;                   |alt_u_div_eve:divider|    ; 68 (68)             ; 0 (0)                     ; 0                 ; 0          ; 0    ; 0            ; |Gambling_Tec|Vga_Controller:vga_control|Rom_tile:rom_tile|lpm_divide:Mod0|lpm_divide_h3m:auto_generated|sign_div_unsign_klh:divider|alt_u_div_eve:divider ; alt_u_div_eve       ; work         ;
+;       |Square_Area:Cua_Btn|                  ; 12 (12)             ; 0 (0)                     ; 0                 ; 0          ; 0    ; 0            ; |Gambling_Tec|Vga_Controller:vga_control|Square_Area:Cua_Btn                                                                                               ; Square_Area         ; work         ;
+;       |Square_Area:Sombra|                   ; 8 (8)               ; 0 (0)                     ; 0                 ; 0          ; 0    ; 0            ; |Gambling_Tec|Vga_Controller:vga_control|Square_Area:Sombra                                                                                                ; Square_Area         ; work         ;
+;       |Square_Area:cua_D2|                   ; 14 (14)             ; 0 (0)                     ; 0                 ; 0          ; 0    ; 0            ; |Gambling_Tec|Vga_Controller:vga_control|Square_Area:cua_D2                                                                                                ; Square_Area         ; work         ;
+;       |Square_Area:cua_D3|                   ; 7 (7)               ; 0 (0)                     ; 0                 ; 0          ; 0    ; 0            ; |Gambling_Tec|Vga_Controller:vga_control|Square_Area:cua_D3                                                                                                ; Square_Area         ; work         ;
+;       |Square_Area:cua_D4|                   ; 6 (6)               ; 0 (0)                     ; 0                 ; 0          ; 0    ; 0            ; |Gambling_Tec|Vga_Controller:vga_control|Square_Area:cua_D4                                                                                                ; Square_Area         ; work         ;
+;       |Square_Area:cua_D|                    ; 5 (5)               ; 0 (0)                     ; 0                 ; 0          ; 0    ; 0            ; |Gambling_Tec|Vga_Controller:vga_control|Square_Area:cua_D                                                                                                 ; Square_Area         ; work         ;
+;    |clk_div:div_clo|                         ; 1 (1)               ; 1 (1)                     ; 0                 ; 0          ; 0    ; 0            ; |Gambling_Tec|clk_div:div_clo                                                                                                                              ; clk_div             ; work         ;
++----------------------------------------------+---------------------+---------------------------+-------------------+------------+------+--------------+------------------------------------------------------------------------------------------------------------------------------------------------------------+---------------------+--------------+
 Note: For table entries with two numbers listed, the numbers in parentheses indicate the number of resources of the given type used by the specific entity alone. The numbers listed outside of parentheses indicate the total resources of the given type used by the specific entity and all of its sub-entities in the hierarchy.
 
 
@@ -243,14 +299,187 @@ Note: For table entries with two numbers listed, the numbers in parentheses indi
 +----------------------------------------------+-------+
 ; Statistic                                    ; Value ;
 +----------------------------------------------+-------+
-; Total registers                              ; 0     ;
+; Total registers                              ; 41    ;
 ; Number of registers using Synchronous Clear  ; 0     ;
 ; Number of registers using Synchronous Load   ; 0     ;
-; Number of registers using Asynchronous Clear ; 0     ;
+; Number of registers using Asynchronous Clear ; 41    ;
 ; Number of registers using Asynchronous Load  ; 0     ;
-; Number of registers using Clock Enable       ; 0     ;
+; Number of registers using Clock Enable       ; 10    ;
 ; Number of registers using Preset             ; 0     ;
 +----------------------------------------------+-------+
+
+
++-------------------------------------------------------------------------------------------------------------------------------------------------------------+
+; Multiplexer Restructuring Statistics (Restructuring Performed)                                                                                              ;
++--------------------+-----------+---------------+----------------------+------------------------+------------+-----------------------------------------------+
+; Multiplexer Inputs ; Bus Width ; Baseline Area ; Area if Restructured ; Saving if Restructured ; Registered ; Example Multiplexer Output                    ;
++--------------------+-----------+---------------+----------------------+------------------------+------------+-----------------------------------------------+
+; 5:1                ; 2 bits    ; 6 LEs         ; 6 LEs                ; 0 LEs                  ; No         ; |Gambling_Tec|Vga_Controller:vga_control|R[7] ;
++--------------------+-----------+---------------+----------------------+------------------------+------------+-----------------------------------------------+
+
+
++-------------------------------------------------------------------------+
+; Parameter Settings for User Entity Instance: Vga_Controller:vga_control ;
++----------------+------------+-------------------------------------------+
+; Parameter Name ; Value      ; Type                                      ;
++----------------+------------+-------------------------------------------+
+; N              ; 8          ; Signed Integer                            ;
+; H_Va           ; 1010000000 ; Unsigned Binary                           ;
+; H_FP           ; 0000010000 ; Unsigned Binary                           ;
+; H_SycP         ; 0001100000 ; Unsigned Binary                           ;
+; H_BckP         ; 0000110000 ; Unsigned Binary                           ;
+; H_Total        ; 1100100000 ; Unsigned Binary                           ;
+; V_Va           ; 0111100000 ; Unsigned Binary                           ;
+; V_FP           ; 0000001010 ; Unsigned Binary                           ;
+; V_SycP         ; 0000000010 ; Unsigned Binary                           ;
+; V_BckP         ; 0000100001 ; Unsigned Binary                           ;
+; V_Total        ; 1000001101 ; Unsigned Binary                           ;
++----------------+------------+-------------------------------------------+
+Note: In order to hide this table in the UI and the text report file, please set the "Show Parameter Settings in Synthesis Report" option in "Analysis and Synthesis Settings -> More Settings" to "Off".
+
+
++-----------------------------------------------------------------------------------------+
+; Parameter Settings for User Entity Instance: Vga_Controller:vga_control|Counter:count_y ;
++----------------+-------+----------------------------------------------------------------+
+; Parameter Name ; Value ; Type                                                           ;
++----------------+-------+----------------------------------------------------------------+
+; N              ; 10    ; Signed Integer                                                 ;
++----------------+-------+----------------------------------------------------------------+
+Note: In order to hide this table in the UI and the text report file, please set the "Show Parameter Settings in Synthesis Report" option in "Analysis and Synthesis Settings -> More Settings" to "Off".
+
+
++-----------------------------------------------------------------------------------------+
+; Parameter Settings for User Entity Instance: Vga_Controller:vga_control|Counter:count_x ;
++----------------+-------+----------------------------------------------------------------+
+; Parameter Name ; Value ; Type                                                           ;
++----------------+-------+----------------------------------------------------------------+
+; N              ; 10    ; Signed Integer                                                 ;
++----------------+-------+----------------------------------------------------------------+
+Note: In order to hide this table in the UI and the text report file, please set the "Show Parameter Settings in Synthesis Report" option in "Analysis and Synthesis Settings -> More Settings" to "Off".
+
+
++----------------------------------------------------------------------------------------+
+; Parameter Settings for User Entity Instance: Vga_Controller:vga_control|Register:reg_x ;
++----------------+-------+---------------------------------------------------------------+
+; Parameter Name ; Value ; Type                                                          ;
++----------------+-------+---------------------------------------------------------------+
+; N              ; 10    ; Signed Integer                                                ;
++----------------+-------+---------------------------------------------------------------+
+Note: In order to hide this table in the UI and the text report file, please set the "Show Parameter Settings in Synthesis Report" option in "Analysis and Synthesis Settings -> More Settings" to "Off".
+
+
++----------------------------------------------------------------------------------------+
+; Parameter Settings for User Entity Instance: Vga_Controller:vga_control|Register:reg_y ;
++----------------+-------+---------------------------------------------------------------+
+; Parameter Name ; Value ; Type                                                          ;
++----------------+-------+---------------------------------------------------------------+
+; N              ; 10    ; Signed Integer                                                ;
++----------------+-------+---------------------------------------------------------------+
+Note: In order to hide this table in the UI and the text report file, please set the "Show Parameter Settings in Synthesis Report" option in "Analysis and Synthesis Settings -> More Settings" to "Off".
+
+
++------------------------------------------------------------------------------------------+
+; Parameter Settings for User Entity Instance: Vga_Controller:vga_control|Comparator:cmp_x ;
++----------------+-------+-----------------------------------------------------------------+
+; Parameter Name ; Value ; Type                                                            ;
++----------------+-------+-----------------------------------------------------------------+
+; N              ; 10    ; Signed Integer                                                  ;
++----------------+-------+-----------------------------------------------------------------+
+Note: In order to hide this table in the UI and the text report file, please set the "Show Parameter Settings in Synthesis Report" option in "Analysis and Synthesis Settings -> More Settings" to "Off".
+
+
++------------------------------------------------------------------------------------------+
+; Parameter Settings for User Entity Instance: Vga_Controller:vga_control|Comparator:cmp_y ;
++----------------+-------+-----------------------------------------------------------------+
+; Parameter Name ; Value ; Type                                                            ;
++----------------+-------+-----------------------------------------------------------------+
+; N              ; 10    ; Signed Integer                                                  ;
++----------------+-------+-----------------------------------------------------------------+
+Note: In order to hide this table in the UI and the text report file, please set the "Show Parameter Settings in Synthesis Report" option in "Analysis and Synthesis Settings -> More Settings" to "Off".
+
+
++-------------------------------------------------------------------------------------------+
+; Parameter Settings for User Entity Instance: Vga_Controller:vga_control|Square_Area:cua_D ;
++----------------+-------+------------------------------------------------------------------+
+; Parameter Name ; Value ; Type                                                             ;
++----------------+-------+------------------------------------------------------------------+
+; x0             ; 10    ; Signed Integer                                                   ;
+; x1             ; 310   ; Signed Integer                                                   ;
+; y0             ; 240   ; Signed Integer                                                   ;
+; y1             ; 350   ; Signed Integer                                                   ;
+; corn           ; 0     ; Signed Integer                                                   ;
++----------------+-------+------------------------------------------------------------------+
+Note: In order to hide this table in the UI and the text report file, please set the "Show Parameter Settings in Synthesis Report" option in "Analysis and Synthesis Settings -> More Settings" to "Off".
+
+
++--------------------------------------------------------------------------------------------+
+; Parameter Settings for User Entity Instance: Vga_Controller:vga_control|Square_Area:Sombra ;
++----------------+-------+-------------------------------------------------------------------+
+; Parameter Name ; Value ; Type                                                              ;
++----------------+-------+-------------------------------------------------------------------+
+; x0             ; 40    ; Signed Integer                                                    ;
+; x1             ; 51    ; Signed Integer                                                    ;
+; y0             ; 260   ; Signed Integer                                                    ;
+; y1             ; 360   ; Signed Integer                                                    ;
+; corn           ; 5     ; Signed Integer                                                    ;
++----------------+-------+-------------------------------------------------------------------+
+Note: In order to hide this table in the UI and the text report file, please set the "Show Parameter Settings in Synthesis Report" option in "Analysis and Synthesis Settings -> More Settings" to "Off".
+
+
++--------------------------------------------------------------------------------------------+
+; Parameter Settings for User Entity Instance: Vga_Controller:vga_control|Square_Area:cua_D2 ;
++----------------+-------+-------------------------------------------------------------------+
+; Parameter Name ; Value ; Type                                                              ;
++----------------+-------+-------------------------------------------------------------------+
+; x0             ; 50    ; Signed Integer                                                    ;
+; x1             ; 300   ; Signed Integer                                                    ;
+; y0             ; 250   ; Signed Integer                                                    ;
+; y1             ; 360   ; Signed Integer                                                    ;
+; corn           ; 5     ; Signed Integer                                                    ;
++----------------+-------+-------------------------------------------------------------------+
+Note: In order to hide this table in the UI and the text report file, please set the "Show Parameter Settings in Synthesis Report" option in "Analysis and Synthesis Settings -> More Settings" to "Off".
+
+
++--------------------------------------------------------------------------------------------+
+; Parameter Settings for User Entity Instance: Vga_Controller:vga_control|Square_Area:cua_D3 ;
++----------------+-------+-------------------------------------------------------------------+
+; Parameter Name ; Value ; Type                                                              ;
++----------------+-------+-------------------------------------------------------------------+
+; x0             ; 60    ; Signed Integer                                                    ;
+; x1             ; 290   ; Signed Integer                                                    ;
+; y0             ; 260   ; Signed Integer                                                    ;
+; y1             ; 350   ; Signed Integer                                                    ;
+; corn           ; 5     ; Signed Integer                                                    ;
++----------------+-------+-------------------------------------------------------------------+
+Note: In order to hide this table in the UI and the text report file, please set the "Show Parameter Settings in Synthesis Report" option in "Analysis and Synthesis Settings -> More Settings" to "Off".
+
+
++--------------------------------------------------------------------------------------------+
+; Parameter Settings for User Entity Instance: Vga_Controller:vga_control|Square_Area:cua_D4 ;
++----------------+-------+-------------------------------------------------------------------+
+; Parameter Name ; Value ; Type                                                              ;
++----------------+-------+-------------------------------------------------------------------+
+; x0             ; 70    ; Signed Integer                                                    ;
+; x1             ; 280   ; Signed Integer                                                    ;
+; y0             ; 270   ; Signed Integer                                                    ;
+; y1             ; 340   ; Signed Integer                                                    ;
+; corn           ; 0     ; Signed Integer                                                    ;
++----------------+-------+-------------------------------------------------------------------+
+Note: In order to hide this table in the UI and the text report file, please set the "Show Parameter Settings in Synthesis Report" option in "Analysis and Synthesis Settings -> More Settings" to "Off".
+
+
++---------------------------------------------------------------------------------------------+
+; Parameter Settings for User Entity Instance: Vga_Controller:vga_control|Square_Area:Cua_Btn ;
++----------------+-------+--------------------------------------------------------------------+
+; Parameter Name ; Value ; Type                                                               ;
++----------------+-------+--------------------------------------------------------------------+
+; x0             ; 10    ; Signed Integer                                                     ;
+; x1             ; 310   ; Signed Integer                                                     ;
+; y0             ; 360   ; Signed Integer                                                     ;
+; y1             ; 460   ; Signed Integer                                                     ;
+; corn           ; 5     ; Signed Integer                                                     ;
++----------------+-------+--------------------------------------------------------------------+
+Note: In order to hide this table in the UI and the text report file, please set the "Show Parameter Settings in Synthesis Report" option in "Analysis and Synthesis Settings -> More Settings" to "Off".
 
 
 +---------------------------------------------------------------------------+
@@ -363,6 +592,29 @@ Note: In order to hide this table in the UI and the text report file, please set
 Note: In order to hide this table in the UI and the text report file, please set the "Show Parameter Settings in Synthesis Report" option in "Analysis and Synthesis Settings -> More Settings" to "Off".
 
 
++---------------------------------------------------------------------------------------------------------------+
+; Parameter Settings for Inferred Entity Instance: Vga_Controller:vga_control|Rom_tile:rom_tile|lpm_divide:Mod0 ;
++------------------------+----------------+---------------------------------------------------------------------+
+; Parameter Name         ; Value          ; Type                                                                ;
++------------------------+----------------+---------------------------------------------------------------------+
+; LPM_WIDTHN             ; 10             ; Untyped                                                             ;
+; LPM_WIDTHD             ; 4              ; Untyped                                                             ;
+; LPM_NREPRESENTATION    ; UNSIGNED       ; Untyped                                                             ;
+; LPM_DREPRESENTATION    ; UNSIGNED       ; Untyped                                                             ;
+; LPM_PIPELINE           ; 0              ; Untyped                                                             ;
+; LPM_REMAINDERPOSITIVE  ; TRUE           ; Untyped                                                             ;
+; MAXIMIZE_SPEED         ; 5              ; Untyped                                                             ;
+; CBXI_PARAMETER         ; lpm_divide_h3m ; Untyped                                                             ;
+; CARRY_CHAIN            ; MANUAL         ; Untyped                                                             ;
+; OPTIMIZE_FOR_SPEED     ; 5              ; Untyped                                                             ;
+; AUTO_CARRY_CHAINS      ; ON             ; AUTO_CARRY                                                          ;
+; IGNORE_CARRY_BUFFERS   ; OFF            ; IGNORE_CARRY                                                        ;
+; AUTO_CASCADE_CHAINS    ; ON             ; AUTO_CASCADE                                                        ;
+; IGNORE_CASCADE_BUFFERS ; OFF            ; IGNORE_CASCADE                                                      ;
++------------------------+----------------+---------------------------------------------------------------------+
+Note: In order to hide this table in the UI and the text report file, please set the "Show Parameter Settings in Synthesis Report" option in "Analysis and Synthesis Settings -> More Settings" to "Off".
+
+
 +------------------------------------------------------------+
 ; Port Connectivity Checks: "CPU:process|Adder:PCPlus8_inst" ;
 +----------+-------+----------+------------------------------+
@@ -413,16 +665,116 @@ Note: In order to hide this table in the UI and the text report file, please set
 +--------+--------+----------+-------------------------------------------------------------------------------------+
 
 
++-------------------------------------------------------------------------------------------------------------------------------------------------+
+; Port Connectivity Checks: "Vga_Controller:vga_control|Rom_tile:rom_tile"                                                                        ;
++------+--------+----------+----------------------------------------------------------------------------------------------------------------------+
+; Port ; Type   ; Severity ; Details                                                                                                              ;
++------+--------+----------+----------------------------------------------------------------------------------------------------------------------+
+; G    ; Output ; Warning  ; Output or bidir port (8 bits) is wider than the port expression (1 bits) it drives; bit(s) "G[7..1]" have no fanouts ;
+; B    ; Output ; Warning  ; Output or bidir port (8 bits) is wider than the port expression (1 bits) it drives; bit(s) "B[7..1]" have no fanouts ;
++------+--------+----------+----------------------------------------------------------------------------------------------------------------------+
+
+
++-------------------------------------------------------------------------+
+; Port Connectivity Checks: "Vga_Controller:vga_control|Comparator:cmp_y" ;
++---------+-------+----------+--------------------------------------------+
+; Port    ; Type  ; Severity ; Details                                    ;
++---------+-------+----------+--------------------------------------------+
+; B[3..2] ; Input ; Info     ; Stuck at VCC                               ;
+; B[8..4] ; Input ; Info     ; Stuck at GND                               ;
+; B[9]    ; Input ; Info     ; Stuck at VCC                               ;
+; B[1]    ; Input ; Info     ; Stuck at GND                               ;
+; B[0]    ; Input ; Info     ; Stuck at VCC                               ;
++---------+-------+----------+--------------------------------------------+
+
+
++-------------------------------------------------------------------------+
+; Port Connectivity Checks: "Vga_Controller:vga_control|Comparator:cmp_x" ;
++---------+-------+----------+--------------------------------------------+
+; Port    ; Type  ; Severity ; Details                                    ;
++---------+-------+----------+--------------------------------------------+
+; B[9..8] ; Input ; Info     ; Stuck at VCC                               ;
+; B[7..6] ; Input ; Info     ; Stuck at GND                               ;
+; B[4..0] ; Input ; Info     ; Stuck at GND                               ;
+; B[5]    ; Input ; Info     ; Stuck at VCC                               ;
++---------+-------+----------+--------------------------------------------+
+
+
++-----------------------------------------------------------------------+
+; Port Connectivity Checks: "Vga_Controller:vga_control|Register:reg_y" ;
++------+-------+----------+---------------------------------------------+
+; Port ; Type  ; Severity ; Details                                     ;
++------+-------+----------+---------------------------------------------+
+; en   ; Input ; Info     ; Stuck at VCC                                ;
++------+-------+----------+---------------------------------------------+
+
+
++-----------------------------------------------------------------------+
+; Port Connectivity Checks: "Vga_Controller:vga_control|Register:reg_x" ;
++------+-------+----------+---------------------------------------------+
+; Port ; Type  ; Severity ; Details                                     ;
++------+-------+----------+---------------------------------------------+
+; en   ; Input ; Info     ; Stuck at VCC                                ;
++------+-------+----------+---------------------------------------------+
+
+
++------------------------------------------------------------------------+
+; Port Connectivity Checks: "Vga_Controller:vga_control|Counter:count_x" ;
++------+-------+----------+----------------------------------------------+
+; Port ; Type  ; Severity ; Details                                      ;
++------+-------+----------+----------------------------------------------+
+; en   ; Input ; Info     ; Stuck at VCC                                 ;
+; mode ; Input ; Info     ; Stuck at VCC                                 ;
++------+-------+----------+----------------------------------------------+
+
+
++------------------------------------------------------------------------+
+; Port Connectivity Checks: "Vga_Controller:vga_control|Counter:count_y" ;
++------+-------+----------+----------------------------------------------+
+; Port ; Type  ; Severity ; Details                                      ;
++------+-------+----------+----------------------------------------------+
+; mode ; Input ; Info     ; Stuck at VCC                                 ;
++------+-------+----------+----------------------------------------------+
+
+
++--------------------------------------------------------+
+; Port Connectivity Checks: "Vga_Controller:vga_control" ;
++------+--------+----------+-----------------------------+
+; Port ; Type   ; Severity ; Details                     ;
++------+--------+----------+-----------------------------+
+; Q_X  ; Output ; Info     ; Explicitly unconnected      ;
+; Q_Y  ; Output ; Info     ; Explicitly unconnected      ;
++------+--------+----------+-----------------------------+
+
+
 +-----------------------------------------------------+
 ; Post-Synthesis Netlist Statistics for Top Partition ;
-+-------------------+---------------------------------+
-; Type              ; Count                           ;
-+-------------------+---------------------------------+
-; boundary_port     ; 34                              ;
-;                   ;                                 ;
-; Max LUT depth     ; 0.00                            ;
-; Average LUT depth ; 0.00                            ;
-+-------------------+---------------------------------+
++-----------------------+-----------------------------+
+; Type                  ; Count                       ;
++-----------------------+-----------------------------+
+; arriav_ff             ; 41                          ;
+;     CLR               ; 31                          ;
+;     ENA CLR           ; 10                          ;
+; arriav_lcell_comb     ; 202                         ;
+;     arith             ; 59                          ;
+;         0 data inputs ; 7                           ;
+;         1 data inputs ; 31                          ;
+;         2 data inputs ; 3                           ;
+;         3 data inputs ; 8                           ;
+;         4 data inputs ; 10                          ;
+;     normal            ; 143                         ;
+;         0 data inputs ; 2                           ;
+;         1 data inputs ; 6                           ;
+;         2 data inputs ; 24                          ;
+;         3 data inputs ; 19                          ;
+;         4 data inputs ; 35                          ;
+;         5 data inputs ; 43                          ;
+;         6 data inputs ; 14                          ;
+; boundary_port         ; 63                          ;
+;                       ;                             ;
+; Max LUT depth         ; 18.10                       ;
+; Average LUT depth     ; 9.98                        ;
++-----------------------+-----------------------------+
 
 
 +-------------------------------+
@@ -440,116 +792,191 @@ Note: In order to hide this table in the UI and the text report file, please set
 Info: *******************************************************************
 Info: Running Quartus Prime Analysis & Synthesis
     Info: Version 18.1.0 Build 625 09/12/2018 SJ Lite Edition
-    Info: Processing started: Sat Jun 14 12:56:28 2025
+    Info: Processing started: Sun Jun 15 00:25:12 2025
 Info: Command: quartus_map --read_settings_files=on --write_settings_files=off Gambling_Tec -c Gambling_Tec
 Warning (18236): Number of processors has not been specified which may cause overloading on shared machines.  Set the global assignment NUM_PARALLEL_PROCESSORS in your QSF to an appropriate value for best performance.
-Info (20030): Parallel compilation is enabled and will use 10 of the 10 processors detected
+Info (20030): Parallel compilation is enabled and will use 4 of the 4 processors detected
+Info (12021): Found 1 design units, including 1 entities, in source file square_area.sv
+    Info (12023): Found entity 1: Square_Area File: C:/Users/josee/CE3201_PF/Square_Area.sv Line: 1
+Info (12021): Found 1 design units, including 1 entities, in source file alu_deco.sv
+    Info (12023): Found entity 1: Alu_Deco File: C:/Users/josee/CE3201_PF/Alu_Deco.sv Line: 1
 Info (12021): Found 1 design units, including 1 entities, in source file condition_check.sv
-    Info (12023): Found entity 1: Condition_Check File: C:/Users/jimmy/GitHub/CE3201_PF/Condition_Check.sv Line: 1
+    Info (12023): Found entity 1: Condition_Check File: C:/Users/josee/CE3201_PF/Condition_Check.sv Line: 1
 Info (12021): Found 1 design units, including 1 entities, in source file bit_cell.sv
-    Info (12023): Found entity 1: Register32 File: C:/Users/jimmy/GitHub/CE3201_PF/Bit_cell.sv Line: 1
+    Info (12023): Found entity 1: Register32 File: C:/Users/josee/CE3201_PF/Bit_cell.sv Line: 1
 Info (12021): Found 1 design units, including 1 entities, in source file register_file.sv
-    Info (12023): Found entity 1: Register_File File: C:/Users/jimmy/GitHub/CE3201_PF/Register_File.sv Line: 1
+    Info (12023): Found entity 1: Register_File File: C:/Users/josee/CE3201_PF/Register_File.sv Line: 1
 Info (12021): Found 1 design units, including 1 entities, in source file register.sv
-    Info (12023): Found entity 1: Register File: C:/Users/jimmy/GitHub/CE3201_PF/Register.sv Line: 1
-Warning (12090): Entity "Mux" obtained from "Mux.sv" instead of from Quartus Prime megafunction library File: C:/Users/jimmy/GitHub/CE3201_PF/Mux.sv Line: 1
+    Info (12023): Found entity 1: Register File: C:/Users/josee/CE3201_PF/Register.sv Line: 1
+Warning (12090): Entity "Mux" obtained from "Mux.sv" instead of from Quartus Prime megafunction library File: C:/Users/josee/CE3201_PF/Mux.sv Line: 1
 Info (12021): Found 1 design units, including 1 entities, in source file mux.sv
-    Info (12023): Found entity 1: Mux File: C:/Users/jimmy/GitHub/CE3201_PF/Mux.sv Line: 1
+    Info (12023): Found entity 1: Mux File: C:/Users/josee/CE3201_PF/Mux.sv Line: 1
 Info (12021): Found 1 design units, including 1 entities, in source file instruction_memory.sv
-    Info (12023): Found entity 1: Instruction_Memory File: C:/Users/jimmy/GitHub/CE3201_PF/Instruction_Memory.sv Line: 1
+    Info (12023): Found entity 1: Instruction_Memory File: C:/Users/josee/CE3201_PF/Instruction_Memory.sv Line: 1
 Info (12021): Found 1 design units, including 1 entities, in source file extender.sv
-    Info (12023): Found entity 1: Extender File: C:/Users/jimmy/GitHub/CE3201_PF/Extender.sv Line: 1
+    Info (12023): Found entity 1: Extender File: C:/Users/josee/CE3201_PF/Extender.sv Line: 1
 Info (12021): Found 1 design units, including 1 entities, in source file data_memory.sv
-    Info (12023): Found entity 1: Data_Memory File: C:/Users/jimmy/GitHub/CE3201_PF/Data_Memory.sv Line: 1
+    Info (12023): Found entity 1: Data_Memory File: C:/Users/josee/CE3201_PF/Data_Memory.sv Line: 1
 Info (12021): Found 1 design units, including 1 entities, in source file cpu.sv
-    Info (12023): Found entity 1: CPU File: C:/Users/jimmy/GitHub/CE3201_PF/CPU.sv Line: 1
+    Info (12023): Found entity 1: CPU File: C:/Users/josee/CE3201_PF/CPU.sv Line: 1
 Info (12021): Found 1 design units, including 1 entities, in source file alu.sv
-    Info (12023): Found entity 1: ALU File: C:/Users/jimmy/GitHub/CE3201_PF/ALU.sv Line: 1
+    Info (12023): Found entity 1: ALU File: C:/Users/josee/CE3201_PF/ALU.sv Line: 1
 Info (12021): Found 1 design units, including 1 entities, in source file adder.sv
-    Info (12023): Found entity 1: Adder File: C:/Users/jimmy/GitHub/CE3201_PF/Adder.sv Line: 1
+    Info (12023): Found entity 1: Adder File: C:/Users/josee/CE3201_PF/Adder.sv Line: 1
 Info (12021): Found 1 design units, including 1 entities, in source file gambling_tec.sv
-    Info (12023): Found entity 1: Gambling_Tec File: C:/Users/jimmy/GitHub/CE3201_PF/Gambling_Tec.sv Line: 1
+    Info (12023): Found entity 1: Gambling_Tec File: C:/Users/josee/CE3201_PF/Gambling_Tec.sv Line: 1
 Info (12021): Found 1 design units, including 1 entities, in source file cpu_tb.sv
-    Info (12023): Found entity 1: CPU_tb File: C:/Users/jimmy/GitHub/CE3201_PF/CPU_tb.sv Line: 3
+    Info (12023): Found entity 1: CPU_tb File: C:/Users/josee/CE3201_PF/CPU_tb.sv Line: 3
 Info (12021): Found 1 design units, including 1 entities, in source file control_unit.sv
-    Info (12023): Found entity 1: Control_Unit File: C:/Users/jimmy/GitHub/CE3201_PF/Control_Unit.sv Line: 1
+    Info (12023): Found entity 1: Control_Unit File: C:/Users/josee/CE3201_PF/Control_Unit.sv Line: 1
 Info (12021): Found 1 design units, including 1 entities, in source file tb_register_file.sv
-    Info (12023): Found entity 1: tb_Register_File File: C:/Users/jimmy/GitHub/CE3201_PF/tb_Register_File.sv Line: 3
+    Info (12023): Found entity 1: tb_Register_File File: C:/Users/josee/CE3201_PF/tb_Register_File.sv Line: 3
 Info (12021): Found 1 design units, including 1 entities, in source file tb_control_unit.sv
-    Info (12023): Found entity 1: tb_Control_Unit File: C:/Users/jimmy/GitHub/CE3201_PF/tb_Control_Unit.sv Line: 3
+    Info (12023): Found entity 1: tb_Control_Unit File: C:/Users/josee/CE3201_PF/tb_Control_Unit.sv Line: 3
 Info (12021): Found 4 design units, including 4 entities, in source file decoder.sv
-    Info (12023): Found entity 1: Decoder File: C:/Users/jimmy/GitHub/CE3201_PF/Decoder.sv Line: 2
-    Info (12023): Found entity 2: PC_Logic File: C:/Users/jimmy/GitHub/CE3201_PF/Decoder.sv Line: 49
-    Info (12023): Found entity 3: Main_Decoder File: C:/Users/jimmy/GitHub/CE3201_PF/Decoder.sv Line: 60
-    Info (12023): Found entity 4: ALU_Decoder File: C:/Users/jimmy/GitHub/CE3201_PF/Decoder.sv Line: 134
+    Info (12023): Found entity 1: Decoder File: C:/Users/josee/CE3201_PF/Decoder.sv Line: 2
+    Info (12023): Found entity 2: PC_Logic File: C:/Users/josee/CE3201_PF/Decoder.sv Line: 49
+    Info (12023): Found entity 3: Main_Decoder File: C:/Users/josee/CE3201_PF/Decoder.sv Line: 60
+    Info (12023): Found entity 4: ALU_Decoder File: C:/Users/josee/CE3201_PF/Decoder.sv Line: 134
 Info (12021): Found 1 design units, including 1 entities, in source file tb_gambling_tec.sv
-    Info (12023): Found entity 1: tb_Gambling_Tec File: C:/Users/jimmy/GitHub/CE3201_PF/tb_Gambling_Tec.sv Line: 3
+    Info (12023): Found entity 1: tb_Gambling_Tec File: C:/Users/josee/CE3201_PF/tb_Gambling_Tec.sv Line: 3
 Info (12021): Found 1 design units, including 1 entities, in source file tb_data_memory.sv
-    Info (12023): Found entity 1: tb_Data_Memory File: C:/Users/jimmy/GitHub/CE3201_PF/tb_Data_Memory.sv Line: 3
-Warning (10236): Verilog HDL Implicit Net warning at Decoder.sv(35): created implicit net for "ALUOP" File: C:/Users/jimmy/GitHub/CE3201_PF/Decoder.sv Line: 35
+    Info (12023): Found entity 1: tb_Data_Memory File: C:/Users/josee/CE3201_PF/tb_Data_Memory.sv Line: 3
+Warning (10229): Verilog HDL Expression warning at Vga_Controller.sv(131): truncated literal to match 7 bits File: C:/Users/josee/CE3201_PF/Vga_Controller.sv Line: 131
+Warning (10229): Verilog HDL Expression warning at Vga_Controller.sv(132): truncated literal to match 7 bits File: C:/Users/josee/CE3201_PF/Vga_Controller.sv Line: 132
+Warning (10229): Verilog HDL Expression warning at Vga_Controller.sv(133): truncated literal to match 7 bits File: C:/Users/josee/CE3201_PF/Vga_Controller.sv Line: 133
+Warning (10229): Verilog HDL Expression warning at Vga_Controller.sv(135): truncated literal to match 7 bits File: C:/Users/josee/CE3201_PF/Vga_Controller.sv Line: 135
+Warning (10229): Verilog HDL Expression warning at Vga_Controller.sv(137): truncated literal to match 7 bits File: C:/Users/josee/CE3201_PF/Vga_Controller.sv Line: 137
+Warning (10229): Verilog HDL Expression warning at Vga_Controller.sv(140): truncated literal to match 7 bits File: C:/Users/josee/CE3201_PF/Vga_Controller.sv Line: 140
+Warning (10229): Verilog HDL Expression warning at Vga_Controller.sv(147): truncated literal to match 7 bits File: C:/Users/josee/CE3201_PF/Vga_Controller.sv Line: 147
+Warning (10229): Verilog HDL Expression warning at Vga_Controller.sv(148): truncated literal to match 7 bits File: C:/Users/josee/CE3201_PF/Vga_Controller.sv Line: 148
+Info (12021): Found 1 design units, including 1 entities, in source file vga_controller.sv
+    Info (12023): Found entity 1: Vga_Controller File: C:/Users/josee/CE3201_PF/Vga_Controller.sv Line: 1
+Info (12021): Found 1 design units, including 1 entities, in source file comparator.sv
+    Info (12023): Found entity 1: Comparator File: C:/Users/josee/CE3201_PF/Comparator.sv Line: 1
+Info (12021): Found 1 design units, including 1 entities, in source file counter.sv
+    Info (12023): Found entity 1: Counter File: C:/Users/josee/CE3201_PF/Counter.sv Line: 1
+Info (12021): Found 1 design units, including 1 entities, in source file clk_div.sv
+    Info (12023): Found entity 1: clk_div File: C:/Users/josee/CE3201_PF/clk_div.sv Line: 1
+Info (12021): Found 1 design units, including 1 entities, in source file rom_tile.sv
+    Info (12023): Found entity 1: Rom_tile File: C:/Users/josee/CE3201_PF/Rom_tile.sv Line: 1
+Info (12021): Found 1 design units, including 1 entities, in source file tb_rom_tile.sv
+    Info (12023): Found entity 1: tb_Rom_tile File: C:/Users/josee/CE3201_PF/tb_Rom_tile.sv Line: 3
+Warning (10236): Verilog HDL Implicit Net warning at Decoder.sv(35): created implicit net for "ALUOP" File: C:/Users/josee/CE3201_PF/Decoder.sv Line: 35
+Warning (10236): Verilog HDL Implicit Net warning at Vga_Controller.sv(118): created implicit net for "GB" File: C:/Users/josee/CE3201_PF/Vga_Controller.sv Line: 118
+Warning (10236): Verilog HDL Implicit Net warning at Vga_Controller.sv(119): created implicit net for "BG" File: C:/Users/josee/CE3201_PF/Vga_Controller.sv Line: 119
 Info (12127): Elaborating entity "Gambling_Tec" for the top level hierarchy
-Info (12128): Elaborating entity "CPU" for hierarchy "CPU:process" File: C:/Users/jimmy/GitHub/CE3201_PF/Gambling_Tec.sv Line: 31
-Info (12128): Elaborating entity "Mux" for hierarchy "CPU:process|Mux:next_PC_inst" File: C:/Users/jimmy/GitHub/CE3201_PF/CPU.sv Line: 36
-Info (12128): Elaborating entity "Register" for hierarchy "CPU:process|Register:PC_Register" File: C:/Users/jimmy/GitHub/CE3201_PF/CPU.sv Line: 44
-Info (12128): Elaborating entity "Mux" for hierarchy "CPU:process|Mux:RA1_inst" File: C:/Users/jimmy/GitHub/CE3201_PF/CPU.sv Line: 53
-Info (12128): Elaborating entity "Adder" for hierarchy "CPU:process|Adder:PCPlus4_inst" File: C:/Users/jimmy/GitHub/CE3201_PF/CPU.sv Line: 69
-Info (12128): Elaborating entity "Register_File" for hierarchy "CPU:process|Register_File:Reg_file_inst" File: C:/Users/jimmy/GitHub/CE3201_PF/CPU.sv Line: 89
-Info (12128): Elaborating entity "Extender" for hierarchy "CPU:process|Extender:Extender_ins" File: C:/Users/jimmy/GitHub/CE3201_PF/CPU.sv Line: 95
-Info (12128): Elaborating entity "ALU" for hierarchy "CPU:process|ALU:ALU_inst" File: C:/Users/jimmy/GitHub/CE3201_PF/CPU.sv Line: 113
-Info (12128): Elaborating entity "Control_Unit" for hierarchy "CPU:process|Control_Unit:CU_Inst" File: C:/Users/jimmy/GitHub/CE3201_PF/CPU.sv Line: 145
-Info (12128): Elaborating entity "Decoder" for hierarchy "CPU:process|Control_Unit:CU_Inst|Decoder:decoder_inst" File: C:/Users/jimmy/GitHub/CE3201_PF/Control_Unit.sv Line: 48
-Info (12128): Elaborating entity "PC_Logic" for hierarchy "CPU:process|Control_Unit:CU_Inst|Decoder:decoder_inst|PC_Logic:pc_logic_inst" File: C:/Users/jimmy/GitHub/CE3201_PF/Decoder.sv Line: 22
-Info (12128): Elaborating entity "Main_Decoder" for hierarchy "CPU:process|Control_Unit:CU_Inst|Decoder:decoder_inst|Main_Decoder:main_decoder_inst" File: C:/Users/jimmy/GitHub/CE3201_PF/Decoder.sv Line: 36
-Warning (10270): Verilog HDL Case Statement warning at Decoder.sv(78): incomplete case statement has no default case item File: C:/Users/jimmy/GitHub/CE3201_PF/Decoder.sv Line: 78
-Info (12128): Elaborating entity "ALU_Decoder" for hierarchy "CPU:process|Control_Unit:CU_Inst|Decoder:decoder_inst|ALU_Decoder:alu_decoder_inst" File: C:/Users/jimmy/GitHub/CE3201_PF/Decoder.sv Line: 45
-Info (12128): Elaborating entity "Register" for hierarchy "CPU:process|Control_Unit:CU_Inst|Register:Register_Flag1" File: C:/Users/jimmy/GitHub/CE3201_PF/Control_Unit.sv Line: 57
-Warning (10230): Verilog HDL assignment warning at Register.sv(12): truncated value with size 10 to match size of target (2) File: C:/Users/jimmy/GitHub/CE3201_PF/Register.sv Line: 12
-Info (12128): Elaborating entity "Condition_Check" for hierarchy "CPU:process|Control_Unit:CU_Inst|Condition_Check:inst_Condition_Check" File: C:/Users/jimmy/GitHub/CE3201_PF/Control_Unit.sv Line: 72
-Info (12128): Elaborating entity "Data_Memory" for hierarchy "Data_Memory:data_mem" File: C:/Users/jimmy/GitHub/CE3201_PF/Gambling_Tec.sv Line: 40
+Info (12128): Elaborating entity "clk_div" for hierarchy "clk_div:div_clo" File: C:/Users/josee/CE3201_PF/Gambling_Tec.sv Line: 30
+Info (12128): Elaborating entity "Vga_Controller" for hierarchy "Vga_Controller:vga_control" File: C:/Users/josee/CE3201_PF/Gambling_Tec.sv Line: 47
+Warning (10036): Verilog HDL or VHDL warning at Vga_Controller.sv(37): object "Area_div" assigned a value but never read File: C:/Users/josee/CE3201_PF/Vga_Controller.sv Line: 37
+Info (12128): Elaborating entity "Counter" for hierarchy "Vga_Controller:vga_control|Counter:count_y" File: C:/Users/josee/CE3201_PF/Vga_Controller.sv Line: 39
+Info (12128): Elaborating entity "Register" for hierarchy "Vga_Controller:vga_control|Register:reg_x" File: C:/Users/josee/CE3201_PF/Vga_Controller.sv Line: 43
+Info (12128): Elaborating entity "Comparator" for hierarchy "Vga_Controller:vga_control|Comparator:cmp_x" File: C:/Users/josee/CE3201_PF/Vga_Controller.sv Line: 46
+Info (12128): Elaborating entity "Square_Area" for hierarchy "Vga_Controller:vga_control|Square_Area:cua_D" File: C:/Users/josee/CE3201_PF/Vga_Controller.sv Line: 66
+Info (12128): Elaborating entity "Square_Area" for hierarchy "Vga_Controller:vga_control|Square_Area:Sombra" File: C:/Users/josee/CE3201_PF/Vga_Controller.sv Line: 74
+Info (12128): Elaborating entity "Square_Area" for hierarchy "Vga_Controller:vga_control|Square_Area:cua_D2" File: C:/Users/josee/CE3201_PF/Vga_Controller.sv Line: 80
+Info (12128): Elaborating entity "Square_Area" for hierarchy "Vga_Controller:vga_control|Square_Area:cua_D3" File: C:/Users/josee/CE3201_PF/Vga_Controller.sv Line: 87
+Info (12128): Elaborating entity "Square_Area" for hierarchy "Vga_Controller:vga_control|Square_Area:cua_D4" File: C:/Users/josee/CE3201_PF/Vga_Controller.sv Line: 94
+Info (12128): Elaborating entity "Square_Area" for hierarchy "Vga_Controller:vga_control|Square_Area:Cua_Btn" File: C:/Users/josee/CE3201_PF/Vga_Controller.sv Line: 107
+Info (12128): Elaborating entity "Rom_tile" for hierarchy "Vga_Controller:vga_control|Rom_tile:rom_tile" File: C:/Users/josee/CE3201_PF/Vga_Controller.sv Line: 120
+Warning (10230): Verilog HDL assignment warning at Rom_tile.sv(29): truncated value with size 32 to match size of target (5) File: C:/Users/josee/CE3201_PF/Rom_tile.sv Line: 29
+Warning (10230): Verilog HDL assignment warning at Rom_tile.sv(30): truncated value with size 32 to match size of target (4) File: C:/Users/josee/CE3201_PF/Rom_tile.sv Line: 30
+Info (10264): Verilog HDL Case Statement information at Rom_tile.sv(41): all case item expressions in this case statement are onehot File: C:/Users/josee/CE3201_PF/Rom_tile.sv Line: 41
+Warning (10030): Net "sprite_i.data_a" at Rom_tile.sv(23) has no driver or initial value, using a default initial value '0' File: C:/Users/josee/CE3201_PF/Rom_tile.sv Line: 23
+Warning (10030): Net "sprite_i.waddr_a" at Rom_tile.sv(23) has no driver or initial value, using a default initial value '0' File: C:/Users/josee/CE3201_PF/Rom_tile.sv Line: 23
+Warning (10030): Net "sprite_i.we_a" at Rom_tile.sv(23) has no driver or initial value, using a default initial value '0' File: C:/Users/josee/CE3201_PF/Rom_tile.sv Line: 23
+Info (12128): Elaborating entity "CPU" for hierarchy "CPU:process" File: C:/Users/josee/CE3201_PF/Gambling_Tec.sv Line: 63
+Info (12128): Elaborating entity "Mux" for hierarchy "CPU:process|Mux:next_PC_inst" File: C:/Users/josee/CE3201_PF/CPU.sv Line: 36
+Info (12128): Elaborating entity "Register" for hierarchy "CPU:process|Register:PC_Register" File: C:/Users/josee/CE3201_PF/CPU.sv Line: 44
+Info (12128): Elaborating entity "Mux" for hierarchy "CPU:process|Mux:RA1_inst" File: C:/Users/josee/CE3201_PF/CPU.sv Line: 53
+Info (12128): Elaborating entity "Adder" for hierarchy "CPU:process|Adder:PCPlus4_inst" File: C:/Users/josee/CE3201_PF/CPU.sv Line: 69
+Info (12128): Elaborating entity "Register_File" for hierarchy "CPU:process|Register_File:Reg_file_inst" File: C:/Users/josee/CE3201_PF/CPU.sv Line: 89
+Info (12128): Elaborating entity "Extender" for hierarchy "CPU:process|Extender:Extender_ins" File: C:/Users/josee/CE3201_PF/CPU.sv Line: 95
+Info (12128): Elaborating entity "ALU" for hierarchy "CPU:process|ALU:ALU_inst" File: C:/Users/josee/CE3201_PF/CPU.sv Line: 113
+Info (12128): Elaborating entity "Control_Unit" for hierarchy "CPU:process|Control_Unit:CU_Inst" File: C:/Users/josee/CE3201_PF/CPU.sv Line: 145
+Info (12128): Elaborating entity "Decoder" for hierarchy "CPU:process|Control_Unit:CU_Inst|Decoder:decoder_inst" File: C:/Users/josee/CE3201_PF/Control_Unit.sv Line: 48
+Info (12128): Elaborating entity "PC_Logic" for hierarchy "CPU:process|Control_Unit:CU_Inst|Decoder:decoder_inst|PC_Logic:pc_logic_inst" File: C:/Users/josee/CE3201_PF/Decoder.sv Line: 22
+Info (12128): Elaborating entity "Main_Decoder" for hierarchy "CPU:process|Control_Unit:CU_Inst|Decoder:decoder_inst|Main_Decoder:main_decoder_inst" File: C:/Users/josee/CE3201_PF/Decoder.sv Line: 36
+Warning (10270): Verilog HDL Case Statement warning at Decoder.sv(78): incomplete case statement has no default case item File: C:/Users/josee/CE3201_PF/Decoder.sv Line: 78
+Info (12128): Elaborating entity "ALU_Decoder" for hierarchy "CPU:process|Control_Unit:CU_Inst|Decoder:decoder_inst|ALU_Decoder:alu_decoder_inst" File: C:/Users/josee/CE3201_PF/Decoder.sv Line: 45
+Info (12128): Elaborating entity "Register" for hierarchy "CPU:process|Control_Unit:CU_Inst|Register:Register_Flag1" File: C:/Users/josee/CE3201_PF/Control_Unit.sv Line: 57
+Warning (10230): Verilog HDL assignment warning at Register.sv(12): truncated value with size 10 to match size of target (2) File: C:/Users/josee/CE3201_PF/Register.sv Line: 12
+Info (12128): Elaborating entity "Condition_Check" for hierarchy "CPU:process|Control_Unit:CU_Inst|Condition_Check:inst_Condition_Check" File: C:/Users/josee/CE3201_PF/Control_Unit.sv Line: 72
+Info (12128): Elaborating entity "Data_Memory" for hierarchy "Data_Memory:data_mem" File: C:/Users/josee/CE3201_PF/Gambling_Tec.sv Line: 72
+Info (276014): Found 1 instances of uninferred RAM logic
+    Info (276007): RAM logic "Vga_Controller:vga_control|Rom_tile:rom_tile|sprite_i" is uninferred due to asynchronous read logic File: C:/Users/josee/CE3201_PF/Rom_tile.sv Line: 23
+Warning (113018): Width of data items in "Gambling_Tec.ram0_Rom_tile_53c27df6.hdl.mif" is greater than the memory width. Truncating data items to fit in memory. File: C:/Users/josee/CE3201_PF/db/Gambling_Tec.ram0_Rom_tile_53c27df6.hdl.mif Line: 10
+Critical Warning (127005): Memory depth (512) in the design file differs from memory depth (15) in the Memory Initialization File "C:/Users/josee/CE3201_PF/db/Gambling_Tec.ram0_Rom_tile_53c27df6.hdl.mif" -- setting initial value for remaining addresses to 0
+Info (278001): Inferred 1 megafunctions from design logic
+    Info (278004): Inferred divider/modulo megafunction ("lpm_divide") from the following logic: "Vga_Controller:vga_control|Rom_tile:rom_tile|Mod0" File: C:/Users/josee/CE3201_PF/Rom_tile.sv Line: 30
+Info (12130): Elaborated megafunction instantiation "Vga_Controller:vga_control|Rom_tile:rom_tile|lpm_divide:Mod0" File: C:/Users/josee/CE3201_PF/Rom_tile.sv Line: 30
+Info (12133): Instantiated megafunction "Vga_Controller:vga_control|Rom_tile:rom_tile|lpm_divide:Mod0" with the following parameter: File: C:/Users/josee/CE3201_PF/Rom_tile.sv Line: 30
+    Info (12134): Parameter "LPM_WIDTHN" = "10"
+    Info (12134): Parameter "LPM_WIDTHD" = "4"
+    Info (12134): Parameter "LPM_NREPRESENTATION" = "UNSIGNED"
+    Info (12134): Parameter "LPM_DREPRESENTATION" = "UNSIGNED"
+Info (12021): Found 1 design units, including 1 entities, in source file db/lpm_divide_h3m.tdf
+    Info (12023): Found entity 1: lpm_divide_h3m File: C:/Users/josee/CE3201_PF/db/lpm_divide_h3m.tdf Line: 24
+Info (12021): Found 1 design units, including 1 entities, in source file db/sign_div_unsign_klh.tdf
+    Info (12023): Found entity 1: sign_div_unsign_klh File: C:/Users/josee/CE3201_PF/db/sign_div_unsign_klh.tdf Line: 24
+Info (12021): Found 1 design units, including 1 entities, in source file db/alt_u_div_eve.tdf
+    Info (12023): Found entity 1: alt_u_div_eve File: C:/Users/josee/CE3201_PF/db/alt_u_div_eve.tdf Line: 22
+Warning (12241): 1 hierarchies have connectivity warnings - see the Connectivity Checks report folder
+Warning (13024): Output pins are stuck at VCC or GND
+    Warning (13410): Pin "VGA_Sync_N" is stuck at VCC File: C:/Users/josee/CE3201_PF/Gambling_Tec.sv Line: 5
+    Warning (13410): Pin "G[7]" is stuck at GND File: C:/Users/josee/CE3201_PF/Gambling_Tec.sv Line: 6
+    Warning (13410): Pin "B[7]" is stuck at GND File: C:/Users/josee/CE3201_PF/Gambling_Tec.sv Line: 9
+Info (286030): Timing-Driven Synthesis is running
+Info (144001): Generated suppressed messages file C:/Users/josee/CE3201_PF/output_files/Gambling_Tec.map.smsg
 Info (16010): Generating hard_block partition "hard_block:auto_generated_inst"
     Info (16011): Adding 0 node(s), including 0 DDIO, 0 PLL, 0 transceiver and 0 LCELL
-Warning (21074): Design contains 34 input pin(s) that do not drive logic
-    Warning (15610): No output dependent on input pin "Instruction[0]" File: C:/Users/jimmy/GitHub/CE3201_PF/Gambling_Tec.sv Line: 2
-    Warning (15610): No output dependent on input pin "Instruction[1]" File: C:/Users/jimmy/GitHub/CE3201_PF/Gambling_Tec.sv Line: 2
-    Warning (15610): No output dependent on input pin "Instruction[2]" File: C:/Users/jimmy/GitHub/CE3201_PF/Gambling_Tec.sv Line: 2
-    Warning (15610): No output dependent on input pin "Instruction[3]" File: C:/Users/jimmy/GitHub/CE3201_PF/Gambling_Tec.sv Line: 2
-    Warning (15610): No output dependent on input pin "Instruction[4]" File: C:/Users/jimmy/GitHub/CE3201_PF/Gambling_Tec.sv Line: 2
-    Warning (15610): No output dependent on input pin "Instruction[5]" File: C:/Users/jimmy/GitHub/CE3201_PF/Gambling_Tec.sv Line: 2
-    Warning (15610): No output dependent on input pin "Instruction[6]" File: C:/Users/jimmy/GitHub/CE3201_PF/Gambling_Tec.sv Line: 2
-    Warning (15610): No output dependent on input pin "Instruction[7]" File: C:/Users/jimmy/GitHub/CE3201_PF/Gambling_Tec.sv Line: 2
-    Warning (15610): No output dependent on input pin "Instruction[8]" File: C:/Users/jimmy/GitHub/CE3201_PF/Gambling_Tec.sv Line: 2
-    Warning (15610): No output dependent on input pin "Instruction[9]" File: C:/Users/jimmy/GitHub/CE3201_PF/Gambling_Tec.sv Line: 2
-    Warning (15610): No output dependent on input pin "Instruction[10]" File: C:/Users/jimmy/GitHub/CE3201_PF/Gambling_Tec.sv Line: 2
-    Warning (15610): No output dependent on input pin "Instruction[11]" File: C:/Users/jimmy/GitHub/CE3201_PF/Gambling_Tec.sv Line: 2
-    Warning (15610): No output dependent on input pin "Instruction[12]" File: C:/Users/jimmy/GitHub/CE3201_PF/Gambling_Tec.sv Line: 2
-    Warning (15610): No output dependent on input pin "Instruction[13]" File: C:/Users/jimmy/GitHub/CE3201_PF/Gambling_Tec.sv Line: 2
-    Warning (15610): No output dependent on input pin "Instruction[14]" File: C:/Users/jimmy/GitHub/CE3201_PF/Gambling_Tec.sv Line: 2
-    Warning (15610): No output dependent on input pin "Instruction[15]" File: C:/Users/jimmy/GitHub/CE3201_PF/Gambling_Tec.sv Line: 2
-    Warning (15610): No output dependent on input pin "Instruction[16]" File: C:/Users/jimmy/GitHub/CE3201_PF/Gambling_Tec.sv Line: 2
-    Warning (15610): No output dependent on input pin "Instruction[17]" File: C:/Users/jimmy/GitHub/CE3201_PF/Gambling_Tec.sv Line: 2
-    Warning (15610): No output dependent on input pin "Instruction[18]" File: C:/Users/jimmy/GitHub/CE3201_PF/Gambling_Tec.sv Line: 2
-    Warning (15610): No output dependent on input pin "Instruction[19]" File: C:/Users/jimmy/GitHub/CE3201_PF/Gambling_Tec.sv Line: 2
-    Warning (15610): No output dependent on input pin "Instruction[20]" File: C:/Users/jimmy/GitHub/CE3201_PF/Gambling_Tec.sv Line: 2
-    Warning (15610): No output dependent on input pin "Instruction[21]" File: C:/Users/jimmy/GitHub/CE3201_PF/Gambling_Tec.sv Line: 2
-    Warning (15610): No output dependent on input pin "Instruction[22]" File: C:/Users/jimmy/GitHub/CE3201_PF/Gambling_Tec.sv Line: 2
-    Warning (15610): No output dependent on input pin "Instruction[23]" File: C:/Users/jimmy/GitHub/CE3201_PF/Gambling_Tec.sv Line: 2
-    Warning (15610): No output dependent on input pin "Instruction[24]" File: C:/Users/jimmy/GitHub/CE3201_PF/Gambling_Tec.sv Line: 2
-    Warning (15610): No output dependent on input pin "Instruction[25]" File: C:/Users/jimmy/GitHub/CE3201_PF/Gambling_Tec.sv Line: 2
-    Warning (15610): No output dependent on input pin "Instruction[26]" File: C:/Users/jimmy/GitHub/CE3201_PF/Gambling_Tec.sv Line: 2
-    Warning (15610): No output dependent on input pin "Instruction[27]" File: C:/Users/jimmy/GitHub/CE3201_PF/Gambling_Tec.sv Line: 2
-    Warning (15610): No output dependent on input pin "Instruction[28]" File: C:/Users/jimmy/GitHub/CE3201_PF/Gambling_Tec.sv Line: 2
-    Warning (15610): No output dependent on input pin "Instruction[29]" File: C:/Users/jimmy/GitHub/CE3201_PF/Gambling_Tec.sv Line: 2
-    Warning (15610): No output dependent on input pin "Instruction[30]" File: C:/Users/jimmy/GitHub/CE3201_PF/Gambling_Tec.sv Line: 2
-    Warning (15610): No output dependent on input pin "Instruction[31]" File: C:/Users/jimmy/GitHub/CE3201_PF/Gambling_Tec.sv Line: 2
-    Warning (15610): No output dependent on input pin "clk" File: C:/Users/jimmy/GitHub/CE3201_PF/Gambling_Tec.sv Line: 3
-    Warning (15610): No output dependent on input pin "rst" File: C:/Users/jimmy/GitHub/CE3201_PF/Gambling_Tec.sv Line: 4
-Info (21057): Implemented 34 device resources after synthesis - the final resource count might be different
+Warning (21074): Design contains 32 input pin(s) that do not drive logic
+    Warning (15610): No output dependent on input pin "Instruction[0]" File: C:/Users/josee/CE3201_PF/Gambling_Tec.sv Line: 2
+    Warning (15610): No output dependent on input pin "Instruction[1]" File: C:/Users/josee/CE3201_PF/Gambling_Tec.sv Line: 2
+    Warning (15610): No output dependent on input pin "Instruction[2]" File: C:/Users/josee/CE3201_PF/Gambling_Tec.sv Line: 2
+    Warning (15610): No output dependent on input pin "Instruction[3]" File: C:/Users/josee/CE3201_PF/Gambling_Tec.sv Line: 2
+    Warning (15610): No output dependent on input pin "Instruction[4]" File: C:/Users/josee/CE3201_PF/Gambling_Tec.sv Line: 2
+    Warning (15610): No output dependent on input pin "Instruction[5]" File: C:/Users/josee/CE3201_PF/Gambling_Tec.sv Line: 2
+    Warning (15610): No output dependent on input pin "Instruction[6]" File: C:/Users/josee/CE3201_PF/Gambling_Tec.sv Line: 2
+    Warning (15610): No output dependent on input pin "Instruction[7]" File: C:/Users/josee/CE3201_PF/Gambling_Tec.sv Line: 2
+    Warning (15610): No output dependent on input pin "Instruction[8]" File: C:/Users/josee/CE3201_PF/Gambling_Tec.sv Line: 2
+    Warning (15610): No output dependent on input pin "Instruction[9]" File: C:/Users/josee/CE3201_PF/Gambling_Tec.sv Line: 2
+    Warning (15610): No output dependent on input pin "Instruction[10]" File: C:/Users/josee/CE3201_PF/Gambling_Tec.sv Line: 2
+    Warning (15610): No output dependent on input pin "Instruction[11]" File: C:/Users/josee/CE3201_PF/Gambling_Tec.sv Line: 2
+    Warning (15610): No output dependent on input pin "Instruction[12]" File: C:/Users/josee/CE3201_PF/Gambling_Tec.sv Line: 2
+    Warning (15610): No output dependent on input pin "Instruction[13]" File: C:/Users/josee/CE3201_PF/Gambling_Tec.sv Line: 2
+    Warning (15610): No output dependent on input pin "Instruction[14]" File: C:/Users/josee/CE3201_PF/Gambling_Tec.sv Line: 2
+    Warning (15610): No output dependent on input pin "Instruction[15]" File: C:/Users/josee/CE3201_PF/Gambling_Tec.sv Line: 2
+    Warning (15610): No output dependent on input pin "Instruction[16]" File: C:/Users/josee/CE3201_PF/Gambling_Tec.sv Line: 2
+    Warning (15610): No output dependent on input pin "Instruction[17]" File: C:/Users/josee/CE3201_PF/Gambling_Tec.sv Line: 2
+    Warning (15610): No output dependent on input pin "Instruction[18]" File: C:/Users/josee/CE3201_PF/Gambling_Tec.sv Line: 2
+    Warning (15610): No output dependent on input pin "Instruction[19]" File: C:/Users/josee/CE3201_PF/Gambling_Tec.sv Line: 2
+    Warning (15610): No output dependent on input pin "Instruction[20]" File: C:/Users/josee/CE3201_PF/Gambling_Tec.sv Line: 2
+    Warning (15610): No output dependent on input pin "Instruction[21]" File: C:/Users/josee/CE3201_PF/Gambling_Tec.sv Line: 2
+    Warning (15610): No output dependent on input pin "Instruction[22]" File: C:/Users/josee/CE3201_PF/Gambling_Tec.sv Line: 2
+    Warning (15610): No output dependent on input pin "Instruction[23]" File: C:/Users/josee/CE3201_PF/Gambling_Tec.sv Line: 2
+    Warning (15610): No output dependent on input pin "Instruction[24]" File: C:/Users/josee/CE3201_PF/Gambling_Tec.sv Line: 2
+    Warning (15610): No output dependent on input pin "Instruction[25]" File: C:/Users/josee/CE3201_PF/Gambling_Tec.sv Line: 2
+    Warning (15610): No output dependent on input pin "Instruction[26]" File: C:/Users/josee/CE3201_PF/Gambling_Tec.sv Line: 2
+    Warning (15610): No output dependent on input pin "Instruction[27]" File: C:/Users/josee/CE3201_PF/Gambling_Tec.sv Line: 2
+    Warning (15610): No output dependent on input pin "Instruction[28]" File: C:/Users/josee/CE3201_PF/Gambling_Tec.sv Line: 2
+    Warning (15610): No output dependent on input pin "Instruction[29]" File: C:/Users/josee/CE3201_PF/Gambling_Tec.sv Line: 2
+    Warning (15610): No output dependent on input pin "Instruction[30]" File: C:/Users/josee/CE3201_PF/Gambling_Tec.sv Line: 2
+    Warning (15610): No output dependent on input pin "Instruction[31]" File: C:/Users/josee/CE3201_PF/Gambling_Tec.sv Line: 2
+Info (21057): Implemented 280 device resources after synthesis - the final resource count might be different
     Info (21058): Implemented 34 input pins
-    Info (21059): Implemented 0 output pins
-Info: Quartus Prime Analysis & Synthesis was successful. 0 errors, 40 warnings
-    Info: Peak virtual memory: 4810 megabytes
-    Info: Processing ended: Sat Jun 14 12:56:35 2025
-    Info: Elapsed time: 00:00:07
-    Info: Total CPU time (on all processors): 00:00:15
+    Info (21059): Implemented 29 output pins
+    Info (21061): Implemented 217 logic cells
+Info: Quartus Prime Analysis & Synthesis was successful. 0 errors, 61 warnings
+    Info: Peak virtual memory: 4838 megabytes
+    Info: Processing ended: Sun Jun 15 00:25:24 2025
+    Info: Elapsed time: 00:00:12
+    Info: Total CPU time (on all processors): 00:00:25
+
+
++------------------------------------------+
+; Analysis & Synthesis Suppressed Messages ;
++------------------------------------------+
+The suppressed messages can be found in C:/Users/josee/CE3201_PF/output_files/Gambling_Tec.map.smsg.
 
 
