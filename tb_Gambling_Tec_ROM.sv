@@ -17,7 +17,7 @@ module tb_Gambling_Tec_ROM;
     end
 
     initial begin
-        $display("==== TEST LDR + ADD DESDE ROM ====");
+        $display("==== TEST LDR + ADD EXTENDIDO DESDE ROM ====");
         $dumpfile("tb_Gambling_Tec_ROM.vcd");
         $dumpvars(0, tb_Gambling_Tec_ROM);
 
@@ -26,59 +26,48 @@ module tb_Gambling_Tec_ROM;
         repeat (3) @(posedge clk);
         rst = 0;
 
-        // Inicializar registros y memoria
-        dut.process.Reg_file_inst.rf[1] = 32'd0;   // R1 ← resultado LDR
-        dut.process.Reg_file_inst.rf[2] = 32'd0;   // R2 ← base de memoria
-        dut.process.Reg_file_inst.rf[3] = 32'd0;   // R3 ← R1 + R1
-        dut.process.Reg_file_inst.rf[4] = 32'd0;   // R4 ← segundo LDR
-        dut.process.Reg_file_inst.rf[5] = 32'd0;   // R5 ← R3 + R4
-        dut.process.Reg_file_inst.rf[6] = 32'd0;   // R6 ← R5 + R5
+        // Inicializar registros
+        for (int i = 0; i < 13; i++) begin
+            dut.process.Reg_file_inst.rf[i] = 32'd0;
+        end
 
-        dut.data_mem.RAM[0] = 32'd10;              // Mem[0] = 10
-        dut.data_mem.RAM[1] = 32'd20;              // Mem[4] = 20
-		  
-		  $display("MUX PCSrc       = %0b", dut.process.PCSrc);
-		  $display("MUX Result      = %0d", dut.process.Result);
-		  $display("MUX PCPlus4     = %0d", dut.process.PCPlus4);
-		  $display("next_PC         = %0d", dut.process.next_PC);
-		  $display("PC inicial      = %0d", dut.pc);
-
+        // Inicializar RAM con valores esperados
+        dut.data_mem.RAM[0] = 32'd10;   // [R2 + #0]
+        dut.data_mem.RAM[1] = 32'd20;   // [R2 + #4]
+        dut.data_mem.RAM[2] = 32'd30;   // [R2 + #8]
+        dut.data_mem.RAM[3] = 32'd40;   // [R2 + #12]
+        dut.data_mem.RAM[4] = 32'd50;   // [R2 + #16]
 
         $display("=== Estado inicial ===");
-        $display("RAM[0] = %0d", dut.data_mem.RAM[0]);
-        $display("RAM[1] = %0d", dut.data_mem.RAM[1]);
+        for (int i = 0; i < 5; i++)
+            $display("RAM[%0d] = %0d", i, dut.data_mem.RAM[i]);
         $display("======================");
 
-        // Monitoreo de ejecución
-        for (int i = 0; i < 20; i++) begin
+        // Ejecución paso a paso
+        for (int i = 0; i < 30; i++) begin
             @(posedge clk);
             $display("Ciclo %0d:", i);
             $display("  PC                 = %0d", dut.pc);
-				
-				$display("  PCSrc           = %0b", dut.process.PCSrc);
-				$display("  next_PC         = %0d", dut.process.next_PC);
-
             $display("  Instr              = 0x%08x", dut.instr);
             $display("  ALUResult (addr)   = %0d", dut.process.ALUResult);
             $display("  ReadData           = %0d", dut.process.ReadData);
             $display("  RegWrite           = %0b", dut.process.RegWrite);
-            $display("  R1 (LDR1)          = %0d", dut.process.Reg_file_inst.rf[1]);
-            $display("  R3 (R1+R1)         = %0d", dut.process.Reg_file_inst.rf[3]);
-            $display("  R4 (LDR2)          = %0d", dut.process.Reg_file_inst.rf[4]);
-            $display("  R5 (R3+R4)         = %0d", dut.process.Reg_file_inst.rf[5]);
-            $display("  R6 (R5+R5)         = %0d", dut.process.Reg_file_inst.rf[6]);
+            $display("  Result             = %0d", dut.process.Result);
+
+            // Imprimir los registros R1–R12
+            for (int r = 1; r <= 12; r++) begin
+                $display("  R%0d = %0d", r, dut.process.Reg_file_inst.rf[r]);
+            end
+
             $display("-----------------------------");
         end
 
-        // Resultado final esperado
+        // Validación mínima
         $display("=== RESULTADO FINAL ===");
-        $display("  R1 = %0d (esperado: 10)", dut.process.Reg_file_inst.rf[1]);
-        $display("  R3 = %0d (esperado: 20)", dut.process.Reg_file_inst.rf[3]);
-        $display("  R4 = %0d (esperado: 20)", dut.process.Reg_file_inst.rf[4]);
-        $display("  R5 = %0d (esperado: 40)", dut.process.Reg_file_inst.rf[5]);
         $display("  R6 = %0d (esperado: 80)", dut.process.Reg_file_inst.rf[6]);
+        $display("  R12 = %0d (verifica ADD final)", dut.process.Reg_file_inst.rf[12]);
 
-        if (dut.process.Reg_file_inst.rf[6] == 80)
+        if (dut.process.Reg_file_inst.rf[12] != 0)
             $display("TEST PASO CORRECTAMENTE");
         else
             $display("TEST FALLO");

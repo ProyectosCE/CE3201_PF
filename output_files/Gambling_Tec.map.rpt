@@ -1,5 +1,5 @@
 Analysis & Synthesis report for Gambling_Tec
-Mon Jun 16 10:57:04 2025
+Mon Jun 16 11:21:50 2025
 Quartus Prime Version 23.1std.1 Build 993 05/14/2024 SC Lite Edition
 
 
@@ -59,7 +59,7 @@ https://fpgasoftware.intel.com/eula.
 +----------------------------------------------------------------------------------+
 ; Analysis & Synthesis Summary                                                     ;
 +---------------------------------+------------------------------------------------+
-; Analysis & Synthesis Status     ; Successful - Mon Jun 16 10:57:04 2025          ;
+; Analysis & Synthesis Status     ; Successful - Mon Jun 16 11:21:50 2025          ;
 ; Quartus Prime Version           ; 23.1std.1 Build 993 05/14/2024 SC Lite Edition ;
 ; Revision Name                   ; Gambling_Tec                                   ;
 ; Top-level Entity Name           ; Gambling_Tec                                   ;
@@ -446,7 +446,7 @@ Note: In order to hide this table in the UI and the text report file, please set
 Info: *******************************************************************
 Info: Running Quartus Prime Analysis & Synthesis
     Info: Version 23.1std.1 Build 993 05/14/2024 SC Lite Edition
-    Info: Processing started: Mon Jun 16 10:56:52 2025
+    Info: Processing started: Mon Jun 16 11:21:38 2025
 Info: Command: quartus_map --read_settings_files=on --write_settings_files=off Gambling_Tec -c Gambling_Tec
 Warning (18236): Number of processors has not been specified which may cause overloading on shared machines.  Set the global assignment NUM_PARALLEL_PROCESSORS in your QSF to an appropriate value for best performance.
 Info (20030): Parallel compilation is enabled and will use 8 of the 8 processors detected
@@ -501,7 +501,7 @@ Info (12021): Found 1 design units, including 1 entities, in source file tb_gamb
 Warning (10236): Verilog HDL Implicit Net warning at Decoder.sv(33): created implicit net for "ALUOP" File: C:/Users/joseb/Documents/GitHub/CE3201_PF/Decoder.sv Line: 33
 Info (12127): Elaborating entity "Gambling_Tec" for the top level hierarchy
 Info (12128): Elaborating entity "ROM" for hierarchy "ROM:rom0" File: C:/Users/joseb/Documents/GitHub/CE3201_PF/Gambling_Tec.sv Line: 19
-Warning (10850): Verilog HDL warning at ROM.sv(14): number of words (6) in memory file does not match the number of elements in the address range [0:1023] File: C:/Users/joseb/Documents/GitHub/CE3201_PF/ROM.sv Line: 14
+Warning (10850): Verilog HDL warning at ROM.sv(14): number of words (14) in memory file does not match the number of elements in the address range [0:1023] File: C:/Users/joseb/Documents/GitHub/CE3201_PF/ROM.sv Line: 14
 Warning (10030): Net "mem.data_a" at ROM.sv(10) has no driver or initial value, using a default initial value '0' File: C:/Users/joseb/Documents/GitHub/CE3201_PF/ROM.sv Line: 10
 Warning (10030): Net "mem.waddr_a" at ROM.sv(10) has no driver or initial value, using a default initial value '0' File: C:/Users/joseb/Documents/GitHub/CE3201_PF/ROM.sv Line: 10
 Warning (10030): Net "mem.we_a" at ROM.sv(10) has no driver or initial value, using a default initial value '0' File: C:/Users/joseb/Documents/GitHub/CE3201_PF/ROM.sv Line: 10
@@ -533,8 +533,8 @@ Info (21057): Implemented 2 device resources after synthesis - the final resourc
     Info (21059): Implemented 0 output pins
 Info: Quartus Prime Analysis & Synthesis was successful. 0 errors, 12 warnings
     Info: Peak virtual memory: 4803 megabytes
-    Info: Processing ended: Mon Jun 16 10:57:04 2025
+    Info: Processing ended: Mon Jun 16 11:21:50 2025
     Info: Elapsed time: 00:00:12
-    Info: Total CPU time (on all processors): 00:00:30
+    Info: Total CPU time (on all processors): 00:00:29
 
 
