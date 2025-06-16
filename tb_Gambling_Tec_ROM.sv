@@ -4,7 +4,7 @@ module tb_Gambling_Tec_ROM;
 
     logic clk, rst;
 
-    // Instancia del DUT
+    // Instancia del DUT (sin input Instruction)
     Gambling_Tec dut (
         .clk(clk),
         .rst(rst)
@@ -16,44 +16,43 @@ module tb_Gambling_Tec_ROM;
         forever #5 clk = ~clk;
     end
 
-    // Simulación principal
     initial begin
-        $display("==== INICIO TEST CPU CON ROM ====");
+        $display("==== TEST LDR DESDE ROM ====");
         $dumpfile("tb_Gambling_Tec_ROM.vcd");
         $dumpvars(0, tb_Gambling_Tec_ROM);
 
-        // Reset y espera
+        // Reset
         rst = 1;
         #20;
         rst = 0;
         #10;
 
-        // Forzar valores en R1 y R2
-		  @(posedge clk);
-        dut.process.Reg_file_inst.rf[1] = 32'd2;  // R1 = 2
-        dut.process.Reg_file_inst.rf[2] = 32'd2;  // R2 = 2
-        dut.process.Reg_file_inst.rf[3] = 32'd0;  // R3 = 0
+        // Inicializar valores
+        dut.process.Reg_file_inst.rf[2] = 32'd0;    // R2 = dirección base
+        dut.process.Reg_file_inst.rf[1] = 32'd0;    // R1 = destino
+        dut.data_mem.RAM[0] = 32'd12;               // Mem[0] = 12
 
-        $display("Inicial: R1 = %0d, R2 = %0d, R3 = %0d", 
-                 dut.process.Reg_file_inst.rf[1], 
-                 dut.process.Reg_file_inst.rf[2], 
-                 dut.process.Reg_file_inst.rf[3]);
+        $display("ANTES de ejecutar LDR:");
+        $display("  RAM[0]  = %0d", dut.data_mem.RAM[0]);
+        $display("  R2      = %0d", dut.process.Reg_file_inst.rf[2]);
+        $display("  R1      = %0d", dut.process.Reg_file_inst.rf[1]);
 
-        // Esperar a que la instrucción ADD desde ROM se ejecute
-        repeat (15) @(posedge clk);
+        // Monitoreo por ciclos
+        for (int i = 0; i < 15; i++) begin
+            @(posedge clk);
+            $display("Ciclo %0d:", i);
+            $display("  PC                 = %0d", dut.pc);
+            $display("  Instr              = 0x%08x", dut.instr);
+            $display("  ALUResult (addr)   = %0d", dut.process.ALUResult);
+            $display("  ReadData           = %0d", dut.process.ReadData);
+            $display("  RegWrite           = %0b", dut.process.RegWrite);
+            $display("  R1 (valor actual)  = %0d", dut.process.Reg_file_inst.rf[1]);
+            $display("-----------------------------");
+        end
 
-        // Verificación de resultados
-        $display("Instr: 0x%08x", dut.instr);
-		  $display("PC: %0d", dut.pc);
-		  $display("ALUControl: %0b", dut.process.ALUControl);
-		  $display("SrcA: %0d", dut.process.SrcA);
-		  $display("SrcB: %0d", dut.process.SrcB);
-		  $display("ALUResult: %0d", dut.process.ALUResult);
-		  $display("MemtoReg: %0b", dut.process.MemtoReg);
-		  $display("Result (to reg): %0d", dut.process.Result);
-		  $display("RegWrite: %0b", dut.process.RegWrite);
-
-        if (dut.process.Reg_file_inst.rf[3] == 4)
+        // Resultado final
+        $display("RESULTADO FINAL:");
+        if (dut.process.Reg_file_inst.rf[1] == 12)
             $display("TEST PASO CORRECTAMENTE");
         else
             $display("TEST FALLO");
