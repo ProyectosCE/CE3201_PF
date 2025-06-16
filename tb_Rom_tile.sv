@@ -21,21 +21,21 @@ module tb_Rom_tile;
 
   integer i, j;
 
-  initial begin
-    $display("---- Testbench para Rom_tile ----");
-    $display(" Q_X | Q_Y | Visible |   R   G   B");
+initial begin
+  $display("---- Testbench para Rom_tile ----");
+  $display(" Q_X | Q_Y | Visible |   R   G   B");
 
-    // Recorrer un área cercana al tile
-    for (i = 418; i <= 442; i = i + 1) begin
-      for (j = 158; j <= 162; j = j + 1) begin
-        Q_X = i;
-        Q_Y = j;
-        #1;
-        $display("%4d | %4d |    %b    | %3d %3d %3d", Q_X, Q_Y, visible, R, G, B);
-      end
+  // Limitar Q_X a la región válida del sprite
+  for (i = 160; i <= 170; i = i + 1) begin
+    for (j = 420; j <= 440; j = j + 1) begin
+      Q_X = j;
+      Q_Y = i;
+      #1;
+      $display("%4d | %4d |    %b    | %3d %3d %3d", Q_X, Q_Y, visible, R, G, B);
     end
-
-    $finish;
   end
+
+  $finish;
+end
 
 endmodule

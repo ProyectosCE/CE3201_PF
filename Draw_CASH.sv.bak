@@ -1,0 +1,86 @@
+module Draw_CASH #(
+    parameter SCALE = 1  // Escala: 1 = normal, 2 = doble tamaño, etc.
+)(
+    input  logic [9:0] Q_X, Q_Y,       
+    input  logic [9:0] pos_x, pos_y,   
+    output logic visible               
+);
+
+    // Letra actual y posición dentro de la letra
+    logic [3:0] char_x_scaled, char_y_scaled;
+    logic [1:0] letter_index; // 0: C, 1: A, 2: S, 3: H
+    logic zona;
+    logic [7:0] row_data;
+
+    // Cálculo de zona de la palabra "CASH"
+    assign zona = (Q_X >= pos_x && Q_X < pos_x + 32*SCALE) && 
+                  (Q_Y >= pos_y && Q_Y < pos_y + 8*SCALE);
+
+    // Coordenadas relativas
+    assign char_x_scaled = (Q_X - pos_x) / SCALE;
+    assign char_y_scaled = (Q_Y - pos_y) / SCALE;
+
+    // Identificar letra (cada una ocupa 8 píxeles de ancho)
+    assign letter_index = char_x_scaled[4:3]; // div 8
+
+    // Coordenada dentro de la letra (de 0 a 7)
+    logic [2:0] char_x_local;
+    assign char_x_local = char_x_scaled % 8;
+
+    // ROM para las letras C, A, S, H
+    logic [7:0] font_rom [0:3][0:7];
+
+    initial begin
+        // C
+        font_rom[0] = '{
+            8'b01111110,
+            8'b10000001,
+            8'b10000000,
+            8'b10000000,
+            8'b10000000,
+            8'b10000000,
+            8'b10000001,
+            8'b01111110
+        };
+        // A
+        font_rom[1] = '{
+            8'b00011000,
+            8'b00100100,
+            8'b01000010,
+            8'b01000010,
+            8'b01111110,
+            8'b01000010,
+            8'b01000010,
+            8'b01000010
+        };
+        // S
+        font_rom[2] = '{
+            8'b00111110,
+            8'b01000001,
+            8'b01000000,
+            8'b00111100,
+            8'b00000010,
+            8'b00000001,
+            8'b01000001,
+            8'b00111110
+        };
+        // H
+        font_rom[3] = '{
+            8'b01000010,
+            8'b01000010,
+            8'b01000010,
+            8'b01111110,
+            8'b01000010,
+            8'b01000010,
+            8'b01000010,
+            8'b01000010
+        };
+    end
+
+    // Extraer fila de la letra correspondiente
+    assign row_data = font_rom[letter_index][char_y_scaled];
+
+    // Calcular si el bit (píxel) debe estar encendido
+    assign visible = zona && row_data[7 - char_x_local];
+
+endmodule

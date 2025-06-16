@@ -1,9 +1,10 @@
 module Gambling_Tec(
 	input logic [31:0] Instruction,
-	input logic clk, rstin,
+	input logic clk, rstin, stop,
    output logic Hs, Vs,
 	output logic VGA_Blank, VGA_Sync_N, VGA_CLK,
 	output logic [7:0]  R, G, B
+	
 
 
 );
@@ -43,7 +44,8 @@ Vga_Controller #(.N(8)) vga_control(
 	.Q_Y(),
 	.R(R),
 	.G(G),
-	.B(B)
+	.B(B),
+	.stop(stop)
 );
 
 

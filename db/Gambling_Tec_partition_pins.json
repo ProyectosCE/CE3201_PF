@@ -80,6 +80,10 @@
 					"strict" : false
 				},
 				{
+					"name" : "G[7]",
+					"strict" : false
+				},
+				{
 					"name" : "B[0]",
 					"strict" : false
 				},
@@ -108,11 +112,19 @@
 					"strict" : false
 				},
 				{
+					"name" : "B[7]",
+					"strict" : false
+				},
+				{
 					"name" : "rstin",
 					"strict" : false
 				},
 				{
 					"name" : "clk",
+					"strict" : false
+				},
+				{
+					"name" : "stop",
 					"strict" : false
 				}
 			]

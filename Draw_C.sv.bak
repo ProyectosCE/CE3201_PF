@@ -1,0 +1,35 @@
+module Draw_C (
+    input  logic [9:0] Q_X, Q_Y,       
+    input  logic [9:0] pos_x, pos_y,   
+    output logic visible               
+);
+
+    logic [2:0] char_x;  
+    logic [2:0] char_y;  
+    logic [7:0] row_data;
+
+
+    logic [7:0] font_rom [0:7] = '{
+        8'b01111110,
+        8'b10000001,
+        8'b10000000,
+        8'b10000000,
+        8'b10000000,
+        8'b10000000,
+        8'b10000001,
+        8'b01111110
+    };
+
+    assign char_x = Q_X - pos_x;
+    assign char_y = Q_Y - pos_y;
+
+    always_comb begin
+        if (Q_X >= pos_x && Q_X < pos_x + 8 &&
+            Q_Y >= pos_y && Q_Y < pos_y + 8) begin
+            row_data = font_rom[char_y];
+            visible = row_data[7 - char_x];  
+        end else begin
+            visible = 0;
+        end
+    end
+endmodule

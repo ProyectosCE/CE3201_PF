@@ -1,0 +1,19 @@
+-- begin_signature
+-- Draw_C
+-- end_signature
+WIDTH=8;
+DEPTH=8;
+
+ADDRESS_RADIX=UNS;
+DATA_RADIX=BIN;
+
+CONTENT BEGIN
+	7 :	00001000;
+	6 :	01111111;
+	5 :	11001000;
+	4 :	11001000;
+	3 :	11001000;
+	2 :	11001000;
+	1 :	01111111;
+	0 :	00001000;
+END;
