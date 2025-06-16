@@ -1,5 +1,5 @@
 Analysis & Synthesis report for Gambling_Tec
-Sun Jun 15 19:00:15 2025
+Mon Jun 16 10:57:04 2025
 Quartus Prime Version 23.1std.1 Build 993 05/14/2024 SC Lite Edition
 
 
@@ -29,11 +29,10 @@ Quartus Prime Version 23.1std.1 Build 993 05/14/2024 SC Lite Edition
  21. Port Connectivity Checks: "CPU:process|Adder:PCPlus8_inst"
  22. Port Connectivity Checks: "CPU:process|Adder:PCPlus4_inst"
  23. Port Connectivity Checks: "CPU:process|Mux:RA1_inst"
- 24. Port Connectivity Checks: "CPU:process|Register:PC_Register"
- 25. Port Connectivity Checks: "CPU:process"
- 26. Post-Synthesis Netlist Statistics for Top Partition
- 27. Elapsed Time Per Partition
- 28. Analysis & Synthesis Messages
+ 24. Port Connectivity Checks: "CPU:process"
+ 25. Post-Synthesis Netlist Statistics for Top Partition
+ 26. Elapsed Time Per Partition
+ 27. Analysis & Synthesis Messages
 
 
 
@@ -60,7 +59,7 @@ https://fpgasoftware.intel.com/eula.
 +----------------------------------------------------------------------------------+
 ; Analysis & Synthesis Summary                                                     ;
 +---------------------------------+------------------------------------------------+
-; Analysis & Synthesis Status     ; Successful - Sun Jun 15 19:00:15 2025          ;
+; Analysis & Synthesis Status     ; Successful - Mon Jun 16 10:57:04 2025          ;
 ; Quartus Prime Version           ; 23.1std.1 Build 993 05/14/2024 SC Lite Edition ;
 ; Revision Name                   ; Gambling_Tec                                   ;
 ; Top-level Entity Name           ; Gambling_Tec                                   ;
@@ -409,15 +408,6 @@ Note: In order to hide this table in the UI and the text report file, please set
 +------+-------+----------+----------------------------+
 
 
-+--------------------------------------------------------------+
-; Port Connectivity Checks: "CPU:process|Register:PC_Register" ;
-+------+-------+----------+------------------------------------+
-; Port ; Type  ; Severity ; Details                            ;
-+------+-------+----------+------------------------------------+
-; en   ; Input ; Info     ; Stuck at VCC                       ;
-+------+-------+----------+------------------------------------+
-
-
 +----------------------------------------------------------------------------------------------------------------------+
 ; Port Connectivity Checks: "CPU:process"                                                                              ;
 +------------+--------+----------+-------------------------------------------------------------------------------------+
@@ -456,7 +446,7 @@ Note: In order to hide this table in the UI and the text report file, please set
 Info: *******************************************************************
 Info: Running Quartus Prime Analysis & Synthesis
     Info: Version 23.1std.1 Build 993 05/14/2024 SC Lite Edition
-    Info: Processing started: Sun Jun 15 19:00:03 2025
+    Info: Processing started: Mon Jun 16 10:56:52 2025
 Info: Command: quartus_map --read_settings_files=on --write_settings_files=off Gambling_Tec -c Gambling_Tec
 Warning (18236): Number of processors has not been specified which may cause overloading on shared machines.  Set the global assignment NUM_PARALLEL_PROCESSORS in your QSF to an appropriate value for best performance.
 Info (20030): Parallel compilation is enabled and will use 8 of the 8 processors detected
@@ -511,19 +501,19 @@ Info (12021): Found 1 design units, including 1 entities, in source file tb_gamb
 Warning (10236): Verilog HDL Implicit Net warning at Decoder.sv(33): created implicit net for "ALUOP" File: C:/Users/joseb/Documents/GitHub/CE3201_PF/Decoder.sv Line: 33
 Info (12127): Elaborating entity "Gambling_Tec" for the top level hierarchy
 Info (12128): Elaborating entity "ROM" for hierarchy "ROM:rom0" File: C:/Users/joseb/Documents/GitHub/CE3201_PF/Gambling_Tec.sv Line: 19
-Warning (10850): Verilog HDL warning at ROM.sv(14): number of words (2) in memory file does not match the number of elements in the address range [0:1023] File: C:/Users/joseb/Documents/GitHub/CE3201_PF/ROM.sv Line: 14
+Warning (10850): Verilog HDL warning at ROM.sv(14): number of words (6) in memory file does not match the number of elements in the address range [0:1023] File: C:/Users/joseb/Documents/GitHub/CE3201_PF/ROM.sv Line: 14
 Warning (10030): Net "mem.data_a" at ROM.sv(10) has no driver or initial value, using a default initial value '0' File: C:/Users/joseb/Documents/GitHub/CE3201_PF/ROM.sv Line: 10
 Warning (10030): Net "mem.waddr_a" at ROM.sv(10) has no driver or initial value, using a default initial value '0' File: C:/Users/joseb/Documents/GitHub/CE3201_PF/ROM.sv Line: 10
 Warning (10030): Net "mem.we_a" at ROM.sv(10) has no driver or initial value, using a default initial value '0' File: C:/Users/joseb/Documents/GitHub/CE3201_PF/ROM.sv Line: 10
 Info (12128): Elaborating entity "CPU" for hierarchy "CPU:process" File: C:/Users/joseb/Documents/GitHub/CE3201_PF/Gambling_Tec.sv Line: 32
-Info (12128): Elaborating entity "Mux" for hierarchy "CPU:process|Mux:next_PC_inst" File: C:/Users/joseb/Documents/GitHub/CE3201_PF/CPU.sv Line: 36
-Info (12128): Elaborating entity "Register" for hierarchy "CPU:process|Register:PC_Register" File: C:/Users/joseb/Documents/GitHub/CE3201_PF/CPU.sv Line: 44
-Info (12128): Elaborating entity "Mux" for hierarchy "CPU:process|Mux:RA1_inst" File: C:/Users/joseb/Documents/GitHub/CE3201_PF/CPU.sv Line: 53
-Info (12128): Elaborating entity "Adder" for hierarchy "CPU:process|Adder:PCPlus4_inst" File: C:/Users/joseb/Documents/GitHub/CE3201_PF/CPU.sv Line: 69
-Info (12128): Elaborating entity "Register_File" for hierarchy "CPU:process|Register_File:Reg_file_inst" File: C:/Users/joseb/Documents/GitHub/CE3201_PF/CPU.sv Line: 89
-Info (12128): Elaborating entity "Extender" for hierarchy "CPU:process|Extender:Extender_ins" File: C:/Users/joseb/Documents/GitHub/CE3201_PF/CPU.sv Line: 95
-Info (12128): Elaborating entity "ALU" for hierarchy "CPU:process|ALU:ALU_inst" File: C:/Users/joseb/Documents/GitHub/CE3201_PF/CPU.sv Line: 113
-Info (12128): Elaborating entity "Control_Unit" for hierarchy "CPU:process|Control_Unit:CU_Inst" File: C:/Users/joseb/Documents/GitHub/CE3201_PF/CPU.sv Line: 145
+Info (12128): Elaborating entity "Mux" for hierarchy "CPU:process|Mux:next_PC_inst" File: C:/Users/joseb/Documents/GitHub/CE3201_PF/CPU.sv Line: 48
+Info (12128): Elaborating entity "Register" for hierarchy "CPU:process|Register:PC_Register" File: C:/Users/joseb/Documents/GitHub/CE3201_PF/CPU.sv Line: 56
+Info (12128): Elaborating entity "Mux" for hierarchy "CPU:process|Mux:RA1_inst" File: C:/Users/joseb/Documents/GitHub/CE3201_PF/CPU.sv Line: 63
+Info (12128): Elaborating entity "Adder" for hierarchy "CPU:process|Adder:PCPlus4_inst" File: C:/Users/joseb/Documents/GitHub/CE3201_PF/CPU.sv Line: 76
+Info (12128): Elaborating entity "Register_File" for hierarchy "CPU:process|Register_File:Reg_file_inst" File: C:/Users/joseb/Documents/GitHub/CE3201_PF/CPU.sv Line: 95
+Info (12128): Elaborating entity "Extender" for hierarchy "CPU:process|Extender:Extender_ins" File: C:/Users/joseb/Documents/GitHub/CE3201_PF/CPU.sv Line: 101
+Info (12128): Elaborating entity "ALU" for hierarchy "CPU:process|ALU:ALU_inst" File: C:/Users/joseb/Documents/GitHub/CE3201_PF/CPU.sv Line: 116
+Info (12128): Elaborating entity "Control_Unit" for hierarchy "CPU:process|Control_Unit:CU_Inst" File: C:/Users/joseb/Documents/GitHub/CE3201_PF/CPU.sv Line: 142
 Info (12128): Elaborating entity "Decoder" for hierarchy "CPU:process|Control_Unit:CU_Inst|Decoder:decoder_inst" File: C:/Users/joseb/Documents/GitHub/CE3201_PF/Control_Unit.sv Line: 46
 Info (12128): Elaborating entity "PC_Logic" for hierarchy "CPU:process|Control_Unit:CU_Inst|Decoder:decoder_inst|PC_Logic:pc_logic_inst" File: C:/Users/joseb/Documents/GitHub/CE3201_PF/Decoder.sv Line: 20
 Info (12128): Elaborating entity "Main_Decoder" for hierarchy "CPU:process|Control_Unit:CU_Inst|Decoder:decoder_inst|Main_Decoder:main_decoder_inst" File: C:/Users/joseb/Documents/GitHub/CE3201_PF/Decoder.sv Line: 34
@@ -542,9 +532,9 @@ Info (21057): Implemented 2 device resources after synthesis - the final resourc
     Info (21058): Implemented 2 input pins
     Info (21059): Implemented 0 output pins
 Info: Quartus Prime Analysis & Synthesis was successful. 0 errors, 12 warnings
-    Info: Peak virtual memory: 4802 megabytes
-    Info: Processing ended: Sun Jun 15 19:00:15 2025
+    Info: Peak virtual memory: 4803 megabytes
+    Info: Processing ended: Mon Jun 16 10:57:04 2025
     Info: Elapsed time: 00:00:12
-    Info: Total CPU time (on all processors): 00:00:28
+    Info: Total CPU time (on all processors): 00:00:30
 
 

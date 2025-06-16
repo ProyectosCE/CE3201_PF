@@ -26,117 +26,117 @@
 # 
 # vlog -sv -work work +incdir+C:/Users/joseb/Documents/GitHub/CE3201_PF {C:/Users/joseb/Documents/GitHub/CE3201_PF/Condition_Check.sv}
 # Questa Intel Starter FPGA Edition-64 vlog 2023.3 Compiler 2023.07 Jul 17 2023
-# Start time: 19:08:58 on Jun 15,2025
+# Start time: 10:59:10 on Jun 16,2025
 # vlog -reportprogress 300 -sv -work work "+incdir+C:/Users/joseb/Documents/GitHub/CE3201_PF" C:/Users/joseb/Documents/GitHub/CE3201_PF/Condition_Check.sv 
 # -- Compiling module Condition_Check
 # 
 # Top level modules:
 # 	Condition_Check
-# End time: 19:08:58 on Jun 15,2025, Elapsed time: 0:00:00
+# End time: 10:59:10 on Jun 16,2025, Elapsed time: 0:00:00
 # Errors: 0, Warnings: 0
 # vlog -sv -work work +incdir+C:/Users/joseb/Documents/GitHub/CE3201_PF {C:/Users/joseb/Documents/GitHub/CE3201_PF/Register_File.sv}
 # Questa Intel Starter FPGA Edition-64 vlog 2023.3 Compiler 2023.07 Jul 17 2023
-# Start time: 19:08:58 on Jun 15,2025
+# Start time: 10:59:10 on Jun 16,2025
 # vlog -reportprogress 300 -sv -work work "+incdir+C:/Users/joseb/Documents/GitHub/CE3201_PF" C:/Users/joseb/Documents/GitHub/CE3201_PF/Register_File.sv 
 # -- Compiling module Register_File
 # 
 # Top level modules:
 # 	Register_File
-# End time: 19:08:58 on Jun 15,2025, Elapsed time: 0:00:00
+# End time: 10:59:11 on Jun 16,2025, Elapsed time: 0:00:01
 # Errors: 0, Warnings: 0
 # vlog -sv -work work +incdir+C:/Users/joseb/Documents/GitHub/CE3201_PF {C:/Users/joseb/Documents/GitHub/CE3201_PF/Register.sv}
 # Questa Intel Starter FPGA Edition-64 vlog 2023.3 Compiler 2023.07 Jul 17 2023
-# Start time: 19:08:58 on Jun 15,2025
+# Start time: 10:59:11 on Jun 16,2025
 # vlog -reportprogress 300 -sv -work work "+incdir+C:/Users/joseb/Documents/GitHub/CE3201_PF" C:/Users/joseb/Documents/GitHub/CE3201_PF/Register.sv 
 # -- Compiling module Register
 # 
 # Top level modules:
 # 	Register
-# End time: 19:08:58 on Jun 15,2025, Elapsed time: 0:00:00
+# End time: 10:59:11 on Jun 16,2025, Elapsed time: 0:00:00
 # Errors: 0, Warnings: 0
 # vlog -sv -work work +incdir+C:/Users/joseb/Documents/GitHub/CE3201_PF {C:/Users/joseb/Documents/GitHub/CE3201_PF/Mux.sv}
 # Questa Intel Starter FPGA Edition-64 vlog 2023.3 Compiler 2023.07 Jul 17 2023
-# Start time: 19:08:58 on Jun 15,2025
+# Start time: 10:59:11 on Jun 16,2025
 # vlog -reportprogress 300 -sv -work work "+incdir+C:/Users/joseb/Documents/GitHub/CE3201_PF" C:/Users/joseb/Documents/GitHub/CE3201_PF/Mux.sv 
 # -- Compiling module Mux
 # 
 # Top level modules:
 # 	Mux
-# End time: 19:08:59 on Jun 15,2025, Elapsed time: 0:00:01
+# End time: 10:59:11 on Jun 16,2025, Elapsed time: 0:00:00
 # Errors: 0, Warnings: 0
 # vlog -sv -work work +incdir+C:/Users/joseb/Documents/GitHub/CE3201_PF {C:/Users/joseb/Documents/GitHub/CE3201_PF/Extender.sv}
 # Questa Intel Starter FPGA Edition-64 vlog 2023.3 Compiler 2023.07 Jul 17 2023
-# Start time: 19:08:59 on Jun 15,2025
+# Start time: 10:59:11 on Jun 16,2025
 # vlog -reportprogress 300 -sv -work work "+incdir+C:/Users/joseb/Documents/GitHub/CE3201_PF" C:/Users/joseb/Documents/GitHub/CE3201_PF/Extender.sv 
 # -- Compiling module Extender
 # 
 # Top level modules:
 # 	Extender
-# End time: 19:08:59 on Jun 15,2025, Elapsed time: 0:00:00
+# End time: 10:59:11 on Jun 16,2025, Elapsed time: 0:00:00
 # Errors: 0, Warnings: 0
 # vlog -sv -work work +incdir+C:/Users/joseb/Documents/GitHub/CE3201_PF {C:/Users/joseb/Documents/GitHub/CE3201_PF/Data_Memory.sv}
 # Questa Intel Starter FPGA Edition-64 vlog 2023.3 Compiler 2023.07 Jul 17 2023
-# Start time: 19:08:59 on Jun 15,2025
+# Start time: 10:59:11 on Jun 16,2025
 # vlog -reportprogress 300 -sv -work work "+incdir+C:/Users/joseb/Documents/GitHub/CE3201_PF" C:/Users/joseb/Documents/GitHub/CE3201_PF/Data_Memory.sv 
 # -- Compiling module Data_Memory
 # 
 # Top level modules:
 # 	Data_Memory
-# End time: 19:08:59 on Jun 15,2025, Elapsed time: 0:00:00
+# End time: 10:59:11 on Jun 16,2025, Elapsed time: 0:00:00
 # Errors: 0, Warnings: 0
 # vlog -sv -work work +incdir+C:/Users/joseb/Documents/GitHub/CE3201_PF {C:/Users/joseb/Documents/GitHub/CE3201_PF/CPU.sv}
 # Questa Intel Starter FPGA Edition-64 vlog 2023.3 Compiler 2023.07 Jul 17 2023
-# Start time: 19:08:59 on Jun 15,2025
+# Start time: 10:59:11 on Jun 16,2025
 # vlog -reportprogress 300 -sv -work work "+incdir+C:/Users/joseb/Documents/GitHub/CE3201_PF" C:/Users/joseb/Documents/GitHub/CE3201_PF/CPU.sv 
 # -- Compiling module CPU
 # 
 # Top level modules:
 # 	CPU
-# End time: 19:08:59 on Jun 15,2025, Elapsed time: 0:00:00
+# End time: 10:59:11 on Jun 16,2025, Elapsed time: 0:00:00
 # Errors: 0, Warnings: 0
 # vlog -sv -work work +incdir+C:/Users/joseb/Documents/GitHub/CE3201_PF {C:/Users/joseb/Documents/GitHub/CE3201_PF/ALU.sv}
 # Questa Intel Starter FPGA Edition-64 vlog 2023.3 Compiler 2023.07 Jul 17 2023
-# Start time: 19:08:59 on Jun 15,2025
+# Start time: 10:59:12 on Jun 16,2025
 # vlog -reportprogress 300 -sv -work work "+incdir+C:/Users/joseb/Documents/GitHub/CE3201_PF" C:/Users/joseb/Documents/GitHub/CE3201_PF/ALU.sv 
 # -- Compiling module ALU
 # 
 # Top level modules:
 # 	ALU
-# End time: 19:08:59 on Jun 15,2025, Elapsed time: 0:00:00
+# End time: 10:59:12 on Jun 16,2025, Elapsed time: 0:00:00
 # Errors: 0, Warnings: 0
 # vlog -sv -work work +incdir+C:/Users/joseb/Documents/GitHub/CE3201_PF {C:/Users/joseb/Documents/GitHub/CE3201_PF/Adder.sv}
 # Questa Intel Starter FPGA Edition-64 vlog 2023.3 Compiler 2023.07 Jul 17 2023
-# Start time: 19:08:59 on Jun 15,2025
+# Start time: 10:59:12 on Jun 16,2025
 # vlog -reportprogress 300 -sv -work work "+incdir+C:/Users/joseb/Documents/GitHub/CE3201_PF" C:/Users/joseb/Documents/GitHub/CE3201_PF/Adder.sv 
 # -- Compiling module Adder
 # 
 # Top level modules:
 # 	Adder
-# End time: 19:08:59 on Jun 15,2025, Elapsed time: 0:00:00
+# End time: 10:59:12 on Jun 16,2025, Elapsed time: 0:00:00
 # Errors: 0, Warnings: 0
 # vlog -sv -work work +incdir+C:/Users/joseb/Documents/GitHub/CE3201_PF {C:/Users/joseb/Documents/GitHub/CE3201_PF/Gambling_Tec.sv}
 # Questa Intel Starter FPGA Edition-64 vlog 2023.3 Compiler 2023.07 Jul 17 2023
-# Start time: 19:08:59 on Jun 15,2025
+# Start time: 10:59:12 on Jun 16,2025
 # vlog -reportprogress 300 -sv -work work "+incdir+C:/Users/joseb/Documents/GitHub/CE3201_PF" C:/Users/joseb/Documents/GitHub/CE3201_PF/Gambling_Tec.sv 
 # -- Compiling module Gambling_Tec
 # 
 # Top level modules:
 # 	Gambling_Tec
-# End time: 19:09:00 on Jun 15,2025, Elapsed time: 0:00:01
+# End time: 10:59:12 on Jun 16,2025, Elapsed time: 0:00:00
 # Errors: 0, Warnings: 0
 # vlog -sv -work work +incdir+C:/Users/joseb/Documents/GitHub/CE3201_PF {C:/Users/joseb/Documents/GitHub/CE3201_PF/Control_Unit.sv}
 # Questa Intel Starter FPGA Edition-64 vlog 2023.3 Compiler 2023.07 Jul 17 2023
-# Start time: 19:09:00 on Jun 15,2025
+# Start time: 10:59:12 on Jun 16,2025
 # vlog -reportprogress 300 -sv -work work "+incdir+C:/Users/joseb/Documents/GitHub/CE3201_PF" C:/Users/joseb/Documents/GitHub/CE3201_PF/Control_Unit.sv 
 # -- Compiling module Control_Unit
 # 
 # Top level modules:
 # 	Control_Unit
-# End time: 19:09:00 on Jun 15,2025, Elapsed time: 0:00:00
+# End time: 10:59:12 on Jun 16,2025, Elapsed time: 0:00:00
 # Errors: 0, Warnings: 0
 # vlog -sv -work work +incdir+C:/Users/joseb/Documents/GitHub/CE3201_PF {C:/Users/joseb/Documents/GitHub/CE3201_PF/Decoder.sv}
 # Questa Intel Starter FPGA Edition-64 vlog 2023.3 Compiler 2023.07 Jul 17 2023
-# Start time: 19:09:00 on Jun 15,2025
+# Start time: 10:59:12 on Jun 16,2025
 # vlog -reportprogress 300 -sv -work work "+incdir+C:/Users/joseb/Documents/GitHub/CE3201_PF" C:/Users/joseb/Documents/GitHub/CE3201_PF/Decoder.sv 
 # -- Compiling module Decoder
 # -- Compiling module PC_Logic
@@ -145,33 +145,33 @@
 # 
 # Top level modules:
 # 	Decoder
-# End time: 19:09:00 on Jun 15,2025, Elapsed time: 0:00:00
+# End time: 10:59:12 on Jun 16,2025, Elapsed time: 0:00:00
 # Errors: 0, Warnings: 0
 # vlog -sv -work work +incdir+C:/Users/joseb/Documents/GitHub/CE3201_PF {C:/Users/joseb/Documents/GitHub/CE3201_PF/ROM.sv}
 # Questa Intel Starter FPGA Edition-64 vlog 2023.3 Compiler 2023.07 Jul 17 2023
-# Start time: 19:09:00 on Jun 15,2025
+# Start time: 10:59:12 on Jun 16,2025
 # vlog -reportprogress 300 -sv -work work "+incdir+C:/Users/joseb/Documents/GitHub/CE3201_PF" C:/Users/joseb/Documents/GitHub/CE3201_PF/ROM.sv 
 # -- Compiling module ROM
 # 
 # Top level modules:
 # 	ROM
-# End time: 19:09:00 on Jun 15,2025, Elapsed time: 0:00:00
+# End time: 10:59:13 on Jun 16,2025, Elapsed time: 0:00:01
 # Errors: 0, Warnings: 0
 # 
 # vlog -sv -work work +incdir+C:/Users/joseb/Documents/GitHub/CE3201_PF {C:/Users/joseb/Documents/GitHub/CE3201_PF/tb_Gambling_Tec_ROM.sv}
 # Questa Intel Starter FPGA Edition-64 vlog 2023.3 Compiler 2023.07 Jul 17 2023
-# Start time: 19:09:00 on Jun 15,2025
+# Start time: 10:59:13 on Jun 16,2025
 # vlog -reportprogress 300 -sv -work work "+incdir+C:/Users/joseb/Documents/GitHub/CE3201_PF" C:/Users/joseb/Documents/GitHub/CE3201_PF/tb_Gambling_Tec_ROM.sv 
 # -- Compiling module tb_Gambling_Tec_ROM
 # 
 # Top level modules:
 # 	tb_Gambling_Tec_ROM
-# End time: 19:09:00 on Jun 15,2025, Elapsed time: 0:00:00
+# End time: 10:59:13 on Jun 16,2025, Elapsed time: 0:00:00
 # Errors: 0, Warnings: 0
 # 
 # vsim -t 1ps -L altera_ver -L lpm_ver -L sgate_ver -L altera_mf_ver -L altera_lnsim_ver -L cyclonev_ver -L cyclonev_hssi_ver -L cyclonev_pcie_hip_ver -L rtl_work -L work -voptargs="+acc"  tb_Gambling_Tec_ROM
 # vsim -t 1ps -L altera_ver -L lpm_ver -L sgate_ver -L altera_mf_ver -L altera_lnsim_ver -L cyclonev_ver -L cyclonev_hssi_ver -L cyclonev_pcie_hip_ver -L rtl_work -L work -voptargs=""+acc"" tb_Gambling_Tec_ROM 
-# Start time: 19:09:00 on Jun 15,2025
+# Start time: 10:59:13 on Jun 16,2025
 # ** Note: (vsim-3812) Design is being optimized...
 # ** Warning: (vopt-10587) Some optimizations are turned off because the +acc switch is in effect. This will cause your simulation to run slowly. Please use -access/-debug to maintain needed visibility.
 # ** Note: (vsim-12126) Error and warning message counts have been restored: Errors=0, Warnings=1.
@@ -202,136 +202,306 @@
 # view signals
 # .main_pane.objects.interior.cs.body.tree
 # run -all
-# ==== TEST LDR DESDE ROM ====
-# ANTES de ejecutar LDR:
-#   RAM[0]  = 12
-#   R2      = 0
-#   R1      = 0
+# ==== TEST LDR + ADD DESDE ROM ====
+# MUX PCSrc       = 0
+# MUX Result      = x
+# MUX PCPlus4     = 4
+# next_PC         = 4
+# PC inicial      = 0
+# === Estado inicial ===
+# RAM[0] = 10
+# RAM[1] = 20
+# ======================
 # Ciclo 0:
-#   PC                 = 8
+#   PC                 = 0
+#   PCSrc           = 0
+#   next_PC         = 4
 #   Instr              = 0xe5921000
 #   ALUResult (addr)   = 0
-#   ReadData           = 12
+#   ReadData           = 10
 #   RegWrite           = 1
-#   R1 (valor actual)  = 0
+#   R1 (LDR1)          = 0
+#   R3 (R1+R1)         = 0
+#   R4 (LDR2)          = 0
+#   R5 (R3+R4)         = 0
+#   R6 (R5+R5)         = 0
 # -----------------------------
 # Ciclo 1:
-#   PC                 = 12
-#   Instr              = 0xe5921000
-#   ALUResult (addr)   = 0
-#   ReadData           = 12
+#   PC                 = 4
+#   PCSrc           = 0
+#   next_PC         = 8
+#   Instr              = 0xe0813001
+#   ALUResult (addr)   = 20
+#   ReadData           = x
 #   RegWrite           = 1
-#   R1 (valor actual)  = 12
+#   R1 (LDR1)          = 10
+#   R3 (R1+R1)         = 0
+#   R4 (LDR2)          = 0
+#   R5 (R3+R4)         = 0
+#   R6 (R5+R5)         = 0
 # -----------------------------
 # Ciclo 2:
-#   PC                 = 16
-#   Instr              = 0xe5921000
-#   ALUResult (addr)   = 0
-#   ReadData           = 12
+#   PC                 = 8
+#   PCSrc           = 0
+#   next_PC         = 12
+#   Instr              = 0xe5924004
+#   ALUResult (addr)   = 4
+#   ReadData           = 20
 #   RegWrite           = 1
-#   R1 (valor actual)  = 12
+#   R1 (LDR1)          = 10
+#   R3 (R1+R1)         = 20
+#   R4 (LDR2)          = 0
+#   R5 (R3+R4)         = 0
+#   R6 (R5+R5)         = 0
 # -----------------------------
 # Ciclo 3:
-#   PC                 = 20
-#   Instr              = 0xe5921000
-#   ALUResult (addr)   = 0
-#   ReadData           = 12
+#   PC                 = 12
+#   PCSrc           = 0
+#   next_PC         = 16
+#   Instr              = 0xe0835004
+#   ALUResult (addr)   = 40
+#   ReadData           = x
 #   RegWrite           = 1
-#   R1 (valor actual)  = 12
+#   R1 (LDR1)          = 10
+#   R3 (R1+R1)         = 20
+#   R4 (LDR2)          = 20
+#   R5 (R3+R4)         = 0
+#   R6 (R5+R5)         = 0
 # -----------------------------
 # Ciclo 4:
-#   PC                 = 24
-#   Instr              = 0xxxxxxxxx
-#   ALUResult (addr)   = x
+#   PC                 = 16
+#   PCSrc           = 0
+#   next_PC         = 20
+#   Instr              = 0xe0856005
+#   ALUResult (addr)   = 80
 #   ReadData           = x
-#   RegWrite           = 0
-#   R1 (valor actual)  = 12
+#   RegWrite           = 1
+#   R1 (LDR1)          = 10
+#   R3 (R1+R1)         = 20
+#   R4 (LDR2)          = 20
+#   R5 (R3+R4)         = 40
+#   R6 (R5+R5)         = 0
 # -----------------------------
 # Ciclo 5:
-#   PC                 = 28
-#   Instr              = 0xxxxxxxxx
-#   ALUResult (addr)   = x
+#   PC                 = 20
+#   PCSrc           = 1
+#   next_PC         = 20
+#   Instr              = 0xeafffffe
+#   ALUResult (addr)   = 20
 #   ReadData           = x
 #   RegWrite           = 0
-#   R1 (valor actual)  = 12
+#   R1 (LDR1)          = 10
+#   R3 (R1+R1)         = 20
+#   R4 (LDR2)          = 20
+#   R5 (R3+R4)         = 40
+#   R6 (R5+R5)         = 80
 # -----------------------------
 # Ciclo 6:
-#   PC                 = 32
-#   Instr              = 0xxxxxxxxx
-#   ALUResult (addr)   = x
+#   PC                 = 20
+#   PCSrc           = 1
+#   next_PC         = 20
+#   Instr              = 0xeafffffe
+#   ALUResult (addr)   = 20
 #   ReadData           = x
 #   RegWrite           = 0
-#   R1 (valor actual)  = 12
+#   R1 (LDR1)          = 10
+#   R3 (R1+R1)         = 20
+#   R4 (LDR2)          = 20
+#   R5 (R3+R4)         = 40
+#   R6 (R5+R5)         = 80
 # -----------------------------
 # Ciclo 7:
-#   PC                 = 36
-#   Instr              = 0xxxxxxxxx
-#   ALUResult (addr)   = x
+#   PC                 = 20
+#   PCSrc           = 1
+#   next_PC         = 20
+#   Instr              = 0xeafffffe
+#   ALUResult (addr)   = 20
 #   ReadData           = x
 #   RegWrite           = 0
-#   R1 (valor actual)  = 12
+#   R1 (LDR1)          = 10
+#   R3 (R1+R1)         = 20
+#   R4 (LDR2)          = 20
+#   R5 (R3+R4)         = 40
+#   R6 (R5+R5)         = 80
 # -----------------------------
 # Ciclo 8:
-#   PC                 = 40
-#   Instr              = 0xxxxxxxxx
-#   ALUResult (addr)   = x
+#   PC                 = 20
+#   PCSrc           = 1
+#   next_PC         = 20
+#   Instr              = 0xeafffffe
+#   ALUResult (addr)   = 20
 #   ReadData           = x
 #   RegWrite           = 0
-#   R1 (valor actual)  = 12
+#   R1 (LDR1)          = 10
+#   R3 (R1+R1)         = 20
+#   R4 (LDR2)          = 20
+#   R5 (R3+R4)         = 40
+#   R6 (R5+R5)         = 80
 # -----------------------------
 # Ciclo 9:
-#   PC                 = 44
-#   Instr              = 0xxxxxxxxx
-#   ALUResult (addr)   = x
+#   PC                 = 20
+#   PCSrc           = 1
+#   next_PC         = 20
+#   Instr              = 0xeafffffe
+#   ALUResult (addr)   = 20
 #   ReadData           = x
 #   RegWrite           = 0
-#   R1 (valor actual)  = 12
+#   R1 (LDR1)          = 10
+#   R3 (R1+R1)         = 20
+#   R4 (LDR2)          = 20
+#   R5 (R3+R4)         = 40
+#   R6 (R5+R5)         = 80
 # -----------------------------
 # Ciclo 10:
-#   PC                 = 48
-#   Instr              = 0xxxxxxxxx
-#   ALUResult (addr)   = x
+#   PC                 = 20
+#   PCSrc           = 1
+#   next_PC         = 20
+#   Instr              = 0xeafffffe
+#   ALUResult (addr)   = 20
 #   ReadData           = x
 #   RegWrite           = 0
-#   R1 (valor actual)  = 12
+#   R1 (LDR1)          = 10
+#   R3 (R1+R1)         = 20
+#   R4 (LDR2)          = 20
+#   R5 (R3+R4)         = 40
+#   R6 (R5+R5)         = 80
 # -----------------------------
 # Ciclo 11:
-#   PC                 = 52
-#   Instr              = 0xxxxxxxxx
-#   ALUResult (addr)   = x
+#   PC                 = 20
+#   PCSrc           = 1
+#   next_PC         = 20
+#   Instr              = 0xeafffffe
+#   ALUResult (addr)   = 20
 #   ReadData           = x
 #   RegWrite           = 0
-#   R1 (valor actual)  = 12
+#   R1 (LDR1)          = 10
+#   R3 (R1+R1)         = 20
+#   R4 (LDR2)          = 20
+#   R5 (R3+R4)         = 40
+#   R6 (R5+R5)         = 80
 # -----------------------------
 # Ciclo 12:
-#   PC                 = 56
-#   Instr              = 0xxxxxxxxx
-#   ALUResult (addr)   = x
+#   PC                 = 20
+#   PCSrc           = 1
+#   next_PC         = 20
+#   Instr              = 0xeafffffe
+#   ALUResult (addr)   = 20
 #   ReadData           = x
 #   RegWrite           = 0
-#   R1 (valor actual)  = 12
+#   R1 (LDR1)          = 10
+#   R3 (R1+R1)         = 20
+#   R4 (LDR2)          = 20
+#   R5 (R3+R4)         = 40
+#   R6 (R5+R5)         = 80
 # -----------------------------
 # Ciclo 13:
-#   PC                 = 60
-#   Instr              = 0xxxxxxxxx
-#   ALUResult (addr)   = x
+#   PC                 = 20
+#   PCSrc           = 1
+#   next_PC         = 20
+#   Instr              = 0xeafffffe
+#   ALUResult (addr)   = 20
 #   ReadData           = x
 #   RegWrite           = 0
-#   R1 (valor actual)  = 12
+#   R1 (LDR1)          = 10
+#   R3 (R1+R1)         = 20
+#   R4 (LDR2)          = 20
+#   R5 (R3+R4)         = 40
+#   R6 (R5+R5)         = 80
 # -----------------------------
 # Ciclo 14:
-#   PC                 = 64
-#   Instr              = 0xxxxxxxxx
-#   ALUResult (addr)   = x
+#   PC                 = 20
+#   PCSrc           = 1
+#   next_PC         = 20
+#   Instr              = 0xeafffffe
+#   ALUResult (addr)   = 20
 #   ReadData           = x
 #   RegWrite           = 0
-#   R1 (valor actual)  = 12
+#   R1 (LDR1)          = 10
+#   R3 (R1+R1)         = 20
+#   R4 (LDR2)          = 20
+#   R5 (R3+R4)         = 40
+#   R6 (R5+R5)         = 80
 # -----------------------------
-# RESULTADO FINAL:
+# Ciclo 15:
+#   PC                 = 20
+#   PCSrc           = 1
+#   next_PC         = 20
+#   Instr              = 0xeafffffe
+#   ALUResult (addr)   = 20
+#   ReadData           = x
+#   RegWrite           = 0
+#   R1 (LDR1)          = 10
+#   R3 (R1+R1)         = 20
+#   R4 (LDR2)          = 20
+#   R5 (R3+R4)         = 40
+#   R6 (R5+R5)         = 80
+# -----------------------------
+# Ciclo 16:
+#   PC                 = 20
+#   PCSrc           = 1
+#   next_PC         = 20
+#   Instr              = 0xeafffffe
+#   ALUResult (addr)   = 20
+#   ReadData           = x
+#   RegWrite           = 0
+#   R1 (LDR1)          = 10
+#   R3 (R1+R1)         = 20
+#   R4 (LDR2)          = 20
+#   R5 (R3+R4)         = 40
+#   R6 (R5+R5)         = 80
+# -----------------------------
+# Ciclo 17:
+#   PC                 = 20
+#   PCSrc           = 1
+#   next_PC         = 20
+#   Instr              = 0xeafffffe
+#   ALUResult (addr)   = 20
+#   ReadData           = x
+#   RegWrite           = 0
+#   R1 (LDR1)          = 10
+#   R3 (R1+R1)         = 20
+#   R4 (LDR2)          = 20
+#   R5 (R3+R4)         = 40
+#   R6 (R5+R5)         = 80
+# -----------------------------
+# Ciclo 18:
+#   PC                 = 20
+#   PCSrc           = 1
+#   next_PC         = 20
+#   Instr              = 0xeafffffe
+#   ALUResult (addr)   = 20
+#   ReadData           = x
+#   RegWrite           = 0
+#   R1 (LDR1)          = 10
+#   R3 (R1+R1)         = 20
+#   R4 (LDR2)          = 20
+#   R5 (R3+R4)         = 40
+#   R6 (R5+R5)         = 80
+# -----------------------------
+# Ciclo 19:
+#   PC                 = 20
+#   PCSrc           = 1
+#   next_PC         = 20
+#   Instr              = 0xeafffffe
+#   ALUResult (addr)   = 20
+#   ReadData           = x
+#   RegWrite           = 0
+#   R1 (LDR1)          = 10
+#   R3 (R1+R1)         = 20
+#   R4 (LDR2)          = 20
+#   R5 (R3+R4)         = 40
+#   R6 (R5+R5)         = 80
+# -----------------------------
+# === RESULTADO FINAL ===
+#   R1 = 10 (esperado: 10)
+#   R3 = 20 (esperado: 20)
+#   R4 = 20 (esperado: 20)
+#   R5 = 40 (esperado: 40)
+#   R6 = 80 (esperado: 80)
 # TEST PASO CORRECTAMENTE
-# ** Note: $finish    : C:/Users/joseb/Documents/GitHub/CE3201_PF/tb_Gambling_Tec_ROM.sv(60)
-#    Time: 175 ns  Iteration: 1  Instance: /tb_Gambling_Tec_ROM
+# ** Note: $finish    : C:/Users/joseb/Documents/GitHub/CE3201_PF/tb_Gambling_Tec_ROM.sv(86)
+#    Time: 225 ns  Iteration: 1  Instance: /tb_Gambling_Tec_ROM
 # 1
-# Break in Module tb_Gambling_Tec_ROM at C:/Users/joseb/Documents/GitHub/CE3201_PF/tb_Gambling_Tec_ROM.sv line 60
-# End time: 19:14:40 on Jun 15,2025, Elapsed time: 0:05:40
+# Break in Module tb_Gambling_Tec_ROM at C:/Users/joseb/Documents/GitHub/CE3201_PF/tb_Gambling_Tec_ROM.sv line 86
+# End time: 11:04:19 on Jun 16,2025, Elapsed time: 0:05:06
 # Errors: 0, Warnings: 1

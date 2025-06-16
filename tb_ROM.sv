@@ -36,6 +36,18 @@ module tb_ROM;
         address = 3;
         #5;
         $display("ROM[3] = 0x%08x", data);
+		  
+		  address = 4;
+        #5;
+        $display("ROM[4] = 0x%08x", data);
+		  
+		  address = 5;
+        #5;
+        $display("ROM[5] = 0x%08x", data);
+		  
+		  address = 6;
+        #5;
+        $display("ROM[6] = 0x%08x", data);
 
         $finish;
     end
