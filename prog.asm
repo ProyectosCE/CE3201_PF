@@ -1,23 +1,30 @@
 .global _start
 _start:
-
+    
     LDR R1, [R2, #0]     
-    ADD R3, R1, R1       
+    LDR R2, [R2, #4]     
+    ADD R3, R1, R2       
+    SUB R4, R2, R1       
+    AND R5, R1, R2       
+    ORR R6, R1, R2       
+    CMP R1, R2           
 
-    LDR R4, [R2, #4]     
-    ADD R5, R3, R4       
+    BLT menor_que
 
-    ADD R6, R5, R5       
-    LDR R7, [R2, #8]     
-    ADD R8, R6, R7       
+continuar:
+    ADD R7, R3, R4       
+    STR R7, [R2, #8]     
 
-    LDR R9, [R2, #12]    
-    ADD R10, R8, R9      
+    CMP R7, R7           
+    BEQ iguales          
 
-    LDR R11, [R2, #16]   
-    ADD R12, R10, R11    
+iguales:
+    SUB R8, R7, R3       
+    B final              
 
-    ADD R1, R12, R12     
-    ADD R3, R1, R1       
+menor_que:
+    ADD R9, R1, R1       
+    B continuar
 
-    B .
+final:
+    B .                  
