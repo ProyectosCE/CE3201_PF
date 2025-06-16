@@ -7,7 +7,7 @@ init_count:
     LDR R1, =0x1010       ; Dir del contador circular 
     LDR R7, =0x1020       ; Dir del contador de jugadas
     
-    EOR R2, R2, R2        ; R2 = 0 
+    SUB R2, R2, R2        ; R2 = 0 
     STR R2, [R0]          ; tecla = 0
     STR R2, [R1]          ; contador circular = 0
     STR R2, [R7]          ; contador de jugadas = 0
@@ -26,7 +26,7 @@ start_count:
     ADD R3, R3, #1
     CMP R3, R5
     BLO store             ; Si < 3, guardar
-    EOR R3, R3, R3        ; Reiniciar a 0 si llega a 3
+    SUB R3, R3, R3        ; Reiniciar a 0 si llega a 3
 
 store:
     STR R3, [R1]          ; Guardar contador
