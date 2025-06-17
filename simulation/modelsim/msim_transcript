@@ -12,117 +12,117 @@
 # 
 # vlog -sv -work work +incdir+C:/Users/joseb/Documents/GitHub/CE3201_PF {C:/Users/joseb/Documents/GitHub/CE3201_PF/Condition_Check.sv}
 # Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
-# Start time: 17:01:39 on Jun 17,2025
+# Start time: 17:33:26 on Jun 17,2025
 # vlog -reportprogress 300 -sv -work work "+incdir+C:/Users/joseb/Documents/GitHub/CE3201_PF" C:/Users/joseb/Documents/GitHub/CE3201_PF/Condition_Check.sv 
 # -- Compiling module Condition_Check
 # 
 # Top level modules:
 # 	Condition_Check
-# End time: 17:01:39 on Jun 17,2025, Elapsed time: 0:00:00
+# End time: 17:33:26 on Jun 17,2025, Elapsed time: 0:00:00
 # Errors: 0, Warnings: 0
 # vlog -sv -work work +incdir+C:/Users/joseb/Documents/GitHub/CE3201_PF {C:/Users/joseb/Documents/GitHub/CE3201_PF/Register_File.sv}
 # Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
-# Start time: 17:01:39 on Jun 17,2025
+# Start time: 17:33:26 on Jun 17,2025
 # vlog -reportprogress 300 -sv -work work "+incdir+C:/Users/joseb/Documents/GitHub/CE3201_PF" C:/Users/joseb/Documents/GitHub/CE3201_PF/Register_File.sv 
 # -- Compiling module Register_File
 # 
 # Top level modules:
 # 	Register_File
-# End time: 17:01:39 on Jun 17,2025, Elapsed time: 0:00:00
+# End time: 17:33:26 on Jun 17,2025, Elapsed time: 0:00:00
 # Errors: 0, Warnings: 0
 # vlog -sv -work work +incdir+C:/Users/joseb/Documents/GitHub/CE3201_PF {C:/Users/joseb/Documents/GitHub/CE3201_PF/Register.sv}
 # Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
-# Start time: 17:01:39 on Jun 17,2025
+# Start time: 17:33:26 on Jun 17,2025
 # vlog -reportprogress 300 -sv -work work "+incdir+C:/Users/joseb/Documents/GitHub/CE3201_PF" C:/Users/joseb/Documents/GitHub/CE3201_PF/Register.sv 
 # -- Compiling module Register
 # 
 # Top level modules:
 # 	Register
-# End time: 17:01:39 on Jun 17,2025, Elapsed time: 0:00:00
+# End time: 17:33:26 on Jun 17,2025, Elapsed time: 0:00:00
 # Errors: 0, Warnings: 0
 # vlog -sv -work work +incdir+C:/Users/joseb/Documents/GitHub/CE3201_PF {C:/Users/joseb/Documents/GitHub/CE3201_PF/Mux.sv}
 # Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
-# Start time: 17:01:39 on Jun 17,2025
+# Start time: 17:33:26 on Jun 17,2025
 # vlog -reportprogress 300 -sv -work work "+incdir+C:/Users/joseb/Documents/GitHub/CE3201_PF" C:/Users/joseb/Documents/GitHub/CE3201_PF/Mux.sv 
 # -- Compiling module Mux
 # 
 # Top level modules:
 # 	Mux
-# End time: 17:01:39 on Jun 17,2025, Elapsed time: 0:00:00
+# End time: 17:33:26 on Jun 17,2025, Elapsed time: 0:00:00
 # Errors: 0, Warnings: 0
 # vlog -sv -work work +incdir+C:/Users/joseb/Documents/GitHub/CE3201_PF {C:/Users/joseb/Documents/GitHub/CE3201_PF/Extender.sv}
 # Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
-# Start time: 17:01:40 on Jun 17,2025
+# Start time: 17:33:26 on Jun 17,2025
 # vlog -reportprogress 300 -sv -work work "+incdir+C:/Users/joseb/Documents/GitHub/CE3201_PF" C:/Users/joseb/Documents/GitHub/CE3201_PF/Extender.sv 
 # -- Compiling module Extender
 # 
 # Top level modules:
 # 	Extender
-# End time: 17:01:40 on Jun 17,2025, Elapsed time: 0:00:00
+# End time: 17:33:26 on Jun 17,2025, Elapsed time: 0:00:00
 # Errors: 0, Warnings: 0
 # vlog -sv -work work +incdir+C:/Users/joseb/Documents/GitHub/CE3201_PF {C:/Users/joseb/Documents/GitHub/CE3201_PF/Data_Memory.sv}
 # Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
-# Start time: 17:01:40 on Jun 17,2025
+# Start time: 17:33:27 on Jun 17,2025
 # vlog -reportprogress 300 -sv -work work "+incdir+C:/Users/joseb/Documents/GitHub/CE3201_PF" C:/Users/joseb/Documents/GitHub/CE3201_PF/Data_Memory.sv 
 # -- Compiling module Data_Memory
 # 
 # Top level modules:
 # 	Data_Memory
-# End time: 17:01:40 on Jun 17,2025, Elapsed time: 0:00:00
+# End time: 17:33:27 on Jun 17,2025, Elapsed time: 0:00:00
 # Errors: 0, Warnings: 0
 # vlog -sv -work work +incdir+C:/Users/joseb/Documents/GitHub/CE3201_PF {C:/Users/joseb/Documents/GitHub/CE3201_PF/CPU.sv}
 # Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
-# Start time: 17:01:40 on Jun 17,2025
+# Start time: 17:33:27 on Jun 17,2025
 # vlog -reportprogress 300 -sv -work work "+incdir+C:/Users/joseb/Documents/GitHub/CE3201_PF" C:/Users/joseb/Documents/GitHub/CE3201_PF/CPU.sv 
 # -- Compiling module CPU
 # 
 # Top level modules:
 # 	CPU
-# End time: 17:01:40 on Jun 17,2025, Elapsed time: 0:00:00
+# End time: 17:33:27 on Jun 17,2025, Elapsed time: 0:00:00
 # Errors: 0, Warnings: 0
 # vlog -sv -work work +incdir+C:/Users/joseb/Documents/GitHub/CE3201_PF {C:/Users/joseb/Documents/GitHub/CE3201_PF/ALU.sv}
 # Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
-# Start time: 17:01:40 on Jun 17,2025
+# Start time: 17:33:27 on Jun 17,2025
 # vlog -reportprogress 300 -sv -work work "+incdir+C:/Users/joseb/Documents/GitHub/CE3201_PF" C:/Users/joseb/Documents/GitHub/CE3201_PF/ALU.sv 
 # -- Compiling module ALU
 # 
 # Top level modules:
 # 	ALU
-# End time: 17:01:40 on Jun 17,2025, Elapsed time: 0:00:00
+# End time: 17:33:27 on Jun 17,2025, Elapsed time: 0:00:00
 # Errors: 0, Warnings: 0
 # vlog -sv -work work +incdir+C:/Users/joseb/Documents/GitHub/CE3201_PF {C:/Users/joseb/Documents/GitHub/CE3201_PF/Adder.sv}
 # Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
-# Start time: 17:01:40 on Jun 17,2025
+# Start time: 17:33:27 on Jun 17,2025
 # vlog -reportprogress 300 -sv -work work "+incdir+C:/Users/joseb/Documents/GitHub/CE3201_PF" C:/Users/joseb/Documents/GitHub/CE3201_PF/Adder.sv 
 # -- Compiling module Adder
 # 
 # Top level modules:
 # 	Adder
-# End time: 17:01:40 on Jun 17,2025, Elapsed time: 0:00:00
+# End time: 17:33:27 on Jun 17,2025, Elapsed time: 0:00:00
 # Errors: 0, Warnings: 0
 # vlog -sv -work work +incdir+C:/Users/joseb/Documents/GitHub/CE3201_PF {C:/Users/joseb/Documents/GitHub/CE3201_PF/Gambling_Tec.sv}
 # Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
-# Start time: 17:01:40 on Jun 17,2025
+# Start time: 17:33:27 on Jun 17,2025
 # vlog -reportprogress 300 -sv -work work "+incdir+C:/Users/joseb/Documents/GitHub/CE3201_PF" C:/Users/joseb/Documents/GitHub/CE3201_PF/Gambling_Tec.sv 
 # -- Compiling module Gambling_Tec
 # 
 # Top level modules:
 # 	Gambling_Tec
-# End time: 17:01:40 on Jun 17,2025, Elapsed time: 0:00:00
+# End time: 17:33:27 on Jun 17,2025, Elapsed time: 0:00:00
 # Errors: 0, Warnings: 0
 # vlog -sv -work work +incdir+C:/Users/joseb/Documents/GitHub/CE3201_PF {C:/Users/joseb/Documents/GitHub/CE3201_PF/Control_Unit.sv}
 # Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
-# Start time: 17:01:41 on Jun 17,2025
+# Start time: 17:33:28 on Jun 17,2025
 # vlog -reportprogress 300 -sv -work work "+incdir+C:/Users/joseb/Documents/GitHub/CE3201_PF" C:/Users/joseb/Documents/GitHub/CE3201_PF/Control_Unit.sv 
 # -- Compiling module Control_Unit
 # 
 # Top level modules:
 # 	Control_Unit
-# End time: 17:01:41 on Jun 17,2025, Elapsed time: 0:00:00
+# End time: 17:33:28 on Jun 17,2025, Elapsed time: 0:00:00
 # Errors: 0, Warnings: 0
 # vlog -sv -work work +incdir+C:/Users/joseb/Documents/GitHub/CE3201_PF {C:/Users/joseb/Documents/GitHub/CE3201_PF/Decoder.sv}
 # Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
-# Start time: 17:01:41 on Jun 17,2025
+# Start time: 17:33:28 on Jun 17,2025
 # vlog -reportprogress 300 -sv -work work "+incdir+C:/Users/joseb/Documents/GitHub/CE3201_PF" C:/Users/joseb/Documents/GitHub/CE3201_PF/Decoder.sv 
 # -- Compiling module Decoder
 # -- Compiling module PC_Logic
@@ -131,33 +131,33 @@
 # 
 # Top level modules:
 # 	Decoder
-# End time: 17:01:41 on Jun 17,2025, Elapsed time: 0:00:00
+# End time: 17:33:28 on Jun 17,2025, Elapsed time: 0:00:00
 # Errors: 0, Warnings: 0
 # vlog -sv -work work +incdir+C:/Users/joseb/Documents/GitHub/CE3201_PF {C:/Users/joseb/Documents/GitHub/CE3201_PF/ROM.sv}
 # Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
-# Start time: 17:01:41 on Jun 17,2025
+# Start time: 17:33:28 on Jun 17,2025
 # vlog -reportprogress 300 -sv -work work "+incdir+C:/Users/joseb/Documents/GitHub/CE3201_PF" C:/Users/joseb/Documents/GitHub/CE3201_PF/ROM.sv 
 # -- Compiling module ROM
 # 
 # Top level modules:
 # 	ROM
-# End time: 17:01:41 on Jun 17,2025, Elapsed time: 0:00:00
+# End time: 17:33:28 on Jun 17,2025, Elapsed time: 0:00:00
 # Errors: 0, Warnings: 0
 # 
 # vlog -sv -work work +incdir+C:/Users/joseb/Documents/GitHub/CE3201_PF {C:/Users/joseb/Documents/GitHub/CE3201_PF/tb_Gambling_Tec_Integration.sv}
 # Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
-# Start time: 17:01:41 on Jun 17,2025
+# Start time: 17:33:28 on Jun 17,2025
 # vlog -reportprogress 300 -sv -work work "+incdir+C:/Users/joseb/Documents/GitHub/CE3201_PF" C:/Users/joseb/Documents/GitHub/CE3201_PF/tb_Gambling_Tec_Integration.sv 
 # -- Compiling module tb_Gambling_Tec_Integration
 # 
 # Top level modules:
 # 	tb_Gambling_Tec_Integration
-# End time: 17:01:41 on Jun 17,2025, Elapsed time: 0:00:00
+# End time: 17:33:28 on Jun 17,2025, Elapsed time: 0:00:00
 # Errors: 0, Warnings: 0
 # 
 # vsim -t 1ps -L altera_ver -L lpm_ver -L sgate_ver -L altera_mf_ver -L altera_lnsim_ver -L cyclonev_ver -L cyclonev_hssi_ver -L cyclonev_pcie_hip_ver -L rtl_work -L work -voptargs="+acc"  tb_Gambling_Tec_Integration
 # vsim -t 1ps -L altera_ver -L lpm_ver -L sgate_ver -L altera_mf_ver -L altera_lnsim_ver -L cyclonev_ver -L cyclonev_hssi_ver -L cyclonev_pcie_hip_ver -L rtl_work -L work -voptargs=""+acc"" tb_Gambling_Tec_Integration 
-# Start time: 17:01:41 on Jun 17,2025
+# Start time: 17:33:28 on Jun 17,2025
 # Loading sv_std.std
 # Loading work.tb_Gambling_Tec_Integration
 # Loading work.Gambling_Tec
@@ -184,8 +184,8 @@
 # .main_pane.objects.interior.cs.body.tree
 # run -all
 # ==== TEST INTEGRADO DE ENSAMBLADOR ====
-# Tecla: DOWN (0x72) - Aumentar dinero
-# Tecla presionada:         114
+# Tecla: UP (0x75) - Aumentar dinero
+# Tecla presionada:         75
 # 
 # ==== RESULTADOS EN RAM ====
 # Dinero (dir 20):         x
@@ -197,5 +197,5 @@
 #    Time: 325 ns  Iteration: 1  Instance: /tb_Gambling_Tec_Integration
 # 1
 # Break in Module tb_Gambling_Tec_Integration at C:/Users/joseb/Documents/GitHub/CE3201_PF/tb_Gambling_Tec_Integration.sv line 51
-# End time: 17:04:14 on Jun 17,2025, Elapsed time: 0:02:33
+# End time: 17:36:24 on Jun 17,2025, Elapsed time: 0:02:56
 # Errors: 0, Warnings: 0
