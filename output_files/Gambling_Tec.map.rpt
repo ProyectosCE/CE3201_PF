@@ -1,32 +1,38 @@
-Analysis & Elaboration report for Gambling_Tec
-Mon Jun 16 13:42:10 2025
-Quartus Prime Version 18.1.0 Build 625 09/12/2018 SJ Lite Edition
+Analysis & Synthesis report for Gambling_Tec
+Mon Jun 16 21:52:21 2025
+Quartus Prime Version 18.1.0 Build 625 09/12/2018 SJ Standard Edition
 
 
 ---------------------
 ; Table of Contents ;
 ---------------------
   1. Legal Notice
-  2. Analysis & Elaboration Summary
-  3. Parallel Compilation
-  4. Parameter Settings for User Entity Instance: ROM:rom0
-  5. Parameter Settings for User Entity Instance: CPU:process|Mux:next_PC_inst
-  6. Parameter Settings for User Entity Instance: CPU:process|Register:PC_Register
-  7. Parameter Settings for User Entity Instance: CPU:process|Mux:RA1_inst
-  8. Parameter Settings for User Entity Instance: CPU:process|Mux:RA2_inst
-  9. Parameter Settings for User Entity Instance: CPU:process|Adder:PCPlus4_inst
- 10. Parameter Settings for User Entity Instance: CPU:process|Adder:PCPlus8_inst
- 11. Parameter Settings for User Entity Instance: CPU:process|Mux:ALUSrc_inst
- 12. Parameter Settings for User Entity Instance: CPU:process|ALU:ALU_inst
- 13. Parameter Settings for User Entity Instance: CPU:process|Mux:MemToReg_inst
- 14. Parameter Settings for User Entity Instance: CPU:process|Control_Unit:CU_Inst|Register:Register_Flag1
- 15. Parameter Settings for User Entity Instance: CPU:process|Control_Unit:CU_Inst|Register:Register_Flag2
- 16. Analysis & Elaboration Settings
- 17. Port Connectivity Checks: "CPU:process|Adder:PCPlus8_inst"
- 18. Port Connectivity Checks: "CPU:process|Adder:PCPlus4_inst"
- 19. Port Connectivity Checks: "CPU:process|Mux:RA1_inst"
- 20. Port Connectivity Checks: "CPU:process"
- 21. Analysis & Elaboration Messages
+  2. Analysis & Synthesis Summary
+  3. Analysis & Synthesis Settings
+  4. Parallel Compilation
+  5. Analysis & Synthesis Source Files Read
+  6. Analysis & Synthesis Resource Usage Summary
+  7. Analysis & Synthesis Resource Utilization by Entity
+  8. General Register Statistics
+  9. Parameter Settings for User Entity Instance: ROM:rom0
+ 10. Parameter Settings for User Entity Instance: CPU:process|Mux:next_PC_inst
+ 11. Parameter Settings for User Entity Instance: CPU:process|Register:PC_Register
+ 12. Parameter Settings for User Entity Instance: CPU:process|Mux:RA1_inst
+ 13. Parameter Settings for User Entity Instance: CPU:process|Mux:RA2_inst
+ 14. Parameter Settings for User Entity Instance: CPU:process|Adder:PCPlus4_inst
+ 15. Parameter Settings for User Entity Instance: CPU:process|Adder:PCPlus8_inst
+ 16. Parameter Settings for User Entity Instance: CPU:process|Mux:ALUSrc_inst
+ 17. Parameter Settings for User Entity Instance: CPU:process|ALU:ALU_inst
+ 18. Parameter Settings for User Entity Instance: CPU:process|Mux:MemToReg_inst
+ 19. Parameter Settings for User Entity Instance: CPU:process|Control_Unit:CU_Inst|Register:Register_Flag1
+ 20. Parameter Settings for User Entity Instance: CPU:process|Control_Unit:CU_Inst|Register:Register_Flag2
+ 21. Port Connectivity Checks: "CPU:process|Adder:PCPlus8_inst"
+ 22. Port Connectivity Checks: "CPU:process|Adder:PCPlus4_inst"
+ 23. Port Connectivity Checks: "CPU:process|Mux:RA1_inst"
+ 24. Port Connectivity Checks: "CPU:process"
+ 25. Post-Synthesis Netlist Statistics for Top Partition
+ 26. Elapsed Time Per Partition
+ 27. Analysis & Synthesis Messages
 
 
 
@@ -49,22 +55,114 @@ refer to the applicable agreement for further details.
 
 
 
-+-----------------------------------------------------------------------------+
-; Analysis & Elaboration Summary                                              ;
-+-------------------------------+---------------------------------------------+
-; Analysis & Elaboration Status ; Successful - Mon Jun 16 13:42:10 2025       ;
-; Quartus Prime Version         ; 18.1.0 Build 625 09/12/2018 SJ Lite Edition ;
-; Revision Name                 ; Gambling_Tec                                ;
-; Top-level Entity Name         ; Gambling_Tec                                ;
-; Family                        ; Cyclone V                                   ;
-; Logic utilization (in ALMs)   ; N/A until Partition Merge                   ;
-; Total registers               ; N/A until Partition Merge                   ;
-; Total pins                    ; N/A until Partition Merge                   ;
-; Total virtual pins            ; N/A until Partition Merge                   ;
-; Total block memory bits       ; N/A until Partition Merge                   ;
-; Total PLLs                    ; N/A until Partition Merge                   ;
-; Total DLLs                    ; N/A until Partition Merge                   ;
-+-------------------------------+---------------------------------------------+
++-----------------------------------------------------------------------------------+
+; Analysis & Synthesis Summary                                                      ;
++---------------------------------+-------------------------------------------------+
+; Analysis & Synthesis Status     ; Successful - Mon Jun 16 21:52:21 2025           ;
+; Quartus Prime Version           ; 18.1.0 Build 625 09/12/2018 SJ Standard Edition ;
+; Revision Name                   ; Gambling_Tec                                    ;
+; Top-level Entity Name           ; Gambling_Tec                                    ;
+; Family                          ; Cyclone V                                       ;
+; Logic utilization (in ALMs)     ; N/A                                             ;
+; Total registers                 ; 0                                               ;
+; Total pins                      ; 2                                               ;
+; Total virtual pins              ; 0                                               ;
+; Total block memory bits         ; 0                                               ;
+; Total DSP Blocks                ; 0                                               ;
+; Total HSSI RX PCSs              ; 0                                               ;
+; Total HSSI PMA RX Deserializers ; 0                                               ;
+; Total HSSI TX PCSs              ; 0                                               ;
+; Total HSSI PMA TX Serializers   ; 0                                               ;
+; Total PLLs                      ; 0                                               ;
+; Total DLLs                      ; 0                                               ;
++---------------------------------+-------------------------------------------------+
+
+
++---------------------------------------------------------------------------------------------------------------------------+
+; Analysis & Synthesis Settings                                                                                             ;
++---------------------------------------------------------------------------------+--------------------+--------------------+
+; Option                                                                          ; Setting            ; Default Value      ;
++---------------------------------------------------------------------------------+--------------------+--------------------+
+; Device                                                                          ; 5CSXFC6D6F31C6     ;                    ;
+; Top-level entity name                                                           ; Gambling_Tec       ; Gambling_Tec       ;
+; Family name                                                                     ; Cyclone V          ; Cyclone V          ;
+; Use smart compilation                                                           ; Off                ; Off                ;
+; Enable parallel Assembler and Timing Analyzer during compilation                ; On                 ; On                 ;
+; Enable compact report table                                                     ; Off                ; Off                ;
+; Restructure Multiplexers                                                        ; Auto               ; Auto               ;
+; MLAB Add Timing Constraints For Mixed-Port Feed-Through Mode Setting Don't Care ; Off                ; Off                ;
+; Create Debugging Nodes for IP Cores                                             ; Off                ; Off                ;
+; Preserve fewer node names                                                       ; On                 ; On                 ;
+; Intel FPGA IP Evaluation Mode                                                   ; Enable             ; Enable             ;
+; Verilog Version                                                                 ; Verilog_2001       ; Verilog_2001       ;
+; VHDL Version                                                                    ; VHDL_1993          ; VHDL_1993          ;
+; State Machine Processing                                                        ; Auto               ; Auto               ;
+; Safe State Machine                                                              ; Off                ; Off                ;
+; Extract Verilog State Machines                                                  ; On                 ; On                 ;
+; Extract VHDL State Machines                                                     ; On                 ; On                 ;
+; Ignore Verilog initial constructs                                               ; Off                ; Off                ;
+; Iteration limit for constant Verilog loops                                      ; 5000               ; 5000               ;
+; Iteration limit for non-constant Verilog loops                                  ; 250                ; 250                ;
+; Add Pass-Through Logic to Inferred RAMs                                         ; On                 ; On                 ;
+; Infer RAMs from Raw Logic                                                       ; On                 ; On                 ;
+; Parallel Synthesis                                                              ; On                 ; On                 ;
+; DSP Block Balancing                                                             ; Auto               ; Auto               ;
+; NOT Gate Push-Back                                                              ; On                 ; On                 ;
+; Power-Up Don't Care                                                             ; On                 ; On                 ;
+; Remove Redundant Logic Cells                                                    ; Off                ; Off                ;
+; Remove Duplicate Registers                                                      ; On                 ; On                 ;
+; Ignore CARRY Buffers                                                            ; Off                ; Off                ;
+; Ignore CASCADE Buffers                                                          ; Off                ; Off                ;
+; Ignore GLOBAL Buffers                                                           ; Off                ; Off                ;
+; Ignore ROW GLOBAL Buffers                                                       ; Off                ; Off                ;
+; Ignore LCELL Buffers                                                            ; Off                ; Off                ;
+; Ignore SOFT Buffers                                                             ; On                 ; On                 ;
+; Limit AHDL Integers to 32 Bits                                                  ; Off                ; Off                ;
+; Optimization Technique                                                          ; Balanced           ; Balanced           ;
+; Carry Chain Length                                                              ; 70                 ; 70                 ;
+; Auto Carry Chains                                                               ; On                 ; On                 ;
+; Auto Open-Drain Pins                                                            ; On                 ; On                 ;
+; Perform WYSIWYG Primitive Resynthesis                                           ; Off                ; Off                ;
+; Auto ROM Replacement                                                            ; On                 ; On                 ;
+; Auto RAM Replacement                                                            ; On                 ; On                 ;
+; Auto DSP Block Replacement                                                      ; On                 ; On                 ;
+; Auto Shift Register Replacement                                                 ; Auto               ; Auto               ;
+; Allow Shift Register Merging across Hierarchies                                 ; Auto               ; Auto               ;
+; Auto Clock Enable Replacement                                                   ; On                 ; On                 ;
+; Strict RAM Replacement                                                          ; Off                ; Off                ;
+; Allow Synchronous Control Signals                                               ; On                 ; On                 ;
+; Force Use of Synchronous Clear Signals                                          ; Off                ; Off                ;
+; Auto Resource Sharing                                                           ; Off                ; Off                ;
+; Allow Any RAM Size For Recognition                                              ; Off                ; Off                ;
+; Allow Any ROM Size For Recognition                                              ; Off                ; Off                ;
+; Allow Any Shift Register Size For Recognition                                   ; Off                ; Off                ;
+; Use LogicLock Constraints during Resource Balancing                             ; On                 ; On                 ;
+; Ignore translate_off and synthesis_off directives                               ; Off                ; Off                ;
+; Timing-Driven Synthesis                                                         ; On                 ; On                 ;
+; Report Parameter Settings                                                       ; On                 ; On                 ;
+; Report Source Assignments                                                       ; On                 ; On                 ;
+; Report Connectivity Checks                                                      ; On                 ; On                 ;
+; Ignore Maximum Fan-Out Assignments                                              ; Off                ; Off                ;
+; Synchronization Register Chain Length                                           ; 3                  ; 3                  ;
+; Power Optimization During Synthesis                                             ; Normal compilation ; Normal compilation ;
+; HDL message level                                                               ; Level2             ; Level2             ;
+; Suppress Register Optimization Related Messages                                 ; Off                ; Off                ;
+; Number of Removed Registers Reported in Synthesis Report                        ; 5000               ; 5000               ;
+; Number of Swept Nodes Reported in Synthesis Report                              ; 5000               ; 5000               ;
+; Number of Inverted Registers Reported in Synthesis Report                       ; 100                ; 100                ;
+; Clock MUX Protection                                                            ; On                 ; On                 ;
+; Auto Gated Clock Conversion                                                     ; Off                ; Off                ;
+; Block Design Naming                                                             ; Auto               ; Auto               ;
+; SDC constraint protection                                                       ; Off                ; Off                ;
+; Synthesis Effort                                                                ; Auto               ; Auto               ;
+; Shift Register Replacement - Allow Asynchronous Clear Signal                    ; On                 ; On                 ;
+; Pre-Mapping Resynthesis Optimization                                            ; Off                ; Off                ;
+; Analysis & Synthesis Message Level                                              ; Medium             ; Medium             ;
+; Disable Register Merging Across Hierarchies                                     ; Auto               ; Auto               ;
+; Resource Aware Inference For Block RAM                                          ; On                 ; On                 ;
+; Automatic Parallel Synthesis                                                    ; On                 ; On                 ;
+; Partial Reconfiguration Bitstream ID                                            ; Off                ; Off                ;
++---------------------------------------------------------------------------------+--------------------+--------------------+
 
 
 +------------------------------------------+
@@ -72,8 +170,8 @@ refer to the applicable agreement for further details.
 +----------------------------+-------------+
 ; Processors                 ; Number      ;
 +----------------------------+-------------+
-; Number detected on machine ; 16          ;
-; Maximum allowed            ; 10          ;
+; Number detected on machine ; 8           ;
+; Maximum allowed            ; 8           ;
 ;                            ;             ;
 ; Average used               ; 1.00        ;
 ; Maximum used               ; 1           ;
@@ -81,6 +179,80 @@ refer to the applicable agreement for further details.
 ; Usage by Processor         ; % Time Used ;
 ;     Processor 1            ; 100.0%      ;
 +----------------------------+-------------+
+
+
++---------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+; Analysis & Synthesis Source Files Read                                                                                                                              ;
++----------------------------------+-----------------+---------------------------------------+--------------------------------------------------------------+---------+
+; File Name with User-Entered Path ; Used in Netlist ; File Type                             ; File Name with Absolute Path                                 ; Library ;
++----------------------------------+-----------------+---------------------------------------+--------------------------------------------------------------+---------+
+; prog.hex                         ; yes             ; User Hexadecimal (Intel-Format) File  ; C:/Users/joseb/Documents/GitHub/CE3201_PF/prog.hex           ;         ;
+; ROM.sv                           ; yes             ; User SystemVerilog HDL File           ; C:/Users/joseb/Documents/GitHub/CE3201_PF/ROM.sv             ;         ;
+; Condition_Check.sv               ; yes             ; User SystemVerilog HDL File           ; C:/Users/joseb/Documents/GitHub/CE3201_PF/Condition_Check.sv ;         ;
+; Register_File.sv                 ; yes             ; User SystemVerilog HDL File           ; C:/Users/joseb/Documents/GitHub/CE3201_PF/Register_File.sv   ;         ;
+; Register.sv                      ; yes             ; User SystemVerilog HDL File           ; C:/Users/joseb/Documents/GitHub/CE3201_PF/Register.sv        ;         ;
+; Mux.sv                           ; yes             ; User SystemVerilog HDL File           ; C:/Users/joseb/Documents/GitHub/CE3201_PF/Mux.sv             ;         ;
+; Extender.sv                      ; yes             ; User SystemVerilog HDL File           ; C:/Users/joseb/Documents/GitHub/CE3201_PF/Extender.sv        ;         ;
+; Data_Memory.sv                   ; yes             ; User SystemVerilog HDL File           ; C:/Users/joseb/Documents/GitHub/CE3201_PF/Data_Memory.sv     ;         ;
+; CPU.sv                           ; yes             ; User SystemVerilog HDL File           ; C:/Users/joseb/Documents/GitHub/CE3201_PF/CPU.sv             ;         ;
+; ALU.sv                           ; yes             ; User SystemVerilog HDL File           ; C:/Users/joseb/Documents/GitHub/CE3201_PF/ALU.sv             ;         ;
+; Adder.sv                         ; yes             ; User SystemVerilog HDL File           ; C:/Users/joseb/Documents/GitHub/CE3201_PF/Adder.sv           ;         ;
+; Gambling_Tec.sv                  ; yes             ; User SystemVerilog HDL File           ; C:/Users/joseb/Documents/GitHub/CE3201_PF/Gambling_Tec.sv    ;         ;
+; Control_Unit.sv                  ; yes             ; User SystemVerilog HDL File           ; C:/Users/joseb/Documents/GitHub/CE3201_PF/Control_Unit.sv    ;         ;
+; Decoder.sv                       ; yes             ; User SystemVerilog HDL File           ; C:/Users/joseb/Documents/GitHub/CE3201_PF/Decoder.sv         ;         ;
++----------------------------------+-----------------+---------------------------------------+--------------------------------------------------------------+---------+
+
+
++-----------------------------------------------------+
+; Analysis & Synthesis Resource Usage Summary         ;
++---------------------------------------------+-------+
+; Resource                                    ; Usage ;
++---------------------------------------------+-------+
+; Estimate of Logic utilization (ALMs needed) ; 0     ;
+;                                             ;       ;
+; Combinational ALUT usage for logic          ; 0     ;
+;     -- 7 input functions                    ; 0     ;
+;     -- 6 input functions                    ; 0     ;
+;     -- 5 input functions                    ; 0     ;
+;     -- 4 input functions                    ; 0     ;
+;     -- <=3 input functions                  ; 0     ;
+;                                             ;       ;
+; Dedicated logic registers                   ; 0     ;
+;                                             ;       ;
+; I/O pins                                    ; 2     ;
+;                                             ;       ;
+; Total DSP Blocks                            ; 0     ;
+;                                             ;       ;
+; Maximum fan-out node                        ; clk   ;
+; Maximum fan-out                             ; 1     ;
+; Total fan-out                               ; 2     ;
+; Average fan-out                             ; 0.50  ;
++---------------------------------------------+-------+
+
+
++-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+; Analysis & Synthesis Resource Utilization by Entity                                                                                                                                     ;
++----------------------------+---------------------+---------------------------+-------------------+------------+------+--------------+---------------------+--------------+--------------+
+; Compilation Hierarchy Node ; Combinational ALUTs ; Dedicated Logic Registers ; Block Memory Bits ; DSP Blocks ; Pins ; Virtual Pins ; Full Hierarchy Name ; Entity Name  ; Library Name ;
++----------------------------+---------------------+---------------------------+-------------------+------------+------+--------------+---------------------+--------------+--------------+
+; |Gambling_Tec              ; 0 (0)               ; 0 (0)                     ; 0                 ; 0          ; 2    ; 0            ; |Gambling_Tec       ; Gambling_Tec ; work         ;
++----------------------------+---------------------+---------------------------+-------------------+------------+------+--------------+---------------------+--------------+--------------+
+Note: For table entries with two numbers listed, the numbers in parentheses indicate the number of resources of the given type used by the specific entity alone. The numbers listed outside of parentheses indicate the total resources of the given type used by the specific entity and all of its sub-entities in the hierarchy.
+
+
++------------------------------------------------------+
+; General Register Statistics                          ;
++----------------------------------------------+-------+
+; Statistic                                    ; Value ;
++----------------------------------------------+-------+
+; Total registers                              ; 0     ;
+; Number of registers using Synchronous Clear  ; 0     ;
+; Number of registers using Synchronous Load   ; 0     ;
+; Number of registers using Asynchronous Clear ; 0     ;
+; Number of registers using Asynchronous Load  ; 0     ;
+; Number of registers using Clock Enable       ; 0     ;
+; Number of registers using Preset             ; 0     ;
++----------------------------------------------+-------+
 
 
 +-------------------------------------------------------+
@@ -204,93 +376,6 @@ Note: In order to hide this table in the UI and the text report file, please set
 Note: In order to hide this table in the UI and the text report file, please set the "Show Parameter Settings in Synthesis Report" option in "Analysis and Synthesis Settings -> More Settings" to "Off".
 
 
-+---------------------------------------------------------------------------------------------------------------------------+
-; Analysis & Elaboration Settings                                                                                           ;
-+---------------------------------------------------------------------------------+--------------------+--------------------+
-; Option                                                                          ; Setting            ; Default Value      ;
-+---------------------------------------------------------------------------------+--------------------+--------------------+
-; Device                                                                          ; 5CSXFC6D6F31C6     ;                    ;
-; Top-level entity name                                                           ; Gambling_Tec       ; Gambling_Tec       ;
-; Family name                                                                     ; Cyclone V          ; Cyclone V          ;
-; Use smart compilation                                                           ; Off                ; Off                ;
-; Enable parallel Assembler and Timing Analyzer during compilation                ; On                 ; On                 ;
-; Enable compact report table                                                     ; Off                ; Off                ;
-; Restructure Multiplexers                                                        ; Auto               ; Auto               ;
-; MLAB Add Timing Constraints For Mixed-Port Feed-Through Mode Setting Don't Care ; Off                ; Off                ;
-; Create Debugging Nodes for IP Cores                                             ; Off                ; Off                ;
-; Preserve fewer node names                                                       ; On                 ; On                 ;
-; Intel FPGA IP Evaluation Mode                                                   ; Enable             ; Enable             ;
-; Verilog Version                                                                 ; Verilog_2001       ; Verilog_2001       ;
-; VHDL Version                                                                    ; VHDL_1993          ; VHDL_1993          ;
-; State Machine Processing                                                        ; Auto               ; Auto               ;
-; Safe State Machine                                                              ; Off                ; Off                ;
-; Extract Verilog State Machines                                                  ; On                 ; On                 ;
-; Extract VHDL State Machines                                                     ; On                 ; On                 ;
-; Ignore Verilog initial constructs                                               ; Off                ; Off                ;
-; Iteration limit for constant Verilog loops                                      ; 5000               ; 5000               ;
-; Iteration limit for non-constant Verilog loops                                  ; 250                ; 250                ;
-; Add Pass-Through Logic to Inferred RAMs                                         ; On                 ; On                 ;
-; Infer RAMs from Raw Logic                                                       ; On                 ; On                 ;
-; Parallel Synthesis                                                              ; On                 ; On                 ;
-; DSP Block Balancing                                                             ; Auto               ; Auto               ;
-; NOT Gate Push-Back                                                              ; On                 ; On                 ;
-; Power-Up Don't Care                                                             ; On                 ; On                 ;
-; Remove Redundant Logic Cells                                                    ; Off                ; Off                ;
-; Remove Duplicate Registers                                                      ; On                 ; On                 ;
-; Ignore CARRY Buffers                                                            ; Off                ; Off                ;
-; Ignore CASCADE Buffers                                                          ; Off                ; Off                ;
-; Ignore GLOBAL Buffers                                                           ; Off                ; Off                ;
-; Ignore ROW GLOBAL Buffers                                                       ; Off                ; Off                ;
-; Ignore LCELL Buffers                                                            ; Off                ; Off                ;
-; Ignore SOFT Buffers                                                             ; On                 ; On                 ;
-; Limit AHDL Integers to 32 Bits                                                  ; Off                ; Off                ;
-; Optimization Technique                                                          ; Balanced           ; Balanced           ;
-; Carry Chain Length                                                              ; 70                 ; 70                 ;
-; Auto Carry Chains                                                               ; On                 ; On                 ;
-; Auto Open-Drain Pins                                                            ; On                 ; On                 ;
-; Perform WYSIWYG Primitive Resynthesis                                           ; Off                ; Off                ;
-; Auto ROM Replacement                                                            ; On                 ; On                 ;
-; Auto RAM Replacement                                                            ; On                 ; On                 ;
-; Auto DSP Block Replacement                                                      ; On                 ; On                 ;
-; Auto Shift Register Replacement                                                 ; Auto               ; Auto               ;
-; Allow Shift Register Merging across Hierarchies                                 ; Auto               ; Auto               ;
-; Auto Clock Enable Replacement                                                   ; On                 ; On                 ;
-; Strict RAM Replacement                                                          ; Off                ; Off                ;
-; Allow Synchronous Control Signals                                               ; On                 ; On                 ;
-; Force Use of Synchronous Clear Signals                                          ; Off                ; Off                ;
-; Auto Resource Sharing                                                           ; Off                ; Off                ;
-; Allow Any RAM Size For Recognition                                              ; Off                ; Off                ;
-; Allow Any ROM Size For Recognition                                              ; Off                ; Off                ;
-; Allow Any Shift Register Size For Recognition                                   ; Off                ; Off                ;
-; Use LogicLock Constraints during Resource Balancing                             ; On                 ; On                 ;
-; Ignore translate_off and synthesis_off directives                               ; Off                ; Off                ;
-; Timing-Driven Synthesis                                                         ; On                 ; On                 ;
-; Report Parameter Settings                                                       ; On                 ; On                 ;
-; Report Source Assignments                                                       ; On                 ; On                 ;
-; Report Connectivity Checks                                                      ; On                 ; On                 ;
-; Ignore Maximum Fan-Out Assignments                                              ; Off                ; Off                ;
-; Synchronization Register Chain Length                                           ; 3                  ; 3                  ;
-; Power Optimization During Synthesis                                             ; Normal compilation ; Normal compilation ;
-; HDL message level                                                               ; Level2             ; Level2             ;
-; Suppress Register Optimization Related Messages                                 ; Off                ; Off                ;
-; Number of Removed Registers Reported in Synthesis Report                        ; 5000               ; 5000               ;
-; Number of Swept Nodes Reported in Synthesis Report                              ; 5000               ; 5000               ;
-; Number of Inverted Registers Reported in Synthesis Report                       ; 100                ; 100                ;
-; Clock MUX Protection                                                            ; On                 ; On                 ;
-; Auto Gated Clock Conversion                                                     ; Off                ; Off                ;
-; Block Design Naming                                                             ; Auto               ; Auto               ;
-; SDC constraint protection                                                       ; Off                ; Off                ;
-; Synthesis Effort                                                                ; Auto               ; Auto               ;
-; Shift Register Replacement - Allow Asynchronous Clear Signal                    ; On                 ; On                 ;
-; Pre-Mapping Resynthesis Optimization                                            ; Off                ; Off                ;
-; Analysis & Synthesis Message Level                                              ; Medium             ; Medium             ;
-; Disable Register Merging Across Hierarchies                                     ; Auto               ; Auto               ;
-; Resource Aware Inference For Block RAM                                          ; On                 ; On                 ;
-; Automatic Parallel Synthesis                                                    ; On                 ; On                 ;
-; Partial Reconfiguration Bitstream ID                                            ; Off                ; Off                ;
-+---------------------------------------------------------------------------------+--------------------+--------------------+
-
-
 +------------------------------------------------------------+
 ; Port Connectivity Checks: "CPU:process|Adder:PCPlus8_inst" ;
 +----------+-------+----------+------------------------------+
@@ -333,95 +418,124 @@ Note: In order to hide this table in the UI and the text report file, please set
 +------------+--------+----------+-------------------------------------------------------------------------------------+
 
 
-+---------------------------------+
-; Analysis & Elaboration Messages ;
-+---------------------------------+
++-----------------------------------------------------+
+; Post-Synthesis Netlist Statistics for Top Partition ;
++-------------------+---------------------------------+
+; Type              ; Count                           ;
++-------------------+---------------------------------+
+; boundary_port     ; 2                               ;
+;                   ;                                 ;
+; Max LUT depth     ; 0.00                            ;
+; Average LUT depth ; 0.00                            ;
++-------------------+---------------------------------+
+
+
++-------------------------------+
+; Elapsed Time Per Partition    ;
++----------------+--------------+
+; Partition Name ; Elapsed Time ;
++----------------+--------------+
+; Top            ; 00:00:00     ;
++----------------+--------------+
+
+
++-------------------------------+
+; Analysis & Synthesis Messages ;
++-------------------------------+
 Info: *******************************************************************
-Info: Running Quartus Prime Analysis & Elaboration
-    Info: Version 18.1.0 Build 625 09/12/2018 SJ Lite Edition
-    Info: Processing started: Mon Jun 16 13:42:03 2025
-Info: Command: quartus_map --read_settings_files=on --write_settings_files=off Gambling_Tec -c Gambling_Tec --analysis_and_elaboration
+Info: Running Quartus Prime Analysis & Synthesis
+    Info: Version 18.1.0 Build 625 09/12/2018 SJ Standard Edition
+    Info: Processing started: Mon Jun 16 21:51:55 2025
+Info: Command: quartus_map --read_settings_files=on --write_settings_files=off Gambling_Tec -c Gambling_Tec
 Warning (18236): Number of processors has not been specified which may cause overloading on shared machines.  Set the global assignment NUM_PARALLEL_PROCESSORS in your QSF to an appropriate value for best performance.
-Info (20030): Parallel compilation is enabled and will use 10 of the 10 processors detected
+Info (20030): Parallel compilation is enabled and will use 8 of the 8 processors detected
 Info (12021): Found 1 design units, including 1 entities, in source file tb_rom.sv
-    Info (12023): Found entity 1: tb_ROM File: C:/Users/jimmy/GitHub/CE3201_PF/tb_ROM.sv Line: 3
+    Info (12023): Found entity 1: tb_ROM File: C:/Users/joseb/Documents/GitHub/CE3201_PF/tb_ROM.sv Line: 3
 Info (12021): Found 1 design units, including 1 entities, in source file tb_gambling_tec_rom.sv
-    Info (12023): Found entity 1: tb_Gambling_Tec_ROM File: C:/Users/jimmy/GitHub/CE3201_PF/tb_Gambling_Tec_ROM.sv Line: 3
+    Info (12023): Found entity 1: tb_Gambling_Tec_ROM File: C:/Users/joseb/Documents/GitHub/CE3201_PF/tb_Gambling_Tec_ROM.sv Line: 3
 Info (12021): Found 1 design units, including 1 entities, in source file rom.sv
-    Info (12023): Found entity 1: ROM File: C:/Users/jimmy/GitHub/CE3201_PF/ROM.sv Line: 1
+    Info (12023): Found entity 1: ROM File: C:/Users/joseb/Documents/GitHub/CE3201_PF/ROM.sv Line: 1
 Info (12021): Found 1 design units, including 1 entities, in source file alu_deco.sv
-    Info (12023): Found entity 1: Alu_Deco File: C:/Users/jimmy/GitHub/CE3201_PF/Alu_Deco.sv Line: 1
+    Info (12023): Found entity 1: Alu_Deco File: C:/Users/joseb/Documents/GitHub/CE3201_PF/Alu_Deco.sv Line: 1
 Info (12021): Found 1 design units, including 1 entities, in source file condition_check.sv
-    Info (12023): Found entity 1: Condition_Check File: C:/Users/jimmy/GitHub/CE3201_PF/Condition_Check.sv Line: 1
+    Info (12023): Found entity 1: Condition_Check File: C:/Users/joseb/Documents/GitHub/CE3201_PF/Condition_Check.sv Line: 1
 Info (12021): Found 1 design units, including 1 entities, in source file bit_cell.sv
-    Info (12023): Found entity 1: Register32 File: C:/Users/jimmy/GitHub/CE3201_PF/Bit_cell.sv Line: 1
+    Info (12023): Found entity 1: Register32 File: C:/Users/joseb/Documents/GitHub/CE3201_PF/Bit_cell.sv Line: 1
 Info (12021): Found 1 design units, including 1 entities, in source file register_file.sv
-    Info (12023): Found entity 1: Register_File File: C:/Users/jimmy/GitHub/CE3201_PF/Register_File.sv Line: 1
+    Info (12023): Found entity 1: Register_File File: C:/Users/joseb/Documents/GitHub/CE3201_PF/Register_File.sv Line: 1
 Info (12021): Found 1 design units, including 1 entities, in source file register.sv
-    Info (12023): Found entity 1: Register File: C:/Users/jimmy/GitHub/CE3201_PF/Register.sv Line: 1
-Warning (12090): Entity "Mux" obtained from "Mux.sv" instead of from Quartus Prime megafunction library File: C:/Users/jimmy/GitHub/CE3201_PF/Mux.sv Line: 1
+    Info (12023): Found entity 1: Register File: C:/Users/joseb/Documents/GitHub/CE3201_PF/Register.sv Line: 1
+Warning (12090): Entity "Mux" obtained from "Mux.sv" instead of from Quartus Prime megafunction library File: C:/Users/joseb/Documents/GitHub/CE3201_PF/Mux.sv Line: 1
 Info (12021): Found 1 design units, including 1 entities, in source file mux.sv
-    Info (12023): Found entity 1: Mux File: C:/Users/jimmy/GitHub/CE3201_PF/Mux.sv Line: 1
+    Info (12023): Found entity 1: Mux File: C:/Users/joseb/Documents/GitHub/CE3201_PF/Mux.sv Line: 1
 Info (12021): Found 1 design units, including 1 entities, in source file instruction_memory.sv
-    Info (12023): Found entity 1: Instruction_Memory File: C:/Users/jimmy/GitHub/CE3201_PF/Instruction_Memory.sv Line: 1
+    Info (12023): Found entity 1: Instruction_Memory File: C:/Users/joseb/Documents/GitHub/CE3201_PF/Instruction_Memory.sv Line: 1
 Info (12021): Found 1 design units, including 1 entities, in source file extender.sv
-    Info (12023): Found entity 1: Extender File: C:/Users/jimmy/GitHub/CE3201_PF/Extender.sv Line: 1
+    Info (12023): Found entity 1: Extender File: C:/Users/joseb/Documents/GitHub/CE3201_PF/Extender.sv Line: 1
 Info (12021): Found 1 design units, including 1 entities, in source file data_memory.sv
-    Info (12023): Found entity 1: Data_Memory File: C:/Users/jimmy/GitHub/CE3201_PF/Data_Memory.sv Line: 1
+    Info (12023): Found entity 1: Data_Memory File: C:/Users/joseb/Documents/GitHub/CE3201_PF/Data_Memory.sv Line: 1
 Info (12021): Found 1 design units, including 1 entities, in source file cpu.sv
-    Info (12023): Found entity 1: CPU File: C:/Users/jimmy/GitHub/CE3201_PF/CPU.sv Line: 1
+    Info (12023): Found entity 1: CPU File: C:/Users/joseb/Documents/GitHub/CE3201_PF/CPU.sv Line: 1
 Info (12021): Found 1 design units, including 1 entities, in source file alu.sv
-    Info (12023): Found entity 1: ALU File: C:/Users/jimmy/GitHub/CE3201_PF/ALU.sv Line: 1
+    Info (12023): Found entity 1: ALU File: C:/Users/joseb/Documents/GitHub/CE3201_PF/ALU.sv Line: 1
 Info (12021): Found 1 design units, including 1 entities, in source file adder.sv
-    Info (12023): Found entity 1: Adder File: C:/Users/jimmy/GitHub/CE3201_PF/Adder.sv Line: 1
+    Info (12023): Found entity 1: Adder File: C:/Users/joseb/Documents/GitHub/CE3201_PF/Adder.sv Line: 1
 Info (12021): Found 1 design units, including 1 entities, in source file gambling_tec.sv
-    Info (12023): Found entity 1: Gambling_Tec File: C:/Users/jimmy/GitHub/CE3201_PF/Gambling_Tec.sv Line: 1
+    Info (12023): Found entity 1: Gambling_Tec File: C:/Users/joseb/Documents/GitHub/CE3201_PF/Gambling_Tec.sv Line: 1
 Info (12021): Found 1 design units, including 1 entities, in source file cpu_tb.sv
-    Info (12023): Found entity 1: CPU_tb File: C:/Users/jimmy/GitHub/CE3201_PF/CPU_tb.sv Line: 3
+    Info (12023): Found entity 1: CPU_tb File: C:/Users/joseb/Documents/GitHub/CE3201_PF/CPU_tb.sv Line: 3
 Info (12021): Found 1 design units, including 1 entities, in source file control_unit.sv
-    Info (12023): Found entity 1: Control_Unit File: C:/Users/jimmy/GitHub/CE3201_PF/Control_Unit.sv Line: 1
+    Info (12023): Found entity 1: Control_Unit File: C:/Users/joseb/Documents/GitHub/CE3201_PF/Control_Unit.sv Line: 1
 Info (12021): Found 1 design units, including 1 entities, in source file tb_register_file.sv
-    Info (12023): Found entity 1: tb_Register_File File: C:/Users/jimmy/GitHub/CE3201_PF/tb_Register_File.sv Line: 3
+    Info (12023): Found entity 1: tb_Register_File File: C:/Users/joseb/Documents/GitHub/CE3201_PF/tb_Register_File.sv Line: 3
 Info (12021): Found 1 design units, including 1 entities, in source file tb_control_unit.sv
-    Info (12023): Found entity 1: tb_Control_Unit File: C:/Users/jimmy/GitHub/CE3201_PF/tb_Control_Unit.sv Line: 3
+    Info (12023): Found entity 1: tb_Control_Unit File: C:/Users/joseb/Documents/GitHub/CE3201_PF/tb_Control_Unit.sv Line: 3
 Info (12021): Found 4 design units, including 4 entities, in source file decoder.sv
-    Info (12023): Found entity 1: Decoder File: C:/Users/jimmy/GitHub/CE3201_PF/Decoder.sv Line: 2
-    Info (12023): Found entity 2: PC_Logic File: C:/Users/jimmy/GitHub/CE3201_PF/Decoder.sv Line: 49
-    Info (12023): Found entity 3: Main_Decoder File: C:/Users/jimmy/GitHub/CE3201_PF/Decoder.sv Line: 60
-    Info (12023): Found entity 4: ALU_Decoder File: C:/Users/jimmy/GitHub/CE3201_PF/Decoder.sv Line: 134
+    Info (12023): Found entity 1: Decoder File: C:/Users/joseb/Documents/GitHub/CE3201_PF/Decoder.sv Line: 2
+    Info (12023): Found entity 2: PC_Logic File: C:/Users/joseb/Documents/GitHub/CE3201_PF/Decoder.sv Line: 49
+    Info (12023): Found entity 3: Main_Decoder File: C:/Users/joseb/Documents/GitHub/CE3201_PF/Decoder.sv Line: 60
+    Info (12023): Found entity 4: ALU_Decoder File: C:/Users/joseb/Documents/GitHub/CE3201_PF/Decoder.sv Line: 134
 Info (12021): Found 1 design units, including 1 entities, in source file tb_gambling_tec.sv
-    Info (12023): Found entity 1: tb_Gambling_Tec File: C:/Users/jimmy/GitHub/CE3201_PF/tb_Gambling_Tec.sv Line: 3
+    Info (12023): Found entity 1: tb_Gambling_Tec File: C:/Users/joseb/Documents/GitHub/CE3201_PF/tb_Gambling_Tec.sv Line: 3
 Info (12021): Found 1 design units, including 1 entities, in source file tb_data_memory.sv
-    Info (12023): Found entity 1: tb_Data_Memory File: C:/Users/jimmy/GitHub/CE3201_PF/tb_Data_Memory.sv Line: 3
-Warning (10236): Verilog HDL Implicit Net warning at Decoder.sv(35): created implicit net for "ALUOP" File: C:/Users/jimmy/GitHub/CE3201_PF/Decoder.sv Line: 35
+    Info (12023): Found entity 1: tb_Data_Memory File: C:/Users/joseb/Documents/GitHub/CE3201_PF/tb_Data_Memory.sv Line: 3
+Warning (10236): Verilog HDL Implicit Net warning at Decoder.sv(35): created implicit net for "ALUOP" File: C:/Users/joseb/Documents/GitHub/CE3201_PF/Decoder.sv Line: 35
 Info (12127): Elaborating entity "Gambling_Tec" for the top level hierarchy
-Info (12128): Elaborating entity "ROM" for hierarchy "ROM:rom0" File: C:/Users/jimmy/GitHub/CE3201_PF/Gambling_Tec.sv Line: 19
-Warning (10850): Verilog HDL warning at rom.sv(14): number of words (14) in memory file does not match the number of elements in the address range [0:1023] File: C:/Users/jimmy/GitHub/CE3201_PF/rom.sv Line: 14
-Warning (10030): Net "mem.data_a" at rom.sv(10) has no driver or initial value, using a default initial value '0' File: C:/Users/jimmy/GitHub/CE3201_PF/rom.sv Line: 10
-Warning (10030): Net "mem.waddr_a" at rom.sv(10) has no driver or initial value, using a default initial value '0' File: C:/Users/jimmy/GitHub/CE3201_PF/rom.sv Line: 10
-Warning (10030): Net "mem.we_a" at rom.sv(10) has no driver or initial value, using a default initial value '0' File: C:/Users/jimmy/GitHub/CE3201_PF/rom.sv Line: 10
-Info (12128): Elaborating entity "CPU" for hierarchy "CPU:process" File: C:/Users/jimmy/GitHub/CE3201_PF/Gambling_Tec.sv Line: 32
-Info (12128): Elaborating entity "Mux" for hierarchy "CPU:process|Mux:next_PC_inst" File: C:/Users/jimmy/GitHub/CE3201_PF/CPU.sv Line: 48
-Info (12128): Elaborating entity "Register" for hierarchy "CPU:process|Register:PC_Register" File: C:/Users/jimmy/GitHub/CE3201_PF/CPU.sv Line: 56
-Info (12128): Elaborating entity "Mux" for hierarchy "CPU:process|Mux:RA1_inst" File: C:/Users/jimmy/GitHub/CE3201_PF/CPU.sv Line: 63
-Info (12128): Elaborating entity "Adder" for hierarchy "CPU:process|Adder:PCPlus4_inst" File: C:/Users/jimmy/GitHub/CE3201_PF/CPU.sv Line: 76
-Info (12128): Elaborating entity "Register_File" for hierarchy "CPU:process|Register_File:Reg_file_inst" File: C:/Users/jimmy/GitHub/CE3201_PF/CPU.sv Line: 95
-Info (12128): Elaborating entity "Extender" for hierarchy "CPU:process|Extender:Extender_ins" File: C:/Users/jimmy/GitHub/CE3201_PF/CPU.sv Line: 101
-Info (12128): Elaborating entity "ALU" for hierarchy "CPU:process|ALU:ALU_inst" File: C:/Users/jimmy/GitHub/CE3201_PF/CPU.sv Line: 116
-Info (12128): Elaborating entity "Control_Unit" for hierarchy "CPU:process|Control_Unit:CU_Inst" File: C:/Users/jimmy/GitHub/CE3201_PF/CPU.sv Line: 142
-Info (12128): Elaborating entity "Decoder" for hierarchy "CPU:process|Control_Unit:CU_Inst|Decoder:decoder_inst" File: C:/Users/jimmy/GitHub/CE3201_PF/Control_Unit.sv Line: 48
-Info (12128): Elaborating entity "PC_Logic" for hierarchy "CPU:process|Control_Unit:CU_Inst|Decoder:decoder_inst|PC_Logic:pc_logic_inst" File: C:/Users/jimmy/GitHub/CE3201_PF/Decoder.sv Line: 22
-Info (12128): Elaborating entity "Main_Decoder" for hierarchy "CPU:process|Control_Unit:CU_Inst|Decoder:decoder_inst|Main_Decoder:main_decoder_inst" File: C:/Users/jimmy/GitHub/CE3201_PF/Decoder.sv Line: 36
-Warning (10270): Verilog HDL Case Statement warning at Decoder.sv(78): incomplete case statement has no default case item File: C:/Users/jimmy/GitHub/CE3201_PF/Decoder.sv Line: 78
-Info (12128): Elaborating entity "ALU_Decoder" for hierarchy "CPU:process|Control_Unit:CU_Inst|Decoder:decoder_inst|ALU_Decoder:alu_decoder_inst" File: C:/Users/jimmy/GitHub/CE3201_PF/Decoder.sv Line: 45
-Info (12128): Elaborating entity "Register" for hierarchy "CPU:process|Control_Unit:CU_Inst|Register:Register_Flag1" File: C:/Users/jimmy/GitHub/CE3201_PF/Control_Unit.sv Line: 57
-Warning (10230): Verilog HDL assignment warning at Register.sv(12): truncated value with size 10 to match size of target (2) File: C:/Users/jimmy/GitHub/CE3201_PF/Register.sv Line: 12
-Info (12128): Elaborating entity "Condition_Check" for hierarchy "CPU:process|Control_Unit:CU_Inst|Condition_Check:inst_Condition_Check" File: C:/Users/jimmy/GitHub/CE3201_PF/Control_Unit.sv Line: 72
-Info (12128): Elaborating entity "Data_Memory" for hierarchy "Data_Memory:data_mem" File: C:/Users/jimmy/GitHub/CE3201_PF/Gambling_Tec.sv Line: 41
-Info: Quartus Prime Analysis & Elaboration was successful. 0 errors, 9 warnings
-    Info: Peak virtual memory: 4792 megabytes
-    Info: Processing ended: Mon Jun 16 13:42:10 2025
-    Info: Elapsed time: 00:00:07
-    Info: Total CPU time (on all processors): 00:00:16
+Info (12128): Elaborating entity "ROM" for hierarchy "ROM:rom0" File: C:/Users/joseb/Documents/GitHub/CE3201_PF/Gambling_Tec.sv Line: 19
+Warning (10850): Verilog HDL warning at ROM.sv(14): number of words (17) in memory file does not match the number of elements in the address range [0:1023] File: C:/Users/joseb/Documents/GitHub/CE3201_PF/ROM.sv Line: 14
+Warning (10030): Net "mem.data_a" at ROM.sv(10) has no driver or initial value, using a default initial value '0' File: C:/Users/joseb/Documents/GitHub/CE3201_PF/ROM.sv Line: 10
+Warning (10030): Net "mem.waddr_a" at ROM.sv(10) has no driver or initial value, using a default initial value '0' File: C:/Users/joseb/Documents/GitHub/CE3201_PF/ROM.sv Line: 10
+Warning (10030): Net "mem.we_a" at ROM.sv(10) has no driver or initial value, using a default initial value '0' File: C:/Users/joseb/Documents/GitHub/CE3201_PF/ROM.sv Line: 10
+Info (12128): Elaborating entity "CPU" for hierarchy "CPU:process" File: C:/Users/joseb/Documents/GitHub/CE3201_PF/Gambling_Tec.sv Line: 32
+Info (12128): Elaborating entity "Mux" for hierarchy "CPU:process|Mux:next_PC_inst" File: C:/Users/joseb/Documents/GitHub/CE3201_PF/CPU.sv Line: 48
+Info (12128): Elaborating entity "Register" for hierarchy "CPU:process|Register:PC_Register" File: C:/Users/joseb/Documents/GitHub/CE3201_PF/CPU.sv Line: 56
+Info (12128): Elaborating entity "Mux" for hierarchy "CPU:process|Mux:RA1_inst" File: C:/Users/joseb/Documents/GitHub/CE3201_PF/CPU.sv Line: 63
+Info (12128): Elaborating entity "Adder" for hierarchy "CPU:process|Adder:PCPlus4_inst" File: C:/Users/joseb/Documents/GitHub/CE3201_PF/CPU.sv Line: 76
+Info (12128): Elaborating entity "Register_File" for hierarchy "CPU:process|Register_File:Reg_file_inst" File: C:/Users/joseb/Documents/GitHub/CE3201_PF/CPU.sv Line: 95
+Info (12128): Elaborating entity "Extender" for hierarchy "CPU:process|Extender:Extender_ins" File: C:/Users/joseb/Documents/GitHub/CE3201_PF/CPU.sv Line: 101
+Info (12128): Elaborating entity "ALU" for hierarchy "CPU:process|ALU:ALU_inst" File: C:/Users/joseb/Documents/GitHub/CE3201_PF/CPU.sv Line: 116
+Info (12128): Elaborating entity "Control_Unit" for hierarchy "CPU:process|Control_Unit:CU_Inst" File: C:/Users/joseb/Documents/GitHub/CE3201_PF/CPU.sv Line: 142
+Info (12128): Elaborating entity "Decoder" for hierarchy "CPU:process|Control_Unit:CU_Inst|Decoder:decoder_inst" File: C:/Users/joseb/Documents/GitHub/CE3201_PF/Control_Unit.sv Line: 48
+Info (12128): Elaborating entity "PC_Logic" for hierarchy "CPU:process|Control_Unit:CU_Inst|Decoder:decoder_inst|PC_Logic:pc_logic_inst" File: C:/Users/joseb/Documents/GitHub/CE3201_PF/Decoder.sv Line: 22
+Info (12128): Elaborating entity "Main_Decoder" for hierarchy "CPU:process|Control_Unit:CU_Inst|Decoder:decoder_inst|Main_Decoder:main_decoder_inst" File: C:/Users/joseb/Documents/GitHub/CE3201_PF/Decoder.sv Line: 36
+Warning (10270): Verilog HDL Case Statement warning at Decoder.sv(78): incomplete case statement has no default case item File: C:/Users/joseb/Documents/GitHub/CE3201_PF/Decoder.sv Line: 78
+Info (12128): Elaborating entity "ALU_Decoder" for hierarchy "CPU:process|Control_Unit:CU_Inst|Decoder:decoder_inst|ALU_Decoder:alu_decoder_inst" File: C:/Users/joseb/Documents/GitHub/CE3201_PF/Decoder.sv Line: 45
+Info (12128): Elaborating entity "Register" for hierarchy "CPU:process|Control_Unit:CU_Inst|Register:Register_Flag1" File: C:/Users/joseb/Documents/GitHub/CE3201_PF/Control_Unit.sv Line: 57
+Warning (10230): Verilog HDL assignment warning at Register.sv(12): truncated value with size 10 to match size of target (2) File: C:/Users/joseb/Documents/GitHub/CE3201_PF/Register.sv Line: 12
+Info (12128): Elaborating entity "Condition_Check" for hierarchy "CPU:process|Control_Unit:CU_Inst|Condition_Check:inst_Condition_Check" File: C:/Users/joseb/Documents/GitHub/CE3201_PF/Control_Unit.sv Line: 72
+Info (12128): Elaborating entity "Data_Memory" for hierarchy "Data_Memory:data_mem" File: C:/Users/joseb/Documents/GitHub/CE3201_PF/Gambling_Tec.sv Line: 41
+Info (16010): Generating hard_block partition "hard_block:auto_generated_inst"
+    Info (16011): Adding 0 node(s), including 0 DDIO, 0 PLL, 0 transceiver and 0 LCELL
+Warning (21074): Design contains 2 input pin(s) that do not drive logic
+    Warning (15610): No output dependent on input pin "clk" File: C:/Users/joseb/Documents/GitHub/CE3201_PF/Gambling_Tec.sv Line: 2
+    Warning (15610): No output dependent on input pin "rst" File: C:/Users/joseb/Documents/GitHub/CE3201_PF/Gambling_Tec.sv Line: 4
+Info (21057): Implemented 2 device resources after synthesis - the final resource count might be different
+    Info (21058): Implemented 2 input pins
+    Info (21059): Implemented 0 output pins
+Info: Quartus Prime Analysis & Synthesis was successful. 0 errors, 12 warnings
+    Info: Peak virtual memory: 4800 megabytes
+    Info: Processing ended: Mon Jun 16 21:52:21 2025
+    Info: Elapsed time: 00:00:26
+    Info: Total CPU time (on all processors): 00:01:00
 
 

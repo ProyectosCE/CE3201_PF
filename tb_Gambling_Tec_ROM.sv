@@ -2,7 +2,7 @@
 
 module tb_Gambling_Tec_ROM;
 
-    logic clk, rst;
+    reg clk, rst;
 
     // Instancia del DUT
     Gambling_Tec dut (
@@ -16,58 +16,69 @@ module tb_Gambling_Tec_ROM;
         forever #5 clk = ~clk;
     end
 
+    integer i;
+    integer r;
+
     initial begin
-        $display("==== TEST LDR + ADD EXTENDIDO DESDE ROM ====");
+        $display("==== TEST GENERAL CPU DESDE ROM ====");
         $dumpfile("tb_Gambling_Tec_ROM.vcd");
         $dumpvars(0, tb_Gambling_Tec_ROM);
 
         // Reset sincrónico
         rst = 1;
-        repeat (3) @(posedge clk);
+        #20;
         rst = 0;
 
-        // Inicializar registros
-        for (int i = 0; i < 13; i++) begin
+        // Inicializar todos los registros a 0
+        for (i = 0; i <= 12; i = i + 1)
             dut.process.Reg_file_inst.rf[i] = 32'd0;
-        end
 
-        // Inicializar RAM con valores esperados
-        dut.data_mem.RAM[0] = 32'd10;   // [R2 + #0]
-        dut.data_mem.RAM[1] = 32'd20;   // [R2 + #4]
-        dut.data_mem.RAM[2] = 32'd30;   // [R2 + #8]
-        dut.data_mem.RAM[3] = 32'd40;   // [R2 + #12]
-        dut.data_mem.RAM[4] = 32'd50;   // [R2 + #16]
+        // Establecer dirección base de memoria en R2
+        dut.process.Reg_file_inst.rf[2] = 32'd0;
 
-        $display("=== Estado inicial ===");
-        for (int i = 0; i < 5; i++)
+        // Inicializar RAM
+        dut.data_mem.RAM[0] = 32'd10;
+        dut.data_mem.RAM[1] = 32'd20;
+        dut.data_mem.RAM[2] = 32'd30;
+        dut.data_mem.RAM[3] = 32'd40;
+        dut.data_mem.RAM[4] = 32'd50;
+        dut.data_mem.RAM[5] = 32'd60;
+        dut.data_mem.RAM[6] = 32'd70;
+
+        $display("=== Estado inicial de RAM ===");
+        for (i = 0; i < 7; i = i + 1)
             $display("RAM[%0d] = %0d", i, dut.data_mem.RAM[i]);
-        $display("======================");
+        $display("=============================");
 
-        // Ejecución paso a paso
-        for (int i = 0; i < 30; i++) begin
+        // Ejecución ciclo a ciclo
+        for (i = 0; i < 40; i = i + 1) begin
             @(posedge clk);
             $display("Ciclo %0d:", i);
             $display("  PC                 = %0d", dut.pc);
             $display("  Instr              = 0x%08x", dut.instr);
+            $display("  ALUControl         = %0d", dut.process.ALUControl);
             $display("  ALUResult (addr)   = %0d", dut.process.ALUResult);
             $display("  ReadData           = %0d", dut.process.ReadData);
-            $display("  RegWrite           = %0b", dut.process.RegWrite);
             $display("  Result             = %0d", dut.process.Result);
+            $display("  RegWrite           = %0b", dut.process.RegWrite);
+            $display("  MemWrite           = %0b", dut.process.MemWrite);
+            $display("  PCSrc              = %0b", dut.process.PCSrc);
+            $display("  Flags              = %0b", dut.process.AluFlags);
 
-            // Imprimir los registros R1–R12
-            for (int r = 1; r <= 12; r++) begin
+            for (r = 0; r <= 12; r = r + 1)
                 $display("  R%0d = %0d", r, dut.process.Reg_file_inst.rf[r]);
-            end
 
             $display("-----------------------------");
         end
 
-        // Validación mínima
+        // Validación básica
         $display("=== RESULTADO FINAL ===");
-        $display("  R6 = %0d (esperado: 80)", dut.process.Reg_file_inst.rf[6]);
-        $display("  R12 = %0d (verifica ADD final)", dut.process.Reg_file_inst.rf[12]);
+        for (r = 0; r <= 12; r = r + 1)
+            $display("  R%0d = %0d", r, dut.process.Reg_file_inst.rf[r]);
 
-        if (dut.process.Reg_file_inst.rf[12] != 0)
+        $display("  RAM[7] (si STR se ejecuto) = %0d", dut.data_mem.RAM[7]);
+
+        if (dut.process.Reg_file_inst.rf[9] != 0)
             $display("TEST PASO CORRECTAMENTE");
         else
             $display("TEST FALLO");
