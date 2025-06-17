@@ -18,6 +18,17 @@ module Gambling_Tec(
 	 // Señal de teclado presionado
 	 logic [7:0] key_code;
 	 //logic key_ready;
+	 wire [31:0] key_fixed = {24'd0, key_code};
+	 
+	 // Control Teclado
+	 Ps2_Key ps2_inst(
+		 .clk(clk), 
+		 .ps2_clk(PS2_CLK), 
+		 .ps2_data(DATA_PS2), 
+       .WriteEn(key_ready),
+       .Code_Key(key_code) 
+         
+	 );
 
     // ROM de instrucciones
     ROM #(.AW(10)) rom0 (
@@ -39,23 +50,23 @@ module Gambling_Tec(
     );
 
     // Memoria de datos
-    Data_Memory data_mem(
-        .clk(clk),
-        .we(mem_write),
-        .a(alu_result),
-        .wd(write_data),
-        .rd(read_data)
-    );
+	Data_Memory data_mem_inst(
+		 .clk(clk),
+
+		 // Acceso principal
+		 .we(mem_write),
+		 .a(alu_result),
+		 .wd(write_data),
+		 .rd(read_data),
+
+		 // Acceso desde teclado (escritura)
+		 .we_kb(key_ready),
+		 .addr_kb(32'h0000_0000),
+		 .data_kb(key_fixed),
+
+		 // Acceso desde VGA (lectura)
+		 .addr_vga(),
+		 .data_vga()
+	);
 	 
-	 // Control Teclado
-	 Ps2_Key ps2_inst(
-		 .clk(clk), 
-		 .ps2_clk(PS2_CLK), 
-		 .ps2_data(DATA_PS2), 
-         .WriteEn(key_ready),
-         .Code_Key(key_code) 
-         
-	 );
-
-
 endmodule

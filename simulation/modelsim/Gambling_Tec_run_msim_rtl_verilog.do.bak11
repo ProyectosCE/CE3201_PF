@@ -18,7 +18,6 @@ vlog -sv -work work +incdir+C:/Users/jimmy/GitHub/CE3201_PF {C:/Users/jimmy/GitH
 vlog -sv -work work +incdir+C:/Users/jimmy/GitHub/CE3201_PF {C:/Users/jimmy/GitHub/CE3201_PF/Control_Unit.sv}
 vlog -sv -work work +incdir+C:/Users/jimmy/GitHub/CE3201_PF {C:/Users/jimmy/GitHub/CE3201_PF/Decoder.sv}
 vlog -sv -work work +incdir+C:/Users/jimmy/GitHub/CE3201_PF {C:/Users/jimmy/GitHub/CE3201_PF/Ps2_Key.sv}
-vlog -sv -work work +incdir+C:/Users/jimmy/GitHub/CE3201_PF {C:/Users/jimmy/GitHub/CE3201_PF/Keycode_Store.sv}
 vlog -sv -work work +incdir+C:/Users/jimmy/GitHub/CE3201_PF {C:/Users/jimmy/GitHub/CE3201_PF/ROM.sv}
 
 vlog -sv -work work +incdir+C:/Users/jimmy/GitHub/CE3201_PF {C:/Users/jimmy/GitHub/CE3201_PF/tb_Keycode_Store.sv}

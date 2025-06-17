@@ -7,8 +7,8 @@ module Ps2_Key(
 logic [7:0] KEY_ENTER     = 8'h5A; // Enter
 logic [7:0] KEY_SPACE     = 8'h29; // Espacio
 logic [7:0] KEY_BACKSPACE = 8'h66; // Retroceso (Backspace)
-logic [7:0] ARROW_LEFT    = 8'h6B; // Flecha izquierda
-logic [7:0] ARROW_RIGHT   = 8'h74; // Flecha derecha
+logic [7:0] ARROW_UP    = 8'h75; // Flecha arriba
+logic [7:0] ARROW_DOWN   = 8'h72; // Flecha abajo
 
 
  logic key_press;
@@ -133,7 +133,7 @@ logic [7:0] ARROW_RIGHT   = 8'h74; // Flecha derecha
  //to update the outputs
  always @(posedge clk)begin
  
-  if (key_code == ARROW_LEFT | key_code == KEY_ENTER | key_code == KEY_BACKSPACE | key_code == KEY_SPACE | key_code == ARROW_RIGHT) begin
+  if (key_code == ARROW_UP | key_code == KEY_ENTER | key_code == KEY_BACKSPACE | key_code == KEY_SPACE | key_code == ARROW_DOWN) begin
    key_press = 1'b1;
    
   end else begin

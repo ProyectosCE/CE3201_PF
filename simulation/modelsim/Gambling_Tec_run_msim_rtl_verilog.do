@@ -18,12 +18,11 @@ vlog -sv -work work +incdir+C:/Users/jimmy/GitHub/CE3201_PF {C:/Users/jimmy/GitH
 vlog -sv -work work +incdir+C:/Users/jimmy/GitHub/CE3201_PF {C:/Users/jimmy/GitHub/CE3201_PF/Control_Unit.sv}
 vlog -sv -work work +incdir+C:/Users/jimmy/GitHub/CE3201_PF {C:/Users/jimmy/GitHub/CE3201_PF/Decoder.sv}
 vlog -sv -work work +incdir+C:/Users/jimmy/GitHub/CE3201_PF {C:/Users/jimmy/GitHub/CE3201_PF/Ps2_Key.sv}
-vlog -sv -work work +incdir+C:/Users/jimmy/GitHub/CE3201_PF {C:/Users/jimmy/GitHub/CE3201_PF/Keycode_Store.sv}
 vlog -sv -work work +incdir+C:/Users/jimmy/GitHub/CE3201_PF {C:/Users/jimmy/GitHub/CE3201_PF/ROM.sv}
 
-vlog -sv -work work +incdir+C:/Users/jimmy/GitHub/CE3201_PF {C:/Users/jimmy/GitHub/CE3201_PF/tb_Keycode_Store.sv}
+vlog -sv -work work +incdir+C:/Users/jimmy/GitHub/CE3201_PF {C:/Users/jimmy/GitHub/CE3201_PF/tb_Gambling_Tec.sv}
 
-vsim -t 1ps -L altera_ver -L lpm_ver -L sgate_ver -L altera_mf_ver -L altera_lnsim_ver -L cyclonev_ver -L cyclonev_hssi_ver -L cyclonev_pcie_hip_ver -L rtl_work -L work -voptargs="+acc"  tb_Keycode_Store
+vsim -t 1ps -L altera_ver -L lpm_ver -L sgate_ver -L altera_mf_ver -L altera_lnsim_ver -L cyclonev_ver -L cyclonev_hssi_ver -L cyclonev_pcie_hip_ver -L rtl_work -L work -voptargs="+acc"  tb_Gambling_Tec
 
 add wave *
 view structure
