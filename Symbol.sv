@@ -23,7 +23,7 @@ module Symbol #(
             2'd0: begin visible = a; R = 8'H00; G = 8'H00; B = 8'HFF;    end
             2'd1: begin visible = b; R = 8'HFF; G = 8'H00; B = 8'HFF;    end
             2'd2: begin visible = c; R = 8'H00; G = 8'HFF; B = 8'H00;    end
-            2'd3: begin visible = d; R = 8'H00; G = 8'H00; B = 8'H00;    end
+            2'd3: begin visible = d; R = 8'HF2; G = 8'H6b; B = 8'H0F;    end
             default: begin visible = 1'b0 ; R = 8'H00; G = 8'H00; B = 8'H00;  end
         endcase
     end

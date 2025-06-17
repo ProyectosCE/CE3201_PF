@@ -80,7 +80,7 @@ logic [3:0] numb2;
 logic [3:0] numb3;
 
 deco_BDS deco(
-.Num(10'd198),
+.Num(10'd777),
 .numb1(numb1),
 .numb2(numb2),
 .numb3(numb3)
@@ -172,7 +172,7 @@ Column #(
 );
 
 logic atras_slot;
-
+logic atras_slot_som;
 
 
 
@@ -446,7 +446,7 @@ always_comb begin
         R = 8'hFF;
         G = 8'hFF;
         B = 8'h00;
-	end else if( column1| column2 | column3 ) begin
+	end else if( column1| column2 | column3  ) begin
         R = 8'hFF;
         G = 8'hFF;
         B = 8'h00;

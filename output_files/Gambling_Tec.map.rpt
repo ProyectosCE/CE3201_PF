@@ -1,5 +1,5 @@
 Analysis & Synthesis report for Gambling_Tec
-Mon Jun 16 19:03:59 2025
+Tue Jun 17 00:44:58 2025
 Quartus Prime Version 18.1.0 Build 625 09/12/2018 SJ Lite Edition
 
 
@@ -192,7 +192,7 @@ refer to the applicable agreement for further details.
 +-------------------------------------------------------------------------------+
 ; Analysis & Synthesis Summary                                                  ;
 +---------------------------------+---------------------------------------------+
-; Analysis & Synthesis Status     ; Successful - Mon Jun 16 19:03:59 2025       ;
+; Analysis & Synthesis Status     ; Successful - Tue Jun 17 00:44:58 2025       ;
 ; Quartus Prime Version           ; 18.1.0 Build 625 09/12/2018 SJ Lite Edition ;
 ; Revision Name                   ; Gambling_Tec                                ;
 ; Top-level Entity Name           ; Gambling_Tec                                ;
@@ -363,14 +363,14 @@ refer to the applicable agreement for further details.
 +---------------------------------------------+------------------------------------------------+
 ; Resource                                    ; Usage                                          ;
 +---------------------------------------------+------------------------------------------------+
-; Estimate of Logic utilization (ALMs needed) ; 339                                            ;
+; Estimate of Logic utilization (ALMs needed) ; 334                                            ;
 ;                                             ;                                                ;
-; Combinational ALUT usage for logic          ; 605                                            ;
-;     -- 7 input functions                    ; 10                                             ;
-;     -- 6 input functions                    ; 59                                             ;
-;     -- 5 input functions                    ; 127                                            ;
+; Combinational ALUT usage for logic          ; 589                                            ;
+;     -- 7 input functions                    ; 9                                              ;
+;     -- 6 input functions                    ; 67                                             ;
+;     -- 5 input functions                    ; 131                                            ;
 ;     -- 4 input functions                    ; 108                                            ;
-;     -- <=3 input functions                  ; 301                                            ;
+;     -- <=3 input functions                  ; 274                                            ;
 ;                                             ;                                                ;
 ; Dedicated logic registers                   ; 44                                             ;
 ;                                             ;                                                ;
@@ -379,9 +379,9 @@ refer to the applicable agreement for further details.
 ; Total DSP Blocks                            ; 0                                              ;
 ;                                             ;                                                ;
 ; Maximum fan-out node                        ; Vga_Controller:vga_control|Register:reg_x|Q[5] ;
-; Maximum fan-out                             ; 72                                             ;
-; Total fan-out                               ; 2431                                           ;
-; Average fan-out                             ; 3.13                                           ;
+; Maximum fan-out                             ; 65                                             ;
+; Total fan-out                               ; 2413                                           ;
+; Average fan-out                             ; 3.17                                           ;
 +---------------------------------------------+------------------------------------------------+
 
 
@@ -390,39 +390,39 @@ refer to the applicable agreement for further details.
 +----------------------------------------------+---------------------+---------------------------+-------------------+------------+------+--------------+------------------------------------------------------------------------------------------------------------------------------------------------------+---------------------+--------------+
 ; Compilation Hierarchy Node                   ; Combinational ALUTs ; Dedicated Logic Registers ; Block Memory Bits ; DSP Blocks ; Pins ; Virtual Pins ; Full Hierarchy Name                                                                                                                                  ; Entity Name         ; Library Name ;
 +----------------------------------------------+---------------------+---------------------------+-------------------+------------+------+--------------+------------------------------------------------------------------------------------------------------------------------------------------------------+---------------------+--------------+
-; |Gambling_Tec                                ; 605 (0)             ; 44 (0)                    ; 0                 ; 0          ; 64   ; 0            ; |Gambling_Tec                                                                                                                                        ; Gambling_Tec        ; work         ;
-;    |Vga_Controller:vga_control|              ; 604 (127)           ; 43 (0)                    ; 0                 ; 0          ; 0    ; 0            ; |Gambling_Tec|Vga_Controller:vga_control                                                                                                             ; Vga_Controller      ; work         ;
-;       |Button:Btn1|                          ; 7 (0)               ; 0 (0)                     ; 0                 ; 0          ; 0    ; 0            ; |Gambling_Tec|Vga_Controller:vga_control|Button:Btn1                                                                                                 ; Button              ; work         ;
-;          |Square_Area:Cua_Btn_sombra|        ; 2 (2)               ; 0 (0)                     ; 0                 ; 0          ; 0    ; 0            ; |Gambling_Tec|Vga_Controller:vga_control|Button:Btn1|Square_Area:Cua_Btn_sombra                                                                      ; Square_Area         ; work         ;
-;          |Square_Area:Cua_Btn|               ; 5 (5)               ; 0 (0)                     ; 0                 ; 0          ; 0    ; 0            ; |Gambling_Tec|Vga_Controller:vga_control|Button:Btn1|Square_Area:Cua_Btn                                                                             ; Square_Area         ; work         ;
-;       |Button:Btn2|                          ; 3 (0)               ; 0 (0)                     ; 0                 ; 0          ; 0    ; 0            ; |Gambling_Tec|Vga_Controller:vga_control|Button:Btn2                                                                                                 ; Button              ; work         ;
-;          |Square_Area:Cua_Btn_sombra|        ; 3 (3)               ; 0 (0)                     ; 0                 ; 0          ; 0    ; 0            ; |Gambling_Tec|Vga_Controller:vga_control|Button:Btn2|Square_Area:Cua_Btn_sombra                                                                      ; Square_Area         ; work         ;
-;       |Button:Btn3|                          ; 4 (0)               ; 0 (0)                     ; 0                 ; 0          ; 0    ; 0            ; |Gambling_Tec|Vga_Controller:vga_control|Button:Btn3                                                                                                 ; Button              ; work         ;
+; |Gambling_Tec                                ; 589 (0)             ; 44 (0)                    ; 0                 ; 0          ; 64   ; 0            ; |Gambling_Tec                                                                                                                                        ; Gambling_Tec        ; work         ;
+;    |Vga_Controller:vga_control|              ; 588 (122)           ; 43 (0)                    ; 0                 ; 0          ; 0    ; 0            ; |Gambling_Tec|Vga_Controller:vga_control                                                                                                             ; Vga_Controller      ; work         ;
+;       |Button:Btn1|                          ; 14 (0)              ; 0 (0)                     ; 0                 ; 0          ; 0    ; 0            ; |Gambling_Tec|Vga_Controller:vga_control|Button:Btn1                                                                                                 ; Button              ; work         ;
+;          |Square_Area:Cua_Btn_sombra|        ; 8 (8)               ; 0 (0)                     ; 0                 ; 0          ; 0    ; 0            ; |Gambling_Tec|Vga_Controller:vga_control|Button:Btn1|Square_Area:Cua_Btn_sombra                                                                      ; Square_Area         ; work         ;
+;          |Square_Area:Cua_Btn|               ; 6 (6)               ; 0 (0)                     ; 0                 ; 0          ; 0    ; 0            ; |Gambling_Tec|Vga_Controller:vga_control|Button:Btn1|Square_Area:Cua_Btn                                                                             ; Square_Area         ; work         ;
+;       |Button:Btn2|                          ; 2 (0)               ; 0 (0)                     ; 0                 ; 0          ; 0    ; 0            ; |Gambling_Tec|Vga_Controller:vga_control|Button:Btn2                                                                                                 ; Button              ; work         ;
+;          |Square_Area:Cua_Btn_sombra|        ; 2 (2)               ; 0 (0)                     ; 0                 ; 0          ; 0    ; 0            ; |Gambling_Tec|Vga_Controller:vga_control|Button:Btn2|Square_Area:Cua_Btn_sombra                                                                      ; Square_Area         ; work         ;
+;       |Button:Btn3|                          ; 3 (0)               ; 0 (0)                     ; 0                 ; 0          ; 0    ; 0            ; |Gambling_Tec|Vga_Controller:vga_control|Button:Btn3                                                                                                 ; Button              ; work         ;
 ;          |Square_Area:Cua_Btn_sombra|        ; 1 (1)               ; 0 (0)                     ; 0                 ; 0          ; 0    ; 0            ; |Gambling_Tec|Vga_Controller:vga_control|Button:Btn3|Square_Area:Cua_Btn_sombra                                                                      ; Square_Area         ; work         ;
-;          |Square_Area:Cua_Btn|               ; 3 (3)               ; 0 (0)                     ; 0                 ; 0          ; 0    ; 0            ; |Gambling_Tec|Vga_Controller:vga_control|Button:Btn3|Square_Area:Cua_Btn                                                                             ; Square_Area         ; work         ;
-;       |Column:c1|                            ; 36 (0)              ; 0 (0)                     ; 0                 ; 0          ; 0    ; 0            ; |Gambling_Tec|Vga_Controller:vga_control|Column:c1                                                                                                   ; Column              ; work         ;
-;          |Square_Area:cua_D2|                ; 9 (9)               ; 0 (0)                     ; 0                 ; 0          ; 0    ; 0            ; |Gambling_Tec|Vga_Controller:vga_control|Column:c1|Square_Area:cua_D2                                                                                ; Square_Area         ; work         ;
-;          |Square_Area:cua_D3|                ; 4 (4)               ; 0 (0)                     ; 0                 ; 0          ; 0    ; 0            ; |Gambling_Tec|Vga_Controller:vga_control|Column:c1|Square_Area:cua_D3                                                                                ; Square_Area         ; work         ;
+;          |Square_Area:Cua_Btn|               ; 2 (2)               ; 0 (0)                     ; 0                 ; 0          ; 0    ; 0            ; |Gambling_Tec|Vga_Controller:vga_control|Button:Btn3|Square_Area:Cua_Btn                                                                             ; Square_Area         ; work         ;
+;       |Column:c1|                            ; 38 (0)              ; 0 (0)                     ; 0                 ; 0          ; 0    ; 0            ; |Gambling_Tec|Vga_Controller:vga_control|Column:c1                                                                                                   ; Column              ; work         ;
+;          |Square_Area:cua_D2|                ; 10 (10)             ; 0 (0)                     ; 0                 ; 0          ; 0    ; 0            ; |Gambling_Tec|Vga_Controller:vga_control|Column:c1|Square_Area:cua_D2                                                                                ; Square_Area         ; work         ;
+;          |Square_Area:cua_D3|                ; 3 (3)               ; 0 (0)                     ; 0                 ; 0          ; 0    ; 0            ; |Gambling_Tec|Vga_Controller:vga_control|Column:c1|Square_Area:cua_D3                                                                                ; Square_Area         ; work         ;
 ;          |Square_Area:cua_D4|                ; 4 (4)               ; 0 (0)                     ; 0                 ; 0          ; 0    ; 0            ; |Gambling_Tec|Vga_Controller:vga_control|Column:c1|Square_Area:cua_D4                                                                                ; Square_Area         ; work         ;
 ;          |Square_Area:cua_D|                 ; 7 (7)               ; 0 (0)                     ; 0                 ; 0          ; 0    ; 0            ; |Gambling_Tec|Vga_Controller:vga_control|Column:c1|Square_Area:cua_D                                                                                 ; Square_Area         ; work         ;
-;          |Square_Area:sombra|                ; 12 (12)             ; 0 (0)                     ; 0                 ; 0          ; 0    ; 0            ; |Gambling_Tec|Vga_Controller:vga_control|Column:c1|Square_Area:sombra                                                                                ; Square_Area         ; work         ;
-;       |Column:c2|                            ; 13 (0)              ; 0 (0)                     ; 0                 ; 0          ; 0    ; 0            ; |Gambling_Tec|Vga_Controller:vga_control|Column:c2                                                                                                   ; Column              ; work         ;
+;          |Square_Area:sombra|                ; 14 (14)             ; 0 (0)                     ; 0                 ; 0          ; 0    ; 0            ; |Gambling_Tec|Vga_Controller:vga_control|Column:c1|Square_Area:sombra                                                                                ; Square_Area         ; work         ;
+;       |Column:c2|                            ; 11 (0)              ; 0 (0)                     ; 0                 ; 0          ; 0    ; 0            ; |Gambling_Tec|Vga_Controller:vga_control|Column:c2                                                                                                   ; Column              ; work         ;
 ;          |Square_Area:cua_D2|                ; 1 (1)               ; 0 (0)                     ; 0                 ; 0          ; 0    ; 0            ; |Gambling_Tec|Vga_Controller:vga_control|Column:c2|Square_Area:cua_D2                                                                                ; Square_Area         ; work         ;
 ;          |Square_Area:cua_D3|                ; 4 (4)               ; 0 (0)                     ; 0                 ; 0          ; 0    ; 0            ; |Gambling_Tec|Vga_Controller:vga_control|Column:c2|Square_Area:cua_D3                                                                                ; Square_Area         ; work         ;
-;          |Square_Area:cua_D4|                ; 4 (4)               ; 0 (0)                     ; 0                 ; 0          ; 0    ; 0            ; |Gambling_Tec|Vga_Controller:vga_control|Column:c2|Square_Area:cua_D4                                                                                ; Square_Area         ; work         ;
+;          |Square_Area:cua_D4|                ; 3 (3)               ; 0 (0)                     ; 0                 ; 0          ; 0    ; 0            ; |Gambling_Tec|Vga_Controller:vga_control|Column:c2|Square_Area:cua_D4                                                                                ; Square_Area         ; work         ;
 ;          |Square_Area:cua_D|                 ; 1 (1)               ; 0 (0)                     ; 0                 ; 0          ; 0    ; 0            ; |Gambling_Tec|Vga_Controller:vga_control|Column:c2|Square_Area:cua_D                                                                                 ; Square_Area         ; work         ;
-;          |Square_Area:sombra|                ; 3 (3)               ; 0 (0)                     ; 0                 ; 0          ; 0    ; 0            ; |Gambling_Tec|Vga_Controller:vga_control|Column:c2|Square_Area:sombra                                                                                ; Square_Area         ; work         ;
-;       |Column:c3|                            ; 23 (0)              ; 0 (0)                     ; 0                 ; 0          ; 0    ; 0            ; |Gambling_Tec|Vga_Controller:vga_control|Column:c3                                                                                                   ; Column              ; work         ;
-;          |Square_Area:cua_D2|                ; 4 (4)               ; 0 (0)                     ; 0                 ; 0          ; 0    ; 0            ; |Gambling_Tec|Vga_Controller:vga_control|Column:c3|Square_Area:cua_D2                                                                                ; Square_Area         ; work         ;
+;          |Square_Area:sombra|                ; 2 (2)               ; 0 (0)                     ; 0                 ; 0          ; 0    ; 0            ; |Gambling_Tec|Vga_Controller:vga_control|Column:c2|Square_Area:sombra                                                                                ; Square_Area         ; work         ;
+;       |Column:c3|                            ; 20 (0)              ; 0 (0)                     ; 0                 ; 0          ; 0    ; 0            ; |Gambling_Tec|Vga_Controller:vga_control|Column:c3                                                                                                   ; Column              ; work         ;
+;          |Square_Area:cua_D2|                ; 3 (3)               ; 0 (0)                     ; 0                 ; 0          ; 0    ; 0            ; |Gambling_Tec|Vga_Controller:vga_control|Column:c3|Square_Area:cua_D2                                                                                ; Square_Area         ; work         ;
 ;          |Square_Area:cua_D3|                ; 6 (6)               ; 0 (0)                     ; 0                 ; 0          ; 0    ; 0            ; |Gambling_Tec|Vga_Controller:vga_control|Column:c3|Square_Area:cua_D3                                                                                ; Square_Area         ; work         ;
-;          |Square_Area:cua_D4|                ; 5 (5)               ; 0 (0)                     ; 0                 ; 0          ; 0    ; 0            ; |Gambling_Tec|Vga_Controller:vga_control|Column:c3|Square_Area:cua_D4                                                                                ; Square_Area         ; work         ;
-;          |Square_Area:cua_D|                 ; 3 (3)               ; 0 (0)                     ; 0                 ; 0          ; 0    ; 0            ; |Gambling_Tec|Vga_Controller:vga_control|Column:c3|Square_Area:cua_D                                                                                 ; Square_Area         ; work         ;
+;          |Square_Area:cua_D4|                ; 4 (4)               ; 0 (0)                     ; 0                 ; 0          ; 0    ; 0            ; |Gambling_Tec|Vga_Controller:vga_control|Column:c3|Square_Area:cua_D4                                                                                ; Square_Area         ; work         ;
+;          |Square_Area:cua_D|                 ; 2 (2)               ; 0 (0)                     ; 0                 ; 0          ; 0    ; 0            ; |Gambling_Tec|Vga_Controller:vga_control|Column:c3|Square_Area:cua_D                                                                                 ; Square_Area         ; work         ;
 ;          |Square_Area:sombra|                ; 5 (5)               ; 0 (0)                     ; 0                 ; 0          ; 0    ; 0            ; |Gambling_Tec|Vga_Controller:vga_control|Column:c3|Square_Area:sombra                                                                                ; Square_Area         ; work         ;
-;       |Comparator:cmp_x|                     ; 5 (5)               ; 0 (0)                     ; 0                 ; 0          ; 0    ; 0            ; |Gambling_Tec|Vga_Controller:vga_control|Comparator:cmp_x                                                                                            ; Comparator          ; work         ;
+;       |Comparator:cmp_x|                     ; 6 (6)               ; 0 (0)                     ; 0                 ; 0          ; 0    ; 0            ; |Gambling_Tec|Vga_Controller:vga_control|Comparator:cmp_x                                                                                            ; Comparator          ; work         ;
 ;       |Counter:conut|                        ; 1 (1)               ; 2 (2)                     ; 0                 ; 0          ; 0    ; 0            ; |Gambling_Tec|Vga_Controller:vga_control|Counter:conut                                                                                               ; Counter             ; work         ;
 ;       |Counter:count_x|                      ; 10 (10)             ; 10 (10)                   ; 0                 ; 0          ; 0    ; 0            ; |Gambling_Tec|Vga_Controller:vga_control|Counter:count_x                                                                                             ; Counter             ; work         ;
 ;       |Counter:count_y|                      ; 10 (10)             ; 10 (10)                   ; 0                 ; 0          ; 0    ; 0            ; |Gambling_Tec|Vga_Controller:vga_control|Counter:count_y                                                                                             ; Counter             ; work         ;
-;       |Draw_C:colo|                          ; 182 (17)            ; 0 (0)                     ; 0                 ; 0          ; 0    ; 0            ; |Gambling_Tec|Vga_Controller:vga_control|Draw_C:colo                                                                                                 ; Draw_C              ; work         ;
+;       |Draw_C:colo|                          ; 181 (16)            ; 0 (0)                     ; 0                 ; 0          ; 0    ; 0            ; |Gambling_Tec|Vga_Controller:vga_control|Draw_C:colo                                                                                                 ; Draw_C              ; work         ;
 ;          |lpm_divide:Div0|                   ; 83 (0)              ; 0 (0)                     ; 0                 ; 0          ; 0    ; 0            ; |Gambling_Tec|Vga_Controller:vga_control|Draw_C:colo|lpm_divide:Div0                                                                                 ; lpm_divide          ; work         ;
 ;             |lpm_divide_hbm:auto_generated|  ; 83 (0)              ; 0 (0)                     ; 0                 ; 0          ; 0    ; 0            ; |Gambling_Tec|Vga_Controller:vga_control|Draw_C:colo|lpm_divide:Div0|lpm_divide_hbm:auto_generated                                                   ; lpm_divide_hbm      ; work         ;
 ;                |sign_div_unsign_rlh:divider| ; 83 (0)              ; 0 (0)                     ; 0                 ; 0          ; 0    ; 0            ; |Gambling_Tec|Vga_Controller:vga_control|Draw_C:colo|lpm_divide:Div0|lpm_divide_hbm:auto_generated|sign_div_unsign_rlh:divider                       ; sign_div_unsign_rlh ; work         ;
@@ -432,56 +432,54 @@ refer to the applicable agreement for further details.
 ;                |sign_div_unsign_rlh:divider| ; 82 (0)              ; 0 (0)                     ; 0                 ; 0          ; 0    ; 0            ; |Gambling_Tec|Vga_Controller:vga_control|Draw_C:colo|lpm_divide:Div1|lpm_divide_hbm:auto_generated|sign_div_unsign_rlh:divider                       ; sign_div_unsign_rlh ; work         ;
 ;                   |alt_u_div_lve:divider|    ; 82 (82)             ; 0 (0)                     ; 0                 ; 0          ; 0    ; 0            ; |Gambling_Tec|Vga_Controller:vga_control|Draw_C:colo|lpm_divide:Div1|lpm_divide_hbm:auto_generated|sign_div_unsign_rlh:divider|alt_u_div_lve:divider ; alt_u_div_lve       ; work         ;
 ;       |Draw_CASH:cash_display|               ; 24 (24)             ; 0 (0)                     ; 0                 ; 0          ; 0    ; 0            ; |Gambling_Tec|Vga_Controller:vga_control|Draw_CASH:cash_display                                                                                      ; Draw_CASH           ; work         ;
-;       |Mux93:color_selector|                 ; 8 (8)               ; 0 (0)                     ; 0                 ; 0          ; 0    ; 0            ; |Gambling_Tec|Vga_Controller:vga_control|Mux93:color_selector                                                                                        ; Mux93               ; work         ;
-;       |Panel:panel_izquierdo|                ; 33 (0)              ; 0 (0)                     ; 0                 ; 0          ; 0    ; 0            ; |Gambling_Tec|Vga_Controller:vga_control|Panel:panel_izquierdo                                                                                       ; Panel               ; work         ;
-;          |Square_Area:cua_D2|                ; 8 (8)               ; 0 (0)                     ; 0                 ; 0          ; 0    ; 0            ; |Gambling_Tec|Vga_Controller:vga_control|Panel:panel_izquierdo|Square_Area:cua_D2                                                                    ; Square_Area         ; work         ;
+;       |Mux93:color_selector|                 ; 10 (10)             ; 0 (0)                     ; 0                 ; 0          ; 0    ; 0            ; |Gambling_Tec|Vga_Controller:vga_control|Mux93:color_selector                                                                                        ; Mux93               ; work         ;
+;       |Panel:panel_izquierdo|                ; 29 (0)              ; 0 (0)                     ; 0                 ; 0          ; 0    ; 0            ; |Gambling_Tec|Vga_Controller:vga_control|Panel:panel_izquierdo                                                                                       ; Panel               ; work         ;
+;          |Square_Area:cua_D2|                ; 7 (7)               ; 0 (0)                     ; 0                 ; 0          ; 0    ; 0            ; |Gambling_Tec|Vga_Controller:vga_control|Panel:panel_izquierdo|Square_Area:cua_D2                                                                    ; Square_Area         ; work         ;
 ;          |Square_Area:cua_D3|                ; 6 (6)               ; 0 (0)                     ; 0                 ; 0          ; 0    ; 0            ; |Gambling_Tec|Vga_Controller:vga_control|Panel:panel_izquierdo|Square_Area:cua_D3                                                                    ; Square_Area         ; work         ;
 ;          |Square_Area:cua_D4|                ; 5 (5)               ; 0 (0)                     ; 0                 ; 0          ; 0    ; 0            ; |Gambling_Tec|Vga_Controller:vga_control|Panel:panel_izquierdo|Square_Area:cua_D4                                                                    ; Square_Area         ; work         ;
-;          |Square_Area:cua_D|                 ; 6 (6)               ; 0 (0)                     ; 0                 ; 0          ; 0    ; 0            ; |Gambling_Tec|Vga_Controller:vga_control|Panel:panel_izquierdo|Square_Area:cua_D                                                                     ; Square_Area         ; work         ;
-;          |Square_Area:sombra|                ; 8 (8)               ; 0 (0)                     ; 0                 ; 0          ; 0    ; 0            ; |Gambling_Tec|Vga_Controller:vga_control|Panel:panel_izquierdo|Square_Area:sombra                                                                    ; Square_Area         ; work         ;
-;       |Panel:panel_msg|                      ; 25 (4)              ; 0 (0)                     ; 0                 ; 0          ; 0    ; 0            ; |Gambling_Tec|Vga_Controller:vga_control|Panel:panel_msg                                                                                             ; Panel               ; work         ;
-;          |Square_Area:cua_D2|                ; 6 (6)               ; 0 (0)                     ; 0                 ; 0          ; 0    ; 0            ; |Gambling_Tec|Vga_Controller:vga_control|Panel:panel_msg|Square_Area:cua_D2                                                                          ; Square_Area         ; work         ;
-;          |Square_Area:cua_D3|                ; 3 (3)               ; 0 (0)                     ; 0                 ; 0          ; 0    ; 0            ; |Gambling_Tec|Vga_Controller:vga_control|Panel:panel_msg|Square_Area:cua_D3                                                                          ; Square_Area         ; work         ;
+;          |Square_Area:cua_D|                 ; 5 (5)               ; 0 (0)                     ; 0                 ; 0          ; 0    ; 0            ; |Gambling_Tec|Vga_Controller:vga_control|Panel:panel_izquierdo|Square_Area:cua_D                                                                     ; Square_Area         ; work         ;
+;          |Square_Area:sombra|                ; 6 (6)               ; 0 (0)                     ; 0                 ; 0          ; 0    ; 0            ; |Gambling_Tec|Vga_Controller:vga_control|Panel:panel_izquierdo|Square_Area:sombra                                                                    ; Square_Area         ; work         ;
+;       |Panel:panel_msg|                      ; 27 (6)              ; 0 (0)                     ; 0                 ; 0          ; 0    ; 0            ; |Gambling_Tec|Vga_Controller:vga_control|Panel:panel_msg                                                                                             ; Panel               ; work         ;
+;          |Square_Area:cua_D2|                ; 8 (8)               ; 0 (0)                     ; 0                 ; 0          ; 0    ; 0            ; |Gambling_Tec|Vga_Controller:vga_control|Panel:panel_msg|Square_Area:cua_D2                                                                          ; Square_Area         ; work         ;
+;          |Square_Area:cua_D3|                ; 4 (4)               ; 0 (0)                     ; 0                 ; 0          ; 0    ; 0            ; |Gambling_Tec|Vga_Controller:vga_control|Panel:panel_msg|Square_Area:cua_D3                                                                          ; Square_Area         ; work         ;
 ;          |Square_Area:cua_D4|                ; 3 (3)               ; 0 (0)                     ; 0                 ; 0          ; 0    ; 0            ; |Gambling_Tec|Vga_Controller:vga_control|Panel:panel_msg|Square_Area:cua_D4                                                                          ; Square_Area         ; work         ;
-;          |Square_Area:cua_D|                 ; 3 (3)               ; 0 (0)                     ; 0                 ; 0          ; 0    ; 0            ; |Gambling_Tec|Vga_Controller:vga_control|Panel:panel_msg|Square_Area:cua_D                                                                           ; Square_Area         ; work         ;
-;          |Square_Area:sombra|                ; 6 (6)               ; 0 (0)                     ; 0                 ; 0          ; 0    ; 0            ; |Gambling_Tec|Vga_Controller:vga_control|Panel:panel_msg|Square_Area:sombra                                                                          ; Square_Area         ; work         ;
+;          |Square_Area:cua_D|                 ; 1 (1)               ; 0 (0)                     ; 0                 ; 0          ; 0    ; 0            ; |Gambling_Tec|Vga_Controller:vga_control|Panel:panel_msg|Square_Area:cua_D                                                                           ; Square_Area         ; work         ;
+;          |Square_Area:sombra|                ; 5 (5)               ; 0 (0)                     ; 0                 ; 0          ; 0    ; 0            ; |Gambling_Tec|Vga_Controller:vga_control|Panel:panel_msg|Square_Area:sombra                                                                          ; Square_Area         ; work         ;
 ;       |Register:reg_x|                       ; 0 (0)               ; 10 (10)                   ; 0                 ; 0          ; 0    ; 0            ; |Gambling_Tec|Vga_Controller:vga_control|Register:reg_x                                                                                              ; Register            ; work         ;
 ;       |Register:reg_y|                       ; 0 (0)               ; 10 (10)                   ; 0                 ; 0          ; 0    ; 0            ; |Gambling_Tec|Vga_Controller:vga_control|Register:reg_y                                                                                              ; Register            ; work         ;
-;       |SevenSeg_Display:display_seg1|        ; 20 (0)              ; 0 (0)                     ; 0                 ; 0          ; 0    ; 0            ; |Gambling_Tec|Vga_Controller:vga_control|SevenSeg_Display:display_seg1                                                                               ; SevenSeg_Display    ; work         ;
-;          |Square_Area:segA|                  ; 6 (6)               ; 0 (0)                     ; 0                 ; 0          ; 0    ; 0            ; |Gambling_Tec|Vga_Controller:vga_control|SevenSeg_Display:display_seg1|Square_Area:segA                                                              ; Square_Area         ; work         ;
-;          |Square_Area:segB|                  ; 5 (5)               ; 0 (0)                     ; 0                 ; 0          ; 0    ; 0            ; |Gambling_Tec|Vga_Controller:vga_control|SevenSeg_Display:display_seg1|Square_Area:segB                                                              ; Square_Area         ; work         ;
-;          |Square_Area:segD|                  ; 3 (3)               ; 0 (0)                     ; 0                 ; 0          ; 0    ; 0            ; |Gambling_Tec|Vga_Controller:vga_control|SevenSeg_Display:display_seg1|Square_Area:segD                                                              ; Square_Area         ; work         ;
-;          |Square_Area:segF|                  ; 1 (1)               ; 0 (0)                     ; 0                 ; 0          ; 0    ; 0            ; |Gambling_Tec|Vga_Controller:vga_control|SevenSeg_Display:display_seg1|Square_Area:segF                                                              ; Square_Area         ; work         ;
-;          |Square_Area:segG|                  ; 5 (5)               ; 0 (0)                     ; 0                 ; 0          ; 0    ; 0            ; |Gambling_Tec|Vga_Controller:vga_control|SevenSeg_Display:display_seg1|Square_Area:segG                                                              ; Square_Area         ; work         ;
-;       |SevenSeg_Display:display_seg2|        ; 8 (0)               ; 0 (0)                     ; 0                 ; 0          ; 0    ; 0            ; |Gambling_Tec|Vga_Controller:vga_control|SevenSeg_Display:display_seg2                                                                               ; SevenSeg_Display    ; work         ;
+;       |SevenSeg_Display:display_seg1|        ; 5 (0)               ; 0 (0)                     ; 0                 ; 0          ; 0    ; 0            ; |Gambling_Tec|Vga_Controller:vga_control|SevenSeg_Display:display_seg1                                                                               ; SevenSeg_Display    ; work         ;
+;          |Square_Area:segA|                  ; 1 (1)               ; 0 (0)                     ; 0                 ; 0          ; 0    ; 0            ; |Gambling_Tec|Vga_Controller:vga_control|SevenSeg_Display:display_seg1|Square_Area:segA                                                              ; Square_Area         ; work         ;
+;          |Square_Area:segB|                  ; 4 (4)               ; 0 (0)                     ; 0                 ; 0          ; 0    ; 0            ; |Gambling_Tec|Vga_Controller:vga_control|SevenSeg_Display:display_seg1|Square_Area:segB                                                              ; Square_Area         ; work         ;
+;       |SevenSeg_Display:display_seg2|        ; 5 (0)               ; 0 (0)                     ; 0                 ; 0          ; 0    ; 0            ; |Gambling_Tec|Vga_Controller:vga_control|SevenSeg_Display:display_seg2                                                                               ; SevenSeg_Display    ; work         ;
 ;          |Square_Area:segA|                  ; 3 (3)               ; 0 (0)                     ; 0                 ; 0          ; 0    ; 0            ; |Gambling_Tec|Vga_Controller:vga_control|SevenSeg_Display:display_seg2|Square_Area:segA                                                              ; Square_Area         ; work         ;
-;          |Square_Area:segB|                  ; 3 (3)               ; 0 (0)                     ; 0                 ; 0          ; 0    ; 0            ; |Gambling_Tec|Vga_Controller:vga_control|SevenSeg_Display:display_seg2|Square_Area:segB                                                              ; Square_Area         ; work         ;
-;          |Square_Area:segE|                  ; 2 (2)               ; 0 (0)                     ; 0                 ; 0          ; 0    ; 0            ; |Gambling_Tec|Vga_Controller:vga_control|SevenSeg_Display:display_seg2|Square_Area:segE                                                              ; Square_Area         ; work         ;
-;       |SevenSeg_Display:display_seg|         ; 6 (0)               ; 0 (0)                     ; 0                 ; 0          ; 0    ; 0            ; |Gambling_Tec|Vga_Controller:vga_control|SevenSeg_Display:display_seg                                                                                ; SevenSeg_Display    ; work         ;
-;          |Square_Area:segB|                  ; 6 (6)               ; 0 (0)                     ; 0                 ; 0          ; 0    ; 0            ; |Gambling_Tec|Vga_Controller:vga_control|SevenSeg_Display:display_seg|Square_Area:segB                                                               ; Square_Area         ; work         ;
+;          |Square_Area:segB|                  ; 2 (2)               ; 0 (0)                     ; 0                 ; 0          ; 0    ; 0            ; |Gambling_Tec|Vga_Controller:vga_control|SevenSeg_Display:display_seg2|Square_Area:segB                                                              ; Square_Area         ; work         ;
+;       |SevenSeg_Display:display_seg|         ; 9 (0)               ; 0 (0)                     ; 0                 ; 0          ; 0    ; 0            ; |Gambling_Tec|Vga_Controller:vga_control|SevenSeg_Display:display_seg                                                                                ; SevenSeg_Display    ; work         ;
+;          |Square_Area:segA|                  ; 2 (2)               ; 0 (0)                     ; 0                 ; 0          ; 0    ; 0            ; |Gambling_Tec|Vga_Controller:vga_control|SevenSeg_Display:display_seg|Square_Area:segA                                                               ; Square_Area         ; work         ;
+;          |Square_Area:segB|                  ; 5 (5)               ; 0 (0)                     ; 0                 ; 0          ; 0    ; 0            ; |Gambling_Tec|Vga_Controller:vga_control|SevenSeg_Display:display_seg|Square_Area:segB                                                               ; Square_Area         ; work         ;
+;          |Square_Area:segC|                  ; 2 (2)               ; 0 (0)                     ; 0                 ; 0          ; 0    ; 0            ; |Gambling_Tec|Vga_Controller:vga_control|SevenSeg_Display:display_seg|Square_Area:segC                                                               ; Square_Area         ; work         ;
 ;       |Symbol:slot_0_0|                      ; 22 (1)              ; 0 (0)                     ; 0                 ; 0          ; 0    ; 0            ; |Gambling_Tec|Vga_Controller:vga_control|Symbol:slot_0_0                                                                                             ; Symbol              ; work         ;
 ;          |Square_Area:form1|                 ; 5 (5)               ; 0 (0)                     ; 0                 ; 0          ; 0    ; 0            ; |Gambling_Tec|Vga_Controller:vga_control|Symbol:slot_0_0|Square_Area:form1                                                                           ; Square_Area         ; work         ;
-;          |Square_Area:form2|                 ; 8 (8)               ; 0 (0)                     ; 0                 ; 0          ; 0    ; 0            ; |Gambling_Tec|Vga_Controller:vga_control|Symbol:slot_0_0|Square_Area:form2                                                                           ; Square_Area         ; work         ;
-;          |Square_Area:form3|                 ; 8 (8)               ; 0 (0)                     ; 0                 ; 0          ; 0    ; 0            ; |Gambling_Tec|Vga_Controller:vga_control|Symbol:slot_0_0|Square_Area:form3                                                                           ; Square_Area         ; work         ;
-;       |Symbol:slot_0_1|                      ; 2 (0)               ; 0 (0)                     ; 0                 ; 0          ; 0    ; 0            ; |Gambling_Tec|Vga_Controller:vga_control|Symbol:slot_0_1                                                                                             ; Symbol              ; work         ;
-;          |Square_Area:form2|                 ; 2 (2)               ; 0 (0)                     ; 0                 ; 0          ; 0    ; 0            ; |Gambling_Tec|Vga_Controller:vga_control|Symbol:slot_0_1|Square_Area:form2                                                                           ; Square_Area         ; work         ;
-;       |Symbol:slot_0_2|                      ; 7 (0)               ; 0 (0)                     ; 0                 ; 0          ; 0    ; 0            ; |Gambling_Tec|Vga_Controller:vga_control|Symbol:slot_0_2                                                                                             ; Symbol              ; work         ;
-;          |Square_Area:form2|                 ; 7 (7)               ; 0 (0)                     ; 0                 ; 0          ; 0    ; 0            ; |Gambling_Tec|Vga_Controller:vga_control|Symbol:slot_0_2|Square_Area:form2                                                                           ; Square_Area         ; work         ;
+;          |Square_Area:form2|                 ; 9 (9)               ; 0 (0)                     ; 0                 ; 0          ; 0    ; 0            ; |Gambling_Tec|Vga_Controller:vga_control|Symbol:slot_0_0|Square_Area:form2                                                                           ; Square_Area         ; work         ;
+;          |Square_Area:form3|                 ; 7 (7)               ; 0 (0)                     ; 0                 ; 0          ; 0    ; 0            ; |Gambling_Tec|Vga_Controller:vga_control|Symbol:slot_0_0|Square_Area:form3                                                                           ; Square_Area         ; work         ;
+;       |Symbol:slot_0_1|                      ; 3 (0)               ; 0 (0)                     ; 0                 ; 0          ; 0    ; 0            ; |Gambling_Tec|Vga_Controller:vga_control|Symbol:slot_0_1                                                                                             ; Symbol              ; work         ;
+;          |Square_Area:form2|                 ; 3 (3)               ; 0 (0)                     ; 0                 ; 0          ; 0    ; 0            ; |Gambling_Tec|Vga_Controller:vga_control|Symbol:slot_0_1|Square_Area:form2                                                                           ; Square_Area         ; work         ;
+;       |Symbol:slot_0_2|                      ; 8 (0)               ; 0 (0)                     ; 0                 ; 0          ; 0    ; 0            ; |Gambling_Tec|Vga_Controller:vga_control|Symbol:slot_0_2                                                                                             ; Symbol              ; work         ;
+;          |Square_Area:form2|                 ; 8 (8)               ; 0 (0)                     ; 0                 ; 0          ; 0    ; 0            ; |Gambling_Tec|Vga_Controller:vga_control|Symbol:slot_0_2|Square_Area:form2                                                                           ; Square_Area         ; work         ;
 ;       |Symbol:slot_1_0|                      ; 9 (1)               ; 0 (0)                     ; 0                 ; 0          ; 0    ; 0            ; |Gambling_Tec|Vga_Controller:vga_control|Symbol:slot_1_0                                                                                             ; Symbol              ; work         ;
 ;          |Square_Area:form0|                 ; 1 (1)               ; 0 (0)                     ; 0                 ; 0          ; 0    ; 0            ; |Gambling_Tec|Vga_Controller:vga_control|Symbol:slot_1_0|Square_Area:form0                                                                           ; Square_Area         ; work         ;
-;          |Square_Area:form1|                 ; 4 (4)               ; 0 (0)                     ; 0                 ; 0          ; 0    ; 0            ; |Gambling_Tec|Vga_Controller:vga_control|Symbol:slot_1_0|Square_Area:form1                                                                           ; Square_Area         ; work         ;
-;          |Square_Area:form3|                 ; 3 (3)               ; 0 (0)                     ; 0                 ; 0          ; 0    ; 0            ; |Gambling_Tec|Vga_Controller:vga_control|Symbol:slot_1_0|Square_Area:form3                                                                           ; Square_Area         ; work         ;
+;          |Square_Area:form1|                 ; 2 (2)               ; 0 (0)                     ; 0                 ; 0          ; 0    ; 0            ; |Gambling_Tec|Vga_Controller:vga_control|Symbol:slot_1_0|Square_Area:form1                                                                           ; Square_Area         ; work         ;
+;          |Square_Area:form3|                 ; 5 (5)               ; 0 (0)                     ; 0                 ; 0          ; 0    ; 0            ; |Gambling_Tec|Vga_Controller:vga_control|Symbol:slot_1_0|Square_Area:form3                                                                           ; Square_Area         ; work         ;
 ;       |Symbol:slot_1_1|                      ; 5 (0)               ; 0 (0)                     ; 0                 ; 0          ; 0    ; 0            ; |Gambling_Tec|Vga_Controller:vga_control|Symbol:slot_1_1                                                                                             ; Symbol              ; work         ;
 ;          |Square_Area:form0|                 ; 5 (5)               ; 0 (0)                     ; 0                 ; 0          ; 0    ; 0            ; |Gambling_Tec|Vga_Controller:vga_control|Symbol:slot_1_1|Square_Area:form0                                                                           ; Square_Area         ; work         ;
 ;       |Symbol:slot_1_2|                      ; 1 (0)               ; 0 (0)                     ; 0                 ; 0          ; 0    ; 0            ; |Gambling_Tec|Vga_Controller:vga_control|Symbol:slot_1_2                                                                                             ; Symbol              ; work         ;
 ;          |Square_Area:form0|                 ; 1 (1)               ; 0 (0)                     ; 0                 ; 0          ; 0    ; 0            ; |Gambling_Tec|Vga_Controller:vga_control|Symbol:slot_1_2|Square_Area:form0                                                                           ; Square_Area         ; work         ;
-;       |Symbol:slot_2_0|                      ; 8 (1)               ; 0 (0)                     ; 0                 ; 0          ; 0    ; 0            ; |Gambling_Tec|Vga_Controller:vga_control|Symbol:slot_2_0                                                                                             ; Symbol              ; work         ;
+;       |Symbol:slot_2_0|                      ; 9 (1)               ; 0 (0)                     ; 0                 ; 0          ; 0    ; 0            ; |Gambling_Tec|Vga_Controller:vga_control|Symbol:slot_2_0                                                                                             ; Symbol              ; work         ;
 ;          |Square_Area:form0|                 ; 1 (1)               ; 0 (0)                     ; 0                 ; 0          ; 0    ; 0            ; |Gambling_Tec|Vga_Controller:vga_control|Symbol:slot_2_0|Square_Area:form0                                                                           ; Square_Area         ; work         ;
-;          |Square_Area:form1|                 ; 1 (1)               ; 0 (0)                     ; 0                 ; 0          ; 0    ; 0            ; |Gambling_Tec|Vga_Controller:vga_control|Symbol:slot_2_0|Square_Area:form1                                                                           ; Square_Area         ; work         ;
+;          |Square_Area:form1|                 ; 2 (2)               ; 0 (0)                     ; 0                 ; 0          ; 0    ; 0            ; |Gambling_Tec|Vga_Controller:vga_control|Symbol:slot_2_0|Square_Area:form1                                                                           ; Square_Area         ; work         ;
 ;          |Square_Area:form2|                 ; 2 (2)               ; 0 (0)                     ; 0                 ; 0          ; 0    ; 0            ; |Gambling_Tec|Vga_Controller:vga_control|Symbol:slot_2_0|Square_Area:form2                                                                           ; Square_Area         ; work         ;
 ;          |Square_Area:form3|                 ; 3 (3)               ; 0 (0)                     ; 0                 ; 0          ; 0    ; 0            ; |Gambling_Tec|Vga_Controller:vga_control|Symbol:slot_2_0|Square_Area:form3                                                                           ; Square_Area         ; work         ;
-;       |Symbol:slot_2_1|                      ; 2 (0)               ; 0 (0)                     ; 0                 ; 0          ; 0    ; 0            ; |Gambling_Tec|Vga_Controller:vga_control|Symbol:slot_2_1                                                                                             ; Symbol              ; work         ;
-;          |Square_Area:form1|                 ; 2 (2)               ; 0 (0)                     ; 0                 ; 0          ; 0    ; 0            ; |Gambling_Tec|Vga_Controller:vga_control|Symbol:slot_2_1|Square_Area:form1                                                                           ; Square_Area         ; work         ;
+;       |Symbol:slot_2_1|                      ; 1 (0)               ; 0 (0)                     ; 0                 ; 0          ; 0    ; 0            ; |Gambling_Tec|Vga_Controller:vga_control|Symbol:slot_2_1                                                                                             ; Symbol              ; work         ;
+;          |Square_Area:form1|                 ; 1 (1)               ; 0 (0)                     ; 0                 ; 0          ; 0    ; 0            ; |Gambling_Tec|Vga_Controller:vga_control|Symbol:slot_2_1|Square_Area:form1                                                                           ; Square_Area         ; work         ;
 ;       |Symbol:slot_2_2|                      ; 2 (0)               ; 0 (0)                     ; 0                 ; 0          ; 0    ; 0            ; |Gambling_Tec|Vga_Controller:vga_control|Symbol:slot_2_2                                                                                             ; Symbol              ; work         ;
 ;          |Square_Area:form1|                 ; 2 (2)               ; 0 (0)                     ; 0                 ; 0          ; 0    ; 0            ; |Gambling_Tec|Vga_Controller:vga_control|Symbol:slot_2_2|Square_Area:form1                                                                           ; Square_Area         ; work         ;
 ;       |clk_div:clkdiv|                       ; 1 (1)               ; 1 (1)                     ; 0                 ; 0          ; 0    ; 0            ; |Gambling_Tec|Vga_Controller:vga_control|clk_div:clkdiv                                                                                              ; clk_div             ; work         ;
@@ -511,9 +509,9 @@ Note: For table entries with two numbers listed, the numbers in parentheses indi
 ; Multiplexer Inputs ; Bus Width ; Baseline Area ; Area if Restructured ; Saving if Restructured ; Registered ; Example Multiplexer Output                                              ;
 +--------------------+-----------+---------------+----------------------+------------------------+------------+-------------------------------------------------------------------------+
 ; 4:1                ; 2 bits    ; 4 LEs         ; 4 LEs                ; 0 LEs                  ; No         ; |Gambling_Tec|Vga_Controller:vga_control|Symbol:slot_0_0|Mux0           ;
-; 4:1                ; 3 bits    ; 6 LEs         ; 6 LEs                ; 0 LEs                  ; No         ; |Gambling_Tec|Vga_Controller:vga_control|R[0]                           ;
+; 3:1                ; 8 bits    ; 16 LEs        ; 16 LEs               ; 0 LEs                  ; No         ; |Gambling_Tec|Vga_Controller:vga_control|R[0]                           ;
 ; 5:1                ; 2 bits    ; 6 LEs         ; 6 LEs                ; 0 LEs                  ; No         ; |Gambling_Tec|Vga_Controller:vga_control|Mux93:color_selector|Selector7 ;
-; 6:1                ; 3 bits    ; 12 LEs        ; 12 LEs               ; 0 LEs                  ; No         ; |Gambling_Tec|Vga_Controller:vga_control|G[0]                           ;
+; 6:1                ; 2 bits    ; 8 LEs         ; 8 LEs                ; 0 LEs                  ; No         ; |Gambling_Tec|Vga_Controller:vga_control|B[6]                           ;
 +--------------------+-----------+---------------+----------------------+------------------------+------------+-------------------------------------------------------------------------+
 
 
@@ -2387,11 +2385,11 @@ Note: In order to hide this table in the UI and the text report file, please set
 +-----------+-------+----------+---------------------------------------+
 ; Port      ; Type  ; Severity ; Details                               ;
 +-----------+-------+----------+---------------------------------------+
-; Num[7..6] ; Input ; Info     ; Stuck at VCC                          ;
-; Num[2..1] ; Input ; Info     ; Stuck at VCC                          ;
-; Num[9..8] ; Input ; Info     ; Stuck at GND                          ;
-; Num[5..3] ; Input ; Info     ; Stuck at GND                          ;
-; Num[0]    ; Input ; Info     ; Stuck at GND                          ;
+; Num[9..8] ; Input ; Info     ; Stuck at VCC                          ;
+; Num[7..4] ; Input ; Info     ; Stuck at GND                          ;
+; Num[2..1] ; Input ; Info     ; Stuck at GND                          ;
+; Num[3]    ; Input ; Info     ; Stuck at VCC                          ;
+; Num[0]    ; Input ; Info     ; Stuck at VCC                          ;
 +-----------+-------+----------+---------------------------------------+
 
 
@@ -2475,23 +2473,23 @@ Note: In order to hide this table in the UI and the text report file, please set
 ; arriav_ff             ; 44                          ;
 ;     CLR               ; 32                          ;
 ;     ENA CLR           ; 12                          ;
-; arriav_lcell_comb     ; 607                         ;
+; arriav_lcell_comb     ; 591                         ;
 ;     arith             ; 145                         ;
 ;         0 data inputs ; 39                          ;
 ;         1 data inputs ; 44                          ;
 ;         2 data inputs ; 9                           ;
 ;         3 data inputs ; 33                          ;
 ;         4 data inputs ; 20                          ;
-;     extend            ; 10                          ;
-;         7 data inputs ; 10                          ;
-;     normal            ; 442                         ;
+;     extend            ; 9                           ;
+;         7 data inputs ; 9                           ;
+;     normal            ; 427                         ;
 ;         0 data inputs ; 1                           ;
 ;         1 data inputs ; 6                           ;
-;         2 data inputs ; 86                          ;
-;         3 data inputs ; 75                          ;
+;         2 data inputs ; 84                          ;
+;         3 data inputs ; 50                          ;
 ;         4 data inputs ; 88                          ;
-;         5 data inputs ; 127                         ;
-;         6 data inputs ; 59                          ;
+;         5 data inputs ; 131                         ;
+;         6 data inputs ; 67                          ;
 ;     shared            ; 10                          ;
 ;         0 data inputs ; 1                           ;
 ;         1 data inputs ; 7                           ;
@@ -2499,7 +2497,7 @@ Note: In order to hide this table in the UI and the text report file, please set
 ; boundary_port         ; 64                          ;
 ;                       ;                             ;
 ; Max LUT depth         ; 18.40                       ;
-; Average LUT depth     ; 11.39                       ;
+; Average LUT depth     ; 11.54                       ;
 +-----------------------+-----------------------------+
 
 
@@ -2508,7 +2506,7 @@ Note: In order to hide this table in the UI and the text report file, please set
 +----------------+--------------+
 ; Partition Name ; Elapsed Time ;
 +----------------+--------------+
-; Top            ; 00:00:02     ;
+; Top            ; 00:00:03     ;
 +----------------+--------------+
 
 
@@ -2518,7 +2516,7 @@ Note: In order to hide this table in the UI and the text report file, please set
 Info: *******************************************************************
 Info: Running Quartus Prime Analysis & Synthesis
     Info: Version 18.1.0 Build 625 09/12/2018 SJ Lite Edition
-    Info: Processing started: Mon Jun 16 19:03:44 2025
+    Info: Processing started: Tue Jun 17 00:44:35 2025
 Info: Command: quartus_map --read_settings_files=on --write_settings_files=off Gambling_Tec -c Gambling_Tec
 Warning (18236): Number of processors has not been specified which may cause overloading on shared machines.  Set the global assignment NUM_PARALLEL_PROCESSORS in your QSF to an appropriate value for best performance.
 Info (20030): Parallel compilation is enabled and will use 4 of the 4 processors detected
@@ -2602,6 +2600,8 @@ Info (12021): Found 1 design units, including 1 entities, in source file sevense
     Info (12023): Found entity 1: SevenSeg_Display File: C:/Users/josee/CE3201_PF/SevenSeg_Display.sv Line: 1
 Info (12021): Found 1 design units, including 1 entities, in source file output_files/mux93.sv
     Info (12023): Found entity 1: Mux93 File: C:/Users/josee/CE3201_PF/output_files/Mux93.sv Line: 1
+Info (12021): Found 1 design units, including 1 entities, in source file mem_vga_deco.sv
+    Info (12023): Found entity 1: Mem_Vga_Deco File: C:/Users/josee/CE3201_PF/Mem_Vga_Deco.sv Line: 1
 Warning (10236): Verilog HDL Implicit Net warning at Decoder.sv(35): created implicit net for "ALUOP" File: C:/Users/josee/CE3201_PF/Decoder.sv Line: 35
 Info (12127): Elaborating entity "Gambling_Tec" for the top level hierarchy
 Info (12128): Elaborating entity "clk_div" for hierarchy "clk_div:div_clo" File: C:/Users/josee/CE3201_PF/Gambling_Tec.sv Line: 31
@@ -2827,15 +2827,15 @@ Warning (21074): Design contains 32 input pin(s) that do not drive logic
     Warning (15610): No output dependent on input pin "Instruction[29]" File: C:/Users/josee/CE3201_PF/Gambling_Tec.sv Line: 2
     Warning (15610): No output dependent on input pin "Instruction[30]" File: C:/Users/josee/CE3201_PF/Gambling_Tec.sv Line: 2
     Warning (15610): No output dependent on input pin "Instruction[31]" File: C:/Users/josee/CE3201_PF/Gambling_Tec.sv Line: 2
-Info (21057): Implemented 689 device resources after synthesis - the final resource count might be different
+Info (21057): Implemented 674 device resources after synthesis - the final resource count might be different
     Info (21058): Implemented 35 input pins
     Info (21059): Implemented 29 output pins
-    Info (21061): Implemented 625 logic cells
+    Info (21061): Implemented 610 logic cells
 Info: Quartus Prime Analysis & Synthesis was successful. 0 errors, 65 warnings
-    Info: Peak virtual memory: 4860 megabytes
-    Info: Processing ended: Mon Jun 16 19:03:59 2025
-    Info: Elapsed time: 00:00:15
-    Info: Total CPU time (on all processors): 00:00:30
+    Info: Peak virtual memory: 4859 megabytes
+    Info: Processing ended: Tue Jun 17 00:44:58 2025
+    Info: Elapsed time: 00:00:23
+    Info: Total CPU time (on all processors): 00:00:43
 
 
 +------------------------------------------+
