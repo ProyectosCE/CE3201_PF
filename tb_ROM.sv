@@ -66,12 +66,12 @@ module tb_ROM;
         $display("\nTotal de instrucciones validas encontradas: %0d", instr_cnt);
 
         // Sencilla validación empírica:
-        if (instr_cnt != 123) begin
-            $error("La ROM NO contiene las 123 instrucciones esperadas; encontro %0d", instr_cnt);
+        if (instr_cnt != 173) begin
+            $error("La ROM NO contiene las 173 instrucciones esperadas; encontro %0d", instr_cnt);
             $fatal;
         end
         else
-            $display("La ROM contiene exactamente las 123 palabras de Gambling_Tec.hex");
+            $display("La ROM contiene exactamente las 173 palabras de Gambling_Tec.hex");
 
         $display("==== FIN   TEST  ROM ====\n");
         $finish;

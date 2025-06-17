@@ -25,6 +25,7 @@ source_file = 1, C:/Users/joseb/Documents/GitHub/CE3201_PF/Decoder.sv
 source_file = 1, C:/Users/joseb/Documents/GitHub/CE3201_PF/tb_Gambling_Tec.sv
 source_file = 1, C:/Users/joseb/Documents/GitHub/CE3201_PF/tb_Data_Memory.sv
 source_file = 1, C:/Users/joseb/Documents/GitHub/CE3201_PF/tb_Gambling_Tec_SPACE_ASM.sv
+source_file = 1, C:/Users/joseb/Documents/GitHub/CE3201_PF/tb_Gambling_Tec_Integration.sv
 source_file = 1, C:/Users/joseb/Documents/GitHub/CE3201_PF/db/Gambling_Tec.cbx.xml
 design_name = Gambling_Tec
 instance = comp, \clk~input , clk~input, Gambling_Tec, 1

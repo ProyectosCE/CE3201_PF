@@ -12,117 +12,117 @@
 # 
 # vlog -sv -work work +incdir+C:/Users/joseb/Documents/GitHub/CE3201_PF {C:/Users/joseb/Documents/GitHub/CE3201_PF/Condition_Check.sv}
 # Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
-# Start time: 11:13:48 on Jun 17,2025
+# Start time: 17:01:39 on Jun 17,2025
 # vlog -reportprogress 300 -sv -work work "+incdir+C:/Users/joseb/Documents/GitHub/CE3201_PF" C:/Users/joseb/Documents/GitHub/CE3201_PF/Condition_Check.sv 
 # -- Compiling module Condition_Check
 # 
 # Top level modules:
 # 	Condition_Check
-# End time: 11:13:48 on Jun 17,2025, Elapsed time: 0:00:00
+# End time: 17:01:39 on Jun 17,2025, Elapsed time: 0:00:00
 # Errors: 0, Warnings: 0
 # vlog -sv -work work +incdir+C:/Users/joseb/Documents/GitHub/CE3201_PF {C:/Users/joseb/Documents/GitHub/CE3201_PF/Register_File.sv}
 # Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
-# Start time: 11:13:48 on Jun 17,2025
+# Start time: 17:01:39 on Jun 17,2025
 # vlog -reportprogress 300 -sv -work work "+incdir+C:/Users/joseb/Documents/GitHub/CE3201_PF" C:/Users/joseb/Documents/GitHub/CE3201_PF/Register_File.sv 
 # -- Compiling module Register_File
 # 
 # Top level modules:
 # 	Register_File
-# End time: 11:13:48 on Jun 17,2025, Elapsed time: 0:00:00
+# End time: 17:01:39 on Jun 17,2025, Elapsed time: 0:00:00
 # Errors: 0, Warnings: 0
 # vlog -sv -work work +incdir+C:/Users/joseb/Documents/GitHub/CE3201_PF {C:/Users/joseb/Documents/GitHub/CE3201_PF/Register.sv}
 # Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
-# Start time: 11:13:48 on Jun 17,2025
+# Start time: 17:01:39 on Jun 17,2025
 # vlog -reportprogress 300 -sv -work work "+incdir+C:/Users/joseb/Documents/GitHub/CE3201_PF" C:/Users/joseb/Documents/GitHub/CE3201_PF/Register.sv 
 # -- Compiling module Register
 # 
 # Top level modules:
 # 	Register
-# End time: 11:13:48 on Jun 17,2025, Elapsed time: 0:00:00
+# End time: 17:01:39 on Jun 17,2025, Elapsed time: 0:00:00
 # Errors: 0, Warnings: 0
 # vlog -sv -work work +incdir+C:/Users/joseb/Documents/GitHub/CE3201_PF {C:/Users/joseb/Documents/GitHub/CE3201_PF/Mux.sv}
 # Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
-# Start time: 11:13:48 on Jun 17,2025
+# Start time: 17:01:39 on Jun 17,2025
 # vlog -reportprogress 300 -sv -work work "+incdir+C:/Users/joseb/Documents/GitHub/CE3201_PF" C:/Users/joseb/Documents/GitHub/CE3201_PF/Mux.sv 
 # -- Compiling module Mux
 # 
 # Top level modules:
 # 	Mux
-# End time: 11:13:48 on Jun 17,2025, Elapsed time: 0:00:00
+# End time: 17:01:39 on Jun 17,2025, Elapsed time: 0:00:00
 # Errors: 0, Warnings: 0
 # vlog -sv -work work +incdir+C:/Users/joseb/Documents/GitHub/CE3201_PF {C:/Users/joseb/Documents/GitHub/CE3201_PF/Extender.sv}
 # Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
-# Start time: 11:13:48 on Jun 17,2025
+# Start time: 17:01:40 on Jun 17,2025
 # vlog -reportprogress 300 -sv -work work "+incdir+C:/Users/joseb/Documents/GitHub/CE3201_PF" C:/Users/joseb/Documents/GitHub/CE3201_PF/Extender.sv 
 # -- Compiling module Extender
 # 
 # Top level modules:
 # 	Extender
-# End time: 11:13:48 on Jun 17,2025, Elapsed time: 0:00:00
+# End time: 17:01:40 on Jun 17,2025, Elapsed time: 0:00:00
 # Errors: 0, Warnings: 0
 # vlog -sv -work work +incdir+C:/Users/joseb/Documents/GitHub/CE3201_PF {C:/Users/joseb/Documents/GitHub/CE3201_PF/Data_Memory.sv}
 # Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
-# Start time: 11:13:49 on Jun 17,2025
+# Start time: 17:01:40 on Jun 17,2025
 # vlog -reportprogress 300 -sv -work work "+incdir+C:/Users/joseb/Documents/GitHub/CE3201_PF" C:/Users/joseb/Documents/GitHub/CE3201_PF/Data_Memory.sv 
 # -- Compiling module Data_Memory
 # 
 # Top level modules:
 # 	Data_Memory
-# End time: 11:13:49 on Jun 17,2025, Elapsed time: 0:00:00
+# End time: 17:01:40 on Jun 17,2025, Elapsed time: 0:00:00
 # Errors: 0, Warnings: 0
 # vlog -sv -work work +incdir+C:/Users/joseb/Documents/GitHub/CE3201_PF {C:/Users/joseb/Documents/GitHub/CE3201_PF/CPU.sv}
 # Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
-# Start time: 11:13:49 on Jun 17,2025
+# Start time: 17:01:40 on Jun 17,2025
 # vlog -reportprogress 300 -sv -work work "+incdir+C:/Users/joseb/Documents/GitHub/CE3201_PF" C:/Users/joseb/Documents/GitHub/CE3201_PF/CPU.sv 
 # -- Compiling module CPU
 # 
 # Top level modules:
 # 	CPU
-# End time: 11:13:49 on Jun 17,2025, Elapsed time: 0:00:00
+# End time: 17:01:40 on Jun 17,2025, Elapsed time: 0:00:00
 # Errors: 0, Warnings: 0
 # vlog -sv -work work +incdir+C:/Users/joseb/Documents/GitHub/CE3201_PF {C:/Users/joseb/Documents/GitHub/CE3201_PF/ALU.sv}
 # Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
-# Start time: 11:13:49 on Jun 17,2025
+# Start time: 17:01:40 on Jun 17,2025
 # vlog -reportprogress 300 -sv -work work "+incdir+C:/Users/joseb/Documents/GitHub/CE3201_PF" C:/Users/joseb/Documents/GitHub/CE3201_PF/ALU.sv 
 # -- Compiling module ALU
 # 
 # Top level modules:
 # 	ALU
-# End time: 11:13:49 on Jun 17,2025, Elapsed time: 0:00:00
+# End time: 17:01:40 on Jun 17,2025, Elapsed time: 0:00:00
 # Errors: 0, Warnings: 0
 # vlog -sv -work work +incdir+C:/Users/joseb/Documents/GitHub/CE3201_PF {C:/Users/joseb/Documents/GitHub/CE3201_PF/Adder.sv}
 # Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
-# Start time: 11:13:49 on Jun 17,2025
+# Start time: 17:01:40 on Jun 17,2025
 # vlog -reportprogress 300 -sv -work work "+incdir+C:/Users/joseb/Documents/GitHub/CE3201_PF" C:/Users/joseb/Documents/GitHub/CE3201_PF/Adder.sv 
 # -- Compiling module Adder
 # 
 # Top level modules:
 # 	Adder
-# End time: 11:13:49 on Jun 17,2025, Elapsed time: 0:00:00
+# End time: 17:01:40 on Jun 17,2025, Elapsed time: 0:00:00
 # Errors: 0, Warnings: 0
 # vlog -sv -work work +incdir+C:/Users/joseb/Documents/GitHub/CE3201_PF {C:/Users/joseb/Documents/GitHub/CE3201_PF/Gambling_Tec.sv}
 # Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
-# Start time: 11:13:49 on Jun 17,2025
+# Start time: 17:01:40 on Jun 17,2025
 # vlog -reportprogress 300 -sv -work work "+incdir+C:/Users/joseb/Documents/GitHub/CE3201_PF" C:/Users/joseb/Documents/GitHub/CE3201_PF/Gambling_Tec.sv 
 # -- Compiling module Gambling_Tec
 # 
 # Top level modules:
 # 	Gambling_Tec
-# End time: 11:13:49 on Jun 17,2025, Elapsed time: 0:00:00
+# End time: 17:01:40 on Jun 17,2025, Elapsed time: 0:00:00
 # Errors: 0, Warnings: 0
 # vlog -sv -work work +incdir+C:/Users/joseb/Documents/GitHub/CE3201_PF {C:/Users/joseb/Documents/GitHub/CE3201_PF/Control_Unit.sv}
 # Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
-# Start time: 11:13:49 on Jun 17,2025
+# Start time: 17:01:41 on Jun 17,2025
 # vlog -reportprogress 300 -sv -work work "+incdir+C:/Users/joseb/Documents/GitHub/CE3201_PF" C:/Users/joseb/Documents/GitHub/CE3201_PF/Control_Unit.sv 
 # -- Compiling module Control_Unit
 # 
 # Top level modules:
 # 	Control_Unit
-# End time: 11:13:50 on Jun 17,2025, Elapsed time: 0:00:01
+# End time: 17:01:41 on Jun 17,2025, Elapsed time: 0:00:00
 # Errors: 0, Warnings: 0
 # vlog -sv -work work +incdir+C:/Users/joseb/Documents/GitHub/CE3201_PF {C:/Users/joseb/Documents/GitHub/CE3201_PF/Decoder.sv}
 # Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
-# Start time: 11:13:50 on Jun 17,2025
+# Start time: 17:01:41 on Jun 17,2025
 # vlog -reportprogress 300 -sv -work work "+incdir+C:/Users/joseb/Documents/GitHub/CE3201_PF" C:/Users/joseb/Documents/GitHub/CE3201_PF/Decoder.sv 
 # -- Compiling module Decoder
 # -- Compiling module PC_Logic
@@ -131,35 +131,35 @@
 # 
 # Top level modules:
 # 	Decoder
-# End time: 11:13:50 on Jun 17,2025, Elapsed time: 0:00:00
+# End time: 17:01:41 on Jun 17,2025, Elapsed time: 0:00:00
 # Errors: 0, Warnings: 0
 # vlog -sv -work work +incdir+C:/Users/joseb/Documents/GitHub/CE3201_PF {C:/Users/joseb/Documents/GitHub/CE3201_PF/ROM.sv}
 # Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
-# Start time: 11:13:50 on Jun 17,2025
+# Start time: 17:01:41 on Jun 17,2025
 # vlog -reportprogress 300 -sv -work work "+incdir+C:/Users/joseb/Documents/GitHub/CE3201_PF" C:/Users/joseb/Documents/GitHub/CE3201_PF/ROM.sv 
 # -- Compiling module ROM
 # 
 # Top level modules:
 # 	ROM
-# End time: 11:13:50 on Jun 17,2025, Elapsed time: 0:00:00
+# End time: 17:01:41 on Jun 17,2025, Elapsed time: 0:00:00
 # Errors: 0, Warnings: 0
 # 
-# vlog -sv -work work +incdir+C:/Users/joseb/Documents/GitHub/CE3201_PF {C:/Users/joseb/Documents/GitHub/CE3201_PF/tb_Gambling_Tec_SPACE_ASM.sv}
+# vlog -sv -work work +incdir+C:/Users/joseb/Documents/GitHub/CE3201_PF {C:/Users/joseb/Documents/GitHub/CE3201_PF/tb_Gambling_Tec_Integration.sv}
 # Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
-# Start time: 11:13:50 on Jun 17,2025
-# vlog -reportprogress 300 -sv -work work "+incdir+C:/Users/joseb/Documents/GitHub/CE3201_PF" C:/Users/joseb/Documents/GitHub/CE3201_PF/tb_Gambling_Tec_SPACE_ASM.sv 
-# -- Compiling module tb_Gambling_Tec_SPACE_ASM
+# Start time: 17:01:41 on Jun 17,2025
+# vlog -reportprogress 300 -sv -work work "+incdir+C:/Users/joseb/Documents/GitHub/CE3201_PF" C:/Users/joseb/Documents/GitHub/CE3201_PF/tb_Gambling_Tec_Integration.sv 
+# -- Compiling module tb_Gambling_Tec_Integration
 # 
 # Top level modules:
-# 	tb_Gambling_Tec_SPACE_ASM
-# End time: 11:13:50 on Jun 17,2025, Elapsed time: 0:00:00
+# 	tb_Gambling_Tec_Integration
+# End time: 17:01:41 on Jun 17,2025, Elapsed time: 0:00:00
 # Errors: 0, Warnings: 0
 # 
-# vsim -t 1ps -L altera_ver -L lpm_ver -L sgate_ver -L altera_mf_ver -L altera_lnsim_ver -L cyclonev_ver -L cyclonev_hssi_ver -L cyclonev_pcie_hip_ver -L rtl_work -L work -voptargs="+acc"  tb_Gambling_Tec_SPACE_ASM
-# vsim -t 1ps -L altera_ver -L lpm_ver -L sgate_ver -L altera_mf_ver -L altera_lnsim_ver -L cyclonev_ver -L cyclonev_hssi_ver -L cyclonev_pcie_hip_ver -L rtl_work -L work -voptargs=""+acc"" tb_Gambling_Tec_SPACE_ASM 
-# Start time: 11:13:50 on Jun 17,2025
+# vsim -t 1ps -L altera_ver -L lpm_ver -L sgate_ver -L altera_mf_ver -L altera_lnsim_ver -L cyclonev_ver -L cyclonev_hssi_ver -L cyclonev_pcie_hip_ver -L rtl_work -L work -voptargs="+acc"  tb_Gambling_Tec_Integration
+# vsim -t 1ps -L altera_ver -L lpm_ver -L sgate_ver -L altera_mf_ver -L altera_lnsim_ver -L cyclonev_ver -L cyclonev_hssi_ver -L cyclonev_pcie_hip_ver -L rtl_work -L work -voptargs=""+acc"" tb_Gambling_Tec_Integration 
+# Start time: 17:01:41 on Jun 17,2025
 # Loading sv_std.std
-# Loading work.tb_Gambling_Tec_SPACE_ASM
+# Loading work.tb_Gambling_Tec_Integration
 # Loading work.Gambling_Tec
 # Loading work.ROM
 # Loading work.CPU
@@ -183,1405 +183,19 @@
 # view signals
 # .main_pane.objects.interior.cs.body.tree
 # run -all
-# ==== TEST CPU JUGADAS CON TECLA SPACE ====
-# >> Primera jugada...
-# >> Segunda jugada...
-# >> Tercera jugada...
+# ==== TEST INTEGRADO DE ENSAMBLADOR ====
+# Tecla: DOWN (0x72) - Aumentar dinero
+# Tecla presionada:         114
 # 
-# ==== EJECUCION CICLO A CICLO ====
-# Ciclo 0:
-#   PC        = x
-#   Instr     = 0xxxxxxxxx
-#   RegWrite  = 0
-#   MemWrite  = 0
-#   ALUResult = x
-#   ReadData  = x
-#   Result    = x
-#   Flags     = x
-#     R0 = x
-#     R1 = x
-#     R2 = x
-#     R3 = x
-#     R4 = x
-#     R5 = x
-#     R6 = x
-#     R7 = x
-#     R8 = x
-#     R9 = x
-#     R10 = x
-#     R11 = x
-#     R12 = x
-# -----------------------------
-# Ciclo 1:
-#   PC        = x
-#   Instr     = 0xxxxxxxxx
-#   RegWrite  = 0
-#   MemWrite  = 0
-#   ALUResult = x
-#   ReadData  = x
-#   Result    = x
-#   Flags     = x
-#     R0 = x
-#     R1 = x
-#     R2 = x
-#     R3 = x
-#     R4 = x
-#     R5 = x
-#     R6 = x
-#     R7 = x
-#     R8 = x
-#     R9 = x
-#     R10 = x
-#     R11 = x
-#     R12 = x
-# -----------------------------
-# Ciclo 2:
-#   PC        = x
-#   Instr     = 0xxxxxxxxx
-#   RegWrite  = 0
-#   MemWrite  = 0
-#   ALUResult = x
-#   ReadData  = x
-#   Result    = x
-#   Flags     = x
-#     R0 = x
-#     R1 = x
-#     R2 = x
-#     R3 = x
-#     R4 = x
-#     R5 = x
-#     R6 = x
-#     R7 = x
-#     R8 = x
-#     R9 = x
-#     R10 = x
-#     R11 = x
-#     R12 = x
-# -----------------------------
-# Ciclo 3:
-#   PC        = x
-#   Instr     = 0xxxxxxxxx
-#   RegWrite  = 0
-#   MemWrite  = 0
-#   ALUResult = x
-#   ReadData  = x
-#   Result    = x
-#   Flags     = x
-#     R0 = x
-#     R1 = x
-#     R2 = x
-#     R3 = x
-#     R4 = x
-#     R5 = x
-#     R6 = x
-#     R7 = x
-#     R8 = x
-#     R9 = x
-#     R10 = x
-#     R11 = x
-#     R12 = x
-# -----------------------------
-# Ciclo 4:
-#   PC        = x
-#   Instr     = 0xxxxxxxxx
-#   RegWrite  = 0
-#   MemWrite  = 0
-#   ALUResult = x
-#   ReadData  = x
-#   Result    = x
-#   Flags     = x
-#     R0 = x
-#     R1 = x
-#     R2 = x
-#     R3 = x
-#     R4 = x
-#     R5 = x
-#     R6 = x
-#     R7 = x
-#     R8 = x
-#     R9 = x
-#     R10 = x
-#     R11 = x
-#     R12 = x
-# -----------------------------
-# Ciclo 5:
-#   PC        = x
-#   Instr     = 0xxxxxxxxx
-#   RegWrite  = 0
-#   MemWrite  = 0
-#   ALUResult = x
-#   ReadData  = x
-#   Result    = x
-#   Flags     = x
-#     R0 = x
-#     R1 = x
-#     R2 = x
-#     R3 = x
-#     R4 = x
-#     R5 = x
-#     R6 = x
-#     R7 = x
-#     R8 = x
-#     R9 = x
-#     R10 = x
-#     R11 = x
-#     R12 = x
-# -----------------------------
-# Ciclo 6:
-#   PC        = x
-#   Instr     = 0xxxxxxxxx
-#   RegWrite  = 0
-#   MemWrite  = 0
-#   ALUResult = x
-#   ReadData  = x
-#   Result    = x
-#   Flags     = x
-#     R0 = x
-#     R1 = x
-#     R2 = x
-#     R3 = x
-#     R4 = x
-#     R5 = x
-#     R6 = x
-#     R7 = x
-#     R8 = x
-#     R9 = x
-#     R10 = x
-#     R11 = x
-#     R12 = x
-# -----------------------------
-# Ciclo 7:
-#   PC        = x
-#   Instr     = 0xxxxxxxxx
-#   RegWrite  = 0
-#   MemWrite  = 0
-#   ALUResult = x
-#   ReadData  = x
-#   Result    = x
-#   Flags     = x
-#     R0 = x
-#     R1 = x
-#     R2 = x
-#     R3 = x
-#     R4 = x
-#     R5 = x
-#     R6 = x
-#     R7 = x
-#     R8 = x
-#     R9 = x
-#     R10 = x
-#     R11 = x
-#     R12 = x
-# -----------------------------
-# Ciclo 8:
-#   PC        = x
-#   Instr     = 0xxxxxxxxx
-#   RegWrite  = 0
-#   MemWrite  = 0
-#   ALUResult = x
-#   ReadData  = x
-#   Result    = x
-#   Flags     = x
-#     R0 = x
-#     R1 = x
-#     R2 = x
-#     R3 = x
-#     R4 = x
-#     R5 = x
-#     R6 = x
-#     R7 = x
-#     R8 = x
-#     R9 = x
-#     R10 = x
-#     R11 = x
-#     R12 = x
-# -----------------------------
-# Ciclo 9:
-#   PC        = x
-#   Instr     = 0xxxxxxxxx
-#   RegWrite  = 0
-#   MemWrite  = 0
-#   ALUResult = x
-#   ReadData  = x
-#   Result    = x
-#   Flags     = x
-#     R0 = x
-#     R1 = x
-#     R2 = x
-#     R3 = x
-#     R4 = x
-#     R5 = x
-#     R6 = x
-#     R7 = x
-#     R8 = x
-#     R9 = x
-#     R10 = x
-#     R11 = x
-#     R12 = x
-# -----------------------------
-# Ciclo 10:
-#   PC        = x
-#   Instr     = 0xxxxxxxxx
-#   RegWrite  = 0
-#   MemWrite  = 0
-#   ALUResult = x
-#   ReadData  = x
-#   Result    = x
-#   Flags     = x
-#     R0 = x
-#     R1 = x
-#     R2 = x
-#     R3 = x
-#     R4 = x
-#     R5 = x
-#     R6 = x
-#     R7 = x
-#     R8 = x
-#     R9 = x
-#     R10 = x
-#     R11 = x
-#     R12 = x
-# -----------------------------
-# Ciclo 11:
-#   PC        = x
-#   Instr     = 0xxxxxxxxx
-#   RegWrite  = 0
-#   MemWrite  = 0
-#   ALUResult = x
-#   ReadData  = x
-#   Result    = x
-#   Flags     = x
-#     R0 = x
-#     R1 = x
-#     R2 = x
-#     R3 = x
-#     R4 = x
-#     R5 = x
-#     R6 = x
-#     R7 = x
-#     R8 = x
-#     R9 = x
-#     R10 = x
-#     R11 = x
-#     R12 = x
-# -----------------------------
-# Ciclo 12:
-#   PC        = x
-#   Instr     = 0xxxxxxxxx
-#   RegWrite  = 0
-#   MemWrite  = 0
-#   ALUResult = x
-#   ReadData  = x
-#   Result    = x
-#   Flags     = x
-#     R0 = x
-#     R1 = x
-#     R2 = x
-#     R3 = x
-#     R4 = x
-#     R5 = x
-#     R6 = x
-#     R7 = x
-#     R8 = x
-#     R9 = x
-#     R10 = x
-#     R11 = x
-#     R12 = x
-# -----------------------------
-# Ciclo 13:
-#   PC        = x
-#   Instr     = 0xxxxxxxxx
-#   RegWrite  = 0
-#   MemWrite  = 0
-#   ALUResult = x
-#   ReadData  = x
-#   Result    = x
-#   Flags     = x
-#     R0 = x
-#     R1 = x
-#     R2 = x
-#     R3 = x
-#     R4 = x
-#     R5 = x
-#     R6 = x
-#     R7 = x
-#     R8 = x
-#     R9 = x
-#     R10 = x
-#     R11 = x
-#     R12 = x
-# -----------------------------
-# Ciclo 14:
-#   PC        = x
-#   Instr     = 0xxxxxxxxx
-#   RegWrite  = 0
-#   MemWrite  = 0
-#   ALUResult = x
-#   ReadData  = x
-#   Result    = x
-#   Flags     = x
-#     R0 = x
-#     R1 = x
-#     R2 = x
-#     R3 = x
-#     R4 = x
-#     R5 = x
-#     R6 = x
-#     R7 = x
-#     R8 = x
-#     R9 = x
-#     R10 = x
-#     R11 = x
-#     R12 = x
-# -----------------------------
-# Ciclo 15:
-#   PC        = x
-#   Instr     = 0xxxxxxxxx
-#   RegWrite  = 0
-#   MemWrite  = 0
-#   ALUResult = x
-#   ReadData  = x
-#   Result    = x
-#   Flags     = x
-#     R0 = x
-#     R1 = x
-#     R2 = x
-#     R3 = x
-#     R4 = x
-#     R5 = x
-#     R6 = x
-#     R7 = x
-#     R8 = x
-#     R9 = x
-#     R10 = x
-#     R11 = x
-#     R12 = x
-# -----------------------------
-# Ciclo 16:
-#   PC        = x
-#   Instr     = 0xxxxxxxxx
-#   RegWrite  = 0
-#   MemWrite  = 0
-#   ALUResult = x
-#   ReadData  = x
-#   Result    = x
-#   Flags     = x
-#     R0 = x
-#     R1 = x
-#     R2 = x
-#     R3 = x
-#     R4 = x
-#     R5 = x
-#     R6 = x
-#     R7 = x
-#     R8 = x
-#     R9 = x
-#     R10 = x
-#     R11 = x
-#     R12 = x
-# -----------------------------
-# Ciclo 17:
-#   PC        = x
-#   Instr     = 0xxxxxxxxx
-#   RegWrite  = 0
-#   MemWrite  = 0
-#   ALUResult = x
-#   ReadData  = x
-#   Result    = x
-#   Flags     = x
-#     R0 = x
-#     R1 = x
-#     R2 = x
-#     R3 = x
-#     R4 = x
-#     R5 = x
-#     R6 = x
-#     R7 = x
-#     R8 = x
-#     R9 = x
-#     R10 = x
-#     R11 = x
-#     R12 = x
-# -----------------------------
-# Ciclo 18:
-#   PC        = x
-#   Instr     = 0xxxxxxxxx
-#   RegWrite  = 0
-#   MemWrite  = 0
-#   ALUResult = x
-#   ReadData  = x
-#   Result    = x
-#   Flags     = x
-#     R0 = x
-#     R1 = x
-#     R2 = x
-#     R3 = x
-#     R4 = x
-#     R5 = x
-#     R6 = x
-#     R7 = x
-#     R8 = x
-#     R9 = x
-#     R10 = x
-#     R11 = x
-#     R12 = x
-# -----------------------------
-# Ciclo 19:
-#   PC        = x
-#   Instr     = 0xxxxxxxxx
-#   RegWrite  = 0
-#   MemWrite  = 0
-#   ALUResult = x
-#   ReadData  = x
-#   Result    = x
-#   Flags     = x
-#     R0 = x
-#     R1 = x
-#     R2 = x
-#     R3 = x
-#     R4 = x
-#     R5 = x
-#     R6 = x
-#     R7 = x
-#     R8 = x
-#     R9 = x
-#     R10 = x
-#     R11 = x
-#     R12 = x
-# -----------------------------
-# Ciclo 20:
-#   PC        = x
-#   Instr     = 0xxxxxxxxx
-#   RegWrite  = 0
-#   MemWrite  = 0
-#   ALUResult = x
-#   ReadData  = x
-#   Result    = x
-#   Flags     = x
-#     R0 = x
-#     R1 = x
-#     R2 = x
-#     R3 = x
-#     R4 = x
-#     R5 = x
-#     R6 = x
-#     R7 = x
-#     R8 = x
-#     R9 = x
-#     R10 = x
-#     R11 = x
-#     R12 = x
-# -----------------------------
-# Ciclo 21:
-#   PC        = x
-#   Instr     = 0xxxxxxxxx
-#   RegWrite  = 0
-#   MemWrite  = 0
-#   ALUResult = x
-#   ReadData  = x
-#   Result    = x
-#   Flags     = x
-#     R0 = x
-#     R1 = x
-#     R2 = x
-#     R3 = x
-#     R4 = x
-#     R5 = x
-#     R6 = x
-#     R7 = x
-#     R8 = x
-#     R9 = x
-#     R10 = x
-#     R11 = x
-#     R12 = x
-# -----------------------------
-# Ciclo 22:
-#   PC        = x
-#   Instr     = 0xxxxxxxxx
-#   RegWrite  = 0
-#   MemWrite  = 0
-#   ALUResult = x
-#   ReadData  = x
-#   Result    = x
-#   Flags     = x
-#     R0 = x
-#     R1 = x
-#     R2 = x
-#     R3 = x
-#     R4 = x
-#     R5 = x
-#     R6 = x
-#     R7 = x
-#     R8 = x
-#     R9 = x
-#     R10 = x
-#     R11 = x
-#     R12 = x
-# -----------------------------
-# Ciclo 23:
-#   PC        = x
-#   Instr     = 0xxxxxxxxx
-#   RegWrite  = 0
-#   MemWrite  = 0
-#   ALUResult = x
-#   ReadData  = x
-#   Result    = x
-#   Flags     = x
-#     R0 = x
-#     R1 = x
-#     R2 = x
-#     R3 = x
-#     R4 = x
-#     R5 = x
-#     R6 = x
-#     R7 = x
-#     R8 = x
-#     R9 = x
-#     R10 = x
-#     R11 = x
-#     R12 = x
-# -----------------------------
-# Ciclo 24:
-#   PC        = x
-#   Instr     = 0xxxxxxxxx
-#   RegWrite  = 0
-#   MemWrite  = 0
-#   ALUResult = x
-#   ReadData  = x
-#   Result    = x
-#   Flags     = x
-#     R0 = x
-#     R1 = x
-#     R2 = x
-#     R3 = x
-#     R4 = x
-#     R5 = x
-#     R6 = x
-#     R7 = x
-#     R8 = x
-#     R9 = x
-#     R10 = x
-#     R11 = x
-#     R12 = x
-# -----------------------------
-# Ciclo 25:
-#   PC        = x
-#   Instr     = 0xxxxxxxxx
-#   RegWrite  = 0
-#   MemWrite  = 0
-#   ALUResult = x
-#   ReadData  = x
-#   Result    = x
-#   Flags     = x
-#     R0 = x
-#     R1 = x
-#     R2 = x
-#     R3 = x
-#     R4 = x
-#     R5 = x
-#     R6 = x
-#     R7 = x
-#     R8 = x
-#     R9 = x
-#     R10 = x
-#     R11 = x
-#     R12 = x
-# -----------------------------
-# Ciclo 26:
-#   PC        = x
-#   Instr     = 0xxxxxxxxx
-#   RegWrite  = 0
-#   MemWrite  = 0
-#   ALUResult = x
-#   ReadData  = x
-#   Result    = x
-#   Flags     = x
-#     R0 = x
-#     R1 = x
-#     R2 = x
-#     R3 = x
-#     R4 = x
-#     R5 = x
-#     R6 = x
-#     R7 = x
-#     R8 = x
-#     R9 = x
-#     R10 = x
-#     R11 = x
-#     R12 = x
-# -----------------------------
-# Ciclo 27:
-#   PC        = x
-#   Instr     = 0xxxxxxxxx
-#   RegWrite  = 0
-#   MemWrite  = 0
-#   ALUResult = x
-#   ReadData  = x
-#   Result    = x
-#   Flags     = x
-#     R0 = x
-#     R1 = x
-#     R2 = x
-#     R3 = x
-#     R4 = x
-#     R5 = x
-#     R6 = x
-#     R7 = x
-#     R8 = x
-#     R9 = x
-#     R10 = x
-#     R11 = x
-#     R12 = x
-# -----------------------------
-# Ciclo 28:
-#   PC        = x
-#   Instr     = 0xxxxxxxxx
-#   RegWrite  = 0
-#   MemWrite  = 0
-#   ALUResult = x
-#   ReadData  = x
-#   Result    = x
-#   Flags     = x
-#     R0 = x
-#     R1 = x
-#     R2 = x
-#     R3 = x
-#     R4 = x
-#     R5 = x
-#     R6 = x
-#     R7 = x
-#     R8 = x
-#     R9 = x
-#     R10 = x
-#     R11 = x
-#     R12 = x
-# -----------------------------
-# Ciclo 29:
-#   PC        = x
-#   Instr     = 0xxxxxxxxx
-#   RegWrite  = 0
-#   MemWrite  = 0
-#   ALUResult = x
-#   ReadData  = x
-#   Result    = x
-#   Flags     = x
-#     R0 = x
-#     R1 = x
-#     R2 = x
-#     R3 = x
-#     R4 = x
-#     R5 = x
-#     R6 = x
-#     R7 = x
-#     R8 = x
-#     R9 = x
-#     R10 = x
-#     R11 = x
-#     R12 = x
-# -----------------------------
-# Ciclo 30:
-#   PC        = x
-#   Instr     = 0xxxxxxxxx
-#   RegWrite  = 0
-#   MemWrite  = 0
-#   ALUResult = x
-#   ReadData  = x
-#   Result    = x
-#   Flags     = x
-#     R0 = x
-#     R1 = x
-#     R2 = x
-#     R3 = x
-#     R4 = x
-#     R5 = x
-#     R6 = x
-#     R7 = x
-#     R8 = x
-#     R9 = x
-#     R10 = x
-#     R11 = x
-#     R12 = x
-# -----------------------------
-# Ciclo 31:
-#   PC        = x
-#   Instr     = 0xxxxxxxxx
-#   RegWrite  = 0
-#   MemWrite  = 0
-#   ALUResult = x
-#   ReadData  = x
-#   Result    = x
-#   Flags     = x
-#     R0 = x
-#     R1 = x
-#     R2 = x
-#     R3 = x
-#     R4 = x
-#     R5 = x
-#     R6 = x
-#     R7 = x
-#     R8 = x
-#     R9 = x
-#     R10 = x
-#     R11 = x
-#     R12 = x
-# -----------------------------
-# Ciclo 32:
-#   PC        = x
-#   Instr     = 0xxxxxxxxx
-#   RegWrite  = 0
-#   MemWrite  = 0
-#   ALUResult = x
-#   ReadData  = x
-#   Result    = x
-#   Flags     = x
-#     R0 = x
-#     R1 = x
-#     R2 = x
-#     R3 = x
-#     R4 = x
-#     R5 = x
-#     R6 = x
-#     R7 = x
-#     R8 = x
-#     R9 = x
-#     R10 = x
-#     R11 = x
-#     R12 = x
-# -----------------------------
-# Ciclo 33:
-#   PC        = x
-#   Instr     = 0xxxxxxxxx
-#   RegWrite  = 0
-#   MemWrite  = 0
-#   ALUResult = x
-#   ReadData  = x
-#   Result    = x
-#   Flags     = x
-#     R0 = x
-#     R1 = x
-#     R2 = x
-#     R3 = x
-#     R4 = x
-#     R5 = x
-#     R6 = x
-#     R7 = x
-#     R8 = x
-#     R9 = x
-#     R10 = x
-#     R11 = x
-#     R12 = x
-# -----------------------------
-# Ciclo 34:
-#   PC        = x
-#   Instr     = 0xxxxxxxxx
-#   RegWrite  = 0
-#   MemWrite  = 0
-#   ALUResult = x
-#   ReadData  = x
-#   Result    = x
-#   Flags     = x
-#     R0 = x
-#     R1 = x
-#     R2 = x
-#     R3 = x
-#     R4 = x
-#     R5 = x
-#     R6 = x
-#     R7 = x
-#     R8 = x
-#     R9 = x
-#     R10 = x
-#     R11 = x
-#     R12 = x
-# -----------------------------
-# Ciclo 35:
-#   PC        = x
-#   Instr     = 0xxxxxxxxx
-#   RegWrite  = 0
-#   MemWrite  = 0
-#   ALUResult = x
-#   ReadData  = x
-#   Result    = x
-#   Flags     = x
-#     R0 = x
-#     R1 = x
-#     R2 = x
-#     R3 = x
-#     R4 = x
-#     R5 = x
-#     R6 = x
-#     R7 = x
-#     R8 = x
-#     R9 = x
-#     R10 = x
-#     R11 = x
-#     R12 = x
-# -----------------------------
-# Ciclo 36:
-#   PC        = x
-#   Instr     = 0xxxxxxxxx
-#   RegWrite  = 0
-#   MemWrite  = 0
-#   ALUResult = x
-#   ReadData  = x
-#   Result    = x
-#   Flags     = x
-#     R0 = x
-#     R1 = x
-#     R2 = x
-#     R3 = x
-#     R4 = x
-#     R5 = x
-#     R6 = x
-#     R7 = x
-#     R8 = x
-#     R9 = x
-#     R10 = x
-#     R11 = x
-#     R12 = x
-# -----------------------------
-# Ciclo 37:
-#   PC        = x
-#   Instr     = 0xxxxxxxxx
-#   RegWrite  = 0
-#   MemWrite  = 0
-#   ALUResult = x
-#   ReadData  = x
-#   Result    = x
-#   Flags     = x
-#     R0 = x
-#     R1 = x
-#     R2 = x
-#     R3 = x
-#     R4 = x
-#     R5 = x
-#     R6 = x
-#     R7 = x
-#     R8 = x
-#     R9 = x
-#     R10 = x
-#     R11 = x
-#     R12 = x
-# -----------------------------
-# Ciclo 38:
-#   PC        = x
-#   Instr     = 0xxxxxxxxx
-#   RegWrite  = 0
-#   MemWrite  = 0
-#   ALUResult = x
-#   ReadData  = x
-#   Result    = x
-#   Flags     = x
-#     R0 = x
-#     R1 = x
-#     R2 = x
-#     R3 = x
-#     R4 = x
-#     R5 = x
-#     R6 = x
-#     R7 = x
-#     R8 = x
-#     R9 = x
-#     R10 = x
-#     R11 = x
-#     R12 = x
-# -----------------------------
-# Ciclo 39:
-#   PC        = x
-#   Instr     = 0xxxxxxxxx
-#   RegWrite  = 0
-#   MemWrite  = 0
-#   ALUResult = x
-#   ReadData  = x
-#   Result    = x
-#   Flags     = x
-#     R0 = x
-#     R1 = x
-#     R2 = x
-#     R3 = x
-#     R4 = x
-#     R5 = x
-#     R6 = x
-#     R7 = x
-#     R8 = x
-#     R9 = x
-#     R10 = x
-#     R11 = x
-#     R12 = x
-# -----------------------------
-# Ciclo 40:
-#   PC        = x
-#   Instr     = 0xxxxxxxxx
-#   RegWrite  = 0
-#   MemWrite  = 0
-#   ALUResult = x
-#   ReadData  = x
-#   Result    = x
-#   Flags     = x
-#     R0 = x
-#     R1 = x
-#     R2 = x
-#     R3 = x
-#     R4 = x
-#     R5 = x
-#     R6 = x
-#     R7 = x
-#     R8 = x
-#     R9 = x
-#     R10 = x
-#     R11 = x
-#     R12 = x
-# -----------------------------
-# Ciclo 41:
-#   PC        = x
-#   Instr     = 0xxxxxxxxx
-#   RegWrite  = 0
-#   MemWrite  = 0
-#   ALUResult = x
-#   ReadData  = x
-#   Result    = x
-#   Flags     = x
-#     R0 = x
-#     R1 = x
-#     R2 = x
-#     R3 = x
-#     R4 = x
-#     R5 = x
-#     R6 = x
-#     R7 = x
-#     R8 = x
-#     R9 = x
-#     R10 = x
-#     R11 = x
-#     R12 = x
-# -----------------------------
-# Ciclo 42:
-#   PC        = x
-#   Instr     = 0xxxxxxxxx
-#   RegWrite  = 0
-#   MemWrite  = 0
-#   ALUResult = x
-#   ReadData  = x
-#   Result    = x
-#   Flags     = x
-#     R0 = x
-#     R1 = x
-#     R2 = x
-#     R3 = x
-#     R4 = x
-#     R5 = x
-#     R6 = x
-#     R7 = x
-#     R8 = x
-#     R9 = x
-#     R10 = x
-#     R11 = x
-#     R12 = x
-# -----------------------------
-# Ciclo 43:
-#   PC        = x
-#   Instr     = 0xxxxxxxxx
-#   RegWrite  = 0
-#   MemWrite  = 0
-#   ALUResult = x
-#   ReadData  = x
-#   Result    = x
-#   Flags     = x
-#     R0 = x
-#     R1 = x
-#     R2 = x
-#     R3 = x
-#     R4 = x
-#     R5 = x
-#     R6 = x
-#     R7 = x
-#     R8 = x
-#     R9 = x
-#     R10 = x
-#     R11 = x
-#     R12 = x
-# -----------------------------
-# Ciclo 44:
-#   PC        = x
-#   Instr     = 0xxxxxxxxx
-#   RegWrite  = 0
-#   MemWrite  = 0
-#   ALUResult = x
-#   ReadData  = x
-#   Result    = x
-#   Flags     = x
-#     R0 = x
-#     R1 = x
-#     R2 = x
-#     R3 = x
-#     R4 = x
-#     R5 = x
-#     R6 = x
-#     R7 = x
-#     R8 = x
-#     R9 = x
-#     R10 = x
-#     R11 = x
-#     R12 = x
-# -----------------------------
-# Ciclo 45:
-#   PC        = x
-#   Instr     = 0xxxxxxxxx
-#   RegWrite  = 0
-#   MemWrite  = 0
-#   ALUResult = x
-#   ReadData  = x
-#   Result    = x
-#   Flags     = x
-#     R0 = x
-#     R1 = x
-#     R2 = x
-#     R3 = x
-#     R4 = x
-#     R5 = x
-#     R6 = x
-#     R7 = x
-#     R8 = x
-#     R9 = x
-#     R10 = x
-#     R11 = x
-#     R12 = x
-# -----------------------------
-# Ciclo 46:
-#   PC        = x
-#   Instr     = 0xxxxxxxxx
-#   RegWrite  = 0
-#   MemWrite  = 0
-#   ALUResult = x
-#   ReadData  = x
-#   Result    = x
-#   Flags     = x
-#     R0 = x
-#     R1 = x
-#     R2 = x
-#     R3 = x
-#     R4 = x
-#     R5 = x
-#     R6 = x
-#     R7 = x
-#     R8 = x
-#     R9 = x
-#     R10 = x
-#     R11 = x
-#     R12 = x
-# -----------------------------
-# Ciclo 47:
-#   PC        = x
-#   Instr     = 0xxxxxxxxx
-#   RegWrite  = 0
-#   MemWrite  = 0
-#   ALUResult = x
-#   ReadData  = x
-#   Result    = x
-#   Flags     = x
-#     R0 = x
-#     R1 = x
-#     R2 = x
-#     R3 = x
-#     R4 = x
-#     R5 = x
-#     R6 = x
-#     R7 = x
-#     R8 = x
-#     R9 = x
-#     R10 = x
-#     R11 = x
-#     R12 = x
-# -----------------------------
-# Ciclo 48:
-#   PC        = x
-#   Instr     = 0xxxxxxxxx
-#   RegWrite  = 0
-#   MemWrite  = 0
-#   ALUResult = x
-#   ReadData  = x
-#   Result    = x
-#   Flags     = x
-#     R0 = x
-#     R1 = x
-#     R2 = x
-#     R3 = x
-#     R4 = x
-#     R5 = x
-#     R6 = x
-#     R7 = x
-#     R8 = x
-#     R9 = x
-#     R10 = x
-#     R11 = x
-#     R12 = x
-# -----------------------------
-# Ciclo 49:
-#   PC        = x
-#   Instr     = 0xxxxxxxxx
-#   RegWrite  = 0
-#   MemWrite  = 0
-#   ALUResult = x
-#   ReadData  = x
-#   Result    = x
-#   Flags     = x
-#     R0 = x
-#     R1 = x
-#     R2 = x
-#     R3 = x
-#     R4 = x
-#     R5 = x
-#     R6 = x
-#     R7 = x
-#     R8 = x
-#     R9 = x
-#     R10 = x
-#     R11 = x
-#     R12 = x
-# -----------------------------
-# Ciclo 50:
-#   PC        = x
-#   Instr     = 0xxxxxxxxx
-#   RegWrite  = 0
-#   MemWrite  = 0
-#   ALUResult = x
-#   ReadData  = x
-#   Result    = x
-#   Flags     = x
-#     R0 = x
-#     R1 = x
-#     R2 = x
-#     R3 = x
-#     R4 = x
-#     R5 = x
-#     R6 = x
-#     R7 = x
-#     R8 = x
-#     R9 = x
-#     R10 = x
-#     R11 = x
-#     R12 = x
-# -----------------------------
-# Ciclo 51:
-#   PC        = x
-#   Instr     = 0xxxxxxxxx
-#   RegWrite  = 0
-#   MemWrite  = 0
-#   ALUResult = x
-#   ReadData  = x
-#   Result    = x
-#   Flags     = x
-#     R0 = x
-#     R1 = x
-#     R2 = x
-#     R3 = x
-#     R4 = x
-#     R5 = x
-#     R6 = x
-#     R7 = x
-#     R8 = x
-#     R9 = x
-#     R10 = x
-#     R11 = x
-#     R12 = x
-# -----------------------------
-# Ciclo 52:
-#   PC        = x
-#   Instr     = 0xxxxxxxxx
-#   RegWrite  = 0
-#   MemWrite  = 0
-#   ALUResult = x
-#   ReadData  = x
-#   Result    = x
-#   Flags     = x
-#     R0 = x
-#     R1 = x
-#     R2 = x
-#     R3 = x
-#     R4 = x
-#     R5 = x
-#     R6 = x
-#     R7 = x
-#     R8 = x
-#     R9 = x
-#     R10 = x
-#     R11 = x
-#     R12 = x
-# -----------------------------
-# Ciclo 53:
-#   PC        = x
-#   Instr     = 0xxxxxxxxx
-#   RegWrite  = 0
-#   MemWrite  = 0
-#   ALUResult = x
-#   ReadData  = x
-#   Result    = x
-#   Flags     = x
-#     R0 = x
-#     R1 = x
-#     R2 = x
-#     R3 = x
-#     R4 = x
-#     R5 = x
-#     R6 = x
-#     R7 = x
-#     R8 = x
-#     R9 = x
-#     R10 = x
-#     R11 = x
-#     R12 = x
-# -----------------------------
-# Ciclo 54:
-#   PC        = x
-#   Instr     = 0xxxxxxxxx
-#   RegWrite  = 0
-#   MemWrite  = 0
-#   ALUResult = x
-#   ReadData  = x
-#   Result    = x
-#   Flags     = x
-#     R0 = x
-#     R1 = x
-#     R2 = x
-#     R3 = x
-#     R4 = x
-#     R5 = x
-#     R6 = x
-#     R7 = x
-#     R8 = x
-#     R9 = x
-#     R10 = x
-#     R11 = x
-#     R12 = x
-# -----------------------------
-# Ciclo 55:
-#   PC        = x
-#   Instr     = 0xxxxxxxxx
-#   RegWrite  = 0
-#   MemWrite  = 0
-#   ALUResult = x
-#   ReadData  = x
-#   Result    = x
-#   Flags     = x
-#     R0 = x
-#     R1 = x
-#     R2 = x
-#     R3 = x
-#     R4 = x
-#     R5 = x
-#     R6 = x
-#     R7 = x
-#     R8 = x
-#     R9 = x
-#     R10 = x
-#     R11 = x
-#     R12 = x
-# -----------------------------
-# Ciclo 56:
-#   PC        = x
-#   Instr     = 0xxxxxxxxx
-#   RegWrite  = 0
-#   MemWrite  = 0
-#   ALUResult = x
-#   ReadData  = x
-#   Result    = x
-#   Flags     = x
-#     R0 = x
-#     R1 = x
-#     R2 = x
-#     R3 = x
-#     R4 = x
-#     R5 = x
-#     R6 = x
-#     R7 = x
-#     R8 = x
-#     R9 = x
-#     R10 = x
-#     R11 = x
-#     R12 = x
-# -----------------------------
-# Ciclo 57:
-#   PC        = x
-#   Instr     = 0xxxxxxxxx
-#   RegWrite  = 0
-#   MemWrite  = 0
-#   ALUResult = x
-#   ReadData  = x
-#   Result    = x
-#   Flags     = x
-#     R0 = x
-#     R1 = x
-#     R2 = x
-#     R3 = x
-#     R4 = x
-#     R5 = x
-#     R6 = x
-#     R7 = x
-#     R8 = x
-#     R9 = x
-#     R10 = x
-#     R11 = x
-#     R12 = x
-# -----------------------------
-# Ciclo 58:
-#   PC        = x
-#   Instr     = 0xxxxxxxxx
-#   RegWrite  = 0
-#   MemWrite  = 0
-#   ALUResult = x
-#   ReadData  = x
-#   Result    = x
-#   Flags     = x
-#     R0 = x
-#     R1 = x
-#     R2 = x
-#     R3 = x
-#     R4 = x
-#     R5 = x
-#     R6 = x
-#     R7 = x
-#     R8 = x
-#     R9 = x
-#     R10 = x
-#     R11 = x
-#     R12 = x
-# -----------------------------
-# Ciclo 59:
-#   PC        = x
-#   Instr     = 0xxxxxxxxx
-#   RegWrite  = 0
-#   MemWrite  = 0
-#   ALUResult = x
-#   ReadData  = x
-#   Result    = x
-#   Flags     = x
-#     R0 = x
-#     R1 = x
-#     R2 = x
-#     R3 = x
-#     R4 = x
-#     R5 = x
-#     R6 = x
-#     R7 = x
-#     R8 = x
-#     R9 = x
-#     R10 = x
-#     R11 = x
-#     R12 = x
-# -----------------------------
-# 
-# ==== RESULTADO FINAL ===
-# RAM[10] (teclado)      = 0
-# RAM[16] (contador)     = 0
-# RAM[32] (VGA)          = 0
-# RAM[32] (VGA bin)      = 00000000000000000000000000000000
-# RAM[4144] (simbolo A)  = x
-# RAM[4160] (simbolo B)  = x
-# RAM[4176] (simbolo C)  = x
-# TEST FALLO: VGA NO fue actualizado.
-# ** Note: $finish    : C:/Users/joseb/Documents/GitHub/CE3201_PF/tb_Gambling_Tec_SPACE_ASM.sv(98)
-#    Time: 1735 ns  Iteration: 1  Instance: /tb_Gambling_Tec_SPACE_ASM
+# ==== RESULTADOS EN RAM ====
+# Dinero (dir 20):         x
+# Simbolo A (dir 24):      x
+# Simbolo B (dir 28):      x
+# Simbolo C (dir 32):      x
+# Resultado (dir 36):      x
+# ** Note: $finish    : C:/Users/joseb/Documents/GitHub/CE3201_PF/tb_Gambling_Tec_Integration.sv(51)
+#    Time: 325 ns  Iteration: 1  Instance: /tb_Gambling_Tec_Integration
 # 1
-# Break in Module tb_Gambling_Tec_SPACE_ASM at C:/Users/joseb/Documents/GitHub/CE3201_PF/tb_Gambling_Tec_SPACE_ASM.sv line 98
-# End time: 11:14:13 on Jun 17,2025, Elapsed time: 0:00:23
+# Break in Module tb_Gambling_Tec_Integration at C:/Users/joseb/Documents/GitHub/CE3201_PF/tb_Gambling_Tec_Integration.sv line 51
+# End time: 17:04:14 on Jun 17,2025, Elapsed time: 0:02:33
 # Errors: 0, Warnings: 0
