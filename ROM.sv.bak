@@ -11,7 +11,7 @@ module ROM #(
 
     // Inicializar desde archivo externo en formato hexadecimal
     initial begin
-        $readmemh("Gambling_Tec.hex", mem); // Carga archivo desde "prog.hex" 
+        $readmemh("prog.hex", mem); // Carga archivo desde "prog.hex" 
     end
 
     // Lectura asíncrona: respuesta inmediata

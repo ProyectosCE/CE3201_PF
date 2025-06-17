@@ -1,4 +1,5 @@
 vendor_name = ModelSim
+source_file = 1, C:/Users/joseb/Documents/GitHub/CE3201_PF/Gambling_Tec.hex
 source_file = 1, C:/Users/joseb/Documents/GitHub/CE3201_PF/prog.hex
 source_file = 1, C:/Users/joseb/Documents/GitHub/CE3201_PF/tb_ROM.sv
 source_file = 1, C:/Users/joseb/Documents/GitHub/CE3201_PF/tb_Gambling_Tec_ROM.sv
@@ -23,6 +24,7 @@ source_file = 1, C:/Users/joseb/Documents/GitHub/CE3201_PF/tb_Control_Unit.sv
 source_file = 1, C:/Users/joseb/Documents/GitHub/CE3201_PF/Decoder.sv
 source_file = 1, C:/Users/joseb/Documents/GitHub/CE3201_PF/tb_Gambling_Tec.sv
 source_file = 1, C:/Users/joseb/Documents/GitHub/CE3201_PF/tb_Data_Memory.sv
+source_file = 1, C:/Users/joseb/Documents/GitHub/CE3201_PF/tb_Gambling_Tec_SPACE_ASM.sv
 source_file = 1, C:/Users/joseb/Documents/GitHub/CE3201_PF/db/Gambling_Tec.cbx.xml
 design_name = Gambling_Tec
 instance = comp, \clk~input , clk~input, Gambling_Tec, 1

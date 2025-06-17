@@ -12,117 +12,117 @@
 # 
 # vlog -sv -work work +incdir+C:/Users/joseb/Documents/GitHub/CE3201_PF {C:/Users/joseb/Documents/GitHub/CE3201_PF/Condition_Check.sv}
 # Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
-# Start time: 21:54:23 on Jun 16,2025
+# Start time: 09:12:44 on Jun 17,2025
 # vlog -reportprogress 300 -sv -work work "+incdir+C:/Users/joseb/Documents/GitHub/CE3201_PF" C:/Users/joseb/Documents/GitHub/CE3201_PF/Condition_Check.sv 
 # -- Compiling module Condition_Check
 # 
 # Top level modules:
 # 	Condition_Check
-# End time: 21:54:23 on Jun 16,2025, Elapsed time: 0:00:00
+# End time: 09:12:44 on Jun 17,2025, Elapsed time: 0:00:00
 # Errors: 0, Warnings: 0
 # vlog -sv -work work +incdir+C:/Users/joseb/Documents/GitHub/CE3201_PF {C:/Users/joseb/Documents/GitHub/CE3201_PF/Register_File.sv}
 # Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
-# Start time: 21:54:23 on Jun 16,2025
+# Start time: 09:12:45 on Jun 17,2025
 # vlog -reportprogress 300 -sv -work work "+incdir+C:/Users/joseb/Documents/GitHub/CE3201_PF" C:/Users/joseb/Documents/GitHub/CE3201_PF/Register_File.sv 
 # -- Compiling module Register_File
 # 
 # Top level modules:
 # 	Register_File
-# End time: 21:54:23 on Jun 16,2025, Elapsed time: 0:00:00
+# End time: 09:12:45 on Jun 17,2025, Elapsed time: 0:00:00
 # Errors: 0, Warnings: 0
 # vlog -sv -work work +incdir+C:/Users/joseb/Documents/GitHub/CE3201_PF {C:/Users/joseb/Documents/GitHub/CE3201_PF/Register.sv}
 # Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
-# Start time: 21:54:23 on Jun 16,2025
+# Start time: 09:12:45 on Jun 17,2025
 # vlog -reportprogress 300 -sv -work work "+incdir+C:/Users/joseb/Documents/GitHub/CE3201_PF" C:/Users/joseb/Documents/GitHub/CE3201_PF/Register.sv 
 # -- Compiling module Register
 # 
 # Top level modules:
 # 	Register
-# End time: 21:54:23 on Jun 16,2025, Elapsed time: 0:00:00
+# End time: 09:12:45 on Jun 17,2025, Elapsed time: 0:00:00
 # Errors: 0, Warnings: 0
 # vlog -sv -work work +incdir+C:/Users/joseb/Documents/GitHub/CE3201_PF {C:/Users/joseb/Documents/GitHub/CE3201_PF/Mux.sv}
 # Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
-# Start time: 21:54:23 on Jun 16,2025
+# Start time: 09:12:45 on Jun 17,2025
 # vlog -reportprogress 300 -sv -work work "+incdir+C:/Users/joseb/Documents/GitHub/CE3201_PF" C:/Users/joseb/Documents/GitHub/CE3201_PF/Mux.sv 
 # -- Compiling module Mux
 # 
 # Top level modules:
 # 	Mux
-# End time: 21:54:23 on Jun 16,2025, Elapsed time: 0:00:00
+# End time: 09:12:45 on Jun 17,2025, Elapsed time: 0:00:00
 # Errors: 0, Warnings: 0
 # vlog -sv -work work +incdir+C:/Users/joseb/Documents/GitHub/CE3201_PF {C:/Users/joseb/Documents/GitHub/CE3201_PF/Extender.sv}
 # Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
-# Start time: 21:54:23 on Jun 16,2025
+# Start time: 09:12:45 on Jun 17,2025
 # vlog -reportprogress 300 -sv -work work "+incdir+C:/Users/joseb/Documents/GitHub/CE3201_PF" C:/Users/joseb/Documents/GitHub/CE3201_PF/Extender.sv 
 # -- Compiling module Extender
 # 
 # Top level modules:
 # 	Extender
-# End time: 21:54:24 on Jun 16,2025, Elapsed time: 0:00:01
+# End time: 09:12:45 on Jun 17,2025, Elapsed time: 0:00:00
 # Errors: 0, Warnings: 0
 # vlog -sv -work work +incdir+C:/Users/joseb/Documents/GitHub/CE3201_PF {C:/Users/joseb/Documents/GitHub/CE3201_PF/Data_Memory.sv}
 # Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
-# Start time: 21:54:24 on Jun 16,2025
+# Start time: 09:12:45 on Jun 17,2025
 # vlog -reportprogress 300 -sv -work work "+incdir+C:/Users/joseb/Documents/GitHub/CE3201_PF" C:/Users/joseb/Documents/GitHub/CE3201_PF/Data_Memory.sv 
 # -- Compiling module Data_Memory
 # 
 # Top level modules:
 # 	Data_Memory
-# End time: 21:54:24 on Jun 16,2025, Elapsed time: 0:00:00
+# End time: 09:12:45 on Jun 17,2025, Elapsed time: 0:00:00
 # Errors: 0, Warnings: 0
 # vlog -sv -work work +incdir+C:/Users/joseb/Documents/GitHub/CE3201_PF {C:/Users/joseb/Documents/GitHub/CE3201_PF/CPU.sv}
 # Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
-# Start time: 21:54:24 on Jun 16,2025
+# Start time: 09:12:45 on Jun 17,2025
 # vlog -reportprogress 300 -sv -work work "+incdir+C:/Users/joseb/Documents/GitHub/CE3201_PF" C:/Users/joseb/Documents/GitHub/CE3201_PF/CPU.sv 
 # -- Compiling module CPU
 # 
 # Top level modules:
 # 	CPU
-# End time: 21:54:24 on Jun 16,2025, Elapsed time: 0:00:00
+# End time: 09:12:45 on Jun 17,2025, Elapsed time: 0:00:00
 # Errors: 0, Warnings: 0
 # vlog -sv -work work +incdir+C:/Users/joseb/Documents/GitHub/CE3201_PF {C:/Users/joseb/Documents/GitHub/CE3201_PF/ALU.sv}
 # Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
-# Start time: 21:54:24 on Jun 16,2025
+# Start time: 09:12:45 on Jun 17,2025
 # vlog -reportprogress 300 -sv -work work "+incdir+C:/Users/joseb/Documents/GitHub/CE3201_PF" C:/Users/joseb/Documents/GitHub/CE3201_PF/ALU.sv 
 # -- Compiling module ALU
 # 
 # Top level modules:
 # 	ALU
-# End time: 21:54:24 on Jun 16,2025, Elapsed time: 0:00:00
+# End time: 09:12:45 on Jun 17,2025, Elapsed time: 0:00:00
 # Errors: 0, Warnings: 0
 # vlog -sv -work work +incdir+C:/Users/joseb/Documents/GitHub/CE3201_PF {C:/Users/joseb/Documents/GitHub/CE3201_PF/Adder.sv}
 # Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
-# Start time: 21:54:24 on Jun 16,2025
+# Start time: 09:12:45 on Jun 17,2025
 # vlog -reportprogress 300 -sv -work work "+incdir+C:/Users/joseb/Documents/GitHub/CE3201_PF" C:/Users/joseb/Documents/GitHub/CE3201_PF/Adder.sv 
 # -- Compiling module Adder
 # 
 # Top level modules:
 # 	Adder
-# End time: 21:54:24 on Jun 16,2025, Elapsed time: 0:00:00
+# End time: 09:12:45 on Jun 17,2025, Elapsed time: 0:00:00
 # Errors: 0, Warnings: 0
 # vlog -sv -work work +incdir+C:/Users/joseb/Documents/GitHub/CE3201_PF {C:/Users/joseb/Documents/GitHub/CE3201_PF/Gambling_Tec.sv}
 # Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
-# Start time: 21:54:24 on Jun 16,2025
+# Start time: 09:12:46 on Jun 17,2025
 # vlog -reportprogress 300 -sv -work work "+incdir+C:/Users/joseb/Documents/GitHub/CE3201_PF" C:/Users/joseb/Documents/GitHub/CE3201_PF/Gambling_Tec.sv 
 # -- Compiling module Gambling_Tec
 # 
 # Top level modules:
 # 	Gambling_Tec
-# End time: 21:54:25 on Jun 16,2025, Elapsed time: 0:00:01
+# End time: 09:12:46 on Jun 17,2025, Elapsed time: 0:00:00
 # Errors: 0, Warnings: 0
 # vlog -sv -work work +incdir+C:/Users/joseb/Documents/GitHub/CE3201_PF {C:/Users/joseb/Documents/GitHub/CE3201_PF/Control_Unit.sv}
 # Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
-# Start time: 21:54:25 on Jun 16,2025
+# Start time: 09:12:46 on Jun 17,2025
 # vlog -reportprogress 300 -sv -work work "+incdir+C:/Users/joseb/Documents/GitHub/CE3201_PF" C:/Users/joseb/Documents/GitHub/CE3201_PF/Control_Unit.sv 
 # -- Compiling module Control_Unit
 # 
 # Top level modules:
 # 	Control_Unit
-# End time: 21:54:25 on Jun 16,2025, Elapsed time: 0:00:00
+# End time: 09:12:46 on Jun 17,2025, Elapsed time: 0:00:00
 # Errors: 0, Warnings: 0
 # vlog -sv -work work +incdir+C:/Users/joseb/Documents/GitHub/CE3201_PF {C:/Users/joseb/Documents/GitHub/CE3201_PF/Decoder.sv}
 # Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
-# Start time: 21:54:25 on Jun 16,2025
+# Start time: 09:12:46 on Jun 17,2025
 # vlog -reportprogress 300 -sv -work work "+incdir+C:/Users/joseb/Documents/GitHub/CE3201_PF" C:/Users/joseb/Documents/GitHub/CE3201_PF/Decoder.sv 
 # -- Compiling module Decoder
 # -- Compiling module PC_Logic
@@ -131,33 +131,33 @@
 # 
 # Top level modules:
 # 	Decoder
-# End time: 21:54:26 on Jun 16,2025, Elapsed time: 0:00:01
+# End time: 09:12:46 on Jun 17,2025, Elapsed time: 0:00:00
 # Errors: 0, Warnings: 0
 # vlog -sv -work work +incdir+C:/Users/joseb/Documents/GitHub/CE3201_PF {C:/Users/joseb/Documents/GitHub/CE3201_PF/ROM.sv}
 # Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
-# Start time: 21:54:26 on Jun 16,2025
+# Start time: 09:12:46 on Jun 17,2025
 # vlog -reportprogress 300 -sv -work work "+incdir+C:/Users/joseb/Documents/GitHub/CE3201_PF" C:/Users/joseb/Documents/GitHub/CE3201_PF/ROM.sv 
 # -- Compiling module ROM
 # 
 # Top level modules:
 # 	ROM
-# End time: 21:54:26 on Jun 16,2025, Elapsed time: 0:00:00
+# End time: 09:12:46 on Jun 17,2025, Elapsed time: 0:00:00
 # Errors: 0, Warnings: 0
 # 
 # vlog -sv -work work +incdir+C:/Users/joseb/Documents/GitHub/CE3201_PF {C:/Users/joseb/Documents/GitHub/CE3201_PF/tb_Gambling_Tec_ROM.sv}
 # Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
-# Start time: 21:54:26 on Jun 16,2025
+# Start time: 09:12:46 on Jun 17,2025
 # vlog -reportprogress 300 -sv -work work "+incdir+C:/Users/joseb/Documents/GitHub/CE3201_PF" C:/Users/joseb/Documents/GitHub/CE3201_PF/tb_Gambling_Tec_ROM.sv 
 # -- Compiling module tb_Gambling_Tec_ROM
 # 
 # Top level modules:
 # 	tb_Gambling_Tec_ROM
-# End time: 21:54:26 on Jun 16,2025, Elapsed time: 0:00:00
+# End time: 09:12:46 on Jun 17,2025, Elapsed time: 0:00:00
 # Errors: 0, Warnings: 0
 # 
 # vsim -t 1ps -L altera_ver -L lpm_ver -L sgate_ver -L altera_mf_ver -L altera_lnsim_ver -L cyclonev_ver -L cyclonev_hssi_ver -L cyclonev_pcie_hip_ver -L rtl_work -L work -voptargs="+acc"  tb_Gambling_Tec_ROM
 # vsim -t 1ps -L altera_ver -L lpm_ver -L sgate_ver -L altera_mf_ver -L altera_lnsim_ver -L cyclonev_ver -L cyclonev_hssi_ver -L cyclonev_pcie_hip_ver -L rtl_work -L work -voptargs=""+acc"" tb_Gambling_Tec_ROM 
-# Start time: 21:54:26 on Jun 16,2025
+# Start time: 09:12:46 on Jun 17,2025
 # Loading sv_std.std
 # Loading work.tb_Gambling_Tec_ROM
 # Loading work.Gambling_Tec
@@ -195,11 +195,11 @@
 # =============================
 # Ciclo 0:
 #   PC                 = 0
-#   Instr              = 0xe5921000
-#   ALUControl         = 0
+#   Instr              = 0xe0400000
+#   ALUControl         = 1
 #   ALUResult (addr)   = 0
 #   ReadData           = 10
-#   Result             = 10
+#   Result             = 0
 #   RegWrite           = 1
 #   MemWrite           = 0
 #   PCSrc              = 0
@@ -220,17 +220,17 @@
 # -----------------------------
 # Ciclo 1:
 #   PC                 = 4
-#   Instr              = 0xe5922004
+#   Instr              = 0xe280000a
 #   ALUControl         = 0
-#   ALUResult (addr)   = 4
-#   ReadData           = 20
-#   Result             = 20
+#   ALUResult (addr)   = 10
+#   ReadData           = 30
+#   Result             = 10
 #   RegWrite           = 1
 #   MemWrite           = 0
 #   PCSrc              = 0
 #   Flags              = 0
 #   R0 = 0
-#   R1 = 10
+#   R1 = 0
 #   R2 = 0
 #   R3 = 0
 #   R4 = 0
@@ -245,18 +245,18 @@
 # -----------------------------
 # Ciclo 2:
 #   PC                 = 8
-#   Instr              = 0xe0813002
-#   ALUControl         = 0
-#   ALUResult (addr)   = 30
-#   ReadData           = x
-#   Result             = 30
+#   Instr              = 0xe0411001
+#   ALUControl         = 1
+#   ALUResult (addr)   = 0
+#   ReadData           = 10
+#   Result             = 0
 #   RegWrite           = 1
 #   MemWrite           = 0
 #   PCSrc              = 0
-#   Flags              = 0
-#   R0 = 0
-#   R1 = 10
-#   R2 = 20
+#   Flags              = 1
+#   R0 = 10
+#   R1 = 0
+#   R2 = 0
 #   R3 = 0
 #   R4 = 0
 #   R5 = 0
@@ -270,19 +270,19 @@
 # -----------------------------
 # Ciclo 3:
 #   PC                 = 12
-#   Instr              = 0xe0424001
-#   ALUControl         = 1
-#   ALUResult (addr)   = 10
-#   ReadData           = 30
-#   Result             = 10
+#   Instr              = 0xe2811010
+#   ALUControl         = 0
+#   ALUResult (addr)   = 16
+#   ReadData           = 50
+#   Result             = 16
 #   RegWrite           = 1
 #   MemWrite           = 0
 #   PCSrc              = 0
 #   Flags              = 0
-#   R0 = 0
-#   R1 = 10
-#   R2 = 20
-#   R3 = 30
+#   R0 = 10
+#   R1 = 0
+#   R2 = 0
+#   R3 = 0
 #   R4 = 0
 #   R5 = 0
 #   R6 = 0
@@ -295,8 +295,8 @@
 # -----------------------------
 # Ciclo 4:
 #   PC                 = 16
-#   Instr              = 0xe0015002
-#   ALUControl         = 2
+#   Instr              = 0xe0422002
+#   ALUControl         = 1
 #   ALUResult (addr)   = 0
 #   ReadData           = 10
 #   Result             = 0
@@ -304,11 +304,11 @@
 #   MemWrite           = 0
 #   PCSrc              = 0
 #   Flags              = 1
-#   R0 = 0
-#   R1 = 10
-#   R2 = 20
-#   R3 = 30
-#   R4 = 10
+#   R0 = 10
+#   R1 = 16
+#   R2 = 0
+#   R3 = 0
+#   R4 = 0
 #   R5 = 0
 #   R6 = 0
 #   R7 = 0
@@ -320,20 +320,20 @@
 # -----------------------------
 # Ciclo 5:
 #   PC                 = 20
-#   Instr              = 0xe1816002
-#   ALUControl         = 3
-#   ALUResult (addr)   = 30
+#   Instr              = 0xe2822020
+#   ALUControl         = 0
+#   ALUResult (addr)   = 32
 #   ReadData           = x
-#   Result             = 30
+#   Result             = 32
 #   RegWrite           = 1
 #   MemWrite           = 0
 #   PCSrc              = 0
 #   Flags              = 0
-#   R0 = 0
-#   R1 = 10
-#   R2 = 20
-#   R3 = 30
-#   R4 = 10
+#   R0 = 10
+#   R1 = 16
+#   R2 = 0
+#   R3 = 0
+#   R4 = 0
 #   R5 = 0
 #   R6 = 0
 #   R7 = 0
@@ -345,22 +345,22 @@
 # -----------------------------
 # Ciclo 6:
 #   PC                 = 24
-#   Instr              = 0xe1510002
+#   Instr              = 0xe0433003
 #   ALUControl         = 1
-#   ALUResult (addr)   = 4294967286
-#   ReadData           = x
-#   Result             = 4294967286
+#   ALUResult (addr)   = 0
+#   ReadData           = 10
+#   Result             = 0
 #   RegWrite           = 1
 #   MemWrite           = 0
 #   PCSrc              = 0
-#   Flags              = 110
-#   R0 = 0
-#   R1 = 10
-#   R2 = 20
-#   R3 = 30
-#   R4 = 10
+#   Flags              = 1
+#   R0 = 10
+#   R1 = 16
+#   R2 = 32
+#   R3 = 0
+#   R4 = 0
 #   R5 = 0
-#   R6 = 30
+#   R6 = 0
 #   R7 = 0
 #   R8 = 0
 #   R9 = 0
@@ -370,22 +370,22 @@
 # -----------------------------
 # Ciclo 7:
 #   PC                 = 28
-#   Instr              = 0xba000005
+#   Instr              = 0xe2833020
 #   ALUControl         = 0
-#   ALUResult (addr)   = 56
+#   ALUResult (addr)   = 32
 #   ReadData           = x
-#   Result             = 56
-#   RegWrite           = 0
+#   Result             = 32
+#   RegWrite           = 1
 #   MemWrite           = 0
-#   PCSrc              = 1
+#   PCSrc              = 0
 #   Flags              = 0
-#   R0 = 4294967286
-#   R1 = 10
-#   R2 = 20
-#   R3 = 30
-#   R4 = 10
+#   R0 = 10
+#   R1 = 16
+#   R2 = 32
+#   R3 = 0
+#   R4 = 0
 #   R5 = 0
-#   R6 = 30
+#   R6 = 0
 #   R7 = 0
 #   R8 = 0
 #   R9 = 0
@@ -394,108 +394,8 @@
 #   R12 = 0
 # -----------------------------
 # Ciclo 8:
-#   PC                 = 56
-#   Instr              = 0xe0819001
-#   ALUControl         = 0
-#   ALUResult (addr)   = 20
-#   ReadData           = 60
-#   Result             = 20
-#   RegWrite           = 1
-#   MemWrite           = 0
-#   PCSrc              = 0
-#   Flags              = 0
-#   R0 = 4294967286
-#   R1 = 10
-#   R2 = 20
-#   R3 = 30
-#   R4 = 10
-#   R5 = 0
-#   R6 = 30
-#   R7 = 0
-#   R8 = 0
-#   R9 = 0
-#   R10 = 0
-#   R11 = 0
-#   R12 = 0
-# -----------------------------
-# Ciclo 9:
-#   PC                 = 60
-#   Instr              = 0xeafffff7
-#   ALUControl         = 0
-#   ALUResult (addr)   = 32
-#   ReadData           = x
-#   Result             = 32
-#   RegWrite           = 0
-#   MemWrite           = 0
-#   PCSrc              = 1
-#   Flags              = 100
-#   R0 = 4294967286
-#   R1 = 10
-#   R2 = 20
-#   R3 = 30
-#   R4 = 10
-#   R5 = 0
-#   R6 = 30
-#   R7 = 0
-#   R8 = 0
-#   R9 = 20
-#   R10 = 0
-#   R11 = 0
-#   R12 = 0
-# -----------------------------
-# Ciclo 10:
 #   PC                 = 32
-#   Instr              = 0xe0837004
-#   ALUControl         = 0
-#   ALUResult (addr)   = 40
-#   ReadData           = x
-#   Result             = 40
-#   RegWrite           = 1
-#   MemWrite           = 0
-#   PCSrc              = 0
-#   Flags              = 0
-#   R0 = 4294967286
-#   R1 = 10
-#   R2 = 20
-#   R3 = 30
-#   R4 = 10
-#   R5 = 0
-#   R6 = 30
-#   R7 = 0
-#   R8 = 0
-#   R9 = 20
-#   R10 = 0
-#   R11 = 0
-#   R12 = 0
-# -----------------------------
-# Ciclo 11:
-#   PC                 = 36
-#   Instr              = 0xe5827008
-#   ALUControl         = 0
-#   ALUResult (addr)   = 28
-#   ReadData           = x
-#   Result             = 28
-#   RegWrite           = 0
-#   MemWrite           = 1
-#   PCSrc              = 0
-#   Flags              = 0
-#   R0 = 4294967286
-#   R1 = 10
-#   R2 = 20
-#   R3 = 30
-#   R4 = 10
-#   R5 = 0
-#   R6 = 30
-#   R7 = 40
-#   R8 = 0
-#   R9 = 20
-#   R10 = 0
-#   R11 = 0
-#   R12 = 0
-# -----------------------------
-# Ciclo 12:
-#   PC                 = 40
-#   Instr              = 0xe1570007
+#   Instr              = 0xe0444004
 #   ALUControl         = 1
 #   ALUResult (addr)   = 0
 #   ReadData           = 10
@@ -504,714 +404,814 @@
 #   MemWrite           = 0
 #   PCSrc              = 0
 #   Flags              = 1
-#   R0 = 4294967286
-#   R1 = 10
-#   R2 = 20
-#   R3 = 30
-#   R4 = 10
+#   R0 = 10
+#   R1 = 16
+#   R2 = 32
+#   R3 = 32
+#   R4 = 0
 #   R5 = 0
-#   R6 = 30
-#   R7 = 40
+#   R6 = 0
+#   R7 = 0
 #   R8 = 0
-#   R9 = 20
+#   R9 = 0
+#   R10 = 0
+#   R11 = 0
+#   R12 = 0
+# -----------------------------
+# Ciclo 9:
+#   PC                 = 36
+#   Instr              = 0xe5804000
+#   ALUControl         = 0
+#   ALUResult (addr)   = 10
+#   ReadData           = 30
+#   Result             = 10
+#   RegWrite           = 0
+#   MemWrite           = 1
+#   PCSrc              = 0
+#   Flags              = 0
+#   R0 = 10
+#   R1 = 16
+#   R2 = 32
+#   R3 = 32
+#   R4 = 0
+#   R5 = 0
+#   R6 = 0
+#   R7 = 0
+#   R8 = 0
+#   R9 = 0
+#   R10 = 0
+#   R11 = 0
+#   R12 = 0
+# -----------------------------
+# Ciclo 10:
+#   PC                 = 40
+#   Instr              = 0xe5814000
+#   ALUControl         = 0
+#   ALUResult (addr)   = 16
+#   ReadData           = 50
+#   Result             = 16
+#   RegWrite           = 0
+#   MemWrite           = 1
+#   PCSrc              = 0
+#   Flags              = 0
+#   R0 = 10
+#   R1 = 16
+#   R2 = 32
+#   R3 = 32
+#   R4 = 0
+#   R5 = 0
+#   R6 = 0
+#   R7 = 0
+#   R8 = 0
+#   R9 = 0
+#   R10 = 0
+#   R11 = 0
+#   R12 = 0
+# -----------------------------
+# Ciclo 11:
+#   PC                 = 44
+#   Instr              = 0xe5824000
+#   ALUControl         = 0
+#   ALUResult (addr)   = 32
+#   ReadData           = x
+#   Result             = 32
+#   RegWrite           = 0
+#   MemWrite           = 1
+#   PCSrc              = 0
+#   Flags              = 0
+#   R0 = 10
+#   R1 = 16
+#   R2 = 32
+#   R3 = 32
+#   R4 = 0
+#   R5 = 0
+#   R6 = 0
+#   R7 = 0
+#   R8 = 0
+#   R9 = 0
+#   R10 = 0
+#   R11 = 0
+#   R12 = 0
+# -----------------------------
+# Ciclo 12:
+#   PC                 = 48
+#   Instr              = 0xe5834000
+#   ALUControl         = 0
+#   ALUResult (addr)   = 32
+#   ReadData           = 0
+#   Result             = 32
+#   RegWrite           = 0
+#   MemWrite           = 1
+#   PCSrc              = 0
+#   Flags              = 0
+#   R0 = 10
+#   R1 = 16
+#   R2 = 32
+#   R3 = 32
+#   R4 = 0
+#   R5 = 0
+#   R6 = 0
+#   R7 = 0
+#   R8 = 0
+#   R9 = 0
 #   R10 = 0
 #   R11 = 0
 #   R12 = 0
 # -----------------------------
 # Ciclo 13:
-#   PC                 = 44
-#   Instr              = 0x0affffff
-#   ALUControl         = 0
-#   ALUResult (addr)   = 48
-#   ReadData           = x
-#   Result             = 48
-#   RegWrite           = 0
+#   PC                 = 52
+#   Instr              = 0xe0488008
+#   ALUControl         = 1
+#   ALUResult (addr)   = 0
+#   ReadData           = 10
+#   Result             = 0
+#   RegWrite           = 1
 #   MemWrite           = 0
-#   PCSrc              = 1
-#   Flags              = 100
-#   R0 = 0
-#   R1 = 10
-#   R2 = 20
-#   R3 = 30
-#   R4 = 10
+#   PCSrc              = 0
+#   Flags              = 1
+#   R0 = 10
+#   R1 = 16
+#   R2 = 32
+#   R3 = 32
+#   R4 = 0
 #   R5 = 0
-#   R6 = 30
-#   R7 = 40
+#   R6 = 0
+#   R7 = 0
 #   R8 = 0
-#   R9 = 20
+#   R9 = 0
 #   R10 = 0
 #   R11 = 0
 #   R12 = 0
 # -----------------------------
 # Ciclo 14:
-#   PC                 = 48
-#   Instr              = 0xe0478003
-#   ALUControl         = 1
-#   ALUResult (addr)   = 10
-#   ReadData           = 30
-#   Result             = 10
+#   PC                 = 56
+#   Instr              = 0xe2888003
+#   ALUControl         = 0
+#   ALUResult (addr)   = 3
+#   ReadData           = 10
+#   Result             = 3
 #   RegWrite           = 1
 #   MemWrite           = 0
 #   PCSrc              = 0
 #   Flags              = 0
-#   R0 = 0
-#   R1 = 10
-#   R2 = 20
-#   R3 = 30
-#   R4 = 10
+#   R0 = 10
+#   R1 = 16
+#   R2 = 32
+#   R3 = 32
+#   R4 = 0
 #   R5 = 0
-#   R6 = 30
-#   R7 = 40
+#   R6 = 0
+#   R7 = 0
 #   R8 = 0
-#   R9 = 20
+#   R9 = 0
 #   R10 = 0
 #   R11 = 0
 #   R12 = 0
 # -----------------------------
 # Ciclo 15:
-#   PC                 = 52
-#   Instr              = 0xea000001
+#   PC                 = 60
+#   Instr              = 0xe5905000
 #   ALUControl         = 0
-#   ALUResult (addr)   = 64
-#   ReadData           = x
-#   Result             = 64
-#   RegWrite           = 0
+#   ALUResult (addr)   = 10
+#   ReadData           = 0
+#   Result             = 0
+#   RegWrite           = 1
 #   MemWrite           = 0
-#   PCSrc              = 1
+#   PCSrc              = 0
 #   Flags              = 0
-#   R0 = 0
-#   R1 = 10
-#   R2 = 20
-#   R3 = 30
-#   R4 = 10
+#   R0 = 10
+#   R1 = 16
+#   R2 = 32
+#   R3 = 32
+#   R4 = 0
 #   R5 = 0
-#   R6 = 30
-#   R7 = 40
-#   R8 = 10
-#   R9 = 20
+#   R6 = 0
+#   R7 = 0
+#   R8 = 3
+#   R9 = 0
 #   R10 = 0
 #   R11 = 0
 #   R12 = 0
 # -----------------------------
 # Ciclo 16:
 #   PC                 = 64
-#   Instr              = 0xeafffffe
-#   ALUControl         = 0
-#   ALUResult (addr)   = 64
+#   Instr              = 0xe3550029
+#   ALUControl         = 1
+#   ALUResult (addr)   = 4294967255
 #   ReadData           = x
-#   Result             = 64
-#   RegWrite           = 0
+#   Result             = 4294967255
+#   RegWrite           = 1
 #   MemWrite           = 0
-#   PCSrc              = 1
-#   Flags              = 100
-#   R0 = 0
-#   R1 = 10
-#   R2 = 20
-#   R3 = 30
-#   R4 = 10
+#   PCSrc              = 0
+#   Flags              = 110
+#   R0 = 10
+#   R1 = 16
+#   R2 = 32
+#   R3 = 32
+#   R4 = 0
 #   R5 = 0
-#   R6 = 30
-#   R7 = 40
-#   R8 = 10
-#   R9 = 20
+#   R6 = 0
+#   R7 = 0
+#   R8 = 3
+#   R9 = 0
 #   R10 = 0
 #   R11 = 0
 #   R12 = 0
 # -----------------------------
 # Ciclo 17:
-#   PC                 = 64
-#   Instr              = 0xeafffffe
+#   PC                 = 68
+#   Instr              = 0x0a000006
 #   ALUControl         = 0
-#   ALUResult (addr)   = 64
+#   ALUResult (addr)   = 100
 #   ReadData           = x
-#   Result             = 64
+#   Result             = 100
 #   RegWrite           = 0
 #   MemWrite           = 0
-#   PCSrc              = 1
-#   Flags              = 100
-#   R0 = 0
-#   R1 = 10
-#   R2 = 20
-#   R3 = 30
-#   R4 = 10
+#   PCSrc              = 0
+#   Flags              = 0
+#   R0 = 4294967255
+#   R1 = 16
+#   R2 = 32
+#   R3 = 32
+#   R4 = 0
 #   R5 = 0
-#   R6 = 30
-#   R7 = 40
-#   R8 = 10
-#   R9 = 20
+#   R6 = 0
+#   R7 = 0
+#   R8 = 3
+#   R9 = 0
 #   R10 = 0
 #   R11 = 0
 #   R12 = 0
 # -----------------------------
 # Ciclo 18:
-#   PC                 = 64
-#   Instr              = 0xeafffffe
+#   PC                 = 72
+#   Instr              = 0xe5916000
 #   ALUControl         = 0
-#   ALUResult (addr)   = 64
-#   ReadData           = x
-#   Result             = 64
-#   RegWrite           = 0
+#   ALUResult (addr)   = 16
+#   ReadData           = 0
+#   Result             = 0
+#   RegWrite           = 1
 #   MemWrite           = 0
-#   PCSrc              = 1
-#   Flags              = 100
-#   R0 = 0
-#   R1 = 10
-#   R2 = 20
-#   R3 = 30
-#   R4 = 10
+#   PCSrc              = 0
+#   Flags              = 0
+#   R0 = 4294967255
+#   R1 = 16
+#   R2 = 32
+#   R3 = 32
+#   R4 = 0
 #   R5 = 0
-#   R6 = 30
-#   R7 = 40
-#   R8 = 10
-#   R9 = 20
+#   R6 = 0
+#   R7 = 0
+#   R8 = 3
+#   R9 = 0
 #   R10 = 0
 #   R11 = 0
 #   R12 = 0
 # -----------------------------
 # Ciclo 19:
-#   PC                 = 64
-#   Instr              = 0xeafffffe
+#   PC                 = 76
+#   Instr              = 0xe2866001
 #   ALUControl         = 0
-#   ALUResult (addr)   = 64
-#   ReadData           = x
-#   Result             = 64
-#   RegWrite           = 0
+#   ALUResult (addr)   = 1
+#   ReadData           = 10
+#   Result             = 1
+#   RegWrite           = 1
 #   MemWrite           = 0
-#   PCSrc              = 1
-#   Flags              = 100
-#   R0 = 0
-#   R1 = 10
-#   R2 = 20
-#   R3 = 30
-#   R4 = 10
+#   PCSrc              = 0
+#   Flags              = 0
+#   R0 = 4294967255
+#   R1 = 16
+#   R2 = 32
+#   R3 = 32
+#   R4 = 0
 #   R5 = 0
-#   R6 = 30
-#   R7 = 40
-#   R8 = 10
-#   R9 = 20
+#   R6 = 0
+#   R7 = 0
+#   R8 = 3
+#   R9 = 0
 #   R10 = 0
 #   R11 = 0
 #   R12 = 0
 # -----------------------------
 # Ciclo 20:
-#   PC                 = 64
-#   Instr              = 0xeafffffe
-#   ALUControl         = 0
-#   ALUResult (addr)   = 64
+#   PC                 = 80
+#   Instr              = 0xe1560008
+#   ALUControl         = 1
+#   ALUResult (addr)   = 4294967294
 #   ReadData           = x
-#   Result             = 64
-#   RegWrite           = 0
+#   Result             = 4294967294
+#   RegWrite           = 1
 #   MemWrite           = 0
-#   PCSrc              = 1
-#   Flags              = 100
-#   R0 = 0
-#   R1 = 10
-#   R2 = 20
-#   R3 = 30
-#   R4 = 10
+#   PCSrc              = 0
+#   Flags              = 110
+#   R0 = 4294967255
+#   R1 = 16
+#   R2 = 32
+#   R3 = 32
+#   R4 = 0
 #   R5 = 0
-#   R6 = 30
-#   R7 = 40
-#   R8 = 10
-#   R9 = 20
+#   R6 = 1
+#   R7 = 0
+#   R8 = 3
+#   R9 = 0
 #   R10 = 0
 #   R11 = 0
 #   R12 = 0
 # -----------------------------
 # Ciclo 21:
-#   PC                 = 64
-#   Instr              = 0xeafffffe
+#   PC                 = 84
+#   Instr              = 0x3a000000
 #   ALUControl         = 0
-#   ALUResult (addr)   = 64
+#   ALUResult (addr)   = 92
 #   ReadData           = x
-#   Result             = 64
+#   Result             = 92
 #   RegWrite           = 0
 #   MemWrite           = 0
-#   PCSrc              = 1
-#   Flags              = 100
-#   R0 = 0
-#   R1 = 10
-#   R2 = 20
-#   R3 = 30
-#   R4 = 10
+#   PCSrc              = 0
+#   Flags              = 0
+#   R0 = 4294967294
+#   R1 = 16
+#   R2 = 32
+#   R3 = 32
+#   R4 = 0
 #   R5 = 0
-#   R6 = 30
-#   R7 = 40
-#   R8 = 10
-#   R9 = 20
+#   R6 = 1
+#   R7 = 0
+#   R8 = 3
+#   R9 = 0
 #   R10 = 0
 #   R11 = 0
 #   R12 = 0
 # -----------------------------
 # Ciclo 22:
-#   PC                 = 64
-#   Instr              = 0xeafffffe
-#   ALUControl         = 0
-#   ALUResult (addr)   = 64
-#   ReadData           = x
-#   Result             = 64
-#   RegWrite           = 0
+#   PC                 = 88
+#   Instr              = 0xe0466006
+#   ALUControl         = 1
+#   ALUResult (addr)   = 0
+#   ReadData           = 10
+#   Result             = 0
+#   RegWrite           = 1
 #   MemWrite           = 0
-#   PCSrc              = 1
-#   Flags              = 100
-#   R0 = 0
-#   R1 = 10
-#   R2 = 20
-#   R3 = 30
-#   R4 = 10
+#   PCSrc              = 0
+#   Flags              = 1
+#   R0 = 4294967294
+#   R1 = 16
+#   R2 = 32
+#   R3 = 32
+#   R4 = 0
 #   R5 = 0
-#   R6 = 30
-#   R7 = 40
-#   R8 = 10
-#   R9 = 20
+#   R6 = 1
+#   R7 = 0
+#   R8 = 3
+#   R9 = 0
 #   R10 = 0
 #   R11 = 0
 #   R12 = 0
 # -----------------------------
 # Ciclo 23:
-#   PC                 = 64
-#   Instr              = 0xeafffffe
+#   PC                 = 92
+#   Instr              = 0xe5816000
 #   ALUControl         = 0
-#   ALUResult (addr)   = 64
-#   ReadData           = x
-#   Result             = 64
+#   ALUResult (addr)   = 16
+#   ReadData           = 0
+#   Result             = 16
 #   RegWrite           = 0
-#   MemWrite           = 0
-#   PCSrc              = 1
-#   Flags              = 100
-#   R0 = 0
-#   R1 = 10
-#   R2 = 20
-#   R3 = 30
-#   R4 = 10
+#   MemWrite           = 1
+#   PCSrc              = 0
+#   Flags              = 0
+#   R0 = 4294967294
+#   R1 = 16
+#   R2 = 32
+#   R3 = 32
+#   R4 = 0
 #   R5 = 0
-#   R6 = 30
-#   R7 = 40
-#   R8 = 10
-#   R9 = 20
+#   R6 = 0
+#   R7 = 0
+#   R8 = 3
+#   R9 = 0
 #   R10 = 0
 #   R11 = 0
 #   R12 = 0
 # -----------------------------
 # Ciclo 24:
-#   PC                 = 64
-#   Instr              = 0xeafffffe
+#   PC                 = 96
+#   Instr              = 0xeafffff5
 #   ALUControl         = 0
-#   ALUResult (addr)   = 64
+#   ALUResult (addr)   = 60
 #   ReadData           = x
-#   Result             = 64
+#   Result             = 60
 #   RegWrite           = 0
 #   MemWrite           = 0
 #   PCSrc              = 1
 #   Flags              = 100
-#   R0 = 0
-#   R1 = 10
-#   R2 = 20
-#   R3 = 30
-#   R4 = 10
+#   R0 = 4294967294
+#   R1 = 16
+#   R2 = 32
+#   R3 = 32
+#   R4 = 0
 #   R5 = 0
-#   R6 = 30
-#   R7 = 40
-#   R8 = 10
-#   R9 = 20
+#   R6 = 0
+#   R7 = 0
+#   R8 = 3
+#   R9 = 0
 #   R10 = 0
 #   R11 = 0
 #   R12 = 0
 # -----------------------------
 # Ciclo 25:
-#   PC                 = 64
-#   Instr              = 0xeafffffe
+#   PC                 = 60
+#   Instr              = 0xe5905000
 #   ALUControl         = 0
-#   ALUResult (addr)   = 64
+#   ALUResult (addr)   = 4294967294
 #   ReadData           = x
-#   Result             = 64
-#   RegWrite           = 0
+#   Result             = x
+#   RegWrite           = 1
 #   MemWrite           = 0
-#   PCSrc              = 1
-#   Flags              = 100
-#   R0 = 0
-#   R1 = 10
-#   R2 = 20
-#   R3 = 30
-#   R4 = 10
+#   PCSrc              = 0
+#   Flags              = 10
+#   R0 = 4294967294
+#   R1 = 16
+#   R2 = 32
+#   R3 = 32
+#   R4 = 0
 #   R5 = 0
-#   R6 = 30
-#   R7 = 40
-#   R8 = 10
-#   R9 = 20
+#   R6 = 0
+#   R7 = 0
+#   R8 = 3
+#   R9 = 0
 #   R10 = 0
 #   R11 = 0
 #   R12 = 0
 # -----------------------------
 # Ciclo 26:
 #   PC                 = 64
-#   Instr              = 0xeafffffe
-#   ALUControl         = 0
-#   ALUResult (addr)   = 64
+#   Instr              = 0xe3550029
+#   ALUControl         = 1
+#   ALUResult (addr)   = x
 #   ReadData           = x
-#   Result             = 64
-#   RegWrite           = 0
+#   Result             = x
+#   RegWrite           = 1
 #   MemWrite           = 0
-#   PCSrc              = 1
-#   Flags              = 100
-#   R0 = 0
-#   R1 = 10
-#   R2 = 20
-#   R3 = 30
-#   R4 = 10
-#   R5 = 0
-#   R6 = 30
-#   R7 = 40
-#   R8 = 10
-#   R9 = 20
+#   PCSrc              = 0
+#   Flags              = x
+#   R0 = 4294967294
+#   R1 = 16
+#   R2 = 32
+#   R3 = 32
+#   R4 = 0
+#   R5 = x
+#   R6 = 0
+#   R7 = 0
+#   R8 = 3
+#   R9 = 0
 #   R10 = 0
 #   R11 = 0
 #   R12 = 0
 # -----------------------------
 # Ciclo 27:
-#   PC                 = 64
-#   Instr              = 0xeafffffe
+#   PC                 = 68
+#   Instr              = 0x0a000006
 #   ALUControl         = 0
-#   ALUResult (addr)   = 64
+#   ALUResult (addr)   = 100
 #   ReadData           = x
-#   Result             = 64
+#   Result             = 100
 #   RegWrite           = 0
 #   MemWrite           = 0
-#   PCSrc              = 1
-#   Flags              = 100
-#   R0 = 0
-#   R1 = 10
-#   R2 = 20
-#   R3 = 30
-#   R4 = 10
-#   R5 = 0
-#   R6 = 30
-#   R7 = 40
-#   R8 = 10
-#   R9 = 20
+#   PCSrc              = x
+#   Flags              = 0
+#   R0 = x
+#   R1 = 16
+#   R2 = 32
+#   R3 = 32
+#   R4 = 0
+#   R5 = x
+#   R6 = 0
+#   R7 = 0
+#   R8 = 3
+#   R9 = 0
 #   R10 = 0
 #   R11 = 0
 #   R12 = 0
 # -----------------------------
 # Ciclo 28:
-#   PC                 = 64
-#   Instr              = 0xeafffffe
+#   PC                 = X
+#   Instr              = 0xxxxxxxxx
 #   ALUControl         = 0
-#   ALUResult (addr)   = 64
+#   ALUResult (addr)   = x
 #   ReadData           = x
-#   Result             = 64
+#   Result             = x
 #   RegWrite           = 0
 #   MemWrite           = 0
-#   PCSrc              = 1
-#   Flags              = 100
-#   R0 = 0
-#   R1 = 10
-#   R2 = 20
-#   R3 = 30
-#   R4 = 10
-#   R5 = 0
-#   R6 = 30
-#   R7 = 40
-#   R8 = 10
-#   R9 = 20
+#   PCSrc              = 0
+#   Flags              = x
+#   R0 = x
+#   R1 = 16
+#   R2 = 32
+#   R3 = 32
+#   R4 = 0
+#   R5 = x
+#   R6 = 0
+#   R7 = 0
+#   R8 = 3
+#   R9 = 0
 #   R10 = 0
 #   R11 = 0
 #   R12 = 0
 # -----------------------------
 # Ciclo 29:
-#   PC                 = 64
-#   Instr              = 0xeafffffe
+#   PC                 = x
+#   Instr              = 0xxxxxxxxx
 #   ALUControl         = 0
-#   ALUResult (addr)   = 64
+#   ALUResult (addr)   = x
 #   ReadData           = x
-#   Result             = 64
+#   Result             = x
 #   RegWrite           = 0
 #   MemWrite           = 0
-#   PCSrc              = 1
-#   Flags              = 100
-#   R0 = 0
-#   R1 = 10
-#   R2 = 20
-#   R3 = 30
-#   R4 = 10
-#   R5 = 0
-#   R6 = 30
-#   R7 = 40
-#   R8 = 10
-#   R9 = 20
+#   PCSrc              = 0
+#   Flags              = x
+#   R0 = x
+#   R1 = 16
+#   R2 = 32
+#   R3 = 32
+#   R4 = 0
+#   R5 = x
+#   R6 = 0
+#   R7 = 0
+#   R8 = 3
+#   R9 = 0
 #   R10 = 0
 #   R11 = 0
 #   R12 = 0
 # -----------------------------
 # Ciclo 30:
-#   PC                 = 64
-#   Instr              = 0xeafffffe
+#   PC                 = x
+#   Instr              = 0xxxxxxxxx
 #   ALUControl         = 0
-#   ALUResult (addr)   = 64
+#   ALUResult (addr)   = x
 #   ReadData           = x
-#   Result             = 64
+#   Result             = x
 #   RegWrite           = 0
 #   MemWrite           = 0
-#   PCSrc              = 1
-#   Flags              = 100
-#   R0 = 0
-#   R1 = 10
-#   R2 = 20
-#   R3 = 30
-#   R4 = 10
-#   R5 = 0
-#   R6 = 30
-#   R7 = 40
-#   R8 = 10
-#   R9 = 20
+#   PCSrc              = 0
+#   Flags              = x
+#   R0 = x
+#   R1 = 16
+#   R2 = 32
+#   R3 = 32
+#   R4 = 0
+#   R5 = x
+#   R6 = 0
+#   R7 = 0
+#   R8 = 3
+#   R9 = 0
 #   R10 = 0
 #   R11 = 0
 #   R12 = 0
 # -----------------------------
 # Ciclo 31:
-#   PC                 = 64
-#   Instr              = 0xeafffffe
+#   PC                 = x
+#   Instr              = 0xxxxxxxxx
 #   ALUControl         = 0
-#   ALUResult (addr)   = 64
+#   ALUResult (addr)   = x
 #   ReadData           = x
-#   Result             = 64
+#   Result             = x
 #   RegWrite           = 0
 #   MemWrite           = 0
-#   PCSrc              = 1
-#   Flags              = 100
-#   R0 = 0
-#   R1 = 10
-#   R2 = 20
-#   R3 = 30
-#   R4 = 10
-#   R5 = 0
-#   R6 = 30
-#   R7 = 40
-#   R8 = 10
-#   R9 = 20
+#   PCSrc              = 0
+#   Flags              = x
+#   R0 = x
+#   R1 = 16
+#   R2 = 32
+#   R3 = 32
+#   R4 = 0
+#   R5 = x
+#   R6 = 0
+#   R7 = 0
+#   R8 = 3
+#   R9 = 0
 #   R10 = 0
 #   R11 = 0
 #   R12 = 0
 # -----------------------------
 # Ciclo 32:
-#   PC                 = 64
-#   Instr              = 0xeafffffe
+#   PC                 = x
+#   Instr              = 0xxxxxxxxx
 #   ALUControl         = 0
-#   ALUResult (addr)   = 64
+#   ALUResult (addr)   = x
 #   ReadData           = x
-#   Result             = 64
+#   Result             = x
 #   RegWrite           = 0
 #   MemWrite           = 0
-#   PCSrc              = 1
-#   Flags              = 100
-#   R0 = 0
-#   R1 = 10
-#   R2 = 20
-#   R3 = 30
-#   R4 = 10
-#   R5 = 0
-#   R6 = 30
-#   R7 = 40
-#   R8 = 10
-#   R9 = 20
+#   PCSrc              = 0
+#   Flags              = x
+#   R0 = x
+#   R1 = 16
+#   R2 = 32
+#   R3 = 32
+#   R4 = 0
+#   R5 = x
+#   R6 = 0
+#   R7 = 0
+#   R8 = 3
+#   R9 = 0
 #   R10 = 0
 #   R11 = 0
 #   R12 = 0
 # -----------------------------
 # Ciclo 33:
-#   PC                 = 64
-#   Instr              = 0xeafffffe
+#   PC                 = x
+#   Instr              = 0xxxxxxxxx
 #   ALUControl         = 0
-#   ALUResult (addr)   = 64
+#   ALUResult (addr)   = x
 #   ReadData           = x
-#   Result             = 64
+#   Result             = x
 #   RegWrite           = 0
 #   MemWrite           = 0
-#   PCSrc              = 1
-#   Flags              = 100
-#   R0 = 0
-#   R1 = 10
-#   R2 = 20
-#   R3 = 30
-#   R4 = 10
-#   R5 = 0
-#   R6 = 30
-#   R7 = 40
-#   R8 = 10
-#   R9 = 20
+#   PCSrc              = 0
+#   Flags              = x
+#   R0 = x
+#   R1 = 16
+#   R2 = 32
+#   R3 = 32
+#   R4 = 0
+#   R5 = x
+#   R6 = 0
+#   R7 = 0
+#   R8 = 3
+#   R9 = 0
 #   R10 = 0
 #   R11 = 0
 #   R12 = 0
 # -----------------------------
 # Ciclo 34:
-#   PC                 = 64
-#   Instr              = 0xeafffffe
+#   PC                 = x
+#   Instr              = 0xxxxxxxxx
 #   ALUControl         = 0
-#   ALUResult (addr)   = 64
+#   ALUResult (addr)   = x
 #   ReadData           = x
-#   Result             = 64
+#   Result             = x
 #   RegWrite           = 0
 #   MemWrite           = 0
-#   PCSrc              = 1
-#   Flags              = 100
-#   R0 = 0
-#   R1 = 10
-#   R2 = 20
-#   R3 = 30
-#   R4 = 10
-#   R5 = 0
-#   R6 = 30
-#   R7 = 40
-#   R8 = 10
-#   R9 = 20
+#   PCSrc              = 0
+#   Flags              = x
+#   R0 = x
+#   R1 = 16
+#   R2 = 32
+#   R3 = 32
+#   R4 = 0
+#   R5 = x
+#   R6 = 0
+#   R7 = 0
+#   R8 = 3
+#   R9 = 0
 #   R10 = 0
 #   R11 = 0
 #   R12 = 0
 # -----------------------------
 # Ciclo 35:
-#   PC                 = 64
-#   Instr              = 0xeafffffe
+#   PC                 = x
+#   Instr              = 0xxxxxxxxx
 #   ALUControl         = 0
-#   ALUResult (addr)   = 64
+#   ALUResult (addr)   = x
 #   ReadData           = x
-#   Result             = 64
+#   Result             = x
 #   RegWrite           = 0
 #   MemWrite           = 0
-#   PCSrc              = 1
-#   Flags              = 100
-#   R0 = 0
-#   R1 = 10
-#   R2 = 20
-#   R3 = 30
-#   R4 = 10
-#   R5 = 0
-#   R6 = 30
-#   R7 = 40
-#   R8 = 10
-#   R9 = 20
+#   PCSrc              = 0
+#   Flags              = x
+#   R0 = x
+#   R1 = 16
+#   R2 = 32
+#   R3 = 32
+#   R4 = 0
+#   R5 = x
+#   R6 = 0
+#   R7 = 0
+#   R8 = 3
+#   R9 = 0
 #   R10 = 0
 #   R11 = 0
 #   R12 = 0
 # -----------------------------
 # Ciclo 36:
-#   PC                 = 64
-#   Instr              = 0xeafffffe
+#   PC                 = x
+#   Instr              = 0xxxxxxxxx
 #   ALUControl         = 0
-#   ALUResult (addr)   = 64
+#   ALUResult (addr)   = x
 #   ReadData           = x
-#   Result             = 64
+#   Result             = x
 #   RegWrite           = 0
 #   MemWrite           = 0
-#   PCSrc              = 1
-#   Flags              = 100
-#   R0 = 0
-#   R1 = 10
-#   R2 = 20
-#   R3 = 30
-#   R4 = 10
-#   R5 = 0
-#   R6 = 30
-#   R7 = 40
-#   R8 = 10
-#   R9 = 20
+#   PCSrc              = 0
+#   Flags              = x
+#   R0 = x
+#   R1 = 16
+#   R2 = 32
+#   R3 = 32
+#   R4 = 0
+#   R5 = x
+#   R6 = 0
+#   R7 = 0
+#   R8 = 3
+#   R9 = 0
 #   R10 = 0
 #   R11 = 0
 #   R12 = 0
 # -----------------------------
 # Ciclo 37:
-#   PC                 = 64
-#   Instr              = 0xeafffffe
+#   PC                 = x
+#   Instr              = 0xxxxxxxxx
 #   ALUControl         = 0
-#   ALUResult (addr)   = 64
+#   ALUResult (addr)   = x
 #   ReadData           = x
-#   Result             = 64
+#   Result             = x
 #   RegWrite           = 0
 #   MemWrite           = 0
-#   PCSrc              = 1
-#   Flags              = 100
-#   R0 = 0
-#   R1 = 10
-#   R2 = 20
-#   R3 = 30
-#   R4 = 10
-#   R5 = 0
-#   R6 = 30
-#   R7 = 40
-#   R8 = 10
-#   R9 = 20
+#   PCSrc              = 0
+#   Flags              = x
+#   R0 = x
+#   R1 = 16
+#   R2 = 32
+#   R3 = 32
+#   R4 = 0
+#   R5 = x
+#   R6 = 0
+#   R7 = 0
+#   R8 = 3
+#   R9 = 0
 #   R10 = 0
 #   R11 = 0
 #   R12 = 0
 # -----------------------------
 # Ciclo 38:
-#   PC                 = 64
-#   Instr              = 0xeafffffe
+#   PC                 = x
+#   Instr              = 0xxxxxxxxx
 #   ALUControl         = 0
-#   ALUResult (addr)   = 64
+#   ALUResult (addr)   = x
 #   ReadData           = x
-#   Result             = 64
+#   Result             = x
 #   RegWrite           = 0
 #   MemWrite           = 0
-#   PCSrc              = 1
-#   Flags              = 100
-#   R0 = 0
-#   R1 = 10
-#   R2 = 20
-#   R3 = 30
-#   R4 = 10
-#   R5 = 0
-#   R6 = 30
-#   R7 = 40
-#   R8 = 10
-#   R9 = 20
+#   PCSrc              = 0
+#   Flags              = x
+#   R0 = x
+#   R1 = 16
+#   R2 = 32
+#   R3 = 32
+#   R4 = 0
+#   R5 = x
+#   R6 = 0
+#   R7 = 0
+#   R8 = 3
+#   R9 = 0
 #   R10 = 0
 #   R11 = 0
 #   R12 = 0
 # -----------------------------
 # Ciclo 39:
-#   PC                 = 64
-#   Instr              = 0xeafffffe
+#   PC                 = x
+#   Instr              = 0xxxxxxxxx
 #   ALUControl         = 0
-#   ALUResult (addr)   = 64
+#   ALUResult (addr)   = x
 #   ReadData           = x
-#   Result             = 64
+#   Result             = x
 #   RegWrite           = 0
 #   MemWrite           = 0
-#   PCSrc              = 1
-#   Flags              = 100
-#   R0 = 0
-#   R1 = 10
-#   R2 = 20
-#   R3 = 30
-#   R4 = 10
-#   R5 = 0
-#   R6 = 30
-#   R7 = 40
-#   R8 = 10
-#   R9 = 20
+#   PCSrc              = 0
+#   Flags              = x
+#   R0 = x
+#   R1 = 16
+#   R2 = 32
+#   R3 = 32
+#   R4 = 0
+#   R5 = x
+#   R6 = 0
+#   R7 = 0
+#   R8 = 3
+#   R9 = 0
 #   R10 = 0
 #   R11 = 0
 #   R12 = 0
 # -----------------------------
 # === RESULTADO FINAL ===
-#   R0 = 0
-#   R1 = 10
-#   R2 = 20
-#   R3 = 30
-#   R4 = 10
-#   R5 = 0
-#   R6 = 30
-#   R7 = 40
-#   R8 = 10
-#   R9 = 20
+#   R0 = x
+#   R1 = 16
+#   R2 = 32
+#   R3 = 32
+#   R4 = 0
+#   R5 = x
+#   R6 = 0
+#   R7 = 0
+#   R8 = 3
+#   R9 = 0
 #   R10 = 0
 #   R11 = 0
 #   R12 = 0
-#   RAM[7] (si STR se ejecuto) = 40
-# TEST PASO CORRECTAMENTE
+#   RAM[7] (si STR se ejecuto) = x
+# TEST FALLO
 # ** Note: $finish    : C:/Users/joseb/Documents/GitHub/CE3201_PF/tb_Gambling_Tec_ROM.sv(86)
 #    Time: 415 ns  Iteration: 1  Instance: /tb_Gambling_Tec_ROM
 # 1
 # Break in Module tb_Gambling_Tec_ROM at C:/Users/joseb/Documents/GitHub/CE3201_PF/tb_Gambling_Tec_ROM.sv line 86
-# End time: 21:55:00 on Jun 16,2025, Elapsed time: 0:00:34
+# End time: 09:13:27 on Jun 17,2025, Elapsed time: 0:00:41
 # Errors: 0, Warnings: 0
