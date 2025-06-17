@@ -1,0 +1,112 @@
+\documentclass[conference]{IEEEtran}
+\IEEEoverridecommandlockouts
+\usepackage{cite}
+\usepackage{amsmath,amssymb,amsfonts}
+\usepackage{algorithmic}
+\usepackage{graphicx}
+\usepackage{textcomp}
+\usepackage{float}
+\usepackage{xcolor}
+\usepackage{booktabs}  % Si deseas conservar toprule, midrule y bottomrule
+\usepackage{tabularx}  % Para usar el entorno tabularx
+
+\usepackage{listings}
+
+\usepackage[backend=bibtex,style=ieee,biblabel=dot,language=spanish]{biblatex}
+\addbibresource{references.bib}
+
+\usepackage[pdftex,
+            pdftitle={Lógica Combinacional y Aritmética}, % Título del PDF
+            pdfauthor={Barquero, J., Campos, J., Feng, J., y Montero, A.},   % Autor delPDF
+            pdfsubject={Taller de Diseño Digital - CE3201}, % Tema del PDF
+            pdfkeywords={}, % Palabras clave del PDF
+            pdfproducer={LaTeX with hyperref package},
+            pdfcreator={pdflatex}]{hyperref}
+
+\hypersetup{
+    colorlinks=true,        % Colorea los enlaces en lugar de usar cajas alrededor de ellos
+    linkcolor = black,
+    urlcolor  = blue,
+    citecolor = black,
+    anchorcolor = black         % Color de los enlaces externos
+}
+
+\renewcommand{\abstractname}{Resumen}
+
+
+\lstset{
+    language=VHDL,
+    basicstyle=\small\ttfamily,
+    breaklines=true,    % Ajusta automáticamente las líneas
+    keywordstyle=\color{blue},
+    commentstyle=\color{gray}
+}
+
+\renewcommand{\tablename}{Tabla}
+\def\BibTeX{{\rm B\kern-.05em{\sc i\kern-.025em b}\kern-.08em
+    T\kern-.1667em\lower.7ex\hbox{E}\kern-.125emX}}
+\begin{document}
+
+\title{\textbf{Lógica Combinacional y Aritmética}}
+
+\author{
+    \IEEEauthorblockN{José Bernardo Barquero Bonilla}
+    \IEEEauthorblockA{
+        Carné: 2023150476 \\
+        Correo: jos.barquero@estudiantec.cr \\
+        Escuela de Ingeniería en Computadores \\
+        Instituto Tecnológico de Costa Rica
+    }
+    \and
+    \IEEEauthorblockN{Jose Eduardo Campos Salazar}
+    \IEEEauthorblockA{
+        Carné: 2023135620 \\
+        Correo: j.campos@estudiantec.cr \\
+        Escuela de Ingeniería en Computadores \\
+        Instituto Tecnológico de Costa Rica
+    }
+    \and
+    \IEEEauthorblockN{Jimmy Feng Feng}
+    \IEEEauthorblockA{
+        Carné: 2023060374 \\
+        Correo: jifeng@estudiantec.cr \\
+        Escuela de Ingeniería en Computadores \\
+        Instituto Tecnológico de Costa Rica
+    }
+    \and
+    \IEEEauthorblockN{Alexander Montero Vargas}
+    \IEEEauthorblockA{
+        Carné: 20233166058 \\
+        Correo: ale\_montero@estudiantec.cr \\
+        Escuela de Ingeniería en Computadores \\
+        Instituto Tecnológico de Costa Rica
+    }
+}
+
+\maketitle
+
+\begin{abstract}
+Aquí va el abstract
+\end{abstract}
+
+\renewcommand\IEEEkeywordsname{Palabras clave}
+\begin{IEEEkeywords}  
+  Palabras, clave, del, informe, aquí
+\end{IEEEkeywords}
+
+\section{Introducci\'on}
+Introduccion
+\section{Marco Teórico}
+Marco teórico
+\section{Desarollo}
+Desarollo
+
+\section{Análisis de Resultados}
+Análisis de resultados
+\section{Conclusiones}
+Conclusiones
+
+\nocite{*}
+\printbibliography
+
+\end{document}
