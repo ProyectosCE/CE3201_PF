@@ -1,183 +1,231 @@
-.global _start
-_start:
+// Direcciones de memoria
+        // RAM[10] = 0xA: Tecla presionada
+        // RAM[20] = 0x14: Dinero (0-999)
+        // RAM[24] = 0x18: Símbolo A (2 bits)
+        // RAM[28] = 0x1C: Símbolo B (2 bits)
+        // RAM[32] = 0x20: Símbolo C (2 bits)
+        // RAM[36] = 0x24: Resultado (2 bits: 10=win, 01=lose)
 
-    SUB R0, R0, R0
-    ADD R0, R0, #10
+        // Constantes de teclas
+        // UP:    0x75
+        // DOWN:  0x72
+        // ENTER: 0x5A
+        // SPACE: 0x29
+        // BACK:  0x66
 
-    SUB R1, R1, R1
-    ADD R1, R1, #16
+// Inicialización: limpiar memoria de 20 a 40 (0x14 a 0x28)
+        ADD     R0, R0, #0        // R0 = 0
+        ADD     R0, R0, #0x14     // Dirección inicial (R0 = 0x14)
+        ADD     R1, R1, #0        // R1 = 0 (Valor cero)
+InitLoop:
+        STR     R1, [R0]          // Guardar cero en RAM[R0]
+        ADD     R0, R0, #4        // Siguiente dirección (palabra de 32 bits)
+        ADD     R2, R2, #0        // R2 = 0
+        ADD     R2, R2, #0x28     // R2 = 0x28
+        CMP     R0, R2
+        BLE     InitLoop
 
-    SUB R2, R2, R2
-    ADD R2, R2, #32
+// Inicializar dinero en cero
+        ADD     R0, R0, #0        // R0 = 0
+        ADD     R0, R0, #0x14
+        ADD     R1, R1, #0        // R1 = 0
+        STR     R1, [R0]
 
-    SUB R3, R3, R3
-    ADD R3, R3, #32
+// MAIN LOOP
+MainLoop:
+        // Leer tecla presionada
+        ADD     R0, R0, #0        // R0 = 0
+        ADD     R0, R0, #0xA
+        LDR     R1, [R0]
 
-    SUB R4, R4, R4
-    STR R4, [R0]
-    STR R4, [R1]
-    STR R4, [R2]
-    STR R4, [R3]
+        // Comparar con UP (0x75)
+        ADD     R2, R2, #0        // R2 = 0
+        ADD     R2, R2, #0x75
+        CMP     R1, R2
+        BEQ     IncMoney
 
-    SUB R8, R8, R8
-    ADD R8, R8, #3
+        // Comparar con DOWN (0x72)
+        ADD     R2, R2, #0        // R2 = 0
+        ADD     R2, R2, #0x72
+        CMP     R1, R2
+        BEQ     DecMoney
 
-main_loop:
-    
-    LDR R5, [R0]
-    CMP R5, #0x29
-    BEQ wait_release
+        // Comparar con BACKSPACE (0x66)
+        ADD     R2, R2, #0        // R2 = 0
+        ADD     R2, R2, #0x66
+        CMP     R1, R2
+        BEQ     ClearMoney
 
-    LDR R6, [R1]
-    ADD R6, R6, #1
-    CMP R6, R8
-    BLO update_counter
-    SUB R6, R6, R6
+        // Comparar con ENTER (0x5A)
+        ADD     R2, R2, #0        // R2 = 0
+        ADD     R2, R2, #0x5A
+        CMP     R1, R2
+        BEQ     StartGame
 
-update_counter:
-    STR R6, [R1]
-    B main_loop
+        // Si no es ninguna tecla válida, volver al loop
+        B       MainLoop
 
-wait_release:
-    LDR R5, [R0]
-    CMP R5, #0x00
-    BNE wait_release
+// SUBRUTINA: Incrementar dinero
+IncMoney:
+        ADD     R0, R0, #0        // R0 = 0
+        ADD     R0, R0, #0x14     // Dirección dinero
+        LDR     R1, [R0]
+        ADD     R1, R1, #1
+        ADD     R2, R2, #0        // R2 = 0
+        ADD     R2, R2, #999
+        CMP     R1, R2
+        BGT     IncMoney_Max
+        STR     R1, [R0]
+        B       MainLoop
+IncMoney_Max:
+        ADD     R1, R1, #0        // R1 = 0
+        ADD     R1, R1, #999
+        STR     R1, [R0]
+        B       MainLoop
 
-    LDR R7, [R2]
-    CMP R7, #0
-    BEQ store_sym_1
-    CMP R7, #1
-    BEQ store_sym_2
-    CMP R7, #2
-    BEQ store_sym_3
-    B check_victory
+// SUBRUTINA: Decrementar dinero
+DecMoney:
+        ADD     R0, R0, #0
+        ADD     R0, R0, #0x14
+        LDR     R1, [R0]
+        ADD     R2, R2, #0        // R2 = 0
+        CMP     R1, R2
+        BEQ     DecMoney_Min
+        SUB     R1, R1, #1
+        STR     R1, [R0]
+        B       MainLoop
+DecMoney_Min:
+        ADD     R1, R1, #0        // R1 = 0
+        STR     R1, [R0]
+        B       MainLoop
 
-store_sym_1:
-    
-    SUB R9, R9, R9
-    ADD R9, R9, #4096
-    ADD R9, R9, #32
-    ADD R9, R9, #16
-    B store_sym_common
+// SUBRUTINA: Limpiar dinero
+ClearMoney:
+        ADD     R0, R0, #0
+        ADD     R0, R0, #0x14
+        ADD     R1, R1, #0
+        STR     R1, [R0]
+        B       MainLoop
 
-store_sym_2:
-    
-    SUB R9, R9, R9
-    ADD R9, R9, #4096
-    ADD R9, R9, #64
-    B store_sym_common
+// SUBRUTINA: Iniciar juego (generar símbolos y verificar resultado)
+StartGame:
+        // Generar símbolo A
+        ADD     R4, R4, #0        // R4 = 0 (Símbolo A inicia en 0)
+GenSymA_Loop:
+        ADD     R0, R0, #0
+        ADD     R0, R0, #0xA
+        LDR     R1, [R0]
+        ADD     R2, R2, #0
+        ADD     R2, R2, #0x29     // SPACE BAR
+        CMP     R1, R2
+        BEQ     SaveSymA
+        ADD     R4, R4, #1
+        ADD     R3, R3, #0
+        ADD     R3, R3, #3
+        CMP     R4, R3
+        BLE     GenSymA_Loop
+        ADD     R4, R4, #0        // R4 = 0
+        B       GenSymA_Loop
+SaveSymA:
+        ADD     R0, R0, #0
+        ADD     R0, R0, #0x18     // Dirección símbolo A
+        STR     R4, [R0]
 
-store_sym_3:
-    
-    SUB R9, R9, R9
-    ADD R9, R9, #4096
-    ADD R9, R9, #64
-    ADD R9, R9, #16
+        // Generar símbolo B
+        ADD     R5, R5, #0        // R5 = 0 (Símbolo B inicia en 0)
+GenSymB_Loop:
+        ADD     R0, R0, #0
+        ADD     R0, R0, #0xA
+        LDR     R1, [R0]
+        ADD     R2, R2, #0
+        ADD     R2, R2, #0x29
+        CMP     R1, R2
+        BEQ     SaveSymB
+        ADD     R5, R5, #1
+        ADD     R3, R3, #0
+        ADD     R3, R3, #3
+        CMP     R5, R3
+        BLE     GenSymB_Loop
+        ADD     R5, R5, #0
+        B       GenSymB_Loop
+SaveSymB:
+        ADD     R0, R0, #0
+        ADD     R0, R0, #0x1C     // Dirección símbolo B
+        STR     R5, [R0]
 
-store_sym_common:
-    LDR R6, [R1]
-    STR R6, [R9]
-    ADD R7, R7, #1
-    STR R7, [R2]
-    CMP R7, #3
-    BEQ check_victory
-    B main_loop
+        // Generar símbolo C
+        ADD     R6, R6, #0        // R6 = 0 (Símbolo C inicia en 0)
+GenSymC_Loop:
+        ADD     R0, R0, #0
+        ADD     R0, R0, #0xA
+        LDR     R1, [R0]
+        ADD     R2, R2, #0
+        ADD     R2, R2, #0x29
+        CMP     R1, R2
+        BEQ     SaveSymC
+        ADD     R6, R6, #1
+        ADD     R3, R3, #0
+        ADD     R3, R3, #3
+        CMP     R6, R3
+        BLE     GenSymC_Loop
+        ADD     R6, R6, #0
+        B       GenSymC_Loop
+SaveSymC:
+        ADD     R0, R0, #0
+        ADD     R0, R0, #0x20     // Dirección símbolo C
+        STR     R6, [R0]
 
-check_victory:
-    
-    SUB R10, R10, R10
-    ADD R10, R10, #4096
-    ADD R10, R10, #32
-    ADD R10, R10, #16
-    LDR R11, [R10]
+        // Verificar si los tres símbolos son iguales
+        CMP     R4, R5
+        BNE     Lose
+        CMP     R4, R6
+        BNE     Lose
 
-    SUB R10, R10, R10
-    ADD R10, R10, #4096
-    ADD R10, R10, #64
-    LDR R12, [R10]
+// WIN: Los tres símbolos son iguales
+Win:
+        ADD     R0, R0, #0
+        ADD     R0, R0, #0x24     // Dirección resultado
+        ADD     R1, R1, #0
+        ADD     R1, R1, #2        // 10 binario = 2 decimal
+        STR     R1, [R0]
+        // Sumar 10 al dinero
+        ADD     R0, R0, #0
+        ADD     R0, R0, #0x14
+        LDR     R1, [R0]
+        ADD     R2, R2, #0
+        ADD     R2, R2, #10
+        ADD     R1, R1, R2
+        ADD     R2, R2, #0
+        ADD     R2, R2, #999
+        CMP     R1, R2
+        BGT     Win_Max
+        STR     R1, [R0]
+        B       MainLoop
+Win_Max:
+        ADD     R1, R1, #0
+        ADD     R1, R1, #999
+        STR     R1, [R0]
+        B       MainLoop
 
-    CMP R11, R12
-    BNE lose
-
-    SUB R10, R10, R10
-    ADD R10, R10, #4096
-    ADD R10, R10, #64
-    ADD R10, R10, #16
-    LDR R5, [R10]
-
-    CMP R11, R5
-    BNE lose
-
-win:
-    
-    SUB R6, R6, R6
-    ADD R6, R6, R11
-
-    SUB R7, R7, R7
-    ADD R7, R7, R12
-    ADD R7, R7, R7      
-    ADD R7, R7, R7      
-
-    ORR R6, R6, R7
-
-    SUB R8, R8, R8
-    ADD R8, R8, R5
-    ADD R8, R8, R8      
-    ADD R8, R8, R8      
-    ADD R8, R8, R8      
-    ADD R8, R8, R8      
-
-    ORR R6, R6, R8
-
-    SUB R9, R9, R9
-    ADD R9, R9, #50
-    ADD R9, R9, R9      
-    ADD R9, R9, R9      
-    ADD R9, R9, R9      
-    ADD R9, R9, R9      
-    ADD R9, R9, R9      
-    ADD R9, R9, R9      
-
-    ORR R6, R6, R9
-
-    SUB R7, R7, R7
-    ADD R7, R7, #131072
-
-    ORR R6, R6, R7
-
-    STR R6, [R3]
-    B end_game
-
-lose:
-
-    SUB R6, R6, R6
-    ADD R6, R6, R11
-
-    SUB R7, R7, R7
-    ADD R7, R7, R12
-    ADD R7, R7, R7
-    ADD R7, R7, R7
-
-    ORR R6, R6, R7
-
-    SUB R8, R8, R8
-    ADD R8, R8, R5
-    ADD R8, R8, R8
-    ADD R8, R8, R8
-    ADD R8, R8, R8
-    ADD R8, R8, R8
-
-    ORR R6, R6, R8
-
-    SUB R9, R9, R9      
-    ORR R6, R6, R9
-
-    SUB R7, R7, R7
-    ADD R7, R7, #65536
-
-    ORR R6, R6, R7
-
-    STR R6, [R3]
-
-end_game:
-    B main_loop
+// LOSE: Los símbolos son diferentes
+Lose:
+        ADD     R0, R0, #0
+        ADD     R0, R0, #0x24     // Dirección resultado
+        ADD     R1, R1, #0
+        ADD     R1, R1, #1        // 01 binario = 1 decimal
+        STR     R1, [R0]
+        // Restar 10 al dinero
+        ADD     R0, R0, #0
+        ADD     R0, R0, #0x14
+        LDR     R1, [R0]
+        ADD     R2, R2, #0
+        ADD     R2, R2, #10
+        CMP     R1, R2
+        BLT     Lose_Min
+        SUB     R1, R1, R2
+        STR     R1, [R0]
+        B       MainLoop
+Lose_Min:
+        ADD     R1, R1, #0
+        STR     R1, [R0]
+        B       MainLoop
