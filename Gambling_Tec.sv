@@ -51,9 +51,10 @@ module Gambling_Tec(
 	 Ps2_Key ps2_inst(
 		 .clk(clk), 
 		 .ps2_clk(PS2_CLK), 
-		 .ps2_data(DATA_PS2),
-		 .key_code(key_code),
-		 .data_ready(key_ready)
+		 .ps2_data(DATA_PS2), 
+         .WriteEn(key_ready),
+         .Code_Key(key_code) 
+         
 	 );
 
 

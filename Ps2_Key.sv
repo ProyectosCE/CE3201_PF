@@ -1,23 +1,32 @@
 module Ps2_Key(
  input clk, ps2_clk, ps2_data,
- output logic[7:0] key_code, // the 8 bits for the key
- output logic data_ready
+ output logic WriteEn,
+ output logic [7:0] Code_Key
 );
 
- 
+logic [7:0] KEY_ENTER     = 8'h5A; // Enter
+logic [7:0] KEY_SPACE     = 8'h29; // Espacio
+logic [7:0] KEY_BACKSPACE = 8'h66; // Retroceso (Backspace)
+logic [7:0] ARROW_LEFT    = 8'h6B; // Flecha izquierda
+logic [7:0] ARROW_RIGHT   = 8'h74; // Flecha derecha
+
+
+ logic key_press;
  logic read; // to know if needs more bits
  logic previous_state; // to check clocks changes 
  logic error; // if there on error in the data
  logic full_buffer; //this is 1 when received the 11bits
  logic trigger; // clock slower
- logic valid_code;
-
+ logic holding; // to change the key_code
+ 
  logic[11:0] read_counter; // to count time passed
  logic[10:0] scan_code; //all the packet
- 
+ logic[7:0] key_code; // the 8 bits for the key
  logic[3:0] counter; // bits counter for 0 to 11
  logic[7:0] down_counter; // for the trigger 
+ logic[29:0] holding_counter; //time the value will be hold 
 
+ 
  
  //set initial values 
  initial begin 
@@ -27,8 +36,16 @@ module Ps2_Key(
   error = 0;
   scan_code = 0;
   counter = 0;
+  key_code = 0;
   read = 0;
   read_counter = 0;
+  key_press = 0;
+
+  holding_counter = 8'b0;
+  holding = 0; 
+  WriteEn = 0;
+
+  
  end
  
  //frequency slower 
@@ -94,23 +111,60 @@ module Ps2_Key(
   end
  end
  
- // to update the key_code 
- always_ff @(posedge clk) begin
-	  valid_code <= 0;          // por defecto, sin pulso
-
-	  if (trigger && full_buffer) begin
-			if (!error) begin
-				 key_code   <= scan_code[8:1]; // byte recibido
-				 valid_code <= 1;              // marcar llegada válida
-			end else begin
-				 key_code <= 8'd0;             // error ⇒ código nulo
-			end
-	  end
- end
-
- // ───────── Salida data_ready (pulso de 1 ciclo) ─────────
- always_ff @(posedge clk) begin
-	  data_ready <= valid_code;
+ // to update the key_code
+ always @(posedge clk)begin 
+  if(trigger)begin
+   if(full_buffer)begin
+    if(error) begin
+     key_code <= 8'd0;
+    end else begin
+     key_code <= scan_code[8:1];
+    end
+   end else begin
+    key_code <= 8'd0;
+   end
+   
+  end else begin
+   key_code <= 8'd0;
+  end
  end
  
-endmodule 
+ 
+ //to update the outputs
+ always @(posedge clk)begin
+ 
+  if (key_code == ARROW_LEFT | key_code == KEY_ENTER | key_code == KEY_BACKSPACE | key_code == KEY_SPACE | key_code == ARROW_RIGHT) begin
+   key_press = 1'b1;
+   
+  end else begin
+   key_press = 1'b0;
+  end
+ end
+ 
+ //leds control 
+ always @(posedge clk)begin 
+
+  if(key_press)begin
+   WriteEn = 1'b1;
+   holding = 1'b1;
+  end
+  
+  if(holding)begin
+   holding_counter = holding_counter + 1'b1;
+  end
+  
+  if(holding_counter > 10000000)begin
+   WriteEn = 1'b0;
+
+   holding = 1'b0;
+   holding_counter = 30'b0;
+  end
+  
+  
+ end
+ 
+
+
+assign Code_Key = key_code;
+
+endmodule

@@ -1,12 +1,12 @@
-Fitter Status : Successful - Mon Jun 16 19:21:54 2025
+Fitter Status : Successful - Mon Jun 16 20:39:42 2025
 Quartus Prime Version : 18.1.0 Build 625 09/12/2018 SJ Lite Edition
 Revision Name : Gambling_Tec
 Top-level Entity Name : Gambling_Tec
 Family : Cyclone V
 Device : 5CSXFC6D6F31C6
 Timing Models : Final
-Logic utilization (in ALMs) : 24 / 41,910 ( < 1 % )
-Total registers : 44
+Logic utilization (in ALMs) : 74 / 41,910 ( < 1 % )
+Total registers : 83
 Total pins : 5 / 499 ( 1 % )
 Total virtual pins : 0
 Total block memory bits : 0 / 5,662,720 ( 0 % )
