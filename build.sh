@@ -1,10 +1,10 @@
 #!/bin/bash
 
 # Archivo fuente de ensamblador ARMv4
-SRC="prog.asm"
-OBJ="prog.o"
-BIN="prog.bin"
-HEX="prog.hex"
+SRC="Gambling_Tec.asm"
+OBJ="Gambling_Tec.o"
+BIN="Gambling_Tec.bin"
+HEX="Gambling_Tec.hex"
 
 # Colores para mensajes
 GREEN='\033[0;32m'
@@ -16,7 +16,7 @@ arm-none-eabi-as -mcpu=arm7tdmi -o $OBJ $SRC || exit 1
 echo -e "${GREEN}==> Exportando binario plano...${NC}"
 arm-none-eabi-objcopy -O binary $OBJ $BIN || exit 1
 
-echo -e "${GREEN}==> Corrigiendo endian y generando prog.hex...${NC}"
+echo -e "${GREEN}==> Corrigiendo endian y generando Gambling_Tec.hex...${NC}"
 xxd -p -c 4 $BIN | sed 's/^\(..\)\(..\)\(..\)\(..\)$/\4\3\2\1/' > $HEX
 
 echo -e "${GREEN} Archivo $HEX generado exitosamente.${NC}"
