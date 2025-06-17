@@ -1,6 +1,6 @@
 \documentclass[conference]{IEEEtran}
 \IEEEoverridecommandlockouts
-\usepackage{cite}
+%\usepackage{cite}
 \usepackage{amsmath,amssymb,amsfonts}
 \usepackage{algorithmic}
 \usepackage{graphicx}
@@ -12,7 +12,7 @@
 
 \usepackage{listings}
 
-\usepackage[backend=bibtex,style=ieee,biblabel=dot,language=spanish]{biblatex}
+\usepackage[backend=biber,style=apa,language=spanish]{biblatex}
 \addbibresource{references.bib}
 
 \usepackage[pdftex,
@@ -42,6 +42,16 @@
     commentstyle=\color{gray}
 }
 
+
+\makeatletter
+\newcommand{\linebreakand}{%
+\end{@IEEEauthorhalign}
+\hfill\mbox{}\par
+\mbox{}\hfill\begin{@IEEEauthorhalign}
+}
+\makeatother
+
+
 \renewcommand{\tablename}{Tabla}
 \def\BibTeX{{\rm B\kern-.05em{\sc i\kern-.025em b}\kern-.08em
     T\kern-.1667em\lower.7ex\hbox{E}\kern-.125emX}}
@@ -65,7 +75,7 @@
         Escuela de Ingeniería en Computadores \\
         Instituto Tecnológico de Costa Rica
     }
-    \and
+    \linebreakand
     \IEEEauthorblockN{Jimmy Feng Feng}
     \IEEEauthorblockA{
         Carné: 2023060374 \\
