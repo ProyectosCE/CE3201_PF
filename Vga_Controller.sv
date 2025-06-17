@@ -80,7 +80,7 @@ logic [3:0] numb2;
 logic [3:0] numb3;
 
 deco_BDS deco(
-.Num(10'd666),
+.Num(10'd198),
 .numb1(numb1),
 .numb2(numb2),
 .numb3(numb3)
