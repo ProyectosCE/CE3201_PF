@@ -1,55 +1,79 @@
 `timescale 1ns/1ps
-
 module tb_ROM;
 
-    logic [9:0] address;         // 10 bits = 1024 instrucciones (4 KB)
-    logic [31:0] data;           // Instruccion entregada por la ROM
+    //-----------------------
+    // Parámetros de la ROM
+    //-----------------------
+    localparam AW          = 10;               // 2^10 = 1024 palabras
+    localparam DW          = 32;
+    localparam MAX_WORDS   = 1<<AW;            // 1024
+    localparam MAX_PRINT   = 256;              // Imprime, como máximo, 256 líneas
 
-    // Instancia del modulo ROM
-    ROM #(.AW(10)) dut (
+    //-----------------------
+    // Señales bajo prueba
+    //-----------------------
+    logic [AW-1:0] address;
+    logic [DW-1:0] data;
+
+    //-----------------------
+    // Instancia de la ROM
+    //-----------------------
+    ROM #(.AW(AW), .DW(DW)) dut (
         .address(address),
-        .data(data)
+        .data   (data)
     );
 
-    // Simulacion
+    //-----------------------
+    // Proceso de lectura
+    //-----------------------
+    integer  i;
+    integer  instr_cnt;
+
     initial begin
-        $display("==== INICIO TEST ROM ====");
+        $display("\n==== INICIO  TEST  ROM ====");
         $dumpfile("tb_ROM.vcd");
-        $dumpvars(0, tb_ROM);
+        $dumpvars(0,tb_ROM);
 
-        // Esperando que se cargue la ROM
-        #10;
+        //----------------------------------------------
+        // Esperar a que $readmemh termine su ejecución
+        //----------------------------------------------
+        #10;             // tiempo suficiente tras la fase 0‑ns
 
-        // Leer las primeras 4 instrucciones
-        address = 0;
-        #5;
-        $display("ROM[0] = 0x%08x", data);
+        instr_cnt = 0;
+        address   = '0;  // asegurarse de empezar en la palabra 0
+        #1;
 
-        address = 1;
-        #5;
-        $display("ROM[1] = 0x%08x", data);
+        // Recorrer la ROM palabra por palabra
+        for (i = 0; i < MAX_WORDS; i++) begin
+            address = i;
+            #1;         // tiempo de lectura asíncrona de la ROM
 
-        address = 2;
-        #5;
-        $display("ROM[2] = 0x%08x", data);
+            // Si los 32 bits contienen X o Z ⇒ la dirección no está inicializada
+            if (^data === 1'bx || ^data === 1'bz) begin
+                $display("---> Parada: celda %0d no inicializada (data = %08h)", i, data);
+                break;
+            end
 
-        address = 3;
-        #5;
-        $display("ROM[3] = 0x%08x", data);
-		  
-		  address = 4;
-        #5;
-        $display("ROM[4] = 0x%08x", data);
-		  
-		  address = 5;
-        #5;
-        $display("ROM[5] = 0x%08x", data);
-		  
-		  address = 6;
-        #5;
-        $display("ROM[6] = 0x%08x", data);
+            //------------------------------------------
+            // Imprimir las primeras MAX_PRINT palabras
+            //------------------------------------------
+            if (i < MAX_PRINT)
+                $display("ROM[%0d] = 0x%08x", i, data);
 
+            instr_cnt++;
+        end
+
+        $display("\nTotal de instrucciones validas encontradas: %0d", instr_cnt);
+
+        // Sencilla validación empírica:
+        if (instr_cnt != 123) begin
+            $error("La ROM NO contiene las 123 instrucciones esperadas; encontro %0d", instr_cnt);
+            $fatal;
+        end
+        else
+            $display("La ROM contiene exactamente las 123 palabras de Gambling_Tec.hex");
+
+        $display("==== FIN   TEST  ROM ====\n");
         $finish;
     end
-
 endmodule
