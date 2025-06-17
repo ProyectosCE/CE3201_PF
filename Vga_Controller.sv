@@ -209,6 +209,37 @@ logic Area_Btn3;
 logic Area_Btn1_s;
 logic Area_Btn2_s;
 logic Area_Btn3_s;
+logic Arrow_up, Arrow_Down,Equis;
+
+
+Draw_Arrow  #(.SCALE(5)) arro (
+    .Q_X(Q_X),
+    .Q_Y(Q_Y),
+    .pos_x(40),
+    .pos_y(370),
+    .visible(Arrow_up)
+);
+
+
+Draw_Arrow_Dowm  #(.SCALE(5)) arro2 (
+    .Q_X(Q_X),
+    .Q_Y(Q_Y),
+    .pos_x(150),
+    .pos_y(370),
+    .visible(Arrow_Down)
+);
+
+Draw_X  #(.SCALE(4)) ex (
+    .Q_X(Q_X),
+    .Q_Y(Q_Y),
+    .pos_x(250),
+    .pos_y(370),
+    .visible(Equis)
+);
+
+
+
+
 
 Button #(
     .x_start(10),
@@ -221,6 +252,10 @@ Button #(
     .Btn_front(Area_Btn1),
     .Btn_shadow(Area_Btn1_s)
 );
+
+
+
+
 
 Button #(
     .x_start(120),
@@ -267,8 +302,9 @@ Panel #(
     .Area_front(letrero_Zone),
 
 );
-
+logic win_state;
 logic mitad;
+
 assign mitad = Q_Y <= 120;
 
 Draw_CASH #(.SCALE(4)) cash_display (
@@ -279,7 +315,13 @@ Draw_CASH #(.SCALE(4)) cash_display (
     .visible(letras)
 );
 
-
+Draw_WIN #(.SCALE(6)) Winnig (
+    .Q_X(Q_X),
+    .Q_Y(Q_Y),
+    .pos_x(10),
+    .pos_y(105),
+    .visible(win_state)
+);
 
 
 
@@ -414,11 +456,15 @@ always_comb begin
         R = 8'hbF;
         G = 8'hbF;
         B = 8'hFF;
-    end else if( slot_active) begin
+    end else if( win_state ) begin
+        R = 8'hFF;
+        G = 8'h00;
+        B = 8'h00;
+	end else if( slot_active) begin
         R = color_Select[23:16]; // bits 23–16
         G = color_Select[15:8];  // bits 15–8
         B = color_Select[7:0];   // bits 7–0
-	end else if( Area_Btn1_s | Area_Btn3_s | Area_Btn2_s) begin
+	end else if( (Area_Btn1_s | Area_Btn3_s | Area_Btn2_s) & ~Arrow_up & ~Arrow_Down & ~Equis) begin
         R = 8'h68;
         G = 8'h00;
         B = 8'h68;

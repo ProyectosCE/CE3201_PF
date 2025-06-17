@@ -1,5 +1,5 @@
 Analysis & Synthesis report for Gambling_Tec
-Tue Jun 17 00:44:58 2025
+Tue Jun 17 16:33:45 2025
 Quartus Prime Version 18.1.0 Build 625 09/12/2018 SJ Lite Edition
 
 
@@ -71,102 +71,116 @@ Quartus Prime Version 18.1.0 Build 625 09/12/2018 SJ Lite Edition
  63. Parameter Settings for User Entity Instance: Vga_Controller:vga_control|Column:c3|Square_Area:cua_D3
  64. Parameter Settings for User Entity Instance: Vga_Controller:vga_control|Column:c3|Square_Area:cua_D4
  65. Parameter Settings for User Entity Instance: Vga_Controller:vga_control|Draw_C:colo
- 66. Parameter Settings for User Entity Instance: Vga_Controller:vga_control|Button:Btn1
- 67. Parameter Settings for User Entity Instance: Vga_Controller:vga_control|Button:Btn1|Square_Area:Cua_Btn
- 68. Parameter Settings for User Entity Instance: Vga_Controller:vga_control|Button:Btn1|Square_Area:Cua_Btn_sombra
- 69. Parameter Settings for User Entity Instance: Vga_Controller:vga_control|Button:Btn2
- 70. Parameter Settings for User Entity Instance: Vga_Controller:vga_control|Button:Btn2|Square_Area:Cua_Btn
- 71. Parameter Settings for User Entity Instance: Vga_Controller:vga_control|Button:Btn2|Square_Area:Cua_Btn_sombra
- 72. Parameter Settings for User Entity Instance: Vga_Controller:vga_control|Button:Btn3
- 73. Parameter Settings for User Entity Instance: Vga_Controller:vga_control|Button:Btn3|Square_Area:Cua_Btn
- 74. Parameter Settings for User Entity Instance: Vga_Controller:vga_control|Button:Btn3|Square_Area:Cua_Btn_sombra
- 75. Parameter Settings for User Entity Instance: Vga_Controller:vga_control|Panel:panel_msg
- 76. Parameter Settings for User Entity Instance: Vga_Controller:vga_control|Panel:panel_msg|Square_Area:cua_D
- 77. Parameter Settings for User Entity Instance: Vga_Controller:vga_control|Panel:panel_msg|Square_Area:sombra
- 78. Parameter Settings for User Entity Instance: Vga_Controller:vga_control|Panel:panel_msg|Square_Area:cua_D2
- 79. Parameter Settings for User Entity Instance: Vga_Controller:vga_control|Panel:panel_msg|Square_Area:cua_D3
- 80. Parameter Settings for User Entity Instance: Vga_Controller:vga_control|Panel:panel_msg|Square_Area:cua_D4
- 81. Parameter Settings for User Entity Instance: Vga_Controller:vga_control|Draw_CASH:cash_display
- 82. Parameter Settings for User Entity Instance: Vga_Controller:vga_control|Counter:conut
- 83. Parameter Settings for User Entity Instance: Vga_Controller:vga_control|Symbol:slot_0_0
- 84. Parameter Settings for User Entity Instance: Vga_Controller:vga_control|Symbol:slot_0_0|Square_Area:form0
- 85. Parameter Settings for User Entity Instance: Vga_Controller:vga_control|Symbol:slot_0_0|Square_Area:form1
- 86. Parameter Settings for User Entity Instance: Vga_Controller:vga_control|Symbol:slot_0_0|Square_Area:form2
- 87. Parameter Settings for User Entity Instance: Vga_Controller:vga_control|Symbol:slot_0_0|Square_Area:form3
- 88. Parameter Settings for User Entity Instance: Vga_Controller:vga_control|Symbol:slot_0_1
- 89. Parameter Settings for User Entity Instance: Vga_Controller:vga_control|Symbol:slot_0_1|Square_Area:form0
- 90. Parameter Settings for User Entity Instance: Vga_Controller:vga_control|Symbol:slot_0_1|Square_Area:form1
- 91. Parameter Settings for User Entity Instance: Vga_Controller:vga_control|Symbol:slot_0_1|Square_Area:form2
- 92. Parameter Settings for User Entity Instance: Vga_Controller:vga_control|Symbol:slot_0_1|Square_Area:form3
- 93. Parameter Settings for User Entity Instance: Vga_Controller:vga_control|Symbol:slot_0_2
- 94. Parameter Settings for User Entity Instance: Vga_Controller:vga_control|Symbol:slot_0_2|Square_Area:form0
- 95. Parameter Settings for User Entity Instance: Vga_Controller:vga_control|Symbol:slot_0_2|Square_Area:form1
- 96. Parameter Settings for User Entity Instance: Vga_Controller:vga_control|Symbol:slot_0_2|Square_Area:form2
- 97. Parameter Settings for User Entity Instance: Vga_Controller:vga_control|Symbol:slot_0_2|Square_Area:form3
- 98. Parameter Settings for User Entity Instance: Vga_Controller:vga_control|Symbol:slot_1_0
- 99. Parameter Settings for User Entity Instance: Vga_Controller:vga_control|Symbol:slot_1_0|Square_Area:form0
-100. Parameter Settings for User Entity Instance: Vga_Controller:vga_control|Symbol:slot_1_0|Square_Area:form1
-101. Parameter Settings for User Entity Instance: Vga_Controller:vga_control|Symbol:slot_1_0|Square_Area:form2
-102. Parameter Settings for User Entity Instance: Vga_Controller:vga_control|Symbol:slot_1_0|Square_Area:form3
-103. Parameter Settings for User Entity Instance: Vga_Controller:vga_control|Symbol:slot_1_1
-104. Parameter Settings for User Entity Instance: Vga_Controller:vga_control|Symbol:slot_1_1|Square_Area:form0
-105. Parameter Settings for User Entity Instance: Vga_Controller:vga_control|Symbol:slot_1_1|Square_Area:form1
-106. Parameter Settings for User Entity Instance: Vga_Controller:vga_control|Symbol:slot_1_1|Square_Area:form2
-107. Parameter Settings for User Entity Instance: Vga_Controller:vga_control|Symbol:slot_1_1|Square_Area:form3
-108. Parameter Settings for User Entity Instance: Vga_Controller:vga_control|Symbol:slot_1_2
-109. Parameter Settings for User Entity Instance: Vga_Controller:vga_control|Symbol:slot_1_2|Square_Area:form0
-110. Parameter Settings for User Entity Instance: Vga_Controller:vga_control|Symbol:slot_1_2|Square_Area:form1
-111. Parameter Settings for User Entity Instance: Vga_Controller:vga_control|Symbol:slot_1_2|Square_Area:form2
-112. Parameter Settings for User Entity Instance: Vga_Controller:vga_control|Symbol:slot_1_2|Square_Area:form3
-113. Parameter Settings for User Entity Instance: Vga_Controller:vga_control|Symbol:slot_2_0
-114. Parameter Settings for User Entity Instance: Vga_Controller:vga_control|Symbol:slot_2_0|Square_Area:form0
-115. Parameter Settings for User Entity Instance: Vga_Controller:vga_control|Symbol:slot_2_0|Square_Area:form1
-116. Parameter Settings for User Entity Instance: Vga_Controller:vga_control|Symbol:slot_2_0|Square_Area:form2
-117. Parameter Settings for User Entity Instance: Vga_Controller:vga_control|Symbol:slot_2_0|Square_Area:form3
-118. Parameter Settings for User Entity Instance: Vga_Controller:vga_control|Symbol:slot_2_1
-119. Parameter Settings for User Entity Instance: Vga_Controller:vga_control|Symbol:slot_2_1|Square_Area:form0
-120. Parameter Settings for User Entity Instance: Vga_Controller:vga_control|Symbol:slot_2_1|Square_Area:form1
-121. Parameter Settings for User Entity Instance: Vga_Controller:vga_control|Symbol:slot_2_1|Square_Area:form2
-122. Parameter Settings for User Entity Instance: Vga_Controller:vga_control|Symbol:slot_2_1|Square_Area:form3
-123. Parameter Settings for User Entity Instance: Vga_Controller:vga_control|Symbol:slot_2_2
-124. Parameter Settings for User Entity Instance: Vga_Controller:vga_control|Symbol:slot_2_2|Square_Area:form0
-125. Parameter Settings for User Entity Instance: Vga_Controller:vga_control|Symbol:slot_2_2|Square_Area:form1
-126. Parameter Settings for User Entity Instance: Vga_Controller:vga_control|Symbol:slot_2_2|Square_Area:form2
-127. Parameter Settings for User Entity Instance: Vga_Controller:vga_control|Symbol:slot_2_2|Square_Area:form3
-128. Parameter Settings for User Entity Instance: CPU:process|Mux:next_PC_inst
-129. Parameter Settings for User Entity Instance: CPU:process|Register:PC_Register
-130. Parameter Settings for User Entity Instance: CPU:process|Mux:RA1_inst
-131. Parameter Settings for User Entity Instance: CPU:process|Mux:RA2_inst
-132. Parameter Settings for User Entity Instance: CPU:process|Adder:PCPlus4_inst
-133. Parameter Settings for User Entity Instance: CPU:process|Adder:PCPlus8_inst
-134. Parameter Settings for User Entity Instance: CPU:process|Mux:ALUSrc_inst
-135. Parameter Settings for User Entity Instance: CPU:process|ALU:ALU_inst
-136. Parameter Settings for User Entity Instance: CPU:process|Mux:MemToReg_inst
-137. Parameter Settings for User Entity Instance: CPU:process|Control_Unit:CU_Inst|Register:Register_Flag1
-138. Parameter Settings for User Entity Instance: CPU:process|Control_Unit:CU_Inst|Register:Register_Flag2
-139. Parameter Settings for Inferred Entity Instance: Vga_Controller:vga_control|Draw_C:colo|lpm_divide:Div0
-140. Parameter Settings for Inferred Entity Instance: Vga_Controller:vga_control|Draw_C:colo|lpm_divide:Div1
-141. Port Connectivity Checks: "CPU:process|Adder:PCPlus8_inst"
-142. Port Connectivity Checks: "CPU:process|Adder:PCPlus4_inst"
-143. Port Connectivity Checks: "CPU:process|Mux:RA1_inst"
-144. Port Connectivity Checks: "CPU:process|Register:PC_Register"
-145. Port Connectivity Checks: "CPU:process"
-146. Port Connectivity Checks: "Vga_Controller:vga_control|Rom_tile:rom_tile"
-147. Port Connectivity Checks: "Vga_Controller:vga_control|Counter:conut"
-148. Port Connectivity Checks: "Vga_Controller:vga_control|Draw_CASH:cash_display"
-149. Port Connectivity Checks: "Vga_Controller:vga_control|Draw_C:colo"
-150. Port Connectivity Checks: "Vga_Controller:vga_control|deco_BDS:deco"
-151. Port Connectivity Checks: "Vga_Controller:vga_control|Comparator:cmp_y"
-152. Port Connectivity Checks: "Vga_Controller:vga_control|Comparator:cmp_x"
-153. Port Connectivity Checks: "Vga_Controller:vga_control|Register:reg_y"
-154. Port Connectivity Checks: "Vga_Controller:vga_control|Register:reg_x"
-155. Port Connectivity Checks: "Vga_Controller:vga_control|Counter:count_x"
-156. Port Connectivity Checks: "Vga_Controller:vga_control|Counter:count_y"
-157. Port Connectivity Checks: "Vga_Controller:vga_control"
-158. Post-Synthesis Netlist Statistics for Top Partition
-159. Elapsed Time Per Partition
-160. Analysis & Synthesis Messages
-161. Analysis & Synthesis Suppressed Messages
+ 66. Parameter Settings for User Entity Instance: Vga_Controller:vga_control|Draw_Arrow:arro
+ 67. Parameter Settings for User Entity Instance: Vga_Controller:vga_control|Draw_Arrow_Dowm:arro2
+ 68. Parameter Settings for User Entity Instance: Vga_Controller:vga_control|Draw_X:ex
+ 69. Parameter Settings for User Entity Instance: Vga_Controller:vga_control|Button:Btn1
+ 70. Parameter Settings for User Entity Instance: Vga_Controller:vga_control|Button:Btn1|Square_Area:Cua_Btn
+ 71. Parameter Settings for User Entity Instance: Vga_Controller:vga_control|Button:Btn1|Square_Area:Cua_Btn_sombra
+ 72. Parameter Settings for User Entity Instance: Vga_Controller:vga_control|Button:Btn2
+ 73. Parameter Settings for User Entity Instance: Vga_Controller:vga_control|Button:Btn2|Square_Area:Cua_Btn
+ 74. Parameter Settings for User Entity Instance: Vga_Controller:vga_control|Button:Btn2|Square_Area:Cua_Btn_sombra
+ 75. Parameter Settings for User Entity Instance: Vga_Controller:vga_control|Button:Btn3
+ 76. Parameter Settings for User Entity Instance: Vga_Controller:vga_control|Button:Btn3|Square_Area:Cua_Btn
+ 77. Parameter Settings for User Entity Instance: Vga_Controller:vga_control|Button:Btn3|Square_Area:Cua_Btn_sombra
+ 78. Parameter Settings for User Entity Instance: Vga_Controller:vga_control|Panel:panel_msg
+ 79. Parameter Settings for User Entity Instance: Vga_Controller:vga_control|Panel:panel_msg|Square_Area:cua_D
+ 80. Parameter Settings for User Entity Instance: Vga_Controller:vga_control|Panel:panel_msg|Square_Area:sombra
+ 81. Parameter Settings for User Entity Instance: Vga_Controller:vga_control|Panel:panel_msg|Square_Area:cua_D2
+ 82. Parameter Settings for User Entity Instance: Vga_Controller:vga_control|Panel:panel_msg|Square_Area:cua_D3
+ 83. Parameter Settings for User Entity Instance: Vga_Controller:vga_control|Panel:panel_msg|Square_Area:cua_D4
+ 84. Parameter Settings for User Entity Instance: Vga_Controller:vga_control|Draw_CASH:cash_display
+ 85. Parameter Settings for User Entity Instance: Vga_Controller:vga_control|Draw_WIN:Winnig
+ 86. Parameter Settings for User Entity Instance: Vga_Controller:vga_control|Counter:conut
+ 87. Parameter Settings for User Entity Instance: Vga_Controller:vga_control|Symbol:slot_0_0
+ 88. Parameter Settings for User Entity Instance: Vga_Controller:vga_control|Symbol:slot_0_0|Square_Area:form0
+ 89. Parameter Settings for User Entity Instance: Vga_Controller:vga_control|Symbol:slot_0_0|Square_Area:form1
+ 90. Parameter Settings for User Entity Instance: Vga_Controller:vga_control|Symbol:slot_0_0|Square_Area:form2
+ 91. Parameter Settings for User Entity Instance: Vga_Controller:vga_control|Symbol:slot_0_0|Square_Area:form3
+ 92. Parameter Settings for User Entity Instance: Vga_Controller:vga_control|Symbol:slot_0_1
+ 93. Parameter Settings for User Entity Instance: Vga_Controller:vga_control|Symbol:slot_0_1|Square_Area:form0
+ 94. Parameter Settings for User Entity Instance: Vga_Controller:vga_control|Symbol:slot_0_1|Square_Area:form1
+ 95. Parameter Settings for User Entity Instance: Vga_Controller:vga_control|Symbol:slot_0_1|Square_Area:form2
+ 96. Parameter Settings for User Entity Instance: Vga_Controller:vga_control|Symbol:slot_0_1|Square_Area:form3
+ 97. Parameter Settings for User Entity Instance: Vga_Controller:vga_control|Symbol:slot_0_2
+ 98. Parameter Settings for User Entity Instance: Vga_Controller:vga_control|Symbol:slot_0_2|Square_Area:form0
+ 99. Parameter Settings for User Entity Instance: Vga_Controller:vga_control|Symbol:slot_0_2|Square_Area:form1
+100. Parameter Settings for User Entity Instance: Vga_Controller:vga_control|Symbol:slot_0_2|Square_Area:form2
+101. Parameter Settings for User Entity Instance: Vga_Controller:vga_control|Symbol:slot_0_2|Square_Area:form3
+102. Parameter Settings for User Entity Instance: Vga_Controller:vga_control|Symbol:slot_1_0
+103. Parameter Settings for User Entity Instance: Vga_Controller:vga_control|Symbol:slot_1_0|Square_Area:form0
+104. Parameter Settings for User Entity Instance: Vga_Controller:vga_control|Symbol:slot_1_0|Square_Area:form1
+105. Parameter Settings for User Entity Instance: Vga_Controller:vga_control|Symbol:slot_1_0|Square_Area:form2
+106. Parameter Settings for User Entity Instance: Vga_Controller:vga_control|Symbol:slot_1_0|Square_Area:form3
+107. Parameter Settings for User Entity Instance: Vga_Controller:vga_control|Symbol:slot_1_1
+108. Parameter Settings for User Entity Instance: Vga_Controller:vga_control|Symbol:slot_1_1|Square_Area:form0
+109. Parameter Settings for User Entity Instance: Vga_Controller:vga_control|Symbol:slot_1_1|Square_Area:form1
+110. Parameter Settings for User Entity Instance: Vga_Controller:vga_control|Symbol:slot_1_1|Square_Area:form2
+111. Parameter Settings for User Entity Instance: Vga_Controller:vga_control|Symbol:slot_1_1|Square_Area:form3
+112. Parameter Settings for User Entity Instance: Vga_Controller:vga_control|Symbol:slot_1_2
+113. Parameter Settings for User Entity Instance: Vga_Controller:vga_control|Symbol:slot_1_2|Square_Area:form0
+114. Parameter Settings for User Entity Instance: Vga_Controller:vga_control|Symbol:slot_1_2|Square_Area:form1
+115. Parameter Settings for User Entity Instance: Vga_Controller:vga_control|Symbol:slot_1_2|Square_Area:form2
+116. Parameter Settings for User Entity Instance: Vga_Controller:vga_control|Symbol:slot_1_2|Square_Area:form3
+117. Parameter Settings for User Entity Instance: Vga_Controller:vga_control|Symbol:slot_2_0
+118. Parameter Settings for User Entity Instance: Vga_Controller:vga_control|Symbol:slot_2_0|Square_Area:form0
+119. Parameter Settings for User Entity Instance: Vga_Controller:vga_control|Symbol:slot_2_0|Square_Area:form1
+120. Parameter Settings for User Entity Instance: Vga_Controller:vga_control|Symbol:slot_2_0|Square_Area:form2
+121. Parameter Settings for User Entity Instance: Vga_Controller:vga_control|Symbol:slot_2_0|Square_Area:form3
+122. Parameter Settings for User Entity Instance: Vga_Controller:vga_control|Symbol:slot_2_1
+123. Parameter Settings for User Entity Instance: Vga_Controller:vga_control|Symbol:slot_2_1|Square_Area:form0
+124. Parameter Settings for User Entity Instance: Vga_Controller:vga_control|Symbol:slot_2_1|Square_Area:form1
+125. Parameter Settings for User Entity Instance: Vga_Controller:vga_control|Symbol:slot_2_1|Square_Area:form2
+126. Parameter Settings for User Entity Instance: Vga_Controller:vga_control|Symbol:slot_2_1|Square_Area:form3
+127. Parameter Settings for User Entity Instance: Vga_Controller:vga_control|Symbol:slot_2_2
+128. Parameter Settings for User Entity Instance: Vga_Controller:vga_control|Symbol:slot_2_2|Square_Area:form0
+129. Parameter Settings for User Entity Instance: Vga_Controller:vga_control|Symbol:slot_2_2|Square_Area:form1
+130. Parameter Settings for User Entity Instance: Vga_Controller:vga_control|Symbol:slot_2_2|Square_Area:form2
+131. Parameter Settings for User Entity Instance: Vga_Controller:vga_control|Symbol:slot_2_2|Square_Area:form3
+132. Parameter Settings for User Entity Instance: CPU:process|Mux:next_PC_inst
+133. Parameter Settings for User Entity Instance: CPU:process|Register:PC_Register
+134. Parameter Settings for User Entity Instance: CPU:process|Mux:RA1_inst
+135. Parameter Settings for User Entity Instance: CPU:process|Mux:RA2_inst
+136. Parameter Settings for User Entity Instance: CPU:process|Adder:PCPlus4_inst
+137. Parameter Settings for User Entity Instance: CPU:process|Adder:PCPlus8_inst
+138. Parameter Settings for User Entity Instance: CPU:process|Mux:ALUSrc_inst
+139. Parameter Settings for User Entity Instance: CPU:process|ALU:ALU_inst
+140. Parameter Settings for User Entity Instance: CPU:process|Mux:MemToReg_inst
+141. Parameter Settings for User Entity Instance: CPU:process|Control_Unit:CU_Inst|Register:Register_Flag1
+142. Parameter Settings for User Entity Instance: CPU:process|Control_Unit:CU_Inst|Register:Register_Flag2
+143. Parameter Settings for Inferred Entity Instance: Vga_Controller:vga_control|Draw_Arrow:arro|lpm_divide:Div1
+144. Parameter Settings for Inferred Entity Instance: Vga_Controller:vga_control|Draw_Arrow:arro|lpm_divide:Div0
+145. Parameter Settings for Inferred Entity Instance: Vga_Controller:vga_control|Draw_Arrow_Dowm:arro2|lpm_divide:Div0
+146. Parameter Settings for Inferred Entity Instance: Vga_Controller:vga_control|Draw_C:colo|lpm_divide:Div0
+147. Parameter Settings for Inferred Entity Instance: Vga_Controller:vga_control|Draw_C:colo|lpm_divide:Div1
+148. Parameter Settings for Inferred Entity Instance: Vga_Controller:vga_control|Draw_WIN:Winnig|lpm_divide:Div0
+149. Parameter Settings for Inferred Entity Instance: Vga_Controller:vga_control|Draw_WIN:Winnig|lpm_divide:Div1
+150. Parameter Settings for Inferred Entity Instance: Vga_Controller:vga_control|Draw_WIN:Winnig|lpm_divide:Div2
+151. Port Connectivity Checks: "CPU:process|Adder:PCPlus8_inst"
+152. Port Connectivity Checks: "CPU:process|Adder:PCPlus4_inst"
+153. Port Connectivity Checks: "CPU:process|Mux:RA1_inst"
+154. Port Connectivity Checks: "CPU:process|Register:PC_Register"
+155. Port Connectivity Checks: "CPU:process"
+156. Port Connectivity Checks: "Vga_Controller:vga_control|Rom_tile:rom_tile"
+157. Port Connectivity Checks: "Vga_Controller:vga_control|Counter:conut"
+158. Port Connectivity Checks: "Vga_Controller:vga_control|Draw_WIN:Winnig"
+159. Port Connectivity Checks: "Vga_Controller:vga_control|Draw_CASH:cash_display"
+160. Port Connectivity Checks: "Vga_Controller:vga_control|Draw_X:ex"
+161. Port Connectivity Checks: "Vga_Controller:vga_control|Draw_Arrow_Dowm:arro2"
+162. Port Connectivity Checks: "Vga_Controller:vga_control|Draw_Arrow:arro"
+163. Port Connectivity Checks: "Vga_Controller:vga_control|Draw_C:colo"
+164. Port Connectivity Checks: "Vga_Controller:vga_control|deco_BDS:deco"
+165. Port Connectivity Checks: "Vga_Controller:vga_control|Comparator:cmp_y"
+166. Port Connectivity Checks: "Vga_Controller:vga_control|Comparator:cmp_x"
+167. Port Connectivity Checks: "Vga_Controller:vga_control|Register:reg_y"
+168. Port Connectivity Checks: "Vga_Controller:vga_control|Register:reg_x"
+169. Port Connectivity Checks: "Vga_Controller:vga_control|Counter:count_x"
+170. Port Connectivity Checks: "Vga_Controller:vga_control|Counter:count_y"
+171. Port Connectivity Checks: "Vga_Controller:vga_control"
+172. Post-Synthesis Netlist Statistics for Top Partition
+173. Elapsed Time Per Partition
+174. Analysis & Synthesis Messages
+175. Analysis & Synthesis Suppressed Messages
 
 
 
@@ -192,7 +206,7 @@ refer to the applicable agreement for further details.
 +-------------------------------------------------------------------------------+
 ; Analysis & Synthesis Summary                                                  ;
 +---------------------------------+---------------------------------------------+
-; Analysis & Synthesis Status     ; Successful - Tue Jun 17 00:44:58 2025       ;
+; Analysis & Synthesis Status     ; Successful - Tue Jun 17 16:33:45 2025       ;
 ; Quartus Prime Version           ; 18.1.0 Build 625 09/12/2018 SJ Lite Edition ;
 ; Revision Name                   ; Gambling_Tec                                ;
 ; Top-level Entity Name           ; Gambling_Tec                                ;
@@ -312,7 +326,9 @@ refer to the applicable agreement for further details.
 ;                            ;             ;
 ; Usage by Processor         ; % Time Used ;
 ;     Processor 1            ; 100.0%      ;
-;     Processors 2-4         ;   0.0%      ;
+;     Processor 2            ;   0.0%      ;
+;     Processor 3            ;   0.0%      ;
+;     Processor 4            ;   0.0%      ;
 +----------------------------+-------------+
 
 
@@ -347,6 +363,10 @@ refer to the applicable agreement for further details.
 ; Draw_CASH.sv                     ; yes             ; User SystemVerilog HDL File        ; C:/Users/josee/CE3201_PF/Draw_CASH.sv                                      ;         ;
 ; SevenSeg_Display.sv              ; yes             ; User SystemVerilog HDL File        ; C:/Users/josee/CE3201_PF/SevenSeg_Display.sv                               ;         ;
 ; output_files/Mux93.sv            ; yes             ; User SystemVerilog HDL File        ; C:/Users/josee/CE3201_PF/output_files/Mux93.sv                             ;         ;
+; Draw_Arrow.sv                    ; yes             ; User SystemVerilog HDL File        ; C:/Users/josee/CE3201_PF/Draw_Arrow.sv                                     ;         ;
+; Draw_Arrow_Dowm.sv               ; yes             ; User SystemVerilog HDL File        ; C:/Users/josee/CE3201_PF/Draw_Arrow_Dowm.sv                                ;         ;
+; Draw_X.sv                        ; yes             ; User SystemVerilog HDL File        ; C:/Users/josee/CE3201_PF/Draw_X.sv                                         ;         ;
+; Draw_WIN.sv                      ; yes             ; User SystemVerilog HDL File        ; C:/Users/josee/CE3201_PF/Draw_WIN.sv                                       ;         ;
 ; deco_bds.sv                      ; yes             ; Auto-Found SystemVerilog HDL File  ; C:/Users/josee/CE3201_PF/deco_bds.sv                                       ;         ;
 ; lpm_divide.tdf                   ; yes             ; Megafunction                       ; c:/intelfpga_lite/18.1/quartus/libraries/megafunctions/lpm_divide.tdf      ;         ;
 ; abs_divider.inc                  ; yes             ; Megafunction                       ; c:/intelfpga_lite/18.1/quartus/libraries/megafunctions/abs_divider.inc     ;         ;
@@ -355,6 +375,9 @@ refer to the applicable agreement for further details.
 ; db/lpm_divide_hbm.tdf            ; yes             ; Auto-Generated Megafunction        ; C:/Users/josee/CE3201_PF/db/lpm_divide_hbm.tdf                             ;         ;
 ; db/sign_div_unsign_rlh.tdf       ; yes             ; Auto-Generated Megafunction        ; C:/Users/josee/CE3201_PF/db/sign_div_unsign_rlh.tdf                        ;         ;
 ; db/alt_u_div_lve.tdf             ; yes             ; Auto-Generated Megafunction        ; C:/Users/josee/CE3201_PF/db/alt_u_div_lve.tdf                              ;         ;
+; db/lpm_divide_kbm.tdf            ; yes             ; Auto-Generated Megafunction        ; C:/Users/josee/CE3201_PF/db/lpm_divide_kbm.tdf                             ;         ;
+; db/sign_div_unsign_tlh.tdf       ; yes             ; Auto-Generated Megafunction        ; C:/Users/josee/CE3201_PF/db/sign_div_unsign_tlh.tdf                        ;         ;
+; db/alt_u_div_qve.tdf             ; yes             ; Auto-Generated Megafunction        ; C:/Users/josee/CE3201_PF/db/alt_u_div_qve.tdf                              ;         ;
 +----------------------------------+-----------------+------------------------------------+----------------------------------------------------------------------------+---------+
 
 
@@ -363,14 +386,14 @@ refer to the applicable agreement for further details.
 +---------------------------------------------+------------------------------------------------+
 ; Resource                                    ; Usage                                          ;
 +---------------------------------------------+------------------------------------------------+
-; Estimate of Logic utilization (ALMs needed) ; 334                                            ;
+; Estimate of Logic utilization (ALMs needed) ; 637                                            ;
 ;                                             ;                                                ;
-; Combinational ALUT usage for logic          ; 589                                            ;
-;     -- 7 input functions                    ; 9                                              ;
-;     -- 6 input functions                    ; 67                                             ;
-;     -- 5 input functions                    ; 131                                            ;
-;     -- 4 input functions                    ; 108                                            ;
-;     -- <=3 input functions                  ; 274                                            ;
+; Combinational ALUT usage for logic          ; 1199                                           ;
+;     -- 7 input functions                    ; 6                                              ;
+;     -- 6 input functions                    ; 65                                             ;
+;     -- 5 input functions                    ; 172                                            ;
+;     -- 4 input functions                    ; 209                                            ;
+;     -- <=3 input functions                  ; 747                                            ;
 ;                                             ;                                                ;
 ; Dedicated logic registers                   ; 44                                             ;
 ;                                             ;                                                ;
@@ -378,113 +401,141 @@ refer to the applicable agreement for further details.
 ;                                             ;                                                ;
 ; Total DSP Blocks                            ; 0                                              ;
 ;                                             ;                                                ;
-; Maximum fan-out node                        ; Vga_Controller:vga_control|Register:reg_x|Q[5] ;
-; Maximum fan-out                             ; 65                                             ;
-; Total fan-out                               ; 2413                                           ;
-; Average fan-out                             ; 3.17                                           ;
+; Maximum fan-out node                        ; Vga_Controller:vga_control|Register:reg_x|Q[6] ;
+; Maximum fan-out                             ; 69                                             ;
+; Total fan-out                               ; 4084                                           ;
+; Average fan-out                             ; 2.98                                           ;
 +---------------------------------------------+------------------------------------------------+
 
 
-+---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
-; Analysis & Synthesis Resource Utilization by Entity                                                                                                                                                                                                                                                                                               ;
-+----------------------------------------------+---------------------+---------------------------+-------------------+------------+------+--------------+------------------------------------------------------------------------------------------------------------------------------------------------------+---------------------+--------------+
-; Compilation Hierarchy Node                   ; Combinational ALUTs ; Dedicated Logic Registers ; Block Memory Bits ; DSP Blocks ; Pins ; Virtual Pins ; Full Hierarchy Name                                                                                                                                  ; Entity Name         ; Library Name ;
-+----------------------------------------------+---------------------+---------------------------+-------------------+------------+------+--------------+------------------------------------------------------------------------------------------------------------------------------------------------------+---------------------+--------------+
-; |Gambling_Tec                                ; 589 (0)             ; 44 (0)                    ; 0                 ; 0          ; 64   ; 0            ; |Gambling_Tec                                                                                                                                        ; Gambling_Tec        ; work         ;
-;    |Vga_Controller:vga_control|              ; 588 (122)           ; 43 (0)                    ; 0                 ; 0          ; 0    ; 0            ; |Gambling_Tec|Vga_Controller:vga_control                                                                                                             ; Vga_Controller      ; work         ;
-;       |Button:Btn1|                          ; 14 (0)              ; 0 (0)                     ; 0                 ; 0          ; 0    ; 0            ; |Gambling_Tec|Vga_Controller:vga_control|Button:Btn1                                                                                                 ; Button              ; work         ;
-;          |Square_Area:Cua_Btn_sombra|        ; 8 (8)               ; 0 (0)                     ; 0                 ; 0          ; 0    ; 0            ; |Gambling_Tec|Vga_Controller:vga_control|Button:Btn1|Square_Area:Cua_Btn_sombra                                                                      ; Square_Area         ; work         ;
-;          |Square_Area:Cua_Btn|               ; 6 (6)               ; 0 (0)                     ; 0                 ; 0          ; 0    ; 0            ; |Gambling_Tec|Vga_Controller:vga_control|Button:Btn1|Square_Area:Cua_Btn                                                                             ; Square_Area         ; work         ;
-;       |Button:Btn2|                          ; 2 (0)               ; 0 (0)                     ; 0                 ; 0          ; 0    ; 0            ; |Gambling_Tec|Vga_Controller:vga_control|Button:Btn2                                                                                                 ; Button              ; work         ;
-;          |Square_Area:Cua_Btn_sombra|        ; 2 (2)               ; 0 (0)                     ; 0                 ; 0          ; 0    ; 0            ; |Gambling_Tec|Vga_Controller:vga_control|Button:Btn2|Square_Area:Cua_Btn_sombra                                                                      ; Square_Area         ; work         ;
-;       |Button:Btn3|                          ; 3 (0)               ; 0 (0)                     ; 0                 ; 0          ; 0    ; 0            ; |Gambling_Tec|Vga_Controller:vga_control|Button:Btn3                                                                                                 ; Button              ; work         ;
-;          |Square_Area:Cua_Btn_sombra|        ; 1 (1)               ; 0 (0)                     ; 0                 ; 0          ; 0    ; 0            ; |Gambling_Tec|Vga_Controller:vga_control|Button:Btn3|Square_Area:Cua_Btn_sombra                                                                      ; Square_Area         ; work         ;
-;          |Square_Area:Cua_Btn|               ; 2 (2)               ; 0 (0)                     ; 0                 ; 0          ; 0    ; 0            ; |Gambling_Tec|Vga_Controller:vga_control|Button:Btn3|Square_Area:Cua_Btn                                                                             ; Square_Area         ; work         ;
-;       |Column:c1|                            ; 38 (0)              ; 0 (0)                     ; 0                 ; 0          ; 0    ; 0            ; |Gambling_Tec|Vga_Controller:vga_control|Column:c1                                                                                                   ; Column              ; work         ;
-;          |Square_Area:cua_D2|                ; 10 (10)             ; 0 (0)                     ; 0                 ; 0          ; 0    ; 0            ; |Gambling_Tec|Vga_Controller:vga_control|Column:c1|Square_Area:cua_D2                                                                                ; Square_Area         ; work         ;
-;          |Square_Area:cua_D3|                ; 3 (3)               ; 0 (0)                     ; 0                 ; 0          ; 0    ; 0            ; |Gambling_Tec|Vga_Controller:vga_control|Column:c1|Square_Area:cua_D3                                                                                ; Square_Area         ; work         ;
-;          |Square_Area:cua_D4|                ; 4 (4)               ; 0 (0)                     ; 0                 ; 0          ; 0    ; 0            ; |Gambling_Tec|Vga_Controller:vga_control|Column:c1|Square_Area:cua_D4                                                                                ; Square_Area         ; work         ;
-;          |Square_Area:cua_D|                 ; 7 (7)               ; 0 (0)                     ; 0                 ; 0          ; 0    ; 0            ; |Gambling_Tec|Vga_Controller:vga_control|Column:c1|Square_Area:cua_D                                                                                 ; Square_Area         ; work         ;
-;          |Square_Area:sombra|                ; 14 (14)             ; 0 (0)                     ; 0                 ; 0          ; 0    ; 0            ; |Gambling_Tec|Vga_Controller:vga_control|Column:c1|Square_Area:sombra                                                                                ; Square_Area         ; work         ;
-;       |Column:c2|                            ; 11 (0)              ; 0 (0)                     ; 0                 ; 0          ; 0    ; 0            ; |Gambling_Tec|Vga_Controller:vga_control|Column:c2                                                                                                   ; Column              ; work         ;
-;          |Square_Area:cua_D2|                ; 1 (1)               ; 0 (0)                     ; 0                 ; 0          ; 0    ; 0            ; |Gambling_Tec|Vga_Controller:vga_control|Column:c2|Square_Area:cua_D2                                                                                ; Square_Area         ; work         ;
-;          |Square_Area:cua_D3|                ; 4 (4)               ; 0 (0)                     ; 0                 ; 0          ; 0    ; 0            ; |Gambling_Tec|Vga_Controller:vga_control|Column:c2|Square_Area:cua_D3                                                                                ; Square_Area         ; work         ;
-;          |Square_Area:cua_D4|                ; 3 (3)               ; 0 (0)                     ; 0                 ; 0          ; 0    ; 0            ; |Gambling_Tec|Vga_Controller:vga_control|Column:c2|Square_Area:cua_D4                                                                                ; Square_Area         ; work         ;
-;          |Square_Area:cua_D|                 ; 1 (1)               ; 0 (0)                     ; 0                 ; 0          ; 0    ; 0            ; |Gambling_Tec|Vga_Controller:vga_control|Column:c2|Square_Area:cua_D                                                                                 ; Square_Area         ; work         ;
-;          |Square_Area:sombra|                ; 2 (2)               ; 0 (0)                     ; 0                 ; 0          ; 0    ; 0            ; |Gambling_Tec|Vga_Controller:vga_control|Column:c2|Square_Area:sombra                                                                                ; Square_Area         ; work         ;
-;       |Column:c3|                            ; 20 (0)              ; 0 (0)                     ; 0                 ; 0          ; 0    ; 0            ; |Gambling_Tec|Vga_Controller:vga_control|Column:c3                                                                                                   ; Column              ; work         ;
-;          |Square_Area:cua_D2|                ; 3 (3)               ; 0 (0)                     ; 0                 ; 0          ; 0    ; 0            ; |Gambling_Tec|Vga_Controller:vga_control|Column:c3|Square_Area:cua_D2                                                                                ; Square_Area         ; work         ;
-;          |Square_Area:cua_D3|                ; 6 (6)               ; 0 (0)                     ; 0                 ; 0          ; 0    ; 0            ; |Gambling_Tec|Vga_Controller:vga_control|Column:c3|Square_Area:cua_D3                                                                                ; Square_Area         ; work         ;
-;          |Square_Area:cua_D4|                ; 4 (4)               ; 0 (0)                     ; 0                 ; 0          ; 0    ; 0            ; |Gambling_Tec|Vga_Controller:vga_control|Column:c3|Square_Area:cua_D4                                                                                ; Square_Area         ; work         ;
-;          |Square_Area:cua_D|                 ; 2 (2)               ; 0 (0)                     ; 0                 ; 0          ; 0    ; 0            ; |Gambling_Tec|Vga_Controller:vga_control|Column:c3|Square_Area:cua_D                                                                                 ; Square_Area         ; work         ;
-;          |Square_Area:sombra|                ; 5 (5)               ; 0 (0)                     ; 0                 ; 0          ; 0    ; 0            ; |Gambling_Tec|Vga_Controller:vga_control|Column:c3|Square_Area:sombra                                                                                ; Square_Area         ; work         ;
-;       |Comparator:cmp_x|                     ; 6 (6)               ; 0 (0)                     ; 0                 ; 0          ; 0    ; 0            ; |Gambling_Tec|Vga_Controller:vga_control|Comparator:cmp_x                                                                                            ; Comparator          ; work         ;
-;       |Counter:conut|                        ; 1 (1)               ; 2 (2)                     ; 0                 ; 0          ; 0    ; 0            ; |Gambling_Tec|Vga_Controller:vga_control|Counter:conut                                                                                               ; Counter             ; work         ;
-;       |Counter:count_x|                      ; 10 (10)             ; 10 (10)                   ; 0                 ; 0          ; 0    ; 0            ; |Gambling_Tec|Vga_Controller:vga_control|Counter:count_x                                                                                             ; Counter             ; work         ;
-;       |Counter:count_y|                      ; 10 (10)             ; 10 (10)                   ; 0                 ; 0          ; 0    ; 0            ; |Gambling_Tec|Vga_Controller:vga_control|Counter:count_y                                                                                             ; Counter             ; work         ;
-;       |Draw_C:colo|                          ; 181 (16)            ; 0 (0)                     ; 0                 ; 0          ; 0    ; 0            ; |Gambling_Tec|Vga_Controller:vga_control|Draw_C:colo                                                                                                 ; Draw_C              ; work         ;
-;          |lpm_divide:Div0|                   ; 83 (0)              ; 0 (0)                     ; 0                 ; 0          ; 0    ; 0            ; |Gambling_Tec|Vga_Controller:vga_control|Draw_C:colo|lpm_divide:Div0                                                                                 ; lpm_divide          ; work         ;
-;             |lpm_divide_hbm:auto_generated|  ; 83 (0)              ; 0 (0)                     ; 0                 ; 0          ; 0    ; 0            ; |Gambling_Tec|Vga_Controller:vga_control|Draw_C:colo|lpm_divide:Div0|lpm_divide_hbm:auto_generated                                                   ; lpm_divide_hbm      ; work         ;
-;                |sign_div_unsign_rlh:divider| ; 83 (0)              ; 0 (0)                     ; 0                 ; 0          ; 0    ; 0            ; |Gambling_Tec|Vga_Controller:vga_control|Draw_C:colo|lpm_divide:Div0|lpm_divide_hbm:auto_generated|sign_div_unsign_rlh:divider                       ; sign_div_unsign_rlh ; work         ;
-;                   |alt_u_div_lve:divider|    ; 83 (83)             ; 0 (0)                     ; 0                 ; 0          ; 0    ; 0            ; |Gambling_Tec|Vga_Controller:vga_control|Draw_C:colo|lpm_divide:Div0|lpm_divide_hbm:auto_generated|sign_div_unsign_rlh:divider|alt_u_div_lve:divider ; alt_u_div_lve       ; work         ;
-;          |lpm_divide:Div1|                   ; 82 (0)              ; 0 (0)                     ; 0                 ; 0          ; 0    ; 0            ; |Gambling_Tec|Vga_Controller:vga_control|Draw_C:colo|lpm_divide:Div1                                                                                 ; lpm_divide          ; work         ;
-;             |lpm_divide_hbm:auto_generated|  ; 82 (0)              ; 0 (0)                     ; 0                 ; 0          ; 0    ; 0            ; |Gambling_Tec|Vga_Controller:vga_control|Draw_C:colo|lpm_divide:Div1|lpm_divide_hbm:auto_generated                                                   ; lpm_divide_hbm      ; work         ;
-;                |sign_div_unsign_rlh:divider| ; 82 (0)              ; 0 (0)                     ; 0                 ; 0          ; 0    ; 0            ; |Gambling_Tec|Vga_Controller:vga_control|Draw_C:colo|lpm_divide:Div1|lpm_divide_hbm:auto_generated|sign_div_unsign_rlh:divider                       ; sign_div_unsign_rlh ; work         ;
-;                   |alt_u_div_lve:divider|    ; 82 (82)             ; 0 (0)                     ; 0                 ; 0          ; 0    ; 0            ; |Gambling_Tec|Vga_Controller:vga_control|Draw_C:colo|lpm_divide:Div1|lpm_divide_hbm:auto_generated|sign_div_unsign_rlh:divider|alt_u_div_lve:divider ; alt_u_div_lve       ; work         ;
-;       |Draw_CASH:cash_display|               ; 24 (24)             ; 0 (0)                     ; 0                 ; 0          ; 0    ; 0            ; |Gambling_Tec|Vga_Controller:vga_control|Draw_CASH:cash_display                                                                                      ; Draw_CASH           ; work         ;
-;       |Mux93:color_selector|                 ; 10 (10)             ; 0 (0)                     ; 0                 ; 0          ; 0    ; 0            ; |Gambling_Tec|Vga_Controller:vga_control|Mux93:color_selector                                                                                        ; Mux93               ; work         ;
-;       |Panel:panel_izquierdo|                ; 29 (0)              ; 0 (0)                     ; 0                 ; 0          ; 0    ; 0            ; |Gambling_Tec|Vga_Controller:vga_control|Panel:panel_izquierdo                                                                                       ; Panel               ; work         ;
-;          |Square_Area:cua_D2|                ; 7 (7)               ; 0 (0)                     ; 0                 ; 0          ; 0    ; 0            ; |Gambling_Tec|Vga_Controller:vga_control|Panel:panel_izquierdo|Square_Area:cua_D2                                                                    ; Square_Area         ; work         ;
-;          |Square_Area:cua_D3|                ; 6 (6)               ; 0 (0)                     ; 0                 ; 0          ; 0    ; 0            ; |Gambling_Tec|Vga_Controller:vga_control|Panel:panel_izquierdo|Square_Area:cua_D3                                                                    ; Square_Area         ; work         ;
-;          |Square_Area:cua_D4|                ; 5 (5)               ; 0 (0)                     ; 0                 ; 0          ; 0    ; 0            ; |Gambling_Tec|Vga_Controller:vga_control|Panel:panel_izquierdo|Square_Area:cua_D4                                                                    ; Square_Area         ; work         ;
-;          |Square_Area:cua_D|                 ; 5 (5)               ; 0 (0)                     ; 0                 ; 0          ; 0    ; 0            ; |Gambling_Tec|Vga_Controller:vga_control|Panel:panel_izquierdo|Square_Area:cua_D                                                                     ; Square_Area         ; work         ;
-;          |Square_Area:sombra|                ; 6 (6)               ; 0 (0)                     ; 0                 ; 0          ; 0    ; 0            ; |Gambling_Tec|Vga_Controller:vga_control|Panel:panel_izquierdo|Square_Area:sombra                                                                    ; Square_Area         ; work         ;
-;       |Panel:panel_msg|                      ; 27 (6)              ; 0 (0)                     ; 0                 ; 0          ; 0    ; 0            ; |Gambling_Tec|Vga_Controller:vga_control|Panel:panel_msg                                                                                             ; Panel               ; work         ;
-;          |Square_Area:cua_D2|                ; 8 (8)               ; 0 (0)                     ; 0                 ; 0          ; 0    ; 0            ; |Gambling_Tec|Vga_Controller:vga_control|Panel:panel_msg|Square_Area:cua_D2                                                                          ; Square_Area         ; work         ;
-;          |Square_Area:cua_D3|                ; 4 (4)               ; 0 (0)                     ; 0                 ; 0          ; 0    ; 0            ; |Gambling_Tec|Vga_Controller:vga_control|Panel:panel_msg|Square_Area:cua_D3                                                                          ; Square_Area         ; work         ;
-;          |Square_Area:cua_D4|                ; 3 (3)               ; 0 (0)                     ; 0                 ; 0          ; 0    ; 0            ; |Gambling_Tec|Vga_Controller:vga_control|Panel:panel_msg|Square_Area:cua_D4                                                                          ; Square_Area         ; work         ;
-;          |Square_Area:cua_D|                 ; 1 (1)               ; 0 (0)                     ; 0                 ; 0          ; 0    ; 0            ; |Gambling_Tec|Vga_Controller:vga_control|Panel:panel_msg|Square_Area:cua_D                                                                           ; Square_Area         ; work         ;
-;          |Square_Area:sombra|                ; 5 (5)               ; 0 (0)                     ; 0                 ; 0          ; 0    ; 0            ; |Gambling_Tec|Vga_Controller:vga_control|Panel:panel_msg|Square_Area:sombra                                                                          ; Square_Area         ; work         ;
-;       |Register:reg_x|                       ; 0 (0)               ; 10 (10)                   ; 0                 ; 0          ; 0    ; 0            ; |Gambling_Tec|Vga_Controller:vga_control|Register:reg_x                                                                                              ; Register            ; work         ;
-;       |Register:reg_y|                       ; 0 (0)               ; 10 (10)                   ; 0                 ; 0          ; 0    ; 0            ; |Gambling_Tec|Vga_Controller:vga_control|Register:reg_y                                                                                              ; Register            ; work         ;
-;       |SevenSeg_Display:display_seg1|        ; 5 (0)               ; 0 (0)                     ; 0                 ; 0          ; 0    ; 0            ; |Gambling_Tec|Vga_Controller:vga_control|SevenSeg_Display:display_seg1                                                                               ; SevenSeg_Display    ; work         ;
-;          |Square_Area:segA|                  ; 1 (1)               ; 0 (0)                     ; 0                 ; 0          ; 0    ; 0            ; |Gambling_Tec|Vga_Controller:vga_control|SevenSeg_Display:display_seg1|Square_Area:segA                                                              ; Square_Area         ; work         ;
-;          |Square_Area:segB|                  ; 4 (4)               ; 0 (0)                     ; 0                 ; 0          ; 0    ; 0            ; |Gambling_Tec|Vga_Controller:vga_control|SevenSeg_Display:display_seg1|Square_Area:segB                                                              ; Square_Area         ; work         ;
-;       |SevenSeg_Display:display_seg2|        ; 5 (0)               ; 0 (0)                     ; 0                 ; 0          ; 0    ; 0            ; |Gambling_Tec|Vga_Controller:vga_control|SevenSeg_Display:display_seg2                                                                               ; SevenSeg_Display    ; work         ;
-;          |Square_Area:segA|                  ; 3 (3)               ; 0 (0)                     ; 0                 ; 0          ; 0    ; 0            ; |Gambling_Tec|Vga_Controller:vga_control|SevenSeg_Display:display_seg2|Square_Area:segA                                                              ; Square_Area         ; work         ;
-;          |Square_Area:segB|                  ; 2 (2)               ; 0 (0)                     ; 0                 ; 0          ; 0    ; 0            ; |Gambling_Tec|Vga_Controller:vga_control|SevenSeg_Display:display_seg2|Square_Area:segB                                                              ; Square_Area         ; work         ;
-;       |SevenSeg_Display:display_seg|         ; 9 (0)               ; 0 (0)                     ; 0                 ; 0          ; 0    ; 0            ; |Gambling_Tec|Vga_Controller:vga_control|SevenSeg_Display:display_seg                                                                                ; SevenSeg_Display    ; work         ;
-;          |Square_Area:segA|                  ; 2 (2)               ; 0 (0)                     ; 0                 ; 0          ; 0    ; 0            ; |Gambling_Tec|Vga_Controller:vga_control|SevenSeg_Display:display_seg|Square_Area:segA                                                               ; Square_Area         ; work         ;
-;          |Square_Area:segB|                  ; 5 (5)               ; 0 (0)                     ; 0                 ; 0          ; 0    ; 0            ; |Gambling_Tec|Vga_Controller:vga_control|SevenSeg_Display:display_seg|Square_Area:segB                                                               ; Square_Area         ; work         ;
-;          |Square_Area:segC|                  ; 2 (2)               ; 0 (0)                     ; 0                 ; 0          ; 0    ; 0            ; |Gambling_Tec|Vga_Controller:vga_control|SevenSeg_Display:display_seg|Square_Area:segC                                                               ; Square_Area         ; work         ;
-;       |Symbol:slot_0_0|                      ; 22 (1)              ; 0 (0)                     ; 0                 ; 0          ; 0    ; 0            ; |Gambling_Tec|Vga_Controller:vga_control|Symbol:slot_0_0                                                                                             ; Symbol              ; work         ;
-;          |Square_Area:form1|                 ; 5 (5)               ; 0 (0)                     ; 0                 ; 0          ; 0    ; 0            ; |Gambling_Tec|Vga_Controller:vga_control|Symbol:slot_0_0|Square_Area:form1                                                                           ; Square_Area         ; work         ;
-;          |Square_Area:form2|                 ; 9 (9)               ; 0 (0)                     ; 0                 ; 0          ; 0    ; 0            ; |Gambling_Tec|Vga_Controller:vga_control|Symbol:slot_0_0|Square_Area:form2                                                                           ; Square_Area         ; work         ;
-;          |Square_Area:form3|                 ; 7 (7)               ; 0 (0)                     ; 0                 ; 0          ; 0    ; 0            ; |Gambling_Tec|Vga_Controller:vga_control|Symbol:slot_0_0|Square_Area:form3                                                                           ; Square_Area         ; work         ;
-;       |Symbol:slot_0_1|                      ; 3 (0)               ; 0 (0)                     ; 0                 ; 0          ; 0    ; 0            ; |Gambling_Tec|Vga_Controller:vga_control|Symbol:slot_0_1                                                                                             ; Symbol              ; work         ;
-;          |Square_Area:form2|                 ; 3 (3)               ; 0 (0)                     ; 0                 ; 0          ; 0    ; 0            ; |Gambling_Tec|Vga_Controller:vga_control|Symbol:slot_0_1|Square_Area:form2                                                                           ; Square_Area         ; work         ;
-;       |Symbol:slot_0_2|                      ; 8 (0)               ; 0 (0)                     ; 0                 ; 0          ; 0    ; 0            ; |Gambling_Tec|Vga_Controller:vga_control|Symbol:slot_0_2                                                                                             ; Symbol              ; work         ;
-;          |Square_Area:form2|                 ; 8 (8)               ; 0 (0)                     ; 0                 ; 0          ; 0    ; 0            ; |Gambling_Tec|Vga_Controller:vga_control|Symbol:slot_0_2|Square_Area:form2                                                                           ; Square_Area         ; work         ;
-;       |Symbol:slot_1_0|                      ; 9 (1)               ; 0 (0)                     ; 0                 ; 0          ; 0    ; 0            ; |Gambling_Tec|Vga_Controller:vga_control|Symbol:slot_1_0                                                                                             ; Symbol              ; work         ;
-;          |Square_Area:form0|                 ; 1 (1)               ; 0 (0)                     ; 0                 ; 0          ; 0    ; 0            ; |Gambling_Tec|Vga_Controller:vga_control|Symbol:slot_1_0|Square_Area:form0                                                                           ; Square_Area         ; work         ;
-;          |Square_Area:form1|                 ; 2 (2)               ; 0 (0)                     ; 0                 ; 0          ; 0    ; 0            ; |Gambling_Tec|Vga_Controller:vga_control|Symbol:slot_1_0|Square_Area:form1                                                                           ; Square_Area         ; work         ;
-;          |Square_Area:form3|                 ; 5 (5)               ; 0 (0)                     ; 0                 ; 0          ; 0    ; 0            ; |Gambling_Tec|Vga_Controller:vga_control|Symbol:slot_1_0|Square_Area:form3                                                                           ; Square_Area         ; work         ;
-;       |Symbol:slot_1_1|                      ; 5 (0)               ; 0 (0)                     ; 0                 ; 0          ; 0    ; 0            ; |Gambling_Tec|Vga_Controller:vga_control|Symbol:slot_1_1                                                                                             ; Symbol              ; work         ;
-;          |Square_Area:form0|                 ; 5 (5)               ; 0 (0)                     ; 0                 ; 0          ; 0    ; 0            ; |Gambling_Tec|Vga_Controller:vga_control|Symbol:slot_1_1|Square_Area:form0                                                                           ; Square_Area         ; work         ;
-;       |Symbol:slot_1_2|                      ; 1 (0)               ; 0 (0)                     ; 0                 ; 0          ; 0    ; 0            ; |Gambling_Tec|Vga_Controller:vga_control|Symbol:slot_1_2                                                                                             ; Symbol              ; work         ;
-;          |Square_Area:form0|                 ; 1 (1)               ; 0 (0)                     ; 0                 ; 0          ; 0    ; 0            ; |Gambling_Tec|Vga_Controller:vga_control|Symbol:slot_1_2|Square_Area:form0                                                                           ; Square_Area         ; work         ;
-;       |Symbol:slot_2_0|                      ; 9 (1)               ; 0 (0)                     ; 0                 ; 0          ; 0    ; 0            ; |Gambling_Tec|Vga_Controller:vga_control|Symbol:slot_2_0                                                                                             ; Symbol              ; work         ;
-;          |Square_Area:form0|                 ; 1 (1)               ; 0 (0)                     ; 0                 ; 0          ; 0    ; 0            ; |Gambling_Tec|Vga_Controller:vga_control|Symbol:slot_2_0|Square_Area:form0                                                                           ; Square_Area         ; work         ;
-;          |Square_Area:form1|                 ; 2 (2)               ; 0 (0)                     ; 0                 ; 0          ; 0    ; 0            ; |Gambling_Tec|Vga_Controller:vga_control|Symbol:slot_2_0|Square_Area:form1                                                                           ; Square_Area         ; work         ;
-;          |Square_Area:form2|                 ; 2 (2)               ; 0 (0)                     ; 0                 ; 0          ; 0    ; 0            ; |Gambling_Tec|Vga_Controller:vga_control|Symbol:slot_2_0|Square_Area:form2                                                                           ; Square_Area         ; work         ;
-;          |Square_Area:form3|                 ; 3 (3)               ; 0 (0)                     ; 0                 ; 0          ; 0    ; 0            ; |Gambling_Tec|Vga_Controller:vga_control|Symbol:slot_2_0|Square_Area:form3                                                                           ; Square_Area         ; work         ;
-;       |Symbol:slot_2_1|                      ; 1 (0)               ; 0 (0)                     ; 0                 ; 0          ; 0    ; 0            ; |Gambling_Tec|Vga_Controller:vga_control|Symbol:slot_2_1                                                                                             ; Symbol              ; work         ;
-;          |Square_Area:form1|                 ; 1 (1)               ; 0 (0)                     ; 0                 ; 0          ; 0    ; 0            ; |Gambling_Tec|Vga_Controller:vga_control|Symbol:slot_2_1|Square_Area:form1                                                                           ; Square_Area         ; work         ;
-;       |Symbol:slot_2_2|                      ; 2 (0)               ; 0 (0)                     ; 0                 ; 0          ; 0    ; 0            ; |Gambling_Tec|Vga_Controller:vga_control|Symbol:slot_2_2                                                                                             ; Symbol              ; work         ;
-;          |Square_Area:form1|                 ; 2 (2)               ; 0 (0)                     ; 0                 ; 0          ; 0    ; 0            ; |Gambling_Tec|Vga_Controller:vga_control|Symbol:slot_2_2|Square_Area:form1                                                                           ; Square_Area         ; work         ;
-;       |clk_div:clkdiv|                       ; 1 (1)               ; 1 (1)                     ; 0                 ; 0          ; 0    ; 0            ; |Gambling_Tec|Vga_Controller:vga_control|clk_div:clkdiv                                                                                              ; clk_div             ; work         ;
-;    |clk_div:div_clo|                         ; 1 (1)               ; 1 (1)                     ; 0                 ; 0          ; 0    ; 0            ; |Gambling_Tec|clk_div:div_clo                                                                                                                        ; clk_div             ; work         ;
-+----------------------------------------------+---------------------+---------------------------+-------------------+------------+------+--------------+------------------------------------------------------------------------------------------------------------------------------------------------------+---------------------+--------------+
++-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+; Analysis & Synthesis Resource Utilization by Entity                                                                                                                                                                                                                                                                                                         ;
++----------------------------------------------+---------------------+---------------------------+-------------------+------------+------+--------------+----------------------------------------------------------------------------------------------------------------------------------------------------------------+---------------------+--------------+
+; Compilation Hierarchy Node                   ; Combinational ALUTs ; Dedicated Logic Registers ; Block Memory Bits ; DSP Blocks ; Pins ; Virtual Pins ; Full Hierarchy Name                                                                                                                                            ; Entity Name         ; Library Name ;
++----------------------------------------------+---------------------+---------------------------+-------------------+------------+------+--------------+----------------------------------------------------------------------------------------------------------------------------------------------------------------+---------------------+--------------+
+; |Gambling_Tec                                ; 1199 (0)            ; 44 (0)                    ; 0                 ; 0          ; 64   ; 0            ; |Gambling_Tec                                                                                                                                                  ; Gambling_Tec        ; work         ;
+;    |Vga_Controller:vga_control|              ; 1198 (123)          ; 43 (0)                    ; 0                 ; 0          ; 0    ; 0            ; |Gambling_Tec|Vga_Controller:vga_control                                                                                                                       ; Vga_Controller      ; work         ;
+;       |Button:Btn1|                          ; 10 (0)              ; 0 (0)                     ; 0                 ; 0          ; 0    ; 0            ; |Gambling_Tec|Vga_Controller:vga_control|Button:Btn1                                                                                                           ; Button              ; work         ;
+;          |Square_Area:Cua_Btn_sombra|        ; 6 (6)               ; 0 (0)                     ; 0                 ; 0          ; 0    ; 0            ; |Gambling_Tec|Vga_Controller:vga_control|Button:Btn1|Square_Area:Cua_Btn_sombra                                                                                ; Square_Area         ; work         ;
+;          |Square_Area:Cua_Btn|               ; 4 (4)               ; 0 (0)                     ; 0                 ; 0          ; 0    ; 0            ; |Gambling_Tec|Vga_Controller:vga_control|Button:Btn1|Square_Area:Cua_Btn                                                                                       ; Square_Area         ; work         ;
+;       |Button:Btn2|                          ; 2 (0)               ; 0 (0)                     ; 0                 ; 0          ; 0    ; 0            ; |Gambling_Tec|Vga_Controller:vga_control|Button:Btn2                                                                                                           ; Button              ; work         ;
+;          |Square_Area:Cua_Btn_sombra|        ; 2 (2)               ; 0 (0)                     ; 0                 ; 0          ; 0    ; 0            ; |Gambling_Tec|Vga_Controller:vga_control|Button:Btn2|Square_Area:Cua_Btn_sombra                                                                                ; Square_Area         ; work         ;
+;       |Button:Btn3|                          ; 4 (0)               ; 0 (0)                     ; 0                 ; 0          ; 0    ; 0            ; |Gambling_Tec|Vga_Controller:vga_control|Button:Btn3                                                                                                           ; Button              ; work         ;
+;          |Square_Area:Cua_Btn_sombra|        ; 2 (2)               ; 0 (0)                     ; 0                 ; 0          ; 0    ; 0            ; |Gambling_Tec|Vga_Controller:vga_control|Button:Btn3|Square_Area:Cua_Btn_sombra                                                                                ; Square_Area         ; work         ;
+;          |Square_Area:Cua_Btn|               ; 2 (2)               ; 0 (0)                     ; 0                 ; 0          ; 0    ; 0            ; |Gambling_Tec|Vga_Controller:vga_control|Button:Btn3|Square_Area:Cua_Btn                                                                                       ; Square_Area         ; work         ;
+;       |Column:c1|                            ; 41 (0)              ; 0 (0)                     ; 0                 ; 0          ; 0    ; 0            ; |Gambling_Tec|Vga_Controller:vga_control|Column:c1                                                                                                             ; Column              ; work         ;
+;          |Square_Area:cua_D2|                ; 9 (9)               ; 0 (0)                     ; 0                 ; 0          ; 0    ; 0            ; |Gambling_Tec|Vga_Controller:vga_control|Column:c1|Square_Area:cua_D2                                                                                          ; Square_Area         ; work         ;
+;          |Square_Area:cua_D3|                ; 6 (6)               ; 0 (0)                     ; 0                 ; 0          ; 0    ; 0            ; |Gambling_Tec|Vga_Controller:vga_control|Column:c1|Square_Area:cua_D3                                                                                          ; Square_Area         ; work         ;
+;          |Square_Area:cua_D4|                ; 6 (6)               ; 0 (0)                     ; 0                 ; 0          ; 0    ; 0            ; |Gambling_Tec|Vga_Controller:vga_control|Column:c1|Square_Area:cua_D4                                                                                          ; Square_Area         ; work         ;
+;          |Square_Area:cua_D|                 ; 7 (7)               ; 0 (0)                     ; 0                 ; 0          ; 0    ; 0            ; |Gambling_Tec|Vga_Controller:vga_control|Column:c1|Square_Area:cua_D                                                                                           ; Square_Area         ; work         ;
+;          |Square_Area:sombra|                ; 13 (13)             ; 0 (0)                     ; 0                 ; 0          ; 0    ; 0            ; |Gambling_Tec|Vga_Controller:vga_control|Column:c1|Square_Area:sombra                                                                                          ; Square_Area         ; work         ;
+;       |Column:c2|                            ; 13 (0)              ; 0 (0)                     ; 0                 ; 0          ; 0    ; 0            ; |Gambling_Tec|Vga_Controller:vga_control|Column:c2                                                                                                             ; Column              ; work         ;
+;          |Square_Area:cua_D2|                ; 2 (2)               ; 0 (0)                     ; 0                 ; 0          ; 0    ; 0            ; |Gambling_Tec|Vga_Controller:vga_control|Column:c2|Square_Area:cua_D2                                                                                          ; Square_Area         ; work         ;
+;          |Square_Area:cua_D3|                ; 5 (5)               ; 0 (0)                     ; 0                 ; 0          ; 0    ; 0            ; |Gambling_Tec|Vga_Controller:vga_control|Column:c2|Square_Area:cua_D3                                                                                          ; Square_Area         ; work         ;
+;          |Square_Area:cua_D4|                ; 2 (2)               ; 0 (0)                     ; 0                 ; 0          ; 0    ; 0            ; |Gambling_Tec|Vga_Controller:vga_control|Column:c2|Square_Area:cua_D4                                                                                          ; Square_Area         ; work         ;
+;          |Square_Area:cua_D|                 ; 2 (2)               ; 0 (0)                     ; 0                 ; 0          ; 0    ; 0            ; |Gambling_Tec|Vga_Controller:vga_control|Column:c2|Square_Area:cua_D                                                                                           ; Square_Area         ; work         ;
+;          |Square_Area:sombra|                ; 2 (2)               ; 0 (0)                     ; 0                 ; 0          ; 0    ; 0            ; |Gambling_Tec|Vga_Controller:vga_control|Column:c2|Square_Area:sombra                                                                                          ; Square_Area         ; work         ;
+;       |Column:c3|                            ; 25 (0)              ; 0 (0)                     ; 0                 ; 0          ; 0    ; 0            ; |Gambling_Tec|Vga_Controller:vga_control|Column:c3                                                                                                             ; Column              ; work         ;
+;          |Square_Area:cua_D2|                ; 6 (6)               ; 0 (0)                     ; 0                 ; 0          ; 0    ; 0            ; |Gambling_Tec|Vga_Controller:vga_control|Column:c3|Square_Area:cua_D2                                                                                          ; Square_Area         ; work         ;
+;          |Square_Area:cua_D3|                ; 7 (7)               ; 0 (0)                     ; 0                 ; 0          ; 0    ; 0            ; |Gambling_Tec|Vga_Controller:vga_control|Column:c3|Square_Area:cua_D3                                                                                          ; Square_Area         ; work         ;
+;          |Square_Area:cua_D4|                ; 5 (5)               ; 0 (0)                     ; 0                 ; 0          ; 0    ; 0            ; |Gambling_Tec|Vga_Controller:vga_control|Column:c3|Square_Area:cua_D4                                                                                          ; Square_Area         ; work         ;
+;          |Square_Area:cua_D|                 ; 2 (2)               ; 0 (0)                     ; 0                 ; 0          ; 0    ; 0            ; |Gambling_Tec|Vga_Controller:vga_control|Column:c3|Square_Area:cua_D                                                                                           ; Square_Area         ; work         ;
+;          |Square_Area:sombra|                ; 5 (5)               ; 0 (0)                     ; 0                 ; 0          ; 0    ; 0            ; |Gambling_Tec|Vga_Controller:vga_control|Column:c3|Square_Area:sombra                                                                                          ; Square_Area         ; work         ;
+;       |Comparator:cmp_x|                     ; 6 (6)               ; 0 (0)                     ; 0                 ; 0          ; 0    ; 0            ; |Gambling_Tec|Vga_Controller:vga_control|Comparator:cmp_x                                                                                                      ; Comparator          ; work         ;
+;       |Counter:conut|                        ; 1 (1)               ; 2 (2)                     ; 0                 ; 0          ; 0    ; 0            ; |Gambling_Tec|Vga_Controller:vga_control|Counter:conut                                                                                                         ; Counter             ; work         ;
+;       |Counter:count_x|                      ; 10 (10)             ; 10 (10)                   ; 0                 ; 0          ; 0    ; 0            ; |Gambling_Tec|Vga_Controller:vga_control|Counter:count_x                                                                                                       ; Counter             ; work         ;
+;       |Counter:count_y|                      ; 10 (10)             ; 10 (10)                   ; 0                 ; 0          ; 0    ; 0            ; |Gambling_Tec|Vga_Controller:vga_control|Counter:count_y                                                                                                       ; Counter             ; work         ;
+;       |Draw_Arrow:arro|                      ; 168 (22)            ; 0 (0)                     ; 0                 ; 0          ; 0    ; 0            ; |Gambling_Tec|Vga_Controller:vga_control|Draw_Arrow:arro                                                                                                       ; Draw_Arrow          ; work         ;
+;          |lpm_divide:Div0|                   ; 73 (0)              ; 0 (0)                     ; 0                 ; 0          ; 0    ; 0            ; |Gambling_Tec|Vga_Controller:vga_control|Draw_Arrow:arro|lpm_divide:Div0                                                                                       ; lpm_divide          ; work         ;
+;             |lpm_divide_hbm:auto_generated|  ; 73 (0)              ; 0 (0)                     ; 0                 ; 0          ; 0    ; 0            ; |Gambling_Tec|Vga_Controller:vga_control|Draw_Arrow:arro|lpm_divide:Div0|lpm_divide_hbm:auto_generated                                                         ; lpm_divide_hbm      ; work         ;
+;                |sign_div_unsign_rlh:divider| ; 73 (0)              ; 0 (0)                     ; 0                 ; 0          ; 0    ; 0            ; |Gambling_Tec|Vga_Controller:vga_control|Draw_Arrow:arro|lpm_divide:Div0|lpm_divide_hbm:auto_generated|sign_div_unsign_rlh:divider                             ; sign_div_unsign_rlh ; work         ;
+;                   |alt_u_div_lve:divider|    ; 73 (73)             ; 0 (0)                     ; 0                 ; 0          ; 0    ; 0            ; |Gambling_Tec|Vga_Controller:vga_control|Draw_Arrow:arro|lpm_divide:Div0|lpm_divide_hbm:auto_generated|sign_div_unsign_rlh:divider|alt_u_div_lve:divider       ; alt_u_div_lve       ; work         ;
+;          |lpm_divide:Div1|                   ; 73 (0)              ; 0 (0)                     ; 0                 ; 0          ; 0    ; 0            ; |Gambling_Tec|Vga_Controller:vga_control|Draw_Arrow:arro|lpm_divide:Div1                                                                                       ; lpm_divide          ; work         ;
+;             |lpm_divide_hbm:auto_generated|  ; 73 (0)              ; 0 (0)                     ; 0                 ; 0          ; 0    ; 0            ; |Gambling_Tec|Vga_Controller:vga_control|Draw_Arrow:arro|lpm_divide:Div1|lpm_divide_hbm:auto_generated                                                         ; lpm_divide_hbm      ; work         ;
+;                |sign_div_unsign_rlh:divider| ; 73 (0)              ; 0 (0)                     ; 0                 ; 0          ; 0    ; 0            ; |Gambling_Tec|Vga_Controller:vga_control|Draw_Arrow:arro|lpm_divide:Div1|lpm_divide_hbm:auto_generated|sign_div_unsign_rlh:divider                             ; sign_div_unsign_rlh ; work         ;
+;                   |alt_u_div_lve:divider|    ; 73 (73)             ; 0 (0)                     ; 0                 ; 0          ; 0    ; 0            ; |Gambling_Tec|Vga_Controller:vga_control|Draw_Arrow:arro|lpm_divide:Div1|lpm_divide_hbm:auto_generated|sign_div_unsign_rlh:divider|alt_u_div_lve:divider       ; alt_u_div_lve       ; work         ;
+;       |Draw_Arrow_Dowm:arro2|                ; 86 (13)             ; 0 (0)                     ; 0                 ; 0          ; 0    ; 0            ; |Gambling_Tec|Vga_Controller:vga_control|Draw_Arrow_Dowm:arro2                                                                                                 ; Draw_Arrow_Dowm     ; work         ;
+;          |lpm_divide:Div0|                   ; 73 (0)              ; 0 (0)                     ; 0                 ; 0          ; 0    ; 0            ; |Gambling_Tec|Vga_Controller:vga_control|Draw_Arrow_Dowm:arro2|lpm_divide:Div0                                                                                 ; lpm_divide          ; work         ;
+;             |lpm_divide_hbm:auto_generated|  ; 73 (0)              ; 0 (0)                     ; 0                 ; 0          ; 0    ; 0            ; |Gambling_Tec|Vga_Controller:vga_control|Draw_Arrow_Dowm:arro2|lpm_divide:Div0|lpm_divide_hbm:auto_generated                                                   ; lpm_divide_hbm      ; work         ;
+;                |sign_div_unsign_rlh:divider| ; 73 (0)              ; 0 (0)                     ; 0                 ; 0          ; 0    ; 0            ; |Gambling_Tec|Vga_Controller:vga_control|Draw_Arrow_Dowm:arro2|lpm_divide:Div0|lpm_divide_hbm:auto_generated|sign_div_unsign_rlh:divider                       ; sign_div_unsign_rlh ; work         ;
+;                   |alt_u_div_lve:divider|    ; 73 (73)             ; 0 (0)                     ; 0                 ; 0          ; 0    ; 0            ; |Gambling_Tec|Vga_Controller:vga_control|Draw_Arrow_Dowm:arro2|lpm_divide:Div0|lpm_divide_hbm:auto_generated|sign_div_unsign_rlh:divider|alt_u_div_lve:divider ; alt_u_div_lve       ; work         ;
+;       |Draw_C:colo|                          ; 182 (17)            ; 0 (0)                     ; 0                 ; 0          ; 0    ; 0            ; |Gambling_Tec|Vga_Controller:vga_control|Draw_C:colo                                                                                                           ; Draw_C              ; work         ;
+;          |lpm_divide:Div0|                   ; 83 (0)              ; 0 (0)                     ; 0                 ; 0          ; 0    ; 0            ; |Gambling_Tec|Vga_Controller:vga_control|Draw_C:colo|lpm_divide:Div0                                                                                           ; lpm_divide          ; work         ;
+;             |lpm_divide_hbm:auto_generated|  ; 83 (0)              ; 0 (0)                     ; 0                 ; 0          ; 0    ; 0            ; |Gambling_Tec|Vga_Controller:vga_control|Draw_C:colo|lpm_divide:Div0|lpm_divide_hbm:auto_generated                                                             ; lpm_divide_hbm      ; work         ;
+;                |sign_div_unsign_rlh:divider| ; 83 (0)              ; 0 (0)                     ; 0                 ; 0          ; 0    ; 0            ; |Gambling_Tec|Vga_Controller:vga_control|Draw_C:colo|lpm_divide:Div0|lpm_divide_hbm:auto_generated|sign_div_unsign_rlh:divider                                 ; sign_div_unsign_rlh ; work         ;
+;                   |alt_u_div_lve:divider|    ; 83 (83)             ; 0 (0)                     ; 0                 ; 0          ; 0    ; 0            ; |Gambling_Tec|Vga_Controller:vga_control|Draw_C:colo|lpm_divide:Div0|lpm_divide_hbm:auto_generated|sign_div_unsign_rlh:divider|alt_u_div_lve:divider           ; alt_u_div_lve       ; work         ;
+;          |lpm_divide:Div1|                   ; 82 (0)              ; 0 (0)                     ; 0                 ; 0          ; 0    ; 0            ; |Gambling_Tec|Vga_Controller:vga_control|Draw_C:colo|lpm_divide:Div1                                                                                           ; lpm_divide          ; work         ;
+;             |lpm_divide_hbm:auto_generated|  ; 82 (0)              ; 0 (0)                     ; 0                 ; 0          ; 0    ; 0            ; |Gambling_Tec|Vga_Controller:vga_control|Draw_C:colo|lpm_divide:Div1|lpm_divide_hbm:auto_generated                                                             ; lpm_divide_hbm      ; work         ;
+;                |sign_div_unsign_rlh:divider| ; 82 (0)              ; 0 (0)                     ; 0                 ; 0          ; 0    ; 0            ; |Gambling_Tec|Vga_Controller:vga_control|Draw_C:colo|lpm_divide:Div1|lpm_divide_hbm:auto_generated|sign_div_unsign_rlh:divider                                 ; sign_div_unsign_rlh ; work         ;
+;                   |alt_u_div_lve:divider|    ; 82 (82)             ; 0 (0)                     ; 0                 ; 0          ; 0    ; 0            ; |Gambling_Tec|Vga_Controller:vga_control|Draw_C:colo|lpm_divide:Div1|lpm_divide_hbm:auto_generated|sign_div_unsign_rlh:divider|alt_u_div_lve:divider           ; alt_u_div_lve       ; work         ;
+;       |Draw_CASH:cash_display|               ; 24 (24)             ; 0 (0)                     ; 0                 ; 0          ; 0    ; 0            ; |Gambling_Tec|Vga_Controller:vga_control|Draw_CASH:cash_display                                                                                                ; Draw_CASH           ; work         ;
+;       |Draw_WIN:Winnig|                      ; 334 (41)            ; 0 (0)                     ; 0                 ; 0          ; 0    ; 0            ; |Gambling_Tec|Vga_Controller:vga_control|Draw_WIN:Winnig                                                                                                       ; Draw_WIN            ; work         ;
+;          |lpm_divide:Div0|                   ; 82 (0)              ; 0 (0)                     ; 0                 ; 0          ; 0    ; 0            ; |Gambling_Tec|Vga_Controller:vga_control|Draw_WIN:Winnig|lpm_divide:Div0                                                                                       ; lpm_divide          ; work         ;
+;             |lpm_divide_hbm:auto_generated|  ; 82 (0)              ; 0 (0)                     ; 0                 ; 0          ; 0    ; 0            ; |Gambling_Tec|Vga_Controller:vga_control|Draw_WIN:Winnig|lpm_divide:Div0|lpm_divide_hbm:auto_generated                                                         ; lpm_divide_hbm      ; work         ;
+;                |sign_div_unsign_rlh:divider| ; 82 (0)              ; 0 (0)                     ; 0                 ; 0          ; 0    ; 0            ; |Gambling_Tec|Vga_Controller:vga_control|Draw_WIN:Winnig|lpm_divide:Div0|lpm_divide_hbm:auto_generated|sign_div_unsign_rlh:divider                             ; sign_div_unsign_rlh ; work         ;
+;                   |alt_u_div_lve:divider|    ; 82 (82)             ; 0 (0)                     ; 0                 ; 0          ; 0    ; 0            ; |Gambling_Tec|Vga_Controller:vga_control|Draw_WIN:Winnig|lpm_divide:Div0|lpm_divide_hbm:auto_generated|sign_div_unsign_rlh:divider|alt_u_div_lve:divider       ; alt_u_div_lve       ; work         ;
+;          |lpm_divide:Div1|                   ; 82 (0)              ; 0 (0)                     ; 0                 ; 0          ; 0    ; 0            ; |Gambling_Tec|Vga_Controller:vga_control|Draw_WIN:Winnig|lpm_divide:Div1                                                                                       ; lpm_divide          ; work         ;
+;             |lpm_divide_hbm:auto_generated|  ; 82 (0)              ; 0 (0)                     ; 0                 ; 0          ; 0    ; 0            ; |Gambling_Tec|Vga_Controller:vga_control|Draw_WIN:Winnig|lpm_divide:Div1|lpm_divide_hbm:auto_generated                                                         ; lpm_divide_hbm      ; work         ;
+;                |sign_div_unsign_rlh:divider| ; 82 (0)              ; 0 (0)                     ; 0                 ; 0          ; 0    ; 0            ; |Gambling_Tec|Vga_Controller:vga_control|Draw_WIN:Winnig|lpm_divide:Div1|lpm_divide_hbm:auto_generated|sign_div_unsign_rlh:divider                             ; sign_div_unsign_rlh ; work         ;
+;                   |alt_u_div_lve:divider|    ; 82 (82)             ; 0 (0)                     ; 0                 ; 0          ; 0    ; 0            ; |Gambling_Tec|Vga_Controller:vga_control|Draw_WIN:Winnig|lpm_divide:Div1|lpm_divide_hbm:auto_generated|sign_div_unsign_rlh:divider|alt_u_div_lve:divider       ; alt_u_div_lve       ; work         ;
+;          |lpm_divide:Div2|                   ; 129 (0)             ; 0 (0)                     ; 0                 ; 0          ; 0    ; 0            ; |Gambling_Tec|Vga_Controller:vga_control|Draw_WIN:Winnig|lpm_divide:Div2                                                                                       ; lpm_divide          ; work         ;
+;             |lpm_divide_kbm:auto_generated|  ; 129 (0)             ; 0 (0)                     ; 0                 ; 0          ; 0    ; 0            ; |Gambling_Tec|Vga_Controller:vga_control|Draw_WIN:Winnig|lpm_divide:Div2|lpm_divide_kbm:auto_generated                                                         ; lpm_divide_kbm      ; work         ;
+;                |sign_div_unsign_tlh:divider| ; 129 (0)             ; 0 (0)                     ; 0                 ; 0          ; 0    ; 0            ; |Gambling_Tec|Vga_Controller:vga_control|Draw_WIN:Winnig|lpm_divide:Div2|lpm_divide_kbm:auto_generated|sign_div_unsign_tlh:divider                             ; sign_div_unsign_tlh ; work         ;
+;                   |alt_u_div_qve:divider|    ; 129 (129)           ; 0 (0)                     ; 0                 ; 0          ; 0    ; 0            ; |Gambling_Tec|Vga_Controller:vga_control|Draw_WIN:Winnig|lpm_divide:Div2|lpm_divide_kbm:auto_generated|sign_div_unsign_tlh:divider|alt_u_div_qve:divider       ; alt_u_div_qve       ; work         ;
+;       |Draw_X:ex|                            ; 10 (10)             ; 0 (0)                     ; 0                 ; 0          ; 0    ; 0            ; |Gambling_Tec|Vga_Controller:vga_control|Draw_X:ex                                                                                                             ; Draw_X              ; work         ;
+;       |Mux93:color_selector|                 ; 10 (10)             ; 0 (0)                     ; 0                 ; 0          ; 0    ; 0            ; |Gambling_Tec|Vga_Controller:vga_control|Mux93:color_selector                                                                                                  ; Mux93               ; work         ;
+;       |Panel:panel_izquierdo|                ; 34 (0)              ; 0 (0)                     ; 0                 ; 0          ; 0    ; 0            ; |Gambling_Tec|Vga_Controller:vga_control|Panel:panel_izquierdo                                                                                                 ; Panel               ; work         ;
+;          |Square_Area:cua_D2|                ; 10 (10)             ; 0 (0)                     ; 0                 ; 0          ; 0    ; 0            ; |Gambling_Tec|Vga_Controller:vga_control|Panel:panel_izquierdo|Square_Area:cua_D2                                                                              ; Square_Area         ; work         ;
+;          |Square_Area:cua_D3|                ; 8 (8)               ; 0 (0)                     ; 0                 ; 0          ; 0    ; 0            ; |Gambling_Tec|Vga_Controller:vga_control|Panel:panel_izquierdo|Square_Area:cua_D3                                                                              ; Square_Area         ; work         ;
+;          |Square_Area:cua_D4|                ; 5 (5)               ; 0 (0)                     ; 0                 ; 0          ; 0    ; 0            ; |Gambling_Tec|Vga_Controller:vga_control|Panel:panel_izquierdo|Square_Area:cua_D4                                                                              ; Square_Area         ; work         ;
+;          |Square_Area:cua_D|                 ; 4 (4)               ; 0 (0)                     ; 0                 ; 0          ; 0    ; 0            ; |Gambling_Tec|Vga_Controller:vga_control|Panel:panel_izquierdo|Square_Area:cua_D                                                                               ; Square_Area         ; work         ;
+;          |Square_Area:sombra|                ; 7 (7)               ; 0 (0)                     ; 0                 ; 0          ; 0    ; 0            ; |Gambling_Tec|Vga_Controller:vga_control|Panel:panel_izquierdo|Square_Area:sombra                                                                              ; Square_Area         ; work         ;
+;       |Panel:panel_msg|                      ; 28 (4)              ; 0 (0)                     ; 0                 ; 0          ; 0    ; 0            ; |Gambling_Tec|Vga_Controller:vga_control|Panel:panel_msg                                                                                                       ; Panel               ; work         ;
+;          |Square_Area:cua_D2|                ; 9 (9)               ; 0 (0)                     ; 0                 ; 0          ; 0    ; 0            ; |Gambling_Tec|Vga_Controller:vga_control|Panel:panel_msg|Square_Area:cua_D2                                                                                    ; Square_Area         ; work         ;
+;          |Square_Area:cua_D3|                ; 4 (4)               ; 0 (0)                     ; 0                 ; 0          ; 0    ; 0            ; |Gambling_Tec|Vga_Controller:vga_control|Panel:panel_msg|Square_Area:cua_D3                                                                                    ; Square_Area         ; work         ;
+;          |Square_Area:cua_D4|                ; 4 (4)               ; 0 (0)                     ; 0                 ; 0          ; 0    ; 0            ; |Gambling_Tec|Vga_Controller:vga_control|Panel:panel_msg|Square_Area:cua_D4                                                                                    ; Square_Area         ; work         ;
+;          |Square_Area:cua_D|                 ; 1 (1)               ; 0 (0)                     ; 0                 ; 0          ; 0    ; 0            ; |Gambling_Tec|Vga_Controller:vga_control|Panel:panel_msg|Square_Area:cua_D                                                                                     ; Square_Area         ; work         ;
+;          |Square_Area:sombra|                ; 6 (6)               ; 0 (0)                     ; 0                 ; 0          ; 0    ; 0            ; |Gambling_Tec|Vga_Controller:vga_control|Panel:panel_msg|Square_Area:sombra                                                                                    ; Square_Area         ; work         ;
+;       |Register:reg_x|                       ; 0 (0)               ; 10 (10)                   ; 0                 ; 0          ; 0    ; 0            ; |Gambling_Tec|Vga_Controller:vga_control|Register:reg_x                                                                                                        ; Register            ; work         ;
+;       |Register:reg_y|                       ; 0 (0)               ; 10 (10)                   ; 0                 ; 0          ; 0    ; 0            ; |Gambling_Tec|Vga_Controller:vga_control|Register:reg_y                                                                                                        ; Register            ; work         ;
+;       |SevenSeg_Display:display_seg1|        ; 4 (0)               ; 0 (0)                     ; 0                 ; 0          ; 0    ; 0            ; |Gambling_Tec|Vga_Controller:vga_control|SevenSeg_Display:display_seg1                                                                                         ; SevenSeg_Display    ; work         ;
+;          |Square_Area:segA|                  ; 1 (1)               ; 0 (0)                     ; 0                 ; 0          ; 0    ; 0            ; |Gambling_Tec|Vga_Controller:vga_control|SevenSeg_Display:display_seg1|Square_Area:segA                                                                        ; Square_Area         ; work         ;
+;          |Square_Area:segB|                  ; 3 (3)               ; 0 (0)                     ; 0                 ; 0          ; 0    ; 0            ; |Gambling_Tec|Vga_Controller:vga_control|SevenSeg_Display:display_seg1|Square_Area:segB                                                                        ; Square_Area         ; work         ;
+;       |SevenSeg_Display:display_seg2|        ; 3 (0)               ; 0 (0)                     ; 0                 ; 0          ; 0    ; 0            ; |Gambling_Tec|Vga_Controller:vga_control|SevenSeg_Display:display_seg2                                                                                         ; SevenSeg_Display    ; work         ;
+;          |Square_Area:segA|                  ; 2 (2)               ; 0 (0)                     ; 0                 ; 0          ; 0    ; 0            ; |Gambling_Tec|Vga_Controller:vga_control|SevenSeg_Display:display_seg2|Square_Area:segA                                                                        ; Square_Area         ; work         ;
+;          |Square_Area:segB|                  ; 1 (1)               ; 0 (0)                     ; 0                 ; 0          ; 0    ; 0            ; |Gambling_Tec|Vga_Controller:vga_control|SevenSeg_Display:display_seg2|Square_Area:segB                                                                        ; Square_Area         ; work         ;
+;       |SevenSeg_Display:display_seg|         ; 12 (0)              ; 0 (0)                     ; 0                 ; 0          ; 0    ; 0            ; |Gambling_Tec|Vga_Controller:vga_control|SevenSeg_Display:display_seg                                                                                          ; SevenSeg_Display    ; work         ;
+;          |Square_Area:segA|                  ; 4 (4)               ; 0 (0)                     ; 0                 ; 0          ; 0    ; 0            ; |Gambling_Tec|Vga_Controller:vga_control|SevenSeg_Display:display_seg|Square_Area:segA                                                                         ; Square_Area         ; work         ;
+;          |Square_Area:segB|                  ; 6 (6)               ; 0 (0)                     ; 0                 ; 0          ; 0    ; 0            ; |Gambling_Tec|Vga_Controller:vga_control|SevenSeg_Display:display_seg|Square_Area:segB                                                                         ; Square_Area         ; work         ;
+;          |Square_Area:segC|                  ; 2 (2)               ; 0 (0)                     ; 0                 ; 0          ; 0    ; 0            ; |Gambling_Tec|Vga_Controller:vga_control|SevenSeg_Display:display_seg|Square_Area:segC                                                                         ; Square_Area         ; work         ;
+;       |Symbol:slot_0_0|                      ; 22 (1)              ; 0 (0)                     ; 0                 ; 0          ; 0    ; 0            ; |Gambling_Tec|Vga_Controller:vga_control|Symbol:slot_0_0                                                                                                       ; Symbol              ; work         ;
+;          |Square_Area:form1|                 ; 5 (5)               ; 0 (0)                     ; 0                 ; 0          ; 0    ; 0            ; |Gambling_Tec|Vga_Controller:vga_control|Symbol:slot_0_0|Square_Area:form1                                                                                     ; Square_Area         ; work         ;
+;          |Square_Area:form2|                 ; 8 (8)               ; 0 (0)                     ; 0                 ; 0          ; 0    ; 0            ; |Gambling_Tec|Vga_Controller:vga_control|Symbol:slot_0_0|Square_Area:form2                                                                                     ; Square_Area         ; work         ;
+;          |Square_Area:form3|                 ; 8 (8)               ; 0 (0)                     ; 0                 ; 0          ; 0    ; 0            ; |Gambling_Tec|Vga_Controller:vga_control|Symbol:slot_0_0|Square_Area:form3                                                                                     ; Square_Area         ; work         ;
+;       |Symbol:slot_0_1|                      ; 2 (0)               ; 0 (0)                     ; 0                 ; 0          ; 0    ; 0            ; |Gambling_Tec|Vga_Controller:vga_control|Symbol:slot_0_1                                                                                                       ; Symbol              ; work         ;
+;          |Square_Area:form2|                 ; 2 (2)               ; 0 (0)                     ; 0                 ; 0          ; 0    ; 0            ; |Gambling_Tec|Vga_Controller:vga_control|Symbol:slot_0_1|Square_Area:form2                                                                                     ; Square_Area         ; work         ;
+;       |Symbol:slot_0_2|                      ; 9 (0)               ; 0 (0)                     ; 0                 ; 0          ; 0    ; 0            ; |Gambling_Tec|Vga_Controller:vga_control|Symbol:slot_0_2                                                                                                       ; Symbol              ; work         ;
+;          |Square_Area:form2|                 ; 9 (9)               ; 0 (0)                     ; 0                 ; 0          ; 0    ; 0            ; |Gambling_Tec|Vga_Controller:vga_control|Symbol:slot_0_2|Square_Area:form2                                                                                     ; Square_Area         ; work         ;
+;       |Symbol:slot_1_0|                      ; 7 (1)               ; 0 (0)                     ; 0                 ; 0          ; 0    ; 0            ; |Gambling_Tec|Vga_Controller:vga_control|Symbol:slot_1_0                                                                                                       ; Symbol              ; work         ;
+;          |Square_Area:form0|                 ; 1 (1)               ; 0 (0)                     ; 0                 ; 0          ; 0    ; 0            ; |Gambling_Tec|Vga_Controller:vga_control|Symbol:slot_1_0|Square_Area:form0                                                                                     ; Square_Area         ; work         ;
+;          |Square_Area:form1|                 ; 2 (2)               ; 0 (0)                     ; 0                 ; 0          ; 0    ; 0            ; |Gambling_Tec|Vga_Controller:vga_control|Symbol:slot_1_0|Square_Area:form1                                                                                     ; Square_Area         ; work         ;
+;          |Square_Area:form3|                 ; 3 (3)               ; 0 (0)                     ; 0                 ; 0          ; 0    ; 0            ; |Gambling_Tec|Vga_Controller:vga_control|Symbol:slot_1_0|Square_Area:form3                                                                                     ; Square_Area         ; work         ;
+;       |Symbol:slot_1_1|                      ; 5 (0)               ; 0 (0)                     ; 0                 ; 0          ; 0    ; 0            ; |Gambling_Tec|Vga_Controller:vga_control|Symbol:slot_1_1                                                                                                       ; Symbol              ; work         ;
+;          |Square_Area:form0|                 ; 5 (5)               ; 0 (0)                     ; 0                 ; 0          ; 0    ; 0            ; |Gambling_Tec|Vga_Controller:vga_control|Symbol:slot_1_1|Square_Area:form0                                                                                     ; Square_Area         ; work         ;
+;       |Symbol:slot_1_2|                      ; 1 (0)               ; 0 (0)                     ; 0                 ; 0          ; 0    ; 0            ; |Gambling_Tec|Vga_Controller:vga_control|Symbol:slot_1_2                                                                                                       ; Symbol              ; work         ;
+;          |Square_Area:form0|                 ; 1 (1)               ; 0 (0)                     ; 0                 ; 0          ; 0    ; 0            ; |Gambling_Tec|Vga_Controller:vga_control|Symbol:slot_1_2|Square_Area:form0                                                                                     ; Square_Area         ; work         ;
+;       |Symbol:slot_2_0|                      ; 8 (1)               ; 0 (0)                     ; 0                 ; 0          ; 0    ; 0            ; |Gambling_Tec|Vga_Controller:vga_control|Symbol:slot_2_0                                                                                                       ; Symbol              ; work         ;
+;          |Square_Area:form0|                 ; 1 (1)               ; 0 (0)                     ; 0                 ; 0          ; 0    ; 0            ; |Gambling_Tec|Vga_Controller:vga_control|Symbol:slot_2_0|Square_Area:form0                                                                                     ; Square_Area         ; work         ;
+;          |Square_Area:form1|                 ; 2 (2)               ; 0 (0)                     ; 0                 ; 0          ; 0    ; 0            ; |Gambling_Tec|Vga_Controller:vga_control|Symbol:slot_2_0|Square_Area:form1                                                                                     ; Square_Area         ; work         ;
+;          |Square_Area:form2|                 ; 2 (2)               ; 0 (0)                     ; 0                 ; 0          ; 0    ; 0            ; |Gambling_Tec|Vga_Controller:vga_control|Symbol:slot_2_0|Square_Area:form2                                                                                     ; Square_Area         ; work         ;
+;          |Square_Area:form3|                 ; 2 (2)               ; 0 (0)                     ; 0                 ; 0          ; 0    ; 0            ; |Gambling_Tec|Vga_Controller:vga_control|Symbol:slot_2_0|Square_Area:form3                                                                                     ; Square_Area         ; work         ;
+;       |Symbol:slot_2_1|                      ; 1 (0)               ; 0 (0)                     ; 0                 ; 0          ; 0    ; 0            ; |Gambling_Tec|Vga_Controller:vga_control|Symbol:slot_2_1                                                                                                       ; Symbol              ; work         ;
+;          |Square_Area:form1|                 ; 1 (1)               ; 0 (0)                     ; 0                 ; 0          ; 0    ; 0            ; |Gambling_Tec|Vga_Controller:vga_control|Symbol:slot_2_1|Square_Area:form1                                                                                     ; Square_Area         ; work         ;
+;       |Symbol:slot_2_2|                      ; 2 (0)               ; 0 (0)                     ; 0                 ; 0          ; 0    ; 0            ; |Gambling_Tec|Vga_Controller:vga_control|Symbol:slot_2_2                                                                                                       ; Symbol              ; work         ;
+;          |Square_Area:form1|                 ; 2 (2)               ; 0 (0)                     ; 0                 ; 0          ; 0    ; 0            ; |Gambling_Tec|Vga_Controller:vga_control|Symbol:slot_2_2|Square_Area:form1                                                                                     ; Square_Area         ; work         ;
+;       |clk_div:clkdiv|                       ; 1 (1)               ; 1 (1)                     ; 0                 ; 0          ; 0    ; 0            ; |Gambling_Tec|Vga_Controller:vga_control|clk_div:clkdiv                                                                                                        ; clk_div             ; work         ;
+;    |clk_div:div_clo|                         ; 1 (1)               ; 1 (1)                     ; 0                 ; 0          ; 0    ; 0            ; |Gambling_Tec|clk_div:div_clo                                                                                                                                  ; clk_div             ; work         ;
++----------------------------------------------+---------------------+---------------------------+-------------------+------------+------+--------------+----------------------------------------------------------------------------------------------------------------------------------------------------------------+---------------------+--------------+
 Note: For table entries with two numbers listed, the numbers in parentheses indicate the number of resources of the given type used by the specific entity alone. The numbers listed outside of parentheses indicate the total resources of the given type used by the specific entity and all of its sub-entities in the hierarchy.
 
 
@@ -508,10 +559,10 @@ Note: For table entries with two numbers listed, the numbers in parentheses indi
 +--------------------+-----------+---------------+----------------------+------------------------+------------+-------------------------------------------------------------------------+
 ; Multiplexer Inputs ; Bus Width ; Baseline Area ; Area if Restructured ; Saving if Restructured ; Registered ; Example Multiplexer Output                                              ;
 +--------------------+-----------+---------------+----------------------+------------------------+------------+-------------------------------------------------------------------------+
-; 4:1                ; 2 bits    ; 4 LEs         ; 4 LEs                ; 0 LEs                  ; No         ; |Gambling_Tec|Vga_Controller:vga_control|Symbol:slot_0_0|Mux0           ;
-; 3:1                ; 8 bits    ; 16 LEs        ; 16 LEs               ; 0 LEs                  ; No         ; |Gambling_Tec|Vga_Controller:vga_control|R[0]                           ;
+; 4:1                ; 2 bits    ; 4 LEs         ; 4 LEs                ; 0 LEs                  ; No         ; |Gambling_Tec|Vga_Controller:vga_control|Symbol:slot_1_0|Mux0           ;
+; 4:1                ; 8 bits    ; 16 LEs        ; 16 LEs               ; 0 LEs                  ; No         ; |Gambling_Tec|Vga_Controller:vga_control|R[0]                           ;
 ; 5:1                ; 2 bits    ; 6 LEs         ; 6 LEs                ; 0 LEs                  ; No         ; |Gambling_Tec|Vga_Controller:vga_control|Mux93:color_selector|Selector7 ;
-; 6:1                ; 2 bits    ; 8 LEs         ; 8 LEs                ; 0 LEs                  ; No         ; |Gambling_Tec|Vga_Controller:vga_control|B[6]                           ;
+; 7:1                ; 2 bits    ; 8 LEs         ; 8 LEs                ; 0 LEs                  ; No         ; |Gambling_Tec|Vga_Controller:vga_control|B[6]                           ;
 +--------------------+-----------+---------------+----------------------+------------------------+------------+-------------------------------------------------------------------------+
 
 
@@ -1264,6 +1315,36 @@ Note: In order to hide this table in the UI and the text report file, please set
 Note: In order to hide this table in the UI and the text report file, please set the "Show Parameter Settings in Synthesis Report" option in "Analysis and Synthesis Settings -> More Settings" to "Off".
 
 
++-----------------------------------------------------------------------------------------+
+; Parameter Settings for User Entity Instance: Vga_Controller:vga_control|Draw_Arrow:arro ;
++----------------+-------+----------------------------------------------------------------+
+; Parameter Name ; Value ; Type                                                           ;
++----------------+-------+----------------------------------------------------------------+
+; SCALE          ; 5     ; Signed Integer                                                 ;
++----------------+-------+----------------------------------------------------------------+
+Note: In order to hide this table in the UI and the text report file, please set the "Show Parameter Settings in Synthesis Report" option in "Analysis and Synthesis Settings -> More Settings" to "Off".
+
+
++-----------------------------------------------------------------------------------------------+
+; Parameter Settings for User Entity Instance: Vga_Controller:vga_control|Draw_Arrow_Dowm:arro2 ;
++----------------+-------+----------------------------------------------------------------------+
+; Parameter Name ; Value ; Type                                                                 ;
++----------------+-------+----------------------------------------------------------------------+
+; SCALE          ; 5     ; Signed Integer                                                       ;
++----------------+-------+----------------------------------------------------------------------+
+Note: In order to hide this table in the UI and the text report file, please set the "Show Parameter Settings in Synthesis Report" option in "Analysis and Synthesis Settings -> More Settings" to "Off".
+
+
++-----------------------------------------------------------------------------------+
+; Parameter Settings for User Entity Instance: Vga_Controller:vga_control|Draw_X:ex ;
++----------------+-------+----------------------------------------------------------+
+; Parameter Name ; Value ; Type                                                     ;
++----------------+-------+----------------------------------------------------------+
+; SCALE          ; 4     ; Signed Integer                                           ;
++----------------+-------+----------------------------------------------------------+
+Note: In order to hide this table in the UI and the text report file, please set the "Show Parameter Settings in Synthesis Report" option in "Analysis and Synthesis Settings -> More Settings" to "Off".
+
+
 +-------------------------------------------------------------------------------------+
 ; Parameter Settings for User Entity Instance: Vga_Controller:vga_control|Button:Btn1 ;
 +----------------+-------+------------------------------------------------------------+
@@ -1477,6 +1558,16 @@ Note: In order to hide this table in the UI and the text report file, please set
 +----------------+-------+-----------------------------------------------------------------------+
 ; SCALE          ; 4     ; Signed Integer                                                        ;
 +----------------+-------+-----------------------------------------------------------------------+
+Note: In order to hide this table in the UI and the text report file, please set the "Show Parameter Settings in Synthesis Report" option in "Analysis and Synthesis Settings -> More Settings" to "Off".
+
+
++-----------------------------------------------------------------------------------------+
+; Parameter Settings for User Entity Instance: Vga_Controller:vga_control|Draw_WIN:Winnig ;
++----------------+-------+----------------------------------------------------------------+
+; Parameter Name ; Value ; Type                                                           ;
++----------------+-------+----------------------------------------------------------------+
+; SCALE          ; 6     ; Signed Integer                                                 ;
++----------------+-------+----------------------------------------------------------------+
 Note: In order to hide this table in the UI and the text report file, please set the "Show Parameter Settings in Synthesis Report" option in "Analysis and Synthesis Settings -> More Settings" to "Off".
 
 
@@ -2221,6 +2312,75 @@ Note: In order to hide this table in the UI and the text report file, please set
 Note: In order to hide this table in the UI and the text report file, please set the "Show Parameter Settings in Synthesis Report" option in "Analysis and Synthesis Settings -> More Settings" to "Off".
 
 
++-------------------------------------------------------------------------------------------------------------+
+; Parameter Settings for Inferred Entity Instance: Vga_Controller:vga_control|Draw_Arrow:arro|lpm_divide:Div1 ;
++------------------------+----------------+-------------------------------------------------------------------+
+; Parameter Name         ; Value          ; Type                                                              ;
++------------------------+----------------+-------------------------------------------------------------------+
+; LPM_WIDTHN             ; 32             ; Untyped                                                           ;
+; LPM_WIDTHD             ; 3              ; Untyped                                                           ;
+; LPM_NREPRESENTATION    ; UNSIGNED       ; Untyped                                                           ;
+; LPM_DREPRESENTATION    ; UNSIGNED       ; Untyped                                                           ;
+; LPM_PIPELINE           ; 0              ; Untyped                                                           ;
+; LPM_REMAINDERPOSITIVE  ; TRUE           ; Untyped                                                           ;
+; MAXIMIZE_SPEED         ; 5              ; Untyped                                                           ;
+; CBXI_PARAMETER         ; lpm_divide_hbm ; Untyped                                                           ;
+; CARRY_CHAIN            ; MANUAL         ; Untyped                                                           ;
+; OPTIMIZE_FOR_SPEED     ; 5              ; Untyped                                                           ;
+; AUTO_CARRY_CHAINS      ; ON             ; AUTO_CARRY                                                        ;
+; IGNORE_CARRY_BUFFERS   ; OFF            ; IGNORE_CARRY                                                      ;
+; AUTO_CASCADE_CHAINS    ; ON             ; AUTO_CASCADE                                                      ;
+; IGNORE_CASCADE_BUFFERS ; OFF            ; IGNORE_CASCADE                                                    ;
++------------------------+----------------+-------------------------------------------------------------------+
+Note: In order to hide this table in the UI and the text report file, please set the "Show Parameter Settings in Synthesis Report" option in "Analysis and Synthesis Settings -> More Settings" to "Off".
+
+
++-------------------------------------------------------------------------------------------------------------+
+; Parameter Settings for Inferred Entity Instance: Vga_Controller:vga_control|Draw_Arrow:arro|lpm_divide:Div0 ;
++------------------------+----------------+-------------------------------------------------------------------+
+; Parameter Name         ; Value          ; Type                                                              ;
++------------------------+----------------+-------------------------------------------------------------------+
+; LPM_WIDTHN             ; 32             ; Untyped                                                           ;
+; LPM_WIDTHD             ; 3              ; Untyped                                                           ;
+; LPM_NREPRESENTATION    ; UNSIGNED       ; Untyped                                                           ;
+; LPM_DREPRESENTATION    ; UNSIGNED       ; Untyped                                                           ;
+; LPM_PIPELINE           ; 0              ; Untyped                                                           ;
+; LPM_REMAINDERPOSITIVE  ; TRUE           ; Untyped                                                           ;
+; MAXIMIZE_SPEED         ; 5              ; Untyped                                                           ;
+; CBXI_PARAMETER         ; lpm_divide_hbm ; Untyped                                                           ;
+; CARRY_CHAIN            ; MANUAL         ; Untyped                                                           ;
+; OPTIMIZE_FOR_SPEED     ; 5              ; Untyped                                                           ;
+; AUTO_CARRY_CHAINS      ; ON             ; AUTO_CARRY                                                        ;
+; IGNORE_CARRY_BUFFERS   ; OFF            ; IGNORE_CARRY                                                      ;
+; AUTO_CASCADE_CHAINS    ; ON             ; AUTO_CASCADE                                                      ;
+; IGNORE_CASCADE_BUFFERS ; OFF            ; IGNORE_CASCADE                                                    ;
++------------------------+----------------+-------------------------------------------------------------------+
+Note: In order to hide this table in the UI and the text report file, please set the "Show Parameter Settings in Synthesis Report" option in "Analysis and Synthesis Settings -> More Settings" to "Off".
+
+
++-------------------------------------------------------------------------------------------------------------------+
+; Parameter Settings for Inferred Entity Instance: Vga_Controller:vga_control|Draw_Arrow_Dowm:arro2|lpm_divide:Div0 ;
++------------------------+----------------+-------------------------------------------------------------------------+
+; Parameter Name         ; Value          ; Type                                                                    ;
++------------------------+----------------+-------------------------------------------------------------------------+
+; LPM_WIDTHN             ; 32             ; Untyped                                                                 ;
+; LPM_WIDTHD             ; 3              ; Untyped                                                                 ;
+; LPM_NREPRESENTATION    ; UNSIGNED       ; Untyped                                                                 ;
+; LPM_DREPRESENTATION    ; UNSIGNED       ; Untyped                                                                 ;
+; LPM_PIPELINE           ; 0              ; Untyped                                                                 ;
+; LPM_REMAINDERPOSITIVE  ; TRUE           ; Untyped                                                                 ;
+; MAXIMIZE_SPEED         ; 5              ; Untyped                                                                 ;
+; CBXI_PARAMETER         ; lpm_divide_hbm ; Untyped                                                                 ;
+; CARRY_CHAIN            ; MANUAL         ; Untyped                                                                 ;
+; OPTIMIZE_FOR_SPEED     ; 5              ; Untyped                                                                 ;
+; AUTO_CARRY_CHAINS      ; ON             ; AUTO_CARRY                                                              ;
+; IGNORE_CARRY_BUFFERS   ; OFF            ; IGNORE_CARRY                                                            ;
+; AUTO_CASCADE_CHAINS    ; ON             ; AUTO_CASCADE                                                            ;
+; IGNORE_CASCADE_BUFFERS ; OFF            ; IGNORE_CASCADE                                                          ;
++------------------------+----------------+-------------------------------------------------------------------------+
+Note: In order to hide this table in the UI and the text report file, please set the "Show Parameter Settings in Synthesis Report" option in "Analysis and Synthesis Settings -> More Settings" to "Off".
+
+
 +---------------------------------------------------------------------------------------------------------+
 ; Parameter Settings for Inferred Entity Instance: Vga_Controller:vga_control|Draw_C:colo|lpm_divide:Div0 ;
 +------------------------+----------------+---------------------------------------------------------------+
@@ -2264,6 +2424,75 @@ Note: In order to hide this table in the UI and the text report file, please set
 ; AUTO_CASCADE_CHAINS    ; ON             ; AUTO_CASCADE                                                  ;
 ; IGNORE_CASCADE_BUFFERS ; OFF            ; IGNORE_CASCADE                                                ;
 +------------------------+----------------+---------------------------------------------------------------+
+Note: In order to hide this table in the UI and the text report file, please set the "Show Parameter Settings in Synthesis Report" option in "Analysis and Synthesis Settings -> More Settings" to "Off".
+
+
++-------------------------------------------------------------------------------------------------------------+
+; Parameter Settings for Inferred Entity Instance: Vga_Controller:vga_control|Draw_WIN:Winnig|lpm_divide:Div0 ;
++------------------------+----------------+-------------------------------------------------------------------+
+; Parameter Name         ; Value          ; Type                                                              ;
++------------------------+----------------+-------------------------------------------------------------------+
+; LPM_WIDTHN             ; 32             ; Untyped                                                           ;
+; LPM_WIDTHD             ; 3              ; Untyped                                                           ;
+; LPM_NREPRESENTATION    ; UNSIGNED       ; Untyped                                                           ;
+; LPM_DREPRESENTATION    ; UNSIGNED       ; Untyped                                                           ;
+; LPM_PIPELINE           ; 0              ; Untyped                                                           ;
+; LPM_REMAINDERPOSITIVE  ; TRUE           ; Untyped                                                           ;
+; MAXIMIZE_SPEED         ; 5              ; Untyped                                                           ;
+; CBXI_PARAMETER         ; lpm_divide_hbm ; Untyped                                                           ;
+; CARRY_CHAIN            ; MANUAL         ; Untyped                                                           ;
+; OPTIMIZE_FOR_SPEED     ; 5              ; Untyped                                                           ;
+; AUTO_CARRY_CHAINS      ; ON             ; AUTO_CARRY                                                        ;
+; IGNORE_CARRY_BUFFERS   ; OFF            ; IGNORE_CARRY                                                      ;
+; AUTO_CASCADE_CHAINS    ; ON             ; AUTO_CASCADE                                                      ;
+; IGNORE_CASCADE_BUFFERS ; OFF            ; IGNORE_CASCADE                                                    ;
++------------------------+----------------+-------------------------------------------------------------------+
+Note: In order to hide this table in the UI and the text report file, please set the "Show Parameter Settings in Synthesis Report" option in "Analysis and Synthesis Settings -> More Settings" to "Off".
+
+
++-------------------------------------------------------------------------------------------------------------+
+; Parameter Settings for Inferred Entity Instance: Vga_Controller:vga_control|Draw_WIN:Winnig|lpm_divide:Div1 ;
++------------------------+----------------+-------------------------------------------------------------------+
+; Parameter Name         ; Value          ; Type                                                              ;
++------------------------+----------------+-------------------------------------------------------------------+
+; LPM_WIDTHN             ; 32             ; Untyped                                                           ;
+; LPM_WIDTHD             ; 3              ; Untyped                                                           ;
+; LPM_NREPRESENTATION    ; UNSIGNED       ; Untyped                                                           ;
+; LPM_DREPRESENTATION    ; UNSIGNED       ; Untyped                                                           ;
+; LPM_PIPELINE           ; 0              ; Untyped                                                           ;
+; LPM_REMAINDERPOSITIVE  ; TRUE           ; Untyped                                                           ;
+; MAXIMIZE_SPEED         ; 5              ; Untyped                                                           ;
+; CBXI_PARAMETER         ; lpm_divide_hbm ; Untyped                                                           ;
+; CARRY_CHAIN            ; MANUAL         ; Untyped                                                           ;
+; OPTIMIZE_FOR_SPEED     ; 5              ; Untyped                                                           ;
+; AUTO_CARRY_CHAINS      ; ON             ; AUTO_CARRY                                                        ;
+; IGNORE_CARRY_BUFFERS   ; OFF            ; IGNORE_CARRY                                                      ;
+; AUTO_CASCADE_CHAINS    ; ON             ; AUTO_CASCADE                                                      ;
+; IGNORE_CASCADE_BUFFERS ; OFF            ; IGNORE_CASCADE                                                    ;
++------------------------+----------------+-------------------------------------------------------------------+
+Note: In order to hide this table in the UI and the text report file, please set the "Show Parameter Settings in Synthesis Report" option in "Analysis and Synthesis Settings -> More Settings" to "Off".
+
+
++-------------------------------------------------------------------------------------------------------------+
+; Parameter Settings for Inferred Entity Instance: Vga_Controller:vga_control|Draw_WIN:Winnig|lpm_divide:Div2 ;
++------------------------+----------------+-------------------------------------------------------------------+
+; Parameter Name         ; Value          ; Type                                                              ;
++------------------------+----------------+-------------------------------------------------------------------+
+; LPM_WIDTHN             ; 32             ; Untyped                                                           ;
+; LPM_WIDTHD             ; 6              ; Untyped                                                           ;
+; LPM_NREPRESENTATION    ; UNSIGNED       ; Untyped                                                           ;
+; LPM_DREPRESENTATION    ; UNSIGNED       ; Untyped                                                           ;
+; LPM_PIPELINE           ; 0              ; Untyped                                                           ;
+; LPM_REMAINDERPOSITIVE  ; TRUE           ; Untyped                                                           ;
+; MAXIMIZE_SPEED         ; 5              ; Untyped                                                           ;
+; CBXI_PARAMETER         ; lpm_divide_kbm ; Untyped                                                           ;
+; CARRY_CHAIN            ; MANUAL         ; Untyped                                                           ;
+; OPTIMIZE_FOR_SPEED     ; 5              ; Untyped                                                           ;
+; AUTO_CARRY_CHAINS      ; ON             ; AUTO_CARRY                                                        ;
+; IGNORE_CARRY_BUFFERS   ; OFF            ; IGNORE_CARRY                                                      ;
+; AUTO_CASCADE_CHAINS    ; ON             ; AUTO_CASCADE                                                      ;
+; IGNORE_CASCADE_BUFFERS ; OFF            ; IGNORE_CASCADE                                                    ;
++------------------------+----------------+-------------------------------------------------------------------+
 Note: In order to hide this table in the UI and the text report file, please set the "Show Parameter Settings in Synthesis Report" option in "Analysis and Synthesis Settings -> More Settings" to "Off".
 
 
@@ -2338,6 +2567,27 @@ Note: In order to hide this table in the UI and the text report file, please set
 
 
 +----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+; Port Connectivity Checks: "Vga_Controller:vga_control|Draw_WIN:Winnig"                                                                                                                                               ;
++-------------+-------+----------+-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+; Port        ; Type  ; Severity ; Details                                                                                                                                                                             ;
++-------------+-------+----------+-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+; pos_x       ; Input ; Warning  ; Input port expression (32 bits) is wider than the input port (10 bits) it drives.  The 22 most-significant bit(s) in the expression will be dangling if they have no other fanouts. ;
+; pos_x[9..4] ; Input ; Info     ; Stuck at GND                                                                                                                                                                        ;
+; pos_x[3]    ; Input ; Info     ; Stuck at VCC                                                                                                                                                                        ;
+; pos_x[2]    ; Input ; Info     ; Stuck at GND                                                                                                                                                                        ;
+; pos_x[1]    ; Input ; Info     ; Stuck at VCC                                                                                                                                                                        ;
+; pos_x[0]    ; Input ; Info     ; Stuck at GND                                                                                                                                                                        ;
+; pos_y       ; Input ; Warning  ; Input port expression (32 bits) is wider than the input port (10 bits) it drives.  The 22 most-significant bit(s) in the expression will be dangling if they have no other fanouts. ;
+; pos_y[6..5] ; Input ; Info     ; Stuck at VCC                                                                                                                                                                        ;
+; pos_y[9..7] ; Input ; Info     ; Stuck at GND                                                                                                                                                                        ;
+; pos_y[2..1] ; Input ; Info     ; Stuck at GND                                                                                                                                                                        ;
+; pos_y[4]    ; Input ; Info     ; Stuck at GND                                                                                                                                                                        ;
+; pos_y[3]    ; Input ; Info     ; Stuck at VCC                                                                                                                                                                        ;
+; pos_y[0]    ; Input ; Info     ; Stuck at VCC                                                                                                                                                                        ;
++-------------+-------+----------+-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+
+
++----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
 ; Port Connectivity Checks: "Vga_Controller:vga_control|Draw_CASH:cash_display"                                                                                                                                        ;
 +-------------+-------+----------+-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
 ; Port        ; Type  ; Severity ; Details                                                                                                                                                                             ;
@@ -2357,6 +2607,74 @@ Note: In order to hide this table in the UI and the text report file, please set
 ; pos_y[4]    ; Input ; Info     ; Stuck at GND                                                                                                                                                                        ;
 ; pos_y[3]    ; Input ; Info     ; Stuck at VCC                                                                                                                                                                        ;
 ; pos_y[0]    ; Input ; Info     ; Stuck at VCC                                                                                                                                                                        ;
++-------------+-------+----------+-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+
+
++----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+; Port Connectivity Checks: "Vga_Controller:vga_control|Draw_X:ex"                                                                                                                                                     ;
++-------------+-------+----------+-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+; Port        ; Type  ; Severity ; Details                                                                                                                                                                             ;
++-------------+-------+----------+-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+; pos_x       ; Input ; Warning  ; Input port expression (32 bits) is wider than the input port (10 bits) it drives.  The 22 most-significant bit(s) in the expression will be dangling if they have no other fanouts. ;
+; pos_x[7..3] ; Input ; Info     ; Stuck at VCC                                                                                                                                                                        ;
+; pos_x[9..8] ; Input ; Info     ; Stuck at GND                                                                                                                                                                        ;
+; pos_x[2]    ; Input ; Info     ; Stuck at GND                                                                                                                                                                        ;
+; pos_x[1]    ; Input ; Info     ; Stuck at VCC                                                                                                                                                                        ;
+; pos_x[0]    ; Input ; Info     ; Stuck at GND                                                                                                                                                                        ;
+; pos_y       ; Input ; Warning  ; Input port expression (32 bits) is wider than the input port (10 bits) it drives.  The 22 most-significant bit(s) in the expression will be dangling if they have no other fanouts. ;
+; pos_y[6..4] ; Input ; Info     ; Stuck at VCC                                                                                                                                                                        ;
+; pos_y[3..2] ; Input ; Info     ; Stuck at GND                                                                                                                                                                        ;
+; pos_y[9]    ; Input ; Info     ; Stuck at GND                                                                                                                                                                        ;
+; pos_y[8]    ; Input ; Info     ; Stuck at VCC                                                                                                                                                                        ;
+; pos_y[7]    ; Input ; Info     ; Stuck at GND                                                                                                                                                                        ;
+; pos_y[1]    ; Input ; Info     ; Stuck at VCC                                                                                                                                                                        ;
+; pos_y[0]    ; Input ; Info     ; Stuck at GND                                                                                                                                                                        ;
++-------------+-------+----------+-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+
+
++----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+; Port Connectivity Checks: "Vga_Controller:vga_control|Draw_Arrow_Dowm:arro2"                                                                                                                                         ;
++-------------+-------+----------+-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+; Port        ; Type  ; Severity ; Details                                                                                                                                                                             ;
++-------------+-------+----------+-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+; pos_x       ; Input ; Warning  ; Input port expression (32 bits) is wider than the input port (10 bits) it drives.  The 22 most-significant bit(s) in the expression will be dangling if they have no other fanouts. ;
+; pos_x[2..1] ; Input ; Info     ; Stuck at VCC                                                                                                                                                                        ;
+; pos_x[9..8] ; Input ; Info     ; Stuck at GND                                                                                                                                                                        ;
+; pos_x[6..5] ; Input ; Info     ; Stuck at GND                                                                                                                                                                        ;
+; pos_x[7]    ; Input ; Info     ; Stuck at VCC                                                                                                                                                                        ;
+; pos_x[4]    ; Input ; Info     ; Stuck at VCC                                                                                                                                                                        ;
+; pos_x[3]    ; Input ; Info     ; Stuck at GND                                                                                                                                                                        ;
+; pos_x[0]    ; Input ; Info     ; Stuck at GND                                                                                                                                                                        ;
+; pos_y       ; Input ; Warning  ; Input port expression (32 bits) is wider than the input port (10 bits) it drives.  The 22 most-significant bit(s) in the expression will be dangling if they have no other fanouts. ;
+; pos_y[6..4] ; Input ; Info     ; Stuck at VCC                                                                                                                                                                        ;
+; pos_y[3..2] ; Input ; Info     ; Stuck at GND                                                                                                                                                                        ;
+; pos_y[9]    ; Input ; Info     ; Stuck at GND                                                                                                                                                                        ;
+; pos_y[8]    ; Input ; Info     ; Stuck at VCC                                                                                                                                                                        ;
+; pos_y[7]    ; Input ; Info     ; Stuck at GND                                                                                                                                                                        ;
+; pos_y[1]    ; Input ; Info     ; Stuck at VCC                                                                                                                                                                        ;
+; pos_y[0]    ; Input ; Info     ; Stuck at GND                                                                                                                                                                        ;
++-------------+-------+----------+-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+
+
++----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+; Port Connectivity Checks: "Vga_Controller:vga_control|Draw_Arrow:arro"                                                                                                                                               ;
++-------------+-------+----------+-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+; Port        ; Type  ; Severity ; Details                                                                                                                                                                             ;
++-------------+-------+----------+-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+; pos_x       ; Input ; Warning  ; Input port expression (32 bits) is wider than the input port (10 bits) it drives.  The 22 most-significant bit(s) in the expression will be dangling if they have no other fanouts. ;
+; pos_x[9..6] ; Input ; Info     ; Stuck at GND                                                                                                                                                                        ;
+; pos_x[2..0] ; Input ; Info     ; Stuck at GND                                                                                                                                                                        ;
+; pos_x[5]    ; Input ; Info     ; Stuck at VCC                                                                                                                                                                        ;
+; pos_x[4]    ; Input ; Info     ; Stuck at GND                                                                                                                                                                        ;
+; pos_x[3]    ; Input ; Info     ; Stuck at VCC                                                                                                                                                                        ;
+; pos_y       ; Input ; Warning  ; Input port expression (32 bits) is wider than the input port (10 bits) it drives.  The 22 most-significant bit(s) in the expression will be dangling if they have no other fanouts. ;
+; pos_y[6..4] ; Input ; Info     ; Stuck at VCC                                                                                                                                                                        ;
+; pos_y[3..2] ; Input ; Info     ; Stuck at GND                                                                                                                                                                        ;
+; pos_y[9]    ; Input ; Info     ; Stuck at GND                                                                                                                                                                        ;
+; pos_y[8]    ; Input ; Info     ; Stuck at VCC                                                                                                                                                                        ;
+; pos_y[7]    ; Input ; Info     ; Stuck at GND                                                                                                                                                                        ;
+; pos_y[1]    ; Input ; Info     ; Stuck at VCC                                                                                                                                                                        ;
+; pos_y[0]    ; Input ; Info     ; Stuck at GND                                                                                                                                                                        ;
 +-------------+-------+----------+-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
 
 
@@ -2473,31 +2791,31 @@ Note: In order to hide this table in the UI and the text report file, please set
 ; arriav_ff             ; 44                          ;
 ;     CLR               ; 32                          ;
 ;     ENA CLR           ; 12                          ;
-; arriav_lcell_comb     ; 591                         ;
-;     arith             ; 145                         ;
-;         0 data inputs ; 39                          ;
-;         1 data inputs ; 44                          ;
-;         2 data inputs ; 9                           ;
-;         3 data inputs ; 33                          ;
-;         4 data inputs ; 20                          ;
-;     extend            ; 9                           ;
-;         7 data inputs ; 9                           ;
-;     normal            ; 427                         ;
+; arriav_lcell_comb     ; 1201                        ;
+;     arith             ; 520                         ;
+;         0 data inputs ; 126                         ;
+;         1 data inputs ; 172                         ;
+;         2 data inputs ; 13                          ;
+;         3 data inputs ; 135                         ;
+;         4 data inputs ; 74                          ;
+;     extend            ; 6                           ;
+;         7 data inputs ; 6                           ;
+;     normal            ; 650                         ;
 ;         0 data inputs ; 1                           ;
 ;         1 data inputs ; 6                           ;
-;         2 data inputs ; 84                          ;
-;         3 data inputs ; 50                          ;
-;         4 data inputs ; 88                          ;
-;         5 data inputs ; 131                         ;
-;         6 data inputs ; 67                          ;
-;     shared            ; 10                          ;
-;         0 data inputs ; 1                           ;
-;         1 data inputs ; 7                           ;
+;         2 data inputs ; 180                         ;
+;         3 data inputs ; 91                          ;
+;         4 data inputs ; 135                         ;
+;         5 data inputs ; 172                         ;
+;         6 data inputs ; 65                          ;
+;     shared            ; 25                          ;
+;         0 data inputs ; 4                           ;
+;         1 data inputs ; 19                          ;
 ;         2 data inputs ; 2                           ;
 ; boundary_port         ; 64                          ;
 ;                       ;                             ;
-; Max LUT depth         ; 18.40                       ;
-; Average LUT depth     ; 11.54                       ;
+; Max LUT depth         ; 26.00                       ;
+; Average LUT depth     ; 16.62                       ;
 +-----------------------+-----------------------------+
 
 
@@ -2516,7 +2834,7 @@ Note: In order to hide this table in the UI and the text report file, please set
 Info: *******************************************************************
 Info: Running Quartus Prime Analysis & Synthesis
     Info: Version 18.1.0 Build 625 09/12/2018 SJ Lite Edition
-    Info: Processing started: Tue Jun 17 00:44:35 2025
+    Info: Processing started: Tue Jun 17 16:33:29 2025
 Info: Command: quartus_map --read_settings_files=on --write_settings_files=off Gambling_Tec -c Gambling_Tec
 Warning (18236): Number of processors has not been specified which may cause overloading on shared machines.  Set the global assignment NUM_PARALLEL_PROCESSORS in your QSF to an appropriate value for best performance.
 Info (20030): Parallel compilation is enabled and will use 4 of the 4 processors detected
@@ -2571,7 +2889,7 @@ Info (12021): Found 1 design units, including 1 entities, in source file tb_gamb
 Info (12021): Found 1 design units, including 1 entities, in source file tb_data_memory.sv
     Info (12023): Found entity 1: tb_Data_Memory File: C:/Users/josee/CE3201_PF/tb_Data_Memory.sv Line: 3
 Warning (10275): Verilog HDL Module Instantiation warning at Vga_Controller.sv(76): ignored dangling comma in List of Port Connections File: C:/Users/josee/CE3201_PF/Vga_Controller.sv Line: 76
-Warning (10275): Verilog HDL Module Instantiation warning at Vga_Controller.sv(269): ignored dangling comma in List of Port Connections File: C:/Users/josee/CE3201_PF/Vga_Controller.sv Line: 269
+Warning (10275): Verilog HDL Module Instantiation warning at Vga_Controller.sv(304): ignored dangling comma in List of Port Connections File: C:/Users/josee/CE3201_PF/Vga_Controller.sv Line: 304
 Info (12021): Found 1 design units, including 1 entities, in source file vga_controller.sv
     Info (12023): Found entity 1: Vga_Controller File: C:/Users/josee/CE3201_PF/Vga_Controller.sv Line: 1
 Info (12021): Found 1 design units, including 1 entities, in source file comparator.sv
@@ -2602,6 +2920,14 @@ Info (12021): Found 1 design units, including 1 entities, in source file output_
     Info (12023): Found entity 1: Mux93 File: C:/Users/josee/CE3201_PF/output_files/Mux93.sv Line: 1
 Info (12021): Found 1 design units, including 1 entities, in source file mem_vga_deco.sv
     Info (12023): Found entity 1: Mem_Vga_Deco File: C:/Users/josee/CE3201_PF/Mem_Vga_Deco.sv Line: 1
+Info (12021): Found 1 design units, including 1 entities, in source file draw_arrow.sv
+    Info (12023): Found entity 1: Draw_Arrow File: C:/Users/josee/CE3201_PF/Draw_Arrow.sv Line: 1
+Info (12021): Found 1 design units, including 1 entities, in source file draw_arrow_dowm.sv
+    Info (12023): Found entity 1: Draw_Arrow_Dowm File: C:/Users/josee/CE3201_PF/Draw_Arrow_Dowm.sv Line: 1
+Info (12021): Found 1 design units, including 1 entities, in source file draw_x.sv
+    Info (12023): Found entity 1: Draw_X File: C:/Users/josee/CE3201_PF/Draw_X.sv Line: 1
+Info (12021): Found 1 design units, including 1 entities, in source file draw_win.sv
+    Info (12023): Found entity 1: Draw_WIN File: C:/Users/josee/CE3201_PF/Draw_WIN.sv Line: 1
 Warning (10236): Verilog HDL Implicit Net warning at Decoder.sv(35): created implicit net for "ALUOP" File: C:/Users/josee/CE3201_PF/Decoder.sv Line: 35
 Info (12127): Elaborating entity "Gambling_Tec" for the top level hierarchy
 Info (12128): Elaborating entity "clk_div" for hierarchy "clk_div:div_clo" File: C:/Users/josee/CE3201_PF/Gambling_Tec.sv Line: 31
@@ -2674,76 +3000,100 @@ Warning (10230): Verilog HDL assignment warning at Draw_C.sv(16): truncated valu
 Warning (10030): Net "font_rom.data_a" at Draw_C.sv(32) has no driver or initial value, using a default initial value '0' File: C:/Users/josee/CE3201_PF/Draw_C.sv Line: 32
 Warning (10030): Net "font_rom.waddr_a" at Draw_C.sv(32) has no driver or initial value, using a default initial value '0' File: C:/Users/josee/CE3201_PF/Draw_C.sv Line: 32
 Warning (10030): Net "font_rom.we_a" at Draw_C.sv(32) has no driver or initial value, using a default initial value '0' File: C:/Users/josee/CE3201_PF/Draw_C.sv Line: 32
-Info (12128): Elaborating entity "Button" for hierarchy "Vga_Controller:vga_control|Button:Btn1" File: C:/Users/josee/CE3201_PF/Vga_Controller.sv Line: 223
+Info (12128): Elaborating entity "Draw_Arrow" for hierarchy "Vga_Controller:vga_control|Draw_Arrow:arro" File: C:/Users/josee/CE3201_PF/Vga_Controller.sv Line: 221
+Warning (10230): Verilog HDL assignment warning at Draw_Arrow.sv(15): truncated value with size 32 to match size of target (4) File: C:/Users/josee/CE3201_PF/Draw_Arrow.sv Line: 15
+Warning (10230): Verilog HDL assignment warning at Draw_Arrow.sv(16): truncated value with size 32 to match size of target (4) File: C:/Users/josee/CE3201_PF/Draw_Arrow.sv Line: 16
+Warning (10030): Net "font_rom.data_a" at Draw_Arrow.sv(32) has no driver or initial value, using a default initial value '0' File: C:/Users/josee/CE3201_PF/Draw_Arrow.sv Line: 32
+Warning (10030): Net "font_rom.waddr_a" at Draw_Arrow.sv(32) has no driver or initial value, using a default initial value '0' File: C:/Users/josee/CE3201_PF/Draw_Arrow.sv Line: 32
+Warning (10030): Net "font_rom.we_a" at Draw_Arrow.sv(32) has no driver or initial value, using a default initial value '0' File: C:/Users/josee/CE3201_PF/Draw_Arrow.sv Line: 32
+Info (12128): Elaborating entity "Draw_Arrow_Dowm" for hierarchy "Vga_Controller:vga_control|Draw_Arrow_Dowm:arro2" File: C:/Users/josee/CE3201_PF/Vga_Controller.sv Line: 230
+Warning (10230): Verilog HDL assignment warning at Draw_Arrow_Dowm.sv(15): truncated value with size 32 to match size of target (4) File: C:/Users/josee/CE3201_PF/Draw_Arrow_Dowm.sv Line: 15
+Warning (10230): Verilog HDL assignment warning at Draw_Arrow_Dowm.sv(16): truncated value with size 32 to match size of target (4) File: C:/Users/josee/CE3201_PF/Draw_Arrow_Dowm.sv Line: 16
+Warning (10030): Net "font_rom.data_a" at Draw_Arrow_Dowm.sv(32) has no driver or initial value, using a default initial value '0' File: C:/Users/josee/CE3201_PF/Draw_Arrow_Dowm.sv Line: 32
+Warning (10030): Net "font_rom.waddr_a" at Draw_Arrow_Dowm.sv(32) has no driver or initial value, using a default initial value '0' File: C:/Users/josee/CE3201_PF/Draw_Arrow_Dowm.sv Line: 32
+Warning (10030): Net "font_rom.we_a" at Draw_Arrow_Dowm.sv(32) has no driver or initial value, using a default initial value '0' File: C:/Users/josee/CE3201_PF/Draw_Arrow_Dowm.sv Line: 32
+Info (12128): Elaborating entity "Draw_X" for hierarchy "Vga_Controller:vga_control|Draw_X:ex" File: C:/Users/josee/CE3201_PF/Vga_Controller.sv Line: 238
+Warning (10230): Verilog HDL assignment warning at Draw_X.sv(15): truncated value with size 32 to match size of target (4) File: C:/Users/josee/CE3201_PF/Draw_X.sv Line: 15
+Warning (10230): Verilog HDL assignment warning at Draw_X.sv(16): truncated value with size 32 to match size of target (4) File: C:/Users/josee/CE3201_PF/Draw_X.sv Line: 16
+Warning (10030): Net "font_rom.data_a" at Draw_X.sv(32) has no driver or initial value, using a default initial value '0' File: C:/Users/josee/CE3201_PF/Draw_X.sv Line: 32
+Warning (10030): Net "font_rom.waddr_a" at Draw_X.sv(32) has no driver or initial value, using a default initial value '0' File: C:/Users/josee/CE3201_PF/Draw_X.sv Line: 32
+Warning (10030): Net "font_rom.we_a" at Draw_X.sv(32) has no driver or initial value, using a default initial value '0' File: C:/Users/josee/CE3201_PF/Draw_X.sv Line: 32
+Info (12128): Elaborating entity "Button" for hierarchy "Vga_Controller:vga_control|Button:Btn1" File: C:/Users/josee/CE3201_PF/Vga_Controller.sv Line: 254
 Info (12128): Elaborating entity "Square_Area" for hierarchy "Vga_Controller:vga_control|Button:Btn1|Square_Area:Cua_Btn" File: C:/Users/josee/CE3201_PF/Button.sv Line: 23
 Info (12128): Elaborating entity "Square_Area" for hierarchy "Vga_Controller:vga_control|Button:Btn1|Square_Area:Cua_Btn_sombra" File: C:/Users/josee/CE3201_PF/Button.sv Line: 34
-Info (12128): Elaborating entity "Button" for hierarchy "Vga_Controller:vga_control|Button:Btn2" File: C:/Users/josee/CE3201_PF/Vga_Controller.sv Line: 235
+Info (12128): Elaborating entity "Button" for hierarchy "Vga_Controller:vga_control|Button:Btn2" File: C:/Users/josee/CE3201_PF/Vga_Controller.sv Line: 270
 Info (12128): Elaborating entity "Square_Area" for hierarchy "Vga_Controller:vga_control|Button:Btn2|Square_Area:Cua_Btn" File: C:/Users/josee/CE3201_PF/Button.sv Line: 23
 Info (12128): Elaborating entity "Square_Area" for hierarchy "Vga_Controller:vga_control|Button:Btn2|Square_Area:Cua_Btn_sombra" File: C:/Users/josee/CE3201_PF/Button.sv Line: 34
-Info (12128): Elaborating entity "Button" for hierarchy "Vga_Controller:vga_control|Button:Btn3" File: C:/Users/josee/CE3201_PF/Vga_Controller.sv Line: 247
+Info (12128): Elaborating entity "Button" for hierarchy "Vga_Controller:vga_control|Button:Btn3" File: C:/Users/josee/CE3201_PF/Vga_Controller.sv Line: 282
 Info (12128): Elaborating entity "Square_Area" for hierarchy "Vga_Controller:vga_control|Button:Btn3|Square_Area:Cua_Btn" File: C:/Users/josee/CE3201_PF/Button.sv Line: 23
 Info (12128): Elaborating entity "Square_Area" for hierarchy "Vga_Controller:vga_control|Button:Btn3|Square_Area:Cua_Btn_sombra" File: C:/Users/josee/CE3201_PF/Button.sv Line: 34
-Info (12128): Elaborating entity "Panel" for hierarchy "Vga_Controller:vga_control|Panel:panel_msg" File: C:/Users/josee/CE3201_PF/Vga_Controller.sv Line: 269
+Info (12128): Elaborating entity "Panel" for hierarchy "Vga_Controller:vga_control|Panel:panel_msg" File: C:/Users/josee/CE3201_PF/Vga_Controller.sv Line: 304
 Info (12128): Elaborating entity "Square_Area" for hierarchy "Vga_Controller:vga_control|Panel:panel_msg|Square_Area:cua_D" File: C:/Users/josee/CE3201_PF/Panel.sv Line: 21
 Info (12128): Elaborating entity "Square_Area" for hierarchy "Vga_Controller:vga_control|Panel:panel_msg|Square_Area:sombra" File: C:/Users/josee/CE3201_PF/Panel.sv Line: 30
 Info (12128): Elaborating entity "Square_Area" for hierarchy "Vga_Controller:vga_control|Panel:panel_msg|Square_Area:cua_D2" File: C:/Users/josee/CE3201_PF/Panel.sv Line: 39
 Info (12128): Elaborating entity "Square_Area" for hierarchy "Vga_Controller:vga_control|Panel:panel_msg|Square_Area:cua_D3" File: C:/Users/josee/CE3201_PF/Panel.sv Line: 47
 Info (12128): Elaborating entity "Square_Area" for hierarchy "Vga_Controller:vga_control|Panel:panel_msg|Square_Area:cua_D4" File: C:/Users/josee/CE3201_PF/Panel.sv Line: 55
-Info (12128): Elaborating entity "Draw_CASH" for hierarchy "Vga_Controller:vga_control|Draw_CASH:cash_display" File: C:/Users/josee/CE3201_PF/Vga_Controller.sv Line: 280
+Info (12128): Elaborating entity "Draw_CASH" for hierarchy "Vga_Controller:vga_control|Draw_CASH:cash_display" File: C:/Users/josee/CE3201_PF/Vga_Controller.sv Line: 316
 Warning (10230): Verilog HDL assignment warning at Draw_CASH.sv(19): truncated value with size 32 to match size of target (3) File: C:/Users/josee/CE3201_PF/Draw_CASH.sv Line: 19
 Warning (10230): Verilog HDL assignment warning at Draw_CASH.sv(20): truncated value with size 32 to match size of target (6) File: C:/Users/josee/CE3201_PF/Draw_CASH.sv Line: 20
 Warning (10030): Net "font_rom.data_a" at Draw_CASH.sv(24) has no driver or initial value, using a default initial value '0' File: C:/Users/josee/CE3201_PF/Draw_CASH.sv Line: 24
 Warning (10030): Net "font_rom.waddr_a" at Draw_CASH.sv(24) has no driver or initial value, using a default initial value '0' File: C:/Users/josee/CE3201_PF/Draw_CASH.sv Line: 24
 Warning (10030): Net "font_rom.we_a" at Draw_CASH.sv(24) has no driver or initial value, using a default initial value '0' File: C:/Users/josee/CE3201_PF/Draw_CASH.sv Line: 24
-Info (12128): Elaborating entity "Counter" for hierarchy "Vga_Controller:vga_control|Counter:conut" File: C:/Users/josee/CE3201_PF/Vga_Controller.sv Line: 336
-Info (12128): Elaborating entity "Symbol" for hierarchy "Vga_Controller:vga_control|Symbol:slot_0_0" File: C:/Users/josee/CE3201_PF/Vga_Controller.sv Line: 346
+Info (12128): Elaborating entity "Draw_WIN" for hierarchy "Vga_Controller:vga_control|Draw_WIN:Winnig" File: C:/Users/josee/CE3201_PF/Vga_Controller.sv Line: 324
+Warning (10230): Verilog HDL assignment warning at Draw_WIN.sv(19): truncated value with size 32 to match size of target (3) File: C:/Users/josee/CE3201_PF/Draw_WIN.sv Line: 19
+Warning (10230): Verilog HDL assignment warning at Draw_WIN.sv(20): truncated value with size 32 to match size of target (6) File: C:/Users/josee/CE3201_PF/Draw_WIN.sv Line: 20
+Warning (10030): Net "font_rom.data_a" at Draw_WIN.sv(24) has no driver or initial value, using a default initial value '0' File: C:/Users/josee/CE3201_PF/Draw_WIN.sv Line: 24
+Warning (10030): Net "font_rom.waddr_a" at Draw_WIN.sv(24) has no driver or initial value, using a default initial value '0' File: C:/Users/josee/CE3201_PF/Draw_WIN.sv Line: 24
+Warning (10030): Net "font_rom.we_a" at Draw_WIN.sv(24) has no driver or initial value, using a default initial value '0' File: C:/Users/josee/CE3201_PF/Draw_WIN.sv Line: 24
+Info (12128): Elaborating entity "Counter" for hierarchy "Vga_Controller:vga_control|Counter:conut" File: C:/Users/josee/CE3201_PF/Vga_Controller.sv Line: 378
+Info (12128): Elaborating entity "Symbol" for hierarchy "Vga_Controller:vga_control|Symbol:slot_0_0" File: C:/Users/josee/CE3201_PF/Vga_Controller.sv Line: 388
 Info (12128): Elaborating entity "Square_Area" for hierarchy "Vga_Controller:vga_control|Symbol:slot_0_0|Square_Area:form0" File: C:/Users/josee/CE3201_PF/Symbol.sv Line: 16
 Info (12128): Elaborating entity "Square_Area" for hierarchy "Vga_Controller:vga_control|Symbol:slot_0_0|Square_Area:form1" File: C:/Users/josee/CE3201_PF/Symbol.sv Line: 17
 Info (12128): Elaborating entity "Square_Area" for hierarchy "Vga_Controller:vga_control|Symbol:slot_0_0|Square_Area:form2" File: C:/Users/josee/CE3201_PF/Symbol.sv Line: 18
 Info (12128): Elaborating entity "Square_Area" for hierarchy "Vga_Controller:vga_control|Symbol:slot_0_0|Square_Area:form3" File: C:/Users/josee/CE3201_PF/Symbol.sv Line: 19
-Info (12128): Elaborating entity "Symbol" for hierarchy "Vga_Controller:vga_control|Symbol:slot_0_1" File: C:/Users/josee/CE3201_PF/Vga_Controller.sv Line: 349
+Info (12128): Elaborating entity "Symbol" for hierarchy "Vga_Controller:vga_control|Symbol:slot_0_1" File: C:/Users/josee/CE3201_PF/Vga_Controller.sv Line: 391
 Info (12128): Elaborating entity "Square_Area" for hierarchy "Vga_Controller:vga_control|Symbol:slot_0_1|Square_Area:form0" File: C:/Users/josee/CE3201_PF/Symbol.sv Line: 16
 Info (12128): Elaborating entity "Square_Area" for hierarchy "Vga_Controller:vga_control|Symbol:slot_0_1|Square_Area:form1" File: C:/Users/josee/CE3201_PF/Symbol.sv Line: 17
 Info (12128): Elaborating entity "Square_Area" for hierarchy "Vga_Controller:vga_control|Symbol:slot_0_1|Square_Area:form2" File: C:/Users/josee/CE3201_PF/Symbol.sv Line: 18
 Info (12128): Elaborating entity "Square_Area" for hierarchy "Vga_Controller:vga_control|Symbol:slot_0_1|Square_Area:form3" File: C:/Users/josee/CE3201_PF/Symbol.sv Line: 19
-Info (12128): Elaborating entity "Symbol" for hierarchy "Vga_Controller:vga_control|Symbol:slot_0_2" File: C:/Users/josee/CE3201_PF/Vga_Controller.sv Line: 352
+Info (12128): Elaborating entity "Symbol" for hierarchy "Vga_Controller:vga_control|Symbol:slot_0_2" File: C:/Users/josee/CE3201_PF/Vga_Controller.sv Line: 394
 Info (12128): Elaborating entity "Square_Area" for hierarchy "Vga_Controller:vga_control|Symbol:slot_0_2|Square_Area:form0" File: C:/Users/josee/CE3201_PF/Symbol.sv Line: 16
 Info (12128): Elaborating entity "Square_Area" for hierarchy "Vga_Controller:vga_control|Symbol:slot_0_2|Square_Area:form1" File: C:/Users/josee/CE3201_PF/Symbol.sv Line: 17
 Info (12128): Elaborating entity "Square_Area" for hierarchy "Vga_Controller:vga_control|Symbol:slot_0_2|Square_Area:form2" File: C:/Users/josee/CE3201_PF/Symbol.sv Line: 18
 Info (12128): Elaborating entity "Square_Area" for hierarchy "Vga_Controller:vga_control|Symbol:slot_0_2|Square_Area:form3" File: C:/Users/josee/CE3201_PF/Symbol.sv Line: 19
-Info (12128): Elaborating entity "Symbol" for hierarchy "Vga_Controller:vga_control|Symbol:slot_1_0" File: C:/Users/josee/CE3201_PF/Vga_Controller.sv Line: 356
+Info (12128): Elaborating entity "Symbol" for hierarchy "Vga_Controller:vga_control|Symbol:slot_1_0" File: C:/Users/josee/CE3201_PF/Vga_Controller.sv Line: 398
 Info (12128): Elaborating entity "Square_Area" for hierarchy "Vga_Controller:vga_control|Symbol:slot_1_0|Square_Area:form0" File: C:/Users/josee/CE3201_PF/Symbol.sv Line: 16
 Info (12128): Elaborating entity "Square_Area" for hierarchy "Vga_Controller:vga_control|Symbol:slot_1_0|Square_Area:form1" File: C:/Users/josee/CE3201_PF/Symbol.sv Line: 17
 Info (12128): Elaborating entity "Square_Area" for hierarchy "Vga_Controller:vga_control|Symbol:slot_1_0|Square_Area:form2" File: C:/Users/josee/CE3201_PF/Symbol.sv Line: 18
 Info (12128): Elaborating entity "Square_Area" for hierarchy "Vga_Controller:vga_control|Symbol:slot_1_0|Square_Area:form3" File: C:/Users/josee/CE3201_PF/Symbol.sv Line: 19
-Info (12128): Elaborating entity "Symbol" for hierarchy "Vga_Controller:vga_control|Symbol:slot_1_1" File: C:/Users/josee/CE3201_PF/Vga_Controller.sv Line: 359
+Info (12128): Elaborating entity "Symbol" for hierarchy "Vga_Controller:vga_control|Symbol:slot_1_1" File: C:/Users/josee/CE3201_PF/Vga_Controller.sv Line: 401
 Info (12128): Elaborating entity "Square_Area" for hierarchy "Vga_Controller:vga_control|Symbol:slot_1_1|Square_Area:form0" File: C:/Users/josee/CE3201_PF/Symbol.sv Line: 16
 Info (12128): Elaborating entity "Square_Area" for hierarchy "Vga_Controller:vga_control|Symbol:slot_1_1|Square_Area:form1" File: C:/Users/josee/CE3201_PF/Symbol.sv Line: 17
 Info (12128): Elaborating entity "Square_Area" for hierarchy "Vga_Controller:vga_control|Symbol:slot_1_1|Square_Area:form2" File: C:/Users/josee/CE3201_PF/Symbol.sv Line: 18
 Info (12128): Elaborating entity "Square_Area" for hierarchy "Vga_Controller:vga_control|Symbol:slot_1_1|Square_Area:form3" File: C:/Users/josee/CE3201_PF/Symbol.sv Line: 19
-Info (12128): Elaborating entity "Symbol" for hierarchy "Vga_Controller:vga_control|Symbol:slot_1_2" File: C:/Users/josee/CE3201_PF/Vga_Controller.sv Line: 362
+Info (12128): Elaborating entity "Symbol" for hierarchy "Vga_Controller:vga_control|Symbol:slot_1_2" File: C:/Users/josee/CE3201_PF/Vga_Controller.sv Line: 404
 Info (12128): Elaborating entity "Square_Area" for hierarchy "Vga_Controller:vga_control|Symbol:slot_1_2|Square_Area:form0" File: C:/Users/josee/CE3201_PF/Symbol.sv Line: 16
 Info (12128): Elaborating entity "Square_Area" for hierarchy "Vga_Controller:vga_control|Symbol:slot_1_2|Square_Area:form1" File: C:/Users/josee/CE3201_PF/Symbol.sv Line: 17
 Info (12128): Elaborating entity "Square_Area" for hierarchy "Vga_Controller:vga_control|Symbol:slot_1_2|Square_Area:form2" File: C:/Users/josee/CE3201_PF/Symbol.sv Line: 18
 Info (12128): Elaborating entity "Square_Area" for hierarchy "Vga_Controller:vga_control|Symbol:slot_1_2|Square_Area:form3" File: C:/Users/josee/CE3201_PF/Symbol.sv Line: 19
-Info (12128): Elaborating entity "Symbol" for hierarchy "Vga_Controller:vga_control|Symbol:slot_2_0" File: C:/Users/josee/CE3201_PF/Vga_Controller.sv Line: 366
+Info (12128): Elaborating entity "Symbol" for hierarchy "Vga_Controller:vga_control|Symbol:slot_2_0" File: C:/Users/josee/CE3201_PF/Vga_Controller.sv Line: 408
 Info (12128): Elaborating entity "Square_Area" for hierarchy "Vga_Controller:vga_control|Symbol:slot_2_0|Square_Area:form0" File: C:/Users/josee/CE3201_PF/Symbol.sv Line: 16
 Info (12128): Elaborating entity "Square_Area" for hierarchy "Vga_Controller:vga_control|Symbol:slot_2_0|Square_Area:form1" File: C:/Users/josee/CE3201_PF/Symbol.sv Line: 17
 Info (12128): Elaborating entity "Square_Area" for hierarchy "Vga_Controller:vga_control|Symbol:slot_2_0|Square_Area:form2" File: C:/Users/josee/CE3201_PF/Symbol.sv Line: 18
 Info (12128): Elaborating entity "Square_Area" for hierarchy "Vga_Controller:vga_control|Symbol:slot_2_0|Square_Area:form3" File: C:/Users/josee/CE3201_PF/Symbol.sv Line: 19
-Info (12128): Elaborating entity "Symbol" for hierarchy "Vga_Controller:vga_control|Symbol:slot_2_1" File: C:/Users/josee/CE3201_PF/Vga_Controller.sv Line: 369
+Info (12128): Elaborating entity "Symbol" for hierarchy "Vga_Controller:vga_control|Symbol:slot_2_1" File: C:/Users/josee/CE3201_PF/Vga_Controller.sv Line: 411
 Info (12128): Elaborating entity "Square_Area" for hierarchy "Vga_Controller:vga_control|Symbol:slot_2_1|Square_Area:form0" File: C:/Users/josee/CE3201_PF/Symbol.sv Line: 16
 Info (12128): Elaborating entity "Square_Area" for hierarchy "Vga_Controller:vga_control|Symbol:slot_2_1|Square_Area:form1" File: C:/Users/josee/CE3201_PF/Symbol.sv Line: 17
 Info (12128): Elaborating entity "Square_Area" for hierarchy "Vga_Controller:vga_control|Symbol:slot_2_1|Square_Area:form2" File: C:/Users/josee/CE3201_PF/Symbol.sv Line: 18
 Info (12128): Elaborating entity "Square_Area" for hierarchy "Vga_Controller:vga_control|Symbol:slot_2_1|Square_Area:form3" File: C:/Users/josee/CE3201_PF/Symbol.sv Line: 19
-Info (12128): Elaborating entity "Symbol" for hierarchy "Vga_Controller:vga_control|Symbol:slot_2_2" File: C:/Users/josee/CE3201_PF/Vga_Controller.sv Line: 372
+Info (12128): Elaborating entity "Symbol" for hierarchy "Vga_Controller:vga_control|Symbol:slot_2_2" File: C:/Users/josee/CE3201_PF/Vga_Controller.sv Line: 414
 Info (12128): Elaborating entity "Square_Area" for hierarchy "Vga_Controller:vga_control|Symbol:slot_2_2|Square_Area:form0" File: C:/Users/josee/CE3201_PF/Symbol.sv Line: 16
 Info (12128): Elaborating entity "Square_Area" for hierarchy "Vga_Controller:vga_control|Symbol:slot_2_2|Square_Area:form1" File: C:/Users/josee/CE3201_PF/Symbol.sv Line: 17
 Info (12128): Elaborating entity "Square_Area" for hierarchy "Vga_Controller:vga_control|Symbol:slot_2_2|Square_Area:form2" File: C:/Users/josee/CE3201_PF/Symbol.sv Line: 18
 Info (12128): Elaborating entity "Square_Area" for hierarchy "Vga_Controller:vga_control|Symbol:slot_2_2|Square_Area:form3" File: C:/Users/josee/CE3201_PF/Symbol.sv Line: 19
-Info (12128): Elaborating entity "Mux93" for hierarchy "Vga_Controller:vga_control|Mux93:color_selector" File: C:/Users/josee/CE3201_PF/Vga_Controller.sv Line: 390
+Info (12128): Elaborating entity "Mux93" for hierarchy "Vga_Controller:vga_control|Mux93:color_selector" File: C:/Users/josee/CE3201_PF/Vga_Controller.sv Line: 432
 Info (10264): Verilog HDL Case Statement information at Mux93.sv(8): all case item expressions in this case statement are onehot File: C:/Users/josee/CE3201_PF/output_files/Mux93.sv Line: 8
-Info (12128): Elaborating entity "Rom_tile" for hierarchy "Vga_Controller:vga_control|Rom_tile:rom_tile" File: C:/Users/josee/CE3201_PF/Vga_Controller.sv Line: 403
+Info (12128): Elaborating entity "Rom_tile" for hierarchy "Vga_Controller:vga_control|Rom_tile:rom_tile" File: C:/Users/josee/CE3201_PF/Vga_Controller.sv Line: 445
 Info (10264): Verilog HDL Case Statement information at Rom_tile.sv(45): all case item expressions in this case statement are onehot File: C:/Users/josee/CE3201_PF/Rom_tile.sv Line: 45
 Warning (10030): Net "sprite_i.data_a" at Rom_tile.sv(18) has no driver or initial value, using a default initial value '0' File: C:/Users/josee/CE3201_PF/Rom_tile.sv Line: 18
 Warning (10030): Net "sprite_i.waddr_a" at Rom_tile.sv(18) has no driver or initial value, using a default initial value '0' File: C:/Users/josee/CE3201_PF/Rom_tile.sv Line: 18
@@ -2767,16 +3117,27 @@ Warning (10230): Verilog HDL assignment warning at Register.sv(12): truncated va
 Info (12128): Elaborating entity "Condition_Check" for hierarchy "CPU:process|Control_Unit:CU_Inst|Condition_Check:inst_Condition_Check" File: C:/Users/josee/CE3201_PF/Control_Unit.sv Line: 72
 Info (12128): Elaborating entity "Data_Memory" for hierarchy "Data_Memory:data_mem" File: C:/Users/josee/CE3201_PF/Gambling_Tec.sv Line: 74
 Warning (12011): Net is missing source, defaulting to GND
-    Warning (12110): Net "Vga_Controller:vga_control|state2[0]" is missing source, defaulting to GND File: C:/Users/josee/CE3201_PF/Vga_Controller.sv Line: 318
-    Warning (12110): Net "Vga_Controller:vga_control|state3[0]" is missing source, defaulting to GND File: C:/Users/josee/CE3201_PF/Vga_Controller.sv Line: 318
-Info (276014): Found 2 instances of uninferred RAM logic
+    Warning (12110): Net "Vga_Controller:vga_control|state2[0]" is missing source, defaulting to GND File: C:/Users/josee/CE3201_PF/Vga_Controller.sv Line: 360
+    Warning (12110): Net "Vga_Controller:vga_control|state3[0]" is missing source, defaulting to GND File: C:/Users/josee/CE3201_PF/Vga_Controller.sv Line: 360
+Info (276014): Found 6 instances of uninferred RAM logic
+    Info (276004): RAM logic "Vga_Controller:vga_control|Draw_WIN:Winnig|font_rom" is uninferred due to inappropriate RAM size File: C:/Users/josee/CE3201_PF/Draw_WIN.sv Line: 24
     Info (276004): RAM logic "Vga_Controller:vga_control|Draw_CASH:cash_display|font_rom" is uninferred due to inappropriate RAM size File: C:/Users/josee/CE3201_PF/Draw_CASH.sv Line: 24
+    Info (276004): RAM logic "Vga_Controller:vga_control|Draw_X:ex|font_rom" is uninferred due to inappropriate RAM size File: C:/Users/josee/CE3201_PF/Draw_X.sv Line: 32
+    Info (276004): RAM logic "Vga_Controller:vga_control|Draw_Arrow_Dowm:arro2|font_rom" is uninferred due to inappropriate RAM size File: C:/Users/josee/CE3201_PF/Draw_Arrow_Dowm.sv Line: 32
+    Info (276004): RAM logic "Vga_Controller:vga_control|Draw_Arrow:arro|font_rom" is uninferred due to inappropriate RAM size File: C:/Users/josee/CE3201_PF/Draw_Arrow.sv Line: 32
     Info (276004): RAM logic "Vga_Controller:vga_control|Draw_C:colo|font_rom" is uninferred due to inappropriate RAM size File: C:/Users/josee/CE3201_PF/Draw_C.sv Line: 32
-Info (278001): Inferred 2 megafunctions from design logic
+Critical Warning (127005): Memory depth (32) in the design file differs from memory depth (24) in the Memory Initialization File "C:/Users/josee/CE3201_PF/db/Gambling_Tec.ram0_Draw_WIN_933d4d52.hdl.mif" -- setting initial value for remaining addresses to 0
+Info (278001): Inferred 8 megafunctions from design logic
+    Info (278004): Inferred divider/modulo megafunction ("lpm_divide") from the following logic: "Vga_Controller:vga_control|Draw_Arrow:arro|Div1" File: C:/Users/josee/CE3201_PF/Draw_Arrow.sv Line: 16
+    Info (278004): Inferred divider/modulo megafunction ("lpm_divide") from the following logic: "Vga_Controller:vga_control|Draw_Arrow:arro|Div0" File: C:/Users/josee/CE3201_PF/Draw_Arrow.sv Line: 15
+    Info (278004): Inferred divider/modulo megafunction ("lpm_divide") from the following logic: "Vga_Controller:vga_control|Draw_Arrow_Dowm:arro2|Div0" File: C:/Users/josee/CE3201_PF/Draw_Arrow_Dowm.sv Line: 15
     Info (278004): Inferred divider/modulo megafunction ("lpm_divide") from the following logic: "Vga_Controller:vga_control|Draw_C:colo|Div0" File: C:/Users/josee/CE3201_PF/Draw_C.sv Line: 15
     Info (278004): Inferred divider/modulo megafunction ("lpm_divide") from the following logic: "Vga_Controller:vga_control|Draw_C:colo|Div1" File: C:/Users/josee/CE3201_PF/Draw_C.sv Line: 16
-Info (12130): Elaborated megafunction instantiation "Vga_Controller:vga_control|Draw_C:colo|lpm_divide:Div0" File: C:/Users/josee/CE3201_PF/Draw_C.sv Line: 15
-Info (12133): Instantiated megafunction "Vga_Controller:vga_control|Draw_C:colo|lpm_divide:Div0" with the following parameter: File: C:/Users/josee/CE3201_PF/Draw_C.sv Line: 15
+    Info (278004): Inferred divider/modulo megafunction ("lpm_divide") from the following logic: "Vga_Controller:vga_control|Draw_WIN:Winnig|Div0" File: C:/Users/josee/CE3201_PF/Draw_WIN.sv Line: 19
+    Info (278004): Inferred divider/modulo megafunction ("lpm_divide") from the following logic: "Vga_Controller:vga_control|Draw_WIN:Winnig|Div1" File: C:/Users/josee/CE3201_PF/Draw_WIN.sv Line: 20
+    Info (278004): Inferred divider/modulo megafunction ("lpm_divide") from the following logic: "Vga_Controller:vga_control|Draw_WIN:Winnig|Div2" File: C:/Users/josee/CE3201_PF/Draw_WIN.sv Line: 21
+Info (12130): Elaborated megafunction instantiation "Vga_Controller:vga_control|Draw_Arrow:arro|lpm_divide:Div1" File: C:/Users/josee/CE3201_PF/Draw_Arrow.sv Line: 16
+Info (12133): Instantiated megafunction "Vga_Controller:vga_control|Draw_Arrow:arro|lpm_divide:Div1" with the following parameter: File: C:/Users/josee/CE3201_PF/Draw_Arrow.sv Line: 16
     Info (12134): Parameter "LPM_WIDTHN" = "32"
     Info (12134): Parameter "LPM_WIDTHD" = "3"
     Info (12134): Parameter "LPM_NREPRESENTATION" = "UNSIGNED"
@@ -2787,7 +3148,31 @@ Info (12021): Found 1 design units, including 1 entities, in source file db/sign
     Info (12023): Found entity 1: sign_div_unsign_rlh File: C:/Users/josee/CE3201_PF/db/sign_div_unsign_rlh.tdf Line: 24
 Info (12021): Found 1 design units, including 1 entities, in source file db/alt_u_div_lve.tdf
     Info (12023): Found entity 1: alt_u_div_lve File: C:/Users/josee/CE3201_PF/db/alt_u_div_lve.tdf Line: 22
-Warning (12241): 2 hierarchies have connectivity warnings - see the Connectivity Checks report folder
+Info (12130): Elaborated megafunction instantiation "Vga_Controller:vga_control|Draw_C:colo|lpm_divide:Div0" File: C:/Users/josee/CE3201_PF/Draw_C.sv Line: 15
+Info (12133): Instantiated megafunction "Vga_Controller:vga_control|Draw_C:colo|lpm_divide:Div0" with the following parameter: File: C:/Users/josee/CE3201_PF/Draw_C.sv Line: 15
+    Info (12134): Parameter "LPM_WIDTHN" = "32"
+    Info (12134): Parameter "LPM_WIDTHD" = "3"
+    Info (12134): Parameter "LPM_NREPRESENTATION" = "UNSIGNED"
+    Info (12134): Parameter "LPM_DREPRESENTATION" = "UNSIGNED"
+Info (12130): Elaborated megafunction instantiation "Vga_Controller:vga_control|Draw_WIN:Winnig|lpm_divide:Div1" File: C:/Users/josee/CE3201_PF/Draw_WIN.sv Line: 20
+Info (12133): Instantiated megafunction "Vga_Controller:vga_control|Draw_WIN:Winnig|lpm_divide:Div1" with the following parameter: File: C:/Users/josee/CE3201_PF/Draw_WIN.sv Line: 20
+    Info (12134): Parameter "LPM_WIDTHN" = "32"
+    Info (12134): Parameter "LPM_WIDTHD" = "3"
+    Info (12134): Parameter "LPM_NREPRESENTATION" = "UNSIGNED"
+    Info (12134): Parameter "LPM_DREPRESENTATION" = "UNSIGNED"
+Info (12130): Elaborated megafunction instantiation "Vga_Controller:vga_control|Draw_WIN:Winnig|lpm_divide:Div2" File: C:/Users/josee/CE3201_PF/Draw_WIN.sv Line: 21
+Info (12133): Instantiated megafunction "Vga_Controller:vga_control|Draw_WIN:Winnig|lpm_divide:Div2" with the following parameter: File: C:/Users/josee/CE3201_PF/Draw_WIN.sv Line: 21
+    Info (12134): Parameter "LPM_WIDTHN" = "32"
+    Info (12134): Parameter "LPM_WIDTHD" = "6"
+    Info (12134): Parameter "LPM_NREPRESENTATION" = "UNSIGNED"
+    Info (12134): Parameter "LPM_DREPRESENTATION" = "UNSIGNED"
+Info (12021): Found 1 design units, including 1 entities, in source file db/lpm_divide_kbm.tdf
+    Info (12023): Found entity 1: lpm_divide_kbm File: C:/Users/josee/CE3201_PF/db/lpm_divide_kbm.tdf Line: 24
+Info (12021): Found 1 design units, including 1 entities, in source file db/sign_div_unsign_tlh.tdf
+    Info (12023): Found entity 1: sign_div_unsign_tlh File: C:/Users/josee/CE3201_PF/db/sign_div_unsign_tlh.tdf Line: 24
+Info (12021): Found 1 design units, including 1 entities, in source file db/alt_u_div_qve.tdf
+    Info (12023): Found entity 1: alt_u_div_qve File: C:/Users/josee/CE3201_PF/db/alt_u_div_qve.tdf Line: 22
+Warning (12241): 6 hierarchies have connectivity warnings - see the Connectivity Checks report folder
 Warning (13024): Output pins are stuck at VCC or GND
     Warning (13410): Pin "VGA_Sync_N" is stuck at VCC File: C:/Users/josee/CE3201_PF/Gambling_Tec.sv Line: 5
 Info (286030): Timing-Driven Synthesis is running
@@ -2827,15 +3212,15 @@ Warning (21074): Design contains 32 input pin(s) that do not drive logic
     Warning (15610): No output dependent on input pin "Instruction[29]" File: C:/Users/josee/CE3201_PF/Gambling_Tec.sv Line: 2
     Warning (15610): No output dependent on input pin "Instruction[30]" File: C:/Users/josee/CE3201_PF/Gambling_Tec.sv Line: 2
     Warning (15610): No output dependent on input pin "Instruction[31]" File: C:/Users/josee/CE3201_PF/Gambling_Tec.sv Line: 2
-Info (21057): Implemented 674 device resources after synthesis - the final resource count might be different
+Info (21057): Implemented 1283 device resources after synthesis - the final resource count might be different
     Info (21058): Implemented 35 input pins
     Info (21059): Implemented 29 output pins
-    Info (21061): Implemented 610 logic cells
-Info: Quartus Prime Analysis & Synthesis was successful. 0 errors, 65 warnings
-    Info: Peak virtual memory: 4859 megabytes
-    Info: Processing ended: Tue Jun 17 00:44:58 2025
-    Info: Elapsed time: 00:00:23
-    Info: Total CPU time (on all processors): 00:00:43
+    Info (21061): Implemented 1219 logic cells
+Info: Quartus Prime Analysis & Synthesis was successful. 0 errors, 86 warnings
+    Info: Peak virtual memory: 4879 megabytes
+    Info: Processing ended: Tue Jun 17 16:33:45 2025
+    Info: Elapsed time: 00:00:16
+    Info: Total CPU time (on all processors): 00:00:28
 
 
 +------------------------------------------+
