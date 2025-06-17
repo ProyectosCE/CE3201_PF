@@ -26,7 +26,7 @@ main_loop:
     
     LDR R5, [R0]
     CMP R5, #0x29
-    BEQ store_symbol
+    BEQ wait_release
 
     LDR R6, [R1]
     ADD R6, R6, #1
@@ -38,8 +38,6 @@ update_counter:
     STR R6, [R1]
     B main_loop
 
-
-store_symbol:
 wait_release:
     LDR R5, [R0]
     CMP R5, #0x00
@@ -85,7 +83,6 @@ store_sym_common:
     BEQ check_victory
     B main_loop
 
-
 check_victory:
     
     SUB R10, R10, R10
@@ -94,7 +91,6 @@ check_victory:
     ADD R10, R10, #16
     LDR R11, [R10]
 
-    
     SUB R10, R10, R10
     ADD R10, R10, #4096
     ADD R10, R10, #64
@@ -103,7 +99,6 @@ check_victory:
     CMP R11, R12
     BNE lose
 
-    
     SUB R10, R10, R10
     ADD R10, R10, #4096
     ADD R10, R10, #64
