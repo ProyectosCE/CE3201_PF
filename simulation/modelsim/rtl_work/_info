@@ -10,7 +10,7 @@ cModel Technology
 Z0 dC:/Users/jimmy/GitHub/CE3201_PF/simulation/modelsim
 vAdder
 Z1 DXx6 sv_std 3 std 0 22 AD7iAPLo6nTIKk<N0eo=D3
-Z2 !s110 1750102936
+Z2 !s110 1750122357
 !i10b 1
 !s100 8QVUnY5[dPPgP^cR9nYl12
 I9HVTNZUSQdBEC@Hd=_:oc1
@@ -26,7 +26,7 @@ Z5 OV;L;10.5b;63
 r1
 !s85 0
 31
-Z6 !s108 1750102936.000000
+Z6 !s108 1750122357.000000
 !s107 C:/Users/jimmy/GitHub/CE3201_PF/Adder.sv|
 !s90 -reportprogress|300|-sv|-work|work|+incdir+C:/Users/jimmy/GitHub/CE3201_PF|C:/Users/jimmy/GitHub/CE3201_PF/Adder.sv|
 !i113 1
@@ -62,25 +62,25 @@ R9
 n@a@l@u
 vALU_Decoder
 R1
-Z10 !s110 1750102937
+R2
 !i10b 1
 !s100 ZD5EGZZ<6mjz3c^JXURRA2
 ISRU9zm6Oo7`z6[1iCT`ZL0
 R3
-Z11 !s105 Decoder_sv_unit
+Z10 !s105 Decoder_sv_unit
 S1
 R0
-Z12 w1750102515
-Z13 8C:/Users/jimmy/GitHub/CE3201_PF/Decoder.sv
-Z14 FC:/Users/jimmy/GitHub/CE3201_PF/Decoder.sv
+Z11 w1750102515
+Z12 8C:/Users/jimmy/GitHub/CE3201_PF/Decoder.sv
+Z13 FC:/Users/jimmy/GitHub/CE3201_PF/Decoder.sv
 L0 134
 R5
 r1
 !s85 0
 31
-Z15 !s108 1750102937.000000
-Z16 !s107 C:/Users/jimmy/GitHub/CE3201_PF/Decoder.sv|
-Z17 !s90 -reportprogress|300|-sv|-work|work|+incdir+C:/Users/jimmy/GitHub/CE3201_PF|C:/Users/jimmy/GitHub/CE3201_PF/Decoder.sv|
+R6
+Z14 !s107 C:/Users/jimmy/GitHub/CE3201_PF/Decoder.sv|
+Z15 !s90 -reportprogress|300|-sv|-work|work|+incdir+C:/Users/jimmy/GitHub/CE3201_PF|C:/Users/jimmy/GitHub/CE3201_PF/Decoder.sv|
 !i113 1
 R7
 R8
@@ -114,7 +114,7 @@ R9
 n@condition_@check
 vControl_Unit
 R1
-R10
+R2
 !i10b 1
 !s100 1Ga@Dz4S<BfTXakPVP:TK2
 I[1HgERZ>?P[;44UCOE`HV3
@@ -122,7 +122,7 @@ R3
 !s105 Control_Unit_sv_unit
 S1
 R0
-R12
+R11
 8C:/Users/jimmy/GitHub/CE3201_PF/Control_Unit.sv
 FC:/Users/jimmy/GitHub/CE3201_PF/Control_Unit.sv
 L0 1
@@ -130,7 +130,7 @@ R5
 r1
 !s85 0
 31
-R15
+R6
 !s107 C:/Users/jimmy/GitHub/CE3201_PF/Control_Unit.sv|
 !s90 -reportprogress|300|-sv|-work|work|+incdir+C:/Users/jimmy/GitHub/CE3201_PF|C:/Users/jimmy/GitHub/CE3201_PF/Control_Unit.sv|
 !i113 1
@@ -148,7 +148,7 @@ R3
 !s105 CPU_sv_unit
 S1
 R0
-Z18 w1750102520
+Z16 w1750102520
 8C:/Users/jimmy/GitHub/CE3201_PF/CPU.sv
 FC:/Users/jimmy/GitHub/CE3201_PF/CPU.sv
 L0 1
@@ -192,25 +192,25 @@ R9
 n@data_@memory
 vDecoder
 R1
-R10
+R2
 !i10b 1
 !s100 T>RS7713`<NF]SfEQPAkJ1
 I=VG^8nV[bRMKSmTiD_`A?0
 R3
-R11
+R10
 S1
 R0
+R11
 R12
 R13
-R14
 L0 2
 R5
 r1
 !s85 0
 31
+R6
+R14
 R15
-R16
-R17
 !i113 1
 R7
 R8
@@ -244,15 +244,15 @@ R9
 n@extender
 vGambling_Tec
 R1
-R10
+R2
 !i10b 1
-!s100 mL[NB@3I1H^a_h1_aI`3U3
-ILl5[:P18JPkzWV>n8A1jZ1
+!s100 G9R>F9UCg1[`QTFaeT4_C2
+ISPBn5H[f3kOZ:F2C^;BfV2
 R3
 !s105 Gambling_Tec_sv_unit
 S1
 R0
-R18
+w1750120807
 8C:/Users/jimmy/GitHub/CE3201_PF/Gambling_Tec.sv
 FC:/Users/jimmy/GitHub/CE3201_PF/Gambling_Tec.sv
 L0 1
@@ -268,27 +268,53 @@ R7
 R8
 R9
 n@gambling_@tec
+vKeycode_Store
+R1
+Z17 !s110 1750122358
+!i10b 1
+!s100 <@8ZEn=il42W:CYXNzi7g1
+I61G0kKz^<2Y<GJfjhzFYE1
+R3
+!s105 Keycode_Store_sv_unit
+S1
+R0
+w1750120617
+8C:/Users/jimmy/GitHub/CE3201_PF/Keycode_Store.sv
+FC:/Users/jimmy/GitHub/CE3201_PF/Keycode_Store.sv
+L0 2
+R5
+r1
+!s85 0
+31
+Z18 !s108 1750122358.000000
+!s107 C:/Users/jimmy/GitHub/CE3201_PF/Keycode_Store.sv|
+!s90 -reportprogress|300|-sv|-work|work|+incdir+C:/Users/jimmy/GitHub/CE3201_PF|C:/Users/jimmy/GitHub/CE3201_PF/Keycode_Store.sv|
+!i113 1
+R7
+R8
+R9
+n@keycode_@store
 vMain_Decoder
 R1
-R10
+R2
 !i10b 1
 !s100 jNjR=n8NDIM[UH@FoZV1g2
 I^_i7zUJ6Bz<Vm;oiJa23?2
 R3
-R11
+R10
 S1
 R0
+R11
 R12
 R13
-R14
 L0 60
 R5
 r1
 !s85 0
 31
+R6
+R14
 R15
-R16
-R17
 !i113 1
 R7
 R8
@@ -322,30 +348,56 @@ R9
 n@mux
 vPC_Logic
 R1
-R10
+R2
 !i10b 1
 !s100 K=OETM58:kLOg9XDKIg;>0
 Ij>bRECcScIfhTLU^8@@JT3
 R3
-R11
+R10
 S1
 R0
+R11
 R12
 R13
-R14
 L0 49
 R5
 r1
 !s85 0
 31
+R6
+R14
 R15
-R16
-R17
 !i113 1
 R7
 R8
 R9
 n@p@c_@logic
+vPs2_Key
+R1
+R17
+!i10b 1
+!s100 @zHeEcn6N_I;Vah0CDMUe3
+IYPGja7ha4gGkPH6[BclMe2
+R3
+!s105 Ps2_Key_sv_unit
+S1
+R0
+w1750121756
+8C:/Users/jimmy/GitHub/CE3201_PF/Ps2_Key.sv
+FC:/Users/jimmy/GitHub/CE3201_PF/Ps2_Key.sv
+L0 1
+R5
+r1
+!s85 0
+31
+R18
+!s107 C:/Users/jimmy/GitHub/CE3201_PF/Ps2_Key.sv|
+!s90 -reportprogress|300|-sv|-work|work|+incdir+C:/Users/jimmy/GitHub/CE3201_PF|C:/Users/jimmy/GitHub/CE3201_PF/Ps2_Key.sv|
+!i113 1
+R7
+R8
+R9
+n@ps2_@key
 vRegister
 R1
 R2
@@ -400,7 +452,7 @@ R9
 n@register_@file
 vROM
 R1
-R10
+R17
 !i10b 1
 !s100 bmV2PCZjOa4[4Oj5BQoTE3
 I5hgV>==7RO0hZMIc]>_b]0
@@ -408,7 +460,7 @@ R3
 !s105 ROM_sv_unit
 S1
 R0
-R18
+R16
 8C:/Users/jimmy/GitHub/CE3201_PF/ROM.sv
 FC:/Users/jimmy/GitHub/CE3201_PF/ROM.sv
 L0 1
@@ -416,7 +468,7 @@ R5
 r1
 !s85 0
 31
-R15
+R18
 !s107 C:/Users/jimmy/GitHub/CE3201_PF/ROM.sv|
 !s90 -reportprogress|300|-sv|-work|work|+incdir+C:/Users/jimmy/GitHub/CE3201_PF|C:/Users/jimmy/GitHub/CE3201_PF/ROM.sv|
 !i113 1
@@ -424,29 +476,29 @@ R7
 R8
 R9
 n@r@o@m
-vtb_Gambling_Tec_ROM
+vtb_Keycode_Store
 R1
-R10
+R17
 !i10b 1
-!s100 JeUI2>W0f75kKlc9a127;0
-If?IF1zPA2@hCi33MHU^NS1
+!s100 EXnDoT2ZMgeIoPGD;L4=>3
+Ik1[8VRKm:YPTZeRgn=ze:0
 R3
-!s105 tb_Gambling_Tec_ROM_sv_unit
+!s105 tb_Keycode_Store_sv_unit
 S1
 R0
-R18
-8C:/Users/jimmy/GitHub/CE3201_PF/tb_Gambling_Tec_ROM.sv
-FC:/Users/jimmy/GitHub/CE3201_PF/tb_Gambling_Tec_ROM.sv
-L0 3
+w1750122343
+8C:/Users/jimmy/GitHub/CE3201_PF/tb_Keycode_Store.sv
+FC:/Users/jimmy/GitHub/CE3201_PF/tb_Keycode_Store.sv
+L0 2
 R5
 r1
 !s85 0
 31
-R15
-!s107 C:/Users/jimmy/GitHub/CE3201_PF/tb_Gambling_Tec_ROM.sv|
-!s90 -reportprogress|300|-sv|-work|work|+incdir+C:/Users/jimmy/GitHub/CE3201_PF|C:/Users/jimmy/GitHub/CE3201_PF/tb_Gambling_Tec_ROM.sv|
+R18
+!s107 C:/Users/jimmy/GitHub/CE3201_PF/tb_Keycode_Store.sv|
+!s90 -reportprogress|300|-sv|-work|work|+incdir+C:/Users/jimmy/GitHub/CE3201_PF|C:/Users/jimmy/GitHub/CE3201_PF/tb_Keycode_Store.sv|
 !i113 1
 R7
 R8
 R9
-ntb_@gambling_@tec_@r@o@m
+ntb_@keycode_@store

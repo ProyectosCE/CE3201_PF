@@ -1,6 +1,9 @@
 |Gambling_Tec
-clk => clk.IN2
+clk => clk.IN3
 rst => rst.IN1
+DATA_PS2 => DATA_PS2.IN1
+PS2_CLK => PS2_CLK.IN1
+key_ready << Ps2_Key:ps2_inst.data_ready
 
 
 |Gambling_Tec|ROM:rom0
@@ -2135,5 +2138,87 @@ rd[28] <= RAM.DATAOUT28
 rd[29] <= RAM.DATAOUT29
 rd[30] <= RAM.DATAOUT30
 rd[31] <= RAM.DATAOUT31
+
+
+|Gambling_Tec|Ps2_Key:ps2_inst
+clk => data_ready~reg0.CLK
+clk => key_code[0]~reg0.CLK
+clk => key_code[1]~reg0.CLK
+clk => key_code[2]~reg0.CLK
+clk => key_code[3]~reg0.CLK
+clk => key_code[4]~reg0.CLK
+clk => key_code[5]~reg0.CLK
+clk => key_code[6]~reg0.CLK
+clk => key_code[7]~reg0.CLK
+clk => valid_code.CLK
+clk => previous_state.CLK
+clk => full_buffer.CLK
+clk => counter[0].CLK
+clk => counter[1].CLK
+clk => counter[2].CLK
+clk => counter[3].CLK
+clk => scan_code[0].CLK
+clk => scan_code[1].CLK
+clk => scan_code[2].CLK
+clk => scan_code[3].CLK
+clk => scan_code[4].CLK
+clk => scan_code[5].CLK
+clk => scan_code[6].CLK
+clk => scan_code[7].CLK
+clk => scan_code[8].CLK
+clk => scan_code[9].CLK
+clk => scan_code[10].CLK
+clk => error.CLK
+clk => read.CLK
+clk => read_counter[0].CLK
+clk => read_counter[1].CLK
+clk => read_counter[2].CLK
+clk => read_counter[3].CLK
+clk => read_counter[4].CLK
+clk => read_counter[5].CLK
+clk => read_counter[6].CLK
+clk => read_counter[7].CLK
+clk => read_counter[8].CLK
+clk => read_counter[9].CLK
+clk => read_counter[10].CLK
+clk => read_counter[11].CLK
+clk => trigger.CLK
+clk => down_counter[0].CLK
+clk => down_counter[1].CLK
+clk => down_counter[2].CLK
+clk => down_counter[3].CLK
+clk => down_counter[4].CLK
+clk => down_counter[5].CLK
+clk => down_counter[6].CLK
+clk => down_counter[7].CLK
+ps2_clk => always2.IN1
+ps2_clk => read.OUTPUTSELECT
+ps2_clk => error.OUTPUTSELECT
+ps2_clk => scan_code.OUTPUTSELECT
+ps2_clk => scan_code.OUTPUTSELECT
+ps2_clk => scan_code.OUTPUTSELECT
+ps2_clk => scan_code.OUTPUTSELECT
+ps2_clk => scan_code.OUTPUTSELECT
+ps2_clk => scan_code.OUTPUTSELECT
+ps2_clk => scan_code.OUTPUTSELECT
+ps2_clk => scan_code.OUTPUTSELECT
+ps2_clk => scan_code.OUTPUTSELECT
+ps2_clk => scan_code.OUTPUTSELECT
+ps2_clk => scan_code.OUTPUTSELECT
+ps2_clk => counter.OUTPUTSELECT
+ps2_clk => counter.OUTPUTSELECT
+ps2_clk => counter.OUTPUTSELECT
+ps2_clk => counter.OUTPUTSELECT
+ps2_clk => previous_state.DATAIN
+ps2_data => scan_code.DATAB
+key_code[0] <= key_code[0]~reg0.DB_MAX_OUTPUT_PORT_TYPE
+key_code[1] <= key_code[1]~reg0.DB_MAX_OUTPUT_PORT_TYPE
+key_code[2] <= key_code[2]~reg0.DB_MAX_OUTPUT_PORT_TYPE
+key_code[3] <= key_code[3]~reg0.DB_MAX_OUTPUT_PORT_TYPE
+key_code[4] <= key_code[4]~reg0.DB_MAX_OUTPUT_PORT_TYPE
+key_code[5] <= key_code[5]~reg0.DB_MAX_OUTPUT_PORT_TYPE
+key_code[6] <= key_code[6]~reg0.DB_MAX_OUTPUT_PORT_TYPE
+key_code[7] <= key_code[7]~reg0.DB_MAX_OUTPUT_PORT_TYPE
+data_ready <= data_ready~reg0.DB_MAX_OUTPUT_PORT_TYPE
 
 
