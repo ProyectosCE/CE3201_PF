@@ -16,7 +16,7 @@ module Symbol #(
     Square_Area #(.x0(x0), .x1(x1), .y0(y0), .y1(y1), .corn(0)) form0 (.Q_X(Q_X), .Q_Y(Q_Y), .Aden(a));
     Square_Area #(.x0(x0), .x1(x1), .y0(y0), .y1(y1), .corn(6)) form1 (.Q_X(Q_X), .Q_Y(Q_Y), .Aden(b));
     Square_Area #(.x0(x0), .x1(x1), .y0(y0), .y1(y1), .corn(11)) form2 (.Q_X(Q_X), .Q_Y(Q_Y), .Aden(c));
-    Square_Area #(.x0(x0+2), .x1(x1-2), .y0(y0+2), .y1(y1-2), .corn(0)) form3 (.Q_X(Q_X), .Q_Y(Q_Y), .Aden(d));
+    Square_Area #(.x0(x0-2), .x1(x1+2), .y0(y0+8), .y1(y1-4), .corn(8)) form3 (.Q_X(Q_X), .Q_Y(Q_Y), .Aden(d));
 
     always_comb begin
         case (rot_state)

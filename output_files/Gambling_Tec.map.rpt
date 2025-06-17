@@ -1,5 +1,5 @@
 Analysis & Synthesis report for Gambling_Tec
-Mon Jun 16 17:12:22 2025
+Mon Jun 16 18:54:42 2025
 Quartus Prime Version 18.1.0 Build 625 09/12/2018 SJ Lite Edition
 
 
@@ -192,13 +192,13 @@ refer to the applicable agreement for further details.
 +-------------------------------------------------------------------------------+
 ; Analysis & Synthesis Summary                                                  ;
 +---------------------------------+---------------------------------------------+
-; Analysis & Synthesis Status     ; Successful - Mon Jun 16 17:12:22 2025       ;
+; Analysis & Synthesis Status     ; Successful - Mon Jun 16 18:54:42 2025       ;
 ; Quartus Prime Version           ; 18.1.0 Build 625 09/12/2018 SJ Lite Edition ;
 ; Revision Name                   ; Gambling_Tec                                ;
 ; Top-level Entity Name           ; Gambling_Tec                                ;
 ; Family                          ; Cyclone V                                   ;
 ; Logic utilization (in ALMs)     ; N/A                                         ;
-; Total registers                 ; 43                                          ;
+; Total registers                 ; 44                                          ;
 ; Total pins                      ; 64                                          ;
 ; Total virtual pins              ; 0                                           ;
 ; Total block memory bits         ; 0                                           ;
@@ -312,7 +312,8 @@ refer to the applicable agreement for further details.
 ;                            ;             ;
 ; Usage by Processor         ; % Time Used ;
 ;     Processor 1            ; 100.0%      ;
-;     Processors 2-4         ;   0.0%      ;
+;     Processor 2            ;   0.0%      ;
+;     Processors 3-4         ;   0.0%      ;
 +----------------------------+-------------+
 
 
@@ -363,25 +364,25 @@ refer to the applicable agreement for further details.
 +---------------------------------------------+------------------------------------------------+
 ; Resource                                    ; Usage                                          ;
 +---------------------------------------------+------------------------------------------------+
-; Estimate of Logic utilization (ALMs needed) ; 324                                            ;
+; Estimate of Logic utilization (ALMs needed) ; 335                                            ;
 ;                                             ;                                                ;
-; Combinational ALUT usage for logic          ; 572                                            ;
-;     -- 7 input functions                    ; 18                                             ;
-;     -- 6 input functions                    ; 54                                             ;
-;     -- 5 input functions                    ; 122                                            ;
-;     -- 4 input functions                    ; 107                                            ;
-;     -- <=3 input functions                  ; 271                                            ;
+; Combinational ALUT usage for logic          ; 598                                            ;
+;     -- 7 input functions                    ; 15                                             ;
+;     -- 6 input functions                    ; 53                                             ;
+;     -- 5 input functions                    ; 127                                            ;
+;     -- 4 input functions                    ; 100                                            ;
+;     -- <=3 input functions                  ; 303                                            ;
 ;                                             ;                                                ;
-; Dedicated logic registers                   ; 43                                             ;
+; Dedicated logic registers                   ; 44                                             ;
 ;                                             ;                                                ;
 ; I/O pins                                    ; 64                                             ;
 ;                                             ;                                                ;
 ; Total DSP Blocks                            ; 0                                              ;
 ;                                             ;                                                ;
-; Maximum fan-out node                        ; Vga_Controller:vga_control|Register:reg_x|Q[4] ;
-; Maximum fan-out                             ; 77                                             ;
-; Total fan-out                               ; 2350                                           ;
-; Average fan-out                             ; 3.16                                           ;
+; Maximum fan-out node                        ; Vga_Controller:vga_control|Register:reg_x|Q[5] ;
+; Maximum fan-out                             ; 68                                             ;
+; Total fan-out                               ; 2400                                           ;
+; Average fan-out                             ; 3.12                                           ;
 +---------------------------------------------+------------------------------------------------+
 
 
@@ -390,37 +391,38 @@ refer to the applicable agreement for further details.
 +----------------------------------------------+---------------------+---------------------------+-------------------+------------+------+--------------+------------------------------------------------------------------------------------------------------------------------------------------------------+---------------------+--------------+
 ; Compilation Hierarchy Node                   ; Combinational ALUTs ; Dedicated Logic Registers ; Block Memory Bits ; DSP Blocks ; Pins ; Virtual Pins ; Full Hierarchy Name                                                                                                                                  ; Entity Name         ; Library Name ;
 +----------------------------------------------+---------------------+---------------------------+-------------------+------------+------+--------------+------------------------------------------------------------------------------------------------------------------------------------------------------+---------------------+--------------+
-; |Gambling_Tec                                ; 572 (0)             ; 43 (0)                    ; 0                 ; 0          ; 64   ; 0            ; |Gambling_Tec                                                                                                                                        ; Gambling_Tec        ; work         ;
-;    |Vga_Controller:vga_control|              ; 571 (120)           ; 42 (0)                    ; 0                 ; 0          ; 0    ; 0            ; |Gambling_Tec|Vga_Controller:vga_control                                                                                                             ; Vga_Controller      ; work         ;
+; |Gambling_Tec                                ; 598 (0)             ; 44 (0)                    ; 0                 ; 0          ; 64   ; 0            ; |Gambling_Tec                                                                                                                                        ; Gambling_Tec        ; work         ;
+;    |Vga_Controller:vga_control|              ; 597 (124)           ; 43 (0)                    ; 0                 ; 0          ; 0    ; 0            ; |Gambling_Tec|Vga_Controller:vga_control                                                                                                             ; Vga_Controller      ; work         ;
 ;       |Button:Btn1|                          ; 8 (0)               ; 0 (0)                     ; 0                 ; 0          ; 0    ; 0            ; |Gambling_Tec|Vga_Controller:vga_control|Button:Btn1                                                                                                 ; Button              ; work         ;
-;          |Square_Area:Cua_Btn_sombra|        ; 4 (4)               ; 0 (0)                     ; 0                 ; 0          ; 0    ; 0            ; |Gambling_Tec|Vga_Controller:vga_control|Button:Btn1|Square_Area:Cua_Btn_sombra                                                                      ; Square_Area         ; work         ;
-;          |Square_Area:Cua_Btn|               ; 4 (4)               ; 0 (0)                     ; 0                 ; 0          ; 0    ; 0            ; |Gambling_Tec|Vga_Controller:vga_control|Button:Btn1|Square_Area:Cua_Btn                                                                             ; Square_Area         ; work         ;
-;       |Button:Btn3|                          ; 4 (0)               ; 0 (0)                     ; 0                 ; 0          ; 0    ; 0            ; |Gambling_Tec|Vga_Controller:vga_control|Button:Btn3                                                                                                 ; Button              ; work         ;
-;          |Square_Area:Cua_Btn_sombra|        ; 2 (2)               ; 0 (0)                     ; 0                 ; 0          ; 0    ; 0            ; |Gambling_Tec|Vga_Controller:vga_control|Button:Btn3|Square_Area:Cua_Btn_sombra                                                                      ; Square_Area         ; work         ;
-;          |Square_Area:Cua_Btn|               ; 2 (2)               ; 0 (0)                     ; 0                 ; 0          ; 0    ; 0            ; |Gambling_Tec|Vga_Controller:vga_control|Button:Btn3|Square_Area:Cua_Btn                                                                             ; Square_Area         ; work         ;
-;       |Column:c1|                            ; 37 (0)              ; 0 (0)                     ; 0                 ; 0          ; 0    ; 0            ; |Gambling_Tec|Vga_Controller:vga_control|Column:c1                                                                                                   ; Column              ; work         ;
-;          |Square_Area:cua_D2|                ; 7 (7)               ; 0 (0)                     ; 0                 ; 0          ; 0    ; 0            ; |Gambling_Tec|Vga_Controller:vga_control|Column:c1|Square_Area:cua_D2                                                                                ; Square_Area         ; work         ;
+;          |Square_Area:Cua_Btn_sombra|        ; 3 (3)               ; 0 (0)                     ; 0                 ; 0          ; 0    ; 0            ; |Gambling_Tec|Vga_Controller:vga_control|Button:Btn1|Square_Area:Cua_Btn_sombra                                                                      ; Square_Area         ; work         ;
+;          |Square_Area:Cua_Btn|               ; 5 (5)               ; 0 (0)                     ; 0                 ; 0          ; 0    ; 0            ; |Gambling_Tec|Vga_Controller:vga_control|Button:Btn1|Square_Area:Cua_Btn                                                                             ; Square_Area         ; work         ;
+;       |Button:Btn2|                          ; 1 (0)               ; 0 (0)                     ; 0                 ; 0          ; 0    ; 0            ; |Gambling_Tec|Vga_Controller:vga_control|Button:Btn2                                                                                                 ; Button              ; work         ;
+;          |Square_Area:Cua_Btn_sombra|        ; 1 (1)               ; 0 (0)                     ; 0                 ; 0          ; 0    ; 0            ; |Gambling_Tec|Vga_Controller:vga_control|Button:Btn2|Square_Area:Cua_Btn_sombra                                                                      ; Square_Area         ; work         ;
+;       |Button:Btn3|                          ; 3 (0)               ; 0 (0)                     ; 0                 ; 0          ; 0    ; 0            ; |Gambling_Tec|Vga_Controller:vga_control|Button:Btn3                                                                                                 ; Button              ; work         ;
+;          |Square_Area:Cua_Btn|               ; 3 (3)               ; 0 (0)                     ; 0                 ; 0          ; 0    ; 0            ; |Gambling_Tec|Vga_Controller:vga_control|Button:Btn3|Square_Area:Cua_Btn                                                                             ; Square_Area         ; work         ;
+;       |Column:c1|                            ; 42 (0)              ; 0 (0)                     ; 0                 ; 0          ; 0    ; 0            ; |Gambling_Tec|Vga_Controller:vga_control|Column:c1                                                                                                   ; Column              ; work         ;
+;          |Square_Area:cua_D2|                ; 10 (10)             ; 0 (0)                     ; 0                 ; 0          ; 0    ; 0            ; |Gambling_Tec|Vga_Controller:vga_control|Column:c1|Square_Area:cua_D2                                                                                ; Square_Area         ; work         ;
 ;          |Square_Area:cua_D3|                ; 4 (4)               ; 0 (0)                     ; 0                 ; 0          ; 0    ; 0            ; |Gambling_Tec|Vga_Controller:vga_control|Column:c1|Square_Area:cua_D3                                                                                ; Square_Area         ; work         ;
 ;          |Square_Area:cua_D4|                ; 5 (5)               ; 0 (0)                     ; 0                 ; 0          ; 0    ; 0            ; |Gambling_Tec|Vga_Controller:vga_control|Column:c1|Square_Area:cua_D4                                                                                ; Square_Area         ; work         ;
-;          |Square_Area:cua_D|                 ; 8 (8)               ; 0 (0)                     ; 0                 ; 0          ; 0    ; 0            ; |Gambling_Tec|Vga_Controller:vga_control|Column:c1|Square_Area:cua_D                                                                                 ; Square_Area         ; work         ;
+;          |Square_Area:cua_D|                 ; 10 (10)             ; 0 (0)                     ; 0                 ; 0          ; 0    ; 0            ; |Gambling_Tec|Vga_Controller:vga_control|Column:c1|Square_Area:cua_D                                                                                 ; Square_Area         ; work         ;
 ;          |Square_Area:sombra|                ; 13 (13)             ; 0 (0)                     ; 0                 ; 0          ; 0    ; 0            ; |Gambling_Tec|Vga_Controller:vga_control|Column:c1|Square_Area:sombra                                                                                ; Square_Area         ; work         ;
-;       |Column:c2|                            ; 10 (0)              ; 0 (0)                     ; 0                 ; 0          ; 0    ; 0            ; |Gambling_Tec|Vga_Controller:vga_control|Column:c2                                                                                                   ; Column              ; work         ;
-;          |Square_Area:cua_D2|                ; 1 (1)               ; 0 (0)                     ; 0                 ; 0          ; 0    ; 0            ; |Gambling_Tec|Vga_Controller:vga_control|Column:c2|Square_Area:cua_D2                                                                                ; Square_Area         ; work         ;
+;       |Column:c2|                            ; 17 (0)              ; 0 (0)                     ; 0                 ; 0          ; 0    ; 0            ; |Gambling_Tec|Vga_Controller:vga_control|Column:c2                                                                                                   ; Column              ; work         ;
+;          |Square_Area:cua_D2|                ; 6 (6)               ; 0 (0)                     ; 0                 ; 0          ; 0    ; 0            ; |Gambling_Tec|Vga_Controller:vga_control|Column:c2|Square_Area:cua_D2                                                                                ; Square_Area         ; work         ;
 ;          |Square_Area:cua_D3|                ; 3 (3)               ; 0 (0)                     ; 0                 ; 0          ; 0    ; 0            ; |Gambling_Tec|Vga_Controller:vga_control|Column:c2|Square_Area:cua_D3                                                                                ; Square_Area         ; work         ;
 ;          |Square_Area:cua_D4|                ; 3 (3)               ; 0 (0)                     ; 0                 ; 0          ; 0    ; 0            ; |Gambling_Tec|Vga_Controller:vga_control|Column:c2|Square_Area:cua_D4                                                                                ; Square_Area         ; work         ;
 ;          |Square_Area:cua_D|                 ; 1 (1)               ; 0 (0)                     ; 0                 ; 0          ; 0    ; 0            ; |Gambling_Tec|Vga_Controller:vga_control|Column:c2|Square_Area:cua_D                                                                                 ; Square_Area         ; work         ;
-;          |Square_Area:sombra|                ; 2 (2)               ; 0 (0)                     ; 0                 ; 0          ; 0    ; 0            ; |Gambling_Tec|Vga_Controller:vga_control|Column:c2|Square_Area:sombra                                                                                ; Square_Area         ; work         ;
+;          |Square_Area:sombra|                ; 4 (4)               ; 0 (0)                     ; 0                 ; 0          ; 0    ; 0            ; |Gambling_Tec|Vga_Controller:vga_control|Column:c2|Square_Area:sombra                                                                                ; Square_Area         ; work         ;
 ;       |Column:c3|                            ; 22 (0)              ; 0 (0)                     ; 0                 ; 0          ; 0    ; 0            ; |Gambling_Tec|Vga_Controller:vga_control|Column:c3                                                                                                   ; Column              ; work         ;
 ;          |Square_Area:cua_D2|                ; 4 (4)               ; 0 (0)                     ; 0                 ; 0          ; 0    ; 0            ; |Gambling_Tec|Vga_Controller:vga_control|Column:c3|Square_Area:cua_D2                                                                                ; Square_Area         ; work         ;
-;          |Square_Area:cua_D3|                ; 5 (5)               ; 0 (0)                     ; 0                 ; 0          ; 0    ; 0            ; |Gambling_Tec|Vga_Controller:vga_control|Column:c3|Square_Area:cua_D3                                                                                ; Square_Area         ; work         ;
+;          |Square_Area:cua_D3|                ; 6 (6)               ; 0 (0)                     ; 0                 ; 0          ; 0    ; 0            ; |Gambling_Tec|Vga_Controller:vga_control|Column:c3|Square_Area:cua_D3                                                                                ; Square_Area         ; work         ;
 ;          |Square_Area:cua_D4|                ; 5 (5)               ; 0 (0)                     ; 0                 ; 0          ; 0    ; 0            ; |Gambling_Tec|Vga_Controller:vga_control|Column:c3|Square_Area:cua_D4                                                                                ; Square_Area         ; work         ;
 ;          |Square_Area:cua_D|                 ; 2 (2)               ; 0 (0)                     ; 0                 ; 0          ; 0    ; 0            ; |Gambling_Tec|Vga_Controller:vga_control|Column:c3|Square_Area:cua_D                                                                                 ; Square_Area         ; work         ;
-;          |Square_Area:sombra|                ; 6 (6)               ; 0 (0)                     ; 0                 ; 0          ; 0    ; 0            ; |Gambling_Tec|Vga_Controller:vga_control|Column:c3|Square_Area:sombra                                                                                ; Square_Area         ; work         ;
+;          |Square_Area:sombra|                ; 5 (5)               ; 0 (0)                     ; 0                 ; 0          ; 0    ; 0            ; |Gambling_Tec|Vga_Controller:vga_control|Column:c3|Square_Area:sombra                                                                                ; Square_Area         ; work         ;
 ;       |Comparator:cmp_x|                     ; 6 (6)               ; 0 (0)                     ; 0                 ; 0          ; 0    ; 0            ; |Gambling_Tec|Vga_Controller:vga_control|Comparator:cmp_x                                                                                            ; Comparator          ; work         ;
 ;       |Counter:conut|                        ; 1 (1)               ; 2 (2)                     ; 0                 ; 0          ; 0    ; 0            ; |Gambling_Tec|Vga_Controller:vga_control|Counter:conut                                                                                               ; Counter             ; work         ;
 ;       |Counter:count_x|                      ; 10 (10)             ; 10 (10)                   ; 0                 ; 0          ; 0    ; 0            ; |Gambling_Tec|Vga_Controller:vga_control|Counter:count_x                                                                                             ; Counter             ; work         ;
 ;       |Counter:count_y|                      ; 10 (10)             ; 10 (10)                   ; 0                 ; 0          ; 0    ; 0            ; |Gambling_Tec|Vga_Controller:vga_control|Counter:count_y                                                                                             ; Counter             ; work         ;
-;       |Draw_C:colo|                          ; 181 (16)            ; 0 (0)                     ; 0                 ; 0          ; 0    ; 0            ; |Gambling_Tec|Vga_Controller:vga_control|Draw_C:colo                                                                                                 ; Draw_C              ; work         ;
+;       |Draw_C:colo|                          ; 182 (17)            ; 0 (0)                     ; 0                 ; 0          ; 0    ; 0            ; |Gambling_Tec|Vga_Controller:vga_control|Draw_C:colo                                                                                                 ; Draw_C              ; work         ;
 ;          |lpm_divide:Div0|                   ; 83 (0)              ; 0 (0)                     ; 0                 ; 0          ; 0    ; 0            ; |Gambling_Tec|Vga_Controller:vga_control|Draw_C:colo|lpm_divide:Div0                                                                                 ; lpm_divide          ; work         ;
 ;             |lpm_divide_hbm:auto_generated|  ; 83 (0)              ; 0 (0)                     ; 0                 ; 0          ; 0    ; 0            ; |Gambling_Tec|Vga_Controller:vga_control|Draw_C:colo|lpm_divide:Div0|lpm_divide_hbm:auto_generated                                                   ; lpm_divide_hbm      ; work         ;
 ;                |sign_div_unsign_rlh:divider| ; 83 (0)              ; 0 (0)                     ; 0                 ; 0          ; 0    ; 0            ; |Gambling_Tec|Vga_Controller:vga_control|Draw_C:colo|lpm_divide:Div0|lpm_divide_hbm:auto_generated|sign_div_unsign_rlh:divider                       ; sign_div_unsign_rlh ; work         ;
@@ -430,59 +432,59 @@ refer to the applicable agreement for further details.
 ;                |sign_div_unsign_rlh:divider| ; 82 (0)              ; 0 (0)                     ; 0                 ; 0          ; 0    ; 0            ; |Gambling_Tec|Vga_Controller:vga_control|Draw_C:colo|lpm_divide:Div1|lpm_divide_hbm:auto_generated|sign_div_unsign_rlh:divider                       ; sign_div_unsign_rlh ; work         ;
 ;                   |alt_u_div_lve:divider|    ; 82 (82)             ; 0 (0)                     ; 0                 ; 0          ; 0    ; 0            ; |Gambling_Tec|Vga_Controller:vga_control|Draw_C:colo|lpm_divide:Div1|lpm_divide_hbm:auto_generated|sign_div_unsign_rlh:divider|alt_u_div_lve:divider ; alt_u_div_lve       ; work         ;
 ;       |Draw_CASH:cash_display|               ; 24 (24)             ; 0 (0)                     ; 0                 ; 0          ; 0    ; 0            ; |Gambling_Tec|Vga_Controller:vga_control|Draw_CASH:cash_display                                                                                      ; Draw_CASH           ; work         ;
-;       |Mux93:color_selector|                 ; 10 (10)             ; 0 (0)                     ; 0                 ; 0          ; 0    ; 0            ; |Gambling_Tec|Vga_Controller:vga_control|Mux93:color_selector                                                                                        ; Mux93               ; work         ;
+;       |Mux93:color_selector|                 ; 8 (8)               ; 0 (0)                     ; 0                 ; 0          ; 0    ; 0            ; |Gambling_Tec|Vga_Controller:vga_control|Mux93:color_selector                                                                                        ; Mux93               ; work         ;
 ;       |Panel:panel_izquierdo|                ; 32 (0)              ; 0 (0)                     ; 0                 ; 0          ; 0    ; 0            ; |Gambling_Tec|Vga_Controller:vga_control|Panel:panel_izquierdo                                                                                       ; Panel               ; work         ;
-;          |Square_Area:cua_D2|                ; 10 (10)             ; 0 (0)                     ; 0                 ; 0          ; 0    ; 0            ; |Gambling_Tec|Vga_Controller:vga_control|Panel:panel_izquierdo|Square_Area:cua_D2                                                                    ; Square_Area         ; work         ;
-;          |Square_Area:cua_D3|                ; 4 (4)               ; 0 (0)                     ; 0                 ; 0          ; 0    ; 0            ; |Gambling_Tec|Vga_Controller:vga_control|Panel:panel_izquierdo|Square_Area:cua_D3                                                                    ; Square_Area         ; work         ;
+;          |Square_Area:cua_D2|                ; 9 (9)               ; 0 (0)                     ; 0                 ; 0          ; 0    ; 0            ; |Gambling_Tec|Vga_Controller:vga_control|Panel:panel_izquierdo|Square_Area:cua_D2                                                                    ; Square_Area         ; work         ;
+;          |Square_Area:cua_D3|                ; 5 (5)               ; 0 (0)                     ; 0                 ; 0          ; 0    ; 0            ; |Gambling_Tec|Vga_Controller:vga_control|Panel:panel_izquierdo|Square_Area:cua_D3                                                                    ; Square_Area         ; work         ;
 ;          |Square_Area:cua_D4|                ; 4 (4)               ; 0 (0)                     ; 0                 ; 0          ; 0    ; 0            ; |Gambling_Tec|Vga_Controller:vga_control|Panel:panel_izquierdo|Square_Area:cua_D4                                                                    ; Square_Area         ; work         ;
 ;          |Square_Area:cua_D|                 ; 6 (6)               ; 0 (0)                     ; 0                 ; 0          ; 0    ; 0            ; |Gambling_Tec|Vga_Controller:vga_control|Panel:panel_izquierdo|Square_Area:cua_D                                                                     ; Square_Area         ; work         ;
 ;          |Square_Area:sombra|                ; 8 (8)               ; 0 (0)                     ; 0                 ; 0          ; 0    ; 0            ; |Gambling_Tec|Vga_Controller:vga_control|Panel:panel_izquierdo|Square_Area:sombra                                                                    ; Square_Area         ; work         ;
-;       |Panel:panel_msg|                      ; 31 (5)              ; 0 (0)                     ; 0                 ; 0          ; 0    ; 0            ; |Gambling_Tec|Vga_Controller:vga_control|Panel:panel_msg                                                                                             ; Panel               ; work         ;
+;       |Panel:panel_msg|                      ; 27 (4)              ; 0 (0)                     ; 0                 ; 0          ; 0    ; 0            ; |Gambling_Tec|Vga_Controller:vga_control|Panel:panel_msg                                                                                             ; Panel               ; work         ;
 ;          |Square_Area:cua_D2|                ; 7 (7)               ; 0 (0)                     ; 0                 ; 0          ; 0    ; 0            ; |Gambling_Tec|Vga_Controller:vga_control|Panel:panel_msg|Square_Area:cua_D2                                                                          ; Square_Area         ; work         ;
-;          |Square_Area:cua_D3|                ; 5 (5)               ; 0 (0)                     ; 0                 ; 0          ; 0    ; 0            ; |Gambling_Tec|Vga_Controller:vga_control|Panel:panel_msg|Square_Area:cua_D3                                                                          ; Square_Area         ; work         ;
-;          |Square_Area:cua_D4|                ; 6 (6)               ; 0 (0)                     ; 0                 ; 0          ; 0    ; 0            ; |Gambling_Tec|Vga_Controller:vga_control|Panel:panel_msg|Square_Area:cua_D4                                                                          ; Square_Area         ; work         ;
-;          |Square_Area:cua_D|                 ; 2 (2)               ; 0 (0)                     ; 0                 ; 0          ; 0    ; 0            ; |Gambling_Tec|Vga_Controller:vga_control|Panel:panel_msg|Square_Area:cua_D                                                                           ; Square_Area         ; work         ;
+;          |Square_Area:cua_D3|                ; 4 (4)               ; 0 (0)                     ; 0                 ; 0          ; 0    ; 0            ; |Gambling_Tec|Vga_Controller:vga_control|Panel:panel_msg|Square_Area:cua_D3                                                                          ; Square_Area         ; work         ;
+;          |Square_Area:cua_D4|                ; 2 (2)               ; 0 (0)                     ; 0                 ; 0          ; 0    ; 0            ; |Gambling_Tec|Vga_Controller:vga_control|Panel:panel_msg|Square_Area:cua_D4                                                                          ; Square_Area         ; work         ;
+;          |Square_Area:cua_D|                 ; 4 (4)               ; 0 (0)                     ; 0                 ; 0          ; 0    ; 0            ; |Gambling_Tec|Vga_Controller:vga_control|Panel:panel_msg|Square_Area:cua_D                                                                           ; Square_Area         ; work         ;
 ;          |Square_Area:sombra|                ; 6 (6)               ; 0 (0)                     ; 0                 ; 0          ; 0    ; 0            ; |Gambling_Tec|Vga_Controller:vga_control|Panel:panel_msg|Square_Area:sombra                                                                          ; Square_Area         ; work         ;
 ;       |Register:reg_x|                       ; 0 (0)               ; 10 (10)                   ; 0                 ; 0          ; 0    ; 0            ; |Gambling_Tec|Vga_Controller:vga_control|Register:reg_x                                                                                              ; Register            ; work         ;
 ;       |Register:reg_y|                       ; 0 (0)               ; 10 (10)                   ; 0                 ; 0          ; 0    ; 0            ; |Gambling_Tec|Vga_Controller:vga_control|Register:reg_y                                                                                              ; Register            ; work         ;
-;       |SevenSeg_Display:display_seg1|        ; 2 (0)               ; 0 (0)                     ; 0                 ; 0          ; 0    ; 0            ; |Gambling_Tec|Vga_Controller:vga_control|SevenSeg_Display:display_seg1                                                                               ; SevenSeg_Display    ; work         ;
-;          |Square_Area:segA|                  ; 1 (1)               ; 0 (0)                     ; 0                 ; 0          ; 0    ; 0            ; |Gambling_Tec|Vga_Controller:vga_control|SevenSeg_Display:display_seg1|Square_Area:segA                                                              ; Square_Area         ; work         ;
+;       |SevenSeg_Display:display_seg1|        ; 3 (0)               ; 0 (0)                     ; 0                 ; 0          ; 0    ; 0            ; |Gambling_Tec|Vga_Controller:vga_control|SevenSeg_Display:display_seg1                                                                               ; SevenSeg_Display    ; work         ;
+;          |Square_Area:segA|                  ; 2 (2)               ; 0 (0)                     ; 0                 ; 0          ; 0    ; 0            ; |Gambling_Tec|Vga_Controller:vga_control|SevenSeg_Display:display_seg1|Square_Area:segA                                                              ; Square_Area         ; work         ;
 ;          |Square_Area:segE|                  ; 1 (1)               ; 0 (0)                     ; 0                 ; 0          ; 0    ; 0            ; |Gambling_Tec|Vga_Controller:vga_control|SevenSeg_Display:display_seg1|Square_Area:segE                                                              ; Square_Area         ; work         ;
-;       |SevenSeg_Display:display_seg2|        ; 2 (0)               ; 0 (0)                     ; 0                 ; 0          ; 0    ; 0            ; |Gambling_Tec|Vga_Controller:vga_control|SevenSeg_Display:display_seg2                                                                               ; SevenSeg_Display    ; work         ;
-;          |Square_Area:segA|                  ; 1 (1)               ; 0 (0)                     ; 0                 ; 0          ; 0    ; 0            ; |Gambling_Tec|Vga_Controller:vga_control|SevenSeg_Display:display_seg2|Square_Area:segA                                                              ; Square_Area         ; work         ;
+;       |SevenSeg_Display:display_seg2|        ; 4 (0)               ; 0 (0)                     ; 0                 ; 0          ; 0    ; 0            ; |Gambling_Tec|Vga_Controller:vga_control|SevenSeg_Display:display_seg2                                                                               ; SevenSeg_Display    ; work         ;
+;          |Square_Area:segA|                  ; 3 (3)               ; 0 (0)                     ; 0                 ; 0          ; 0    ; 0            ; |Gambling_Tec|Vga_Controller:vga_control|SevenSeg_Display:display_seg2|Square_Area:segA                                                              ; Square_Area         ; work         ;
 ;          |Square_Area:segC|                  ; 1 (1)               ; 0 (0)                     ; 0                 ; 0          ; 0    ; 0            ; |Gambling_Tec|Vga_Controller:vga_control|SevenSeg_Display:display_seg2|Square_Area:segC                                                              ; Square_Area         ; work         ;
-;       |SevenSeg_Display:display_seg|         ; 13 (0)              ; 0 (0)                     ; 0                 ; 0          ; 0    ; 0            ; |Gambling_Tec|Vga_Controller:vga_control|SevenSeg_Display:display_seg                                                                                ; SevenSeg_Display    ; work         ;
-;          |Square_Area:segA|                  ; 5 (5)               ; 0 (0)                     ; 0                 ; 0          ; 0    ; 0            ; |Gambling_Tec|Vga_Controller:vga_control|SevenSeg_Display:display_seg|Square_Area:segA                                                               ; Square_Area         ; work         ;
-;          |Square_Area:segC|                  ; 3 (3)               ; 0 (0)                     ; 0                 ; 0          ; 0    ; 0            ; |Gambling_Tec|Vga_Controller:vga_control|SevenSeg_Display:display_seg|Square_Area:segC                                                               ; Square_Area         ; work         ;
+;       |SevenSeg_Display:display_seg|         ; 17 (0)              ; 0 (0)                     ; 0                 ; 0          ; 0    ; 0            ; |Gambling_Tec|Vga_Controller:vga_control|SevenSeg_Display:display_seg                                                                                ; SevenSeg_Display    ; work         ;
+;          |Square_Area:segA|                  ; 8 (8)               ; 0 (0)                     ; 0                 ; 0          ; 0    ; 0            ; |Gambling_Tec|Vga_Controller:vga_control|SevenSeg_Display:display_seg|Square_Area:segA                                                               ; Square_Area         ; work         ;
+;          |Square_Area:segC|                  ; 2 (2)               ; 0 (0)                     ; 0                 ; 0          ; 0    ; 0            ; |Gambling_Tec|Vga_Controller:vga_control|SevenSeg_Display:display_seg|Square_Area:segC                                                               ; Square_Area         ; work         ;
+;          |Square_Area:segD|                  ; 1 (1)               ; 0 (0)                     ; 0                 ; 0          ; 0    ; 0            ; |Gambling_Tec|Vga_Controller:vga_control|SevenSeg_Display:display_seg|Square_Area:segD                                                               ; Square_Area         ; work         ;
 ;          |Square_Area:segF|                  ; 3 (3)               ; 0 (0)                     ; 0                 ; 0          ; 0    ; 0            ; |Gambling_Tec|Vga_Controller:vga_control|SevenSeg_Display:display_seg|Square_Area:segF                                                               ; Square_Area         ; work         ;
-;          |Square_Area:segG|                  ; 2 (2)               ; 0 (0)                     ; 0                 ; 0          ; 0    ; 0            ; |Gambling_Tec|Vga_Controller:vga_control|SevenSeg_Display:display_seg|Square_Area:segG                                                               ; Square_Area         ; work         ;
-;       |Symbol:slot_0_0|                      ; 15 (1)              ; 0 (0)                     ; 0                 ; 0          ; 0    ; 0            ; |Gambling_Tec|Vga_Controller:vga_control|Symbol:slot_0_0                                                                                             ; Symbol              ; work         ;
-;          |Square_Area:form0|                 ; 2 (2)               ; 0 (0)                     ; 0                 ; 0          ; 0    ; 0            ; |Gambling_Tec|Vga_Controller:vga_control|Symbol:slot_0_0|Square_Area:form0                                                                           ; Square_Area         ; work         ;
-;          |Square_Area:form1|                 ; 4 (4)               ; 0 (0)                     ; 0                 ; 0          ; 0    ; 0            ; |Gambling_Tec|Vga_Controller:vga_control|Symbol:slot_0_0|Square_Area:form1                                                                           ; Square_Area         ; work         ;
-;          |Square_Area:form2|                 ; 6 (6)               ; 0 (0)                     ; 0                 ; 0          ; 0    ; 0            ; |Gambling_Tec|Vga_Controller:vga_control|Symbol:slot_0_0|Square_Area:form2                                                                           ; Square_Area         ; work         ;
-;          |Square_Area:form3|                 ; 2 (2)               ; 0 (0)                     ; 0                 ; 0          ; 0    ; 0            ; |Gambling_Tec|Vga_Controller:vga_control|Symbol:slot_0_0|Square_Area:form3                                                                           ; Square_Area         ; work         ;
-;       |Symbol:slot_0_1|                      ; 4 (0)               ; 0 (0)                     ; 0                 ; 0          ; 0    ; 0            ; |Gambling_Tec|Vga_Controller:vga_control|Symbol:slot_0_1                                                                                             ; Symbol              ; work         ;
-;          |Square_Area:form2|                 ; 4 (4)               ; 0 (0)                     ; 0                 ; 0          ; 0    ; 0            ; |Gambling_Tec|Vga_Controller:vga_control|Symbol:slot_0_1|Square_Area:form2                                                                           ; Square_Area         ; work         ;
-;       |Symbol:slot_0_2|                      ; 3 (0)               ; 0 (0)                     ; 0                 ; 0          ; 0    ; 0            ; |Gambling_Tec|Vga_Controller:vga_control|Symbol:slot_0_2                                                                                             ; Symbol              ; work         ;
-;          |Square_Area:form2|                 ; 3 (3)               ; 0 (0)                     ; 0                 ; 0          ; 0    ; 0            ; |Gambling_Tec|Vga_Controller:vga_control|Symbol:slot_0_2|Square_Area:form2                                                                           ; Square_Area         ; work         ;
-;       |Symbol:slot_1_0|                      ; 8 (1)               ; 0 (0)                     ; 0                 ; 0          ; 0    ; 0            ; |Gambling_Tec|Vga_Controller:vga_control|Symbol:slot_1_0                                                                                             ; Symbol              ; work         ;
+;          |Square_Area:segG|                  ; 3 (3)               ; 0 (0)                     ; 0                 ; 0          ; 0    ; 0            ; |Gambling_Tec|Vga_Controller:vga_control|SevenSeg_Display:display_seg|Square_Area:segG                                                               ; Square_Area         ; work         ;
+;       |Symbol:slot_0_0|                      ; 21 (1)              ; 0 (0)                     ; 0                 ; 0          ; 0    ; 0            ; |Gambling_Tec|Vga_Controller:vga_control|Symbol:slot_0_0                                                                                             ; Symbol              ; work         ;
+;          |Square_Area:form1|                 ; 5 (5)               ; 0 (0)                     ; 0                 ; 0          ; 0    ; 0            ; |Gambling_Tec|Vga_Controller:vga_control|Symbol:slot_0_0|Square_Area:form1                                                                           ; Square_Area         ; work         ;
+;          |Square_Area:form2|                 ; 7 (7)               ; 0 (0)                     ; 0                 ; 0          ; 0    ; 0            ; |Gambling_Tec|Vga_Controller:vga_control|Symbol:slot_0_0|Square_Area:form2                                                                           ; Square_Area         ; work         ;
+;          |Square_Area:form3|                 ; 8 (8)               ; 0 (0)                     ; 0                 ; 0          ; 0    ; 0            ; |Gambling_Tec|Vga_Controller:vga_control|Symbol:slot_0_0|Square_Area:form3                                                                           ; Square_Area         ; work         ;
+;       |Symbol:slot_0_1|                      ; 3 (0)               ; 0 (0)                     ; 0                 ; 0          ; 0    ; 0            ; |Gambling_Tec|Vga_Controller:vga_control|Symbol:slot_0_1                                                                                             ; Symbol              ; work         ;
+;          |Square_Area:form2|                 ; 3 (3)               ; 0 (0)                     ; 0                 ; 0          ; 0    ; 0            ; |Gambling_Tec|Vga_Controller:vga_control|Symbol:slot_0_1|Square_Area:form2                                                                           ; Square_Area         ; work         ;
+;       |Symbol:slot_0_2|                      ; 6 (0)               ; 0 (0)                     ; 0                 ; 0          ; 0    ; 0            ; |Gambling_Tec|Vga_Controller:vga_control|Symbol:slot_0_2                                                                                             ; Symbol              ; work         ;
+;          |Square_Area:form2|                 ; 6 (6)               ; 0 (0)                     ; 0                 ; 0          ; 0    ; 0            ; |Gambling_Tec|Vga_Controller:vga_control|Symbol:slot_0_2|Square_Area:form2                                                                           ; Square_Area         ; work         ;
+;       |Symbol:slot_1_0|                      ; 9 (1)               ; 0 (0)                     ; 0                 ; 0          ; 0    ; 0            ; |Gambling_Tec|Vga_Controller:vga_control|Symbol:slot_1_0                                                                                             ; Symbol              ; work         ;
 ;          |Square_Area:form0|                 ; 1 (1)               ; 0 (0)                     ; 0                 ; 0          ; 0    ; 0            ; |Gambling_Tec|Vga_Controller:vga_control|Symbol:slot_1_0|Square_Area:form0                                                                           ; Square_Area         ; work         ;
-;          |Square_Area:form1|                 ; 1 (1)               ; 0 (0)                     ; 0                 ; 0          ; 0    ; 0            ; |Gambling_Tec|Vga_Controller:vga_control|Symbol:slot_1_0|Square_Area:form1                                                                           ; Square_Area         ; work         ;
-;          |Square_Area:form2|                 ; 2 (2)               ; 0 (0)                     ; 0                 ; 0          ; 0    ; 0            ; |Gambling_Tec|Vga_Controller:vga_control|Symbol:slot_1_0|Square_Area:form2                                                                           ; Square_Area         ; work         ;
+;          |Square_Area:form1|                 ; 4 (4)               ; 0 (0)                     ; 0                 ; 0          ; 0    ; 0            ; |Gambling_Tec|Vga_Controller:vga_control|Symbol:slot_1_0|Square_Area:form1                                                                           ; Square_Area         ; work         ;
 ;          |Square_Area:form3|                 ; 3 (3)               ; 0 (0)                     ; 0                 ; 0          ; 0    ; 0            ; |Gambling_Tec|Vga_Controller:vga_control|Symbol:slot_1_0|Square_Area:form3                                                                           ; Square_Area         ; work         ;
-;       |Symbol:slot_1_1|                      ; 2 (0)               ; 0 (0)                     ; 0                 ; 0          ; 0    ; 0            ; |Gambling_Tec|Vga_Controller:vga_control|Symbol:slot_1_1                                                                                             ; Symbol              ; work         ;
-;          |Square_Area:form0|                 ; 2 (2)               ; 0 (0)                     ; 0                 ; 0          ; 0    ; 0            ; |Gambling_Tec|Vga_Controller:vga_control|Symbol:slot_1_1|Square_Area:form0                                                                           ; Square_Area         ; work         ;
+;       |Symbol:slot_1_1|                      ; 6 (0)               ; 0 (0)                     ; 0                 ; 0          ; 0    ; 0            ; |Gambling_Tec|Vga_Controller:vga_control|Symbol:slot_1_1                                                                                             ; Symbol              ; work         ;
+;          |Square_Area:form0|                 ; 6 (6)               ; 0 (0)                     ; 0                 ; 0          ; 0    ; 0            ; |Gambling_Tec|Vga_Controller:vga_control|Symbol:slot_1_1|Square_Area:form0                                                                           ; Square_Area         ; work         ;
 ;       |Symbol:slot_1_2|                      ; 1 (0)               ; 0 (0)                     ; 0                 ; 0          ; 0    ; 0            ; |Gambling_Tec|Vga_Controller:vga_control|Symbol:slot_1_2                                                                                             ; Symbol              ; work         ;
 ;          |Square_Area:form0|                 ; 1 (1)               ; 0 (0)                     ; 0                 ; 0          ; 0    ; 0            ; |Gambling_Tec|Vga_Controller:vga_control|Symbol:slot_1_2|Square_Area:form0                                                                           ; Square_Area         ; work         ;
-;       |Symbol:slot_2_0|                      ; 11 (1)              ; 0 (0)                     ; 0                 ; 0          ; 0    ; 0            ; |Gambling_Tec|Vga_Controller:vga_control|Symbol:slot_2_0                                                                                             ; Symbol              ; work         ;
+;       |Symbol:slot_2_0|                      ; 7 (1)               ; 0 (0)                     ; 0                 ; 0          ; 0    ; 0            ; |Gambling_Tec|Vga_Controller:vga_control|Symbol:slot_2_0                                                                                             ; Symbol              ; work         ;
 ;          |Square_Area:form0|                 ; 1 (1)               ; 0 (0)                     ; 0                 ; 0          ; 0    ; 0            ; |Gambling_Tec|Vga_Controller:vga_control|Symbol:slot_2_0|Square_Area:form0                                                                           ; Square_Area         ; work         ;
-;          |Square_Area:form1|                 ; 3 (3)               ; 0 (0)                     ; 0                 ; 0          ; 0    ; 0            ; |Gambling_Tec|Vga_Controller:vga_control|Symbol:slot_2_0|Square_Area:form1                                                                           ; Square_Area         ; work         ;
+;          |Square_Area:form1|                 ; 1 (1)               ; 0 (0)                     ; 0                 ; 0          ; 0    ; 0            ; |Gambling_Tec|Vga_Controller:vga_control|Symbol:slot_2_0|Square_Area:form1                                                                           ; Square_Area         ; work         ;
 ;          |Square_Area:form2|                 ; 2 (2)               ; 0 (0)                     ; 0                 ; 0          ; 0    ; 0            ; |Gambling_Tec|Vga_Controller:vga_control|Symbol:slot_2_0|Square_Area:form2                                                                           ; Square_Area         ; work         ;
-;          |Square_Area:form3|                 ; 4 (4)               ; 0 (0)                     ; 0                 ; 0          ; 0    ; 0            ; |Gambling_Tec|Vga_Controller:vga_control|Symbol:slot_2_0|Square_Area:form3                                                                           ; Square_Area         ; work         ;
-;       |Symbol:slot_2_1|                      ; 2 (0)               ; 0 (0)                     ; 0                 ; 0          ; 0    ; 0            ; |Gambling_Tec|Vga_Controller:vga_control|Symbol:slot_2_1                                                                                             ; Symbol              ; work         ;
-;          |Square_Area:form1|                 ; 2 (2)               ; 0 (0)                     ; 0                 ; 0          ; 0    ; 0            ; |Gambling_Tec|Vga_Controller:vga_control|Symbol:slot_2_1|Square_Area:form1                                                                           ; Square_Area         ; work         ;
-;       |Symbol:slot_2_2|                      ; 2 (0)               ; 0 (0)                     ; 0                 ; 0          ; 0    ; 0            ; |Gambling_Tec|Vga_Controller:vga_control|Symbol:slot_2_2                                                                                             ; Symbol              ; work         ;
-;          |Square_Area:form1|                 ; 2 (2)               ; 0 (0)                     ; 0                 ; 0          ; 0    ; 0            ; |Gambling_Tec|Vga_Controller:vga_control|Symbol:slot_2_2|Square_Area:form1                                                                           ; Square_Area         ; work         ;
+;          |Square_Area:form3|                 ; 2 (2)               ; 0 (0)                     ; 0                 ; 0          ; 0    ; 0            ; |Gambling_Tec|Vga_Controller:vga_control|Symbol:slot_2_0|Square_Area:form3                                                                           ; Square_Area         ; work         ;
+;       |Symbol:slot_2_1|                      ; 1 (0)               ; 0 (0)                     ; 0                 ; 0          ; 0    ; 0            ; |Gambling_Tec|Vga_Controller:vga_control|Symbol:slot_2_1                                                                                             ; Symbol              ; work         ;
+;          |Square_Area:form1|                 ; 1 (1)               ; 0 (0)                     ; 0                 ; 0          ; 0    ; 0            ; |Gambling_Tec|Vga_Controller:vga_control|Symbol:slot_2_1|Square_Area:form1                                                                           ; Square_Area         ; work         ;
+;       |Symbol:slot_2_2|                      ; 1 (0)               ; 0 (0)                     ; 0                 ; 0          ; 0    ; 0            ; |Gambling_Tec|Vga_Controller:vga_control|Symbol:slot_2_2                                                                                             ; Symbol              ; work         ;
+;          |Square_Area:form1|                 ; 1 (1)               ; 0 (0)                     ; 0                 ; 0          ; 0    ; 0            ; |Gambling_Tec|Vga_Controller:vga_control|Symbol:slot_2_2|Square_Area:form1                                                                           ; Square_Area         ; work         ;
+;       |clk_div:clkdiv|                       ; 1 (1)               ; 1 (1)                     ; 0                 ; 0          ; 0    ; 0            ; |Gambling_Tec|Vga_Controller:vga_control|clk_div:clkdiv                                                                                              ; clk_div             ; work         ;
 ;    |clk_div:div_clo|                         ; 1 (1)               ; 1 (1)                     ; 0                 ; 0          ; 0    ; 0            ; |Gambling_Tec|clk_div:div_clo                                                                                                                        ; clk_div             ; work         ;
 +----------------------------------------------+---------------------+---------------------------+-------------------+------------+------+--------------+------------------------------------------------------------------------------------------------------------------------------------------------------+---------------------+--------------+
 Note: For table entries with two numbers listed, the numbers in parentheses indicate the number of resources of the given type used by the specific entity alone. The numbers listed outside of parentheses indicate the total resources of the given type used by the specific entity and all of its sub-entities in the hierarchy.
@@ -493,10 +495,10 @@ Note: For table entries with two numbers listed, the numbers in parentheses indi
 +----------------------------------------------+-------+
 ; Statistic                                    ; Value ;
 +----------------------------------------------+-------+
-; Total registers                              ; 43    ;
+; Total registers                              ; 44    ;
 ; Number of registers using Synchronous Clear  ; 0     ;
 ; Number of registers using Synchronous Load   ; 0     ;
-; Number of registers using Asynchronous Clear ; 43    ;
+; Number of registers using Asynchronous Clear ; 44    ;
 ; Number of registers using Asynchronous Load  ; 0     ;
 ; Number of registers using Clock Enable       ; 12    ;
 ; Number of registers using Preset             ; 0     ;
@@ -1550,11 +1552,11 @@ Note: In order to hide this table in the UI and the text report file, please set
 +----------------+-------+----------------------------------------------------------------------------------+
 ; Parameter Name ; Value ; Type                                                                             ;
 +----------------+-------+----------------------------------------------------------------------------------+
-; x0             ; 362   ; Signed Integer                                                                   ;
-; x1             ; 388   ; Signed Integer                                                                   ;
-; y0             ; 212   ; Signed Integer                                                                   ;
-; y1             ; 268   ; Signed Integer                                                                   ;
-; corn           ; 0     ; Signed Integer                                                                   ;
+; x0             ; 358   ; Signed Integer                                                                   ;
+; x1             ; 392   ; Signed Integer                                                                   ;
+; y0             ; 218   ; Signed Integer                                                                   ;
+; y1             ; 266   ; Signed Integer                                                                   ;
+; corn           ; 8     ; Signed Integer                                                                   ;
 +----------------+-------+----------------------------------------------------------------------------------+
 Note: In order to hide this table in the UI and the text report file, please set the "Show Parameter Settings in Synthesis Report" option in "Analysis and Synthesis Settings -> More Settings" to "Off".
 
@@ -1619,11 +1621,11 @@ Note: In order to hide this table in the UI and the text report file, please set
 +----------------+-------+----------------------------------------------------------------------------------+
 ; Parameter Name ; Value ; Type                                                                             ;
 +----------------+-------+----------------------------------------------------------------------------------+
-; x0             ; 462   ; Signed Integer                                                                   ;
-; x1             ; 488   ; Signed Integer                                                                   ;
-; y0             ; 212   ; Signed Integer                                                                   ;
-; y1             ; 268   ; Signed Integer                                                                   ;
-; corn           ; 0     ; Signed Integer                                                                   ;
+; x0             ; 458   ; Signed Integer                                                                   ;
+; x1             ; 492   ; Signed Integer                                                                   ;
+; y0             ; 218   ; Signed Integer                                                                   ;
+; y1             ; 266   ; Signed Integer                                                                   ;
+; corn           ; 8     ; Signed Integer                                                                   ;
 +----------------+-------+----------------------------------------------------------------------------------+
 Note: In order to hide this table in the UI and the text report file, please set the "Show Parameter Settings in Synthesis Report" option in "Analysis and Synthesis Settings -> More Settings" to "Off".
 
@@ -1635,8 +1637,8 @@ Note: In order to hide this table in the UI and the text report file, please set
 +----------------+-------+----------------------------------------------------------------+
 ; x0             ; 560   ; Signed Integer                                                 ;
 ; x1             ; 590   ; Signed Integer                                                 ;
-; y0             ; 210   ; Signed Integer                                                 ;
-; y1             ; 270   ; Signed Integer                                                 ;
+; y0             ; 290   ; Signed Integer                                                 ;
+; y1             ; 350   ; Signed Integer                                                 ;
 +----------------+-------+----------------------------------------------------------------+
 Note: In order to hide this table in the UI and the text report file, please set the "Show Parameter Settings in Synthesis Report" option in "Analysis and Synthesis Settings -> More Settings" to "Off".
 
@@ -1648,8 +1650,8 @@ Note: In order to hide this table in the UI and the text report file, please set
 +----------------+-------+----------------------------------------------------------------------------------+
 ; x0             ; 560   ; Signed Integer                                                                   ;
 ; x1             ; 590   ; Signed Integer                                                                   ;
-; y0             ; 210   ; Signed Integer                                                                   ;
-; y1             ; 270   ; Signed Integer                                                                   ;
+; y0             ; 290   ; Signed Integer                                                                   ;
+; y1             ; 350   ; Signed Integer                                                                   ;
 ; corn           ; 0     ; Signed Integer                                                                   ;
 +----------------+-------+----------------------------------------------------------------------------------+
 Note: In order to hide this table in the UI and the text report file, please set the "Show Parameter Settings in Synthesis Report" option in "Analysis and Synthesis Settings -> More Settings" to "Off".
@@ -1662,8 +1664,8 @@ Note: In order to hide this table in the UI and the text report file, please set
 +----------------+-------+----------------------------------------------------------------------------------+
 ; x0             ; 560   ; Signed Integer                                                                   ;
 ; x1             ; 590   ; Signed Integer                                                                   ;
-; y0             ; 210   ; Signed Integer                                                                   ;
-; y1             ; 270   ; Signed Integer                                                                   ;
+; y0             ; 290   ; Signed Integer                                                                   ;
+; y1             ; 350   ; Signed Integer                                                                   ;
 ; corn           ; 6     ; Signed Integer                                                                   ;
 +----------------+-------+----------------------------------------------------------------------------------+
 Note: In order to hide this table in the UI and the text report file, please set the "Show Parameter Settings in Synthesis Report" option in "Analysis and Synthesis Settings -> More Settings" to "Off".
@@ -1676,8 +1678,8 @@ Note: In order to hide this table in the UI and the text report file, please set
 +----------------+-------+----------------------------------------------------------------------------------+
 ; x0             ; 560   ; Signed Integer                                                                   ;
 ; x1             ; 590   ; Signed Integer                                                                   ;
-; y0             ; 210   ; Signed Integer                                                                   ;
-; y1             ; 270   ; Signed Integer                                                                   ;
+; y0             ; 290   ; Signed Integer                                                                   ;
+; y1             ; 350   ; Signed Integer                                                                   ;
 ; corn           ; 11    ; Signed Integer                                                                   ;
 +----------------+-------+----------------------------------------------------------------------------------+
 Note: In order to hide this table in the UI and the text report file, please set the "Show Parameter Settings in Synthesis Report" option in "Analysis and Synthesis Settings -> More Settings" to "Off".
@@ -1688,11 +1690,11 @@ Note: In order to hide this table in the UI and the text report file, please set
 +----------------+-------+----------------------------------------------------------------------------------+
 ; Parameter Name ; Value ; Type                                                                             ;
 +----------------+-------+----------------------------------------------------------------------------------+
-; x0             ; 562   ; Signed Integer                                                                   ;
-; x1             ; 588   ; Signed Integer                                                                   ;
-; y0             ; 212   ; Signed Integer                                                                   ;
-; y1             ; 268   ; Signed Integer                                                                   ;
-; corn           ; 0     ; Signed Integer                                                                   ;
+; x0             ; 558   ; Signed Integer                                                                   ;
+; x1             ; 592   ; Signed Integer                                                                   ;
+; y0             ; 298   ; Signed Integer                                                                   ;
+; y1             ; 346   ; Signed Integer                                                                   ;
+; corn           ; 8     ; Signed Integer                                                                   ;
 +----------------+-------+----------------------------------------------------------------------------------+
 Note: In order to hide this table in the UI and the text report file, please set the "Show Parameter Settings in Synthesis Report" option in "Analysis and Synthesis Settings -> More Settings" to "Off".
 
@@ -1757,11 +1759,11 @@ Note: In order to hide this table in the UI and the text report file, please set
 +----------------+-------+----------------------------------------------------------------------------------+
 ; Parameter Name ; Value ; Type                                                                             ;
 +----------------+-------+----------------------------------------------------------------------------------+
-; x0             ; 362   ; Signed Integer                                                                   ;
-; x1             ; 388   ; Signed Integer                                                                   ;
-; y0             ; 292   ; Signed Integer                                                                   ;
-; y1             ; 348   ; Signed Integer                                                                   ;
-; corn           ; 0     ; Signed Integer                                                                   ;
+; x0             ; 358   ; Signed Integer                                                                   ;
+; x1             ; 392   ; Signed Integer                                                                   ;
+; y0             ; 298   ; Signed Integer                                                                   ;
+; y1             ; 346   ; Signed Integer                                                                   ;
+; corn           ; 8     ; Signed Integer                                                                   ;
 +----------------+-------+----------------------------------------------------------------------------------+
 Note: In order to hide this table in the UI and the text report file, please set the "Show Parameter Settings in Synthesis Report" option in "Analysis and Synthesis Settings -> More Settings" to "Off".
 
@@ -1773,8 +1775,8 @@ Note: In order to hide this table in the UI and the text report file, please set
 +----------------+-------+----------------------------------------------------------------+
 ; x0             ; 460   ; Signed Integer                                                 ;
 ; x1             ; 490   ; Signed Integer                                                 ;
-; y0             ; 290   ; Signed Integer                                                 ;
-; y1             ; 350   ; Signed Integer                                                 ;
+; y0             ; 375   ; Signed Integer                                                 ;
+; y1             ; 430   ; Signed Integer                                                 ;
 +----------------+-------+----------------------------------------------------------------+
 Note: In order to hide this table in the UI and the text report file, please set the "Show Parameter Settings in Synthesis Report" option in "Analysis and Synthesis Settings -> More Settings" to "Off".
 
@@ -1786,8 +1788,8 @@ Note: In order to hide this table in the UI and the text report file, please set
 +----------------+-------+----------------------------------------------------------------------------------+
 ; x0             ; 460   ; Signed Integer                                                                   ;
 ; x1             ; 490   ; Signed Integer                                                                   ;
-; y0             ; 290   ; Signed Integer                                                                   ;
-; y1             ; 350   ; Signed Integer                                                                   ;
+; y0             ; 375   ; Signed Integer                                                                   ;
+; y1             ; 430   ; Signed Integer                                                                   ;
 ; corn           ; 0     ; Signed Integer                                                                   ;
 +----------------+-------+----------------------------------------------------------------------------------+
 Note: In order to hide this table in the UI and the text report file, please set the "Show Parameter Settings in Synthesis Report" option in "Analysis and Synthesis Settings -> More Settings" to "Off".
@@ -1800,8 +1802,8 @@ Note: In order to hide this table in the UI and the text report file, please set
 +----------------+-------+----------------------------------------------------------------------------------+
 ; x0             ; 460   ; Signed Integer                                                                   ;
 ; x1             ; 490   ; Signed Integer                                                                   ;
-; y0             ; 290   ; Signed Integer                                                                   ;
-; y1             ; 350   ; Signed Integer                                                                   ;
+; y0             ; 375   ; Signed Integer                                                                   ;
+; y1             ; 430   ; Signed Integer                                                                   ;
 ; corn           ; 6     ; Signed Integer                                                                   ;
 +----------------+-------+----------------------------------------------------------------------------------+
 Note: In order to hide this table in the UI and the text report file, please set the "Show Parameter Settings in Synthesis Report" option in "Analysis and Synthesis Settings -> More Settings" to "Off".
@@ -1814,8 +1816,8 @@ Note: In order to hide this table in the UI and the text report file, please set
 +----------------+-------+----------------------------------------------------------------------------------+
 ; x0             ; 460   ; Signed Integer                                                                   ;
 ; x1             ; 490   ; Signed Integer                                                                   ;
-; y0             ; 290   ; Signed Integer                                                                   ;
-; y1             ; 350   ; Signed Integer                                                                   ;
+; y0             ; 375   ; Signed Integer                                                                   ;
+; y1             ; 430   ; Signed Integer                                                                   ;
 ; corn           ; 11    ; Signed Integer                                                                   ;
 +----------------+-------+----------------------------------------------------------------------------------+
 Note: In order to hide this table in the UI and the text report file, please set the "Show Parameter Settings in Synthesis Report" option in "Analysis and Synthesis Settings -> More Settings" to "Off".
@@ -1826,11 +1828,11 @@ Note: In order to hide this table in the UI and the text report file, please set
 +----------------+-------+----------------------------------------------------------------------------------+
 ; Parameter Name ; Value ; Type                                                                             ;
 +----------------+-------+----------------------------------------------------------------------------------+
-; x0             ; 462   ; Signed Integer                                                                   ;
-; x1             ; 488   ; Signed Integer                                                                   ;
-; y0             ; 292   ; Signed Integer                                                                   ;
-; y1             ; 348   ; Signed Integer                                                                   ;
-; corn           ; 0     ; Signed Integer                                                                   ;
+; x0             ; 458   ; Signed Integer                                                                   ;
+; x1             ; 492   ; Signed Integer                                                                   ;
+; y0             ; 383   ; Signed Integer                                                                   ;
+; y1             ; 426   ; Signed Integer                                                                   ;
+; corn           ; 8     ; Signed Integer                                                                   ;
 +----------------+-------+----------------------------------------------------------------------------------+
 Note: In order to hide this table in the UI and the text report file, please set the "Show Parameter Settings in Synthesis Report" option in "Analysis and Synthesis Settings -> More Settings" to "Off".
 
@@ -1842,8 +1844,8 @@ Note: In order to hide this table in the UI and the text report file, please set
 +----------------+-------+----------------------------------------------------------------+
 ; x0             ; 560   ; Signed Integer                                                 ;
 ; x1             ; 590   ; Signed Integer                                                 ;
-; y0             ; 290   ; Signed Integer                                                 ;
-; y1             ; 350   ; Signed Integer                                                 ;
+; y0             ; 210   ; Signed Integer                                                 ;
+; y1             ; 270   ; Signed Integer                                                 ;
 +----------------+-------+----------------------------------------------------------------+
 Note: In order to hide this table in the UI and the text report file, please set the "Show Parameter Settings in Synthesis Report" option in "Analysis and Synthesis Settings -> More Settings" to "Off".
 
@@ -1855,8 +1857,8 @@ Note: In order to hide this table in the UI and the text report file, please set
 +----------------+-------+----------------------------------------------------------------------------------+
 ; x0             ; 560   ; Signed Integer                                                                   ;
 ; x1             ; 590   ; Signed Integer                                                                   ;
-; y0             ; 290   ; Signed Integer                                                                   ;
-; y1             ; 350   ; Signed Integer                                                                   ;
+; y0             ; 210   ; Signed Integer                                                                   ;
+; y1             ; 270   ; Signed Integer                                                                   ;
 ; corn           ; 0     ; Signed Integer                                                                   ;
 +----------------+-------+----------------------------------------------------------------------------------+
 Note: In order to hide this table in the UI and the text report file, please set the "Show Parameter Settings in Synthesis Report" option in "Analysis and Synthesis Settings -> More Settings" to "Off".
@@ -1869,8 +1871,8 @@ Note: In order to hide this table in the UI and the text report file, please set
 +----------------+-------+----------------------------------------------------------------------------------+
 ; x0             ; 560   ; Signed Integer                                                                   ;
 ; x1             ; 590   ; Signed Integer                                                                   ;
-; y0             ; 290   ; Signed Integer                                                                   ;
-; y1             ; 350   ; Signed Integer                                                                   ;
+; y0             ; 210   ; Signed Integer                                                                   ;
+; y1             ; 270   ; Signed Integer                                                                   ;
 ; corn           ; 6     ; Signed Integer                                                                   ;
 +----------------+-------+----------------------------------------------------------------------------------+
 Note: In order to hide this table in the UI and the text report file, please set the "Show Parameter Settings in Synthesis Report" option in "Analysis and Synthesis Settings -> More Settings" to "Off".
@@ -1883,8 +1885,8 @@ Note: In order to hide this table in the UI and the text report file, please set
 +----------------+-------+----------------------------------------------------------------------------------+
 ; x0             ; 560   ; Signed Integer                                                                   ;
 ; x1             ; 590   ; Signed Integer                                                                   ;
-; y0             ; 290   ; Signed Integer                                                                   ;
-; y1             ; 350   ; Signed Integer                                                                   ;
+; y0             ; 210   ; Signed Integer                                                                   ;
+; y1             ; 270   ; Signed Integer                                                                   ;
 ; corn           ; 11    ; Signed Integer                                                                   ;
 +----------------+-------+----------------------------------------------------------------------------------+
 Note: In order to hide this table in the UI and the text report file, please set the "Show Parameter Settings in Synthesis Report" option in "Analysis and Synthesis Settings -> More Settings" to "Off".
@@ -1895,11 +1897,11 @@ Note: In order to hide this table in the UI and the text report file, please set
 +----------------+-------+----------------------------------------------------------------------------------+
 ; Parameter Name ; Value ; Type                                                                             ;
 +----------------+-------+----------------------------------------------------------------------------------+
-; x0             ; 562   ; Signed Integer                                                                   ;
-; x1             ; 588   ; Signed Integer                                                                   ;
-; y0             ; 292   ; Signed Integer                                                                   ;
-; y1             ; 348   ; Signed Integer                                                                   ;
-; corn           ; 0     ; Signed Integer                                                                   ;
+; x0             ; 558   ; Signed Integer                                                                   ;
+; x1             ; 592   ; Signed Integer                                                                   ;
+; y0             ; 218   ; Signed Integer                                                                   ;
+; y1             ; 266   ; Signed Integer                                                                   ;
+; corn           ; 8     ; Signed Integer                                                                   ;
 +----------------+-------+----------------------------------------------------------------------------------+
 Note: In order to hide this table in the UI and the text report file, please set the "Show Parameter Settings in Synthesis Report" option in "Analysis and Synthesis Settings -> More Settings" to "Off".
 
@@ -1964,11 +1966,11 @@ Note: In order to hide this table in the UI and the text report file, please set
 +----------------+-------+----------------------------------------------------------------------------------+
 ; Parameter Name ; Value ; Type                                                                             ;
 +----------------+-------+----------------------------------------------------------------------------------+
-; x0             ; 362   ; Signed Integer                                                                   ;
-; x1             ; 388   ; Signed Integer                                                                   ;
-; y0             ; 377   ; Signed Integer                                                                   ;
-; y1             ; 428   ; Signed Integer                                                                   ;
-; corn           ; 0     ; Signed Integer                                                                   ;
+; x0             ; 358   ; Signed Integer                                                                   ;
+; x1             ; 392   ; Signed Integer                                                                   ;
+; y0             ; 383   ; Signed Integer                                                                   ;
+; y1             ; 426   ; Signed Integer                                                                   ;
+; corn           ; 8     ; Signed Integer                                                                   ;
 +----------------+-------+----------------------------------------------------------------------------------+
 Note: In order to hide this table in the UI and the text report file, please set the "Show Parameter Settings in Synthesis Report" option in "Analysis and Synthesis Settings -> More Settings" to "Off".
 
@@ -1980,8 +1982,8 @@ Note: In order to hide this table in the UI and the text report file, please set
 +----------------+-------+----------------------------------------------------------------+
 ; x0             ; 460   ; Signed Integer                                                 ;
 ; x1             ; 490   ; Signed Integer                                                 ;
-; y0             ; 375   ; Signed Integer                                                 ;
-; y1             ; 430   ; Signed Integer                                                 ;
+; y0             ; 290   ; Signed Integer                                                 ;
+; y1             ; 350   ; Signed Integer                                                 ;
 +----------------+-------+----------------------------------------------------------------+
 Note: In order to hide this table in the UI and the text report file, please set the "Show Parameter Settings in Synthesis Report" option in "Analysis and Synthesis Settings -> More Settings" to "Off".
 
@@ -1993,8 +1995,8 @@ Note: In order to hide this table in the UI and the text report file, please set
 +----------------+-------+----------------------------------------------------------------------------------+
 ; x0             ; 460   ; Signed Integer                                                                   ;
 ; x1             ; 490   ; Signed Integer                                                                   ;
-; y0             ; 375   ; Signed Integer                                                                   ;
-; y1             ; 430   ; Signed Integer                                                                   ;
+; y0             ; 290   ; Signed Integer                                                                   ;
+; y1             ; 350   ; Signed Integer                                                                   ;
 ; corn           ; 0     ; Signed Integer                                                                   ;
 +----------------+-------+----------------------------------------------------------------------------------+
 Note: In order to hide this table in the UI and the text report file, please set the "Show Parameter Settings in Synthesis Report" option in "Analysis and Synthesis Settings -> More Settings" to "Off".
@@ -2007,8 +2009,8 @@ Note: In order to hide this table in the UI and the text report file, please set
 +----------------+-------+----------------------------------------------------------------------------------+
 ; x0             ; 460   ; Signed Integer                                                                   ;
 ; x1             ; 490   ; Signed Integer                                                                   ;
-; y0             ; 375   ; Signed Integer                                                                   ;
-; y1             ; 430   ; Signed Integer                                                                   ;
+; y0             ; 290   ; Signed Integer                                                                   ;
+; y1             ; 350   ; Signed Integer                                                                   ;
 ; corn           ; 6     ; Signed Integer                                                                   ;
 +----------------+-------+----------------------------------------------------------------------------------+
 Note: In order to hide this table in the UI and the text report file, please set the "Show Parameter Settings in Synthesis Report" option in "Analysis and Synthesis Settings -> More Settings" to "Off".
@@ -2021,8 +2023,8 @@ Note: In order to hide this table in the UI and the text report file, please set
 +----------------+-------+----------------------------------------------------------------------------------+
 ; x0             ; 460   ; Signed Integer                                                                   ;
 ; x1             ; 490   ; Signed Integer                                                                   ;
-; y0             ; 375   ; Signed Integer                                                                   ;
-; y1             ; 430   ; Signed Integer                                                                   ;
+; y0             ; 290   ; Signed Integer                                                                   ;
+; y1             ; 350   ; Signed Integer                                                                   ;
 ; corn           ; 11    ; Signed Integer                                                                   ;
 +----------------+-------+----------------------------------------------------------------------------------+
 Note: In order to hide this table in the UI and the text report file, please set the "Show Parameter Settings in Synthesis Report" option in "Analysis and Synthesis Settings -> More Settings" to "Off".
@@ -2033,11 +2035,11 @@ Note: In order to hide this table in the UI and the text report file, please set
 +----------------+-------+----------------------------------------------------------------------------------+
 ; Parameter Name ; Value ; Type                                                                             ;
 +----------------+-------+----------------------------------------------------------------------------------+
-; x0             ; 462   ; Signed Integer                                                                   ;
-; x1             ; 488   ; Signed Integer                                                                   ;
-; y0             ; 377   ; Signed Integer                                                                   ;
-; y1             ; 428   ; Signed Integer                                                                   ;
-; corn           ; 0     ; Signed Integer                                                                   ;
+; x0             ; 458   ; Signed Integer                                                                   ;
+; x1             ; 492   ; Signed Integer                                                                   ;
+; y0             ; 298   ; Signed Integer                                                                   ;
+; y1             ; 346   ; Signed Integer                                                                   ;
+; corn           ; 8     ; Signed Integer                                                                   ;
 +----------------+-------+----------------------------------------------------------------------------------+
 Note: In order to hide this table in the UI and the text report file, please set the "Show Parameter Settings in Synthesis Report" option in "Analysis and Synthesis Settings -> More Settings" to "Off".
 
@@ -2102,11 +2104,11 @@ Note: In order to hide this table in the UI and the text report file, please set
 +----------------+-------+----------------------------------------------------------------------------------+
 ; Parameter Name ; Value ; Type                                                                             ;
 +----------------+-------+----------------------------------------------------------------------------------+
-; x0             ; 562   ; Signed Integer                                                                   ;
-; x1             ; 588   ; Signed Integer                                                                   ;
-; y0             ; 377   ; Signed Integer                                                                   ;
-; y1             ; 428   ; Signed Integer                                                                   ;
-; corn           ; 0     ; Signed Integer                                                                   ;
+; x0             ; 558   ; Signed Integer                                                                   ;
+; x1             ; 592   ; Signed Integer                                                                   ;
+; y0             ; 383   ; Signed Integer                                                                   ;
+; y1             ; 426   ; Signed Integer                                                                   ;
+; corn           ; 8     ; Signed Integer                                                                   ;
 +----------------+-------+----------------------------------------------------------------------------------+
 Note: In order to hide this table in the UI and the text report file, please set the "Show Parameter Settings in Synthesis Report" option in "Analysis and Synthesis Settings -> More Settings" to "Off".
 
@@ -2473,26 +2475,26 @@ Note: In order to hide this table in the UI and the text report file, please set
 +-----------------------+-----------------------------+
 ; Type                  ; Count                       ;
 +-----------------------+-----------------------------+
-; arriav_ff             ; 43                          ;
-;     CLR               ; 31                          ;
+; arriav_ff             ; 44                          ;
+;     CLR               ; 32                          ;
 ;     ENA CLR           ; 12                          ;
-; arriav_lcell_comb     ; 574                         ;
+; arriav_lcell_comb     ; 600                         ;
 ;     arith             ; 145                         ;
 ;         0 data inputs ; 39                          ;
 ;         1 data inputs ; 44                          ;
 ;         2 data inputs ; 9                           ;
 ;         3 data inputs ; 33                          ;
 ;         4 data inputs ; 20                          ;
-;     extend            ; 18                          ;
-;         7 data inputs ; 18                          ;
-;     normal            ; 401                         ;
+;     extend            ; 15                          ;
+;         7 data inputs ; 15                          ;
+;     normal            ; 430                         ;
 ;         0 data inputs ; 1                           ;
-;         1 data inputs ; 5                           ;
-;         2 data inputs ; 73                          ;
-;         3 data inputs ; 59                          ;
-;         4 data inputs ; 87                          ;
-;         5 data inputs ; 122                         ;
-;         6 data inputs ; 54                          ;
+;         1 data inputs ; 6                           ;
+;         2 data inputs ; 90                          ;
+;         3 data inputs ; 73                          ;
+;         4 data inputs ; 80                          ;
+;         5 data inputs ; 127                         ;
+;         6 data inputs ; 53                          ;
 ;     shared            ; 10                          ;
 ;         0 data inputs ; 1                           ;
 ;         1 data inputs ; 7                           ;
@@ -2500,7 +2502,7 @@ Note: In order to hide this table in the UI and the text report file, please set
 ; boundary_port         ; 64                          ;
 ;                       ;                             ;
 ; Max LUT depth         ; 18.40                       ;
-; Average LUT depth     ; 11.70                       ;
+; Average LUT depth     ; 11.41                       ;
 +-----------------------+-----------------------------+
 
 
@@ -2519,7 +2521,7 @@ Note: In order to hide this table in the UI and the text report file, please set
 Info: *******************************************************************
 Info: Running Quartus Prime Analysis & Synthesis
     Info: Version 18.1.0 Build 625 09/12/2018 SJ Lite Edition
-    Info: Processing started: Mon Jun 16 17:12:07 2025
+    Info: Processing started: Mon Jun 16 18:54:26 2025
 Info: Command: quartus_map --read_settings_files=on --write_settings_files=off Gambling_Tec -c Gambling_Tec
 Warning (18236): Number of processors has not been specified which may cause overloading on shared machines.  Set the global assignment NUM_PARALLEL_PROCESSORS in your QSF to an appropriate value for best performance.
 Info (20030): Parallel compilation is enabled and will use 4 of the 4 processors detected
@@ -2696,55 +2698,55 @@ Warning (10230): Verilog HDL assignment warning at Draw_CASH.sv(20): truncated v
 Warning (10030): Net "font_rom.data_a" at Draw_CASH.sv(24) has no driver or initial value, using a default initial value '0' File: C:/Users/josee/CE3201_PF/Draw_CASH.sv Line: 24
 Warning (10030): Net "font_rom.waddr_a" at Draw_CASH.sv(24) has no driver or initial value, using a default initial value '0' File: C:/Users/josee/CE3201_PF/Draw_CASH.sv Line: 24
 Warning (10030): Net "font_rom.we_a" at Draw_CASH.sv(24) has no driver or initial value, using a default initial value '0' File: C:/Users/josee/CE3201_PF/Draw_CASH.sv Line: 24
-Info (12128): Elaborating entity "Counter" for hierarchy "Vga_Controller:vga_control|Counter:conut" File: C:/Users/josee/CE3201_PF/Vga_Controller.sv Line: 327
-Info (12128): Elaborating entity "Symbol" for hierarchy "Vga_Controller:vga_control|Symbol:slot_0_0" File: C:/Users/josee/CE3201_PF/Vga_Controller.sv Line: 336
+Info (12128): Elaborating entity "Counter" for hierarchy "Vga_Controller:vga_control|Counter:conut" File: C:/Users/josee/CE3201_PF/Vga_Controller.sv Line: 336
+Info (12128): Elaborating entity "Symbol" for hierarchy "Vga_Controller:vga_control|Symbol:slot_0_0" File: C:/Users/josee/CE3201_PF/Vga_Controller.sv Line: 346
 Info (12128): Elaborating entity "Square_Area" for hierarchy "Vga_Controller:vga_control|Symbol:slot_0_0|Square_Area:form0" File: C:/Users/josee/CE3201_PF/Symbol.sv Line: 16
 Info (12128): Elaborating entity "Square_Area" for hierarchy "Vga_Controller:vga_control|Symbol:slot_0_0|Square_Area:form1" File: C:/Users/josee/CE3201_PF/Symbol.sv Line: 17
 Info (12128): Elaborating entity "Square_Area" for hierarchy "Vga_Controller:vga_control|Symbol:slot_0_0|Square_Area:form2" File: C:/Users/josee/CE3201_PF/Symbol.sv Line: 18
 Info (12128): Elaborating entity "Square_Area" for hierarchy "Vga_Controller:vga_control|Symbol:slot_0_0|Square_Area:form3" File: C:/Users/josee/CE3201_PF/Symbol.sv Line: 19
-Info (12128): Elaborating entity "Symbol" for hierarchy "Vga_Controller:vga_control|Symbol:slot_0_1" File: C:/Users/josee/CE3201_PF/Vga_Controller.sv Line: 339
+Info (12128): Elaborating entity "Symbol" for hierarchy "Vga_Controller:vga_control|Symbol:slot_0_1" File: C:/Users/josee/CE3201_PF/Vga_Controller.sv Line: 349
 Info (12128): Elaborating entity "Square_Area" for hierarchy "Vga_Controller:vga_control|Symbol:slot_0_1|Square_Area:form0" File: C:/Users/josee/CE3201_PF/Symbol.sv Line: 16
 Info (12128): Elaborating entity "Square_Area" for hierarchy "Vga_Controller:vga_control|Symbol:slot_0_1|Square_Area:form1" File: C:/Users/josee/CE3201_PF/Symbol.sv Line: 17
 Info (12128): Elaborating entity "Square_Area" for hierarchy "Vga_Controller:vga_control|Symbol:slot_0_1|Square_Area:form2" File: C:/Users/josee/CE3201_PF/Symbol.sv Line: 18
 Info (12128): Elaborating entity "Square_Area" for hierarchy "Vga_Controller:vga_control|Symbol:slot_0_1|Square_Area:form3" File: C:/Users/josee/CE3201_PF/Symbol.sv Line: 19
-Info (12128): Elaborating entity "Symbol" for hierarchy "Vga_Controller:vga_control|Symbol:slot_0_2" File: C:/Users/josee/CE3201_PF/Vga_Controller.sv Line: 342
+Info (12128): Elaborating entity "Symbol" for hierarchy "Vga_Controller:vga_control|Symbol:slot_0_2" File: C:/Users/josee/CE3201_PF/Vga_Controller.sv Line: 352
 Info (12128): Elaborating entity "Square_Area" for hierarchy "Vga_Controller:vga_control|Symbol:slot_0_2|Square_Area:form0" File: C:/Users/josee/CE3201_PF/Symbol.sv Line: 16
 Info (12128): Elaborating entity "Square_Area" for hierarchy "Vga_Controller:vga_control|Symbol:slot_0_2|Square_Area:form1" File: C:/Users/josee/CE3201_PF/Symbol.sv Line: 17
 Info (12128): Elaborating entity "Square_Area" for hierarchy "Vga_Controller:vga_control|Symbol:slot_0_2|Square_Area:form2" File: C:/Users/josee/CE3201_PF/Symbol.sv Line: 18
 Info (12128): Elaborating entity "Square_Area" for hierarchy "Vga_Controller:vga_control|Symbol:slot_0_2|Square_Area:form3" File: C:/Users/josee/CE3201_PF/Symbol.sv Line: 19
-Info (12128): Elaborating entity "Symbol" for hierarchy "Vga_Controller:vga_control|Symbol:slot_1_0" File: C:/Users/josee/CE3201_PF/Vga_Controller.sv Line: 346
+Info (12128): Elaborating entity "Symbol" for hierarchy "Vga_Controller:vga_control|Symbol:slot_1_0" File: C:/Users/josee/CE3201_PF/Vga_Controller.sv Line: 356
 Info (12128): Elaborating entity "Square_Area" for hierarchy "Vga_Controller:vga_control|Symbol:slot_1_0|Square_Area:form0" File: C:/Users/josee/CE3201_PF/Symbol.sv Line: 16
 Info (12128): Elaborating entity "Square_Area" for hierarchy "Vga_Controller:vga_control|Symbol:slot_1_0|Square_Area:form1" File: C:/Users/josee/CE3201_PF/Symbol.sv Line: 17
 Info (12128): Elaborating entity "Square_Area" for hierarchy "Vga_Controller:vga_control|Symbol:slot_1_0|Square_Area:form2" File: C:/Users/josee/CE3201_PF/Symbol.sv Line: 18
 Info (12128): Elaborating entity "Square_Area" for hierarchy "Vga_Controller:vga_control|Symbol:slot_1_0|Square_Area:form3" File: C:/Users/josee/CE3201_PF/Symbol.sv Line: 19
-Info (12128): Elaborating entity "Symbol" for hierarchy "Vga_Controller:vga_control|Symbol:slot_1_1" File: C:/Users/josee/CE3201_PF/Vga_Controller.sv Line: 349
+Info (12128): Elaborating entity "Symbol" for hierarchy "Vga_Controller:vga_control|Symbol:slot_1_1" File: C:/Users/josee/CE3201_PF/Vga_Controller.sv Line: 359
 Info (12128): Elaborating entity "Square_Area" for hierarchy "Vga_Controller:vga_control|Symbol:slot_1_1|Square_Area:form0" File: C:/Users/josee/CE3201_PF/Symbol.sv Line: 16
 Info (12128): Elaborating entity "Square_Area" for hierarchy "Vga_Controller:vga_control|Symbol:slot_1_1|Square_Area:form1" File: C:/Users/josee/CE3201_PF/Symbol.sv Line: 17
 Info (12128): Elaborating entity "Square_Area" for hierarchy "Vga_Controller:vga_control|Symbol:slot_1_1|Square_Area:form2" File: C:/Users/josee/CE3201_PF/Symbol.sv Line: 18
 Info (12128): Elaborating entity "Square_Area" for hierarchy "Vga_Controller:vga_control|Symbol:slot_1_1|Square_Area:form3" File: C:/Users/josee/CE3201_PF/Symbol.sv Line: 19
-Info (12128): Elaborating entity "Symbol" for hierarchy "Vga_Controller:vga_control|Symbol:slot_1_2" File: C:/Users/josee/CE3201_PF/Vga_Controller.sv Line: 352
+Info (12128): Elaborating entity "Symbol" for hierarchy "Vga_Controller:vga_control|Symbol:slot_1_2" File: C:/Users/josee/CE3201_PF/Vga_Controller.sv Line: 362
 Info (12128): Elaborating entity "Square_Area" for hierarchy "Vga_Controller:vga_control|Symbol:slot_1_2|Square_Area:form0" File: C:/Users/josee/CE3201_PF/Symbol.sv Line: 16
 Info (12128): Elaborating entity "Square_Area" for hierarchy "Vga_Controller:vga_control|Symbol:slot_1_2|Square_Area:form1" File: C:/Users/josee/CE3201_PF/Symbol.sv Line: 17
 Info (12128): Elaborating entity "Square_Area" for hierarchy "Vga_Controller:vga_control|Symbol:slot_1_2|Square_Area:form2" File: C:/Users/josee/CE3201_PF/Symbol.sv Line: 18
 Info (12128): Elaborating entity "Square_Area" for hierarchy "Vga_Controller:vga_control|Symbol:slot_1_2|Square_Area:form3" File: C:/Users/josee/CE3201_PF/Symbol.sv Line: 19
-Info (12128): Elaborating entity "Symbol" for hierarchy "Vga_Controller:vga_control|Symbol:slot_2_0" File: C:/Users/josee/CE3201_PF/Vga_Controller.sv Line: 356
+Info (12128): Elaborating entity "Symbol" for hierarchy "Vga_Controller:vga_control|Symbol:slot_2_0" File: C:/Users/josee/CE3201_PF/Vga_Controller.sv Line: 366
 Info (12128): Elaborating entity "Square_Area" for hierarchy "Vga_Controller:vga_control|Symbol:slot_2_0|Square_Area:form0" File: C:/Users/josee/CE3201_PF/Symbol.sv Line: 16
 Info (12128): Elaborating entity "Square_Area" for hierarchy "Vga_Controller:vga_control|Symbol:slot_2_0|Square_Area:form1" File: C:/Users/josee/CE3201_PF/Symbol.sv Line: 17
 Info (12128): Elaborating entity "Square_Area" for hierarchy "Vga_Controller:vga_control|Symbol:slot_2_0|Square_Area:form2" File: C:/Users/josee/CE3201_PF/Symbol.sv Line: 18
 Info (12128): Elaborating entity "Square_Area" for hierarchy "Vga_Controller:vga_control|Symbol:slot_2_0|Square_Area:form3" File: C:/Users/josee/CE3201_PF/Symbol.sv Line: 19
-Info (12128): Elaborating entity "Symbol" for hierarchy "Vga_Controller:vga_control|Symbol:slot_2_1" File: C:/Users/josee/CE3201_PF/Vga_Controller.sv Line: 359
+Info (12128): Elaborating entity "Symbol" for hierarchy "Vga_Controller:vga_control|Symbol:slot_2_1" File: C:/Users/josee/CE3201_PF/Vga_Controller.sv Line: 369
 Info (12128): Elaborating entity "Square_Area" for hierarchy "Vga_Controller:vga_control|Symbol:slot_2_1|Square_Area:form0" File: C:/Users/josee/CE3201_PF/Symbol.sv Line: 16
 Info (12128): Elaborating entity "Square_Area" for hierarchy "Vga_Controller:vga_control|Symbol:slot_2_1|Square_Area:form1" File: C:/Users/josee/CE3201_PF/Symbol.sv Line: 17
 Info (12128): Elaborating entity "Square_Area" for hierarchy "Vga_Controller:vga_control|Symbol:slot_2_1|Square_Area:form2" File: C:/Users/josee/CE3201_PF/Symbol.sv Line: 18
 Info (12128): Elaborating entity "Square_Area" for hierarchy "Vga_Controller:vga_control|Symbol:slot_2_1|Square_Area:form3" File: C:/Users/josee/CE3201_PF/Symbol.sv Line: 19
-Info (12128): Elaborating entity "Symbol" for hierarchy "Vga_Controller:vga_control|Symbol:slot_2_2" File: C:/Users/josee/CE3201_PF/Vga_Controller.sv Line: 362
+Info (12128): Elaborating entity "Symbol" for hierarchy "Vga_Controller:vga_control|Symbol:slot_2_2" File: C:/Users/josee/CE3201_PF/Vga_Controller.sv Line: 372
 Info (12128): Elaborating entity "Square_Area" for hierarchy "Vga_Controller:vga_control|Symbol:slot_2_2|Square_Area:form0" File: C:/Users/josee/CE3201_PF/Symbol.sv Line: 16
 Info (12128): Elaborating entity "Square_Area" for hierarchy "Vga_Controller:vga_control|Symbol:slot_2_2|Square_Area:form1" File: C:/Users/josee/CE3201_PF/Symbol.sv Line: 17
 Info (12128): Elaborating entity "Square_Area" for hierarchy "Vga_Controller:vga_control|Symbol:slot_2_2|Square_Area:form2" File: C:/Users/josee/CE3201_PF/Symbol.sv Line: 18
 Info (12128): Elaborating entity "Square_Area" for hierarchy "Vga_Controller:vga_control|Symbol:slot_2_2|Square_Area:form3" File: C:/Users/josee/CE3201_PF/Symbol.sv Line: 19
-Info (12128): Elaborating entity "Mux93" for hierarchy "Vga_Controller:vga_control|Mux93:color_selector" File: C:/Users/josee/CE3201_PF/Vga_Controller.sv Line: 380
+Info (12128): Elaborating entity "Mux93" for hierarchy "Vga_Controller:vga_control|Mux93:color_selector" File: C:/Users/josee/CE3201_PF/Vga_Controller.sv Line: 390
 Info (10264): Verilog HDL Case Statement information at Mux93.sv(8): all case item expressions in this case statement are onehot File: C:/Users/josee/CE3201_PF/output_files/Mux93.sv Line: 8
-Info (12128): Elaborating entity "Rom_tile" for hierarchy "Vga_Controller:vga_control|Rom_tile:rom_tile" File: C:/Users/josee/CE3201_PF/Vga_Controller.sv Line: 393
+Info (12128): Elaborating entity "Rom_tile" for hierarchy "Vga_Controller:vga_control|Rom_tile:rom_tile" File: C:/Users/josee/CE3201_PF/Vga_Controller.sv Line: 403
 Info (10264): Verilog HDL Case Statement information at Rom_tile.sv(45): all case item expressions in this case statement are onehot File: C:/Users/josee/CE3201_PF/Rom_tile.sv Line: 45
 Warning (10030): Net "sprite_i.data_a" at Rom_tile.sv(18) has no driver or initial value, using a default initial value '0' File: C:/Users/josee/CE3201_PF/Rom_tile.sv Line: 18
 Warning (10030): Net "sprite_i.waddr_a" at Rom_tile.sv(18) has no driver or initial value, using a default initial value '0' File: C:/Users/josee/CE3201_PF/Rom_tile.sv Line: 18
@@ -2828,15 +2830,15 @@ Warning (21074): Design contains 32 input pin(s) that do not drive logic
     Warning (15610): No output dependent on input pin "Instruction[29]" File: C:/Users/josee/CE3201_PF/Gambling_Tec.sv Line: 2
     Warning (15610): No output dependent on input pin "Instruction[30]" File: C:/Users/josee/CE3201_PF/Gambling_Tec.sv Line: 2
     Warning (15610): No output dependent on input pin "Instruction[31]" File: C:/Users/josee/CE3201_PF/Gambling_Tec.sv Line: 2
-Info (21057): Implemented 656 device resources after synthesis - the final resource count might be different
+Info (21057): Implemented 682 device resources after synthesis - the final resource count might be different
     Info (21058): Implemented 35 input pins
     Info (21059): Implemented 29 output pins
-    Info (21061): Implemented 592 logic cells
+    Info (21061): Implemented 618 logic cells
 Info: Quartus Prime Analysis & Synthesis was successful. 0 errors, 65 warnings
-    Info: Peak virtual memory: 4857 megabytes
-    Info: Processing ended: Mon Jun 16 17:12:22 2025
-    Info: Elapsed time: 00:00:15
-    Info: Total CPU time (on all processors): 00:00:28
+    Info: Peak virtual memory: 4878 megabytes
+    Info: Processing ended: Mon Jun 16 18:54:42 2025
+    Info: Elapsed time: 00:00:16
+    Info: Total CPU time (on all processors): 00:00:29
 
 
 +------------------------------------------+

@@ -73,7 +73,7 @@ clk25 <= clk25~reg0.DB_MAX_OUTPUT_PORT_TYPE
 
 |Gambling_Tec|Vga_Controller:vga_control
 clk => clk.IN5
-rst => rst.IN3
+rst => rst.IN4
 stop => comb.IN1
 Hs <= Hs.DB_MAX_OUTPUT_PORT_TYPE
 Vs <= Vs.DB_MAX_OUTPUT_PORT_TYPE
@@ -5326,6 +5326,12 @@ pos_y[9] => LessThan2.IN11
 pos_y[9] => Add1.IN6
 pos_y[9] => Add3.IN1
 visible <= visible.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|Gambling_Tec|Vga_Controller:vga_control|clk_div:clkdiv
+clk => clk25~reg0.CLK
+rst_active => clk25~reg0.ACLR
+clk25 <= clk25~reg0.DB_MAX_OUTPUT_PORT_TYPE
 
 
 |Gambling_Tec|Vga_Controller:vga_control|Counter:conut
