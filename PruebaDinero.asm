@@ -25,12 +25,12 @@ MainLoop:
         CMP     R1, R2
         BEQ     IncMoney
 
-        SUB     R2, R2, R0        
+        SUB     R2, R2, R2        
         ADD     R2, R2, #0x72
         CMP     R1, R2
         BEQ     DecMoney
 
-        SUB     R2, R2, R0        
+        SUB     R2, R2, R2        
         ADD     R2, R2, #0x66
         CMP     R1, R2
         BEQ     ClearMoney
@@ -42,7 +42,7 @@ IncMoney:
         ADD     R0, R0, #0x14     
         LDR     R1, [R0]
         ADD     R1, R1, #1
-        SUB     R2, R2, R0        
+        SUB     R2, R2, R2        
         ADD     R2, R2, #255    
         ADD     R2, R2, #255    
         ADD     R2, R2, #255    
