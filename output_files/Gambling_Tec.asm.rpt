@@ -1,6 +1,6 @@
 Assembler report for Gambling_Tec
-Tue Jun 17 17:32:29 2025
-Quartus Prime Version 18.1.0 Build 625 09/12/2018 SJ Standard Edition
+Tue Jun 17 18:16:20 2025
+Quartus Prime Version 18.1.0 Build 625 09/12/2018 SJ Lite Edition
 
 
 ---------------------
@@ -9,7 +9,9 @@ Quartus Prime Version 18.1.0 Build 625 09/12/2018 SJ Standard Edition
   1. Legal Notice
   2. Assembler Summary
   3. Assembler Settings
-  4. Assembler Messages
+  4. Assembler Generated Files
+  5. Assembler Device Options: C:/Users/josee/CE3201_PF/output_files/Gambling_Tec.sof
+  6. Assembler Messages
 
 
 
@@ -35,9 +37,9 @@ refer to the applicable agreement for further details.
 +---------------------------------------------------------------+
 ; Assembler Summary                                             ;
 +-----------------------+---------------------------------------+
-; Assembler Status      ; Successful - Tue Jun 17 17:32:29 2025 ;
+; Assembler Status      ; Successful - Tue Jun 17 18:16:20 2025 ;
 ; Revision Name         ; Gambling_Tec                          ;
-; Top-level Entity Name ; Gambling_Tec                          ;
+; Top-level Entity Name ; CPU                                   ;
 ; Family                ; Cyclone V                             ;
 ; Device                ; 5CSXFC6D6F31C6                        ;
 +-----------------------+---------------------------------------+
@@ -50,20 +52,39 @@ refer to the applicable agreement for further details.
 +--------+---------+---------------+
 
 
++--------------------------------------------------------+
+; Assembler Generated Files                              ;
++--------------------------------------------------------+
+; File Name                                              ;
++--------------------------------------------------------+
+; C:/Users/josee/CE3201_PF/output_files/Gambling_Tec.sof ;
++--------------------------------------------------------+
+
+
++----------------------------------------------------------------------------------+
+; Assembler Device Options: C:/Users/josee/CE3201_PF/output_files/Gambling_Tec.sof ;
++----------------+-----------------------------------------------------------------+
+; Option         ; Setting                                                         ;
++----------------+-----------------------------------------------------------------+
+; JTAG usercode  ; 0x00C65DAD                                                      ;
+; Checksum       ; 0x00C65DAD                                                      ;
++----------------+-----------------------------------------------------------------+
+
+
 +--------------------+
 ; Assembler Messages ;
 +--------------------+
 Info: *******************************************************************
 Info: Running Quartus Prime Assembler
-    Info: Version 18.1.0 Build 625 09/12/2018 SJ Standard Edition
-    Info: Processing started: Tue Jun 17 17:32:27 2025
+    Info: Version 18.1.0 Build 625 09/12/2018 SJ Lite Edition
+    Info: Processing started: Tue Jun 17 18:16:13 2025
 Info: Command: quartus_asm --read_settings_files=off --write_settings_files=off Gambling_Tec -c Gambling_Tec
 Warning (18236): Number of processors has not been specified which may cause overloading on shared machines.  Set the global assignment NUM_PARALLEL_PROCESSORS in your QSF to an appropriate value for best performance.
-Warning (292011): Can't generate programming files because you are currently using the Quartus Prime software in Evaluation Mode.
-Info: Quartus Prime Assembler was successful. 0 errors, 2 warnings
-    Info: Peak virtual memory: 4734 megabytes
-    Info: Processing ended: Tue Jun 17 17:32:31 2025
-    Info: Elapsed time: 00:00:04
-    Info: Total CPU time (on all processors): 00:00:02
+Info (115030): Assembler is generating device programming files
+Info: Quartus Prime Assembler was successful. 0 errors, 1 warning
+    Info: Peak virtual memory: 4843 megabytes
+    Info: Processing ended: Tue Jun 17 18:16:20 2025
+    Info: Elapsed time: 00:00:07
+    Info: Total CPU time (on all processors): 00:00:07
 
 

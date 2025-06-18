@@ -4,13 +4,17 @@ module Extender(
     output logic [31:0] Out
 );
 
-always_comb begin
-    case (ImmSrc)
-        2'b00: Out = {24'd0, A[7:0]};          // Zero-extend 8 bits
-        2'b01: Out = {20'd0, A[11:0]};         // Zero-extend 12 bits
-        2'b10: Out = {{6{A[23]}}, A, 2'b00};   // Sign-extend and shift for branch
-        default: Out = 32'd0;                 // Opcional: valor por defecto
+ always_comb
+    case(ImmSrc)
+    //8-bitunsignedimmediate
+    2'b00: Out={24'b0,A[7:0]};
+    //12-bitunsignedimmediate
+    2'b01: Out={20'b0,A[11:0]};
+	 
+    //24-bittwo'scomplementshifted branch
+	 
+    2'b10: Out={{6{A[23]}},A[23:0],2'b00};
+	 
+    default: Out=32'bx;//undefined
     endcase
-end
-
-endmodule
+ endmodule

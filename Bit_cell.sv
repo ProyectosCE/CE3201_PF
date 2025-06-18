@@ -10,7 +10,7 @@ module Register32 (
 
     assign Q = enR ? Q_internal : 32'd0;  // Usar 0 en lugar de Z
 
-    always_ff @(negedge clk or posedge rst) begin
+    always_ff @(posedge clk or posedge rst) begin
         if (rst)
             Q_internal <= 32'd0;
         else if (enW)

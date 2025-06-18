@@ -76,8 +76,8 @@ module CPU (
 	);
 
 	Adder #(.N(32)) PCPlus8_inst (
-		.A(32'd4),
-		.B(PCPlus4),
+		.A(32'd8),
+		.B(PC),
 		.C(PCPlus8)
 	);
 

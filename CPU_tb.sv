@@ -48,6 +48,7 @@ module CPU_tb;
         // Inicializamos r2 con dirección de memoria
         dut.Reg_file_inst.rf[2] = 32'd12;
 		  $display("iniciando r2 en %h", dut.Reg_file_inst.rf[2]);
+		  $display("PC ACTUAL: %d0", dut.PC);
 
         // ========================================
         // CICLO 1: LDR r1, [r2, #0]
@@ -71,9 +72,9 @@ module CPU_tb;
         // ========================================
         // VERIFICACIONES ADD
         // ========================================
-        $display("Reg[1] = %0d", dut.Reg_file_inst.rf[1]);
-        $display("Reg[2] = %0d", dut.Reg_file_inst.rf[2]);
-		  $display("Reg[3] = %0d", dut.Reg_file_inst.rf[3]);
+        $display("deberia ser 4, Reg[1] = %0d", dut.Reg_file_inst.rf[1]);
+        $display("deberia ser 12 Reg[2] = %0d", dut.Reg_file_inst.rf[2]);
+		  $display("deberia ser 16 Reg[3] = %0d", dut.Reg_file_inst.rf[3]);
 		  $display("PC actual: %0d: ", dut.PC);
 		  
         // ========================================
@@ -109,43 +110,60 @@ module CPU_tb;
         Instr = 32'hE0802001;  
         #10;
         $display("ADD: Reg[2] = %0d (esperado 15)", dut.Reg_file_inst.rf[2]);
+		  $display("PC actual: %0d: ", dut.PC);
         if (dut.Reg_file_inst.rf[2] !== 15) $display("Error en ADD");
+		  
 
         // ============= SUB r2, r3, r1 (r2 = r3 - r1) ============
         Instr = 32'hE0432001;
         #10;
         $display("SUB: Reg[2] = %0d (esperado 15)", dut.Reg_file_inst.rf[2]);
+		  $display("PC actual: %0d: ", dut.PC);
         if (dut.Reg_file_inst.rf[2] !== 15) $display("Error en SUB");
+		  
 
         // ============= AND r2, r0, r1 (r2 = r0 & r1) ============
         Instr = 32'hE0002001;
         #10;
         $display("AND: Reg[2] = %0d (esperado 0)", dut.Reg_file_inst.rf[2]);
+		  $display("PC actual: %0d: ", dut.PC);
         if (dut.Reg_file_inst.rf[2] !== 0) $display("Error en AND");
+		  
 
         // ============= ORR r2, r0, r1 (r2 = r0 | r1) ============
         Instr = 32'hE1802001;
         #10;
         $display("ORR: Reg[2] = %0d (esperado 15)", dut.Reg_file_inst.rf[2]);
+		  $display("PC actual: %0d: ", dut.PC);
         if (dut.Reg_file_inst.rf[2] !== 15) $display("Error en ORR");
+		  
+		  
+		  
 
 
-		  // ============= B (branch)  ============
+	  // ============= B (branch)  ============
 		  
 			// Guardar PC antes del branch
 			 pc_before_branch = PC;
 			 
-			 // Calcular PC esperado para uniciclo ARM (PC + 4 + offset*4)
-			 pc_esperado = pc_before_branch + 4 + (3 * 4);
+			 // Calcular PC esperado para uniciclo ARM (PC + 8 + offset*4)
+			 pc_esperado = pc_before_branch + 8 + (4 * 4);
 
 			 // Ejecutar branch
-			 Instr = 32'hEA000005;
-			 #15;
+			 Instr = 32'hEA000004;
+//			 #1
+//			 $display("inmediato extendido: %d", dut.SrcB);
+//			 $display("PC+8: %d", dut.SrcA);
+//			 $display("PC: %d", dut.PC);
+//			 $display("Resultado de Alu", dut.ALUResult);
+//			 $display("Siguiente PC", dut.next_PC);
+			 #10;
 
 
-			 $display("PC antes del branch: %h", pc_before_branch);
-			 $display("PC despues del branch: %h", PC);
-			 $display("PC esperado: %h", pc_esperado);
+			 $display("PC antes del branch: %d", pc_before_branch);
+			 $display("PC despues del branch: %d", PC);
+			 $display("PC esperado: %d", pc_esperado);
+
 
 		 // =====================================================
 		 // PRUEBA CMP
@@ -172,8 +190,8 @@ module CPU_tb;
 			 Instr = 32'h1A000000;
 			 @(posedge clk);
 			 
-			 $display("PC antes del branch: %h", pc_before_branch);
-			 $display("PC despues del branch: %h", PC);
+			 $display("PC antes del branch: %d", pc_before_branch);
+			 $display("PC despues del branch: %d", PC);
 			 
 
          $display("==== FIN TEST ====");

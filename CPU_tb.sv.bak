@@ -1,44 +1,217 @@
+`timescale 1ns/1ps
+
 module CPU_tb;
 
-  logic clk, rst;
-  CPU dut(.clk(clk), .rst(rst));
+    logic clk, rst;
+    logic [31:0] Instr;
+    logic [31:0] ReadData;
+    logic [31:0] WriteData;
+    logic MemWrite;
+    logic [31:0] PC;
+    logic [31:0] ALUResult;
+    logic [31:0] Result;
 
-  // Generador de reloj
-  initial begin
-    clk = 0;
-    forever #5 clk = ~clk;
-  end
+    // Instancia de la CPU
+    CPU dut (
+        .clk(clk),
+        .rst(rst),
+        .Instr(Instr),
+        .ReadData(ReadData),
+        .WriteData(WriteData),
+        .MemWrite(MemWrite),
+        .PC(PC),
+        .ALUResult(ALUResult),
+        .Result(Result)
+    );
 
-  // Inicialización
-  initial begin
-    rst = 1;
-    #10;
-    rst = 0;
-
-    // Configuración manual de registros y memorias
-    // LDR R1, [R2, #0]
-    // R2 = 2 (por ejemplo), offset = 0
-    // Codificación simple: suponemos que el decodificador saca Rn=2, Rt=1, offset=0
-    dut.Instr_Mem.mem[0] = 32'b1110_0101_1001_0001_0000_0000_0000_0000; // LDR R1, [R2, #0] (falsa codificación si no usas real)
+    // Reloj de 10ns
+    initial clk = 0;
+    always #5 clk = ~clk;
     
-    // Inicializamos R2 = 8
-    dut.Register_File.registers[2] = 32'd8;
+    logic [31:0] r1_value_after_ldr;
+	 logic [31:0] pc_before_branch;
+	 logic [31:0] pc_esperado;
 
-    // En la posición 8 de la RAM estará el valor a cargar
-    dut.Data_Memory.mem[8 >> 2] = 32'h12345678; // dirección 8 alineada en palabra
+    initial begin
+        $display("==== INICIO TEST CPU ====");
+        $dumpfile("cpu_tb.vcd");
+        $dumpvars(0, CPU_tb);
 
-    // Esperamos algunos ciclos
-    #50;
+        // Inicialización
+        rst = 1;
+        Instr = 32'd0;
+        ReadData = 32'd0;
+        #10;
 
-    // Comprobamos si R1 recibió el valor
-    if (dut.Register_File.registers[1] == 32'h12345678)
-      $display("✅ Test PASSED: LDR cargó correctamente");
-    else begin
-      $display("❌ Test FAILED: LDR no cargó correctamente");
-      $display("R1 = %h", dut.Register_File.registers[1]);
+        rst = 0;
+
+        // Inicializamos r2 con dirección de memoria
+        dut.Reg_file_inst.rf[2] = 32'd12;
+		  $display("iniciando r2 en %h", dut.Reg_file_inst.rf[2]);
+		  $display("PC ACTUAL: %d0", dut.PC);
+
+        // ========================================
+        // CICLO 1: LDR r1, [r2, #0]
+        // ========================================
+        Instr = 32'hE5921000;  // LDR r1, [r2, #0]
+        ReadData = 32'd4;      // Valor que se carga desde memoria
+        #10; // Instrucción ejecutada completamente
+
+        // Guardamos el valor cargado para verificarlo más adelante
+        r1_value_after_ldr = dut.Reg_file_inst.rf[1];
+		  $display("r1 deberia tener 4, tiene: %h", r1_value_after_ldr);
+		  $display("PC actual: %h: ", dut.PC);
+		  
+
+        // ========================================
+        // ADD R3, R1, R2
+        // ========================================
+        Instr = 32'hE0813002;  // ADD R3, R1, R2
+        #10; // Ejecutar ADD
+
+        // ========================================
+        // VERIFICACIONES ADD
+        // ========================================
+        $display("deberia ser 4, Reg[1] = %0d", dut.Reg_file_inst.rf[1]);
+        $display("deberia ser 12 Reg[2] = %0d", dut.Reg_file_inst.rf[2]);
+		  $display("deberia ser 16 Reg[3] = %0d", dut.Reg_file_inst.rf[3]);
+		  $display("PC actual: %0d: ", dut.PC);
+		  
+        // ========================================
+        // // STR R3, [R2, #0]
+        // ========================================
+		  Instr = 32'hE5823000;  // STR R3, [R2, #0]
+		  #10; //ejecutar str
+		  // ========================================
+        // VERIFICACIONES STR
+        // ========================================
+		  $display("deberia escribir 16: %0d", dut.WriteData);
+		  $display("deberia escribir en 12: %0d", dut.ALUResult);
+		  $display("PC actual: %0d: ", dut.PC);
+		  
+		  
+
+        if (MemWrite !== 1) begin
+            $display("Error: MemWrite no fue activado.");
+        end else begin
+            $display("OK: MemWrite activado.");
+        end
+        // ========================================
+        // PRUEBAS ADICIONALES: ADD, SUB, AND, OR, BRANCH
+        // ========================================
+
+        // Inicializamos registros para pruebas
+        dut.Reg_file_inst.rf[0] = 10;    // r0 = 10
+        dut.Reg_file_inst.rf[1] = 5;     // r1 = 5
+        dut.Reg_file_inst.rf[2] = 0;     // r2 = 0 (resultado)
+        dut.Reg_file_inst.rf[3] = 20;    // r3 = 20 (para branch test)
+
+        // ============= ADD r2, r0, r1 (r2 = r0 + r1) ============
+        Instr = 32'hE0802001;  
+        #10;
+        $display("ADD: Reg[2] = %0d (esperado 15)", dut.Reg_file_inst.rf[2]);
+        if (dut.Reg_file_inst.rf[2] !== 15) $display("Error en ADD");
+		  $display("PC actual: %0d: ", dut.PC);
+
+        // ============= SUB r2, r3, r1 (r2 = r3 - r1) ============
+        Instr = 32'hE0432001;
+        #10;
+        $display("SUB: Reg[2] = %0d (esperado 15)", dut.Reg_file_inst.rf[2]);
+        if (dut.Reg_file_inst.rf[2] !== 15) $display("Error en SUB");
+		  $display("PC actual: %0d: ", dut.PC);
+
+        // ============= AND r2, r0, r1 (r2 = r0 & r1) ============
+        Instr = 32'hE0002001;
+        #10;
+        $display("AND: Reg[2] = %0d (esperado 0)", dut.Reg_file_inst.rf[2]);
+        if (dut.Reg_file_inst.rf[2] !== 0) $display("Error en AND");
+		  $display("PC actual: %0d: ", dut.PC);
+
+        // ============= ORR r2, r0, r1 (r2 = r0 | r1) ============
+        Instr = 32'hE1802001;
+        #10;
+        $display("ORR: Reg[2] = %0d (esperado 15)", dut.Reg_file_inst.rf[2]);
+        if (dut.Reg_file_inst.rf[2] !== 15) $display("Error en ORR");
+		  $display("PC actual: %0d: ", dut.PC);
+
+
+		  // ============= B (branch)  ============
+		  
+			// Guardar PC antes del branch
+			 pc_before_branch = PC;
+			 
+			 // Calcular PC esperado para uniciclo ARM (PC + 4 + offset*4)
+			 pc_esperado = pc_before_branch + 4 + (3 * 4);
+
+			 // Ejecutar branch
+			 Instr = 32'hEA000005;
+			 #15;
+
+
+			 $display("PC antes del branch: %h", pc_before_branch);
+			 $display("PC despues del branch: %h", PC);
+			 $display("PC esperado: %h", pc_esperado);
+
+		 // =====================================================
+		 // PRUEBA CMP
+		 // =====================================================
+		 
+			 @(posedge clk);
+			 exec_cmp(0 , 0 , 2'b01); // N=0 Z=1 
+			 exec_cmp(100, 20 , 2'b00); // N=0 Z=0 
+			 exec_cmp(5  , 20 , 2'b10); // N=1 Z=0 
+
+		 // =====================================================
+		 // PRUEBA BNE
+		 // =====================================================
+		 
+
+			 // Ejecutar cmp
+			 exec_cmp(0, 0 , 2'b00); // N=0 Z=0 
+			 @(posedge clk);
+
+		 	// Guardar PC antes del branch
+			 pc_before_branch = PC;
+			 
+			// Ejecutar branch
+			 Instr = 32'h1A000000;
+			 @(posedge clk);
+			 
+			 $display("PC antes del branch: %h", pc_before_branch);
+			 $display("PC despues del branch: %h", PC);
+			 
+
+         $display("==== FIN TEST ====");
+         $finish;
     end
+	 
+	task automatic exec_cmp;
+		 input [31:0] rn_val, rm_val;   // valores de R0 y R1
+		 input [1:0]  exp_NZ;           // {N, Z} esperados
+	begin
+		 // operandos 
+		 dut.Reg_file_inst.rf[0] = rn_val;
+		 dut.Reg_file_inst.rf[1] = rm_val;
+		 
+		 // Instr
+		 Instr = 32'hE1500001;          // CMP R0, R1
 
-    $finish;
-  end
+		 @(posedge clk);
+		 #1;                            // pequeño margen de asentamiento
+		 $display("CMP Operands: A=%0d B=%0d", dut.SrcA, dut.SrcB);
+
+
+		 // Comprobar Flags
+		 $display("DEBUG CMP A=%0d B=%0d  N=%0b Z=%0b",
+					 rn_val, rm_val, dut.AluFlags[1], dut.AluFlags[0]);
+
+		 if (dut.AluFlags[1:0] !== exp_NZ)
+			  $display("ERROR CMP (%0d vs %0d): N,Z esperados = %b  obtenidos = %b",
+						  rn_val, rm_val, exp_NZ, dut.AluFlags[1:0]);
+		 else
+			  $display("OK    CMP (%0d vs %0d)", rn_val, rm_val);
+	end
+	endtask
+
 
 endmodule

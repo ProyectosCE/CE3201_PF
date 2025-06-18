@@ -8,7 +8,7 @@ module Register #(parameter N = 10) (
 );
 
 
-always_ff @(negedge clk or posedge rst)
+always_ff @(posedge clk or posedge rst)
 	if(rst) Q <= 10'h00;
 	else if(en)
 		Q <= D;
