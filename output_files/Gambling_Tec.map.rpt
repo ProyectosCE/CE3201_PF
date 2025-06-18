@@ -1,31 +1,39 @@
-Analysis & Elaboration report for Gambling_Tec
-Tue Jun 17 21:44:34 2025
-Quartus Prime Version 18.1.0 Build 625 09/12/2018 SJ Lite Edition
+Analysis & Synthesis report for Gambling_Tec
+Tue Jun 17 22:39:10 2025
+Quartus Prime Version 18.1.0 Build 625 09/12/2018 SJ Standard Edition
 
 
 ---------------------
 ; Table of Contents ;
 ---------------------
   1. Legal Notice
-  2. Analysis & Elaboration Summary
-  3. Parallel Compilation
-  4. Parameter Settings for User Entity Instance: Mux:next_PC_inst
-  5. Parameter Settings for User Entity Instance: Register:PC_Register
-  6. Parameter Settings for User Entity Instance: Mux:RA1_inst
-  7. Parameter Settings for User Entity Instance: Mux:RA2_inst
-  8. Parameter Settings for User Entity Instance: Adder:PCPlus4_inst
-  9. Parameter Settings for User Entity Instance: Adder:PCPlus8_inst
- 10. Parameter Settings for User Entity Instance: Mux:ALUSrc_inst
- 11. Parameter Settings for User Entity Instance: ALU:ALU_inst
- 12. Parameter Settings for User Entity Instance: Mux:MemToReg_inst
- 13. Parameter Settings for User Entity Instance: Control_Unit:CU_Inst|Register:Register_Flag1
- 14. Parameter Settings for User Entity Instance: Control_Unit:CU_Inst|Register:Register_Flag2
- 15. Analysis & Elaboration Settings
- 16. Port Connectivity Checks: "Adder:PCPlus8_inst"
- 17. Port Connectivity Checks: "Adder:PCPlus4_inst"
- 18. Port Connectivity Checks: "Mux:RA1_inst"
- 19. Analysis & Elaboration Messages
- 20. Analysis & Elaboration Suppressed Messages
+  2. Analysis & Synthesis Summary
+  3. Analysis & Synthesis Settings
+  4. Parallel Compilation
+  5. Analysis & Synthesis Source Files Read
+  6. Analysis & Synthesis Resource Usage Summary
+  7. Analysis & Synthesis Resource Utilization by Entity
+  8. General Register Statistics
+  9. Parameter Settings for User Entity Instance: ROM:rom0
+ 10. Parameter Settings for User Entity Instance: CPU:process|Mux:next_PC_inst
+ 11. Parameter Settings for User Entity Instance: CPU:process|Register:PC_Register
+ 12. Parameter Settings for User Entity Instance: CPU:process|Mux:RA1_inst
+ 13. Parameter Settings for User Entity Instance: CPU:process|Mux:RA2_inst
+ 14. Parameter Settings for User Entity Instance: CPU:process|Adder:PCPlus4_inst
+ 15. Parameter Settings for User Entity Instance: CPU:process|Adder:PCPlus8_inst
+ 16. Parameter Settings for User Entity Instance: CPU:process|Mux:ALUSrc_inst
+ 17. Parameter Settings for User Entity Instance: CPU:process|ALU:ALU_inst
+ 18. Parameter Settings for User Entity Instance: CPU:process|Mux:MemToReg_inst
+ 19. Parameter Settings for User Entity Instance: CPU:process|Control_Unit:CU_Inst|Register:Register_Flag1
+ 20. Parameter Settings for User Entity Instance: CPU:process|Control_Unit:CU_Inst|Register:Register_Flag2
+ 21. Port Connectivity Checks: "CPU:process|Adder:PCPlus8_inst"
+ 22. Port Connectivity Checks: "CPU:process|Adder:PCPlus4_inst"
+ 23. Port Connectivity Checks: "CPU:process|Mux:RA1_inst"
+ 24. Port Connectivity Checks: "CPU:process"
+ 25. Post-Synthesis Netlist Statistics for Top Partition
+ 26. Elapsed Time Per Partition
+ 27. Analysis & Synthesis Messages
+ 28. Analysis & Synthesis Suppressed Messages
 
 
 
@@ -48,157 +56,36 @@ refer to the applicable agreement for further details.
 
 
 
-+-----------------------------------------------------------------------------+
-; Analysis & Elaboration Summary                                              ;
-+-------------------------------+---------------------------------------------+
-; Analysis & Elaboration Status ; Successful - Tue Jun 17 21:44:34 2025       ;
-; Quartus Prime Version         ; 18.1.0 Build 625 09/12/2018 SJ Lite Edition ;
-; Revision Name                 ; Gambling_Tec                                ;
-; Top-level Entity Name         ; CPU                                         ;
-; Family                        ; Cyclone V                                   ;
-; Logic utilization (in ALMs)   ; N/A until Partition Merge                   ;
-; Total registers               ; N/A until Partition Merge                   ;
-; Total pins                    ; N/A until Partition Merge                   ;
-; Total virtual pins            ; N/A until Partition Merge                   ;
-; Total block memory bits       ; N/A until Partition Merge                   ;
-; Total PLLs                    ; N/A until Partition Merge                   ;
-; Total DLLs                    ; N/A until Partition Merge                   ;
-+-------------------------------+---------------------------------------------+
-
-
-+------------------------------------------+
-; Parallel Compilation                     ;
-+----------------------------+-------------+
-; Processors                 ; Number      ;
-+----------------------------+-------------+
-; Number detected on machine ; 8           ;
-; Maximum allowed            ; 4           ;
-;                            ;             ;
-; Average used               ; 1.00        ;
-; Maximum used               ; 1           ;
-;                            ;             ;
-; Usage by Processor         ; % Time Used ;
-;     Processor 1            ; 100.0%      ;
-+----------------------------+-------------+
-
-
-+---------------------------------------------------------------+
-; Parameter Settings for User Entity Instance: Mux:next_PC_inst ;
-+----------------+-------+--------------------------------------+
-; Parameter Name ; Value ; Type                                 ;
-+----------------+-------+--------------------------------------+
-; N              ; 32    ; Signed Integer                       ;
-+----------------+-------+--------------------------------------+
-Note: In order to hide this table in the UI and the text report file, please set the "Show Parameter Settings in Synthesis Report" option in "Analysis and Synthesis Settings -> More Settings" to "Off".
-
-
-+-------------------------------------------------------------------+
-; Parameter Settings for User Entity Instance: Register:PC_Register ;
-+----------------+-------+------------------------------------------+
-; Parameter Name ; Value ; Type                                     ;
-+----------------+-------+------------------------------------------+
-; N              ; 32    ; Signed Integer                           ;
-+----------------+-------+------------------------------------------+
-Note: In order to hide this table in the UI and the text report file, please set the "Show Parameter Settings in Synthesis Report" option in "Analysis and Synthesis Settings -> More Settings" to "Off".
-
-
-+-----------------------------------------------------------+
-; Parameter Settings for User Entity Instance: Mux:RA1_inst ;
-+----------------+-------+----------------------------------+
-; Parameter Name ; Value ; Type                             ;
-+----------------+-------+----------------------------------+
-; N              ; 4     ; Signed Integer                   ;
-+----------------+-------+----------------------------------+
-Note: In order to hide this table in the UI and the text report file, please set the "Show Parameter Settings in Synthesis Report" option in "Analysis and Synthesis Settings -> More Settings" to "Off".
-
-
-+-----------------------------------------------------------+
-; Parameter Settings for User Entity Instance: Mux:RA2_inst ;
-+----------------+-------+----------------------------------+
-; Parameter Name ; Value ; Type                             ;
-+----------------+-------+----------------------------------+
-; N              ; 4     ; Signed Integer                   ;
-+----------------+-------+----------------------------------+
-Note: In order to hide this table in the UI and the text report file, please set the "Show Parameter Settings in Synthesis Report" option in "Analysis and Synthesis Settings -> More Settings" to "Off".
-
-
-+-----------------------------------------------------------------+
-; Parameter Settings for User Entity Instance: Adder:PCPlus4_inst ;
-+----------------+-------+----------------------------------------+
-; Parameter Name ; Value ; Type                                   ;
-+----------------+-------+----------------------------------------+
-; N              ; 32    ; Signed Integer                         ;
-+----------------+-------+----------------------------------------+
-Note: In order to hide this table in the UI and the text report file, please set the "Show Parameter Settings in Synthesis Report" option in "Analysis and Synthesis Settings -> More Settings" to "Off".
-
-
-+-----------------------------------------------------------------+
-; Parameter Settings for User Entity Instance: Adder:PCPlus8_inst ;
-+----------------+-------+----------------------------------------+
-; Parameter Name ; Value ; Type                                   ;
-+----------------+-------+----------------------------------------+
-; N              ; 32    ; Signed Integer                         ;
-+----------------+-------+----------------------------------------+
-Note: In order to hide this table in the UI and the text report file, please set the "Show Parameter Settings in Synthesis Report" option in "Analysis and Synthesis Settings -> More Settings" to "Off".
-
-
-+--------------------------------------------------------------+
-; Parameter Settings for User Entity Instance: Mux:ALUSrc_inst ;
-+----------------+-------+-------------------------------------+
-; Parameter Name ; Value ; Type                                ;
-+----------------+-------+-------------------------------------+
-; N              ; 32    ; Signed Integer                      ;
-+----------------+-------+-------------------------------------+
-Note: In order to hide this table in the UI and the text report file, please set the "Show Parameter Settings in Synthesis Report" option in "Analysis and Synthesis Settings -> More Settings" to "Off".
-
-
-+-----------------------------------------------------------+
-; Parameter Settings for User Entity Instance: ALU:ALU_inst ;
-+----------------+-------+----------------------------------+
-; Parameter Name ; Value ; Type                             ;
-+----------------+-------+----------------------------------+
-; N              ; 32    ; Signed Integer                   ;
-+----------------+-------+----------------------------------+
-Note: In order to hide this table in the UI and the text report file, please set the "Show Parameter Settings in Synthesis Report" option in "Analysis and Synthesis Settings -> More Settings" to "Off".
-
-
-+----------------------------------------------------------------+
-; Parameter Settings for User Entity Instance: Mux:MemToReg_inst ;
-+----------------+-------+---------------------------------------+
-; Parameter Name ; Value ; Type                                  ;
-+----------------+-------+---------------------------------------+
-; N              ; 32    ; Signed Integer                        ;
-+----------------+-------+---------------------------------------+
-Note: In order to hide this table in the UI and the text report file, please set the "Show Parameter Settings in Synthesis Report" option in "Analysis and Synthesis Settings -> More Settings" to "Off".
-
-
-+-------------------------------------------------------------------------------------------+
-; Parameter Settings for User Entity Instance: Control_Unit:CU_Inst|Register:Register_Flag1 ;
-+----------------+-------+------------------------------------------------------------------+
-; Parameter Name ; Value ; Type                                                             ;
-+----------------+-------+------------------------------------------------------------------+
-; N              ; 2     ; Signed Integer                                                   ;
-+----------------+-------+------------------------------------------------------------------+
-Note: In order to hide this table in the UI and the text report file, please set the "Show Parameter Settings in Synthesis Report" option in "Analysis and Synthesis Settings -> More Settings" to "Off".
-
-
-+-------------------------------------------------------------------------------------------+
-; Parameter Settings for User Entity Instance: Control_Unit:CU_Inst|Register:Register_Flag2 ;
-+----------------+-------+------------------------------------------------------------------+
-; Parameter Name ; Value ; Type                                                             ;
-+----------------+-------+------------------------------------------------------------------+
-; N              ; 2     ; Signed Integer                                                   ;
-+----------------+-------+------------------------------------------------------------------+
-Note: In order to hide this table in the UI and the text report file, please set the "Show Parameter Settings in Synthesis Report" option in "Analysis and Synthesis Settings -> More Settings" to "Off".
++-----------------------------------------------------------------------------------+
+; Analysis & Synthesis Summary                                                      ;
++---------------------------------+-------------------------------------------------+
+; Analysis & Synthesis Status     ; Successful - Tue Jun 17 22:39:10 2025           ;
+; Quartus Prime Version           ; 18.1.0 Build 625 09/12/2018 SJ Standard Edition ;
+; Revision Name                   ; Gambling_Tec                                    ;
+; Top-level Entity Name           ; Gambling_Tec                                    ;
+; Family                          ; Cyclone V                                       ;
+; Logic utilization (in ALMs)     ; N/A                                             ;
+; Total registers                 ; 0                                               ;
+; Total pins                      ; 2                                               ;
+; Total virtual pins              ; 0                                               ;
+; Total block memory bits         ; 0                                               ;
+; Total DSP Blocks                ; 0                                               ;
+; Total HSSI RX PCSs              ; 0                                               ;
+; Total HSSI PMA RX Deserializers ; 0                                               ;
+; Total HSSI TX PCSs              ; 0                                               ;
+; Total HSSI PMA TX Serializers   ; 0                                               ;
+; Total PLLs                      ; 0                                               ;
+; Total DLLs                      ; 0                                               ;
++---------------------------------+-------------------------------------------------+
 
 
 +---------------------------------------------------------------------------------------------------------------------------+
-; Analysis & Elaboration Settings                                                                                           ;
+; Analysis & Synthesis Settings                                                                                             ;
 +---------------------------------------------------------------------------------+--------------------+--------------------+
 ; Option                                                                          ; Setting            ; Default Value      ;
 +---------------------------------------------------------------------------------+--------------------+--------------------+
 ; Device                                                                          ; 5CSXFC6D6F31C6     ;                    ;
-; Top-level entity name                                                           ; CPU                ; Gambling_Tec       ;
+; Top-level entity name                                                           ; Gambling_Tec       ; Gambling_Tec       ;
 ; Family name                                                                     ; Cyclone V          ; Cyclone V          ;
 ; Use smart compilation                                                           ; Off                ; Off                ;
 ; Enable parallel Assembler and Timing Analyzer during compilation                ; On                 ; On                 ;
@@ -279,130 +166,388 @@ Note: In order to hide this table in the UI and the text report file, please set
 +---------------------------------------------------------------------------------+--------------------+--------------------+
 
 
-+------------------------------------------------+
-; Port Connectivity Checks: "Adder:PCPlus8_inst" ;
-+----------+-------+----------+------------------+
-; Port     ; Type  ; Severity ; Details          ;
-+----------+-------+----------+------------------+
-; A[31..4] ; Input ; Info     ; Stuck at GND     ;
-; A[2..0]  ; Input ; Info     ; Stuck at GND     ;
-; A[3]     ; Input ; Info     ; Stuck at VCC     ;
-+----------+-------+----------+------------------+
++------------------------------------------+
+; Parallel Compilation                     ;
++----------------------------+-------------+
+; Processors                 ; Number      ;
++----------------------------+-------------+
+; Number detected on machine ; 8           ;
+; Maximum allowed            ; 8           ;
+;                            ;             ;
+; Average used               ; 1.00        ;
+; Maximum used               ; 1           ;
+;                            ;             ;
+; Usage by Processor         ; % Time Used ;
+;     Processor 1            ; 100.0%      ;
++----------------------------+-------------+
 
 
-+------------------------------------------------+
-; Port Connectivity Checks: "Adder:PCPlus4_inst" ;
-+----------+-------+----------+------------------+
-; Port     ; Type  ; Severity ; Details          ;
-+----------+-------+----------+------------------+
-; B[31..3] ; Input ; Info     ; Stuck at GND     ;
-; B[1..0]  ; Input ; Info     ; Stuck at GND     ;
-; B[2]     ; Input ; Info     ; Stuck at VCC     ;
-+----------+-------+----------+------------------+
++---------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+; Analysis & Synthesis Source Files Read                                                                                                                              ;
++----------------------------------+-----------------+---------------------------------------+--------------------------------------------------------------+---------+
+; File Name with User-Entered Path ; Used in Netlist ; File Type                             ; File Name with Absolute Path                                 ; Library ;
++----------------------------------+-----------------+---------------------------------------+--------------------------------------------------------------+---------+
+; Gambling_Tec.hex                 ; yes             ; User Hexadecimal (Intel-Format) File  ; C:/Users/joseb/Documents/GitHub/CE3201_PF/Gambling_Tec.hex   ;         ;
+; ROM.sv                           ; yes             ; User SystemVerilog HDL File           ; C:/Users/joseb/Documents/GitHub/CE3201_PF/ROM.sv             ;         ;
+; Condition_Check.sv               ; yes             ; User SystemVerilog HDL File           ; C:/Users/joseb/Documents/GitHub/CE3201_PF/Condition_Check.sv ;         ;
+; Register_File.sv                 ; yes             ; User SystemVerilog HDL File           ; C:/Users/joseb/Documents/GitHub/CE3201_PF/Register_File.sv   ;         ;
+; Register.sv                      ; yes             ; User SystemVerilog HDL File           ; C:/Users/joseb/Documents/GitHub/CE3201_PF/Register.sv        ;         ;
+; Mux.sv                           ; yes             ; User SystemVerilog HDL File           ; C:/Users/joseb/Documents/GitHub/CE3201_PF/Mux.sv             ;         ;
+; Extender.sv                      ; yes             ; User SystemVerilog HDL File           ; C:/Users/joseb/Documents/GitHub/CE3201_PF/Extender.sv        ;         ;
+; Data_Memory.sv                   ; yes             ; User SystemVerilog HDL File           ; C:/Users/joseb/Documents/GitHub/CE3201_PF/Data_Memory.sv     ;         ;
+; CPU.sv                           ; yes             ; User SystemVerilog HDL File           ; C:/Users/joseb/Documents/GitHub/CE3201_PF/CPU.sv             ;         ;
+; ALU.sv                           ; yes             ; User SystemVerilog HDL File           ; C:/Users/joseb/Documents/GitHub/CE3201_PF/ALU.sv             ;         ;
+; Adder.sv                         ; yes             ; User SystemVerilog HDL File           ; C:/Users/joseb/Documents/GitHub/CE3201_PF/Adder.sv           ;         ;
+; Gambling_Tec.sv                  ; yes             ; User SystemVerilog HDL File           ; C:/Users/joseb/Documents/GitHub/CE3201_PF/Gambling_Tec.sv    ;         ;
+; Control_Unit.sv                  ; yes             ; User SystemVerilog HDL File           ; C:/Users/joseb/Documents/GitHub/CE3201_PF/Control_Unit.sv    ;         ;
+; Decoder.sv                       ; yes             ; User SystemVerilog HDL File           ; C:/Users/joseb/Documents/GitHub/CE3201_PF/Decoder.sv         ;         ;
++----------------------------------+-----------------+---------------------------------------+--------------------------------------------------------------+---------+
+
+
++-----------------------------------------------------+
+; Analysis & Synthesis Resource Usage Summary         ;
++---------------------------------------------+-------+
+; Resource                                    ; Usage ;
++---------------------------------------------+-------+
+; Estimate of Logic utilization (ALMs needed) ; 0     ;
+;                                             ;       ;
+; Combinational ALUT usage for logic          ; 0     ;
+;     -- 7 input functions                    ; 0     ;
+;     -- 6 input functions                    ; 0     ;
+;     -- 5 input functions                    ; 0     ;
+;     -- 4 input functions                    ; 0     ;
+;     -- <=3 input functions                  ; 0     ;
+;                                             ;       ;
+; Dedicated logic registers                   ; 0     ;
+;                                             ;       ;
+; I/O pins                                    ; 2     ;
+;                                             ;       ;
+; Total DSP Blocks                            ; 0     ;
+;                                             ;       ;
+; Maximum fan-out node                        ; clk   ;
+; Maximum fan-out                             ; 1     ;
+; Total fan-out                               ; 2     ;
+; Average fan-out                             ; 0.50  ;
++---------------------------------------------+-------+
+
+
++-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+; Analysis & Synthesis Resource Utilization by Entity                                                                                                                                     ;
++----------------------------+---------------------+---------------------------+-------------------+------------+------+--------------+---------------------+--------------+--------------+
+; Compilation Hierarchy Node ; Combinational ALUTs ; Dedicated Logic Registers ; Block Memory Bits ; DSP Blocks ; Pins ; Virtual Pins ; Full Hierarchy Name ; Entity Name  ; Library Name ;
++----------------------------+---------------------+---------------------------+-------------------+------------+------+--------------+---------------------+--------------+--------------+
+; |Gambling_Tec              ; 0 (0)               ; 0 (0)                     ; 0                 ; 0          ; 2    ; 0            ; |Gambling_Tec       ; Gambling_Tec ; work         ;
++----------------------------+---------------------+---------------------------+-------------------+------------+------+--------------+---------------------+--------------+--------------+
+Note: For table entries with two numbers listed, the numbers in parentheses indicate the number of resources of the given type used by the specific entity alone. The numbers listed outside of parentheses indicate the total resources of the given type used by the specific entity and all of its sub-entities in the hierarchy.
+
+
++------------------------------------------------------+
+; General Register Statistics                          ;
++----------------------------------------------+-------+
+; Statistic                                    ; Value ;
++----------------------------------------------+-------+
+; Total registers                              ; 0     ;
+; Number of registers using Synchronous Clear  ; 0     ;
+; Number of registers using Synchronous Load   ; 0     ;
+; Number of registers using Asynchronous Clear ; 0     ;
+; Number of registers using Asynchronous Load  ; 0     ;
+; Number of registers using Clock Enable       ; 0     ;
+; Number of registers using Preset             ; 0     ;
++----------------------------------------------+-------+
+
+
++-------------------------------------------------------+
+; Parameter Settings for User Entity Instance: ROM:rom0 ;
++----------------+-------+------------------------------+
+; Parameter Name ; Value ; Type                         ;
++----------------+-------+------------------------------+
+; AW             ; 10    ; Signed Integer               ;
+; DW             ; 32    ; Signed Integer               ;
++----------------+-------+------------------------------+
+Note: In order to hide this table in the UI and the text report file, please set the "Show Parameter Settings in Synthesis Report" option in "Analysis and Synthesis Settings -> More Settings" to "Off".
+
+
++---------------------------------------------------------------------------+
+; Parameter Settings for User Entity Instance: CPU:process|Mux:next_PC_inst ;
++----------------+-------+--------------------------------------------------+
+; Parameter Name ; Value ; Type                                             ;
++----------------+-------+--------------------------------------------------+
+; N              ; 32    ; Signed Integer                                   ;
++----------------+-------+--------------------------------------------------+
+Note: In order to hide this table in the UI and the text report file, please set the "Show Parameter Settings in Synthesis Report" option in "Analysis and Synthesis Settings -> More Settings" to "Off".
+
+
++-------------------------------------------------------------------------------+
+; Parameter Settings for User Entity Instance: CPU:process|Register:PC_Register ;
++----------------+-------+------------------------------------------------------+
+; Parameter Name ; Value ; Type                                                 ;
++----------------+-------+------------------------------------------------------+
+; N              ; 32    ; Signed Integer                                       ;
++----------------+-------+------------------------------------------------------+
+Note: In order to hide this table in the UI and the text report file, please set the "Show Parameter Settings in Synthesis Report" option in "Analysis and Synthesis Settings -> More Settings" to "Off".
+
+
++-----------------------------------------------------------------------+
+; Parameter Settings for User Entity Instance: CPU:process|Mux:RA1_inst ;
++----------------+-------+----------------------------------------------+
+; Parameter Name ; Value ; Type                                         ;
++----------------+-------+----------------------------------------------+
+; N              ; 4     ; Signed Integer                               ;
++----------------+-------+----------------------------------------------+
+Note: In order to hide this table in the UI and the text report file, please set the "Show Parameter Settings in Synthesis Report" option in "Analysis and Synthesis Settings -> More Settings" to "Off".
+
+
++-----------------------------------------------------------------------+
+; Parameter Settings for User Entity Instance: CPU:process|Mux:RA2_inst ;
++----------------+-------+----------------------------------------------+
+; Parameter Name ; Value ; Type                                         ;
++----------------+-------+----------------------------------------------+
+; N              ; 4     ; Signed Integer                               ;
++----------------+-------+----------------------------------------------+
+Note: In order to hide this table in the UI and the text report file, please set the "Show Parameter Settings in Synthesis Report" option in "Analysis and Synthesis Settings -> More Settings" to "Off".
+
+
++-----------------------------------------------------------------------------+
+; Parameter Settings for User Entity Instance: CPU:process|Adder:PCPlus4_inst ;
++----------------+-------+----------------------------------------------------+
+; Parameter Name ; Value ; Type                                               ;
++----------------+-------+----------------------------------------------------+
+; N              ; 32    ; Signed Integer                                     ;
++----------------+-------+----------------------------------------------------+
+Note: In order to hide this table in the UI and the text report file, please set the "Show Parameter Settings in Synthesis Report" option in "Analysis and Synthesis Settings -> More Settings" to "Off".
+
+
++-----------------------------------------------------------------------------+
+; Parameter Settings for User Entity Instance: CPU:process|Adder:PCPlus8_inst ;
++----------------+-------+----------------------------------------------------+
+; Parameter Name ; Value ; Type                                               ;
++----------------+-------+----------------------------------------------------+
+; N              ; 32    ; Signed Integer                                     ;
++----------------+-------+----------------------------------------------------+
+Note: In order to hide this table in the UI and the text report file, please set the "Show Parameter Settings in Synthesis Report" option in "Analysis and Synthesis Settings -> More Settings" to "Off".
+
+
++--------------------------------------------------------------------------+
+; Parameter Settings for User Entity Instance: CPU:process|Mux:ALUSrc_inst ;
++----------------+-------+-------------------------------------------------+
+; Parameter Name ; Value ; Type                                            ;
++----------------+-------+-------------------------------------------------+
+; N              ; 32    ; Signed Integer                                  ;
++----------------+-------+-------------------------------------------------+
+Note: In order to hide this table in the UI and the text report file, please set the "Show Parameter Settings in Synthesis Report" option in "Analysis and Synthesis Settings -> More Settings" to "Off".
+
+
++-----------------------------------------------------------------------+
+; Parameter Settings for User Entity Instance: CPU:process|ALU:ALU_inst ;
++----------------+-------+----------------------------------------------+
+; Parameter Name ; Value ; Type                                         ;
++----------------+-------+----------------------------------------------+
+; N              ; 32    ; Signed Integer                               ;
++----------------+-------+----------------------------------------------+
+Note: In order to hide this table in the UI and the text report file, please set the "Show Parameter Settings in Synthesis Report" option in "Analysis and Synthesis Settings -> More Settings" to "Off".
+
+
++----------------------------------------------------------------------------+
+; Parameter Settings for User Entity Instance: CPU:process|Mux:MemToReg_inst ;
++----------------+-------+---------------------------------------------------+
+; Parameter Name ; Value ; Type                                              ;
++----------------+-------+---------------------------------------------------+
+; N              ; 32    ; Signed Integer                                    ;
++----------------+-------+---------------------------------------------------+
+Note: In order to hide this table in the UI and the text report file, please set the "Show Parameter Settings in Synthesis Report" option in "Analysis and Synthesis Settings -> More Settings" to "Off".
+
+
++-------------------------------------------------------------------------------------------------------+
+; Parameter Settings for User Entity Instance: CPU:process|Control_Unit:CU_Inst|Register:Register_Flag1 ;
++----------------+-------+------------------------------------------------------------------------------+
+; Parameter Name ; Value ; Type                                                                         ;
++----------------+-------+------------------------------------------------------------------------------+
+; N              ; 2     ; Signed Integer                                                               ;
++----------------+-------+------------------------------------------------------------------------------+
+Note: In order to hide this table in the UI and the text report file, please set the "Show Parameter Settings in Synthesis Report" option in "Analysis and Synthesis Settings -> More Settings" to "Off".
+
+
++-------------------------------------------------------------------------------------------------------+
+; Parameter Settings for User Entity Instance: CPU:process|Control_Unit:CU_Inst|Register:Register_Flag2 ;
++----------------+-------+------------------------------------------------------------------------------+
+; Parameter Name ; Value ; Type                                                                         ;
++----------------+-------+------------------------------------------------------------------------------+
+; N              ; 2     ; Signed Integer                                                               ;
++----------------+-------+------------------------------------------------------------------------------+
+Note: In order to hide this table in the UI and the text report file, please set the "Show Parameter Settings in Synthesis Report" option in "Analysis and Synthesis Settings -> More Settings" to "Off".
+
+
++------------------------------------------------------------+
+; Port Connectivity Checks: "CPU:process|Adder:PCPlus8_inst" ;
++----------+-------+----------+------------------------------+
+; Port     ; Type  ; Severity ; Details                      ;
++----------+-------+----------+------------------------------+
+; A[31..4] ; Input ; Info     ; Stuck at GND                 ;
+; A[2..0]  ; Input ; Info     ; Stuck at GND                 ;
+; A[3]     ; Input ; Info     ; Stuck at VCC                 ;
++----------+-------+----------+------------------------------+
+
+
++------------------------------------------------------------+
+; Port Connectivity Checks: "CPU:process|Adder:PCPlus4_inst" ;
++----------+-------+----------+------------------------------+
+; Port     ; Type  ; Severity ; Details                      ;
++----------+-------+----------+------------------------------+
+; B[31..3] ; Input ; Info     ; Stuck at GND                 ;
+; B[1..0]  ; Input ; Info     ; Stuck at GND                 ;
+; B[2]     ; Input ; Info     ; Stuck at VCC                 ;
++----------+-------+----------+------------------------------+
+
+
++------------------------------------------------------+
+; Port Connectivity Checks: "CPU:process|Mux:RA1_inst" ;
++------+-------+----------+----------------------------+
+; Port ; Type  ; Severity ; Details                    ;
++------+-------+----------+----------------------------+
+; A    ; Input ; Info     ; Stuck at VCC               ;
++------+-------+----------+----------------------------+
+
+
++----------------------------------------------------------------------------------------------------------------------+
+; Port Connectivity Checks: "CPU:process"                                                                              ;
++------------+--------+----------+-------------------------------------------------------------------------------------+
+; Port       ; Type   ; Severity ; Details                                                                             ;
++------------+--------+----------+-------------------------------------------------------------------------------------+
+; PC[31..12] ; Output ; Info     ; Connected to dangling logic. Logic that only feeds a dangling port will be removed. ;
+; PC[1..0]   ; Output ; Info     ; Connected to dangling logic. Logic that only feeds a dangling port will be removed. ;
+; Result     ; Output ; Info     ; Connected to dangling logic. Logic that only feeds a dangling port will be removed. ;
++------------+--------+----------+-------------------------------------------------------------------------------------+
+
+
++-----------------------------------------------------+
+; Post-Synthesis Netlist Statistics for Top Partition ;
++-------------------+---------------------------------+
+; Type              ; Count                           ;
++-------------------+---------------------------------+
+; boundary_port     ; 2                               ;
+;                   ;                                 ;
+; Max LUT depth     ; 0.00                            ;
+; Average LUT depth ; 0.00                            ;
++-------------------+---------------------------------+
+
+
++-------------------------------+
+; Elapsed Time Per Partition    ;
++----------------+--------------+
+; Partition Name ; Elapsed Time ;
++----------------+--------------+
+; Top            ; 00:00:00     ;
++----------------+--------------+
+
+
++-------------------------------+
+; Analysis & Synthesis Messages ;
++-------------------------------+
+Info: *******************************************************************
+Info: Running Quartus Prime Analysis & Synthesis
+    Info: Version 18.1.0 Build 625 09/12/2018 SJ Standard Edition
+    Info: Processing started: Tue Jun 17 22:38:53 2025
+Info: Command: quartus_map --read_settings_files=on --write_settings_files=off Gambling_Tec -c Gambling_Tec
+Warning (18236): Number of processors has not been specified which may cause overloading on shared machines.  Set the global assignment NUM_PARALLEL_PROCESSORS in your QSF to an appropriate value for best performance.
+Info (20030): Parallel compilation is enabled and will use 8 of the 8 processors detected
+Info (12021): Found 1 design units, including 1 entities, in source file tb_rom.sv
+    Info (12023): Found entity 1: tb_ROM File: C:/Users/joseb/Documents/GitHub/CE3201_PF/tb_ROM.sv Line: 2
+Info (12021): Found 1 design units, including 1 entities, in source file tb_gambling_tec_rom.sv
+    Info (12023): Found entity 1: tb_Gambling_Tec_ROM File: C:/Users/joseb/Documents/GitHub/CE3201_PF/tb_Gambling_Tec_ROM.sv Line: 3
+Info (12021): Found 1 design units, including 1 entities, in source file rom.sv
+    Info (12023): Found entity 1: ROM File: C:/Users/joseb/Documents/GitHub/CE3201_PF/ROM.sv Line: 1
+Info (12021): Found 1 design units, including 1 entities, in source file alu_deco.sv
+    Info (12023): Found entity 1: Alu_Deco File: C:/Users/joseb/Documents/GitHub/CE3201_PF/Alu_Deco.sv Line: 1
+Info (12021): Found 1 design units, including 1 entities, in source file condition_check.sv
+    Info (12023): Found entity 1: Condition_Check File: C:/Users/joseb/Documents/GitHub/CE3201_PF/Condition_Check.sv Line: 1
+Info (12021): Found 1 design units, including 1 entities, in source file bit_cell.sv
+    Info (12023): Found entity 1: Register32 File: C:/Users/joseb/Documents/GitHub/CE3201_PF/Bit_cell.sv Line: 1
+Info (12021): Found 1 design units, including 1 entities, in source file register_file.sv
+    Info (12023): Found entity 1: Register_File File: C:/Users/joseb/Documents/GitHub/CE3201_PF/Register_File.sv Line: 1
+Info (12021): Found 1 design units, including 1 entities, in source file register.sv
+    Info (12023): Found entity 1: Register File: C:/Users/joseb/Documents/GitHub/CE3201_PF/Register.sv Line: 1
+Warning (12090): Entity "Mux" obtained from "Mux.sv" instead of from Quartus Prime megafunction library File: C:/Users/joseb/Documents/GitHub/CE3201_PF/Mux.sv Line: 1
+Info (12021): Found 1 design units, including 1 entities, in source file mux.sv
+    Info (12023): Found entity 1: Mux File: C:/Users/joseb/Documents/GitHub/CE3201_PF/Mux.sv Line: 1
+Info (12021): Found 1 design units, including 1 entities, in source file instruction_memory.sv
+    Info (12023): Found entity 1: Instruction_Memory File: C:/Users/joseb/Documents/GitHub/CE3201_PF/Instruction_Memory.sv Line: 1
+Info (12021): Found 1 design units, including 1 entities, in source file extender.sv
+    Info (12023): Found entity 1: Extender File: C:/Users/joseb/Documents/GitHub/CE3201_PF/Extender.sv Line: 1
+Info (12021): Found 1 design units, including 1 entities, in source file data_memory.sv
+    Info (12023): Found entity 1: Data_Memory File: C:/Users/joseb/Documents/GitHub/CE3201_PF/Data_Memory.sv Line: 1
+Info (12021): Found 1 design units, including 1 entities, in source file cpu.sv
+    Info (12023): Found entity 1: CPU File: C:/Users/joseb/Documents/GitHub/CE3201_PF/CPU.sv Line: 1
+Info (12021): Found 1 design units, including 1 entities, in source file alu.sv
+    Info (12023): Found entity 1: ALU File: C:/Users/joseb/Documents/GitHub/CE3201_PF/ALU.sv Line: 1
+Info (12021): Found 1 design units, including 1 entities, in source file adder.sv
+    Info (12023): Found entity 1: Adder File: C:/Users/joseb/Documents/GitHub/CE3201_PF/Adder.sv Line: 1
+Info (12021): Found 1 design units, including 1 entities, in source file gambling_tec.sv
+    Info (12023): Found entity 1: Gambling_Tec File: C:/Users/joseb/Documents/GitHub/CE3201_PF/Gambling_Tec.sv Line: 1
+Info (12021): Found 1 design units, including 1 entities, in source file cpu_tb.sv
+    Info (12023): Found entity 1: CPU_tb File: C:/Users/joseb/Documents/GitHub/CE3201_PF/CPU_tb.sv Line: 3
+Info (12021): Found 1 design units, including 1 entities, in source file control_unit.sv
+    Info (12023): Found entity 1: Control_Unit File: C:/Users/joseb/Documents/GitHub/CE3201_PF/Control_Unit.sv Line: 1
+Info (12021): Found 1 design units, including 1 entities, in source file tb_register_file.sv
+    Info (12023): Found entity 1: tb_Register_File File: C:/Users/joseb/Documents/GitHub/CE3201_PF/tb_Register_File.sv Line: 3
+Info (12021): Found 1 design units, including 1 entities, in source file tb_control_unit.sv
+    Info (12023): Found entity 1: tb_Control_Unit File: C:/Users/joseb/Documents/GitHub/CE3201_PF/tb_Control_Unit.sv Line: 3
+Info (12021): Found 4 design units, including 4 entities, in source file decoder.sv
+    Info (12023): Found entity 1: Decoder File: C:/Users/joseb/Documents/GitHub/CE3201_PF/Decoder.sv Line: 2
+    Info (12023): Found entity 2: PC_Logic File: C:/Users/joseb/Documents/GitHub/CE3201_PF/Decoder.sv Line: 49
+    Info (12023): Found entity 3: Main_Decoder File: C:/Users/joseb/Documents/GitHub/CE3201_PF/Decoder.sv Line: 60
+    Info (12023): Found entity 4: ALU_Decoder File: C:/Users/joseb/Documents/GitHub/CE3201_PF/Decoder.sv Line: 134
+Info (12021): Found 1 design units, including 1 entities, in source file tb_gambling_tec.sv
+    Info (12023): Found entity 1: tb_Gambling_Tec File: C:/Users/joseb/Documents/GitHub/CE3201_PF/tb_Gambling_Tec.sv Line: 3
+Info (12021): Found 1 design units, including 1 entities, in source file tb_data_memory.sv
+    Info (12023): Found entity 1: tb_Data_Memory File: C:/Users/joseb/Documents/GitHub/CE3201_PF/tb_Data_Memory.sv Line: 3
+Info (12021): Found 1 design units, including 1 entities, in source file tb_gambling_tec_space_asm.sv
+    Info (12023): Found entity 1: tb_Gambling_Tec_SPACE_ASM File: C:/Users/joseb/Documents/GitHub/CE3201_PF/tb_Gambling_Tec_SPACE_ASM.sv Line: 3
+Info (12021): Found 1 design units, including 1 entities, in source file tb_gambling_tec_integration.sv
+    Info (12023): Found entity 1: tb_Gambling_Tec_Integration File: C:/Users/joseb/Documents/GitHub/CE3201_PF/tb_Gambling_Tec_Integration.sv Line: 3
+Warning (10236): Verilog HDL Implicit Net warning at Decoder.sv(35): created implicit net for "ALUOP" File: C:/Users/joseb/Documents/GitHub/CE3201_PF/Decoder.sv Line: 35
+Info (12127): Elaborating entity "Gambling_Tec" for the top level hierarchy
+Info (12128): Elaborating entity "ROM" for hierarchy "ROM:rom0" File: C:/Users/joseb/Documents/GitHub/CE3201_PF/Gambling_Tec.sv Line: 19
+Warning (10850): Verilog HDL warning at ROM.sv(14): number of words (190) in memory file does not match the number of elements in the address range [0:1023] File: C:/Users/joseb/Documents/GitHub/CE3201_PF/ROM.sv Line: 14
+Warning (10030): Net "mem.data_a" at ROM.sv(10) has no driver or initial value, using a default initial value '0' File: C:/Users/joseb/Documents/GitHub/CE3201_PF/ROM.sv Line: 10
+Warning (10030): Net "mem.waddr_a" at ROM.sv(10) has no driver or initial value, using a default initial value '0' File: C:/Users/joseb/Documents/GitHub/CE3201_PF/ROM.sv Line: 10
+Warning (10030): Net "mem.we_a" at ROM.sv(10) has no driver or initial value, using a default initial value '0' File: C:/Users/joseb/Documents/GitHub/CE3201_PF/ROM.sv Line: 10
+Info (12128): Elaborating entity "CPU" for hierarchy "CPU:process" File: C:/Users/joseb/Documents/GitHub/CE3201_PF/Gambling_Tec.sv Line: 32
+Info (12128): Elaborating entity "Mux" for hierarchy "CPU:process|Mux:next_PC_inst" File: C:/Users/joseb/Documents/GitHub/CE3201_PF/CPU.sv Line: 48
+Info (12128): Elaborating entity "Register" for hierarchy "CPU:process|Register:PC_Register" File: C:/Users/joseb/Documents/GitHub/CE3201_PF/CPU.sv Line: 56
+Info (12128): Elaborating entity "Mux" for hierarchy "CPU:process|Mux:RA1_inst" File: C:/Users/joseb/Documents/GitHub/CE3201_PF/CPU.sv Line: 63
+Info (12128): Elaborating entity "Adder" for hierarchy "CPU:process|Adder:PCPlus4_inst" File: C:/Users/joseb/Documents/GitHub/CE3201_PF/CPU.sv Line: 76
+Info (12128): Elaborating entity "Register_File" for hierarchy "CPU:process|Register_File:Reg_file_inst" File: C:/Users/joseb/Documents/GitHub/CE3201_PF/CPU.sv Line: 95
+Info (12128): Elaborating entity "Extender" for hierarchy "CPU:process|Extender:Extender_ins" File: C:/Users/joseb/Documents/GitHub/CE3201_PF/CPU.sv Line: 101
+Info (12128): Elaborating entity "ALU" for hierarchy "CPU:process|ALU:ALU_inst" File: C:/Users/joseb/Documents/GitHub/CE3201_PF/CPU.sv Line: 116
+Info (12128): Elaborating entity "Control_Unit" for hierarchy "CPU:process|Control_Unit:CU_Inst" File: C:/Users/joseb/Documents/GitHub/CE3201_PF/CPU.sv Line: 142
+Info (12128): Elaborating entity "Decoder" for hierarchy "CPU:process|Control_Unit:CU_Inst|Decoder:decoder_inst" File: C:/Users/joseb/Documents/GitHub/CE3201_PF/Control_Unit.sv Line: 48
+Info (12128): Elaborating entity "PC_Logic" for hierarchy "CPU:process|Control_Unit:CU_Inst|Decoder:decoder_inst|PC_Logic:pc_logic_inst" File: C:/Users/joseb/Documents/GitHub/CE3201_PF/Decoder.sv Line: 22
+Info (12128): Elaborating entity "Main_Decoder" for hierarchy "CPU:process|Control_Unit:CU_Inst|Decoder:decoder_inst|Main_Decoder:main_decoder_inst" File: C:/Users/joseb/Documents/GitHub/CE3201_PF/Decoder.sv Line: 36
+Warning (10270): Verilog HDL Case Statement warning at Decoder.sv(78): incomplete case statement has no default case item File: C:/Users/joseb/Documents/GitHub/CE3201_PF/Decoder.sv Line: 78
+Info (12128): Elaborating entity "ALU_Decoder" for hierarchy "CPU:process|Control_Unit:CU_Inst|Decoder:decoder_inst|ALU_Decoder:alu_decoder_inst" File: C:/Users/joseb/Documents/GitHub/CE3201_PF/Decoder.sv Line: 45
+Info (12128): Elaborating entity "Register" for hierarchy "CPU:process|Control_Unit:CU_Inst|Register:Register_Flag1" File: C:/Users/joseb/Documents/GitHub/CE3201_PF/Control_Unit.sv Line: 57
+Warning (10230): Verilog HDL assignment warning at Register.sv(12): truncated value with size 10 to match size of target (2) File: C:/Users/joseb/Documents/GitHub/CE3201_PF/Register.sv Line: 12
+Info (12128): Elaborating entity "Condition_Check" for hierarchy "CPU:process|Control_Unit:CU_Inst|Condition_Check:inst_Condition_Check" File: C:/Users/joseb/Documents/GitHub/CE3201_PF/Control_Unit.sv Line: 72
+Info (12128): Elaborating entity "Data_Memory" for hierarchy "Data_Memory:data_mem" File: C:/Users/joseb/Documents/GitHub/CE3201_PF/Gambling_Tec.sv Line: 41
+Info (144001): Generated suppressed messages file C:/Users/joseb/Documents/GitHub/CE3201_PF/output_files/Gambling_Tec.map.smsg
+Info (16010): Generating hard_block partition "hard_block:auto_generated_inst"
+    Info (16011): Adding 0 node(s), including 0 DDIO, 0 PLL, 0 transceiver and 0 LCELL
+Warning (21074): Design contains 2 input pin(s) that do not drive logic
+    Warning (15610): No output dependent on input pin "clk" File: C:/Users/joseb/Documents/GitHub/CE3201_PF/Gambling_Tec.sv Line: 2
+    Warning (15610): No output dependent on input pin "rst" File: C:/Users/joseb/Documents/GitHub/CE3201_PF/Gambling_Tec.sv Line: 4
+Info (21057): Implemented 2 device resources after synthesis - the final resource count might be different
+    Info (21058): Implemented 2 input pins
+    Info (21059): Implemented 0 output pins
+Info: Quartus Prime Analysis & Synthesis was successful. 0 errors, 12 warnings
+    Info: Peak virtual memory: 4800 megabytes
+    Info: Processing ended: Tue Jun 17 22:39:10 2025
+    Info: Elapsed time: 00:00:17
+    Info: Total CPU time (on all processors): 00:00:35
 
 
 +------------------------------------------+
-; Port Connectivity Checks: "Mux:RA1_inst" ;
-+------+-------+----------+----------------+
-; Port ; Type  ; Severity ; Details        ;
-+------+-------+----------+----------------+
-; A    ; Input ; Info     ; Stuck at VCC   ;
-+------+-------+----------+----------------+
-
-
-+---------------------------------+
-; Analysis & Elaboration Messages ;
-+---------------------------------+
-Info: *******************************************************************
-Info: Running Quartus Prime Analysis & Elaboration
-    Info: Version 18.1.0 Build 625 09/12/2018 SJ Lite Edition
-    Info: Processing started: Tue Jun 17 21:44:20 2025
-Info: Command: quartus_map --read_settings_files=on --write_settings_files=off Gambling_Tec -c Gambling_Tec --analysis_and_elaboration
-Warning (18236): Number of processors has not been specified which may cause overloading on shared machines.  Set the global assignment NUM_PARALLEL_PROCESSORS in your QSF to an appropriate value for best performance.
-Info (20030): Parallel compilation is enabled and will use 4 of the 4 processors detected
-Info (12021): Found 1 design units, including 1 entities, in source file tb_rom.sv
-    Info (12023): Found entity 1: tb_ROM File: C:/Users/josee/CE3201_PF/tb_ROM.sv Line: 2
-Info (12021): Found 1 design units, including 1 entities, in source file tb_gambling_tec_rom.sv
-    Info (12023): Found entity 1: tb_Gambling_Tec_ROM File: C:/Users/josee/CE3201_PF/tb_Gambling_Tec_ROM.sv Line: 3
-Info (12021): Found 1 design units, including 1 entities, in source file rom.sv
-    Info (12023): Found entity 1: ROM File: C:/Users/josee/CE3201_PF/ROM.sv Line: 1
-Info (12021): Found 1 design units, including 1 entities, in source file alu_deco.sv
-    Info (12023): Found entity 1: Alu_Deco File: C:/Users/josee/CE3201_PF/Alu_Deco.sv Line: 1
-Info (12021): Found 1 design units, including 1 entities, in source file condition_check.sv
-    Info (12023): Found entity 1: Condition_Check File: C:/Users/josee/CE3201_PF/Condition_Check.sv Line: 1
-Info (12021): Found 1 design units, including 1 entities, in source file bit_cell.sv
-    Info (12023): Found entity 1: Register32 File: C:/Users/josee/CE3201_PF/Bit_cell.sv Line: 1
-Info (12021): Found 1 design units, including 1 entities, in source file register_file.sv
-    Info (12023): Found entity 1: Register_File File: C:/Users/josee/CE3201_PF/Register_File.sv Line: 1
-Info (12021): Found 1 design units, including 1 entities, in source file register.sv
-    Info (12023): Found entity 1: Register File: C:/Users/josee/CE3201_PF/Register.sv Line: 1
-Warning (12090): Entity "Mux" obtained from "Mux.sv" instead of from Quartus Prime megafunction library File: C:/Users/josee/CE3201_PF/Mux.sv Line: 1
-Info (12021): Found 1 design units, including 1 entities, in source file mux.sv
-    Info (12023): Found entity 1: Mux File: C:/Users/josee/CE3201_PF/Mux.sv Line: 1
-Info (12021): Found 1 design units, including 1 entities, in source file instruction_memory.sv
-    Info (12023): Found entity 1: Instruction_Memory File: C:/Users/josee/CE3201_PF/Instruction_Memory.sv Line: 1
-Info (12021): Found 1 design units, including 1 entities, in source file extender.sv
-    Info (12023): Found entity 1: Extender File: C:/Users/josee/CE3201_PF/Extender.sv Line: 1
-Info (12021): Found 1 design units, including 1 entities, in source file data_memory.sv
-    Info (12023): Found entity 1: Data_Memory File: C:/Users/josee/CE3201_PF/Data_Memory.sv Line: 1
-Info (12021): Found 1 design units, including 1 entities, in source file cpu.sv
-    Info (12023): Found entity 1: CPU File: C:/Users/josee/CE3201_PF/CPU.sv Line: 1
-Info (12021): Found 1 design units, including 1 entities, in source file alu.sv
-    Info (12023): Found entity 1: ALU File: C:/Users/josee/CE3201_PF/ALU.sv Line: 1
-Info (12021): Found 1 design units, including 1 entities, in source file adder.sv
-    Info (12023): Found entity 1: Adder File: C:/Users/josee/CE3201_PF/Adder.sv Line: 1
-Info (12021): Found 1 design units, including 1 entities, in source file gambling_tec.sv
-    Info (12023): Found entity 1: Gambling_Tec File: C:/Users/josee/CE3201_PF/Gambling_Tec.sv Line: 1
-Info (12021): Found 1 design units, including 1 entities, in source file cpu_tb.sv
-    Info (12023): Found entity 1: CPU_tb File: C:/Users/josee/CE3201_PF/CPU_tb.sv Line: 3
-Info (12021): Found 1 design units, including 1 entities, in source file control_unit.sv
-    Info (12023): Found entity 1: Control_Unit File: C:/Users/josee/CE3201_PF/Control_Unit.sv Line: 1
-Info (12021): Found 1 design units, including 1 entities, in source file tb_register_file.sv
-    Info (12023): Found entity 1: tb_Register_File File: C:/Users/josee/CE3201_PF/tb_Register_File.sv Line: 3
-Info (12021): Found 1 design units, including 1 entities, in source file tb_control_unit.sv
-    Info (12023): Found entity 1: tb_Control_Unit File: C:/Users/josee/CE3201_PF/tb_Control_Unit.sv Line: 3
-Info (12021): Found 4 design units, including 4 entities, in source file decoder.sv
-    Info (12023): Found entity 1: Decoder File: C:/Users/josee/CE3201_PF/Decoder.sv Line: 2
-    Info (12023): Found entity 2: PC_Logic File: C:/Users/josee/CE3201_PF/Decoder.sv Line: 49
-    Info (12023): Found entity 3: Main_Decoder File: C:/Users/josee/CE3201_PF/Decoder.sv Line: 60
-    Info (12023): Found entity 4: ALU_Decoder File: C:/Users/josee/CE3201_PF/Decoder.sv Line: 134
-Info (12021): Found 1 design units, including 1 entities, in source file tb_gambling_tec.sv
-    Info (12023): Found entity 1: tb_Gambling_Tec File: C:/Users/josee/CE3201_PF/tb_Gambling_Tec.sv Line: 3
-Info (12021): Found 1 design units, including 1 entities, in source file tb_data_memory.sv
-    Info (12023): Found entity 1: tb_Data_Memory File: C:/Users/josee/CE3201_PF/tb_Data_Memory.sv Line: 3
-Info (12021): Found 1 design units, including 1 entities, in source file tb_gambling_tec_space_asm.sv
-    Info (12023): Found entity 1: tb_Gambling_Tec_SPACE_ASM File: C:/Users/josee/CE3201_PF/tb_Gambling_Tec_SPACE_ASM.sv Line: 3
-Info (12021): Found 1 design units, including 1 entities, in source file tb_gambling_tec_integration.sv
-    Info (12023): Found entity 1: tb_Gambling_Tec_Integration File: C:/Users/josee/CE3201_PF/tb_Gambling_Tec_Integration.sv Line: 3
-Warning (10236): Verilog HDL Implicit Net warning at Decoder.sv(35): created implicit net for "ALUOP" File: C:/Users/josee/CE3201_PF/Decoder.sv Line: 35
-Info (12127): Elaborating entity "CPU" for the top level hierarchy
-Info (12128): Elaborating entity "Mux" for hierarchy "Mux:next_PC_inst" File: C:/Users/josee/CE3201_PF/CPU.sv Line: 48
-Info (12128): Elaborating entity "Register" for hierarchy "Register:PC_Register" File: C:/Users/josee/CE3201_PF/CPU.sv Line: 56
-Info (12128): Elaborating entity "Mux" for hierarchy "Mux:RA1_inst" File: C:/Users/josee/CE3201_PF/CPU.sv Line: 63
-Info (12128): Elaborating entity "Adder" for hierarchy "Adder:PCPlus4_inst" File: C:/Users/josee/CE3201_PF/CPU.sv Line: 76
-Info (12128): Elaborating entity "Register_File" for hierarchy "Register_File:Reg_file_inst" File: C:/Users/josee/CE3201_PF/CPU.sv Line: 95
-Info (12128): Elaborating entity "Extender" for hierarchy "Extender:Extender_ins" File: C:/Users/josee/CE3201_PF/CPU.sv Line: 101
-Info (12128): Elaborating entity "ALU" for hierarchy "ALU:ALU_inst" File: C:/Users/josee/CE3201_PF/CPU.sv Line: 116
-Info (12128): Elaborating entity "Control_Unit" for hierarchy "Control_Unit:CU_Inst" File: C:/Users/josee/CE3201_PF/CPU.sv Line: 142
-Info (12128): Elaborating entity "Decoder" for hierarchy "Control_Unit:CU_Inst|Decoder:decoder_inst" File: C:/Users/josee/CE3201_PF/Control_Unit.sv Line: 48
-Info (12128): Elaborating entity "PC_Logic" for hierarchy "Control_Unit:CU_Inst|Decoder:decoder_inst|PC_Logic:pc_logic_inst" File: C:/Users/josee/CE3201_PF/Decoder.sv Line: 22
-Info (12128): Elaborating entity "Main_Decoder" for hierarchy "Control_Unit:CU_Inst|Decoder:decoder_inst|Main_Decoder:main_decoder_inst" File: C:/Users/josee/CE3201_PF/Decoder.sv Line: 36
-Warning (10270): Verilog HDL Case Statement warning at Decoder.sv(78): incomplete case statement has no default case item File: C:/Users/josee/CE3201_PF/Decoder.sv Line: 78
-Info (12128): Elaborating entity "ALU_Decoder" for hierarchy "Control_Unit:CU_Inst|Decoder:decoder_inst|ALU_Decoder:alu_decoder_inst" File: C:/Users/josee/CE3201_PF/Decoder.sv Line: 45
-Info (12128): Elaborating entity "Register" for hierarchy "Control_Unit:CU_Inst|Register:Register_Flag1" File: C:/Users/josee/CE3201_PF/Control_Unit.sv Line: 57
-Warning (10230): Verilog HDL assignment warning at Register.sv(12): truncated value with size 10 to match size of target (2) File: C:/Users/josee/CE3201_PF/Register.sv Line: 12
-Info (12128): Elaborating entity "Condition_Check" for hierarchy "Control_Unit:CU_Inst|Condition_Check:inst_Condition_Check" File: C:/Users/josee/CE3201_PF/Control_Unit.sv Line: 72
-Info (144001): Generated suppressed messages file C:/Users/josee/CE3201_PF/output_files/Gambling_Tec.map.smsg
-Info: Quartus Prime Analysis & Elaboration was successful. 0 errors, 5 warnings
-    Info: Peak virtual memory: 4779 megabytes
-    Info: Processing ended: Tue Jun 17 21:44:34 2025
-    Info: Elapsed time: 00:00:14
-    Info: Total CPU time (on all processors): 00:00:30
-
-
-+--------------------------------------------+
-; Analysis & Elaboration Suppressed Messages ;
-+--------------------------------------------+
-The suppressed messages can be found in C:/Users/josee/CE3201_PF/output_files/Gambling_Tec.map.smsg.
+; Analysis & Synthesis Suppressed Messages ;
++------------------------------------------+
+The suppressed messages can be found in C:/Users/joseb/Documents/GitHub/CE3201_PF/output_files/Gambling_Tec.map.smsg.
 
 
