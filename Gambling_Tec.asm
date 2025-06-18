@@ -46,22 +46,22 @@ IncMoney:
         SUB     R0, R0, R0        
         ADD     R0, R0, #0x14     
         LDR     R1, [R0]
-        ADD     R1, R1, #1
-        SUB     R2, R2, R0        
-        ADD     R2, R2, #255    
-        ADD     R2, R2, #255    
-        ADD     R2, R2, #255    
-        ADD     R2, R2, #234 
+        ADD     R1, R1, #0x1
+        SUB     R2, R2, R0
+        ADD     R2, R2, #0xff
+        ADD     R2, R2, #0xff
+        ADD     R2, R2, #0xff
+        ADD     R2, R2, #0xea
         CMP     R1, R2
         BGT     IncMoney_Max
         STR     R1, [R0]
         B       MainLoop
 IncMoney_Max:
         SUB     R1, R1, R1        
-        ADD     R1, R1, #255    
-        ADD     R1, R1, #255    
-        ADD     R1, R1, #255    
-        ADD     R1, R1, #234 
+        ADD     R1, R1, #0xff
+        ADD     R1, R1, #0xff
+        ADD     R1, R1, #0xff
+        ADD     R1, R1, #0xea
         STR     R1, [R0]
         B       MainLoop
 
@@ -72,7 +72,7 @@ DecMoney:
         SUB     R2, R2, R2        
         CMP     R1, R2
         BEQ     DecMoney_Min
-        SUB     R1, R1, #1
+        SUB     R1, R1, #0x1
         STR     R1, [R0]
         B       MainLoop
 DecMoney_Min:
@@ -94,12 +94,12 @@ GenSymA_Loop:
         ADD     R0, R0, #0xA
         LDR     R1, [R0]
         SUB     R2, R2, R2
-        ADD     R2, R2, #0x29     
+        ADD     R2, R2, #0x29
         CMP     R1, R2
         BEQ     SaveSymA
-        ADD     R4, R4, #1
+        ADD     R4, R4, #0x1
         SUB     R3, R3, R3
-        ADD     R3, R3, #3
+        ADD     R3, R3, #0x3
         CMP     R4, R3
         BLE     GenSymA_Loop
         SUB     R4, R4, R4        
@@ -118,9 +118,9 @@ GenSymB_Loop:
         ADD     R2, R2, #0x29
         CMP     R1, R2
         BEQ     SaveSymB
-        ADD     R5, R5, #1
+        ADD     R5, R5, #0x1
         SUB     R3, R3, R3
-        ADD     R3, R3, #3
+        ADD     R3, R3, #0x3
         CMP     R5, R3
         BLE     GenSymB_Loop
         SUB     R5, R5, R5
@@ -139,9 +139,9 @@ GenSymC_Loop:
         ADD     R2, R2, #0x29
         CMP     R1, R2
         BEQ     SaveSymC
-        ADD     R6, R6, #1
+        ADD     R6, R6, #0x1
         SUB     R3, R3, R3
-        ADD     R3, R3, #3
+        ADD     R3, R3, #0x3
         CMP     R6, R3
         BLE     GenSymC_Loop
         SUB     R6, R6, R6
@@ -160,29 +160,29 @@ Win:
         SUB     R0, R0, R0
         ADD     R0, R0, #0x24     
         SUB     R1, R1, R1
-        ADD     R1, R1, #2        
+        ADD     R1, R1, #0x2        
         STR     R1, [R0]
         SUB     R0, R0, R0
         ADD     R0, R0, #0x14
         LDR     R1, [R0]
         SUB     R2, R2, R2
-        ADD     R2, R2, #10
+        ADD     R2, R2, #0xA
         ADD     R1, R1, R2
         SUB     R2, R2, R2
-        ADD     R2, R2, #255    
-        ADD     R2, R2, #255    
-        ADD     R2, R2, #255    
-        ADD     R2, R2, #234 
+        ADD     R2, R2, #0xff
+        ADD     R2, R2, #0xff
+        ADD     R2, R2, #0xff
+        ADD     R2, R2, #0xea
         CMP     R1, R2
         BGT     Win_Max
         STR     R1, [R0]
         B       MainLoop
 Win_Max:
         SUB     R1, R1, R1
-        ADD     R1, R1, #255    
-        ADD     R1, R1, #255    
-        ADD     R1, R1, #255    
-        ADD     R1, R1, #234 
+        ADD     R1, R1, #0xff
+        ADD     R1, R1, #0xff
+        ADD     R1, R1, #0xff   
+        ADD     R1, R1, #0xea
         STR     R1, [R0]
         B       MainLoop
 
@@ -190,13 +190,13 @@ Lose:
         SUB     R0, R0, R0
         ADD     R0, R0, #0x24     
         SUB     R1, R1, R1
-        ADD     R1, R1, #1        
+        ADD     R1, R1, #0x1        
         STR     R1, [R0]
         SUB     R0, R0, R0
         ADD     R0, R0, #0x14
         LDR     R1, [R0]
         SUB     R2, R2, R2
-        ADD     R2, R2, #10
+        ADD     R2, R2, #0xA
         CMP     R1, R2
         BLT     Lose_Min
         SUB     R1, R1, R2
