@@ -1,10 +1,10 @@
 #!/bin/bash
 
 # Archivo fuente de ensamblador ARMv4
-SRC="PruebaDinero.asm"
-OBJ="PruebaDinero.o"
-BIN="PruebaDinero.bin"
-HEX="PruebaDinero.hex"
+SRC="pruebaboton.asm"
+OBJ="pruebaboton.o"
+BIN="pruebaboton.bin"
+HEX="pruebaboton.hex"
 
 # Colores para mensajes
 GREEN='\033[0;32m'
