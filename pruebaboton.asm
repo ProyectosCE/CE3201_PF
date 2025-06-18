@@ -1,6 +1,10 @@
 Loop:
         SUB     R0, R0, R0        
-        ADD     R0, R0, #0xA       
+        ADD     R0, R0, #0xA   
+        SUB     R3, R3, R3
+        ADD     R3, R3, #0x75
+        STR     R3, [R0]    
+        SUB     R3, R3, R3
         LDR     R1, [R0]          
 
         SUB     R2, R2, R2        
