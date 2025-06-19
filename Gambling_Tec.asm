@@ -18,6 +18,7 @@ MainLoop:
         
         SUB     R0, R0, R0        
         ADD     R0, R0, #0xA
+        SUB     R1, R1, R1
         LDR     R1, [R0]
 
         SUB     R2, R2, R2        
@@ -25,17 +26,17 @@ MainLoop:
         CMP     R1, R2
         BEQ     IncMoney
 
-        SUB     R2, R2, R0        
+        SUB     R2, R2, R2        
         ADD     R2, R2, #0x72
         CMP     R1, R2
         BEQ     DecMoney
 
-        SUB     R2, R2, R0        
+        SUB     R2, R2, R2        
         ADD     R2, R2, #0x66
         CMP     R1, R2
         BEQ     ClearMoney
 
-        SUB     R2, R2, R0        
+        SUB     R2, R2, R2        
         ADD     R2, R2, #0x5A
         CMP     R1, R2
         BEQ     StartGame
@@ -47,7 +48,7 @@ IncMoney:
         ADD     R0, R0, #0x14     
         LDR     R1, [R0]
         ADD     R1, R1, #0x1
-        SUB     R2, R2, R0
+        SUB     R2, R2, R2
         ADD     R2, R2, #0xff
         ADD     R2, R2, #0xff
         ADD     R2, R2, #0xff
