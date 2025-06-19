@@ -1,20 +1,14 @@
-module ROM #(
-    parameter AW = 10,  // Address Width: 2^10 = 1024 palabras (4 KB)
-    parameter DW = 32   // Data Width: 32 bits por instrucción
-) (
-    input  logic [AW-1:0] address,  // Dirección en palabras (no en bytes)
-    output logic [DW-1:0] data      // Instrucción entregada
+module ROM (
+    input  logic [31:0] a,           // Dirección en bytes
+    output logic [31:0] rd           // Instrucción de 32 bits
 );
 
-    // Memoria ROM interna
-    logic [DW-1:0] mem [0:(1<<AW)-1];  // 1024 palabras de 32 bits = 4 KB
+    logic [31:0] RAM[0:63];          // 64 instrucciones = 256 bytes
 
-    // Inicializar desde archivo externo en formato hexadecimal
     initial begin
-        $readmemh("Gambling_Tec.hex", mem); // Carga archivo desde "prog.hex" 
+        $readmemh("pruebaboton.hex", RAM);  // Archivo de instrucciones
     end
 
-    // Lectura asíncrona: respuesta inmediata
-    assign data = mem[address];
+    assign rd = RAM[a[31:2]];        // Lectura palabra-alineada
 
 endmodule

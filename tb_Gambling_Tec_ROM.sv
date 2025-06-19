@@ -29,21 +29,10 @@ module tb_Gambling_Tec_ROM;
         #20;
         rst = 0;
 
-        // Inicializar todos los registros a 0
-        for (i = 0; i <= 12; i = i + 1)
-            dut.process.Reg_file_inst.rf[i] = 32'd0;
+
 
         // Establecer dirección base de memoria en R2
-        dut.process.Reg_file_inst.rf[2] = 32'd0;
 
-        // Inicializar RAM
-        dut.data_mem.RAM[0] = 32'd10;
-        dut.data_mem.RAM[1] = 32'd20;
-        dut.data_mem.RAM[2] = 32'd30;
-        dut.data_mem.RAM[3] = 32'd40;
-        dut.data_mem.RAM[4] = 32'd50;
-        dut.data_mem.RAM[5] = 32'd60;
-        dut.data_mem.RAM[6] = 32'd70;
 
         $display("=== Estado inicial de RAM ===");
         for (i = 0; i < 7; i = i + 1)

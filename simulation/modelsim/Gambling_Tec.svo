@@ -14,9 +14,9 @@
 
 // VENDOR "Altera"
 // PROGRAM "Quartus Prime"
-// VERSION "Version 18.1.0 Build 625 09/12/2018 SJ Standard Edition"
+// VERSION "Version 18.1.0 Build 625 09/12/2018 SJ Lite Edition"
 
-// DATE "06/17/2025 22:39:58"
+// DATE "06/19/2025 10:28:11"
 
 // 
 // Device: Altera 5CSXFC6D6F31C6 Package FBGA896
@@ -30,13 +30,32 @@
 
 module Gambling_Tec (
 	clk,
-	rst);
-input 	clk;
-input 	rst;
+	rst,
+	DATA_PS2,
+	PS2_CLK,
+	key_ready,
+	mem_key);
+input 	logic clk ;
+input 	logic rst ;
+input 	reg DATA_PS2 ;
+input 	reg PS2_CLK ;
+output 	reg key_ready ;
+output 	logic [7:0] mem_key ;
 
 // Design Ports Information
-// clk	=>  Location: PIN_AF15,	 I/O Standard: 2.5 V,	 Current Strength: Default
-// rst	=>  Location: PIN_D10,	 I/O Standard: 2.5 V,	 Current Strength: Default
+// clk	=>  Location: PIN_AB17,	 I/O Standard: 2.5 V,	 Current Strength: Default
+// rst	=>  Location: PIN_AF18,	 I/O Standard: 2.5 V,	 Current Strength: Default
+// DATA_PS2	=>  Location: PIN_AE26,	 I/O Standard: 2.5 V,	 Current Strength: Default
+// PS2_CLK	=>  Location: PIN_AF5,	 I/O Standard: 2.5 V,	 Current Strength: Default
+// key_ready	=>  Location: PIN_K7,	 I/O Standard: 2.5 V,	 Current Strength: Default
+// mem_key[0]	=>  Location: PIN_AJ7,	 I/O Standard: 2.5 V,	 Current Strength: Default
+// mem_key[1]	=>  Location: PIN_AF15,	 I/O Standard: 2.5 V,	 Current Strength: Default
+// mem_key[2]	=>  Location: PIN_AJ24,	 I/O Standard: 2.5 V,	 Current Strength: Default
+// mem_key[3]	=>  Location: PIN_A3,	 I/O Standard: 2.5 V,	 Current Strength: Default
+// mem_key[4]	=>  Location: PIN_AF8,	 I/O Standard: 2.5 V,	 Current Strength: Default
+// mem_key[5]	=>  Location: PIN_Y24,	 I/O Standard: 2.5 V,	 Current Strength: Default
+// mem_key[6]	=>  Location: PIN_D10,	 I/O Standard: 2.5 V,	 Current Strength: Default
+// mem_key[7]	=>  Location: PIN_J12,	 I/O Standard: 2.5 V,	 Current Strength: Default
 
 
 wire gnd;
@@ -52,10 +71,156 @@ tri1 devpor;
 tri1 devoe;
 wire \clk~input_o ;
 wire \rst~input_o ;
+wire \DATA_PS2~input_o ;
+wire \PS2_CLK~input_o ;
 wire \~QUARTUS_CREATED_GND~I_combout ;
 
 
-// Location: IOIBUF_X32_Y0_N18
+// Location: IOOBUF_X8_Y81_N2
+cyclonev_io_obuf \key_ready~output (
+	.i(gnd),
+	.oe(vcc),
+	.dynamicterminationcontrol(gnd),
+	.seriesterminationcontrol(16'b0000000000000000),
+	.parallelterminationcontrol(16'b0000000000000000),
+	.devoe(devoe),
+	.o(key_ready),
+	.obar());
+// synopsys translate_off
+defparam \key_ready~output .bus_hold = "false";
+defparam \key_ready~output .open_drain_output = "false";
+defparam \key_ready~output .shift_series_termination_control = "false";
+// synopsys translate_on
+
+// Location: IOOBUF_X26_Y0_N93
+cyclonev_io_obuf \mem_key[0]~output (
+	.i(gnd),
+	.oe(vcc),
+	.dynamicterminationcontrol(gnd),
+	.seriesterminationcontrol(16'b0000000000000000),
+	.parallelterminationcontrol(16'b0000000000000000),
+	.devoe(devoe),
+	.o(mem_key[0]),
+	.obar());
+// synopsys translate_off
+defparam \mem_key[0]~output .bus_hold = "false";
+defparam \mem_key[0]~output .open_drain_output = "false";
+defparam \mem_key[0]~output .shift_series_termination_control = "false";
+// synopsys translate_on
+
+// Location: IOOBUF_X32_Y0_N19
+cyclonev_io_obuf \mem_key[1]~output (
+	.i(gnd),
+	.oe(vcc),
+	.dynamicterminationcontrol(gnd),
+	.seriesterminationcontrol(16'b0000000000000000),
+	.parallelterminationcontrol(16'b0000000000000000),
+	.devoe(devoe),
+	.o(mem_key[1]),
+	.obar());
+// synopsys translate_off
+defparam \mem_key[1]~output .bus_hold = "false";
+defparam \mem_key[1]~output .open_drain_output = "false";
+defparam \mem_key[1]~output .shift_series_termination_control = "false";
+// synopsys translate_on
+
+// Location: IOOBUF_X74_Y0_N76
+cyclonev_io_obuf \mem_key[2]~output (
+	.i(gnd),
+	.oe(vcc),
+	.dynamicterminationcontrol(gnd),
+	.seriesterminationcontrol(16'b0000000000000000),
+	.parallelterminationcontrol(16'b0000000000000000),
+	.devoe(devoe),
+	.o(mem_key[2]),
+	.obar());
+// synopsys translate_off
+defparam \mem_key[2]~output .bus_hold = "false";
+defparam \mem_key[2]~output .open_drain_output = "false";
+defparam \mem_key[2]~output .shift_series_termination_control = "false";
+// synopsys translate_on
+
+// Location: IOOBUF_X24_Y81_N53
+cyclonev_io_obuf \mem_key[3]~output (
+	.i(gnd),
+	.oe(vcc),
+	.dynamicterminationcontrol(gnd),
+	.seriesterminationcontrol(16'b0000000000000000),
+	.parallelterminationcontrol(16'b0000000000000000),
+	.devoe(devoe),
+	.o(mem_key[3]),
+	.obar());
+// synopsys translate_off
+defparam \mem_key[3]~output .bus_hold = "false";
+defparam \mem_key[3]~output .open_drain_output = "false";
+defparam \mem_key[3]~output .shift_series_termination_control = "false";
+// synopsys translate_on
+
+// Location: IOOBUF_X10_Y0_N76
+cyclonev_io_obuf \mem_key[4]~output (
+	.i(gnd),
+	.oe(vcc),
+	.dynamicterminationcontrol(gnd),
+	.seriesterminationcontrol(16'b0000000000000000),
+	.parallelterminationcontrol(16'b0000000000000000),
+	.devoe(devoe),
+	.o(mem_key[4]),
+	.obar());
+// synopsys translate_off
+defparam \mem_key[4]~output .bus_hold = "false";
+defparam \mem_key[4]~output .open_drain_output = "false";
+defparam \mem_key[4]~output .shift_series_termination_control = "false";
+// synopsys translate_on
+
+// Location: IOOBUF_X89_Y13_N22
+cyclonev_io_obuf \mem_key[5]~output (
+	.i(gnd),
+	.oe(vcc),
+	.dynamicterminationcontrol(gnd),
+	.seriesterminationcontrol(16'b0000000000000000),
+	.parallelterminationcontrol(16'b0000000000000000),
+	.devoe(devoe),
+	.o(mem_key[5]),
+	.obar());
+// synopsys translate_off
+defparam \mem_key[5]~output .bus_hold = "false";
+defparam \mem_key[5]~output .open_drain_output = "false";
+defparam \mem_key[5]~output .shift_series_termination_control = "false";
+// synopsys translate_on
+
+// Location: IOOBUF_X34_Y81_N59
+cyclonev_io_obuf \mem_key[6]~output (
+	.i(gnd),
+	.oe(vcc),
+	.dynamicterminationcontrol(gnd),
+	.seriesterminationcontrol(16'b0000000000000000),
+	.parallelterminationcontrol(16'b0000000000000000),
+	.devoe(devoe),
+	.o(mem_key[6]),
+	.obar());
+// synopsys translate_off
+defparam \mem_key[6]~output .bus_hold = "false";
+defparam \mem_key[6]~output .open_drain_output = "false";
+defparam \mem_key[6]~output .shift_series_termination_control = "false";
+// synopsys translate_on
+
+// Location: IOOBUF_X12_Y81_N19
+cyclonev_io_obuf \mem_key[7]~output (
+	.i(gnd),
+	.oe(vcc),
+	.dynamicterminationcontrol(gnd),
+	.seriesterminationcontrol(16'b0000000000000000),
+	.parallelterminationcontrol(16'b0000000000000000),
+	.devoe(devoe),
+	.o(mem_key[7]),
+	.obar());
+// synopsys translate_off
+defparam \mem_key[7]~output .bus_hold = "false";
+defparam \mem_key[7]~output .open_drain_output = "false";
+defparam \mem_key[7]~output .shift_series_termination_control = "false";
+// synopsys translate_on
+
+// Location: IOIBUF_X56_Y0_N18
 cyclonev_io_ibuf \clk~input (
 	.i(clk),
 	.ibar(gnd),
@@ -66,7 +231,7 @@ defparam \clk~input .bus_hold = "false";
 defparam \clk~input .simulate_z_as = "z";
 // synopsys translate_on
 
-// Location: IOIBUF_X34_Y81_N58
+// Location: IOIBUF_X50_Y0_N58
 cyclonev_io_ibuf \rst~input (
 	.i(rst),
 	.ibar(gnd),
@@ -77,7 +242,29 @@ defparam \rst~input .bus_hold = "false";
 defparam \rst~input .simulate_z_as = "z";
 // synopsys translate_on
 
-// Location: LABCELL_X50_Y23_N3
+// Location: IOIBUF_X89_Y8_N38
+cyclonev_io_ibuf \DATA_PS2~input (
+	.i(DATA_PS2),
+	.ibar(gnd),
+	.dynamicterminationcontrol(gnd),
+	.o(\DATA_PS2~input_o ));
+// synopsys translate_off
+defparam \DATA_PS2~input .bus_hold = "false";
+defparam \DATA_PS2~input .simulate_z_as = "z";
+// synopsys translate_on
+
+// Location: IOIBUF_X8_Y0_N18
+cyclonev_io_ibuf \PS2_CLK~input (
+	.i(PS2_CLK),
+	.ibar(gnd),
+	.dynamicterminationcontrol(gnd),
+	.o(\PS2_CLK~input_o ));
+// synopsys translate_off
+defparam \PS2_CLK~input .bus_hold = "false";
+defparam \PS2_CLK~input .simulate_z_as = "z";
+// synopsys translate_on
+
+// Location: LABCELL_X64_Y14_N0
 cyclonev_lcell_comb \~QUARTUS_CREATED_GND~I (
 // Equation(s):
 

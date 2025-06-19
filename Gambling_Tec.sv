@@ -1,6 +1,10 @@
 module Gambling_Tec(
     input logic clk,
-    input logic rst
+    input logic rst,
+	 input  DATA_PS2, PS2_CLK,
+	 
+	 output key_ready,
+	 output [7:0] mem_key
 );
 
     // Señales internas
@@ -13,9 +17,9 @@ module Gambling_Tec(
     logic mem_write;
 
     // ROM de instrucciones
-    ROM #(.AW(10)) rom0 (
-        .address(pc[11:2]), // Dirección por palabra (PC / 4)
-        .data(instr)
+    ROM rom0 (
+        .a(pc), // Dirección por palabra (PC / 4)
+        .rd(instr)
     );
 
     // CPU
@@ -39,5 +43,11 @@ module Gambling_Tec(
         .wd(write_data),
         .rd(read_data)
     );
+	 
+	 
+	 
+	 
+	 
+	 
 
 endmodule

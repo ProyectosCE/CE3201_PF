@@ -49,7 +49,7 @@ module Control_Unit(
 
     // Registros para guardar banderas de la ALU
     Register #(2) Register_Flag1(
-        .clk(clk), 
+        .clk(~clk), 
         .rst(rst),
         .D(Flags[3:2]),
         .en(FlagW[1] & CondEx),
@@ -57,7 +57,7 @@ module Control_Unit(
     );
 
     Register #(2) Register_Flag2(
-        .clk(clk), 
+        .clk(~clk), 
         .rst(rst),
         .D(Flags[1:0]),
         .en(FlagW[0] & CondEx),
