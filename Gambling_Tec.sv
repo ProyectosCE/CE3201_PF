@@ -4,8 +4,46 @@ module Gambling_Tec(
 	 input  DATA_PS2, PS2_CLK,
 	 
 	 output key_ready,
-	 output [7:0] mem_key
+	 output [7:0] mem_key,
+	 output logic [7:0]  R, G, B,
+	 output logic VGA_Blank, VGA_Sync_N, VGA_CLK
 );
+
+
+
+	logic clk25;
+	
+	clk_div div_clo(
+		 .clk(clk),
+		 .rst_active(rst),
+		 .clk25(clk25)
+	);
+
+
+assign VGA_CLK = clk25;
+
+
+
+Vga_Controller #(.N(8)) vga_control(
+    .clk(clk25), 
+	.rst(~rst),
+    .Hs(Hs), 
+	.Vs(Vs),
+	.VGA_Blank(VGA_Blank), 
+	.VGA_Sync_N(VGA_Sync_N),
+	.Q_X(), 
+	.Q_Y(),
+	.R(R),
+	.G(G),
+	.B(B),
+	.stop(stop),
+	.money(mem_key)
+);
+
+
+
+
+		
 
     // Señales internas
     logic [31:0] instr;
@@ -26,7 +64,7 @@ module Gambling_Tec(
 	 
 	 logic [31:0] sa_mem;
 	 
-	 assign mem_key = plata[7:0];
+	 assign mem_key = plata[9:0];
 	 
 
     // ROM de instrucciones
@@ -60,6 +98,7 @@ module Gambling_Tec(
         .PC(pc),               
         .ALUResult(alu_result),
         .Result(result)
+	
     );
 
     // Memoria de datos

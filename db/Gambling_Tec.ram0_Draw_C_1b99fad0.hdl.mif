@@ -1,0 +1,20 @@
+-- begin_signature
+-- Draw_C(SCALE
+-- 6)
+-- end_signature
+WIDTH=8;
+DEPTH=8;
+
+ADDRESS_RADIX=UNS;
+DATA_RADIX=BIN;
+
+CONTENT BEGIN
+	7 :	00111100;
+	6 :	01100110;
+	5 :	11000010;
+	4 :	11000000;
+	3 :	11000000;
+	2 :	11000010;
+	1 :	01100110;
+	0 :	00111100;
+END;
