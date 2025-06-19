@@ -14,11 +14,12 @@ module Vga_Controller #(parameter N=8,
 
 )(
     input logic clk, rst, stop,
-	 input [9:0] money,
     output logic Hs, Vs,
 	 output logic VGA_Blank, VGA_Sync_N,
 	 output logic [9:0] Q_X, Q_Y,
-	 output logic [7:0]  R, G, B
+	 output logic [7:0]  R, G, B,
+	 input logic [9:0] Money
+
 	 
 );	 
 
@@ -81,7 +82,7 @@ logic [3:0] numb2;
 logic [3:0] numb3;
 
 deco_BDS deco(
-.Num(money),
+.Num(Money),
 .numb1(numb1),
 .numb2(numb2),
 .numb3(numb3)

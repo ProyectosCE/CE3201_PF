@@ -40,6 +40,22 @@
 					"strict" : false
 				},
 				{
+					"name" : "Hs",
+					"strict" : false
+				},
+				{
+					"name" : "Vs",
+					"strict" : false
+				},
+				{
+					"name" : "VGA_Blank",
+					"strict" : false
+				},
+				{
+					"name" : "VGA_CLK",
+					"strict" : false
+				},
+				{
 					"name" : "R[0]",
 					"strict" : false
 				},
@@ -136,19 +152,15 @@
 					"strict" : false
 				},
 				{
-					"name" : "VGA_Blank",
-					"strict" : false
-				},
-				{
-					"name" : "VGA_CLK",
-					"strict" : false
-				},
-				{
 					"name" : "clk",
 					"strict" : false
 				},
 				{
-					"name" : "rst",
+					"name" : "rstin",
+					"strict" : false
+				},
+				{
+					"name" : "stop",
 					"strict" : false
 				},
 				{
