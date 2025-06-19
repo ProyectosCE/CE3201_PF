@@ -112,28 +112,31 @@ logic [7:0] ARROW_DOWN   = 8'h72; // Flecha abajo
  end
  
  // to update the key_code
- always @(posedge clk)begin 
-  if(trigger)begin
-   if(full_buffer)begin
-    if(error) begin
-     key_code <= 8'd0;
-    end else begin
-     key_code <= scan_code[8:1];
-    end
-   end else begin
-    key_code <= 8'd0;
-   end
-   
-  end else begin
-   key_code <= 8'd0;
+logic [32:0] timeout_counter = 0;  // Tamaño ajustable
+logic        timeout_active  = 0;
+
+always_ff @(posedge clk) begin
+  if (trigger && full_buffer && !error) begin
+    key_code        <= scan_code[8:1];
+    timeout_counter <= 0;
+    timeout_active  <= 1;
   end
- end
+  else if (timeout_active) begin
+    timeout_counter <= timeout_counter + 1;
+
+    if (timeout_counter > 32'd80000000) begin  // Ajusta el tiempo de espera (~80ms aprox a 100MHz)
+      key_code       <= 8'd0;
+      timeout_active <= 0;
+		
+    end
+  end
+end
  
  
  //to update the outputs
  always @(posedge clk)begin
  
-  if (key_code == ARROW_UP | key_code == KEY_ENTER | key_code == KEY_BACKSPACE | key_code == KEY_SPACE | key_code == ARROW_DOWN) begin
+  if ((key_code == ARROW_UP | key_code == KEY_ENTER | key_code == KEY_BACKSPACE | key_code == KEY_SPACE | key_code == ARROW_DOWN) & ~(timeout_counter > 32'd800000)) begin
    key_press = 1'b1;
    
   end else begin
@@ -153,7 +156,7 @@ logic [7:0] ARROW_DOWN   = 8'h72; // Flecha abajo
    holding_counter = holding_counter + 1'b1;
   end
   
-  if(holding_counter > 10000000)begin
+  if(holding_counter > 10000)begin
    WriteEn = 1'b0;
 
    holding = 1'b0;

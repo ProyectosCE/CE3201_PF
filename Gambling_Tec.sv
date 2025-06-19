@@ -3,7 +3,8 @@ module Gambling_Tec(
     input logic rst,
 	 input  DATA_PS2, PS2_CLK,
 	 
-	 output key_ready
+	 output key_ready,
+	 output [7:0] mem_key
 );
 
     // Señales internas
@@ -19,6 +20,10 @@ module Gambling_Tec(
 	 logic [7:0] key_code;
 	 //logic key_ready;
 	 wire [31:0] key_fixed = {24'd0, key_code};
+	 
+	 logic [31:0] sa_mem;
+	 
+	 assign mem_key = sa_mem[7:0];
 	 
 	 // Control Teclado
 	 Ps2_Key ps2_inst(
@@ -61,12 +66,15 @@ module Gambling_Tec(
 
 		 // Acceso desde teclado (escritura)
 		 .we_kb(key_ready),
-		 .addr_kb(32'h0000_0000),
+		 .addr_kb(32'd10),
 		 .data_kb(key_fixed),
+		 .code_key(sa_mem),
 
 		 // Acceso desde VGA (lectura)
 		 .addr_vga(),
 		 .data_vga()
 	);
-	 
+	
+
+
 endmodule

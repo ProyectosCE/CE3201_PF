@@ -1,13 +1,13 @@
-Analysis & Synthesis Status : Successful - Mon Jun 16 21:52:21 2025
+Analysis & Synthesis Status : Successful - Wed Jun 18 20:53:26 2025
 Quartus Prime Version : 18.1.0 Build 625 09/12/2018 SJ Lite Edition
 Revision Name : Gambling_Tec
 Top-level Entity Name : Gambling_Tec
 Family : Cyclone V
 Logic utilization (in ALMs) : N/A
-Total registers : 80
-Total pins : 5
+Total registers : 664
+Total pins : 13
 Total virtual pins : 0
-Total block memory bits : 0
+Total block memory bits : 1,920
 Total DSP Blocks : 0
 Total HSSI RX PCSs : 0
 Total HSSI PMA RX Deserializers : 0

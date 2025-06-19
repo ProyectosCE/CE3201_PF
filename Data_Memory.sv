@@ -14,21 +14,24 @@ module Data_Memory(
 
     // Acceso desde VGA (lectura)
     input  logic [31:0] addr_vga,
-    output logic [31:0] data_vga
+    output logic [31:0] data_vga,
+	 output logic [31:0] code_key
 );
 
     logic [31:0] RAM [0:63];
 
     // Escritura principal
-    always_ff @(posedge clk) begin
-        if (we)
-            RAM[a[31:2]] <= wd;
-        else if (we_kb)
-            RAM[addr_kb[31:2]] <= data_kb;
-    end
+	always_ff @(posedge clk) begin
+		 if (we)
+			  RAM[a[31:2]] <= wd;
+		 if (we_kb)
+			  RAM[addr_kb] <= data_kb;
+	end
+
 
     // Lectura principal
     assign rd = RAM[a[31:2]];
+	 assign code_key = RAM[10];
 
     // Lectura VGA
     assign data_vga = RAM[addr_vga[31:2]];
