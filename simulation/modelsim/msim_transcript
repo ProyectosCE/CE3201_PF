@@ -12,117 +12,117 @@
 # 
 # vlog -sv -work work +incdir+C:/Users/josee/CE3201_PF {C:/Users/josee/CE3201_PF/Condition_Check.sv}
 # Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
-# Start time: 10:48:27 on Jun 19,2025
+# Start time: 11:25:55 on Jun 19,2025
 # vlog -reportprogress 300 -sv -work work "+incdir+C:/Users/josee/CE3201_PF" C:/Users/josee/CE3201_PF/Condition_Check.sv 
 # -- Compiling module Condition_Check
 # 
 # Top level modules:
 # 	Condition_Check
-# End time: 10:48:27 on Jun 19,2025, Elapsed time: 0:00:00
+# End time: 11:25:56 on Jun 19,2025, Elapsed time: 0:00:01
 # Errors: 0, Warnings: 0
 # vlog -sv -work work +incdir+C:/Users/josee/CE3201_PF {C:/Users/josee/CE3201_PF/Register_File.sv}
 # Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
-# Start time: 10:48:27 on Jun 19,2025
+# Start time: 11:25:56 on Jun 19,2025
 # vlog -reportprogress 300 -sv -work work "+incdir+C:/Users/josee/CE3201_PF" C:/Users/josee/CE3201_PF/Register_File.sv 
 # -- Compiling module Register_File
 # 
 # Top level modules:
 # 	Register_File
-# End time: 10:48:28 on Jun 19,2025, Elapsed time: 0:00:01
+# End time: 11:25:56 on Jun 19,2025, Elapsed time: 0:00:00
 # Errors: 0, Warnings: 0
 # vlog -sv -work work +incdir+C:/Users/josee/CE3201_PF {C:/Users/josee/CE3201_PF/Register.sv}
 # Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
-# Start time: 10:48:28 on Jun 19,2025
+# Start time: 11:25:56 on Jun 19,2025
 # vlog -reportprogress 300 -sv -work work "+incdir+C:/Users/josee/CE3201_PF" C:/Users/josee/CE3201_PF/Register.sv 
 # -- Compiling module Register
 # 
 # Top level modules:
 # 	Register
-# End time: 10:48:28 on Jun 19,2025, Elapsed time: 0:00:00
+# End time: 11:25:56 on Jun 19,2025, Elapsed time: 0:00:00
 # Errors: 0, Warnings: 0
 # vlog -sv -work work +incdir+C:/Users/josee/CE3201_PF {C:/Users/josee/CE3201_PF/Mux.sv}
 # Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
-# Start time: 10:48:28 on Jun 19,2025
+# Start time: 11:25:56 on Jun 19,2025
 # vlog -reportprogress 300 -sv -work work "+incdir+C:/Users/josee/CE3201_PF" C:/Users/josee/CE3201_PF/Mux.sv 
 # -- Compiling module Mux
 # 
 # Top level modules:
 # 	Mux
-# End time: 10:48:28 on Jun 19,2025, Elapsed time: 0:00:00
+# End time: 11:25:56 on Jun 19,2025, Elapsed time: 0:00:00
 # Errors: 0, Warnings: 0
 # vlog -sv -work work +incdir+C:/Users/josee/CE3201_PF {C:/Users/josee/CE3201_PF/Extender.sv}
 # Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
-# Start time: 10:48:28 on Jun 19,2025
+# Start time: 11:25:56 on Jun 19,2025
 # vlog -reportprogress 300 -sv -work work "+incdir+C:/Users/josee/CE3201_PF" C:/Users/josee/CE3201_PF/Extender.sv 
 # -- Compiling module Extender
 # 
 # Top level modules:
 # 	Extender
-# End time: 10:48:28 on Jun 19,2025, Elapsed time: 0:00:00
+# End time: 11:25:56 on Jun 19,2025, Elapsed time: 0:00:00
 # Errors: 0, Warnings: 0
 # vlog -sv -work work +incdir+C:/Users/josee/CE3201_PF {C:/Users/josee/CE3201_PF/Data_Memory.sv}
 # Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
-# Start time: 10:48:28 on Jun 19,2025
+# Start time: 11:25:56 on Jun 19,2025
 # vlog -reportprogress 300 -sv -work work "+incdir+C:/Users/josee/CE3201_PF" C:/Users/josee/CE3201_PF/Data_Memory.sv 
 # -- Compiling module Data_Memory
 # 
 # Top level modules:
 # 	Data_Memory
-# End time: 10:48:28 on Jun 19,2025, Elapsed time: 0:00:00
+# End time: 11:25:56 on Jun 19,2025, Elapsed time: 0:00:00
 # Errors: 0, Warnings: 0
 # vlog -sv -work work +incdir+C:/Users/josee/CE3201_PF {C:/Users/josee/CE3201_PF/CPU.sv}
 # Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
-# Start time: 10:48:28 on Jun 19,2025
+# Start time: 11:25:56 on Jun 19,2025
 # vlog -reportprogress 300 -sv -work work "+incdir+C:/Users/josee/CE3201_PF" C:/Users/josee/CE3201_PF/CPU.sv 
 # -- Compiling module CPU
 # 
 # Top level modules:
 # 	CPU
-# End time: 10:48:28 on Jun 19,2025, Elapsed time: 0:00:00
+# End time: 11:25:56 on Jun 19,2025, Elapsed time: 0:00:00
 # Errors: 0, Warnings: 0
 # vlog -sv -work work +incdir+C:/Users/josee/CE3201_PF {C:/Users/josee/CE3201_PF/ALU.sv}
 # Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
-# Start time: 10:48:28 on Jun 19,2025
+# Start time: 11:25:56 on Jun 19,2025
 # vlog -reportprogress 300 -sv -work work "+incdir+C:/Users/josee/CE3201_PF" C:/Users/josee/CE3201_PF/ALU.sv 
 # -- Compiling module ALU
 # 
 # Top level modules:
 # 	ALU
-# End time: 10:48:28 on Jun 19,2025, Elapsed time: 0:00:00
+# End time: 11:25:56 on Jun 19,2025, Elapsed time: 0:00:00
 # Errors: 0, Warnings: 0
 # vlog -sv -work work +incdir+C:/Users/josee/CE3201_PF {C:/Users/josee/CE3201_PF/Adder.sv}
 # Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
-# Start time: 10:48:28 on Jun 19,2025
+# Start time: 11:25:56 on Jun 19,2025
 # vlog -reportprogress 300 -sv -work work "+incdir+C:/Users/josee/CE3201_PF" C:/Users/josee/CE3201_PF/Adder.sv 
 # -- Compiling module Adder
 # 
 # Top level modules:
 # 	Adder
-# End time: 10:48:28 on Jun 19,2025, Elapsed time: 0:00:00
+# End time: 11:25:56 on Jun 19,2025, Elapsed time: 0:00:00
 # Errors: 0, Warnings: 0
 # vlog -sv -work work +incdir+C:/Users/josee/CE3201_PF {C:/Users/josee/CE3201_PF/Gambling_Tec.sv}
 # Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
-# Start time: 10:48:28 on Jun 19,2025
+# Start time: 11:25:56 on Jun 19,2025
 # vlog -reportprogress 300 -sv -work work "+incdir+C:/Users/josee/CE3201_PF" C:/Users/josee/CE3201_PF/Gambling_Tec.sv 
 # -- Compiling module Gambling_Tec
 # 
 # Top level modules:
 # 	Gambling_Tec
-# End time: 10:48:28 on Jun 19,2025, Elapsed time: 0:00:00
+# End time: 11:25:57 on Jun 19,2025, Elapsed time: 0:00:01
 # Errors: 0, Warnings: 0
 # vlog -sv -work work +incdir+C:/Users/josee/CE3201_PF {C:/Users/josee/CE3201_PF/Control_Unit.sv}
 # Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
-# Start time: 10:48:28 on Jun 19,2025
+# Start time: 11:25:57 on Jun 19,2025
 # vlog -reportprogress 300 -sv -work work "+incdir+C:/Users/josee/CE3201_PF" C:/Users/josee/CE3201_PF/Control_Unit.sv 
 # -- Compiling module Control_Unit
 # 
 # Top level modules:
 # 	Control_Unit
-# End time: 10:48:28 on Jun 19,2025, Elapsed time: 0:00:00
+# End time: 11:25:57 on Jun 19,2025, Elapsed time: 0:00:00
 # Errors: 0, Warnings: 0
 # vlog -sv -work work +incdir+C:/Users/josee/CE3201_PF {C:/Users/josee/CE3201_PF/Decoder.sv}
 # Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
-# Start time: 10:48:28 on Jun 19,2025
+# Start time: 11:25:57 on Jun 19,2025
 # vlog -reportprogress 300 -sv -work work "+incdir+C:/Users/josee/CE3201_PF" C:/Users/josee/CE3201_PF/Decoder.sv 
 # -- Compiling module Decoder
 # -- Compiling module PC_Logic
@@ -131,33 +131,33 @@
 # 
 # Top level modules:
 # 	Decoder
-# End time: 10:48:28 on Jun 19,2025, Elapsed time: 0:00:00
+# End time: 11:25:57 on Jun 19,2025, Elapsed time: 0:00:00
 # Errors: 0, Warnings: 0
 # vlog -sv -work work +incdir+C:/Users/josee/CE3201_PF {C:/Users/josee/CE3201_PF/ROM.sv}
 # Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
-# Start time: 10:48:29 on Jun 19,2025
+# Start time: 11:25:57 on Jun 19,2025
 # vlog -reportprogress 300 -sv -work work "+incdir+C:/Users/josee/CE3201_PF" C:/Users/josee/CE3201_PF/ROM.sv 
 # -- Compiling module ROM
 # 
 # Top level modules:
 # 	ROM
-# End time: 10:48:29 on Jun 19,2025, Elapsed time: 0:00:00
+# End time: 11:25:57 on Jun 19,2025, Elapsed time: 0:00:00
 # Errors: 0, Warnings: 0
 # 
 # vlog -sv -work work +incdir+C:/Users/josee/CE3201_PF {C:/Users/josee/CE3201_PF/tb_Gambling_Tec_ROM.sv}
 # Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
-# Start time: 10:48:29 on Jun 19,2025
+# Start time: 11:25:57 on Jun 19,2025
 # vlog -reportprogress 300 -sv -work work "+incdir+C:/Users/josee/CE3201_PF" C:/Users/josee/CE3201_PF/tb_Gambling_Tec_ROM.sv 
 # -- Compiling module tb_Gambling_Tec_ROM
 # 
 # Top level modules:
 # 	tb_Gambling_Tec_ROM
-# End time: 10:48:29 on Jun 19,2025, Elapsed time: 0:00:00
+# End time: 11:25:57 on Jun 19,2025, Elapsed time: 0:00:00
 # Errors: 0, Warnings: 0
 # 
 # vsim -t 1ps -L altera_ver -L lpm_ver -L sgate_ver -L altera_mf_ver -L altera_lnsim_ver -L cyclonev_ver -L cyclonev_hssi_ver -L cyclonev_pcie_hip_ver -L rtl_work -L work -voptargs="+acc"  tb_Gambling_Tec_ROM
 # vsim -t 1ps -L altera_ver -L lpm_ver -L sgate_ver -L altera_mf_ver -L altera_lnsim_ver -L cyclonev_ver -L cyclonev_hssi_ver -L cyclonev_pcie_hip_ver -L rtl_work -L work -voptargs=""+acc"" tb_Gambling_Tec_ROM 
-# Start time: 10:48:29 on Jun 19,2025
+# Start time: 11:25:57 on Jun 19,2025
 # Loading sv_std.std
 # Loading work.tb_Gambling_Tec_ROM
 # Loading work.Gambling_Tec
@@ -182,7 +182,7 @@
 # ** Warning: (vsim-3722) C:/Users/josee/CE3201_PF/tb_Gambling_Tec_ROM.sv(8): [TFMPC] - Missing connection for port 'PS2_CLK'.
 # ** Warning: (vsim-3722) C:/Users/josee/CE3201_PF/tb_Gambling_Tec_ROM.sv(8): [TFMPC] - Missing connection for port 'key_ready'.
 # ** Warning: (vsim-3722) C:/Users/josee/CE3201_PF/tb_Gambling_Tec_ROM.sv(8): [TFMPC] - Missing connection for port 'mem_key'.
-# ** Warning: (vsim-3017) C:/Users/josee/CE3201_PF/Gambling_Tec.sv(39): [TFMPC] - Too few port connections. Expected 17, found 5.
+# ** Warning: (vsim-3017) C:/Users/josee/CE3201_PF/Gambling_Tec.sv(39): [TFMPC] - Too few port connections. Expected 18, found 6.
 #    Time: 0 ps  Iteration: 0  Instance: /tb_Gambling_Tec_ROM/dut/data_mem File: C:/Users/josee/CE3201_PF/Data_Memory.sv
 # ** Warning: (vsim-3722) C:/Users/josee/CE3201_PF/Gambling_Tec.sv(39): [TFMPC] - Missing connection for port 'we_kb'.
 # ** Warning: (vsim-3722) C:/Users/josee/CE3201_PF/Gambling_Tec.sv(39): [TFMPC] - Missing connection for port 'addr_kb'.
@@ -205,20 +205,20 @@
 # run -all
 # ==== TEST GENERAL CPU DESDE ROM ====
 # === Estado inicial de RAM ===
-# RAM[0] = x
-# RAM[1] = x
-# RAM[2] = x
-# RAM[3] = x
-# RAM[4] = x
-# RAM[5] = x
-# RAM[6] = x
+# RAM[0] = 0
+# RAM[1] = 0
+# RAM[2] = 0
+# RAM[3] = 0
+# RAM[4] = 0
+# RAM[5] = 0
+# RAM[6] = 0
 # =============================
 # Ciclo 0:
 #   PC                 = 0
 #   Instr              = 0xe0400000
 #   ALUControl         = 1
 #   ALUResult (addr)   = 0
-#   ReadData           = x
+#   ReadData           = 0
 #   Result             = 0
 #   RegWrite           = 1
 #   MemWrite           = 0
@@ -243,7 +243,7 @@
 #   Instr              = 0xe0400000
 #   ALUControl         = 1
 #   ALUResult (addr)   = 0
-#   ReadData           = x
+#   ReadData           = 0
 #   Result             = 0
 #   RegWrite           = 1
 #   MemWrite           = 0
@@ -268,7 +268,7 @@
 #   Instr              = 0xe280000a
 #   ALUControl         = 0
 #   ALUResult (addr)   = 10
-#   ReadData           = x
+#   ReadData           = 0
 #   Result             = 10
 #   RegWrite           = 1
 #   MemWrite           = 0
@@ -293,7 +293,7 @@
 #   Instr              = 0xe0433003
 #   ALUControl         = 1
 #   ALUResult (addr)   = 0
-#   ReadData           = x
+#   ReadData           = 0
 #   Result             = 0
 #   RegWrite           = 1
 #   MemWrite           = 0
@@ -318,7 +318,7 @@
 #   Instr              = 0xe2833075
 #   ALUControl         = 0
 #   ALUResult (addr)   = 117
-#   ReadData           = x
+#   ReadData           = 0
 #   Result             = 117
 #   RegWrite           = 1
 #   MemWrite           = 0
@@ -343,7 +343,7 @@
 #   Instr              = 0xe5803000
 #   ALUControl         = 0
 #   ALUResult (addr)   = 10
-#   ReadData           = x
+#   ReadData           = 0
 #   Result             = 10
 #   RegWrite           = 0
 #   MemWrite           = 1
@@ -368,7 +368,7 @@
 #   Instr              = 0xe0433003
 #   ALUControl         = 1
 #   ALUResult (addr)   = 0
-#   ReadData           = x
+#   ReadData           = 0
 #   Result             = 0
 #   RegWrite           = 1
 #   MemWrite           = 0
@@ -418,7 +418,7 @@
 #   Instr              = 0xe0422002
 #   ALUControl         = 1
 #   ALUResult (addr)   = 0
-#   ReadData           = x
+#   ReadData           = 0
 #   Result             = 0
 #   RegWrite           = 1
 #   MemWrite           = 0
@@ -443,7 +443,7 @@
 #   Instr              = 0xe2822075
 #   ALUControl         = 0
 #   ALUResult (addr)   = 117
-#   ReadData           = x
+#   ReadData           = 0
 #   Result             = 117
 #   RegWrite           = 1
 #   MemWrite           = 0
@@ -468,7 +468,7 @@
 #   Instr              = 0xe1510002
 #   ALUControl         = 1
 #   ALUResult (addr)   = 0
-#   ReadData           = x
+#   ReadData           = 0
 #   Result             = 0
 #   RegWrite           = 1
 #   MemWrite           = 0
@@ -493,7 +493,7 @@
 #   Instr              = 0x0a000004
 #   ALUControl         = 0
 #   ALUResult (addr)   = 64
-#   ReadData           = x
+#   ReadData           = 0
 #   Result             = 64
 #   RegWrite           = 0
 #   MemWrite           = 0
@@ -518,7 +518,7 @@
 #   Instr              = 0xe0400000
 #   ALUControl         = 1
 #   ALUResult (addr)   = 0
-#   ReadData           = x
+#   ReadData           = 0
 #   Result             = 0
 #   RegWrite           = 1
 #   MemWrite           = 0
@@ -543,7 +543,7 @@
 #   Instr              = 0xe2800014
 #   ALUControl         = 0
 #   ALUResult (addr)   = 20
-#   ReadData           = x
+#   ReadData           = 0
 #   Result             = 20
 #   RegWrite           = 1
 #   MemWrite           = 0
@@ -568,8 +568,8 @@
 #   Instr              = 0xe5901000
 #   ALUControl         = 0
 #   ALUResult (addr)   = 20
-#   ReadData           = x
-#   Result             = x
+#   ReadData           = 0
+#   Result             = 0
 #   RegWrite           = 1
 #   MemWrite           = 0
 #   PCSrc              = 0
@@ -592,15 +592,15 @@
 #   PC                 = 76
 #   Instr              = 0xe281100a
 #   ALUControl         = 0
-#   ALUResult (addr)   = x
-#   ReadData           = x
-#   Result             = x
+#   ALUResult (addr)   = 10
+#   ReadData           = 117
+#   Result             = 10
 #   RegWrite           = 1
 #   MemWrite           = 0
 #   PCSrc              = 0
-#   Flags              = x
+#   Flags              = 0
 #   R0 = 20
-#   R1 = x
+#   R1 = 0
 #   R2 = 117
 #   R3 = 0
 #   R4 = 0
@@ -618,14 +618,14 @@
 #   Instr              = 0xe5801000
 #   ALUControl         = 0
 #   ALUResult (addr)   = 20
-#   ReadData           = x
+#   ReadData           = 0
 #   Result             = 20
 #   RegWrite           = 0
 #   MemWrite           = 1
 #   PCSrc              = 0
 #   Flags              = 0
 #   R0 = 20
-#   R1 = x
+#   R1 = 10
 #   R2 = 117
 #   R3 = 0
 #   R4 = 0
@@ -643,14 +643,14 @@
 #   Instr              = 0xeaffffe9
 #   ALUControl         = 0
 #   ALUResult (addr)   = 0
-#   ReadData           = x
+#   ReadData           = 0
 #   Result             = 0
 #   RegWrite           = 0
 #   MemWrite           = 0
 #   PCSrc              = 1
 #   Flags              = 101
 #   R0 = 20
-#   R1 = x
+#   R1 = 10
 #   R2 = 117
 #   R3 = 0
 #   R4 = 0
@@ -668,14 +668,14 @@
 #   Instr              = 0xe0400000
 #   ALUControl         = 1
 #   ALUResult (addr)   = 0
-#   ReadData           = x
+#   ReadData           = 0
 #   Result             = 0
 #   RegWrite           = 1
 #   MemWrite           = 0
 #   PCSrc              = 0
 #   Flags              = 1
 #   R0 = 20
-#   R1 = x
+#   R1 = 10
 #   R2 = 117
 #   R3 = 0
 #   R4 = 0
@@ -700,7 +700,7 @@
 #   PCSrc              = 0
 #   Flags              = 0
 #   R0 = 0
-#   R1 = x
+#   R1 = 10
 #   R2 = 117
 #   R3 = 0
 #   R4 = 0
@@ -718,14 +718,14 @@
 #   Instr              = 0xe0433003
 #   ALUControl         = 1
 #   ALUResult (addr)   = 0
-#   ReadData           = x
+#   ReadData           = 0
 #   Result             = 0
 #   RegWrite           = 1
 #   MemWrite           = 0
 #   PCSrc              = 0
 #   Flags              = 1
 #   R0 = 10
-#   R1 = x
+#   R1 = 10
 #   R2 = 117
 #   R3 = 0
 #   R4 = 0
@@ -743,14 +743,14 @@
 #   Instr              = 0xe2833075
 #   ALUControl         = 0
 #   ALUResult (addr)   = 117
-#   ReadData           = x
+#   ReadData           = 0
 #   Result             = 117
 #   RegWrite           = 1
 #   MemWrite           = 0
 #   PCSrc              = 0
 #   Flags              = 0
 #   R0 = 10
-#   R1 = x
+#   R1 = 10
 #   R2 = 117
 #   R3 = 0
 #   R4 = 0
@@ -775,7 +775,7 @@
 #   PCSrc              = 0
 #   Flags              = 0
 #   R0 = 10
-#   R1 = x
+#   R1 = 10
 #   R2 = 117
 #   R3 = 117
 #   R4 = 0
@@ -793,14 +793,14 @@
 #   Instr              = 0xe0433003
 #   ALUControl         = 1
 #   ALUResult (addr)   = 0
-#   ReadData           = x
+#   ReadData           = 0
 #   Result             = 0
 #   RegWrite           = 1
 #   MemWrite           = 0
 #   PCSrc              = 0
 #   Flags              = 1
 #   R0 = 10
-#   R1 = x
+#   R1 = 10
 #   R2 = 117
 #   R3 = 117
 #   R4 = 0
@@ -825,7 +825,7 @@
 #   PCSrc              = 0
 #   Flags              = 0
 #   R0 = 10
-#   R1 = x
+#   R1 = 10
 #   R2 = 117
 #   R3 = 0
 #   R4 = 0
@@ -843,7 +843,7 @@
 #   Instr              = 0xe0422002
 #   ALUControl         = 1
 #   ALUResult (addr)   = 0
-#   ReadData           = x
+#   ReadData           = 0
 #   Result             = 0
 #   RegWrite           = 1
 #   MemWrite           = 0
@@ -868,7 +868,7 @@
 #   Instr              = 0xe2822075
 #   ALUControl         = 0
 #   ALUResult (addr)   = 117
-#   ReadData           = x
+#   ReadData           = 0
 #   Result             = 117
 #   RegWrite           = 1
 #   MemWrite           = 0
@@ -893,7 +893,7 @@
 #   Instr              = 0xe1510002
 #   ALUControl         = 1
 #   ALUResult (addr)   = 0
-#   ReadData           = x
+#   ReadData           = 0
 #   Result             = 0
 #   RegWrite           = 1
 #   MemWrite           = 0
@@ -918,7 +918,7 @@
 #   Instr              = 0x0a000004
 #   ALUControl         = 0
 #   ALUResult (addr)   = 64
-#   ReadData           = x
+#   ReadData           = 0
 #   Result             = 64
 #   RegWrite           = 0
 #   MemWrite           = 0
@@ -943,7 +943,7 @@
 #   Instr              = 0xe0400000
 #   ALUControl         = 1
 #   ALUResult (addr)   = 0
-#   ReadData           = x
+#   ReadData           = 0
 #   Result             = 0
 #   RegWrite           = 1
 #   MemWrite           = 0
@@ -968,7 +968,7 @@
 #   Instr              = 0xe2800014
 #   ALUControl         = 0
 #   ALUResult (addr)   = 20
-#   ReadData           = x
+#   ReadData           = 10
 #   Result             = 20
 #   RegWrite           = 1
 #   MemWrite           = 0
@@ -993,8 +993,8 @@
 #   Instr              = 0xe5901000
 #   ALUControl         = 0
 #   ALUResult (addr)   = 20
-#   ReadData           = x
-#   Result             = x
+#   ReadData           = 10
+#   Result             = 10
 #   RegWrite           = 1
 #   MemWrite           = 0
 #   PCSrc              = 0
@@ -1017,15 +1017,15 @@
 #   PC                 = 76
 #   Instr              = 0xe281100a
 #   ALUControl         = 0
-#   ALUResult (addr)   = x
-#   ReadData           = x
-#   Result             = x
+#   ALUResult (addr)   = 20
+#   ReadData           = 10
+#   Result             = 20
 #   RegWrite           = 1
 #   MemWrite           = 0
 #   PCSrc              = 0
-#   Flags              = x
+#   Flags              = 0
 #   R0 = 20
-#   R1 = x
+#   R1 = 10
 #   R2 = 117
 #   R3 = 0
 #   R4 = 0
@@ -1043,14 +1043,14 @@
 #   Instr              = 0xe5801000
 #   ALUControl         = 0
 #   ALUResult (addr)   = 20
-#   ReadData           = x
+#   ReadData           = 10
 #   Result             = 20
 #   RegWrite           = 0
 #   MemWrite           = 1
 #   PCSrc              = 0
 #   Flags              = 0
 #   R0 = 20
-#   R1 = x
+#   R1 = 20
 #   R2 = 117
 #   R3 = 0
 #   R4 = 0
@@ -1068,14 +1068,14 @@
 #   Instr              = 0xeaffffe9
 #   ALUControl         = 0
 #   ALUResult (addr)   = 0
-#   ReadData           = x
+#   ReadData           = 0
 #   Result             = 0
 #   RegWrite           = 0
 #   MemWrite           = 0
 #   PCSrc              = 1
 #   Flags              = 101
 #   R0 = 20
-#   R1 = x
+#   R1 = 20
 #   R2 = 117
 #   R3 = 0
 #   R4 = 0
@@ -1093,14 +1093,14 @@
 #   Instr              = 0xe0400000
 #   ALUControl         = 1
 #   ALUResult (addr)   = 0
-#   ReadData           = x
+#   ReadData           = 0
 #   Result             = 0
 #   RegWrite           = 1
 #   MemWrite           = 0
 #   PCSrc              = 0
 #   Flags              = 1
 #   R0 = 20
-#   R1 = x
+#   R1 = 20
 #   R2 = 117
 #   R3 = 0
 #   R4 = 0
@@ -1125,7 +1125,7 @@
 #   PCSrc              = 0
 #   Flags              = 0
 #   R0 = 0
-#   R1 = x
+#   R1 = 20
 #   R2 = 117
 #   R3 = 0
 #   R4 = 0
@@ -1143,14 +1143,14 @@
 #   Instr              = 0xe0433003
 #   ALUControl         = 1
 #   ALUResult (addr)   = 0
-#   ReadData           = x
+#   ReadData           = 0
 #   Result             = 0
 #   RegWrite           = 1
 #   MemWrite           = 0
 #   PCSrc              = 0
 #   Flags              = 1
 #   R0 = 10
-#   R1 = x
+#   R1 = 20
 #   R2 = 117
 #   R3 = 0
 #   R4 = 0
@@ -1168,14 +1168,14 @@
 #   Instr              = 0xe2833075
 #   ALUControl         = 0
 #   ALUResult (addr)   = 117
-#   ReadData           = x
+#   ReadData           = 0
 #   Result             = 117
 #   RegWrite           = 1
 #   MemWrite           = 0
 #   PCSrc              = 0
 #   Flags              = 0
 #   R0 = 10
-#   R1 = x
+#   R1 = 20
 #   R2 = 117
 #   R3 = 0
 #   R4 = 0
@@ -1200,7 +1200,7 @@
 #   PCSrc              = 0
 #   Flags              = 0
 #   R0 = 10
-#   R1 = x
+#   R1 = 20
 #   R2 = 117
 #   R3 = 117
 #   R4 = 0
@@ -1215,7 +1215,7 @@
 # -----------------------------
 # === RESULTADO FINAL ===
 #   R0 = 10
-#   R1 = x
+#   R1 = 20
 #   R2 = 117
 #   R3 = 117
 #   R4 = 0
@@ -1227,7 +1227,7 @@
 #   R10 = 0
 #   R11 = 0
 #   R12 = 0
-#   RAM[7] (si STR se ejecuto) = x
+#   RAM[7] (si STR se ejecuto) = 0
 # TEST FALLO
 # ** Note: $finish    : C:/Users/josee/CE3201_PF/tb_Gambling_Tec_ROM.sv(75)
 #    Time: 415 ns  Iteration: 1  Instance: /tb_Gambling_Tec_ROM
@@ -1242,7 +1242,7 @@ restart -f
 # ** Warning: (vsim-3722) C:/Users/josee/CE3201_PF/tb_Gambling_Tec_ROM.sv(8): [TFMPC] - Missing connection for port 'PS2_CLK'.
 # ** Warning: (vsim-3722) C:/Users/josee/CE3201_PF/tb_Gambling_Tec_ROM.sv(8): [TFMPC] - Missing connection for port 'key_ready'.
 # ** Warning: (vsim-3722) C:/Users/josee/CE3201_PF/tb_Gambling_Tec_ROM.sv(8): [TFMPC] - Missing connection for port 'mem_key'.
-# ** Warning: (vsim-3017) C:/Users/josee/CE3201_PF/Gambling_Tec.sv(39): [TFMPC] - Too few port connections. Expected 17, found 5.
+# ** Warning: (vsim-3017) C:/Users/josee/CE3201_PF/Gambling_Tec.sv(39): [TFMPC] - Too few port connections. Expected 18, found 6.
 #    Time: 0 ps  Iteration: 0  Instance: /tb_Gambling_Tec_ROM/dut/data_mem File: C:/Users/josee/CE3201_PF/Data_Memory.sv
 # ** Warning: (vsim-3722) C:/Users/josee/CE3201_PF/Gambling_Tec.sv(39): [TFMPC] - Missing connection for port 'we_kb'.
 # ** Warning: (vsim-3722) C:/Users/josee/CE3201_PF/Gambling_Tec.sv(39): [TFMPC] - Missing connection for port 'addr_kb'.
@@ -1259,20 +1259,20 @@ restart -f
 run -all
 # ==== TEST GENERAL CPU DESDE ROM ====
 # === Estado inicial de RAM ===
-# RAM[0] = x
-# RAM[1] = x
-# RAM[2] = x
-# RAM[3] = x
-# RAM[4] = x
-# RAM[5] = x
-# RAM[6] = x
+# RAM[0] = 0
+# RAM[1] = 0
+# RAM[2] = 0
+# RAM[3] = 0
+# RAM[4] = 0
+# RAM[5] = 0
+# RAM[6] = 0
 # =============================
 # Ciclo 0:
 #   PC                 = 0
 #   Instr              = 0xe0400000
 #   ALUControl         = 1
 #   ALUResult (addr)   = 0
-#   ReadData           = x
+#   ReadData           = 0
 #   Result             = 0
 #   RegWrite           = 1
 #   MemWrite           = 0
@@ -1297,7 +1297,7 @@ run -all
 #   Instr              = 0xe0400000
 #   ALUControl         = 1
 #   ALUResult (addr)   = 0
-#   ReadData           = x
+#   ReadData           = 0
 #   Result             = 0
 #   RegWrite           = 1
 #   MemWrite           = 0
@@ -1322,7 +1322,7 @@ run -all
 #   Instr              = 0xe280000a
 #   ALUControl         = 0
 #   ALUResult (addr)   = 10
-#   ReadData           = x
+#   ReadData           = 0
 #   Result             = 10
 #   RegWrite           = 1
 #   MemWrite           = 0
@@ -1347,7 +1347,7 @@ run -all
 #   Instr              = 0xe0433003
 #   ALUControl         = 1
 #   ALUResult (addr)   = 0
-#   ReadData           = x
+#   ReadData           = 0
 #   Result             = 0
 #   RegWrite           = 1
 #   MemWrite           = 0
@@ -1372,7 +1372,7 @@ run -all
 #   Instr              = 0xe2833075
 #   ALUControl         = 0
 #   ALUResult (addr)   = 117
-#   ReadData           = x
+#   ReadData           = 0
 #   Result             = 117
 #   RegWrite           = 1
 #   MemWrite           = 0
@@ -1397,7 +1397,7 @@ run -all
 #   Instr              = 0xe5803000
 #   ALUControl         = 0
 #   ALUResult (addr)   = 10
-#   ReadData           = x
+#   ReadData           = 0
 #   Result             = 10
 #   RegWrite           = 0
 #   MemWrite           = 1
@@ -1422,7 +1422,7 @@ run -all
 #   Instr              = 0xe0433003
 #   ALUControl         = 1
 #   ALUResult (addr)   = 0
-#   ReadData           = x
+#   ReadData           = 0
 #   Result             = 0
 #   RegWrite           = 1
 #   MemWrite           = 0
@@ -1472,7 +1472,7 @@ run -all
 #   Instr              = 0xe0422002
 #   ALUControl         = 1
 #   ALUResult (addr)   = 0
-#   ReadData           = x
+#   ReadData           = 0
 #   Result             = 0
 #   RegWrite           = 1
 #   MemWrite           = 0
@@ -1497,7 +1497,7 @@ run -all
 #   Instr              = 0xe2822075
 #   ALUControl         = 0
 #   ALUResult (addr)   = 117
-#   ReadData           = x
+#   ReadData           = 0
 #   Result             = 117
 #   RegWrite           = 1
 #   MemWrite           = 0
@@ -1522,7 +1522,7 @@ run -all
 #   Instr              = 0xe1510002
 #   ALUControl         = 1
 #   ALUResult (addr)   = 0
-#   ReadData           = x
+#   ReadData           = 0
 #   Result             = 0
 #   RegWrite           = 1
 #   MemWrite           = 0
@@ -1547,7 +1547,7 @@ run -all
 #   Instr              = 0x0a000004
 #   ALUControl         = 0
 #   ALUResult (addr)   = 64
-#   ReadData           = x
+#   ReadData           = 0
 #   Result             = 64
 #   RegWrite           = 0
 #   MemWrite           = 0
@@ -1572,7 +1572,7 @@ run -all
 #   Instr              = 0xe0400000
 #   ALUControl         = 1
 #   ALUResult (addr)   = 0
-#   ReadData           = x
+#   ReadData           = 0
 #   Result             = 0
 #   RegWrite           = 1
 #   MemWrite           = 0
@@ -1597,7 +1597,7 @@ run -all
 #   Instr              = 0xe2800014
 #   ALUControl         = 0
 #   ALUResult (addr)   = 20
-#   ReadData           = x
+#   ReadData           = 0
 #   Result             = 20
 #   RegWrite           = 1
 #   MemWrite           = 0
@@ -1622,8 +1622,8 @@ run -all
 #   Instr              = 0xe5901000
 #   ALUControl         = 0
 #   ALUResult (addr)   = 20
-#   ReadData           = x
-#   Result             = x
+#   ReadData           = 0
+#   Result             = 0
 #   RegWrite           = 1
 #   MemWrite           = 0
 #   PCSrc              = 0
@@ -1646,15 +1646,15 @@ run -all
 #   PC                 = 76
 #   Instr              = 0xe281100a
 #   ALUControl         = 0
-#   ALUResult (addr)   = x
-#   ReadData           = x
-#   Result             = x
+#   ALUResult (addr)   = 10
+#   ReadData           = 117
+#   Result             = 10
 #   RegWrite           = 1
 #   MemWrite           = 0
 #   PCSrc              = 0
-#   Flags              = x
+#   Flags              = 0
 #   R0 = 20
-#   R1 = x
+#   R1 = 0
 #   R2 = 117
 #   R3 = 0
 #   R4 = 0
@@ -1672,14 +1672,14 @@ run -all
 #   Instr              = 0xe5801000
 #   ALUControl         = 0
 #   ALUResult (addr)   = 20
-#   ReadData           = x
+#   ReadData           = 0
 #   Result             = 20
 #   RegWrite           = 0
 #   MemWrite           = 1
 #   PCSrc              = 0
 #   Flags              = 0
 #   R0 = 20
-#   R1 = x
+#   R1 = 10
 #   R2 = 117
 #   R3 = 0
 #   R4 = 0
@@ -1697,14 +1697,14 @@ run -all
 #   Instr              = 0xeaffffe9
 #   ALUControl         = 0
 #   ALUResult (addr)   = 0
-#   ReadData           = x
+#   ReadData           = 0
 #   Result             = 0
 #   RegWrite           = 0
 #   MemWrite           = 0
 #   PCSrc              = 1
 #   Flags              = 101
 #   R0 = 20
-#   R1 = x
+#   R1 = 10
 #   R2 = 117
 #   R3 = 0
 #   R4 = 0
@@ -1722,14 +1722,14 @@ run -all
 #   Instr              = 0xe0400000
 #   ALUControl         = 1
 #   ALUResult (addr)   = 0
-#   ReadData           = x
+#   ReadData           = 0
 #   Result             = 0
 #   RegWrite           = 1
 #   MemWrite           = 0
 #   PCSrc              = 0
 #   Flags              = 1
 #   R0 = 20
-#   R1 = x
+#   R1 = 10
 #   R2 = 117
 #   R3 = 0
 #   R4 = 0
@@ -1754,7 +1754,7 @@ run -all
 #   PCSrc              = 0
 #   Flags              = 0
 #   R0 = 0
-#   R1 = x
+#   R1 = 10
 #   R2 = 117
 #   R3 = 0
 #   R4 = 0
@@ -1772,14 +1772,14 @@ run -all
 #   Instr              = 0xe0433003
 #   ALUControl         = 1
 #   ALUResult (addr)   = 0
-#   ReadData           = x
+#   ReadData           = 0
 #   Result             = 0
 #   RegWrite           = 1
 #   MemWrite           = 0
 #   PCSrc              = 0
 #   Flags              = 1
 #   R0 = 10
-#   R1 = x
+#   R1 = 10
 #   R2 = 117
 #   R3 = 0
 #   R4 = 0
@@ -1797,14 +1797,14 @@ run -all
 #   Instr              = 0xe2833075
 #   ALUControl         = 0
 #   ALUResult (addr)   = 117
-#   ReadData           = x
+#   ReadData           = 0
 #   Result             = 117
 #   RegWrite           = 1
 #   MemWrite           = 0
 #   PCSrc              = 0
 #   Flags              = 0
 #   R0 = 10
-#   R1 = x
+#   R1 = 10
 #   R2 = 117
 #   R3 = 0
 #   R4 = 0
@@ -1829,7 +1829,7 @@ run -all
 #   PCSrc              = 0
 #   Flags              = 0
 #   R0 = 10
-#   R1 = x
+#   R1 = 10
 #   R2 = 117
 #   R3 = 117
 #   R4 = 0
@@ -1847,14 +1847,14 @@ run -all
 #   Instr              = 0xe0433003
 #   ALUControl         = 1
 #   ALUResult (addr)   = 0
-#   ReadData           = x
+#   ReadData           = 0
 #   Result             = 0
 #   RegWrite           = 1
 #   MemWrite           = 0
 #   PCSrc              = 0
 #   Flags              = 1
 #   R0 = 10
-#   R1 = x
+#   R1 = 10
 #   R2 = 117
 #   R3 = 117
 #   R4 = 0
@@ -1879,7 +1879,7 @@ run -all
 #   PCSrc              = 0
 #   Flags              = 0
 #   R0 = 10
-#   R1 = x
+#   R1 = 10
 #   R2 = 117
 #   R3 = 0
 #   R4 = 0
@@ -1897,7 +1897,7 @@ run -all
 #   Instr              = 0xe0422002
 #   ALUControl         = 1
 #   ALUResult (addr)   = 0
-#   ReadData           = x
+#   ReadData           = 0
 #   Result             = 0
 #   RegWrite           = 1
 #   MemWrite           = 0
@@ -1922,7 +1922,7 @@ run -all
 #   Instr              = 0xe2822075
 #   ALUControl         = 0
 #   ALUResult (addr)   = 117
-#   ReadData           = x
+#   ReadData           = 0
 #   Result             = 117
 #   RegWrite           = 1
 #   MemWrite           = 0
@@ -1947,7 +1947,7 @@ run -all
 #   Instr              = 0xe1510002
 #   ALUControl         = 1
 #   ALUResult (addr)   = 0
-#   ReadData           = x
+#   ReadData           = 0
 #   Result             = 0
 #   RegWrite           = 1
 #   MemWrite           = 0
@@ -1972,7 +1972,7 @@ run -all
 #   Instr              = 0x0a000004
 #   ALUControl         = 0
 #   ALUResult (addr)   = 64
-#   ReadData           = x
+#   ReadData           = 0
 #   Result             = 64
 #   RegWrite           = 0
 #   MemWrite           = 0
@@ -1997,7 +1997,7 @@ run -all
 #   Instr              = 0xe0400000
 #   ALUControl         = 1
 #   ALUResult (addr)   = 0
-#   ReadData           = x
+#   ReadData           = 0
 #   Result             = 0
 #   RegWrite           = 1
 #   MemWrite           = 0
@@ -2022,7 +2022,7 @@ run -all
 #   Instr              = 0xe2800014
 #   ALUControl         = 0
 #   ALUResult (addr)   = 20
-#   ReadData           = x
+#   ReadData           = 10
 #   Result             = 20
 #   RegWrite           = 1
 #   MemWrite           = 0
@@ -2047,8 +2047,8 @@ run -all
 #   Instr              = 0xe5901000
 #   ALUControl         = 0
 #   ALUResult (addr)   = 20
-#   ReadData           = x
-#   Result             = x
+#   ReadData           = 10
+#   Result             = 10
 #   RegWrite           = 1
 #   MemWrite           = 0
 #   PCSrc              = 0
@@ -2071,15 +2071,15 @@ run -all
 #   PC                 = 76
 #   Instr              = 0xe281100a
 #   ALUControl         = 0
-#   ALUResult (addr)   = x
-#   ReadData           = x
-#   Result             = x
+#   ALUResult (addr)   = 20
+#   ReadData           = 10
+#   Result             = 20
 #   RegWrite           = 1
 #   MemWrite           = 0
 #   PCSrc              = 0
-#   Flags              = x
+#   Flags              = 0
 #   R0 = 20
-#   R1 = x
+#   R1 = 10
 #   R2 = 117
 #   R3 = 0
 #   R4 = 0
@@ -2097,14 +2097,14 @@ run -all
 #   Instr              = 0xe5801000
 #   ALUControl         = 0
 #   ALUResult (addr)   = 20
-#   ReadData           = x
+#   ReadData           = 10
 #   Result             = 20
 #   RegWrite           = 0
 #   MemWrite           = 1
 #   PCSrc              = 0
 #   Flags              = 0
 #   R0 = 20
-#   R1 = x
+#   R1 = 20
 #   R2 = 117
 #   R3 = 0
 #   R4 = 0
@@ -2122,14 +2122,14 @@ run -all
 #   Instr              = 0xeaffffe9
 #   ALUControl         = 0
 #   ALUResult (addr)   = 0
-#   ReadData           = x
+#   ReadData           = 0
 #   Result             = 0
 #   RegWrite           = 0
 #   MemWrite           = 0
 #   PCSrc              = 1
 #   Flags              = 101
 #   R0 = 20
-#   R1 = x
+#   R1 = 20
 #   R2 = 117
 #   R3 = 0
 #   R4 = 0
@@ -2147,14 +2147,14 @@ run -all
 #   Instr              = 0xe0400000
 #   ALUControl         = 1
 #   ALUResult (addr)   = 0
-#   ReadData           = x
+#   ReadData           = 0
 #   Result             = 0
 #   RegWrite           = 1
 #   MemWrite           = 0
 #   PCSrc              = 0
 #   Flags              = 1
 #   R0 = 20
-#   R1 = x
+#   R1 = 20
 #   R2 = 117
 #   R3 = 0
 #   R4 = 0
@@ -2179,7 +2179,7 @@ run -all
 #   PCSrc              = 0
 #   Flags              = 0
 #   R0 = 0
-#   R1 = x
+#   R1 = 20
 #   R2 = 117
 #   R3 = 0
 #   R4 = 0
@@ -2197,14 +2197,14 @@ run -all
 #   Instr              = 0xe0433003
 #   ALUControl         = 1
 #   ALUResult (addr)   = 0
-#   ReadData           = x
+#   ReadData           = 0
 #   Result             = 0
 #   RegWrite           = 1
 #   MemWrite           = 0
 #   PCSrc              = 0
 #   Flags              = 1
 #   R0 = 10
-#   R1 = x
+#   R1 = 20
 #   R2 = 117
 #   R3 = 0
 #   R4 = 0
@@ -2222,14 +2222,14 @@ run -all
 #   Instr              = 0xe2833075
 #   ALUControl         = 0
 #   ALUResult (addr)   = 117
-#   ReadData           = x
+#   ReadData           = 0
 #   Result             = 117
 #   RegWrite           = 1
 #   MemWrite           = 0
 #   PCSrc              = 0
 #   Flags              = 0
 #   R0 = 10
-#   R1 = x
+#   R1 = 20
 #   R2 = 117
 #   R3 = 0
 #   R4 = 0
@@ -2254,7 +2254,7 @@ run -all
 #   PCSrc              = 0
 #   Flags              = 0
 #   R0 = 10
-#   R1 = x
+#   R1 = 20
 #   R2 = 117
 #   R3 = 117
 #   R4 = 0
@@ -2269,7 +2269,7 @@ run -all
 # -----------------------------
 # === RESULTADO FINAL ===
 #   R0 = 10
-#   R1 = x
+#   R1 = 20
 #   R2 = 117
 #   R3 = 117
 #   R4 = 0
@@ -2281,11 +2281,11 @@ run -all
 #   R10 = 0
 #   R11 = 0
 #   R12 = 0
-#   RAM[7] (si STR se ejecuto) = x
+#   RAM[7] (si STR se ejecuto) = 0
 # TEST FALLO
 # ** Note: $finish    : C:/Users/josee/CE3201_PF/tb_Gambling_Tec_ROM.sv(75)
 #    Time: 415 ns  Iteration: 1  Instance: /tb_Gambling_Tec_ROM
 # 1
 # Break in Module tb_Gambling_Tec_ROM at C:/Users/josee/CE3201_PF/tb_Gambling_Tec_ROM.sv line 75
-# End time: 10:57:33 on Jun 19,2025, Elapsed time: 0:09:04
+# End time: 11:29:26 on Jun 19,2025, Elapsed time: 0:03:29
 # Errors: 0, Warnings: 36

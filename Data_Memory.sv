@@ -1,5 +1,5 @@
 module Data_Memory(
-    input  logic        clk,
+    input  logic        clk, rst,
 
     // Acceso principal
     input  logic        we,
@@ -32,13 +32,20 @@ module Data_Memory(
 
     logic [31:0] RAM [0:63];
 
-    // Escritura principal
-	always_ff @(posedge clk) begin
-		 if (we)
-			  RAM[a[31:2]] <= wd;
-		 if (we_kb)
-			  RAM[addr_kb[31:2]] <= data_kb;
-	end
+    // Escritura con soporte de reset
+    always_ff @(posedge clk) begin
+        if (rst) begin
+            integer i;
+            for (i = 0; i < 64; i = i + 1)
+                RAM[i] <= 32'b0;
+        end
+        else begin
+            if (we)
+                RAM[a[31:2]] <= wd;
+            if (we_kb)
+                RAM[addr_kb[31:2]] <= data_kb;
+        end
+    end
 
 
     // Lectura principal
