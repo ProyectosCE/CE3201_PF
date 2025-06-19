@@ -21,25 +21,25 @@ Loop:
 
 Sumar10:
         SUB     R0, R0, R0        
-        ADD     R0, R0, #20       
+        ADD     R0, R0, #0x14       
         LDR     R1, [R0]          
 
-        ADD     R1, R1, #10       
+        ADD     R1, R1, #0xA       
         STR     R1, [R0]          
 
         B       Loop              
 
 Restar10:
         SUB     R0, R0, R0        
-        ADD     R0, R0, #20       
+        ADD     R0, R0, #0x14       
         LDR     R1, [R0]          
 
         SUB     R2, R2, R2        
-        ADD     R2, R2, #10       
+        ADD     R2, R2, #0xA      
         CMP     R1, R2            
         BLT     SetZero           
 
-        SUB     R1, R1, #10       
+        SUB     R1, R1, #0xA      
         STR     R1, [R0]          
         B       Loop              
 
