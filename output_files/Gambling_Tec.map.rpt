@@ -1,5 +1,5 @@
 Analysis & Synthesis report for Gambling_Tec
-Wed Jun 18 20:53:26 2025
+Wed Jun 18 21:58:02 2025
 Quartus Prime Version 18.1.0 Build 625 09/12/2018 SJ Lite Edition
 
 
@@ -69,7 +69,7 @@ refer to the applicable agreement for further details.
 +-------------------------------------------------------------------------------+
 ; Analysis & Synthesis Summary                                                  ;
 +---------------------------------+---------------------------------------------+
-; Analysis & Synthesis Status     ; Successful - Wed Jun 18 20:53:26 2025       ;
+; Analysis & Synthesis Status     ; Successful - Wed Jun 18 21:58:02 2025       ;
 ; Quartus Prime Version           ; 18.1.0 Build 625 09/12/2018 SJ Lite Edition ;
 ; Revision Name                   ; Gambling_Tec                                ;
 ; Top-level Entity Name           ; Gambling_Tec                                ;
@@ -400,7 +400,6 @@ Note: For table entries with two numbers listed, the numbers in parentheses indi
 ; CPU:process|Control_Unit:CU_Inst|Register:Register_Flag2|Q[1]   ; Lost fanout                                 ;
 ; Data_Memory:data_mem_inst|RAM[0][0]                             ; Stuck at GND due to stuck port clock_enable ;
 ; Data_Memory:data_mem_inst|RAM[1][0]                             ; Stuck at GND due to stuck port clock_enable ;
-; Data_Memory:data_mem_inst|RAM[2][0]                             ; Stuck at GND due to stuck port clock_enable ;
 ; Data_Memory:data_mem_inst|RAM[3][0]                             ; Stuck at GND due to stuck port clock_enable ;
 ; Data_Memory:data_mem_inst|RAM[4][0]                             ; Stuck at GND due to stuck port clock_enable ;
 ; Data_Memory:data_mem_inst|RAM[5][0]                             ; Stuck at GND due to stuck port clock_enable ;
@@ -408,6 +407,7 @@ Note: For table entries with two numbers listed, the numbers in parentheses indi
 ; Data_Memory:data_mem_inst|RAM[7][0]                             ; Stuck at GND due to stuck port clock_enable ;
 ; Data_Memory:data_mem_inst|RAM[8][0]                             ; Stuck at GND due to stuck port clock_enable ;
 ; Data_Memory:data_mem_inst|RAM[9][0]                             ; Stuck at GND due to stuck port clock_enable ;
+; Data_Memory:data_mem_inst|RAM[10][0]                            ; Stuck at GND due to stuck port clock_enable ;
 ; Data_Memory:data_mem_inst|RAM[11][0]                            ; Stuck at GND due to stuck port clock_enable ;
 ; Data_Memory:data_mem_inst|RAM[12][0]                            ; Stuck at GND due to stuck port clock_enable ;
 ; Data_Memory:data_mem_inst|RAM[13][0]                            ; Stuck at GND due to stuck port clock_enable ;
@@ -511,7 +511,6 @@ Note: For table entries with two numbers listed, the numbers in parentheses indi
 ; Data_Memory:data_mem_inst|RAM[31][2]                            ; Stuck at GND due to stuck port clock_enable ;
 ; Data_Memory:data_mem_inst|RAM[0][2]                             ; Stuck at GND due to stuck port clock_enable ;
 ; Data_Memory:data_mem_inst|RAM[1][2]                             ; Stuck at GND due to stuck port clock_enable ;
-; Data_Memory:data_mem_inst|RAM[2][2]                             ; Stuck at GND due to stuck port clock_enable ;
 ; Data_Memory:data_mem_inst|RAM[3][2]                             ; Stuck at GND due to stuck port clock_enable ;
 ; Data_Memory:data_mem_inst|RAM[4][2]                             ; Stuck at GND due to stuck port clock_enable ;
 ; Data_Memory:data_mem_inst|RAM[5][2]                             ; Stuck at GND due to stuck port clock_enable ;
@@ -519,6 +518,7 @@ Note: For table entries with two numbers listed, the numbers in parentheses indi
 ; Data_Memory:data_mem_inst|RAM[7][2]                             ; Stuck at GND due to stuck port clock_enable ;
 ; Data_Memory:data_mem_inst|RAM[8][2]                             ; Stuck at GND due to stuck port clock_enable ;
 ; Data_Memory:data_mem_inst|RAM[9][2]                             ; Stuck at GND due to stuck port clock_enable ;
+; Data_Memory:data_mem_inst|RAM[10][2]                            ; Stuck at GND due to stuck port clock_enable ;
 ; Data_Memory:data_mem_inst|RAM[11][2]                            ; Stuck at GND due to stuck port clock_enable ;
 ; Data_Memory:data_mem_inst|RAM[12][2]                            ; Stuck at GND due to stuck port clock_enable ;
 ; Data_Memory:data_mem_inst|RAM[13][2]                            ; Stuck at GND due to stuck port clock_enable ;
@@ -574,7 +574,6 @@ Note: For table entries with two numbers listed, the numbers in parentheses indi
 ; Data_Memory:data_mem_inst|RAM[31][3]                            ; Stuck at GND due to stuck port clock_enable ;
 ; Data_Memory:data_mem_inst|RAM[0][3]                             ; Stuck at GND due to stuck port clock_enable ;
 ; Data_Memory:data_mem_inst|RAM[1][3]                             ; Stuck at GND due to stuck port clock_enable ;
-; Data_Memory:data_mem_inst|RAM[2][3]                             ; Stuck at GND due to stuck port clock_enable ;
 ; Data_Memory:data_mem_inst|RAM[3][3]                             ; Stuck at GND due to stuck port clock_enable ;
 ; Data_Memory:data_mem_inst|RAM[4][3]                             ; Stuck at GND due to stuck port clock_enable ;
 ; Data_Memory:data_mem_inst|RAM[5][3]                             ; Stuck at GND due to stuck port clock_enable ;
@@ -582,6 +581,7 @@ Note: For table entries with two numbers listed, the numbers in parentheses indi
 ; Data_Memory:data_mem_inst|RAM[7][3]                             ; Stuck at GND due to stuck port clock_enable ;
 ; Data_Memory:data_mem_inst|RAM[8][3]                             ; Stuck at GND due to stuck port clock_enable ;
 ; Data_Memory:data_mem_inst|RAM[9][3]                             ; Stuck at GND due to stuck port clock_enable ;
+; Data_Memory:data_mem_inst|RAM[10][3]                            ; Stuck at GND due to stuck port clock_enable ;
 ; Data_Memory:data_mem_inst|RAM[11][3]                            ; Stuck at GND due to stuck port clock_enable ;
 ; Data_Memory:data_mem_inst|RAM[12][3]                            ; Stuck at GND due to stuck port clock_enable ;
 ; Data_Memory:data_mem_inst|RAM[13][3]                            ; Stuck at GND due to stuck port clock_enable ;
@@ -637,7 +637,6 @@ Note: For table entries with two numbers listed, the numbers in parentheses indi
 ; Data_Memory:data_mem_inst|RAM[31][4]                            ; Stuck at GND due to stuck port clock_enable ;
 ; Data_Memory:data_mem_inst|RAM[0][4]                             ; Stuck at GND due to stuck port clock_enable ;
 ; Data_Memory:data_mem_inst|RAM[1][4]                             ; Stuck at GND due to stuck port clock_enable ;
-; Data_Memory:data_mem_inst|RAM[2][4]                             ; Stuck at GND due to stuck port clock_enable ;
 ; Data_Memory:data_mem_inst|RAM[3][4]                             ; Stuck at GND due to stuck port clock_enable ;
 ; Data_Memory:data_mem_inst|RAM[4][4]                             ; Stuck at GND due to stuck port clock_enable ;
 ; Data_Memory:data_mem_inst|RAM[5][4]                             ; Stuck at GND due to stuck port clock_enable ;
@@ -645,6 +644,7 @@ Note: For table entries with two numbers listed, the numbers in parentheses indi
 ; Data_Memory:data_mem_inst|RAM[7][4]                             ; Stuck at GND due to stuck port clock_enable ;
 ; Data_Memory:data_mem_inst|RAM[8][4]                             ; Stuck at GND due to stuck port clock_enable ;
 ; Data_Memory:data_mem_inst|RAM[9][4]                             ; Stuck at GND due to stuck port clock_enable ;
+; Data_Memory:data_mem_inst|RAM[10][4]                            ; Stuck at GND due to stuck port clock_enable ;
 ; Data_Memory:data_mem_inst|RAM[11][4]                            ; Stuck at GND due to stuck port clock_enable ;
 ; Data_Memory:data_mem_inst|RAM[12][4]                            ; Stuck at GND due to stuck port clock_enable ;
 ; Data_Memory:data_mem_inst|RAM[13][4]                            ; Stuck at GND due to stuck port clock_enable ;
@@ -700,7 +700,6 @@ Note: For table entries with two numbers listed, the numbers in parentheses indi
 ; Data_Memory:data_mem_inst|RAM[31][5]                            ; Stuck at GND due to stuck port clock_enable ;
 ; Data_Memory:data_mem_inst|RAM[0][5]                             ; Stuck at GND due to stuck port clock_enable ;
 ; Data_Memory:data_mem_inst|RAM[1][5]                             ; Stuck at GND due to stuck port clock_enable ;
-; Data_Memory:data_mem_inst|RAM[2][5]                             ; Stuck at GND due to stuck port clock_enable ;
 ; Data_Memory:data_mem_inst|RAM[3][5]                             ; Stuck at GND due to stuck port clock_enable ;
 ; Data_Memory:data_mem_inst|RAM[4][5]                             ; Stuck at GND due to stuck port clock_enable ;
 ; Data_Memory:data_mem_inst|RAM[5][5]                             ; Stuck at GND due to stuck port clock_enable ;
@@ -708,6 +707,7 @@ Note: For table entries with two numbers listed, the numbers in parentheses indi
 ; Data_Memory:data_mem_inst|RAM[7][5]                             ; Stuck at GND due to stuck port clock_enable ;
 ; Data_Memory:data_mem_inst|RAM[8][5]                             ; Stuck at GND due to stuck port clock_enable ;
 ; Data_Memory:data_mem_inst|RAM[9][5]                             ; Stuck at GND due to stuck port clock_enable ;
+; Data_Memory:data_mem_inst|RAM[10][5]                            ; Stuck at GND due to stuck port clock_enable ;
 ; Data_Memory:data_mem_inst|RAM[11][5]                            ; Stuck at GND due to stuck port clock_enable ;
 ; Data_Memory:data_mem_inst|RAM[12][5]                            ; Stuck at GND due to stuck port clock_enable ;
 ; Data_Memory:data_mem_inst|RAM[13][5]                            ; Stuck at GND due to stuck port clock_enable ;
@@ -763,7 +763,7 @@ Note: For table entries with two numbers listed, the numbers in parentheses indi
 ; Data_Memory:data_mem_inst|RAM[31][11]                           ; Stuck at GND due to stuck port clock_enable ;
 ; Data_Memory:data_mem_inst|RAM[0][11]                            ; Stuck at GND due to stuck port clock_enable ;
 ; Data_Memory:data_mem_inst|RAM[1][11]                            ; Stuck at GND due to stuck port clock_enable ;
-; Data_Memory:data_mem_inst|RAM[2][11]                            ; Stuck at GND due to stuck port clock_enable ;
+; Data_Memory:data_mem_inst|RAM[2][11]                            ; Stuck at GND due to stuck port data_in      ;
 ; Data_Memory:data_mem_inst|RAM[3][11]                            ; Stuck at GND due to stuck port clock_enable ;
 ; Data_Memory:data_mem_inst|RAM[4][11]                            ; Stuck at GND due to stuck port clock_enable ;
 ; Data_Memory:data_mem_inst|RAM[5][11]                            ; Stuck at GND due to stuck port clock_enable ;
@@ -771,7 +771,7 @@ Note: For table entries with two numbers listed, the numbers in parentheses indi
 ; Data_Memory:data_mem_inst|RAM[7][11]                            ; Stuck at GND due to stuck port clock_enable ;
 ; Data_Memory:data_mem_inst|RAM[8][11]                            ; Stuck at GND due to stuck port clock_enable ;
 ; Data_Memory:data_mem_inst|RAM[9][11]                            ; Stuck at GND due to stuck port clock_enable ;
-; Data_Memory:data_mem_inst|RAM[10][11]                           ; Stuck at GND due to stuck port data_in      ;
+; Data_Memory:data_mem_inst|RAM[10][11]                           ; Stuck at GND due to stuck port clock_enable ;
 ; Data_Memory:data_mem_inst|RAM[11][11]                           ; Stuck at GND due to stuck port clock_enable ;
 ; Data_Memory:data_mem_inst|RAM[12][11]                           ; Stuck at GND due to stuck port clock_enable ;
 ; Data_Memory:data_mem_inst|RAM[13][11]                           ; Stuck at GND due to stuck port clock_enable ;
@@ -827,7 +827,6 @@ Note: For table entries with two numbers listed, the numbers in parentheses indi
 ; Data_Memory:data_mem_inst|RAM[31][6]                            ; Stuck at GND due to stuck port clock_enable ;
 ; Data_Memory:data_mem_inst|RAM[0][6]                             ; Stuck at GND due to stuck port clock_enable ;
 ; Data_Memory:data_mem_inst|RAM[1][6]                             ; Stuck at GND due to stuck port clock_enable ;
-; Data_Memory:data_mem_inst|RAM[2][6]                             ; Stuck at GND due to stuck port clock_enable ;
 ; Data_Memory:data_mem_inst|RAM[3][6]                             ; Stuck at GND due to stuck port clock_enable ;
 ; Data_Memory:data_mem_inst|RAM[4][6]                             ; Stuck at GND due to stuck port clock_enable ;
 ; Data_Memory:data_mem_inst|RAM[5][6]                             ; Stuck at GND due to stuck port clock_enable ;
@@ -835,6 +834,7 @@ Note: For table entries with two numbers listed, the numbers in parentheses indi
 ; Data_Memory:data_mem_inst|RAM[7][6]                             ; Stuck at GND due to stuck port clock_enable ;
 ; Data_Memory:data_mem_inst|RAM[8][6]                             ; Stuck at GND due to stuck port clock_enable ;
 ; Data_Memory:data_mem_inst|RAM[9][6]                             ; Stuck at GND due to stuck port clock_enable ;
+; Data_Memory:data_mem_inst|RAM[10][6]                            ; Stuck at GND due to stuck port clock_enable ;
 ; Data_Memory:data_mem_inst|RAM[11][6]                            ; Stuck at GND due to stuck port clock_enable ;
 ; Data_Memory:data_mem_inst|RAM[12][6]                            ; Stuck at GND due to stuck port clock_enable ;
 ; Data_Memory:data_mem_inst|RAM[13][6]                            ; Stuck at GND due to stuck port clock_enable ;
@@ -890,7 +890,6 @@ Note: For table entries with two numbers listed, the numbers in parentheses indi
 ; Data_Memory:data_mem_inst|RAM[31][7]                            ; Stuck at GND due to stuck port clock_enable ;
 ; Data_Memory:data_mem_inst|RAM[0][7]                             ; Stuck at GND due to stuck port clock_enable ;
 ; Data_Memory:data_mem_inst|RAM[1][7]                             ; Stuck at GND due to stuck port clock_enable ;
-; Data_Memory:data_mem_inst|RAM[2][7]                             ; Stuck at GND due to stuck port clock_enable ;
 ; Data_Memory:data_mem_inst|RAM[3][7]                             ; Stuck at GND due to stuck port clock_enable ;
 ; Data_Memory:data_mem_inst|RAM[4][7]                             ; Stuck at GND due to stuck port clock_enable ;
 ; Data_Memory:data_mem_inst|RAM[5][7]                             ; Stuck at GND due to stuck port clock_enable ;
@@ -898,6 +897,7 @@ Note: For table entries with two numbers listed, the numbers in parentheses indi
 ; Data_Memory:data_mem_inst|RAM[7][7]                             ; Stuck at GND due to stuck port clock_enable ;
 ; Data_Memory:data_mem_inst|RAM[8][7]                             ; Stuck at GND due to stuck port clock_enable ;
 ; Data_Memory:data_mem_inst|RAM[9][7]                             ; Stuck at GND due to stuck port clock_enable ;
+; Data_Memory:data_mem_inst|RAM[10][7]                            ; Stuck at GND due to stuck port clock_enable ;
 ; Data_Memory:data_mem_inst|RAM[11][7]                            ; Stuck at GND due to stuck port clock_enable ;
 ; Data_Memory:data_mem_inst|RAM[12][7]                            ; Stuck at GND due to stuck port clock_enable ;
 ; Data_Memory:data_mem_inst|RAM[13][7]                            ; Stuck at GND due to stuck port clock_enable ;
@@ -953,7 +953,7 @@ Note: For table entries with two numbers listed, the numbers in parentheses indi
 ; Data_Memory:data_mem_inst|RAM[31][8]                            ; Stuck at GND due to stuck port clock_enable ;
 ; Data_Memory:data_mem_inst|RAM[0][8]                             ; Stuck at GND due to stuck port clock_enable ;
 ; Data_Memory:data_mem_inst|RAM[1][8]                             ; Stuck at GND due to stuck port clock_enable ;
-; Data_Memory:data_mem_inst|RAM[2][8]                             ; Stuck at GND due to stuck port clock_enable ;
+; Data_Memory:data_mem_inst|RAM[2][8]                             ; Stuck at GND due to stuck port data_in      ;
 ; Data_Memory:data_mem_inst|RAM[3][8]                             ; Stuck at GND due to stuck port clock_enable ;
 ; Data_Memory:data_mem_inst|RAM[4][8]                             ; Stuck at GND due to stuck port clock_enable ;
 ; Data_Memory:data_mem_inst|RAM[5][8]                             ; Stuck at GND due to stuck port clock_enable ;
@@ -961,7 +961,7 @@ Note: For table entries with two numbers listed, the numbers in parentheses indi
 ; Data_Memory:data_mem_inst|RAM[7][8]                             ; Stuck at GND due to stuck port clock_enable ;
 ; Data_Memory:data_mem_inst|RAM[8][8]                             ; Stuck at GND due to stuck port clock_enable ;
 ; Data_Memory:data_mem_inst|RAM[9][8]                             ; Stuck at GND due to stuck port clock_enable ;
-; Data_Memory:data_mem_inst|RAM[10][8]                            ; Stuck at GND due to stuck port data_in      ;
+; Data_Memory:data_mem_inst|RAM[10][8]                            ; Stuck at GND due to stuck port clock_enable ;
 ; Data_Memory:data_mem_inst|RAM[11][8]                            ; Stuck at GND due to stuck port clock_enable ;
 ; Data_Memory:data_mem_inst|RAM[12][8]                            ; Stuck at GND due to stuck port clock_enable ;
 ; Data_Memory:data_mem_inst|RAM[13][8]                            ; Stuck at GND due to stuck port clock_enable ;
@@ -1017,7 +1017,7 @@ Note: For table entries with two numbers listed, the numbers in parentheses indi
 ; Data_Memory:data_mem_inst|RAM[31][9]                            ; Stuck at GND due to stuck port clock_enable ;
 ; Data_Memory:data_mem_inst|RAM[0][9]                             ; Stuck at GND due to stuck port clock_enable ;
 ; Data_Memory:data_mem_inst|RAM[1][9]                             ; Stuck at GND due to stuck port clock_enable ;
-; Data_Memory:data_mem_inst|RAM[2][9]                             ; Stuck at GND due to stuck port clock_enable ;
+; Data_Memory:data_mem_inst|RAM[2][9]                             ; Stuck at GND due to stuck port data_in      ;
 ; Data_Memory:data_mem_inst|RAM[3][9]                             ; Stuck at GND due to stuck port clock_enable ;
 ; Data_Memory:data_mem_inst|RAM[4][9]                             ; Stuck at GND due to stuck port clock_enable ;
 ; Data_Memory:data_mem_inst|RAM[5][9]                             ; Stuck at GND due to stuck port clock_enable ;
@@ -1025,7 +1025,7 @@ Note: For table entries with two numbers listed, the numbers in parentheses indi
 ; Data_Memory:data_mem_inst|RAM[7][9]                             ; Stuck at GND due to stuck port clock_enable ;
 ; Data_Memory:data_mem_inst|RAM[8][9]                             ; Stuck at GND due to stuck port clock_enable ;
 ; Data_Memory:data_mem_inst|RAM[9][9]                             ; Stuck at GND due to stuck port clock_enable ;
-; Data_Memory:data_mem_inst|RAM[10][9]                            ; Stuck at GND due to stuck port data_in      ;
+; Data_Memory:data_mem_inst|RAM[10][9]                            ; Stuck at GND due to stuck port clock_enable ;
 ; Data_Memory:data_mem_inst|RAM[11][9]                            ; Stuck at GND due to stuck port clock_enable ;
 ; Data_Memory:data_mem_inst|RAM[12][9]                            ; Stuck at GND due to stuck port clock_enable ;
 ; Data_Memory:data_mem_inst|RAM[13][9]                            ; Stuck at GND due to stuck port clock_enable ;
@@ -1081,7 +1081,7 @@ Note: For table entries with two numbers listed, the numbers in parentheses indi
 ; Data_Memory:data_mem_inst|RAM[31][10]                           ; Stuck at GND due to stuck port clock_enable ;
 ; Data_Memory:data_mem_inst|RAM[0][10]                            ; Stuck at GND due to stuck port clock_enable ;
 ; Data_Memory:data_mem_inst|RAM[1][10]                            ; Stuck at GND due to stuck port clock_enable ;
-; Data_Memory:data_mem_inst|RAM[2][10]                            ; Stuck at GND due to stuck port clock_enable ;
+; Data_Memory:data_mem_inst|RAM[2][10]                            ; Stuck at GND due to stuck port data_in      ;
 ; Data_Memory:data_mem_inst|RAM[3][10]                            ; Stuck at GND due to stuck port clock_enable ;
 ; Data_Memory:data_mem_inst|RAM[4][10]                            ; Stuck at GND due to stuck port clock_enable ;
 ; Data_Memory:data_mem_inst|RAM[5][10]                            ; Stuck at GND due to stuck port clock_enable ;
@@ -1089,7 +1089,7 @@ Note: For table entries with two numbers listed, the numbers in parentheses indi
 ; Data_Memory:data_mem_inst|RAM[7][10]                            ; Stuck at GND due to stuck port clock_enable ;
 ; Data_Memory:data_mem_inst|RAM[8][10]                            ; Stuck at GND due to stuck port clock_enable ;
 ; Data_Memory:data_mem_inst|RAM[9][10]                            ; Stuck at GND due to stuck port clock_enable ;
-; Data_Memory:data_mem_inst|RAM[10][10]                           ; Stuck at GND due to stuck port data_in      ;
+; Data_Memory:data_mem_inst|RAM[10][10]                           ; Stuck at GND due to stuck port clock_enable ;
 ; Data_Memory:data_mem_inst|RAM[11][10]                           ; Stuck at GND due to stuck port clock_enable ;
 ; Data_Memory:data_mem_inst|RAM[12][10]                           ; Stuck at GND due to stuck port clock_enable ;
 ; Data_Memory:data_mem_inst|RAM[13][10]                           ; Stuck at GND due to stuck port clock_enable ;
@@ -1145,7 +1145,7 @@ Note: For table entries with two numbers listed, the numbers in parentheses indi
 ; Data_Memory:data_mem_inst|RAM[31][30]                           ; Stuck at GND due to stuck port clock_enable ;
 ; Data_Memory:data_mem_inst|RAM[0][30]                            ; Stuck at GND due to stuck port clock_enable ;
 ; Data_Memory:data_mem_inst|RAM[1][30]                            ; Stuck at GND due to stuck port clock_enable ;
-; Data_Memory:data_mem_inst|RAM[2][30]                            ; Stuck at GND due to stuck port clock_enable ;
+; Data_Memory:data_mem_inst|RAM[2][30]                            ; Stuck at GND due to stuck port data_in      ;
 ; Data_Memory:data_mem_inst|RAM[3][30]                            ; Stuck at GND due to stuck port clock_enable ;
 ; Data_Memory:data_mem_inst|RAM[4][30]                            ; Stuck at GND due to stuck port clock_enable ;
 ; Data_Memory:data_mem_inst|RAM[5][30]                            ; Stuck at GND due to stuck port clock_enable ;
@@ -1153,7 +1153,7 @@ Note: For table entries with two numbers listed, the numbers in parentheses indi
 ; Data_Memory:data_mem_inst|RAM[7][30]                            ; Stuck at GND due to stuck port clock_enable ;
 ; Data_Memory:data_mem_inst|RAM[8][30]                            ; Stuck at GND due to stuck port clock_enable ;
 ; Data_Memory:data_mem_inst|RAM[9][30]                            ; Stuck at GND due to stuck port clock_enable ;
-; Data_Memory:data_mem_inst|RAM[10][30]                           ; Stuck at GND due to stuck port data_in      ;
+; Data_Memory:data_mem_inst|RAM[10][30]                           ; Stuck at GND due to stuck port clock_enable ;
 ; Data_Memory:data_mem_inst|RAM[11][30]                           ; Stuck at GND due to stuck port clock_enable ;
 ; Data_Memory:data_mem_inst|RAM[12][30]                           ; Stuck at GND due to stuck port clock_enable ;
 ; Data_Memory:data_mem_inst|RAM[13][30]                           ; Stuck at GND due to stuck port clock_enable ;
@@ -1209,7 +1209,7 @@ Note: For table entries with two numbers listed, the numbers in parentheses indi
 ; Data_Memory:data_mem_inst|RAM[31][31]                           ; Stuck at GND due to stuck port clock_enable ;
 ; Data_Memory:data_mem_inst|RAM[0][31]                            ; Stuck at GND due to stuck port clock_enable ;
 ; Data_Memory:data_mem_inst|RAM[1][31]                            ; Stuck at GND due to stuck port clock_enable ;
-; Data_Memory:data_mem_inst|RAM[2][31]                            ; Stuck at GND due to stuck port clock_enable ;
+; Data_Memory:data_mem_inst|RAM[2][31]                            ; Stuck at GND due to stuck port data_in      ;
 ; Data_Memory:data_mem_inst|RAM[3][31]                            ; Stuck at GND due to stuck port clock_enable ;
 ; Data_Memory:data_mem_inst|RAM[4][31]                            ; Stuck at GND due to stuck port clock_enable ;
 ; Data_Memory:data_mem_inst|RAM[5][31]                            ; Stuck at GND due to stuck port clock_enable ;
@@ -1217,7 +1217,7 @@ Note: For table entries with two numbers listed, the numbers in parentheses indi
 ; Data_Memory:data_mem_inst|RAM[7][31]                            ; Stuck at GND due to stuck port clock_enable ;
 ; Data_Memory:data_mem_inst|RAM[8][31]                            ; Stuck at GND due to stuck port clock_enable ;
 ; Data_Memory:data_mem_inst|RAM[9][31]                            ; Stuck at GND due to stuck port clock_enable ;
-; Data_Memory:data_mem_inst|RAM[10][31]                           ; Stuck at GND due to stuck port data_in      ;
+; Data_Memory:data_mem_inst|RAM[10][31]                           ; Stuck at GND due to stuck port clock_enable ;
 ; Data_Memory:data_mem_inst|RAM[11][31]                           ; Stuck at GND due to stuck port clock_enable ;
 ; Data_Memory:data_mem_inst|RAM[12][31]                           ; Stuck at GND due to stuck port clock_enable ;
 ; Data_Memory:data_mem_inst|RAM[13][31]                           ; Stuck at GND due to stuck port clock_enable ;
@@ -1273,7 +1273,7 @@ Note: For table entries with two numbers listed, the numbers in parentheses indi
 ; Data_Memory:data_mem_inst|RAM[31][20]                           ; Stuck at GND due to stuck port clock_enable ;
 ; Data_Memory:data_mem_inst|RAM[0][20]                            ; Stuck at GND due to stuck port clock_enable ;
 ; Data_Memory:data_mem_inst|RAM[1][20]                            ; Stuck at GND due to stuck port clock_enable ;
-; Data_Memory:data_mem_inst|RAM[2][20]                            ; Stuck at GND due to stuck port clock_enable ;
+; Data_Memory:data_mem_inst|RAM[2][20]                            ; Stuck at GND due to stuck port data_in      ;
 ; Data_Memory:data_mem_inst|RAM[3][20]                            ; Stuck at GND due to stuck port clock_enable ;
 ; Data_Memory:data_mem_inst|RAM[4][20]                            ; Stuck at GND due to stuck port clock_enable ;
 ; Data_Memory:data_mem_inst|RAM[5][20]                            ; Stuck at GND due to stuck port clock_enable ;
@@ -1281,7 +1281,7 @@ Note: For table entries with two numbers listed, the numbers in parentheses indi
 ; Data_Memory:data_mem_inst|RAM[7][20]                            ; Stuck at GND due to stuck port clock_enable ;
 ; Data_Memory:data_mem_inst|RAM[8][20]                            ; Stuck at GND due to stuck port clock_enable ;
 ; Data_Memory:data_mem_inst|RAM[9][20]                            ; Stuck at GND due to stuck port clock_enable ;
-; Data_Memory:data_mem_inst|RAM[10][20]                           ; Stuck at GND due to stuck port data_in      ;
+; Data_Memory:data_mem_inst|RAM[10][20]                           ; Stuck at GND due to stuck port clock_enable ;
 ; Data_Memory:data_mem_inst|RAM[11][20]                           ; Stuck at GND due to stuck port clock_enable ;
 ; Data_Memory:data_mem_inst|RAM[12][20]                           ; Stuck at GND due to stuck port clock_enable ;
 ; Data_Memory:data_mem_inst|RAM[13][20]                           ; Stuck at GND due to stuck port clock_enable ;
@@ -1337,7 +1337,7 @@ Note: For table entries with two numbers listed, the numbers in parentheses indi
 ; Data_Memory:data_mem_inst|RAM[31][21]                           ; Stuck at GND due to stuck port clock_enable ;
 ; Data_Memory:data_mem_inst|RAM[0][21]                            ; Stuck at GND due to stuck port clock_enable ;
 ; Data_Memory:data_mem_inst|RAM[1][21]                            ; Stuck at GND due to stuck port clock_enable ;
-; Data_Memory:data_mem_inst|RAM[2][21]                            ; Stuck at GND due to stuck port clock_enable ;
+; Data_Memory:data_mem_inst|RAM[2][21]                            ; Stuck at GND due to stuck port data_in      ;
 ; Data_Memory:data_mem_inst|RAM[3][21]                            ; Stuck at GND due to stuck port clock_enable ;
 ; Data_Memory:data_mem_inst|RAM[4][21]                            ; Stuck at GND due to stuck port clock_enable ;
 ; Data_Memory:data_mem_inst|RAM[5][21]                            ; Stuck at GND due to stuck port clock_enable ;
@@ -1345,7 +1345,7 @@ Note: For table entries with two numbers listed, the numbers in parentheses indi
 ; Data_Memory:data_mem_inst|RAM[7][21]                            ; Stuck at GND due to stuck port clock_enable ;
 ; Data_Memory:data_mem_inst|RAM[8][21]                            ; Stuck at GND due to stuck port clock_enable ;
 ; Data_Memory:data_mem_inst|RAM[9][21]                            ; Stuck at GND due to stuck port clock_enable ;
-; Data_Memory:data_mem_inst|RAM[10][21]                           ; Stuck at GND due to stuck port data_in      ;
+; Data_Memory:data_mem_inst|RAM[10][21]                           ; Stuck at GND due to stuck port clock_enable ;
 ; Data_Memory:data_mem_inst|RAM[11][21]                           ; Stuck at GND due to stuck port clock_enable ;
 ; Data_Memory:data_mem_inst|RAM[12][21]                           ; Stuck at GND due to stuck port clock_enable ;
 ; Data_Memory:data_mem_inst|RAM[13][21]                           ; Stuck at GND due to stuck port clock_enable ;
@@ -1385,7 +1385,7 @@ Note: For table entries with two numbers listed, the numbers in parentheses indi
 ; Data_Memory:data_mem_inst|RAM[63][28]                           ; Stuck at GND due to stuck port clock_enable ;
 ; Data_Memory:data_mem_inst|RAM[0][28]                            ; Stuck at GND due to stuck port clock_enable ;
 ; Data_Memory:data_mem_inst|RAM[1][28]                            ; Stuck at GND due to stuck port clock_enable ;
-; Data_Memory:data_mem_inst|RAM[2][28]                            ; Stuck at GND due to stuck port clock_enable ;
+; Data_Memory:data_mem_inst|RAM[2][28]                            ; Stuck at GND due to stuck port data_in      ;
 ; Data_Memory:data_mem_inst|RAM[3][28]                            ; Stuck at GND due to stuck port clock_enable ;
 ; Data_Memory:data_mem_inst|RAM[4][28]                            ; Stuck at GND due to stuck port clock_enable ;
 ; Data_Memory:data_mem_inst|RAM[5][28]                            ; Stuck at GND due to stuck port clock_enable ;
@@ -1393,7 +1393,7 @@ Note: For table entries with two numbers listed, the numbers in parentheses indi
 ; Data_Memory:data_mem_inst|RAM[7][28]                            ; Stuck at GND due to stuck port clock_enable ;
 ; Data_Memory:data_mem_inst|RAM[8][28]                            ; Stuck at GND due to stuck port clock_enable ;
 ; Data_Memory:data_mem_inst|RAM[9][28]                            ; Stuck at GND due to stuck port clock_enable ;
-; Data_Memory:data_mem_inst|RAM[10][28]                           ; Stuck at GND due to stuck port data_in      ;
+; Data_Memory:data_mem_inst|RAM[10][28]                           ; Stuck at GND due to stuck port clock_enable ;
 ; Data_Memory:data_mem_inst|RAM[11][28]                           ; Stuck at GND due to stuck port clock_enable ;
 ; Data_Memory:data_mem_inst|RAM[12][28]                           ; Stuck at GND due to stuck port clock_enable ;
 ; Data_Memory:data_mem_inst|RAM[13][28]                           ; Stuck at GND due to stuck port clock_enable ;
@@ -1465,7 +1465,7 @@ Note: For table entries with two numbers listed, the numbers in parentheses indi
 ; Data_Memory:data_mem_inst|RAM[31][29]                           ; Stuck at GND due to stuck port clock_enable ;
 ; Data_Memory:data_mem_inst|RAM[0][29]                            ; Stuck at GND due to stuck port clock_enable ;
 ; Data_Memory:data_mem_inst|RAM[1][29]                            ; Stuck at GND due to stuck port clock_enable ;
-; Data_Memory:data_mem_inst|RAM[2][29]                            ; Stuck at GND due to stuck port clock_enable ;
+; Data_Memory:data_mem_inst|RAM[2][29]                            ; Stuck at GND due to stuck port data_in      ;
 ; Data_Memory:data_mem_inst|RAM[3][29]                            ; Stuck at GND due to stuck port clock_enable ;
 ; Data_Memory:data_mem_inst|RAM[4][29]                            ; Stuck at GND due to stuck port clock_enable ;
 ; Data_Memory:data_mem_inst|RAM[5][29]                            ; Stuck at GND due to stuck port clock_enable ;
@@ -1473,7 +1473,7 @@ Note: For table entries with two numbers listed, the numbers in parentheses indi
 ; Data_Memory:data_mem_inst|RAM[7][29]                            ; Stuck at GND due to stuck port clock_enable ;
 ; Data_Memory:data_mem_inst|RAM[8][29]                            ; Stuck at GND due to stuck port clock_enable ;
 ; Data_Memory:data_mem_inst|RAM[9][29]                            ; Stuck at GND due to stuck port clock_enable ;
-; Data_Memory:data_mem_inst|RAM[10][29]                           ; Stuck at GND due to stuck port data_in      ;
+; Data_Memory:data_mem_inst|RAM[10][29]                           ; Stuck at GND due to stuck port clock_enable ;
 ; Data_Memory:data_mem_inst|RAM[11][29]                           ; Stuck at GND due to stuck port clock_enable ;
 ; Data_Memory:data_mem_inst|RAM[12][29]                           ; Stuck at GND due to stuck port clock_enable ;
 ; Data_Memory:data_mem_inst|RAM[13][29]                           ; Stuck at GND due to stuck port clock_enable ;
@@ -1529,7 +1529,7 @@ Note: For table entries with two numbers listed, the numbers in parentheses indi
 ; Data_Memory:data_mem_inst|RAM[31][18]                           ; Stuck at GND due to stuck port clock_enable ;
 ; Data_Memory:data_mem_inst|RAM[0][18]                            ; Stuck at GND due to stuck port clock_enable ;
 ; Data_Memory:data_mem_inst|RAM[1][18]                            ; Stuck at GND due to stuck port clock_enable ;
-; Data_Memory:data_mem_inst|RAM[2][18]                            ; Stuck at GND due to stuck port clock_enable ;
+; Data_Memory:data_mem_inst|RAM[2][18]                            ; Stuck at GND due to stuck port data_in      ;
 ; Data_Memory:data_mem_inst|RAM[3][18]                            ; Stuck at GND due to stuck port clock_enable ;
 ; Data_Memory:data_mem_inst|RAM[4][18]                            ; Stuck at GND due to stuck port clock_enable ;
 ; Data_Memory:data_mem_inst|RAM[5][18]                            ; Stuck at GND due to stuck port clock_enable ;
@@ -1537,7 +1537,7 @@ Note: For table entries with two numbers listed, the numbers in parentheses indi
 ; Data_Memory:data_mem_inst|RAM[7][18]                            ; Stuck at GND due to stuck port clock_enable ;
 ; Data_Memory:data_mem_inst|RAM[8][18]                            ; Stuck at GND due to stuck port clock_enable ;
 ; Data_Memory:data_mem_inst|RAM[9][18]                            ; Stuck at GND due to stuck port clock_enable ;
-; Data_Memory:data_mem_inst|RAM[10][18]                           ; Stuck at GND due to stuck port data_in      ;
+; Data_Memory:data_mem_inst|RAM[10][18]                           ; Stuck at GND due to stuck port clock_enable ;
 ; Data_Memory:data_mem_inst|RAM[11][18]                           ; Stuck at GND due to stuck port clock_enable ;
 ; Data_Memory:data_mem_inst|RAM[12][18]                           ; Stuck at GND due to stuck port clock_enable ;
 ; Data_Memory:data_mem_inst|RAM[13][18]                           ; Stuck at GND due to stuck port clock_enable ;
@@ -1593,7 +1593,7 @@ Note: For table entries with two numbers listed, the numbers in parentheses indi
 ; Data_Memory:data_mem_inst|RAM[31][19]                           ; Stuck at GND due to stuck port clock_enable ;
 ; Data_Memory:data_mem_inst|RAM[0][19]                            ; Stuck at GND due to stuck port clock_enable ;
 ; Data_Memory:data_mem_inst|RAM[1][19]                            ; Stuck at GND due to stuck port clock_enable ;
-; Data_Memory:data_mem_inst|RAM[2][19]                            ; Stuck at GND due to stuck port clock_enable ;
+; Data_Memory:data_mem_inst|RAM[2][19]                            ; Stuck at GND due to stuck port data_in      ;
 ; Data_Memory:data_mem_inst|RAM[3][19]                            ; Stuck at GND due to stuck port clock_enable ;
 ; Data_Memory:data_mem_inst|RAM[4][19]                            ; Stuck at GND due to stuck port clock_enable ;
 ; Data_Memory:data_mem_inst|RAM[5][19]                            ; Stuck at GND due to stuck port clock_enable ;
@@ -1601,7 +1601,7 @@ Note: For table entries with two numbers listed, the numbers in parentheses indi
 ; Data_Memory:data_mem_inst|RAM[7][19]                            ; Stuck at GND due to stuck port clock_enable ;
 ; Data_Memory:data_mem_inst|RAM[8][19]                            ; Stuck at GND due to stuck port clock_enable ;
 ; Data_Memory:data_mem_inst|RAM[9][19]                            ; Stuck at GND due to stuck port clock_enable ;
-; Data_Memory:data_mem_inst|RAM[10][19]                           ; Stuck at GND due to stuck port data_in      ;
+; Data_Memory:data_mem_inst|RAM[10][19]                           ; Stuck at GND due to stuck port clock_enable ;
 ; Data_Memory:data_mem_inst|RAM[11][19]                           ; Stuck at GND due to stuck port clock_enable ;
 ; Data_Memory:data_mem_inst|RAM[12][19]                           ; Stuck at GND due to stuck port clock_enable ;
 ; Data_Memory:data_mem_inst|RAM[13][19]                           ; Stuck at GND due to stuck port clock_enable ;
@@ -1657,7 +1657,7 @@ Note: For table entries with two numbers listed, the numbers in parentheses indi
 ; Data_Memory:data_mem_inst|RAM[31][26]                           ; Stuck at GND due to stuck port clock_enable ;
 ; Data_Memory:data_mem_inst|RAM[0][26]                            ; Stuck at GND due to stuck port clock_enable ;
 ; Data_Memory:data_mem_inst|RAM[1][26]                            ; Stuck at GND due to stuck port clock_enable ;
-; Data_Memory:data_mem_inst|RAM[2][26]                            ; Stuck at GND due to stuck port clock_enable ;
+; Data_Memory:data_mem_inst|RAM[2][26]                            ; Stuck at GND due to stuck port data_in      ;
 ; Data_Memory:data_mem_inst|RAM[3][26]                            ; Stuck at GND due to stuck port clock_enable ;
 ; Data_Memory:data_mem_inst|RAM[4][26]                            ; Stuck at GND due to stuck port clock_enable ;
 ; Data_Memory:data_mem_inst|RAM[5][26]                            ; Stuck at GND due to stuck port clock_enable ;
@@ -1665,7 +1665,7 @@ Note: For table entries with two numbers listed, the numbers in parentheses indi
 ; Data_Memory:data_mem_inst|RAM[7][26]                            ; Stuck at GND due to stuck port clock_enable ;
 ; Data_Memory:data_mem_inst|RAM[8][26]                            ; Stuck at GND due to stuck port clock_enable ;
 ; Data_Memory:data_mem_inst|RAM[9][26]                            ; Stuck at GND due to stuck port clock_enable ;
-; Data_Memory:data_mem_inst|RAM[10][26]                           ; Stuck at GND due to stuck port data_in      ;
+; Data_Memory:data_mem_inst|RAM[10][26]                           ; Stuck at GND due to stuck port clock_enable ;
 ; Data_Memory:data_mem_inst|RAM[11][26]                           ; Stuck at GND due to stuck port clock_enable ;
 ; Data_Memory:data_mem_inst|RAM[12][26]                           ; Stuck at GND due to stuck port clock_enable ;
 ; Data_Memory:data_mem_inst|RAM[13][26]                           ; Stuck at GND due to stuck port clock_enable ;
@@ -1721,7 +1721,7 @@ Note: For table entries with two numbers listed, the numbers in parentheses indi
 ; Data_Memory:data_mem_inst|RAM[31][27]                           ; Stuck at GND due to stuck port clock_enable ;
 ; Data_Memory:data_mem_inst|RAM[0][27]                            ; Stuck at GND due to stuck port clock_enable ;
 ; Data_Memory:data_mem_inst|RAM[1][27]                            ; Stuck at GND due to stuck port clock_enable ;
-; Data_Memory:data_mem_inst|RAM[2][27]                            ; Stuck at GND due to stuck port clock_enable ;
+; Data_Memory:data_mem_inst|RAM[2][27]                            ; Stuck at GND due to stuck port data_in      ;
 ; Data_Memory:data_mem_inst|RAM[3][27]                            ; Stuck at GND due to stuck port clock_enable ;
 ; Data_Memory:data_mem_inst|RAM[4][27]                            ; Stuck at GND due to stuck port clock_enable ;
 ; Data_Memory:data_mem_inst|RAM[5][27]                            ; Stuck at GND due to stuck port clock_enable ;
@@ -1729,7 +1729,7 @@ Note: For table entries with two numbers listed, the numbers in parentheses indi
 ; Data_Memory:data_mem_inst|RAM[7][27]                            ; Stuck at GND due to stuck port clock_enable ;
 ; Data_Memory:data_mem_inst|RAM[8][27]                            ; Stuck at GND due to stuck port clock_enable ;
 ; Data_Memory:data_mem_inst|RAM[9][27]                            ; Stuck at GND due to stuck port clock_enable ;
-; Data_Memory:data_mem_inst|RAM[10][27]                           ; Stuck at GND due to stuck port data_in      ;
+; Data_Memory:data_mem_inst|RAM[10][27]                           ; Stuck at GND due to stuck port clock_enable ;
 ; Data_Memory:data_mem_inst|RAM[11][27]                           ; Stuck at GND due to stuck port clock_enable ;
 ; Data_Memory:data_mem_inst|RAM[12][27]                           ; Stuck at GND due to stuck port clock_enable ;
 ; Data_Memory:data_mem_inst|RAM[13][27]                           ; Stuck at GND due to stuck port clock_enable ;
@@ -1785,7 +1785,7 @@ Note: For table entries with two numbers listed, the numbers in parentheses indi
 ; Data_Memory:data_mem_inst|RAM[31][16]                           ; Stuck at GND due to stuck port clock_enable ;
 ; Data_Memory:data_mem_inst|RAM[0][16]                            ; Stuck at GND due to stuck port clock_enable ;
 ; Data_Memory:data_mem_inst|RAM[1][16]                            ; Stuck at GND due to stuck port clock_enable ;
-; Data_Memory:data_mem_inst|RAM[2][16]                            ; Stuck at GND due to stuck port clock_enable ;
+; Data_Memory:data_mem_inst|RAM[2][16]                            ; Stuck at GND due to stuck port data_in      ;
 ; Data_Memory:data_mem_inst|RAM[3][16]                            ; Stuck at GND due to stuck port clock_enable ;
 ; Data_Memory:data_mem_inst|RAM[4][16]                            ; Stuck at GND due to stuck port clock_enable ;
 ; Data_Memory:data_mem_inst|RAM[5][16]                            ; Stuck at GND due to stuck port clock_enable ;
@@ -1793,7 +1793,7 @@ Note: For table entries with two numbers listed, the numbers in parentheses indi
 ; Data_Memory:data_mem_inst|RAM[7][16]                            ; Stuck at GND due to stuck port clock_enable ;
 ; Data_Memory:data_mem_inst|RAM[8][16]                            ; Stuck at GND due to stuck port clock_enable ;
 ; Data_Memory:data_mem_inst|RAM[9][16]                            ; Stuck at GND due to stuck port clock_enable ;
-; Data_Memory:data_mem_inst|RAM[10][16]                           ; Stuck at GND due to stuck port data_in      ;
+; Data_Memory:data_mem_inst|RAM[10][16]                           ; Stuck at GND due to stuck port clock_enable ;
 ; Data_Memory:data_mem_inst|RAM[11][16]                           ; Stuck at GND due to stuck port clock_enable ;
 ; Data_Memory:data_mem_inst|RAM[12][16]                           ; Stuck at GND due to stuck port clock_enable ;
 ; Data_Memory:data_mem_inst|RAM[13][16]                           ; Stuck at GND due to stuck port clock_enable ;
@@ -1849,7 +1849,7 @@ Note: For table entries with two numbers listed, the numbers in parentheses indi
 ; Data_Memory:data_mem_inst|RAM[31][17]                           ; Stuck at GND due to stuck port clock_enable ;
 ; Data_Memory:data_mem_inst|RAM[0][17]                            ; Stuck at GND due to stuck port clock_enable ;
 ; Data_Memory:data_mem_inst|RAM[1][17]                            ; Stuck at GND due to stuck port clock_enable ;
-; Data_Memory:data_mem_inst|RAM[2][17]                            ; Stuck at GND due to stuck port clock_enable ;
+; Data_Memory:data_mem_inst|RAM[2][17]                            ; Stuck at GND due to stuck port data_in      ;
 ; Data_Memory:data_mem_inst|RAM[3][17]                            ; Stuck at GND due to stuck port clock_enable ;
 ; Data_Memory:data_mem_inst|RAM[4][17]                            ; Stuck at GND due to stuck port clock_enable ;
 ; Data_Memory:data_mem_inst|RAM[5][17]                            ; Stuck at GND due to stuck port clock_enable ;
@@ -1857,7 +1857,7 @@ Note: For table entries with two numbers listed, the numbers in parentheses indi
 ; Data_Memory:data_mem_inst|RAM[7][17]                            ; Stuck at GND due to stuck port clock_enable ;
 ; Data_Memory:data_mem_inst|RAM[8][17]                            ; Stuck at GND due to stuck port clock_enable ;
 ; Data_Memory:data_mem_inst|RAM[9][17]                            ; Stuck at GND due to stuck port clock_enable ;
-; Data_Memory:data_mem_inst|RAM[10][17]                           ; Stuck at GND due to stuck port data_in      ;
+; Data_Memory:data_mem_inst|RAM[10][17]                           ; Stuck at GND due to stuck port clock_enable ;
 ; Data_Memory:data_mem_inst|RAM[11][17]                           ; Stuck at GND due to stuck port clock_enable ;
 ; Data_Memory:data_mem_inst|RAM[12][17]                           ; Stuck at GND due to stuck port clock_enable ;
 ; Data_Memory:data_mem_inst|RAM[13][17]                           ; Stuck at GND due to stuck port clock_enable ;
@@ -1913,7 +1913,7 @@ Note: For table entries with two numbers listed, the numbers in parentheses indi
 ; Data_Memory:data_mem_inst|RAM[31][22]                           ; Stuck at GND due to stuck port clock_enable ;
 ; Data_Memory:data_mem_inst|RAM[0][22]                            ; Stuck at GND due to stuck port clock_enable ;
 ; Data_Memory:data_mem_inst|RAM[1][22]                            ; Stuck at GND due to stuck port clock_enable ;
-; Data_Memory:data_mem_inst|RAM[2][22]                            ; Stuck at GND due to stuck port clock_enable ;
+; Data_Memory:data_mem_inst|RAM[2][22]                            ; Stuck at GND due to stuck port data_in      ;
 ; Data_Memory:data_mem_inst|RAM[3][22]                            ; Stuck at GND due to stuck port clock_enable ;
 ; Data_Memory:data_mem_inst|RAM[4][22]                            ; Stuck at GND due to stuck port clock_enable ;
 ; Data_Memory:data_mem_inst|RAM[5][22]                            ; Stuck at GND due to stuck port clock_enable ;
@@ -1921,7 +1921,7 @@ Note: For table entries with two numbers listed, the numbers in parentheses indi
 ; Data_Memory:data_mem_inst|RAM[7][22]                            ; Stuck at GND due to stuck port clock_enable ;
 ; Data_Memory:data_mem_inst|RAM[8][22]                            ; Stuck at GND due to stuck port clock_enable ;
 ; Data_Memory:data_mem_inst|RAM[9][22]                            ; Stuck at GND due to stuck port clock_enable ;
-; Data_Memory:data_mem_inst|RAM[10][22]                           ; Stuck at GND due to stuck port data_in      ;
+; Data_Memory:data_mem_inst|RAM[10][22]                           ; Stuck at GND due to stuck port clock_enable ;
 ; Data_Memory:data_mem_inst|RAM[11][22]                           ; Stuck at GND due to stuck port clock_enable ;
 ; Data_Memory:data_mem_inst|RAM[12][22]                           ; Stuck at GND due to stuck port clock_enable ;
 ; Data_Memory:data_mem_inst|RAM[13][22]                           ; Stuck at GND due to stuck port clock_enable ;
@@ -1977,7 +1977,7 @@ Note: For table entries with two numbers listed, the numbers in parentheses indi
 ; Data_Memory:data_mem_inst|RAM[31][23]                           ; Stuck at GND due to stuck port clock_enable ;
 ; Data_Memory:data_mem_inst|RAM[0][23]                            ; Stuck at GND due to stuck port clock_enable ;
 ; Data_Memory:data_mem_inst|RAM[1][23]                            ; Stuck at GND due to stuck port clock_enable ;
-; Data_Memory:data_mem_inst|RAM[2][23]                            ; Stuck at GND due to stuck port clock_enable ;
+; Data_Memory:data_mem_inst|RAM[2][23]                            ; Stuck at GND due to stuck port data_in      ;
 ; Data_Memory:data_mem_inst|RAM[3][23]                            ; Stuck at GND due to stuck port clock_enable ;
 ; Data_Memory:data_mem_inst|RAM[4][23]                            ; Stuck at GND due to stuck port clock_enable ;
 ; Data_Memory:data_mem_inst|RAM[5][23]                            ; Stuck at GND due to stuck port clock_enable ;
@@ -1985,7 +1985,7 @@ Note: For table entries with two numbers listed, the numbers in parentheses indi
 ; Data_Memory:data_mem_inst|RAM[7][23]                            ; Stuck at GND due to stuck port clock_enable ;
 ; Data_Memory:data_mem_inst|RAM[8][23]                            ; Stuck at GND due to stuck port clock_enable ;
 ; Data_Memory:data_mem_inst|RAM[9][23]                            ; Stuck at GND due to stuck port clock_enable ;
-; Data_Memory:data_mem_inst|RAM[10][23]                           ; Stuck at GND due to stuck port data_in      ;
+; Data_Memory:data_mem_inst|RAM[10][23]                           ; Stuck at GND due to stuck port clock_enable ;
 ; Data_Memory:data_mem_inst|RAM[11][23]                           ; Stuck at GND due to stuck port clock_enable ;
 ; Data_Memory:data_mem_inst|RAM[12][23]                           ; Stuck at GND due to stuck port clock_enable ;
 ; Data_Memory:data_mem_inst|RAM[13][23]                           ; Stuck at GND due to stuck port clock_enable ;
@@ -2041,7 +2041,7 @@ Note: For table entries with two numbers listed, the numbers in parentheses indi
 ; Data_Memory:data_mem_inst|RAM[31][12]                           ; Stuck at GND due to stuck port clock_enable ;
 ; Data_Memory:data_mem_inst|RAM[0][12]                            ; Stuck at GND due to stuck port clock_enable ;
 ; Data_Memory:data_mem_inst|RAM[1][12]                            ; Stuck at GND due to stuck port clock_enable ;
-; Data_Memory:data_mem_inst|RAM[2][12]                            ; Stuck at GND due to stuck port clock_enable ;
+; Data_Memory:data_mem_inst|RAM[2][12]                            ; Stuck at GND due to stuck port data_in      ;
 ; Data_Memory:data_mem_inst|RAM[3][12]                            ; Stuck at GND due to stuck port clock_enable ;
 ; Data_Memory:data_mem_inst|RAM[4][12]                            ; Stuck at GND due to stuck port clock_enable ;
 ; Data_Memory:data_mem_inst|RAM[5][12]                            ; Stuck at GND due to stuck port clock_enable ;
@@ -2049,7 +2049,7 @@ Note: For table entries with two numbers listed, the numbers in parentheses indi
 ; Data_Memory:data_mem_inst|RAM[7][12]                            ; Stuck at GND due to stuck port clock_enable ;
 ; Data_Memory:data_mem_inst|RAM[8][12]                            ; Stuck at GND due to stuck port clock_enable ;
 ; Data_Memory:data_mem_inst|RAM[9][12]                            ; Stuck at GND due to stuck port clock_enable ;
-; Data_Memory:data_mem_inst|RAM[10][12]                           ; Stuck at GND due to stuck port data_in      ;
+; Data_Memory:data_mem_inst|RAM[10][12]                           ; Stuck at GND due to stuck port clock_enable ;
 ; Data_Memory:data_mem_inst|RAM[11][12]                           ; Stuck at GND due to stuck port clock_enable ;
 ; Data_Memory:data_mem_inst|RAM[12][12]                           ; Stuck at GND due to stuck port clock_enable ;
 ; Data_Memory:data_mem_inst|RAM[13][12]                           ; Stuck at GND due to stuck port clock_enable ;
@@ -2105,7 +2105,7 @@ Note: For table entries with two numbers listed, the numbers in parentheses indi
 ; Data_Memory:data_mem_inst|RAM[31][13]                           ; Stuck at GND due to stuck port clock_enable ;
 ; Data_Memory:data_mem_inst|RAM[0][13]                            ; Stuck at GND due to stuck port clock_enable ;
 ; Data_Memory:data_mem_inst|RAM[1][13]                            ; Stuck at GND due to stuck port clock_enable ;
-; Data_Memory:data_mem_inst|RAM[2][13]                            ; Stuck at GND due to stuck port clock_enable ;
+; Data_Memory:data_mem_inst|RAM[2][13]                            ; Stuck at GND due to stuck port data_in      ;
 ; Data_Memory:data_mem_inst|RAM[3][13]                            ; Stuck at GND due to stuck port clock_enable ;
 ; Data_Memory:data_mem_inst|RAM[4][13]                            ; Stuck at GND due to stuck port clock_enable ;
 ; Data_Memory:data_mem_inst|RAM[5][13]                            ; Stuck at GND due to stuck port clock_enable ;
@@ -2113,7 +2113,7 @@ Note: For table entries with two numbers listed, the numbers in parentheses indi
 ; Data_Memory:data_mem_inst|RAM[7][13]                            ; Stuck at GND due to stuck port clock_enable ;
 ; Data_Memory:data_mem_inst|RAM[8][13]                            ; Stuck at GND due to stuck port clock_enable ;
 ; Data_Memory:data_mem_inst|RAM[9][13]                            ; Stuck at GND due to stuck port clock_enable ;
-; Data_Memory:data_mem_inst|RAM[10][13]                           ; Stuck at GND due to stuck port data_in      ;
+; Data_Memory:data_mem_inst|RAM[10][13]                           ; Stuck at GND due to stuck port clock_enable ;
 ; Data_Memory:data_mem_inst|RAM[11][13]                           ; Stuck at GND due to stuck port clock_enable ;
 ; Data_Memory:data_mem_inst|RAM[12][13]                           ; Stuck at GND due to stuck port clock_enable ;
 ; Data_Memory:data_mem_inst|RAM[13][13]                           ; Stuck at GND due to stuck port clock_enable ;
@@ -2169,7 +2169,7 @@ Note: For table entries with two numbers listed, the numbers in parentheses indi
 ; Data_Memory:data_mem_inst|RAM[31][24]                           ; Stuck at GND due to stuck port clock_enable ;
 ; Data_Memory:data_mem_inst|RAM[0][24]                            ; Stuck at GND due to stuck port clock_enable ;
 ; Data_Memory:data_mem_inst|RAM[1][24]                            ; Stuck at GND due to stuck port clock_enable ;
-; Data_Memory:data_mem_inst|RAM[2][24]                            ; Stuck at GND due to stuck port clock_enable ;
+; Data_Memory:data_mem_inst|RAM[2][24]                            ; Stuck at GND due to stuck port data_in      ;
 ; Data_Memory:data_mem_inst|RAM[3][24]                            ; Stuck at GND due to stuck port clock_enable ;
 ; Data_Memory:data_mem_inst|RAM[4][24]                            ; Stuck at GND due to stuck port clock_enable ;
 ; Data_Memory:data_mem_inst|RAM[5][24]                            ; Stuck at GND due to stuck port clock_enable ;
@@ -2177,7 +2177,7 @@ Note: For table entries with two numbers listed, the numbers in parentheses indi
 ; Data_Memory:data_mem_inst|RAM[7][24]                            ; Stuck at GND due to stuck port clock_enable ;
 ; Data_Memory:data_mem_inst|RAM[8][24]                            ; Stuck at GND due to stuck port clock_enable ;
 ; Data_Memory:data_mem_inst|RAM[9][24]                            ; Stuck at GND due to stuck port clock_enable ;
-; Data_Memory:data_mem_inst|RAM[10][24]                           ; Stuck at GND due to stuck port data_in      ;
+; Data_Memory:data_mem_inst|RAM[10][24]                           ; Stuck at GND due to stuck port clock_enable ;
 ; Data_Memory:data_mem_inst|RAM[11][24]                           ; Stuck at GND due to stuck port clock_enable ;
 ; Data_Memory:data_mem_inst|RAM[12][24]                           ; Stuck at GND due to stuck port clock_enable ;
 ; Data_Memory:data_mem_inst|RAM[13][24]                           ; Stuck at GND due to stuck port clock_enable ;
@@ -2233,7 +2233,7 @@ Note: For table entries with two numbers listed, the numbers in parentheses indi
 ; Data_Memory:data_mem_inst|RAM[31][25]                           ; Stuck at GND due to stuck port clock_enable ;
 ; Data_Memory:data_mem_inst|RAM[0][25]                            ; Stuck at GND due to stuck port clock_enable ;
 ; Data_Memory:data_mem_inst|RAM[1][25]                            ; Stuck at GND due to stuck port clock_enable ;
-; Data_Memory:data_mem_inst|RAM[2][25]                            ; Stuck at GND due to stuck port clock_enable ;
+; Data_Memory:data_mem_inst|RAM[2][25]                            ; Stuck at GND due to stuck port data_in      ;
 ; Data_Memory:data_mem_inst|RAM[3][25]                            ; Stuck at GND due to stuck port clock_enable ;
 ; Data_Memory:data_mem_inst|RAM[4][25]                            ; Stuck at GND due to stuck port clock_enable ;
 ; Data_Memory:data_mem_inst|RAM[5][25]                            ; Stuck at GND due to stuck port clock_enable ;
@@ -2241,7 +2241,7 @@ Note: For table entries with two numbers listed, the numbers in parentheses indi
 ; Data_Memory:data_mem_inst|RAM[7][25]                            ; Stuck at GND due to stuck port clock_enable ;
 ; Data_Memory:data_mem_inst|RAM[8][25]                            ; Stuck at GND due to stuck port clock_enable ;
 ; Data_Memory:data_mem_inst|RAM[9][25]                            ; Stuck at GND due to stuck port clock_enable ;
-; Data_Memory:data_mem_inst|RAM[10][25]                           ; Stuck at GND due to stuck port data_in      ;
+; Data_Memory:data_mem_inst|RAM[10][25]                           ; Stuck at GND due to stuck port clock_enable ;
 ; Data_Memory:data_mem_inst|RAM[11][25]                           ; Stuck at GND due to stuck port clock_enable ;
 ; Data_Memory:data_mem_inst|RAM[12][25]                           ; Stuck at GND due to stuck port clock_enable ;
 ; Data_Memory:data_mem_inst|RAM[13][25]                           ; Stuck at GND due to stuck port clock_enable ;
@@ -2297,7 +2297,7 @@ Note: For table entries with two numbers listed, the numbers in parentheses indi
 ; Data_Memory:data_mem_inst|RAM[31][14]                           ; Stuck at GND due to stuck port clock_enable ;
 ; Data_Memory:data_mem_inst|RAM[0][14]                            ; Stuck at GND due to stuck port clock_enable ;
 ; Data_Memory:data_mem_inst|RAM[1][14]                            ; Stuck at GND due to stuck port clock_enable ;
-; Data_Memory:data_mem_inst|RAM[2][14]                            ; Stuck at GND due to stuck port clock_enable ;
+; Data_Memory:data_mem_inst|RAM[2][14]                            ; Stuck at GND due to stuck port data_in      ;
 ; Data_Memory:data_mem_inst|RAM[3][14]                            ; Stuck at GND due to stuck port clock_enable ;
 ; Data_Memory:data_mem_inst|RAM[4][14]                            ; Stuck at GND due to stuck port clock_enable ;
 ; Data_Memory:data_mem_inst|RAM[5][14]                            ; Stuck at GND due to stuck port clock_enable ;
@@ -2305,7 +2305,7 @@ Note: For table entries with two numbers listed, the numbers in parentheses indi
 ; Data_Memory:data_mem_inst|RAM[7][14]                            ; Stuck at GND due to stuck port clock_enable ;
 ; Data_Memory:data_mem_inst|RAM[8][14]                            ; Stuck at GND due to stuck port clock_enable ;
 ; Data_Memory:data_mem_inst|RAM[9][14]                            ; Stuck at GND due to stuck port clock_enable ;
-; Data_Memory:data_mem_inst|RAM[10][14]                           ; Stuck at GND due to stuck port data_in      ;
+; Data_Memory:data_mem_inst|RAM[10][14]                           ; Stuck at GND due to stuck port clock_enable ;
 ; Data_Memory:data_mem_inst|RAM[11][14]                           ; Stuck at GND due to stuck port clock_enable ;
 ; Data_Memory:data_mem_inst|RAM[12][14]                           ; Stuck at GND due to stuck port clock_enable ;
 ; Data_Memory:data_mem_inst|RAM[13][14]                           ; Stuck at GND due to stuck port clock_enable ;
@@ -2361,7 +2361,7 @@ Note: For table entries with two numbers listed, the numbers in parentheses indi
 ; Data_Memory:data_mem_inst|RAM[31][15]                           ; Stuck at GND due to stuck port clock_enable ;
 ; Data_Memory:data_mem_inst|RAM[0][15]                            ; Stuck at GND due to stuck port clock_enable ;
 ; Data_Memory:data_mem_inst|RAM[1][15]                            ; Stuck at GND due to stuck port clock_enable ;
-; Data_Memory:data_mem_inst|RAM[2][15]                            ; Stuck at GND due to stuck port clock_enable ;
+; Data_Memory:data_mem_inst|RAM[2][15]                            ; Stuck at GND due to stuck port data_in      ;
 ; Data_Memory:data_mem_inst|RAM[3][15]                            ; Stuck at GND due to stuck port clock_enable ;
 ; Data_Memory:data_mem_inst|RAM[4][15]                            ; Stuck at GND due to stuck port clock_enable ;
 ; Data_Memory:data_mem_inst|RAM[5][15]                            ; Stuck at GND due to stuck port clock_enable ;
@@ -2369,7 +2369,7 @@ Note: For table entries with two numbers listed, the numbers in parentheses indi
 ; Data_Memory:data_mem_inst|RAM[7][15]                            ; Stuck at GND due to stuck port clock_enable ;
 ; Data_Memory:data_mem_inst|RAM[8][15]                            ; Stuck at GND due to stuck port clock_enable ;
 ; Data_Memory:data_mem_inst|RAM[9][15]                            ; Stuck at GND due to stuck port clock_enable ;
-; Data_Memory:data_mem_inst|RAM[10][15]                           ; Stuck at GND due to stuck port data_in      ;
+; Data_Memory:data_mem_inst|RAM[10][15]                           ; Stuck at GND due to stuck port clock_enable ;
 ; Data_Memory:data_mem_inst|RAM[11][15]                           ; Stuck at GND due to stuck port clock_enable ;
 ; Data_Memory:data_mem_inst|RAM[12][15]                           ; Stuck at GND due to stuck port clock_enable ;
 ; Data_Memory:data_mem_inst|RAM[13][15]                           ; Stuck at GND due to stuck port clock_enable ;
@@ -2377,7 +2377,6 @@ Note: For table entries with two numbers listed, the numbers in parentheses indi
 ; Data_Memory:data_mem_inst|RAM[15][15]                           ; Stuck at GND due to stuck port clock_enable ;
 ; Data_Memory:data_mem_inst|RAM[0][1]                             ; Stuck at GND due to stuck port clock_enable ;
 ; Data_Memory:data_mem_inst|RAM[1][1]                             ; Stuck at GND due to stuck port clock_enable ;
-; Data_Memory:data_mem_inst|RAM[2][1]                             ; Stuck at GND due to stuck port clock_enable ;
 ; Data_Memory:data_mem_inst|RAM[3][1]                             ; Stuck at GND due to stuck port clock_enable ;
 ; Data_Memory:data_mem_inst|RAM[4][1]                             ; Stuck at GND due to stuck port clock_enable ;
 ; Data_Memory:data_mem_inst|RAM[5][1]                             ; Stuck at GND due to stuck port clock_enable ;
@@ -2385,6 +2384,7 @@ Note: For table entries with two numbers listed, the numbers in parentheses indi
 ; Data_Memory:data_mem_inst|RAM[7][1]                             ; Stuck at GND due to stuck port clock_enable ;
 ; Data_Memory:data_mem_inst|RAM[8][1]                             ; Stuck at GND due to stuck port clock_enable ;
 ; Data_Memory:data_mem_inst|RAM[9][1]                             ; Stuck at GND due to stuck port clock_enable ;
+; Data_Memory:data_mem_inst|RAM[10][1]                            ; Stuck at GND due to stuck port clock_enable ;
 ; Data_Memory:data_mem_inst|RAM[11][1]                            ; Stuck at GND due to stuck port clock_enable ;
 ; Data_Memory:data_mem_inst|RAM[12][1]                            ; Stuck at GND due to stuck port clock_enable ;
 ; Data_Memory:data_mem_inst|RAM[13][1]                            ; Stuck at GND due to stuck port clock_enable ;
@@ -2454,6 +2454,36 @@ Note: For table entries with two numbers listed, the numbers in parentheses indi
 ; CPU:process|Register_File:Reg_file_inst|rf~416                  ; Lost fanout                                 ;
 ; CPU:process|Register_File:Reg_file_inst|rf~384                  ; Lost fanout                                 ;
 ; CPU:process|Register_File:Reg_file_inst|rf~448                  ; Lost fanout                                 ;
+; CPU:process|Register_File:Reg_file_inst|rf~2                    ; Lost fanout                                 ;
+; CPU:process|Register_File:Reg_file_inst|rf~34                   ; Lost fanout                                 ;
+; CPU:process|Register_File:Reg_file_inst|rf~66                   ; Lost fanout                                 ;
+; CPU:process|Register_File:Reg_file_inst|rf~98                   ; Lost fanout                                 ;
+; CPU:process|Register_File:Reg_file_inst|rf~130                  ; Lost fanout                                 ;
+; CPU:process|Register_File:Reg_file_inst|rf~162                  ; Lost fanout                                 ;
+; CPU:process|Register_File:Reg_file_inst|rf~194                  ; Lost fanout                                 ;
+; CPU:process|Register_File:Reg_file_inst|rf~226                  ; Lost fanout                                 ;
+; CPU:process|Register_File:Reg_file_inst|rf~258                  ; Lost fanout                                 ;
+; CPU:process|Register_File:Reg_file_inst|rf~290                  ; Lost fanout                                 ;
+; CPU:process|Register_File:Reg_file_inst|rf~322                  ; Lost fanout                                 ;
+; CPU:process|Register_File:Reg_file_inst|rf~354                  ; Lost fanout                                 ;
+; CPU:process|Register_File:Reg_file_inst|rf~418                  ; Lost fanout                                 ;
+; CPU:process|Register_File:Reg_file_inst|rf~386                  ; Lost fanout                                 ;
+; CPU:process|Register_File:Reg_file_inst|rf~450                  ; Lost fanout                                 ;
+; CPU:process|Register_File:Reg_file_inst|rf~4                    ; Lost fanout                                 ;
+; CPU:process|Register_File:Reg_file_inst|rf~36                   ; Lost fanout                                 ;
+; CPU:process|Register_File:Reg_file_inst|rf~68                   ; Lost fanout                                 ;
+; CPU:process|Register_File:Reg_file_inst|rf~100                  ; Lost fanout                                 ;
+; CPU:process|Register_File:Reg_file_inst|rf~132                  ; Lost fanout                                 ;
+; CPU:process|Register_File:Reg_file_inst|rf~164                  ; Lost fanout                                 ;
+; CPU:process|Register_File:Reg_file_inst|rf~196                  ; Lost fanout                                 ;
+; CPU:process|Register_File:Reg_file_inst|rf~228                  ; Lost fanout                                 ;
+; CPU:process|Register_File:Reg_file_inst|rf~260                  ; Lost fanout                                 ;
+; CPU:process|Register_File:Reg_file_inst|rf~292                  ; Lost fanout                                 ;
+; CPU:process|Register_File:Reg_file_inst|rf~324                  ; Lost fanout                                 ;
+; CPU:process|Register_File:Reg_file_inst|rf~356                  ; Lost fanout                                 ;
+; CPU:process|Register_File:Reg_file_inst|rf~420                  ; Lost fanout                                 ;
+; CPU:process|Register_File:Reg_file_inst|rf~388                  ; Lost fanout                                 ;
+; CPU:process|Register_File:Reg_file_inst|rf~452                  ; Lost fanout                                 ;
 ; CPU:process|Control_Unit:CU_Inst|Register:Register_Flag2|Q[0]   ; Lost fanout                                 ;
 ; CPU:process|Register_File:Reg_file_inst|rf~7                    ; Lost fanout                                 ;
 ; CPU:process|Register_File:Reg_file_inst|rf~135                  ; Lost fanout                                 ;
@@ -2830,36 +2860,6 @@ Note: For table entries with two numbers listed, the numbers in parentheses indi
 ; CPU:process|Register_File:Reg_file_inst|rf~239                  ; Lost fanout                                 ;
 ; CPU:process|Register_File:Reg_file_inst|rf~111                  ; Lost fanout                                 ;
 ; CPU:process|Register_File:Reg_file_inst|rf~367                  ; Lost fanout                                 ;
-; CPU:process|Register_File:Reg_file_inst|rf~2                    ; Lost fanout                                 ;
-; CPU:process|Register_File:Reg_file_inst|rf~34                   ; Lost fanout                                 ;
-; CPU:process|Register_File:Reg_file_inst|rf~66                   ; Lost fanout                                 ;
-; CPU:process|Register_File:Reg_file_inst|rf~98                   ; Lost fanout                                 ;
-; CPU:process|Register_File:Reg_file_inst|rf~130                  ; Lost fanout                                 ;
-; CPU:process|Register_File:Reg_file_inst|rf~162                  ; Lost fanout                                 ;
-; CPU:process|Register_File:Reg_file_inst|rf~194                  ; Lost fanout                                 ;
-; CPU:process|Register_File:Reg_file_inst|rf~226                  ; Lost fanout                                 ;
-; CPU:process|Register_File:Reg_file_inst|rf~258                  ; Lost fanout                                 ;
-; CPU:process|Register_File:Reg_file_inst|rf~290                  ; Lost fanout                                 ;
-; CPU:process|Register_File:Reg_file_inst|rf~322                  ; Lost fanout                                 ;
-; CPU:process|Register_File:Reg_file_inst|rf~354                  ; Lost fanout                                 ;
-; CPU:process|Register_File:Reg_file_inst|rf~418                  ; Lost fanout                                 ;
-; CPU:process|Register_File:Reg_file_inst|rf~386                  ; Lost fanout                                 ;
-; CPU:process|Register_File:Reg_file_inst|rf~450                  ; Lost fanout                                 ;
-; CPU:process|Register_File:Reg_file_inst|rf~3                    ; Lost fanout                                 ;
-; CPU:process|Register_File:Reg_file_inst|rf~131                  ; Lost fanout                                 ;
-; CPU:process|Register_File:Reg_file_inst|rf~259                  ; Lost fanout                                 ;
-; CPU:process|Register_File:Reg_file_inst|rf~387                  ; Lost fanout                                 ;
-; CPU:process|Register_File:Reg_file_inst|rf~35                   ; Lost fanout                                 ;
-; CPU:process|Register_File:Reg_file_inst|rf~163                  ; Lost fanout                                 ;
-; CPU:process|Register_File:Reg_file_inst|rf~291                  ; Lost fanout                                 ;
-; CPU:process|Register_File:Reg_file_inst|rf~419                  ; Lost fanout                                 ;
-; CPU:process|Register_File:Reg_file_inst|rf~67                   ; Lost fanout                                 ;
-; CPU:process|Register_File:Reg_file_inst|rf~195                  ; Lost fanout                                 ;
-; CPU:process|Register_File:Reg_file_inst|rf~323                  ; Lost fanout                                 ;
-; CPU:process|Register_File:Reg_file_inst|rf~451                  ; Lost fanout                                 ;
-; CPU:process|Register_File:Reg_file_inst|rf~227                  ; Lost fanout                                 ;
-; CPU:process|Register_File:Reg_file_inst|rf~99                   ; Lost fanout                                 ;
-; CPU:process|Register_File:Reg_file_inst|rf~355                  ; Lost fanout                                 ;
 ; CPU:process|Register_File:Reg_file_inst|rf~6                    ; Lost fanout                                 ;
 ; CPU:process|Register_File:Reg_file_inst|rf~38                   ; Lost fanout                                 ;
 ; CPU:process|Register_File:Reg_file_inst|rf~70                   ; Lost fanout                                 ;
@@ -2890,21 +2890,21 @@ Note: For table entries with two numbers listed, the numbers in parentheses indi
 ; CPU:process|Register_File:Reg_file_inst|rf~229                  ; Lost fanout                                 ;
 ; CPU:process|Register_File:Reg_file_inst|rf~101                  ; Lost fanout                                 ;
 ; CPU:process|Register_File:Reg_file_inst|rf~357                  ; Lost fanout                                 ;
-; CPU:process|Register_File:Reg_file_inst|rf~4                    ; Lost fanout                                 ;
-; CPU:process|Register_File:Reg_file_inst|rf~36                   ; Lost fanout                                 ;
-; CPU:process|Register_File:Reg_file_inst|rf~68                   ; Lost fanout                                 ;
-; CPU:process|Register_File:Reg_file_inst|rf~100                  ; Lost fanout                                 ;
-; CPU:process|Register_File:Reg_file_inst|rf~132                  ; Lost fanout                                 ;
-; CPU:process|Register_File:Reg_file_inst|rf~164                  ; Lost fanout                                 ;
-; CPU:process|Register_File:Reg_file_inst|rf~196                  ; Lost fanout                                 ;
-; CPU:process|Register_File:Reg_file_inst|rf~228                  ; Lost fanout                                 ;
-; CPU:process|Register_File:Reg_file_inst|rf~260                  ; Lost fanout                                 ;
-; CPU:process|Register_File:Reg_file_inst|rf~292                  ; Lost fanout                                 ;
-; CPU:process|Register_File:Reg_file_inst|rf~324                  ; Lost fanout                                 ;
-; CPU:process|Register_File:Reg_file_inst|rf~356                  ; Lost fanout                                 ;
-; CPU:process|Register_File:Reg_file_inst|rf~420                  ; Lost fanout                                 ;
-; CPU:process|Register_File:Reg_file_inst|rf~388                  ; Lost fanout                                 ;
-; CPU:process|Register_File:Reg_file_inst|rf~452                  ; Lost fanout                                 ;
+; CPU:process|Register_File:Reg_file_inst|rf~3                    ; Lost fanout                                 ;
+; CPU:process|Register_File:Reg_file_inst|rf~131                  ; Lost fanout                                 ;
+; CPU:process|Register_File:Reg_file_inst|rf~259                  ; Lost fanout                                 ;
+; CPU:process|Register_File:Reg_file_inst|rf~387                  ; Lost fanout                                 ;
+; CPU:process|Register_File:Reg_file_inst|rf~35                   ; Lost fanout                                 ;
+; CPU:process|Register_File:Reg_file_inst|rf~163                  ; Lost fanout                                 ;
+; CPU:process|Register_File:Reg_file_inst|rf~291                  ; Lost fanout                                 ;
+; CPU:process|Register_File:Reg_file_inst|rf~419                  ; Lost fanout                                 ;
+; CPU:process|Register_File:Reg_file_inst|rf~67                   ; Lost fanout                                 ;
+; CPU:process|Register_File:Reg_file_inst|rf~195                  ; Lost fanout                                 ;
+; CPU:process|Register_File:Reg_file_inst|rf~323                  ; Lost fanout                                 ;
+; CPU:process|Register_File:Reg_file_inst|rf~451                  ; Lost fanout                                 ;
+; CPU:process|Register_File:Reg_file_inst|rf~227                  ; Lost fanout                                 ;
+; CPU:process|Register_File:Reg_file_inst|rf~99                   ; Lost fanout                                 ;
+; CPU:process|Register_File:Reg_file_inst|rf~355                  ; Lost fanout                                 ;
 ; CPU:process|Register:PC_Register|Q[1]                           ; Lost fanout                                 ;
 ; CPU:process|Register_File:Reg_file_inst|rf~1                    ; Lost fanout                                 ;
 ; CPU:process|Register_File:Reg_file_inst|rf~129                  ; Lost fanout                                 ;
@@ -3344,21 +3344,21 @@ Note: For table entries with two numbers listed, the numbers in parentheses indi
 +---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+---------+
 
 
-+-------------------------------------------------------------------------------------------------------------------------------------------------------------------+
-; Multiplexer Restructuring Statistics (Restructuring Performed)                                                                                                    ;
-+--------------------+-----------+---------------+----------------------+------------------------+------------+-----------------------------------------------------+
-; Multiplexer Inputs ; Bus Width ; Baseline Area ; Area if Restructured ; Saving if Restructured ; Registered ; Example Multiplexer Output                          ;
-+--------------------+-----------+---------------+----------------------+------------------------+------------+-----------------------------------------------------+
-; 3:1                ; 24 bits   ; 48 LEs        ; 0 LEs                ; 48 LEs                 ; Yes        ; |Gambling_Tec|Data_Memory:data_mem_inst|RAM[10][21] ;
-; 3:1                ; 8 bits    ; 16 LEs        ; 0 LEs                ; 16 LEs                 ; Yes        ; |Gambling_Tec|Data_Memory:data_mem_inst|RAM[10][4]  ;
-; 3:1                ; 8 bits    ; 16 LEs        ; 0 LEs                ; 16 LEs                 ; Yes        ; |Gambling_Tec|Ps2_Key:ps2_inst|key_code[7]          ;
-; 5:1                ; 4 bits    ; 12 LEs        ; 8 LEs                ; 4 LEs                  ; Yes        ; |Gambling_Tec|Ps2_Key:ps2_inst|counter[1]           ;
-; 3:1                ; 2 bits    ; 4 LEs         ; 4 LEs                ; 0 LEs                  ; No         ; |Gambling_Tec|CPU:process|Mux:ALUSrc_inst|C[0]      ;
-; 3:1                ; 9 bits    ; 18 LEs        ; 18 LEs               ; 0 LEs                  ; No         ; |Gambling_Tec|CPU:process|Mux:ALUSrc_inst|C[14]     ;
-; 4:1                ; 32 bits   ; 64 LEs        ; 64 LEs               ; 0 LEs                  ; No         ; |Gambling_Tec|CPU:process|ALU:ALU_inst|Mux28        ;
-; 5:1                ; 5 bits    ; 15 LEs        ; 10 LEs               ; 5 LEs                  ; No         ; |Gambling_Tec|CPU:process|Mux:ALUSrc_inst|C[2]      ;
-; 65:1               ; 32 bits   ; 1376 LEs      ; 1376 LEs             ; 0 LEs                  ; No         ; |Gambling_Tec|CPU:process|Mux:MemToReg_inst|C[3]    ;
-+--------------------+-----------+---------------+----------------------+------------------------+------------+-----------------------------------------------------+
++------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+; Multiplexer Restructuring Statistics (Restructuring Performed)                                                                                                   ;
++--------------------+-----------+---------------+----------------------+------------------------+------------+----------------------------------------------------+
+; Multiplexer Inputs ; Bus Width ; Baseline Area ; Area if Restructured ; Saving if Restructured ; Registered ; Example Multiplexer Output                         ;
++--------------------+-----------+---------------+----------------------+------------------------+------------+----------------------------------------------------+
+; 3:1                ; 24 bits   ; 48 LEs        ; 0 LEs                ; 48 LEs                 ; Yes        ; |Gambling_Tec|Data_Memory:data_mem_inst|RAM[2][21] ;
+; 3:1                ; 8 bits    ; 16 LEs        ; 0 LEs                ; 16 LEs                 ; Yes        ; |Gambling_Tec|Data_Memory:data_mem_inst|RAM[2][4]  ;
+; 3:1                ; 8 bits    ; 16 LEs        ; 0 LEs                ; 16 LEs                 ; Yes        ; |Gambling_Tec|Ps2_Key:ps2_inst|key_code[7]         ;
+; 5:1                ; 4 bits    ; 12 LEs        ; 8 LEs                ; 4 LEs                  ; Yes        ; |Gambling_Tec|Ps2_Key:ps2_inst|counter[1]          ;
+; 3:1                ; 2 bits    ; 4 LEs         ; 4 LEs                ; 0 LEs                  ; No         ; |Gambling_Tec|CPU:process|Mux:ALUSrc_inst|C[0]     ;
+; 3:1                ; 9 bits    ; 18 LEs        ; 18 LEs               ; 0 LEs                  ; No         ; |Gambling_Tec|CPU:process|Mux:ALUSrc_inst|C[14]    ;
+; 4:1                ; 32 bits   ; 64 LEs        ; 64 LEs               ; 0 LEs                  ; No         ; |Gambling_Tec|CPU:process|ALU:ALU_inst|Mux28       ;
+; 5:1                ; 5 bits    ; 15 LEs        ; 10 LEs               ; 5 LEs                  ; No         ; |Gambling_Tec|CPU:process|Mux:ALUSrc_inst|C[2]     ;
+; 65:1               ; 32 bits   ; 1376 LEs      ; 1376 LEs             ; 0 LEs                  ; No         ; |Gambling_Tec|CPU:process|Mux:MemToReg_inst|C[3]   ;
++--------------------+-----------+---------------+----------------------+------------------------+------------+----------------------------------------------------+
 
 
 +-------------------------------------------------------+
@@ -3662,75 +3662,75 @@ Note: In order to hide this table in the UI and the text report file, please set
 +----------------+--------------+
 
 
-+--------------------------------------------------------------------------------------------------------------------------------------------------------+
-; Connections to In-System Debugging Instance "auto_signaltap_0"                                                                                         ;
-+----------------------+---------------+-----------+--------------------------------+-------------------+--------------------------------------+---------+
-; Name                 ; Type          ; Status    ; Partition Name                 ; Netlist Type Used ; Actual Connection                    ; Details ;
-+----------------------+---------------+-----------+--------------------------------+-------------------+--------------------------------------+---------+
-; clk                  ; pre-synthesis ; connected ; Top                            ; post-synthesis    ; clk                                  ; N/A     ;
-; key_ready            ; pre-synthesis ; connected ; Top                            ; post-synthesis    ; Ps2_Key:ps2_inst|holding             ; N/A     ;
-; key_ready            ; pre-synthesis ; connected ; Top                            ; post-synthesis    ; Ps2_Key:ps2_inst|holding             ; N/A     ;
-; mem_key[0]           ; pre-synthesis ; connected ; Top                            ; post-synthesis    ; Data_Memory:data_mem_inst|RAM[10][0] ; N/A     ;
-; mem_key[0]           ; pre-synthesis ; connected ; Top                            ; post-synthesis    ; Data_Memory:data_mem_inst|RAM[10][0] ; N/A     ;
-; mem_key[1]           ; pre-synthesis ; connected ; Top                            ; post-synthesis    ; Data_Memory:data_mem_inst|RAM[10][1] ; N/A     ;
-; mem_key[1]           ; pre-synthesis ; connected ; Top                            ; post-synthesis    ; Data_Memory:data_mem_inst|RAM[10][1] ; N/A     ;
-; mem_key[2]           ; pre-synthesis ; connected ; Top                            ; post-synthesis    ; Data_Memory:data_mem_inst|RAM[10][2] ; N/A     ;
-; mem_key[2]           ; pre-synthesis ; connected ; Top                            ; post-synthesis    ; Data_Memory:data_mem_inst|RAM[10][2] ; N/A     ;
-; mem_key[3]           ; pre-synthesis ; connected ; Top                            ; post-synthesis    ; Data_Memory:data_mem_inst|RAM[10][3] ; N/A     ;
-; mem_key[3]           ; pre-synthesis ; connected ; Top                            ; post-synthesis    ; Data_Memory:data_mem_inst|RAM[10][3] ; N/A     ;
-; mem_key[4]           ; pre-synthesis ; connected ; Top                            ; post-synthesis    ; Data_Memory:data_mem_inst|RAM[10][4] ; N/A     ;
-; mem_key[4]           ; pre-synthesis ; connected ; Top                            ; post-synthesis    ; Data_Memory:data_mem_inst|RAM[10][4] ; N/A     ;
-; mem_key[5]           ; pre-synthesis ; connected ; Top                            ; post-synthesis    ; Data_Memory:data_mem_inst|RAM[10][5] ; N/A     ;
-; mem_key[5]           ; pre-synthesis ; connected ; Top                            ; post-synthesis    ; Data_Memory:data_mem_inst|RAM[10][5] ; N/A     ;
-; mem_key[6]           ; pre-synthesis ; connected ; Top                            ; post-synthesis    ; Data_Memory:data_mem_inst|RAM[10][6] ; N/A     ;
-; mem_key[6]           ; pre-synthesis ; connected ; Top                            ; post-synthesis    ; Data_Memory:data_mem_inst|RAM[10][6] ; N/A     ;
-; mem_key[7]           ; pre-synthesis ; connected ; Top                            ; post-synthesis    ; Data_Memory:data_mem_inst|RAM[10][7] ; N/A     ;
-; mem_key[7]           ; pre-synthesis ; connected ; Top                            ; post-synthesis    ; Data_Memory:data_mem_inst|RAM[10][7] ; N/A     ;
-; DATA_PS2             ; post-fitting  ; connected ; Top                            ; post-synthesis    ; DATA_PS2                             ; N/A     ;
-; DATA_PS2             ; post-fitting  ; connected ; Top                            ; post-synthesis    ; DATA_PS2                             ; N/A     ;
-; DATA_PS2~input       ; post-fitting  ; connected ; Top                            ; post-synthesis    ; DATA_PS2                             ; N/A     ;
-; DATA_PS2~input       ; post-fitting  ; connected ; Top                            ; post-synthesis    ; DATA_PS2                             ; N/A     ;
-; PS2_CLK              ; post-fitting  ; connected ; Top                            ; post-synthesis    ; PS2_CLK                              ; N/A     ;
-; PS2_CLK              ; post-fitting  ; connected ; Top                            ; post-synthesis    ; PS2_CLK                              ; N/A     ;
-; PS2_CLK~input        ; post-fitting  ; connected ; Top                            ; post-synthesis    ; PS2_CLK                              ; N/A     ;
-; PS2_CLK~input        ; post-fitting  ; connected ; Top                            ; post-synthesis    ; PS2_CLK                              ; N/A     ;
-; auto_signaltap_0|gnd ; post-fitting  ; connected ; sld_signaltap:auto_signaltap_0 ; post-synthesis    ; sld_signaltap:auto_signaltap_0|~GND  ; N/A     ;
-; auto_signaltap_0|gnd ; post-fitting  ; connected ; sld_signaltap:auto_signaltap_0 ; post-synthesis    ; sld_signaltap:auto_signaltap_0|~GND  ; N/A     ;
-; auto_signaltap_0|gnd ; post-fitting  ; connected ; sld_signaltap:auto_signaltap_0 ; post-synthesis    ; sld_signaltap:auto_signaltap_0|~GND  ; N/A     ;
-; auto_signaltap_0|gnd ; post-fitting  ; connected ; sld_signaltap:auto_signaltap_0 ; post-synthesis    ; sld_signaltap:auto_signaltap_0|~GND  ; N/A     ;
-; auto_signaltap_0|gnd ; post-fitting  ; connected ; sld_signaltap:auto_signaltap_0 ; post-synthesis    ; sld_signaltap:auto_signaltap_0|~GND  ; N/A     ;
-; auto_signaltap_0|gnd ; post-fitting  ; connected ; sld_signaltap:auto_signaltap_0 ; post-synthesis    ; sld_signaltap:auto_signaltap_0|~GND  ; N/A     ;
-; auto_signaltap_0|gnd ; post-fitting  ; connected ; sld_signaltap:auto_signaltap_0 ; post-synthesis    ; sld_signaltap:auto_signaltap_0|~GND  ; N/A     ;
-; auto_signaltap_0|gnd ; post-fitting  ; connected ; sld_signaltap:auto_signaltap_0 ; post-synthesis    ; sld_signaltap:auto_signaltap_0|~GND  ; N/A     ;
-; auto_signaltap_0|gnd ; post-fitting  ; connected ; sld_signaltap:auto_signaltap_0 ; post-synthesis    ; sld_signaltap:auto_signaltap_0|~GND  ; N/A     ;
-; auto_signaltap_0|gnd ; post-fitting  ; connected ; sld_signaltap:auto_signaltap_0 ; post-synthesis    ; sld_signaltap:auto_signaltap_0|~GND  ; N/A     ;
-; auto_signaltap_0|gnd ; post-fitting  ; connected ; sld_signaltap:auto_signaltap_0 ; post-synthesis    ; sld_signaltap:auto_signaltap_0|~GND  ; N/A     ;
-; auto_signaltap_0|gnd ; post-fitting  ; connected ; sld_signaltap:auto_signaltap_0 ; post-synthesis    ; sld_signaltap:auto_signaltap_0|~GND  ; N/A     ;
-; auto_signaltap_0|gnd ; post-fitting  ; connected ; sld_signaltap:auto_signaltap_0 ; post-synthesis    ; sld_signaltap:auto_signaltap_0|~GND  ; N/A     ;
-; auto_signaltap_0|vcc ; post-fitting  ; connected ; sld_signaltap:auto_signaltap_0 ; post-synthesis    ; sld_signaltap:auto_signaltap_0|~VCC  ; N/A     ;
-; auto_signaltap_0|vcc ; post-fitting  ; connected ; sld_signaltap:auto_signaltap_0 ; post-synthesis    ; sld_signaltap:auto_signaltap_0|~VCC  ; N/A     ;
-; auto_signaltap_0|vcc ; post-fitting  ; connected ; sld_signaltap:auto_signaltap_0 ; post-synthesis    ; sld_signaltap:auto_signaltap_0|~VCC  ; N/A     ;
-; auto_signaltap_0|vcc ; post-fitting  ; connected ; sld_signaltap:auto_signaltap_0 ; post-synthesis    ; sld_signaltap:auto_signaltap_0|~VCC  ; N/A     ;
-; auto_signaltap_0|vcc ; post-fitting  ; connected ; sld_signaltap:auto_signaltap_0 ; post-synthesis    ; sld_signaltap:auto_signaltap_0|~VCC  ; N/A     ;
-; auto_signaltap_0|vcc ; post-fitting  ; connected ; sld_signaltap:auto_signaltap_0 ; post-synthesis    ; sld_signaltap:auto_signaltap_0|~VCC  ; N/A     ;
-; auto_signaltap_0|vcc ; post-fitting  ; connected ; sld_signaltap:auto_signaltap_0 ; post-synthesis    ; sld_signaltap:auto_signaltap_0|~VCC  ; N/A     ;
-; auto_signaltap_0|vcc ; post-fitting  ; connected ; sld_signaltap:auto_signaltap_0 ; post-synthesis    ; sld_signaltap:auto_signaltap_0|~VCC  ; N/A     ;
-; auto_signaltap_0|vcc ; post-fitting  ; connected ; sld_signaltap:auto_signaltap_0 ; post-synthesis    ; sld_signaltap:auto_signaltap_0|~VCC  ; N/A     ;
-; auto_signaltap_0|vcc ; post-fitting  ; connected ; sld_signaltap:auto_signaltap_0 ; post-synthesis    ; sld_signaltap:auto_signaltap_0|~VCC  ; N/A     ;
-; auto_signaltap_0|vcc ; post-fitting  ; connected ; sld_signaltap:auto_signaltap_0 ; post-synthesis    ; sld_signaltap:auto_signaltap_0|~VCC  ; N/A     ;
-; auto_signaltap_0|vcc ; post-fitting  ; connected ; sld_signaltap:auto_signaltap_0 ; post-synthesis    ; sld_signaltap:auto_signaltap_0|~VCC  ; N/A     ;
-; auto_signaltap_0|vcc ; post-fitting  ; connected ; sld_signaltap:auto_signaltap_0 ; post-synthesis    ; sld_signaltap:auto_signaltap_0|~VCC  ; N/A     ;
-; auto_signaltap_0|vcc ; post-fitting  ; connected ; sld_signaltap:auto_signaltap_0 ; post-synthesis    ; sld_signaltap:auto_signaltap_0|~VCC  ; N/A     ;
-; auto_signaltap_0|vcc ; post-fitting  ; connected ; sld_signaltap:auto_signaltap_0 ; post-synthesis    ; sld_signaltap:auto_signaltap_0|~VCC  ; N/A     ;
-; auto_signaltap_0|vcc ; post-fitting  ; connected ; sld_signaltap:auto_signaltap_0 ; post-synthesis    ; sld_signaltap:auto_signaltap_0|~VCC  ; N/A     ;
-; auto_signaltap_0|vcc ; post-fitting  ; connected ; sld_signaltap:auto_signaltap_0 ; post-synthesis    ; sld_signaltap:auto_signaltap_0|~VCC  ; N/A     ;
-; auto_signaltap_0|vcc ; post-fitting  ; connected ; sld_signaltap:auto_signaltap_0 ; post-synthesis    ; sld_signaltap:auto_signaltap_0|~VCC  ; N/A     ;
-; auto_signaltap_0|vcc ; post-fitting  ; connected ; sld_signaltap:auto_signaltap_0 ; post-synthesis    ; sld_signaltap:auto_signaltap_0|~VCC  ; N/A     ;
-; rst                  ; post-fitting  ; connected ; Top                            ; post-synthesis    ; rst                                  ; N/A     ;
-; rst                  ; post-fitting  ; connected ; Top                            ; post-synthesis    ; rst                                  ; N/A     ;
-; rst~input            ; post-fitting  ; connected ; Top                            ; post-synthesis    ; rst                                  ; N/A     ;
-; rst~input            ; post-fitting  ; connected ; Top                            ; post-synthesis    ; rst                                  ; N/A     ;
-+----------------------+---------------+-----------+--------------------------------+-------------------+--------------------------------------+---------+
++-------------------------------------------------------------------------------------------------------------------------------------------------------+
+; Connections to In-System Debugging Instance "auto_signaltap_0"                                                                                        ;
++----------------------+---------------+-----------+--------------------------------+-------------------+-------------------------------------+---------+
+; Name                 ; Type          ; Status    ; Partition Name                 ; Netlist Type Used ; Actual Connection                   ; Details ;
++----------------------+---------------+-----------+--------------------------------+-------------------+-------------------------------------+---------+
+; clk                  ; pre-synthesis ; connected ; Top                            ; post-synthesis    ; clk                                 ; N/A     ;
+; key_ready            ; pre-synthesis ; connected ; Top                            ; post-synthesis    ; Ps2_Key:ps2_inst|holding            ; N/A     ;
+; key_ready            ; pre-synthesis ; connected ; Top                            ; post-synthesis    ; Ps2_Key:ps2_inst|holding            ; N/A     ;
+; mem_key[0]           ; pre-synthesis ; connected ; Top                            ; post-synthesis    ; Data_Memory:data_mem_inst|RAM[2][0] ; N/A     ;
+; mem_key[0]           ; pre-synthesis ; connected ; Top                            ; post-synthesis    ; Data_Memory:data_mem_inst|RAM[2][0] ; N/A     ;
+; mem_key[1]           ; pre-synthesis ; connected ; Top                            ; post-synthesis    ; Data_Memory:data_mem_inst|RAM[2][1] ; N/A     ;
+; mem_key[1]           ; pre-synthesis ; connected ; Top                            ; post-synthesis    ; Data_Memory:data_mem_inst|RAM[2][1] ; N/A     ;
+; mem_key[2]           ; pre-synthesis ; connected ; Top                            ; post-synthesis    ; Data_Memory:data_mem_inst|RAM[2][2] ; N/A     ;
+; mem_key[2]           ; pre-synthesis ; connected ; Top                            ; post-synthesis    ; Data_Memory:data_mem_inst|RAM[2][2] ; N/A     ;
+; mem_key[3]           ; pre-synthesis ; connected ; Top                            ; post-synthesis    ; Data_Memory:data_mem_inst|RAM[2][3] ; N/A     ;
+; mem_key[3]           ; pre-synthesis ; connected ; Top                            ; post-synthesis    ; Data_Memory:data_mem_inst|RAM[2][3] ; N/A     ;
+; mem_key[4]           ; pre-synthesis ; connected ; Top                            ; post-synthesis    ; Data_Memory:data_mem_inst|RAM[2][4] ; N/A     ;
+; mem_key[4]           ; pre-synthesis ; connected ; Top                            ; post-synthesis    ; Data_Memory:data_mem_inst|RAM[2][4] ; N/A     ;
+; mem_key[5]           ; pre-synthesis ; connected ; Top                            ; post-synthesis    ; Data_Memory:data_mem_inst|RAM[2][5] ; N/A     ;
+; mem_key[5]           ; pre-synthesis ; connected ; Top                            ; post-synthesis    ; Data_Memory:data_mem_inst|RAM[2][5] ; N/A     ;
+; mem_key[6]           ; pre-synthesis ; connected ; Top                            ; post-synthesis    ; Data_Memory:data_mem_inst|RAM[2][6] ; N/A     ;
+; mem_key[6]           ; pre-synthesis ; connected ; Top                            ; post-synthesis    ; Data_Memory:data_mem_inst|RAM[2][6] ; N/A     ;
+; mem_key[7]           ; pre-synthesis ; connected ; Top                            ; post-synthesis    ; Data_Memory:data_mem_inst|RAM[2][7] ; N/A     ;
+; mem_key[7]           ; pre-synthesis ; connected ; Top                            ; post-synthesis    ; Data_Memory:data_mem_inst|RAM[2][7] ; N/A     ;
+; DATA_PS2             ; post-fitting  ; connected ; Top                            ; post-synthesis    ; DATA_PS2                            ; N/A     ;
+; DATA_PS2             ; post-fitting  ; connected ; Top                            ; post-synthesis    ; DATA_PS2                            ; N/A     ;
+; DATA_PS2~input       ; post-fitting  ; connected ; Top                            ; post-synthesis    ; DATA_PS2                            ; N/A     ;
+; DATA_PS2~input       ; post-fitting  ; connected ; Top                            ; post-synthesis    ; DATA_PS2                            ; N/A     ;
+; PS2_CLK              ; post-fitting  ; connected ; Top                            ; post-synthesis    ; PS2_CLK                             ; N/A     ;
+; PS2_CLK              ; post-fitting  ; connected ; Top                            ; post-synthesis    ; PS2_CLK                             ; N/A     ;
+; PS2_CLK~input        ; post-fitting  ; connected ; Top                            ; post-synthesis    ; PS2_CLK                             ; N/A     ;
+; PS2_CLK~input        ; post-fitting  ; connected ; Top                            ; post-synthesis    ; PS2_CLK                             ; N/A     ;
+; auto_signaltap_0|gnd ; post-fitting  ; connected ; sld_signaltap:auto_signaltap_0 ; post-synthesis    ; sld_signaltap:auto_signaltap_0|~GND ; N/A     ;
+; auto_signaltap_0|gnd ; post-fitting  ; connected ; sld_signaltap:auto_signaltap_0 ; post-synthesis    ; sld_signaltap:auto_signaltap_0|~GND ; N/A     ;
+; auto_signaltap_0|gnd ; post-fitting  ; connected ; sld_signaltap:auto_signaltap_0 ; post-synthesis    ; sld_signaltap:auto_signaltap_0|~GND ; N/A     ;
+; auto_signaltap_0|gnd ; post-fitting  ; connected ; sld_signaltap:auto_signaltap_0 ; post-synthesis    ; sld_signaltap:auto_signaltap_0|~GND ; N/A     ;
+; auto_signaltap_0|gnd ; post-fitting  ; connected ; sld_signaltap:auto_signaltap_0 ; post-synthesis    ; sld_signaltap:auto_signaltap_0|~GND ; N/A     ;
+; auto_signaltap_0|gnd ; post-fitting  ; connected ; sld_signaltap:auto_signaltap_0 ; post-synthesis    ; sld_signaltap:auto_signaltap_0|~GND ; N/A     ;
+; auto_signaltap_0|gnd ; post-fitting  ; connected ; sld_signaltap:auto_signaltap_0 ; post-synthesis    ; sld_signaltap:auto_signaltap_0|~GND ; N/A     ;
+; auto_signaltap_0|gnd ; post-fitting  ; connected ; sld_signaltap:auto_signaltap_0 ; post-synthesis    ; sld_signaltap:auto_signaltap_0|~GND ; N/A     ;
+; auto_signaltap_0|gnd ; post-fitting  ; connected ; sld_signaltap:auto_signaltap_0 ; post-synthesis    ; sld_signaltap:auto_signaltap_0|~GND ; N/A     ;
+; auto_signaltap_0|gnd ; post-fitting  ; connected ; sld_signaltap:auto_signaltap_0 ; post-synthesis    ; sld_signaltap:auto_signaltap_0|~GND ; N/A     ;
+; auto_signaltap_0|gnd ; post-fitting  ; connected ; sld_signaltap:auto_signaltap_0 ; post-synthesis    ; sld_signaltap:auto_signaltap_0|~GND ; N/A     ;
+; auto_signaltap_0|gnd ; post-fitting  ; connected ; sld_signaltap:auto_signaltap_0 ; post-synthesis    ; sld_signaltap:auto_signaltap_0|~GND ; N/A     ;
+; auto_signaltap_0|gnd ; post-fitting  ; connected ; sld_signaltap:auto_signaltap_0 ; post-synthesis    ; sld_signaltap:auto_signaltap_0|~GND ; N/A     ;
+; auto_signaltap_0|vcc ; post-fitting  ; connected ; sld_signaltap:auto_signaltap_0 ; post-synthesis    ; sld_signaltap:auto_signaltap_0|~VCC ; N/A     ;
+; auto_signaltap_0|vcc ; post-fitting  ; connected ; sld_signaltap:auto_signaltap_0 ; post-synthesis    ; sld_signaltap:auto_signaltap_0|~VCC ; N/A     ;
+; auto_signaltap_0|vcc ; post-fitting  ; connected ; sld_signaltap:auto_signaltap_0 ; post-synthesis    ; sld_signaltap:auto_signaltap_0|~VCC ; N/A     ;
+; auto_signaltap_0|vcc ; post-fitting  ; connected ; sld_signaltap:auto_signaltap_0 ; post-synthesis    ; sld_signaltap:auto_signaltap_0|~VCC ; N/A     ;
+; auto_signaltap_0|vcc ; post-fitting  ; connected ; sld_signaltap:auto_signaltap_0 ; post-synthesis    ; sld_signaltap:auto_signaltap_0|~VCC ; N/A     ;
+; auto_signaltap_0|vcc ; post-fitting  ; connected ; sld_signaltap:auto_signaltap_0 ; post-synthesis    ; sld_signaltap:auto_signaltap_0|~VCC ; N/A     ;
+; auto_signaltap_0|vcc ; post-fitting  ; connected ; sld_signaltap:auto_signaltap_0 ; post-synthesis    ; sld_signaltap:auto_signaltap_0|~VCC ; N/A     ;
+; auto_signaltap_0|vcc ; post-fitting  ; connected ; sld_signaltap:auto_signaltap_0 ; post-synthesis    ; sld_signaltap:auto_signaltap_0|~VCC ; N/A     ;
+; auto_signaltap_0|vcc ; post-fitting  ; connected ; sld_signaltap:auto_signaltap_0 ; post-synthesis    ; sld_signaltap:auto_signaltap_0|~VCC ; N/A     ;
+; auto_signaltap_0|vcc ; post-fitting  ; connected ; sld_signaltap:auto_signaltap_0 ; post-synthesis    ; sld_signaltap:auto_signaltap_0|~VCC ; N/A     ;
+; auto_signaltap_0|vcc ; post-fitting  ; connected ; sld_signaltap:auto_signaltap_0 ; post-synthesis    ; sld_signaltap:auto_signaltap_0|~VCC ; N/A     ;
+; auto_signaltap_0|vcc ; post-fitting  ; connected ; sld_signaltap:auto_signaltap_0 ; post-synthesis    ; sld_signaltap:auto_signaltap_0|~VCC ; N/A     ;
+; auto_signaltap_0|vcc ; post-fitting  ; connected ; sld_signaltap:auto_signaltap_0 ; post-synthesis    ; sld_signaltap:auto_signaltap_0|~VCC ; N/A     ;
+; auto_signaltap_0|vcc ; post-fitting  ; connected ; sld_signaltap:auto_signaltap_0 ; post-synthesis    ; sld_signaltap:auto_signaltap_0|~VCC ; N/A     ;
+; auto_signaltap_0|vcc ; post-fitting  ; connected ; sld_signaltap:auto_signaltap_0 ; post-synthesis    ; sld_signaltap:auto_signaltap_0|~VCC ; N/A     ;
+; auto_signaltap_0|vcc ; post-fitting  ; connected ; sld_signaltap:auto_signaltap_0 ; post-synthesis    ; sld_signaltap:auto_signaltap_0|~VCC ; N/A     ;
+; auto_signaltap_0|vcc ; post-fitting  ; connected ; sld_signaltap:auto_signaltap_0 ; post-synthesis    ; sld_signaltap:auto_signaltap_0|~VCC ; N/A     ;
+; auto_signaltap_0|vcc ; post-fitting  ; connected ; sld_signaltap:auto_signaltap_0 ; post-synthesis    ; sld_signaltap:auto_signaltap_0|~VCC ; N/A     ;
+; auto_signaltap_0|vcc ; post-fitting  ; connected ; sld_signaltap:auto_signaltap_0 ; post-synthesis    ; sld_signaltap:auto_signaltap_0|~VCC ; N/A     ;
+; rst                  ; post-fitting  ; connected ; Top                            ; post-synthesis    ; rst                                 ; N/A     ;
+; rst                  ; post-fitting  ; connected ; Top                            ; post-synthesis    ; rst                                 ; N/A     ;
+; rst~input            ; post-fitting  ; connected ; Top                            ; post-synthesis    ; rst                                 ; N/A     ;
+; rst~input            ; post-fitting  ; connected ; Top                            ; post-synthesis    ; rst                                 ; N/A     ;
++----------------------+---------------+-----------+--------------------------------+-------------------+-------------------------------------+---------+
 
 
 +-------------------------------+
@@ -3739,7 +3739,7 @@ Note: In order to hide this table in the UI and the text report file, please set
 Info: *******************************************************************
 Info: Running Quartus Prime Analysis & Synthesis
     Info: Version 18.1.0 Build 625 09/12/2018 SJ Lite Edition
-    Info: Processing started: Wed Jun 18 20:52:41 2025
+    Info: Processing started: Wed Jun 18 21:57:18 2025
 Info: Command: quartus_map --read_settings_files=on --write_settings_files=off Gambling_Tec -c Gambling_Tec
 Warning (18236): Number of processors has not been specified which may cause overloading on shared machines.  Set the global assignment NUM_PARALLEL_PROCESSORS in your QSF to an appropriate value for best performance.
 Info (20030): Parallel compilation is enabled and will use 4 of the 4 processors detected
@@ -3844,7 +3844,7 @@ Info (12021): Found 1 design units, including 1 entities, in source file db/cmpr
     Info (12023): Found entity 1: cmpr_99c File: C:/Users/josee/CE3201_PF/db/cmpr_99c.tdf Line: 22
 Info (12033): Analysis and Synthesis generated Signal Tap or debug node instance "auto_signaltap_0"
 Info (11170): Starting IP generation for the debug fabric: alt_sld_fab.
-Info (11172): 2025.06.18.20:53:02 Progress: Loading sld176eced6/alt_sld_fab_wrapper_hw.tcl
+Info (11172): 2025.06.18.21:57:37 Progress: Loading sld176eced6/alt_sld_fab_wrapper_hw.tcl
 Info (11172): Alt_sld_fab.alt_sld_fab: SLD fabric agents which did not specify prefer_host were connected to JTAG
 Info (11172): Alt_sld_fab: Generating alt_sld_fab "alt_sld_fab" for QUARTUS_SYNTH
 Info (11172): Alt_sld_fab: "alt_sld_fab" instantiated alt_sld_fab "alt_sld_fab"
@@ -3881,9 +3881,9 @@ Info (21057): Implemented 925 device resources after synthesis - the final resou
     Info (21061): Implemented 892 logic cells
     Info (21064): Implemented 15 RAM segments
 Info: Quartus Prime Analysis & Synthesis was successful. 0 errors, 13 warnings
-    Info: Peak virtual memory: 4941 megabytes
-    Info: Processing ended: Wed Jun 18 20:53:26 2025
-    Info: Elapsed time: 00:00:45
-    Info: Total CPU time (on all processors): 00:01:12
+    Info: Peak virtual memory: 4944 megabytes
+    Info: Processing ended: Wed Jun 18 21:58:02 2025
+    Info: Elapsed time: 00:00:44
+    Info: Total CPU time (on all processors): 00:01:05
 
 

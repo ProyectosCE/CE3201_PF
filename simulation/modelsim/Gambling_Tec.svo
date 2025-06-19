@@ -16,7 +16,7 @@
 // PROGRAM "Quartus Prime"
 // VERSION "Version 18.1.0 Build 625 09/12/2018 SJ Lite Edition"
 
-// DATE "06/18/2025 20:54:49"
+// DATE "06/18/2025 21:59:27"
 
 // 
 // Device: Altera 5CSXFC6D6F31C6 Package FBGA896
@@ -374,17 +374,17 @@ wire \ps2_inst|LessThan5~12_combout ;
 wire \ps2_inst|LessThan5~13_combout ;
 wire \ps2_inst|LessThan5~14_combout ;
 wire \ps2_inst|holding~q ;
-wire \data_mem_inst|RAM[10][0]~feeder_combout ;
-wire \data_mem_inst|RAM[10][0]~q ;
-wire \data_mem_inst|RAM[10][1]~q ;
-wire \data_mem_inst|RAM[10][2]~q ;
-wire \data_mem_inst|RAM[10][3]~q ;
-wire \data_mem_inst|RAM[10][4]~q ;
+wire \data_mem_inst|RAM[2][0]~feeder_combout ;
+wire \data_mem_inst|RAM[2][0]~q ;
+wire \data_mem_inst|RAM[2][1]~q ;
+wire \data_mem_inst|RAM[2][2]~q ;
+wire \data_mem_inst|RAM[2][3]~q ;
+wire \data_mem_inst|RAM[2][4]~q ;
 wire \ps2_inst|key_code[5]~DUPLICATE_q ;
-wire \data_mem_inst|RAM[10][5]~q ;
-wire \data_mem_inst|RAM[10][6]~q ;
-wire \data_mem_inst|RAM[10][7]~feeder_combout ;
-wire \data_mem_inst|RAM[10][7]~q ;
+wire \data_mem_inst|RAM[2][5]~q ;
+wire \data_mem_inst|RAM[2][6]~q ;
+wire \data_mem_inst|RAM[2][7]~feeder_combout ;
+wire \data_mem_inst|RAM[2][7]~q ;
 wire \altera_reserved_tms~input_o ;
 wire \altera_reserved_tck~input_o ;
 wire \altera_reserved_tdi~input_o ;
@@ -1378,7 +1378,7 @@ defparam \key_ready~output .shift_series_termination_control = "false";
 
 // Location: IOOBUF_X89_Y9_N22
 cyclonev_io_obuf \mem_key[0]~output (
-	.i(\data_mem_inst|RAM[10][0]~q ),
+	.i(\data_mem_inst|RAM[2][0]~q ),
 	.oe(vcc),
 	.dynamicterminationcontrol(gnd),
 	.seriesterminationcontrol(16'b0000000000000000),
@@ -1394,7 +1394,7 @@ defparam \mem_key[0]~output .shift_series_termination_control = "false";
 
 // Location: IOOBUF_X86_Y0_N19
 cyclonev_io_obuf \mem_key[1]~output (
-	.i(\data_mem_inst|RAM[10][1]~q ),
+	.i(\data_mem_inst|RAM[2][1]~q ),
 	.oe(vcc),
 	.dynamicterminationcontrol(gnd),
 	.seriesterminationcontrol(16'b0000000000000000),
@@ -1410,7 +1410,7 @@ defparam \mem_key[1]~output .shift_series_termination_control = "false";
 
 // Location: IOOBUF_X88_Y0_N37
 cyclonev_io_obuf \mem_key[2]~output (
-	.i(\data_mem_inst|RAM[10][2]~q ),
+	.i(\data_mem_inst|RAM[2][2]~q ),
 	.oe(vcc),
 	.dynamicterminationcontrol(gnd),
 	.seriesterminationcontrol(16'b0000000000000000),
@@ -1426,7 +1426,7 @@ defparam \mem_key[2]~output .shift_series_termination_control = "false";
 
 // Location: IOOBUF_X78_Y0_N36
 cyclonev_io_obuf \mem_key[3]~output (
-	.i(\data_mem_inst|RAM[10][3]~q ),
+	.i(\data_mem_inst|RAM[2][3]~q ),
 	.oe(vcc),
 	.dynamicterminationcontrol(gnd),
 	.seriesterminationcontrol(16'b0000000000000000),
@@ -1442,7 +1442,7 @@ defparam \mem_key[3]~output .shift_series_termination_control = "false";
 
 // Location: IOOBUF_X86_Y0_N36
 cyclonev_io_obuf \mem_key[4]~output (
-	.i(\data_mem_inst|RAM[10][4]~q ),
+	.i(\data_mem_inst|RAM[2][4]~q ),
 	.oe(vcc),
 	.dynamicterminationcontrol(gnd),
 	.seriesterminationcontrol(16'b0000000000000000),
@@ -1458,7 +1458,7 @@ defparam \mem_key[4]~output .shift_series_termination_control = "false";
 
 // Location: IOOBUF_X88_Y0_N54
 cyclonev_io_obuf \mem_key[5]~output (
-	.i(\data_mem_inst|RAM[10][5]~q ),
+	.i(\data_mem_inst|RAM[2][5]~q ),
 	.oe(vcc),
 	.dynamicterminationcontrol(gnd),
 	.seriesterminationcontrol(16'b0000000000000000),
@@ -1474,7 +1474,7 @@ defparam \mem_key[5]~output .shift_series_termination_control = "false";
 
 // Location: IOOBUF_X74_Y0_N59
 cyclonev_io_obuf \mem_key[6]~output (
-	.i(\data_mem_inst|RAM[10][6]~q ),
+	.i(\data_mem_inst|RAM[2][6]~q ),
 	.oe(vcc),
 	.dynamicterminationcontrol(gnd),
 	.seriesterminationcontrol(16'b0000000000000000),
@@ -1490,7 +1490,7 @@ defparam \mem_key[6]~output .shift_series_termination_control = "false";
 
 // Location: IOOBUF_X89_Y9_N5
 cyclonev_io_obuf \mem_key[7]~output (
-	.i(\data_mem_inst|RAM[10][7]~q ),
+	.i(\data_mem_inst|RAM[2][7]~q ),
 	.oe(vcc),
 	.dynamicterminationcontrol(gnd),
 	.seriesterminationcontrol(16'b0000000000000000),
@@ -8469,9 +8469,9 @@ defparam \ps2_inst|holding .power_up = "low";
 // synopsys translate_on
 
 // Location: LABCELL_X33_Y6_N15
-cyclonev_lcell_comb \data_mem_inst|RAM[10][0]~feeder (
+cyclonev_lcell_comb \data_mem_inst|RAM[2][0]~feeder (
 // Equation(s):
-// \data_mem_inst|RAM[10][0]~feeder_combout  = ( \ps2_inst|key_code [0] )
+// \data_mem_inst|RAM[2][0]~feeder_combout  = ( \ps2_inst|key_code [0] )
 
 	.dataa(gnd),
 	.datab(gnd),
@@ -8482,20 +8482,20 @@ cyclonev_lcell_comb \data_mem_inst|RAM[10][0]~feeder (
 	.datag(gnd),
 	.cin(gnd),
 	.sharein(gnd),
-	.combout(\data_mem_inst|RAM[10][0]~feeder_combout ),
+	.combout(\data_mem_inst|RAM[2][0]~feeder_combout ),
 	.sumout(),
 	.cout(),
 	.shareout());
 // synopsys translate_off
-defparam \data_mem_inst|RAM[10][0]~feeder .extended_lut = "off";
-defparam \data_mem_inst|RAM[10][0]~feeder .lut_mask = 64'h00000000FFFFFFFF;
-defparam \data_mem_inst|RAM[10][0]~feeder .shared_arith = "off";
+defparam \data_mem_inst|RAM[2][0]~feeder .extended_lut = "off";
+defparam \data_mem_inst|RAM[2][0]~feeder .lut_mask = 64'h00000000FFFFFFFF;
+defparam \data_mem_inst|RAM[2][0]~feeder .shared_arith = "off";
 // synopsys translate_on
 
 // Location: FF_X33_Y6_N17
-dffeas \data_mem_inst|RAM[10][0] (
+dffeas \data_mem_inst|RAM[2][0] (
 	.clk(\clk~inputCLKENA0_outclk ),
-	.d(\data_mem_inst|RAM[10][0]~feeder_combout ),
+	.d(\data_mem_inst|RAM[2][0]~feeder_combout ),
 	.asdata(vcc),
 	.clrn(vcc),
 	.aload(gnd),
@@ -8504,15 +8504,15 @@ dffeas \data_mem_inst|RAM[10][0] (
 	.ena(\ps2_inst|holding~q ),
 	.devclrn(devclrn),
 	.devpor(devpor),
-	.q(\data_mem_inst|RAM[10][0]~q ),
+	.q(\data_mem_inst|RAM[2][0]~q ),
 	.prn(vcc));
 // synopsys translate_off
-defparam \data_mem_inst|RAM[10][0] .is_wysiwyg = "true";
-defparam \data_mem_inst|RAM[10][0] .power_up = "low";
+defparam \data_mem_inst|RAM[2][0] .is_wysiwyg = "true";
+defparam \data_mem_inst|RAM[2][0] .power_up = "low";
 // synopsys translate_on
 
 // Location: FF_X33_Y6_N35
-dffeas \data_mem_inst|RAM[10][1] (
+dffeas \data_mem_inst|RAM[2][1] (
 	.clk(\clk~inputCLKENA0_outclk ),
 	.d(gnd),
 	.asdata(\ps2_inst|key_code [1]),
@@ -8523,15 +8523,15 @@ dffeas \data_mem_inst|RAM[10][1] (
 	.ena(\ps2_inst|holding~q ),
 	.devclrn(devclrn),
 	.devpor(devpor),
-	.q(\data_mem_inst|RAM[10][1]~q ),
+	.q(\data_mem_inst|RAM[2][1]~q ),
 	.prn(vcc));
 // synopsys translate_off
-defparam \data_mem_inst|RAM[10][1] .is_wysiwyg = "true";
-defparam \data_mem_inst|RAM[10][1] .power_up = "low";
+defparam \data_mem_inst|RAM[2][1] .is_wysiwyg = "true";
+defparam \data_mem_inst|RAM[2][1] .power_up = "low";
 // synopsys translate_on
 
 // Location: FF_X33_Y6_N50
-dffeas \data_mem_inst|RAM[10][2] (
+dffeas \data_mem_inst|RAM[2][2] (
 	.clk(\clk~inputCLKENA0_outclk ),
 	.d(gnd),
 	.asdata(\ps2_inst|key_code [2]),
@@ -8542,15 +8542,15 @@ dffeas \data_mem_inst|RAM[10][2] (
 	.ena(\ps2_inst|holding~q ),
 	.devclrn(devclrn),
 	.devpor(devpor),
-	.q(\data_mem_inst|RAM[10][2]~q ),
+	.q(\data_mem_inst|RAM[2][2]~q ),
 	.prn(vcc));
 // synopsys translate_off
-defparam \data_mem_inst|RAM[10][2] .is_wysiwyg = "true";
-defparam \data_mem_inst|RAM[10][2] .power_up = "low";
+defparam \data_mem_inst|RAM[2][2] .is_wysiwyg = "true";
+defparam \data_mem_inst|RAM[2][2] .power_up = "low";
 // synopsys translate_on
 
 // Location: FF_X33_Y6_N59
-dffeas \data_mem_inst|RAM[10][3] (
+dffeas \data_mem_inst|RAM[2][3] (
 	.clk(\clk~inputCLKENA0_outclk ),
 	.d(gnd),
 	.asdata(\ps2_inst|key_code [3]),
@@ -8561,15 +8561,15 @@ dffeas \data_mem_inst|RAM[10][3] (
 	.ena(\ps2_inst|holding~q ),
 	.devclrn(devclrn),
 	.devpor(devpor),
-	.q(\data_mem_inst|RAM[10][3]~q ),
+	.q(\data_mem_inst|RAM[2][3]~q ),
 	.prn(vcc));
 // synopsys translate_off
-defparam \data_mem_inst|RAM[10][3] .is_wysiwyg = "true";
-defparam \data_mem_inst|RAM[10][3] .power_up = "low";
+defparam \data_mem_inst|RAM[2][3] .is_wysiwyg = "true";
+defparam \data_mem_inst|RAM[2][3] .power_up = "low";
 // synopsys translate_on
 
 // Location: FF_X33_Y6_N56
-dffeas \data_mem_inst|RAM[10][4] (
+dffeas \data_mem_inst|RAM[2][4] (
 	.clk(\clk~inputCLKENA0_outclk ),
 	.d(gnd),
 	.asdata(\ps2_inst|key_code [4]),
@@ -8580,11 +8580,11 @@ dffeas \data_mem_inst|RAM[10][4] (
 	.ena(\ps2_inst|holding~q ),
 	.devclrn(devclrn),
 	.devpor(devpor),
-	.q(\data_mem_inst|RAM[10][4]~q ),
+	.q(\data_mem_inst|RAM[2][4]~q ),
 	.prn(vcc));
 // synopsys translate_off
-defparam \data_mem_inst|RAM[10][4] .is_wysiwyg = "true";
-defparam \data_mem_inst|RAM[10][4] .power_up = "low";
+defparam \data_mem_inst|RAM[2][4] .is_wysiwyg = "true";
+defparam \data_mem_inst|RAM[2][4] .power_up = "low";
 // synopsys translate_on
 
 // Location: FF_X33_Y6_N40
@@ -8607,7 +8607,7 @@ defparam \ps2_inst|key_code[5]~DUPLICATE .power_up = "low";
 // synopsys translate_on
 
 // Location: FF_X29_Y5_N26
-dffeas \data_mem_inst|RAM[10][5] (
+dffeas \data_mem_inst|RAM[2][5] (
 	.clk(\clk~inputCLKENA0_outclk ),
 	.d(gnd),
 	.asdata(\ps2_inst|key_code[5]~DUPLICATE_q ),
@@ -8618,15 +8618,15 @@ dffeas \data_mem_inst|RAM[10][5] (
 	.ena(\ps2_inst|holding~q ),
 	.devclrn(devclrn),
 	.devpor(devpor),
-	.q(\data_mem_inst|RAM[10][5]~q ),
+	.q(\data_mem_inst|RAM[2][5]~q ),
 	.prn(vcc));
 // synopsys translate_off
-defparam \data_mem_inst|RAM[10][5] .is_wysiwyg = "true";
-defparam \data_mem_inst|RAM[10][5] .power_up = "low";
+defparam \data_mem_inst|RAM[2][5] .is_wysiwyg = "true";
+defparam \data_mem_inst|RAM[2][5] .power_up = "low";
 // synopsys translate_on
 
 // Location: FF_X33_Y6_N53
-dffeas \data_mem_inst|RAM[10][6] (
+dffeas \data_mem_inst|RAM[2][6] (
 	.clk(\clk~inputCLKENA0_outclk ),
 	.d(gnd),
 	.asdata(\ps2_inst|key_code [6]),
@@ -8637,17 +8637,17 @@ dffeas \data_mem_inst|RAM[10][6] (
 	.ena(\ps2_inst|holding~q ),
 	.devclrn(devclrn),
 	.devpor(devpor),
-	.q(\data_mem_inst|RAM[10][6]~q ),
+	.q(\data_mem_inst|RAM[2][6]~q ),
 	.prn(vcc));
 // synopsys translate_off
-defparam \data_mem_inst|RAM[10][6] .is_wysiwyg = "true";
-defparam \data_mem_inst|RAM[10][6] .power_up = "low";
+defparam \data_mem_inst|RAM[2][6] .is_wysiwyg = "true";
+defparam \data_mem_inst|RAM[2][6] .power_up = "low";
 // synopsys translate_on
 
 // Location: LABCELL_X31_Y5_N39
-cyclonev_lcell_comb \data_mem_inst|RAM[10][7]~feeder (
+cyclonev_lcell_comb \data_mem_inst|RAM[2][7]~feeder (
 // Equation(s):
-// \data_mem_inst|RAM[10][7]~feeder_combout  = ( \ps2_inst|key_code [7] )
+// \data_mem_inst|RAM[2][7]~feeder_combout  = ( \ps2_inst|key_code [7] )
 
 	.dataa(gnd),
 	.datab(gnd),
@@ -8658,20 +8658,20 @@ cyclonev_lcell_comb \data_mem_inst|RAM[10][7]~feeder (
 	.datag(gnd),
 	.cin(gnd),
 	.sharein(gnd),
-	.combout(\data_mem_inst|RAM[10][7]~feeder_combout ),
+	.combout(\data_mem_inst|RAM[2][7]~feeder_combout ),
 	.sumout(),
 	.cout(),
 	.shareout());
 // synopsys translate_off
-defparam \data_mem_inst|RAM[10][7]~feeder .extended_lut = "off";
-defparam \data_mem_inst|RAM[10][7]~feeder .lut_mask = 64'h00000000FFFFFFFF;
-defparam \data_mem_inst|RAM[10][7]~feeder .shared_arith = "off";
+defparam \data_mem_inst|RAM[2][7]~feeder .extended_lut = "off";
+defparam \data_mem_inst|RAM[2][7]~feeder .lut_mask = 64'h00000000FFFFFFFF;
+defparam \data_mem_inst|RAM[2][7]~feeder .shared_arith = "off";
 // synopsys translate_on
 
 // Location: FF_X31_Y5_N41
-dffeas \data_mem_inst|RAM[10][7] (
+dffeas \data_mem_inst|RAM[2][7] (
 	.clk(\clk~inputCLKENA0_outclk ),
-	.d(\data_mem_inst|RAM[10][7]~feeder_combout ),
+	.d(\data_mem_inst|RAM[2][7]~feeder_combout ),
 	.asdata(vcc),
 	.clrn(vcc),
 	.aload(gnd),
@@ -8680,11 +8680,11 @@ dffeas \data_mem_inst|RAM[10][7] (
 	.ena(\ps2_inst|holding~q ),
 	.devclrn(devclrn),
 	.devpor(devpor),
-	.q(\data_mem_inst|RAM[10][7]~q ),
+	.q(\data_mem_inst|RAM[2][7]~q ),
 	.prn(vcc));
 // synopsys translate_off
-defparam \data_mem_inst|RAM[10][7] .is_wysiwyg = "true";
-defparam \data_mem_inst|RAM[10][7] .power_up = "low";
+defparam \data_mem_inst|RAM[2][7] .is_wysiwyg = "true";
+defparam \data_mem_inst|RAM[2][7] .power_up = "low";
 // synopsys translate_on
 
 // Location: IOIBUF_X11_Y0_N7
@@ -15918,14 +15918,14 @@ defparam \auto_signaltap_0|sld_signaltap_body|sld_signaltap_body|ela_control|bas
 // Location: MLABCELL_X3_Y5_N45
 cyclonev_lcell_comb \auto_signaltap_0|acq_trigger_in_reg[7]~feeder (
 // Equation(s):
-// \auto_signaltap_0|acq_trigger_in_reg[7]~feeder_combout  = ( \data_mem_inst|RAM[10][6]~q  )
+// \auto_signaltap_0|acq_trigger_in_reg[7]~feeder_combout  = ( \data_mem_inst|RAM[2][6]~q  )
 
 	.dataa(gnd),
 	.datab(gnd),
 	.datac(gnd),
 	.datad(gnd),
 	.datae(gnd),
-	.dataf(!\data_mem_inst|RAM[10][6]~q ),
+	.dataf(!\data_mem_inst|RAM[2][6]~q ),
 	.datag(gnd),
 	.cin(gnd),
 	.sharein(gnd),
@@ -16040,7 +16040,7 @@ defparam \auto_signaltap_0|sld_signaltap_body|sld_signaltap_body|ela_control|bas
 dffeas \auto_signaltap_0|acq_trigger_in_reg[6] (
 	.clk(\clk~inputCLKENA0_outclk ),
 	.d(gnd),
-	.asdata(\data_mem_inst|RAM[10][5]~q ),
+	.asdata(\data_mem_inst|RAM[2][5]~q ),
 	.clrn(vcc),
 	.aload(gnd),
 	.sclr(gnd),
@@ -16118,7 +16118,7 @@ defparam \auto_signaltap_0|sld_signaltap_body|sld_signaltap_body|ela_control|bas
 dffeas \auto_signaltap_0|acq_trigger_in_reg[5] (
 	.clk(\clk~inputCLKENA0_outclk ),
 	.d(gnd),
-	.asdata(\data_mem_inst|RAM[10][4]~q ),
+	.asdata(\data_mem_inst|RAM[2][4]~q ),
 	.clrn(vcc),
 	.aload(gnd),
 	.sclr(gnd),
@@ -16215,7 +16215,7 @@ defparam \auto_signaltap_0|sld_signaltap_body|sld_signaltap_body|ela_control|bas
 dffeas \auto_signaltap_0|acq_trigger_in_reg[8] (
 	.clk(\clk~inputCLKENA0_outclk ),
 	.d(gnd),
-	.asdata(\data_mem_inst|RAM[10][7]~q ),
+	.asdata(\data_mem_inst|RAM[2][7]~q ),
 	.clrn(vcc),
 	.aload(gnd),
 	.sclr(gnd),
@@ -16314,7 +16314,7 @@ defparam \auto_signaltap_0|sld_signaltap_body|sld_signaltap_body|ela_control|bui
 dffeas \auto_signaltap_0|acq_trigger_in_reg[1] (
 	.clk(\clk~inputCLKENA0_outclk ),
 	.d(gnd),
-	.asdata(\data_mem_inst|RAM[10][0]~q ),
+	.asdata(\data_mem_inst|RAM[2][0]~q ),
 	.clrn(vcc),
 	.aload(gnd),
 	.sclr(gnd),
@@ -16493,14 +16493,14 @@ defparam \auto_signaltap_0|sld_signaltap_body|sld_signaltap_body|ela_control|bas
 // Location: LABCELL_X7_Y3_N42
 cyclonev_lcell_comb \auto_signaltap_0|acq_trigger_in_reg[2]~feeder (
 // Equation(s):
-// \auto_signaltap_0|acq_trigger_in_reg[2]~feeder_combout  = ( \data_mem_inst|RAM[10][1]~q  )
+// \auto_signaltap_0|acq_trigger_in_reg[2]~feeder_combout  = ( \data_mem_inst|RAM[2][1]~q  )
 
 	.dataa(gnd),
 	.datab(gnd),
 	.datac(gnd),
 	.datad(gnd),
 	.datae(gnd),
-	.dataf(!\data_mem_inst|RAM[10][1]~q ),
+	.dataf(!\data_mem_inst|RAM[2][1]~q ),
 	.datag(gnd),
 	.cin(gnd),
 	.sharein(gnd),
@@ -16595,14 +16595,14 @@ defparam \auto_signaltap_0|sld_signaltap_body|sld_signaltap_body|ela_control|bas
 // Location: MLABCELL_X21_Y2_N21
 cyclonev_lcell_comb \auto_signaltap_0|acq_trigger_in_reg[3]~feeder (
 // Equation(s):
-// \auto_signaltap_0|acq_trigger_in_reg[3]~feeder_combout  = ( \data_mem_inst|RAM[10][2]~q  )
+// \auto_signaltap_0|acq_trigger_in_reg[3]~feeder_combout  = ( \data_mem_inst|RAM[2][2]~q  )
 
 	.dataa(gnd),
 	.datab(gnd),
 	.datac(gnd),
 	.datad(gnd),
 	.datae(gnd),
-	.dataf(!\data_mem_inst|RAM[10][2]~q ),
+	.dataf(!\data_mem_inst|RAM[2][2]~q ),
 	.datag(gnd),
 	.cin(gnd),
 	.sharein(gnd),
@@ -16718,14 +16718,14 @@ defparam \auto_signaltap_0|sld_signaltap_body|sld_signaltap_body|ela_control|bui
 // Location: LABCELL_X7_Y2_N27
 cyclonev_lcell_comb \auto_signaltap_0|acq_trigger_in_reg[4]~feeder (
 // Equation(s):
-// \auto_signaltap_0|acq_trigger_in_reg[4]~feeder_combout  = ( \data_mem_inst|RAM[10][3]~q  )
+// \auto_signaltap_0|acq_trigger_in_reg[4]~feeder_combout  = ( \data_mem_inst|RAM[2][3]~q  )
 
 	.dataa(gnd),
 	.datab(gnd),
 	.datac(gnd),
 	.datad(gnd),
 	.datae(gnd),
-	.dataf(!\data_mem_inst|RAM[10][3]~q ),
+	.dataf(!\data_mem_inst|RAM[2][3]~q ),
 	.datag(gnd),
 	.cin(gnd),
 	.sharein(gnd),
@@ -20461,7 +20461,7 @@ defparam \auto_signaltap_0|sld_signaltap_body|sld_signaltap_body|stp_non_zero_de
 dffeas \auto_signaltap_0|acq_data_in_reg[1] (
 	.clk(\clk~inputCLKENA0_outclk ),
 	.d(gnd),
-	.asdata(\data_mem_inst|RAM[10][0]~q ),
+	.asdata(\data_mem_inst|RAM[2][0]~q ),
 	.clrn(vcc),
 	.aload(gnd),
 	.sclr(gnd),
@@ -20618,14 +20618,14 @@ defparam \auto_signaltap_0|sld_signaltap_body|sld_signaltap_body|acq_data_in_pip
 // Location: LABCELL_X7_Y3_N33
 cyclonev_lcell_comb \auto_signaltap_0|acq_data_in_reg[2]~feeder (
 // Equation(s):
-// \auto_signaltap_0|acq_data_in_reg[2]~feeder_combout  = ( \data_mem_inst|RAM[10][1]~q  )
+// \auto_signaltap_0|acq_data_in_reg[2]~feeder_combout  = ( \data_mem_inst|RAM[2][1]~q  )
 
 	.dataa(gnd),
 	.datab(gnd),
 	.datac(gnd),
 	.datad(gnd),
 	.datae(gnd),
-	.dataf(!\data_mem_inst|RAM[10][1]~q ),
+	.dataf(!\data_mem_inst|RAM[2][1]~q ),
 	.datag(gnd),
 	.cin(gnd),
 	.sharein(gnd),
@@ -20779,14 +20779,14 @@ defparam \auto_signaltap_0|sld_signaltap_body|sld_signaltap_body|acq_data_in_pip
 // Location: MLABCELL_X21_Y2_N48
 cyclonev_lcell_comb \auto_signaltap_0|acq_data_in_reg[3]~feeder (
 // Equation(s):
-// \auto_signaltap_0|acq_data_in_reg[3]~feeder_combout  = ( \data_mem_inst|RAM[10][2]~q  )
+// \auto_signaltap_0|acq_data_in_reg[3]~feeder_combout  = ( \data_mem_inst|RAM[2][2]~q  )
 
 	.dataa(gnd),
 	.datab(gnd),
 	.datac(gnd),
 	.datad(gnd),
 	.datae(gnd),
-	.dataf(!\data_mem_inst|RAM[10][2]~q ),
+	.dataf(!\data_mem_inst|RAM[2][2]~q ),
 	.datag(gnd),
 	.cin(gnd),
 	.sharein(gnd),
@@ -20962,7 +20962,7 @@ defparam \auto_signaltap_0|sld_signaltap_body|sld_signaltap_body|acq_data_in_pip
 dffeas \auto_signaltap_0|acq_data_in_reg[4] (
 	.clk(\clk~inputCLKENA0_outclk ),
 	.d(gnd),
-	.asdata(\data_mem_inst|RAM[10][3]~q ),
+	.asdata(\data_mem_inst|RAM[2][3]~q ),
 	.clrn(vcc),
 	.aload(gnd),
 	.sclr(gnd),
@@ -21077,11 +21077,11 @@ defparam \auto_signaltap_0|sld_signaltap_body|sld_signaltap_body|acq_data_in_pip
 // Location: LABCELL_X7_Y3_N51
 cyclonev_lcell_comb \auto_signaltap_0|acq_data_in_reg[5]~feeder (
 // Equation(s):
-// \auto_signaltap_0|acq_data_in_reg[5]~feeder_combout  = \data_mem_inst|RAM[10][4]~q 
+// \auto_signaltap_0|acq_data_in_reg[5]~feeder_combout  = \data_mem_inst|RAM[2][4]~q 
 
 	.dataa(gnd),
 	.datab(gnd),
-	.datac(!\data_mem_inst|RAM[10][4]~q ),
+	.datac(!\data_mem_inst|RAM[2][4]~q ),
 	.datad(gnd),
 	.datae(gnd),
 	.dataf(gnd),
@@ -21259,14 +21259,14 @@ defparam \auto_signaltap_0|sld_signaltap_body|sld_signaltap_body|acq_data_in_pip
 // Location: LABCELL_X9_Y4_N39
 cyclonev_lcell_comb \auto_signaltap_0|acq_data_in_reg[6]~feeder (
 // Equation(s):
-// \auto_signaltap_0|acq_data_in_reg[6]~feeder_combout  = ( \data_mem_inst|RAM[10][5]~q  )
+// \auto_signaltap_0|acq_data_in_reg[6]~feeder_combout  = ( \data_mem_inst|RAM[2][5]~q  )
 
 	.dataa(gnd),
 	.datab(gnd),
 	.datac(gnd),
 	.datad(gnd),
 	.datae(gnd),
-	.dataf(!\data_mem_inst|RAM[10][5]~q ),
+	.dataf(!\data_mem_inst|RAM[2][5]~q ),
 	.datag(gnd),
 	.cin(gnd),
 	.sharein(gnd),
@@ -21400,7 +21400,7 @@ defparam \auto_signaltap_0|sld_signaltap_body|sld_signaltap_body|acq_data_in_pip
 dffeas \auto_signaltap_0|acq_data_in_reg[7] (
 	.clk(\clk~inputCLKENA0_outclk ),
 	.d(gnd),
-	.asdata(\data_mem_inst|RAM[10][6]~q ),
+	.asdata(\data_mem_inst|RAM[2][6]~q ),
 	.clrn(vcc),
 	.aload(gnd),
 	.sclr(gnd),
@@ -21557,14 +21557,14 @@ defparam \auto_signaltap_0|sld_signaltap_body|sld_signaltap_body|acq_data_in_pip
 // Location: MLABCELL_X15_Y2_N24
 cyclonev_lcell_comb \auto_signaltap_0|acq_data_in_reg[8]~feeder (
 // Equation(s):
-// \auto_signaltap_0|acq_data_in_reg[8]~feeder_combout  = ( \data_mem_inst|RAM[10][7]~q  )
+// \auto_signaltap_0|acq_data_in_reg[8]~feeder_combout  = ( \data_mem_inst|RAM[2][7]~q  )
 
 	.dataa(gnd),
 	.datab(gnd),
 	.datac(gnd),
 	.datad(gnd),
 	.datae(gnd),
-	.dataf(!\data_mem_inst|RAM[10][7]~q ),
+	.dataf(!\data_mem_inst|RAM[2][7]~q ),
 	.datag(gnd),
 	.cin(gnd),
 	.sharein(gnd),
