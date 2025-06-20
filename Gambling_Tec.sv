@@ -52,7 +52,10 @@ Vga_Controller #(.N(8)) vga_control(
 	.G(G),
 	.B(B),
 	.stop(stop),
-	.Money(plata_entrada)
+	.Money(plata_entrada),
+	.state1(plata_entrada[9:8]), 
+	.state2(plata_entrada[8:7]), 
+	.state3(plata_entrada[6:5])
 
 );
 
@@ -83,7 +86,9 @@ Vga_Controller #(.N(8)) vga_control(
 		 .ps2_clk(PS2_CLK), 
 		 .ps2_data(DATA_PS2), 
        .WriteEn(key_ready),
-       .Code_Key(key_code) 
+       .Code_Key(key_code),
+		 .rst(rst)
+	
          
 	 );
 
@@ -91,7 +96,7 @@ Vga_Controller #(.N(8)) vga_control(
 
 
 CPU process(
-        .clk(clk), 
+        .clk(clk25), 
         .rst(rst),
         .Instr(instr),        
         .ReadData(read_data),

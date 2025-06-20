@@ -160,10 +160,6 @@
 					"strict" : false
 				},
 				{
-					"name" : "stop",
-					"strict" : false
-				},
-				{
 					"name" : "PS2_CLK",
 					"strict" : false
 				},

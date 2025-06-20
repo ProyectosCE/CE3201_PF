@@ -18,7 +18,8 @@ module Vga_Controller #(parameter N=8,
 	 output logic VGA_Blank, VGA_Sync_N,
 	 output logic [9:0] Q_X, Q_Y,
 	 output logic [7:0]  R, G, B,
-	 input logic [9:0] Money
+	 input logic [9:0] Money,
+	 input logic [1:0] state1, state2, state3
 
 	 
 );	 
@@ -359,7 +360,7 @@ assign slot_active = slot_active_row0 | slot_active_row1 | slot_active_row2;
 // Fila 0 (Y = 210 a 270)
 
 
-logic [1:0] state1, state2, state3;
+
 logic clk_div;
 
 clk_div clkdiv(
@@ -371,13 +372,6 @@ clk_div clkdiv(
 
 
 
-Counter #(.N(2)) conut(
-    .clk(clk_div),
-    .rst(rst),
-    .en(Q_Y == 9'd1 & ~stop),
-    .mode(1'b1),                
-    .Q(state1)
-);
 
 
 

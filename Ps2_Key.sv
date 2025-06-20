@@ -1,8 +1,18 @@
 module Ps2_Key(
- input clk, ps2_clk, ps2_data,
+ input clk, ps2_clk, ps2_data, rst,
  output logic WriteEn,
  output logic [7:0] Code_Key
+
 );
+
+
+
+
+
+
+
+
+
 
 logic [7:0] KEY_ENTER     = 8'h5A; // Enter
 logic [7:0] KEY_SPACE     = 8'h29; // Espacio
@@ -144,30 +154,27 @@ end
   end
  end
  
- //leds control 
- always @(posedge clk)begin 
 
-  if(key_press)begin
-   WriteEn = 1'b1;
-   holding = 1'b1;
-  end
-  
-  if(holding)begin
-   holding_counter = holding_counter + 1'b1;
-  end
-  
-  if(holding_counter > 10000)begin
-   WriteEn = 1'b0;
+ 
+logic debounced_write;
 
-   holding = 1'b0;
-   holding_counter = 30'b0;
-  end
-  
-  
- end
+debounce #(.N(10000)) db (
+    .clk(clk),
+    .rst(rst),        // o 0 si no tenés rst externo
+    .ent(~key_press), // el debounce es activo bajo
+    .out(debounced_write)
+);
+
+assign WriteEn = debounced_write;
+
+ 
+ 
+ 
+ 
+ 
  
 
-
+ 
 assign Code_Key = key_code;
 
 endmodule
