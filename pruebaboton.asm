@@ -22,17 +22,10 @@ Sumar10:
         ADD     R1, R1, #0x01       
         STR     R1, [R0]          
 
-        // Limpia la tecla
         SUB     R0, R0, R0        
         ADD     R0, R0, #0x0A
         SUB     R3, R3, R3
         STR     R3, [R0]
-
-        // Delay
-        MOV     R4, #0x3000
-DelayLoop1:
-        SUBS    R4, R4, #1
-        BNE     DelayLoop1
 
         B       Loop              
 
@@ -43,17 +36,10 @@ Restar10:
         SUB     R1, R1, #0x01       
         STR     R1, [R0]          
 
-        // Limpia la tecla
         SUB     R0, R0, R0        
         ADD     R0, R0, #0x0A
         SUB     R3, R3, R3
         STR     R3, [R0]
-
-        // Delay
-        MOV     R4, #0x3000
-DelayLoop2:
-        SUBS    R4, R4, #1
-        BNE     DelayLoop2
 
         B       Loop              
 
@@ -65,11 +51,5 @@ SetZero:
         ADD     R0, R0, #0x0A
         SUB     R3, R3, R3
         STR     R3, [R0]
-
-        // Delay
-        MOV     R4, #0x3000
-DelayLoop3:
-        SUBS    R4, R4, #1
-        BNE     DelayLoop3
 
         B       Loop
