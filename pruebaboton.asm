@@ -1,6 +1,7 @@
 Loop:
         SUB     R0, R0, R0        
-        ADD     R0, R0, #0x0A     
+        ADD     R0, R0, #0x0A
+        SUB     R1, R1, R1     
         LDR     R1, [R0]          
 
         SUB     R2, R2, R2        
@@ -69,6 +70,7 @@ GenSym:
 
         CMP     R5, R6
         BEQ     SaveSym
+
         B       GenSym
 
 ResetSym:
@@ -77,6 +79,22 @@ ResetSym:
         B       GenSym
 SaveSym:
         STR     R3, [R0]
+
+        
+        B       Restar10
+
+AddMoney:
+        SUB     R0, R0, R0
+        ADD     R0, R0, #0x14
+        SUB     R1, R1, R1
+        LDR     R1, [R0]
+        ADD     R1, R1, #0x0A
+        STR     R1, [R0]
+
+        SUB     R0, R0, R0        
+        ADD     R0, R0, #0x0A
+        STR     R3, [R0]
+
         SUB     R0, R0, R0
         SUB     R1, R1, R1
         SUB     R2, R2, R2
@@ -84,4 +102,27 @@ SaveSym:
         SUB     R4, R4, R4
         SUB     R5, R5, R5
         SUB     R6, R6, R6
+
+        B       Loop     
+
+SubMoney:
+        SUB     R0, R0, R0
+        ADD     R0, R0, #0x14
+        SUB     R1, R1, R1
+        LDR     R1, [R0]
+        SUB     R1, R1, #0x0A
+        STR     R1, [R0]
+
+        SUB     R0, R0, R0        
+        ADD     R0, R0, #0x0A
+        STR     R3, [R0]
+
+        SUB     R0, R0, R0
+        SUB     R1, R1, R1
+        SUB     R2, R2, R2
+        SUB     R3, R3, R3
+        SUB     R4, R4, R4
+        SUB     R5, R5, R5
+        SUB     R6, R6, R6
+
         B       Loop
