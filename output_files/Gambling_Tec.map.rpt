@@ -1,5 +1,5 @@
 Analysis & Synthesis report for Gambling_Tec
-Thu Jun 19 18:55:46 2025
+Thu Jun 19 20:24:55 2025
 Quartus Prime Version 18.1.0 Build 625 09/12/2018 SJ Lite Edition
 
 
@@ -219,13 +219,13 @@ refer to the applicable agreement for further details.
 +-------------------------------------------------------------------------------+
 ; Analysis & Synthesis Summary                                                  ;
 +---------------------------------+---------------------------------------------+
-; Analysis & Synthesis Status     ; Successful - Thu Jun 19 18:55:46 2025       ;
+; Analysis & Synthesis Status     ; Successful - Thu Jun 19 20:24:54 2025       ;
 ; Quartus Prime Version           ; 18.1.0 Build 625 09/12/2018 SJ Lite Edition ;
 ; Revision Name                   ; Gambling_Tec                                ;
 ; Top-level Entity Name           ; Gambling_Tec                                ;
 ; Family                          ; Cyclone V                                   ;
 ; Logic utilization (in ALMs)     ; N/A                                         ;
-; Total registers                 ; 2947                                        ;
+; Total registers                 ; 3205                                        ;
 ; Total pins                      ; 75                                          ;
 ; Total virtual pins              ; 0                                           ;
 ; Total block memory bits         ; 1,408                                       ;
@@ -464,16 +464,16 @@ refer to the applicable agreement for further details.
 +---------------------------------------------+-------------+
 ; Resource                                    ; Usage       ;
 +---------------------------------------------+-------------+
-; Estimate of Logic utilization (ALMs needed) ; 2481        ;
+; Estimate of Logic utilization (ALMs needed) ; 2640        ;
 ;                                             ;             ;
-; Combinational ALUT usage for logic          ; 3265        ;
+; Combinational ALUT usage for logic          ; 3418        ;
 ;     -- 7 input functions                    ; 30          ;
-;     -- 6 input functions                    ; 1135        ;
-;     -- 5 input functions                    ; 348         ;
-;     -- 4 input functions                    ; 328         ;
-;     -- <=3 input functions                  ; 1424        ;
+;     -- 6 input functions                    ; 1233        ;
+;     -- 5 input functions                    ; 372         ;
+;     -- 4 input functions                    ; 330         ;
+;     -- <=3 input functions                  ; 1453        ;
 ;                                             ;             ;
-; Dedicated logic registers                   ; 2947        ;
+; Dedicated logic registers                   ; 3205        ;
 ;                                             ;             ;
 ; I/O pins                                    ; 75          ;
 ; Total MLAB memory bits                      ; 0           ;
@@ -482,9 +482,9 @@ refer to the applicable agreement for further details.
 ; Total DSP Blocks                            ; 0           ;
 ;                                             ;             ;
 ; Maximum fan-out node                        ; rstin~input ;
-; Maximum fan-out                             ; 2400        ;
-; Total fan-out                               ; 25310       ;
-; Average fan-out                             ; 3.97        ;
+; Maximum fan-out                             ; 2665        ;
+; Total fan-out                               ; 27143       ;
+; Average fan-out                             ; 4.00        ;
 +---------------------------------------------+-------------+
 
 
@@ -493,28 +493,30 @@ refer to the applicable agreement for further details.
 +-----------------------------------------------------------------------------------------------------------------------------------------+---------------------+---------------------------+-------------------+------------+------+--------------+----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+-----------------------------------+--------------+
 ; Compilation Hierarchy Node                                                                                                              ; Combinational ALUTs ; Dedicated Logic Registers ; Block Memory Bits ; DSP Blocks ; Pins ; Virtual Pins ; Full Hierarchy Name                                                                                                                                                                                                                                                                                                                                      ; Entity Name                       ; Library Name ;
 +-----------------------------------------------------------------------------------------------------------------------------------------+---------------------+---------------------------+-------------------+------------+------+--------------+----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+-----------------------------------+--------------+
-; |Gambling_Tec                                                                                                                           ; 3265 (0)            ; 2947 (0)                  ; 1408              ; 0          ; 75   ; 0            ; |Gambling_Tec                                                                                                                                                                                                                                                                                                                                            ; Gambling_Tec                      ; work         ;
-;    |CPU:process|                                                                                                                        ; 1162 (0)            ; 258 (1)                   ; 0                 ; 0          ; 0    ; 0            ; |Gambling_Tec|CPU:process                                                                                                                                                                                                                                                                                                                                ; CPU                               ; work         ;
-;       |ALU:ALU_inst|                                                                                                                    ; 97 (97)             ; 0 (0)                     ; 0                 ; 0          ; 0    ; 0            ; |Gambling_Tec|CPU:process|ALU:ALU_inst                                                                                                                                                                                                                                                                                                                   ; ALU                               ; work         ;
+; |Gambling_Tec                                                                                                                           ; 3418 (0)            ; 3205 (0)                  ; 1408              ; 0          ; 75   ; 0            ; |Gambling_Tec                                                                                                                                                                                                                                                                                                                                            ; Gambling_Tec                      ; work         ;
+;    |CPU:process|                                                                                                                        ; 1311 (0)            ; 516 (1)                   ; 0                 ; 0          ; 0    ; 0            ; |Gambling_Tec|CPU:process                                                                                                                                                                                                                                                                                                                                ; CPU                               ; work         ;
+;       |ALU:ALU_inst|                                                                                                                    ; 116 (116)           ; 0 (0)                     ; 0                 ; 0          ; 0    ; 0            ; |Gambling_Tec|CPU:process|ALU:ALU_inst                                                                                                                                                                                                                                                                                                                   ; ALU                               ; work         ;
 ;       |Adder:PCPlus4_inst|                                                                                                              ; 30 (30)             ; 0 (0)                     ; 0                 ; 0          ; 0    ; 0            ; |Gambling_Tec|CPU:process|Adder:PCPlus4_inst                                                                                                                                                                                                                                                                                                             ; Adder                             ; work         ;
 ;       |Adder:PCPlus8_inst|                                                                                                              ; 29 (29)             ; 0 (0)                     ; 0                 ; 0          ; 0    ; 0            ; |Gambling_Tec|CPU:process|Adder:PCPlus8_inst                                                                                                                                                                                                                                                                                                             ; Adder                             ; work         ;
-;       |Control_Unit:CU_Inst|                                                                                                            ; 28 (2)              ; 1 (0)                     ; 0                 ; 0          ; 0    ; 0            ; |Gambling_Tec|CPU:process|Control_Unit:CU_Inst                                                                                                                                                                                                                                                                                                           ; Control_Unit                      ; work         ;
-;          |Condition_Check:inst_Condition_Check|                                                                                         ; 1 (1)               ; 0 (0)                     ; 0                 ; 0          ; 0    ; 0            ; |Gambling_Tec|CPU:process|Control_Unit:CU_Inst|Condition_Check:inst_Condition_Check                                                                                                                                                                                                                                                                      ; Condition_Check                   ; work         ;
+;       |Control_Unit:CU_Inst|                                                                                                            ; 19 (7)              ; 3 (0)                     ; 0                 ; 0          ; 0    ; 0            ; |Gambling_Tec|CPU:process|Control_Unit:CU_Inst                                                                                                                                                                                                                                                                                                           ; Control_Unit                      ; work         ;
+;          |Condition_Check:inst_Condition_Check|                                                                                         ; 4 (4)               ; 0 (0)                     ; 0                 ; 0          ; 0    ; 0            ; |Gambling_Tec|CPU:process|Control_Unit:CU_Inst|Condition_Check:inst_Condition_Check                                                                                                                                                                                                                                                                      ; Condition_Check                   ; work         ;
 ;          |Decoder:decoder_inst|                                                                                                         ; 8 (0)               ; 0 (0)                     ; 0                 ; 0          ; 0    ; 0            ; |Gambling_Tec|CPU:process|Control_Unit:CU_Inst|Decoder:decoder_inst                                                                                                                                                                                                                                                                                      ; Decoder                           ; work         ;
-;             |ALU_Decoder:alu_decoder_inst|                                                                                              ; 5 (5)               ; 0 (0)                     ; 0                 ; 0          ; 0    ; 0            ; |Gambling_Tec|CPU:process|Control_Unit:CU_Inst|Decoder:decoder_inst|ALU_Decoder:alu_decoder_inst                                                                                                                                                                                                                                                         ; ALU_Decoder                       ; work         ;
-;             |Main_Decoder:main_decoder_inst|                                                                                            ; 3 (3)               ; 0 (0)                     ; 0                 ; 0          ; 0    ; 0            ; |Gambling_Tec|CPU:process|Control_Unit:CU_Inst|Decoder:decoder_inst|Main_Decoder:main_decoder_inst                                                                                                                                                                                                                                                       ; Main_Decoder                      ; work         ;
-;          |Register:Register_Flag2|                                                                                                      ; 17 (17)             ; 1 (1)                     ; 0                 ; 0          ; 0    ; 0            ; |Gambling_Tec|CPU:process|Control_Unit:CU_Inst|Register:Register_Flag2                                                                                                                                                                                                                                                                                   ; Register                          ; work         ;
-;       |Mux:ALUSrc_inst|                                                                                                                 ; 50 (50)             ; 0 (0)                     ; 0                 ; 0          ; 0    ; 0            ; |Gambling_Tec|CPU:process|Mux:ALUSrc_inst                                                                                                                                                                                                                                                                                                                ; Mux                               ; work         ;
-;       |Mux:MemToReg_inst|                                                                                                               ; 703 (703)           ; 0 (0)                     ; 0                 ; 0          ; 0    ; 0            ; |Gambling_Tec|CPU:process|Mux:MemToReg_inst                                                                                                                                                                                                                                                                                                              ; Mux                               ; work         ;
+;             |ALU_Decoder:alu_decoder_inst|                                                                                              ; 2 (2)               ; 0 (0)                     ; 0                 ; 0          ; 0    ; 0            ; |Gambling_Tec|CPU:process|Control_Unit:CU_Inst|Decoder:decoder_inst|ALU_Decoder:alu_decoder_inst                                                                                                                                                                                                                                                         ; ALU_Decoder                       ; work         ;
+;             |Main_Decoder:main_decoder_inst|                                                                                            ; 6 (6)               ; 0 (0)                     ; 0                 ; 0          ; 0    ; 0            ; |Gambling_Tec|CPU:process|Control_Unit:CU_Inst|Decoder:decoder_inst|Main_Decoder:main_decoder_inst                                                                                                                                                                                                                                                       ; Main_Decoder                      ; work         ;
+;          |Register:Register_Flag1|                                                                                                      ; 0 (0)               ; 1 (1)                     ; 0                 ; 0          ; 0    ; 0            ; |Gambling_Tec|CPU:process|Control_Unit:CU_Inst|Register:Register_Flag1                                                                                                                                                                                                                                                                                   ; Register                          ; work         ;
+;          |Register:Register_Flag2|                                                                                                      ; 0 (0)               ; 2 (2)                     ; 0                 ; 0          ; 0    ; 0            ; |Gambling_Tec|CPU:process|Control_Unit:CU_Inst|Register:Register_Flag2                                                                                                                                                                                                                                                                                   ; Register                          ; work         ;
+;       |Extender:Extender_ins|                                                                                                           ; 1 (1)               ; 0 (0)                     ; 0                 ; 0          ; 0    ; 0            ; |Gambling_Tec|CPU:process|Extender:Extender_ins                                                                                                                                                                                                                                                                                                          ; Extender                          ; work         ;
+;       |Mux:ALUSrc_inst|                                                                                                                 ; 30 (30)             ; 0 (0)                     ; 0                 ; 0          ; 0    ; 0            ; |Gambling_Tec|CPU:process|Mux:ALUSrc_inst                                                                                                                                                                                                                                                                                                                ; Mux                               ; work         ;
+;       |Mux:MemToReg_inst|                                                                                                               ; 702 (702)           ; 0 (0)                     ; 0                 ; 0          ; 0    ; 0            ; |Gambling_Tec|CPU:process|Mux:MemToReg_inst                                                                                                                                                                                                                                                                                                              ; Mux                               ; work         ;
 ;       |Mux:RA1_inst|                                                                                                                    ; 2 (2)               ; 0 (0)                     ; 0                 ; 0          ; 0    ; 0            ; |Gambling_Tec|CPU:process|Mux:RA1_inst                                                                                                                                                                                                                                                                                                                   ; Mux                               ; work         ;
-;       |Mux:RA2_inst|                                                                                                                    ; 5 (5)               ; 0 (0)                     ; 0                 ; 0          ; 0    ; 0            ; |Gambling_Tec|CPU:process|Mux:RA2_inst                                                                                                                                                                                                                                                                                                                   ; Mux                               ; work         ;
+;       |Mux:RA2_inst|                                                                                                                    ; 3 (3)               ; 0 (0)                     ; 0                 ; 0          ; 0    ; 0            ; |Gambling_Tec|CPU:process|Mux:RA2_inst                                                                                                                                                                                                                                                                                                                   ; Mux                               ; work         ;
 ;       |Register:PC_Register|                                                                                                            ; 1 (1)               ; 32 (32)                   ; 0                 ; 0          ; 0    ; 0            ; |Gambling_Tec|CPU:process|Register:PC_Register                                                                                                                                                                                                                                                                                                           ; Register                          ; work         ;
-;       |Register_File:Reg_file_inst|                                                                                                     ; 217 (217)           ; 224 (224)                 ; 0                 ; 0          ; 0    ; 0            ; |Gambling_Tec|CPU:process|Register_File:Reg_file_inst                                                                                                                                                                                                                                                                                                    ; Register_File                     ; work         ;
-;    |Data_Memory:data_mem_inst|                                                                                                          ; 92 (92)             ; 2048 (2048)               ; 0                 ; 0          ; 0    ; 0            ; |Gambling_Tec|Data_Memory:data_mem_inst                                                                                                                                                                                                                                                                                                                  ; Data_Memory                       ; work         ;
+;       |Register_File:Reg_file_inst|                                                                                                     ; 378 (378)           ; 480 (480)                 ; 0                 ; 0          ; 0    ; 0            ; |Gambling_Tec|CPU:process|Register_File:Reg_file_inst                                                                                                                                                                                                                                                                                                    ; Register_File                     ; work         ;
+;    |Data_Memory:data_mem_inst|                                                                                                          ; 86 (86)             ; 2048 (2048)               ; 0                 ; 0          ; 0    ; 0            ; |Gambling_Tec|Data_Memory:data_mem_inst                                                                                                                                                                                                                                                                                                                  ; Data_Memory                       ; work         ;
 ;    |Ps2_Key:ps2_inst|                                                                                                                   ; 125 (97)            ; 106 (83)                  ; 0                 ; 0          ; 0    ; 0            ; |Gambling_Tec|Ps2_Key:ps2_inst                                                                                                                                                                                                                                                                                                                           ; Ps2_Key                           ; work         ;
 ;       |debounce:db|                                                                                                                     ; 28 (28)             ; 23 (23)                   ; 0                 ; 0          ; 0    ; 0            ; |Gambling_Tec|Ps2_Key:ps2_inst|debounce:db                                                                                                                                                                                                                                                                                                               ; debounce                          ; work         ;
-;    |ROM:rom0|                                                                                                                           ; 19 (19)             ; 0 (0)                     ; 0                 ; 0          ; 0    ; 0            ; |Gambling_Tec|ROM:rom0                                                                                                                                                                                                                                                                                                                                   ; ROM                               ; work         ;
-;    |Vga_Controller:vga_control|                                                                                                         ; 1555 (158)          ; 40 (0)                    ; 0                 ; 0          ; 0    ; 0            ; |Gambling_Tec|Vga_Controller:vga_control                                                                                                                                                                                                                                                                                                                 ; Vga_Controller                    ; work         ;
+;    |ROM:rom0|                                                                                                                           ; 18 (18)             ; 0 (0)                     ; 0                 ; 0          ; 0    ; 0            ; |Gambling_Tec|ROM:rom0                                                                                                                                                                                                                                                                                                                                   ; ROM                               ; work         ;
+;    |Vga_Controller:vga_control|                                                                                                         ; 1566 (156)          ; 40 (0)                    ; 0                 ; 0          ; 0    ; 0            ; |Gambling_Tec|Vga_Controller:vga_control                                                                                                                                                                                                                                                                                                                 ; Vga_Controller                    ; work         ;
 ;       |Button:Btn1|                                                                                                                     ; 11 (0)              ; 0 (0)                     ; 0                 ; 0          ; 0    ; 0            ; |Gambling_Tec|Vga_Controller:vga_control|Button:Btn1                                                                                                                                                                                                                                                                                                     ; Button                            ; work         ;
 ;          |Square_Area:Cua_Btn_sombra|                                                                                                   ; 8 (8)               ; 0 (0)                     ; 0                 ; 0          ; 0    ; 0            ; |Gambling_Tec|Vga_Controller:vga_control|Button:Btn1|Square_Area:Cua_Btn_sombra                                                                                                                                                                                                                                                                          ; Square_Area                       ; work         ;
 ;          |Square_Area:Cua_Btn|                                                                                                          ; 3 (3)               ; 0 (0)                     ; 0                 ; 0          ; 0    ; 0            ; |Gambling_Tec|Vga_Controller:vga_control|Button:Btn1|Square_Area:Cua_Btn                                                                                                                                                                                                                                                                                 ; Square_Area                       ; work         ;
@@ -523,12 +525,12 @@ refer to the applicable agreement for further details.
 ;       |Button:Btn3|                                                                                                                     ; 3 (0)               ; 0 (0)                     ; 0                 ; 0          ; 0    ; 0            ; |Gambling_Tec|Vga_Controller:vga_control|Button:Btn3                                                                                                                                                                                                                                                                                                     ; Button                            ; work         ;
 ;          |Square_Area:Cua_Btn_sombra|                                                                                                   ; 2 (2)               ; 0 (0)                     ; 0                 ; 0          ; 0    ; 0            ; |Gambling_Tec|Vga_Controller:vga_control|Button:Btn3|Square_Area:Cua_Btn_sombra                                                                                                                                                                                                                                                                          ; Square_Area                       ; work         ;
 ;          |Square_Area:Cua_Btn|                                                                                                          ; 1 (1)               ; 0 (0)                     ; 0                 ; 0          ; 0    ; 0            ; |Gambling_Tec|Vga_Controller:vga_control|Button:Btn3|Square_Area:Cua_Btn                                                                                                                                                                                                                                                                                 ; Square_Area                       ; work         ;
-;       |Column:c1|                                                                                                                       ; 44 (0)              ; 0 (0)                     ; 0                 ; 0          ; 0    ; 0            ; |Gambling_Tec|Vga_Controller:vga_control|Column:c1                                                                                                                                                                                                                                                                                                       ; Column                            ; work         ;
+;       |Column:c1|                                                                                                                       ; 45 (0)              ; 0 (0)                     ; 0                 ; 0          ; 0    ; 0            ; |Gambling_Tec|Vga_Controller:vga_control|Column:c1                                                                                                                                                                                                                                                                                                       ; Column                            ; work         ;
 ;          |Square_Area:cua_D2|                                                                                                           ; 12 (12)             ; 0 (0)                     ; 0                 ; 0          ; 0    ; 0            ; |Gambling_Tec|Vga_Controller:vga_control|Column:c1|Square_Area:cua_D2                                                                                                                                                                                                                                                                                    ; Square_Area                       ; work         ;
 ;          |Square_Area:cua_D3|                                                                                                           ; 6 (6)               ; 0 (0)                     ; 0                 ; 0          ; 0    ; 0            ; |Gambling_Tec|Vga_Controller:vga_control|Column:c1|Square_Area:cua_D3                                                                                                                                                                                                                                                                                    ; Square_Area                       ; work         ;
 ;          |Square_Area:cua_D4|                                                                                                           ; 4 (4)               ; 0 (0)                     ; 0                 ; 0          ; 0    ; 0            ; |Gambling_Tec|Vga_Controller:vga_control|Column:c1|Square_Area:cua_D4                                                                                                                                                                                                                                                                                    ; Square_Area                       ; work         ;
 ;          |Square_Area:cua_D|                                                                                                            ; 7 (7)               ; 0 (0)                     ; 0                 ; 0          ; 0    ; 0            ; |Gambling_Tec|Vga_Controller:vga_control|Column:c1|Square_Area:cua_D                                                                                                                                                                                                                                                                                     ; Square_Area                       ; work         ;
-;          |Square_Area:sombra|                                                                                                           ; 15 (15)             ; 0 (0)                     ; 0                 ; 0          ; 0    ; 0            ; |Gambling_Tec|Vga_Controller:vga_control|Column:c1|Square_Area:sombra                                                                                                                                                                                                                                                                                    ; Square_Area                       ; work         ;
+;          |Square_Area:sombra|                                                                                                           ; 16 (16)             ; 0 (0)                     ; 0                 ; 0          ; 0    ; 0            ; |Gambling_Tec|Vga_Controller:vga_control|Column:c1|Square_Area:sombra                                                                                                                                                                                                                                                                                    ; Square_Area                       ; work         ;
 ;       |Column:c2|                                                                                                                       ; 15 (0)              ; 0 (0)                     ; 0                 ; 0          ; 0    ; 0            ; |Gambling_Tec|Vga_Controller:vga_control|Column:c2                                                                                                                                                                                                                                                                                                       ; Column                            ; work         ;
 ;          |Square_Area:cua_D2|                                                                                                           ; 4 (4)               ; 0 (0)                     ; 0                 ; 0          ; 0    ; 0            ; |Gambling_Tec|Vga_Controller:vga_control|Column:c2|Square_Area:cua_D2                                                                                                                                                                                                                                                                                    ; Square_Area                       ; work         ;
 ;          |Square_Area:cua_D3|                                                                                                           ; 7 (7)               ; 0 (0)                     ; 0                 ; 0          ; 0    ; 0            ; |Gambling_Tec|Vga_Controller:vga_control|Column:c2|Square_Area:cua_D3                                                                                                                                                                                                                                                                                    ; Square_Area                       ; work         ;
@@ -582,7 +584,7 @@ refer to the applicable agreement for further details.
 ;                |sign_div_unsign_qlh:divider|                                                                                            ; 129 (0)             ; 0 (0)                     ; 0                 ; 0          ; 0    ; 0            ; |Gambling_Tec|Vga_Controller:vga_control|Draw_WIN:Winnig|lpm_divide:Div2|lpm_divide_kbm:auto_generated|sign_div_unsign_qlh:divider                                                                                                                                                                                                                       ; sign_div_unsign_qlh               ; work         ;
 ;                   |alt_u_div_qve:divider|                                                                                               ; 129 (129)           ; 0 (0)                     ; 0                 ; 0          ; 0    ; 0            ; |Gambling_Tec|Vga_Controller:vga_control|Draw_WIN:Winnig|lpm_divide:Div2|lpm_divide_kbm:auto_generated|sign_div_unsign_qlh:divider|alt_u_div_qve:divider                                                                                                                                                                                                 ; alt_u_div_qve                     ; work         ;
 ;       |Draw_X:ex|                                                                                                                       ; 9 (9)               ; 0 (0)                     ; 0                 ; 0          ; 0    ; 0            ; |Gambling_Tec|Vga_Controller:vga_control|Draw_X:ex                                                                                                                                                                                                                                                                                                       ; Draw_X                            ; work         ;
-;       |Mux93:color_selector|                                                                                                            ; 24 (24)             ; 0 (0)                     ; 0                 ; 0          ; 0    ; 0            ; |Gambling_Tec|Vga_Controller:vga_control|Mux93:color_selector                                                                                                                                                                                                                                                                                            ; Mux93                             ; work         ;
+;       |Mux93:color_selector|                                                                                                            ; 37 (37)             ; 0 (0)                     ; 0                 ; 0          ; 0    ; 0            ; |Gambling_Tec|Vga_Controller:vga_control|Mux93:color_selector                                                                                                                                                                                                                                                                                            ; Mux93                             ; work         ;
 ;       |Panel:panel_izquierdo|                                                                                                           ; 33 (0)              ; 0 (0)                     ; 0                 ; 0          ; 0    ; 0            ; |Gambling_Tec|Vga_Controller:vga_control|Panel:panel_izquierdo                                                                                                                                                                                                                                                                                           ; Panel                             ; work         ;
 ;          |Square_Area:cua_D2|                                                                                                           ; 10 (10)             ; 0 (0)                     ; 0                 ; 0          ; 0    ; 0            ; |Gambling_Tec|Vga_Controller:vga_control|Panel:panel_izquierdo|Square_Area:cua_D2                                                                                                                                                                                                                                                                        ; Square_Area                       ; work         ;
 ;          |Square_Area:cua_D3|                                                                                                           ; 6 (6)               ; 0 (0)                     ; 0                 ; 0          ; 0    ; 0            ; |Gambling_Tec|Vga_Controller:vga_control|Panel:panel_izquierdo|Square_Area:cua_D3                                                                                                                                                                                                                                                                        ; Square_Area                       ; work         ;
@@ -602,22 +604,22 @@ refer to the applicable agreement for further details.
 ;          |Square_Area:segF|                                                                                                             ; 2 (2)               ; 0 (0)                     ; 0                 ; 0          ; 0    ; 0            ; |Gambling_Tec|Vga_Controller:vga_control|SevenSeg_Display:display_seg1|Square_Area:segF                                                                                                                                                                                                                                                                  ; Square_Area                       ; work         ;
 ;       |SevenSeg_Display:display_seg2|                                                                                                   ; 11 (10)             ; 0 (0)                     ; 0                 ; 0          ; 0    ; 0            ; |Gambling_Tec|Vga_Controller:vga_control|SevenSeg_Display:display_seg2                                                                                                                                                                                                                                                                                   ; SevenSeg_Display                  ; work         ;
 ;          |Square_Area:segC|                                                                                                             ; 1 (1)               ; 0 (0)                     ; 0                 ; 0          ; 0    ; 0            ; |Gambling_Tec|Vga_Controller:vga_control|SevenSeg_Display:display_seg2|Square_Area:segC                                                                                                                                                                                                                                                                  ; Square_Area                       ; work         ;
-;       |SevenSeg_Display:display_seg|                                                                                                    ; 24 (15)             ; 0 (0)                     ; 0                 ; 0          ; 0    ; 0            ; |Gambling_Tec|Vga_Controller:vga_control|SevenSeg_Display:display_seg                                                                                                                                                                                                                                                                                    ; SevenSeg_Display                  ; work         ;
+;       |SevenSeg_Display:display_seg|                                                                                                    ; 23 (14)             ; 0 (0)                     ; 0                 ; 0          ; 0    ; 0            ; |Gambling_Tec|Vga_Controller:vga_control|SevenSeg_Display:display_seg                                                                                                                                                                                                                                                                                    ; SevenSeg_Display                  ; work         ;
 ;          |Square_Area:segA|                                                                                                             ; 2 (2)               ; 0 (0)                     ; 0                 ; 0          ; 0    ; 0            ; |Gambling_Tec|Vga_Controller:vga_control|SevenSeg_Display:display_seg|Square_Area:segA                                                                                                                                                                                                                                                                   ; Square_Area                       ; work         ;
 ;          |Square_Area:segC|                                                                                                             ; 1 (1)               ; 0 (0)                     ; 0                 ; 0          ; 0    ; 0            ; |Gambling_Tec|Vga_Controller:vga_control|SevenSeg_Display:display_seg|Square_Area:segC                                                                                                                                                                                                                                                                   ; Square_Area                       ; work         ;
 ;          |Square_Area:segE|                                                                                                             ; 1 (1)               ; 0 (0)                     ; 0                 ; 0          ; 0    ; 0            ; |Gambling_Tec|Vga_Controller:vga_control|SevenSeg_Display:display_seg|Square_Area:segE                                                                                                                                                                                                                                                                   ; Square_Area                       ; work         ;
 ;          |Square_Area:segF|                                                                                                             ; 3 (3)               ; 0 (0)                     ; 0                 ; 0          ; 0    ; 0            ; |Gambling_Tec|Vga_Controller:vga_control|SevenSeg_Display:display_seg|Square_Area:segF                                                                                                                                                                                                                                                                   ; Square_Area                       ; work         ;
 ;          |Square_Area:segG|                                                                                                             ; 2 (2)               ; 0 (0)                     ; 0                 ; 0          ; 0    ; 0            ; |Gambling_Tec|Vga_Controller:vga_control|SevenSeg_Display:display_seg|Square_Area:segG                                                                                                                                                                                                                                                                   ; Square_Area                       ; work         ;
-;       |Symbol:slot_0_0|                                                                                                                 ; 17 (1)              ; 0 (0)                     ; 0                 ; 0          ; 0    ; 0            ; |Gambling_Tec|Vga_Controller:vga_control|Symbol:slot_0_0                                                                                                                                                                                                                                                                                                 ; Symbol                            ; work         ;
+;       |Symbol:slot_0_0|                                                                                                                 ; 18 (2)              ; 0 (0)                     ; 0                 ; 0          ; 0    ; 0            ; |Gambling_Tec|Vga_Controller:vga_control|Symbol:slot_0_0                                                                                                                                                                                                                                                                                                 ; Symbol                            ; work         ;
 ;          |Square_Area:form1|                                                                                                            ; 5 (5)               ; 0 (0)                     ; 0                 ; 0          ; 0    ; 0            ; |Gambling_Tec|Vga_Controller:vga_control|Symbol:slot_0_0|Square_Area:form1                                                                                                                                                                                                                                                                               ; Square_Area                       ; work         ;
 ;          |Square_Area:form2|                                                                                                            ; 6 (6)               ; 0 (0)                     ; 0                 ; 0          ; 0    ; 0            ; |Gambling_Tec|Vga_Controller:vga_control|Symbol:slot_0_0|Square_Area:form2                                                                                                                                                                                                                                                                               ; Square_Area                       ; work         ;
 ;          |Square_Area:form3|                                                                                                            ; 5 (5)               ; 0 (0)                     ; 0                 ; 0          ; 0    ; 0            ; |Gambling_Tec|Vga_Controller:vga_control|Symbol:slot_0_0|Square_Area:form3                                                                                                                                                                                                                                                                               ; Square_Area                       ; work         ;
-;       |Symbol:slot_0_1|                                                                                                                 ; 8 (2)               ; 0 (0)                     ; 0                 ; 0          ; 0    ; 0            ; |Gambling_Tec|Vga_Controller:vga_control|Symbol:slot_0_1                                                                                                                                                                                                                                                                                                 ; Symbol                            ; work         ;
+;       |Symbol:slot_0_1|                                                                                                                 ; 7 (1)               ; 0 (0)                     ; 0                 ; 0          ; 0    ; 0            ; |Gambling_Tec|Vga_Controller:vga_control|Symbol:slot_0_1                                                                                                                                                                                                                                                                                                 ; Symbol                            ; work         ;
 ;          |Square_Area:form2|                                                                                                            ; 4 (4)               ; 0 (0)                     ; 0                 ; 0          ; 0    ; 0            ; |Gambling_Tec|Vga_Controller:vga_control|Symbol:slot_0_1|Square_Area:form2                                                                                                                                                                                                                                                                               ; Square_Area                       ; work         ;
 ;          |Square_Area:form3|                                                                                                            ; 2 (2)               ; 0 (0)                     ; 0                 ; 0          ; 0    ; 0            ; |Gambling_Tec|Vga_Controller:vga_control|Symbol:slot_0_1|Square_Area:form3                                                                                                                                                                                                                                                                               ; Square_Area                       ; work         ;
-;       |Symbol:slot_0_2|                                                                                                                 ; 9 (1)               ; 0 (0)                     ; 0                 ; 0          ; 0    ; 0            ; |Gambling_Tec|Vga_Controller:vga_control|Symbol:slot_0_2                                                                                                                                                                                                                                                                                                 ; Symbol                            ; work         ;
+;       |Symbol:slot_0_2|                                                                                                                 ; 8 (1)               ; 0 (0)                     ; 0                 ; 0          ; 0    ; 0            ; |Gambling_Tec|Vga_Controller:vga_control|Symbol:slot_0_2                                                                                                                                                                                                                                                                                                 ; Symbol                            ; work         ;
 ;          |Square_Area:form1|                                                                                                            ; 2 (2)               ; 0 (0)                     ; 0                 ; 0          ; 0    ; 0            ; |Gambling_Tec|Vga_Controller:vga_control|Symbol:slot_0_2|Square_Area:form1                                                                                                                                                                                                                                                                               ; Square_Area                       ; work         ;
-;          |Square_Area:form2|                                                                                                            ; 4 (4)               ; 0 (0)                     ; 0                 ; 0          ; 0    ; 0            ; |Gambling_Tec|Vga_Controller:vga_control|Symbol:slot_0_2|Square_Area:form2                                                                                                                                                                                                                                                                               ; Square_Area                       ; work         ;
+;          |Square_Area:form2|                                                                                                            ; 3 (3)               ; 0 (0)                     ; 0                 ; 0          ; 0    ; 0            ; |Gambling_Tec|Vga_Controller:vga_control|Symbol:slot_0_2|Square_Area:form2                                                                                                                                                                                                                                                                               ; Square_Area                       ; work         ;
 ;          |Square_Area:form3|                                                                                                            ; 2 (2)               ; 0 (0)                     ; 0                 ; 0          ; 0    ; 0            ; |Gambling_Tec|Vga_Controller:vga_control|Symbol:slot_0_2|Square_Area:form3                                                                                                                                                                                                                                                                               ; Square_Area                       ; work         ;
 ;       |Symbol:slot_1_0|                                                                                                                 ; 6 (1)               ; 0 (0)                     ; 0                 ; 0          ; 0    ; 0            ; |Gambling_Tec|Vga_Controller:vga_control|Symbol:slot_1_0                                                                                                                                                                                                                                                                                                 ; Symbol                            ; work         ;
 ;          |Square_Area:form0|                                                                                                            ; 2 (2)               ; 0 (0)                     ; 0                 ; 0          ; 0    ; 0            ; |Gambling_Tec|Vga_Controller:vga_control|Symbol:slot_1_0|Square_Area:form0                                                                                                                                                                                                                                                                               ; Square_Area                       ; work         ;
@@ -643,7 +645,7 @@ refer to the applicable agreement for further details.
 ;       |Symbol:slot_2_2|                                                                                                                 ; 5 (1)               ; 0 (0)                     ; 0                 ; 0          ; 0    ; 0            ; |Gambling_Tec|Vga_Controller:vga_control|Symbol:slot_2_2                                                                                                                                                                                                                                                                                                 ; Symbol                            ; work         ;
 ;          |Square_Area:form2|                                                                                                            ; 2 (2)               ; 0 (0)                     ; 0                 ; 0          ; 0    ; 0            ; |Gambling_Tec|Vga_Controller:vga_control|Symbol:slot_2_2|Square_Area:form2                                                                                                                                                                                                                                                                               ; Square_Area                       ; work         ;
 ;          |Square_Area:form3|                                                                                                            ; 2 (2)               ; 0 (0)                     ; 0                 ; 0          ; 0    ; 0            ; |Gambling_Tec|Vga_Controller:vga_control|Symbol:slot_2_2|Square_Area:form3                                                                                                                                                                                                                                                                               ; Square_Area                       ; work         ;
-;       |deco_BDS:deco|                                                                                                                   ; 266 (0)             ; 0 (0)                     ; 0                 ; 0          ; 0    ; 0            ; |Gambling_Tec|Vga_Controller:vga_control|deco_BDS:deco                                                                                                                                                                                                                                                                                                   ; deco_BDS                          ; work         ;
+;       |deco_BDS:deco|                                                                                                                   ; 267 (0)             ; 0 (0)                     ; 0                 ; 0          ; 0    ; 0            ; |Gambling_Tec|Vga_Controller:vga_control|deco_BDS:deco                                                                                                                                                                                                                                                                                                   ; deco_BDS                          ; work         ;
 ;          |lpm_divide:Div0|                                                                                                              ; 60 (0)              ; 0 (0)                     ; 0                 ; 0          ; 0    ; 0            ; |Gambling_Tec|Vga_Controller:vga_control|deco_BDS:deco|lpm_divide:Div0                                                                                                                                                                                                                                                                                   ; lpm_divide                        ; work         ;
 ;             |lpm_divide_ibm:auto_generated|                                                                                             ; 60 (0)              ; 0 (0)                     ; 0                 ; 0          ; 0    ; 0            ; |Gambling_Tec|Vga_Controller:vga_control|deco_BDS:deco|lpm_divide:Div0|lpm_divide_ibm:auto_generated                                                                                                                                                                                                                                                     ; lpm_divide_ibm                    ; work         ;
 ;                |sign_div_unsign_olh:divider|                                                                                            ; 60 (0)              ; 0 (0)                     ; 0                 ; 0          ; 0    ; 0            ; |Gambling_Tec|Vga_Controller:vga_control|deco_BDS:deco|lpm_divide:Div0|lpm_divide_ibm:auto_generated|sign_div_unsign_olh:divider                                                                                                                                                                                                                         ; sign_div_unsign_olh               ; work         ;
@@ -652,10 +654,10 @@ refer to the applicable agreement for further details.
 ;             |lpm_divide_ebm:auto_generated|                                                                                             ; 71 (0)              ; 0 (0)                     ; 0                 ; 0          ; 0    ; 0            ; |Gambling_Tec|Vga_Controller:vga_control|deco_BDS:deco|lpm_divide:Div1|lpm_divide_ebm:auto_generated                                                                                                                                                                                                                                                     ; lpm_divide_ebm                    ; work         ;
 ;                |sign_div_unsign_klh:divider|                                                                                            ; 71 (0)              ; 0 (0)                     ; 0                 ; 0          ; 0    ; 0            ; |Gambling_Tec|Vga_Controller:vga_control|deco_BDS:deco|lpm_divide:Div1|lpm_divide_ebm:auto_generated|sign_div_unsign_klh:divider                                                                                                                                                                                                                         ; sign_div_unsign_klh               ; work         ;
 ;                   |alt_u_div_eve:divider|                                                                                               ; 71 (71)             ; 0 (0)                     ; 0                 ; 0          ; 0    ; 0            ; |Gambling_Tec|Vga_Controller:vga_control|deco_BDS:deco|lpm_divide:Div1|lpm_divide_ebm:auto_generated|sign_div_unsign_klh:divider|alt_u_div_eve:divider                                                                                                                                                                                                   ; alt_u_div_eve                     ; work         ;
-;          |lpm_divide:Mod0|                                                                                                              ; 75 (0)              ; 0 (0)                     ; 0                 ; 0          ; 0    ; 0            ; |Gambling_Tec|Vga_Controller:vga_control|deco_BDS:deco|lpm_divide:Mod0                                                                                                                                                                                                                                                                                   ; lpm_divide                        ; work         ;
-;             |lpm_divide_h3m:auto_generated|                                                                                             ; 75 (0)              ; 0 (0)                     ; 0                 ; 0          ; 0    ; 0            ; |Gambling_Tec|Vga_Controller:vga_control|deco_BDS:deco|lpm_divide:Mod0|lpm_divide_h3m:auto_generated                                                                                                                                                                                                                                                     ; lpm_divide_h3m                    ; work         ;
-;                |sign_div_unsign_klh:divider|                                                                                            ; 75 (0)              ; 0 (0)                     ; 0                 ; 0          ; 0    ; 0            ; |Gambling_Tec|Vga_Controller:vga_control|deco_BDS:deco|lpm_divide:Mod0|lpm_divide_h3m:auto_generated|sign_div_unsign_klh:divider                                                                                                                                                                                                                         ; sign_div_unsign_klh               ; work         ;
-;                   |alt_u_div_eve:divider|                                                                                               ; 75 (75)             ; 0 (0)                     ; 0                 ; 0          ; 0    ; 0            ; |Gambling_Tec|Vga_Controller:vga_control|deco_BDS:deco|lpm_divide:Mod0|lpm_divide_h3m:auto_generated|sign_div_unsign_klh:divider|alt_u_div_eve:divider                                                                                                                                                                                                   ; alt_u_div_eve                     ; work         ;
+;          |lpm_divide:Mod0|                                                                                                              ; 76 (0)              ; 0 (0)                     ; 0                 ; 0          ; 0    ; 0            ; |Gambling_Tec|Vga_Controller:vga_control|deco_BDS:deco|lpm_divide:Mod0                                                                                                                                                                                                                                                                                   ; lpm_divide                        ; work         ;
+;             |lpm_divide_h3m:auto_generated|                                                                                             ; 76 (0)              ; 0 (0)                     ; 0                 ; 0          ; 0    ; 0            ; |Gambling_Tec|Vga_Controller:vga_control|deco_BDS:deco|lpm_divide:Mod0|lpm_divide_h3m:auto_generated                                                                                                                                                                                                                                                     ; lpm_divide_h3m                    ; work         ;
+;                |sign_div_unsign_klh:divider|                                                                                            ; 76 (0)              ; 0 (0)                     ; 0                 ; 0          ; 0    ; 0            ; |Gambling_Tec|Vga_Controller:vga_control|deco_BDS:deco|lpm_divide:Mod0|lpm_divide_h3m:auto_generated|sign_div_unsign_klh:divider                                                                                                                                                                                                                         ; sign_div_unsign_klh               ; work         ;
+;                   |alt_u_div_eve:divider|                                                                                               ; 76 (76)             ; 0 (0)                     ; 0                 ; 0          ; 0    ; 0            ; |Gambling_Tec|Vga_Controller:vga_control|deco_BDS:deco|lpm_divide:Mod0|lpm_divide_h3m:auto_generated|sign_div_unsign_klh:divider|alt_u_div_eve:divider                                                                                                                                                                                                   ; alt_u_div_eve                     ; work         ;
 ;          |lpm_divide:Mod1|                                                                                                              ; 60 (0)              ; 0 (0)                     ; 0                 ; 0          ; 0    ; 0            ; |Gambling_Tec|Vga_Controller:vga_control|deco_BDS:deco|lpm_divide:Mod1                                                                                                                                                                                                                                                                                   ; lpm_divide                        ; work         ;
 ;             |lpm_divide_h3m:auto_generated|                                                                                             ; 60 (0)              ; 0 (0)                     ; 0                 ; 0          ; 0    ; 0            ; |Gambling_Tec|Vga_Controller:vga_control|deco_BDS:deco|lpm_divide:Mod1|lpm_divide_h3m:auto_generated                                                                                                                                                                                                                                                     ; lpm_divide_h3m                    ; work         ;
 ;                |sign_div_unsign_klh:divider|                                                                                            ; 60 (0)              ; 0 (0)                     ; 0                 ; 0          ; 0    ; 0            ; |Gambling_Tec|Vga_Controller:vga_control|deco_BDS:deco|lpm_divide:Mod1|lpm_divide_h3m:auto_generated|sign_div_unsign_klh:divider                                                                                                                                                                                                                         ; sign_div_unsign_klh               ; work         ;
@@ -751,275 +753,18 @@ Encoding Type:  One-Hot
 +-----------+-----------+-----------+-----------+------------------+
 
 
-+----------------------------------------------------------------------------------------------------------+
-; Registers Removed During Synthesis                                                                       ;
-+-----------------------------------------------------------------+----------------------------------------+
-; Register name                                                   ; Reason for Removal                     ;
-+-----------------------------------------------------------------+----------------------------------------+
-; CPU:process|Control_Unit:CU_Inst|Register:Register_Flag1|Q[0,1] ; Lost fanout                            ;
-; CPU:process|Control_Unit:CU_Inst|Register:Register_Flag2|Q[1]   ; Lost fanout                            ;
-; CPU:process|Register_File:Reg_file_inst|rf[4][0]                ; Stuck at GND due to stuck port data_in ;
-; CPU:process|Register_File:Reg_file_inst|rf[4][1]                ; Stuck at GND due to stuck port data_in ;
-; CPU:process|Register_File:Reg_file_inst|rf[4][2]                ; Stuck at GND due to stuck port data_in ;
-; CPU:process|Register_File:Reg_file_inst|rf[4][3]                ; Stuck at GND due to stuck port data_in ;
-; CPU:process|Register_File:Reg_file_inst|rf[4][4]                ; Stuck at GND due to stuck port data_in ;
-; CPU:process|Register_File:Reg_file_inst|rf[4][5]                ; Stuck at GND due to stuck port data_in ;
-; CPU:process|Register_File:Reg_file_inst|rf[4][6]                ; Stuck at GND due to stuck port data_in ;
-; CPU:process|Register_File:Reg_file_inst|rf[4][7]                ; Stuck at GND due to stuck port data_in ;
-; CPU:process|Register_File:Reg_file_inst|rf[4][8]                ; Stuck at GND due to stuck port data_in ;
-; CPU:process|Register_File:Reg_file_inst|rf[4][9]                ; Stuck at GND due to stuck port data_in ;
-; CPU:process|Register_File:Reg_file_inst|rf[4][10]               ; Stuck at GND due to stuck port data_in ;
-; CPU:process|Register_File:Reg_file_inst|rf[4][11]               ; Stuck at GND due to stuck port data_in ;
-; CPU:process|Register_File:Reg_file_inst|rf[4][12]               ; Stuck at GND due to stuck port data_in ;
-; CPU:process|Register_File:Reg_file_inst|rf[4][13]               ; Stuck at GND due to stuck port data_in ;
-; CPU:process|Register_File:Reg_file_inst|rf[4][14]               ; Stuck at GND due to stuck port data_in ;
-; CPU:process|Register_File:Reg_file_inst|rf[4][15]               ; Stuck at GND due to stuck port data_in ;
-; CPU:process|Register_File:Reg_file_inst|rf[4][16]               ; Stuck at GND due to stuck port data_in ;
-; CPU:process|Register_File:Reg_file_inst|rf[4][17]               ; Stuck at GND due to stuck port data_in ;
-; CPU:process|Register_File:Reg_file_inst|rf[4][18]               ; Stuck at GND due to stuck port data_in ;
-; CPU:process|Register_File:Reg_file_inst|rf[4][19]               ; Stuck at GND due to stuck port data_in ;
-; CPU:process|Register_File:Reg_file_inst|rf[4][20]               ; Stuck at GND due to stuck port data_in ;
-; CPU:process|Register_File:Reg_file_inst|rf[4][21]               ; Stuck at GND due to stuck port data_in ;
-; CPU:process|Register_File:Reg_file_inst|rf[4][22]               ; Stuck at GND due to stuck port data_in ;
-; CPU:process|Register_File:Reg_file_inst|rf[4][23]               ; Stuck at GND due to stuck port data_in ;
-; CPU:process|Register_File:Reg_file_inst|rf[4][24]               ; Stuck at GND due to stuck port data_in ;
-; CPU:process|Register_File:Reg_file_inst|rf[4][25]               ; Stuck at GND due to stuck port data_in ;
-; CPU:process|Register_File:Reg_file_inst|rf[4][26]               ; Stuck at GND due to stuck port data_in ;
-; CPU:process|Register_File:Reg_file_inst|rf[4][27]               ; Stuck at GND due to stuck port data_in ;
-; CPU:process|Register_File:Reg_file_inst|rf[4][28]               ; Stuck at GND due to stuck port data_in ;
-; CPU:process|Register_File:Reg_file_inst|rf[4][29]               ; Stuck at GND due to stuck port data_in ;
-; CPU:process|Register_File:Reg_file_inst|rf[4][30]               ; Stuck at GND due to stuck port data_in ;
-; CPU:process|Register_File:Reg_file_inst|rf[4][31]               ; Stuck at GND due to stuck port data_in ;
-; CPU:process|Register_File:Reg_file_inst|rf[5][0]                ; Stuck at GND due to stuck port data_in ;
-; CPU:process|Register_File:Reg_file_inst|rf[5][1]                ; Stuck at GND due to stuck port data_in ;
-; CPU:process|Register_File:Reg_file_inst|rf[5][2]                ; Stuck at GND due to stuck port data_in ;
-; CPU:process|Register_File:Reg_file_inst|rf[5][3]                ; Stuck at GND due to stuck port data_in ;
-; CPU:process|Register_File:Reg_file_inst|rf[5][4]                ; Stuck at GND due to stuck port data_in ;
-; CPU:process|Register_File:Reg_file_inst|rf[5][5]                ; Stuck at GND due to stuck port data_in ;
-; CPU:process|Register_File:Reg_file_inst|rf[5][6]                ; Stuck at GND due to stuck port data_in ;
-; CPU:process|Register_File:Reg_file_inst|rf[5][7]                ; Stuck at GND due to stuck port data_in ;
-; CPU:process|Register_File:Reg_file_inst|rf[5][8]                ; Stuck at GND due to stuck port data_in ;
-; CPU:process|Register_File:Reg_file_inst|rf[5][9]                ; Stuck at GND due to stuck port data_in ;
-; CPU:process|Register_File:Reg_file_inst|rf[5][10]               ; Stuck at GND due to stuck port data_in ;
-; CPU:process|Register_File:Reg_file_inst|rf[5][11]               ; Stuck at GND due to stuck port data_in ;
-; CPU:process|Register_File:Reg_file_inst|rf[5][12]               ; Stuck at GND due to stuck port data_in ;
-; CPU:process|Register_File:Reg_file_inst|rf[5][13]               ; Stuck at GND due to stuck port data_in ;
-; CPU:process|Register_File:Reg_file_inst|rf[5][14]               ; Stuck at GND due to stuck port data_in ;
-; CPU:process|Register_File:Reg_file_inst|rf[5][15]               ; Stuck at GND due to stuck port data_in ;
-; CPU:process|Register_File:Reg_file_inst|rf[5][16]               ; Stuck at GND due to stuck port data_in ;
-; CPU:process|Register_File:Reg_file_inst|rf[5][17]               ; Stuck at GND due to stuck port data_in ;
-; CPU:process|Register_File:Reg_file_inst|rf[5][18]               ; Stuck at GND due to stuck port data_in ;
-; CPU:process|Register_File:Reg_file_inst|rf[5][19]               ; Stuck at GND due to stuck port data_in ;
-; CPU:process|Register_File:Reg_file_inst|rf[5][20]               ; Stuck at GND due to stuck port data_in ;
-; CPU:process|Register_File:Reg_file_inst|rf[5][21]               ; Stuck at GND due to stuck port data_in ;
-; CPU:process|Register_File:Reg_file_inst|rf[5][22]               ; Stuck at GND due to stuck port data_in ;
-; CPU:process|Register_File:Reg_file_inst|rf[5][23]               ; Stuck at GND due to stuck port data_in ;
-; CPU:process|Register_File:Reg_file_inst|rf[5][24]               ; Stuck at GND due to stuck port data_in ;
-; CPU:process|Register_File:Reg_file_inst|rf[5][25]               ; Stuck at GND due to stuck port data_in ;
-; CPU:process|Register_File:Reg_file_inst|rf[5][26]               ; Stuck at GND due to stuck port data_in ;
-; CPU:process|Register_File:Reg_file_inst|rf[5][27]               ; Stuck at GND due to stuck port data_in ;
-; CPU:process|Register_File:Reg_file_inst|rf[5][28]               ; Stuck at GND due to stuck port data_in ;
-; CPU:process|Register_File:Reg_file_inst|rf[5][29]               ; Stuck at GND due to stuck port data_in ;
-; CPU:process|Register_File:Reg_file_inst|rf[5][30]               ; Stuck at GND due to stuck port data_in ;
-; CPU:process|Register_File:Reg_file_inst|rf[5][31]               ; Stuck at GND due to stuck port data_in ;
-; CPU:process|Register_File:Reg_file_inst|rf[6][0]                ; Stuck at GND due to stuck port data_in ;
-; CPU:process|Register_File:Reg_file_inst|rf[6][1]                ; Stuck at GND due to stuck port data_in ;
-; CPU:process|Register_File:Reg_file_inst|rf[6][2]                ; Stuck at GND due to stuck port data_in ;
-; CPU:process|Register_File:Reg_file_inst|rf[6][3]                ; Stuck at GND due to stuck port data_in ;
-; CPU:process|Register_File:Reg_file_inst|rf[6][4]                ; Stuck at GND due to stuck port data_in ;
-; CPU:process|Register_File:Reg_file_inst|rf[6][5]                ; Stuck at GND due to stuck port data_in ;
-; CPU:process|Register_File:Reg_file_inst|rf[6][6]                ; Stuck at GND due to stuck port data_in ;
-; CPU:process|Register_File:Reg_file_inst|rf[6][7]                ; Stuck at GND due to stuck port data_in ;
-; CPU:process|Register_File:Reg_file_inst|rf[6][8]                ; Stuck at GND due to stuck port data_in ;
-; CPU:process|Register_File:Reg_file_inst|rf[6][9]                ; Stuck at GND due to stuck port data_in ;
-; CPU:process|Register_File:Reg_file_inst|rf[6][10]               ; Stuck at GND due to stuck port data_in ;
-; CPU:process|Register_File:Reg_file_inst|rf[6][11]               ; Stuck at GND due to stuck port data_in ;
-; CPU:process|Register_File:Reg_file_inst|rf[6][12]               ; Stuck at GND due to stuck port data_in ;
-; CPU:process|Register_File:Reg_file_inst|rf[6][13]               ; Stuck at GND due to stuck port data_in ;
-; CPU:process|Register_File:Reg_file_inst|rf[6][14]               ; Stuck at GND due to stuck port data_in ;
-; CPU:process|Register_File:Reg_file_inst|rf[6][15]               ; Stuck at GND due to stuck port data_in ;
-; CPU:process|Register_File:Reg_file_inst|rf[6][16]               ; Stuck at GND due to stuck port data_in ;
-; CPU:process|Register_File:Reg_file_inst|rf[6][17]               ; Stuck at GND due to stuck port data_in ;
-; CPU:process|Register_File:Reg_file_inst|rf[6][18]               ; Stuck at GND due to stuck port data_in ;
-; CPU:process|Register_File:Reg_file_inst|rf[6][19]               ; Stuck at GND due to stuck port data_in ;
-; CPU:process|Register_File:Reg_file_inst|rf[6][20]               ; Stuck at GND due to stuck port data_in ;
-; CPU:process|Register_File:Reg_file_inst|rf[6][21]               ; Stuck at GND due to stuck port data_in ;
-; CPU:process|Register_File:Reg_file_inst|rf[6][22]               ; Stuck at GND due to stuck port data_in ;
-; CPU:process|Register_File:Reg_file_inst|rf[6][23]               ; Stuck at GND due to stuck port data_in ;
-; CPU:process|Register_File:Reg_file_inst|rf[6][24]               ; Stuck at GND due to stuck port data_in ;
-; CPU:process|Register_File:Reg_file_inst|rf[6][25]               ; Stuck at GND due to stuck port data_in ;
-; CPU:process|Register_File:Reg_file_inst|rf[6][26]               ; Stuck at GND due to stuck port data_in ;
-; CPU:process|Register_File:Reg_file_inst|rf[6][27]               ; Stuck at GND due to stuck port data_in ;
-; CPU:process|Register_File:Reg_file_inst|rf[6][28]               ; Stuck at GND due to stuck port data_in ;
-; CPU:process|Register_File:Reg_file_inst|rf[6][29]               ; Stuck at GND due to stuck port data_in ;
-; CPU:process|Register_File:Reg_file_inst|rf[6][30]               ; Stuck at GND due to stuck port data_in ;
-; CPU:process|Register_File:Reg_file_inst|rf[6][31]               ; Stuck at GND due to stuck port data_in ;
-; CPU:process|Register_File:Reg_file_inst|rf[7][0]                ; Stuck at GND due to stuck port data_in ;
-; CPU:process|Register_File:Reg_file_inst|rf[7][1]                ; Stuck at GND due to stuck port data_in ;
-; CPU:process|Register_File:Reg_file_inst|rf[7][2]                ; Stuck at GND due to stuck port data_in ;
-; CPU:process|Register_File:Reg_file_inst|rf[7][3]                ; Stuck at GND due to stuck port data_in ;
-; CPU:process|Register_File:Reg_file_inst|rf[7][4]                ; Stuck at GND due to stuck port data_in ;
-; CPU:process|Register_File:Reg_file_inst|rf[7][5]                ; Stuck at GND due to stuck port data_in ;
-; CPU:process|Register_File:Reg_file_inst|rf[7][6]                ; Stuck at GND due to stuck port data_in ;
-; CPU:process|Register_File:Reg_file_inst|rf[7][7]                ; Stuck at GND due to stuck port data_in ;
-; CPU:process|Register_File:Reg_file_inst|rf[7][8]                ; Stuck at GND due to stuck port data_in ;
-; CPU:process|Register_File:Reg_file_inst|rf[7][9]                ; Stuck at GND due to stuck port data_in ;
-; CPU:process|Register_File:Reg_file_inst|rf[7][10]               ; Stuck at GND due to stuck port data_in ;
-; CPU:process|Register_File:Reg_file_inst|rf[7][11]               ; Stuck at GND due to stuck port data_in ;
-; CPU:process|Register_File:Reg_file_inst|rf[7][12]               ; Stuck at GND due to stuck port data_in ;
-; CPU:process|Register_File:Reg_file_inst|rf[7][13]               ; Stuck at GND due to stuck port data_in ;
-; CPU:process|Register_File:Reg_file_inst|rf[7][14]               ; Stuck at GND due to stuck port data_in ;
-; CPU:process|Register_File:Reg_file_inst|rf[7][15]               ; Stuck at GND due to stuck port data_in ;
-; CPU:process|Register_File:Reg_file_inst|rf[7][16]               ; Stuck at GND due to stuck port data_in ;
-; CPU:process|Register_File:Reg_file_inst|rf[7][17]               ; Stuck at GND due to stuck port data_in ;
-; CPU:process|Register_File:Reg_file_inst|rf[7][18]               ; Stuck at GND due to stuck port data_in ;
-; CPU:process|Register_File:Reg_file_inst|rf[7][19]               ; Stuck at GND due to stuck port data_in ;
-; CPU:process|Register_File:Reg_file_inst|rf[7][20]               ; Stuck at GND due to stuck port data_in ;
-; CPU:process|Register_File:Reg_file_inst|rf[7][21]               ; Stuck at GND due to stuck port data_in ;
-; CPU:process|Register_File:Reg_file_inst|rf[7][22]               ; Stuck at GND due to stuck port data_in ;
-; CPU:process|Register_File:Reg_file_inst|rf[7][23]               ; Stuck at GND due to stuck port data_in ;
-; CPU:process|Register_File:Reg_file_inst|rf[7][24]               ; Stuck at GND due to stuck port data_in ;
-; CPU:process|Register_File:Reg_file_inst|rf[7][25]               ; Stuck at GND due to stuck port data_in ;
-; CPU:process|Register_File:Reg_file_inst|rf[7][26]               ; Stuck at GND due to stuck port data_in ;
-; CPU:process|Register_File:Reg_file_inst|rf[7][27]               ; Stuck at GND due to stuck port data_in ;
-; CPU:process|Register_File:Reg_file_inst|rf[7][28]               ; Stuck at GND due to stuck port data_in ;
-; CPU:process|Register_File:Reg_file_inst|rf[7][29]               ; Stuck at GND due to stuck port data_in ;
-; CPU:process|Register_File:Reg_file_inst|rf[7][30]               ; Stuck at GND due to stuck port data_in ;
-; CPU:process|Register_File:Reg_file_inst|rf[7][31]               ; Stuck at GND due to stuck port data_in ;
-; CPU:process|Register_File:Reg_file_inst|rf[8][0]                ; Stuck at GND due to stuck port data_in ;
-; CPU:process|Register_File:Reg_file_inst|rf[8][1]                ; Stuck at GND due to stuck port data_in ;
-; CPU:process|Register_File:Reg_file_inst|rf[8][2]                ; Stuck at GND due to stuck port data_in ;
-; CPU:process|Register_File:Reg_file_inst|rf[8][3]                ; Stuck at GND due to stuck port data_in ;
-; CPU:process|Register_File:Reg_file_inst|rf[8][4]                ; Stuck at GND due to stuck port data_in ;
-; CPU:process|Register_File:Reg_file_inst|rf[8][5]                ; Stuck at GND due to stuck port data_in ;
-; CPU:process|Register_File:Reg_file_inst|rf[8][6]                ; Stuck at GND due to stuck port data_in ;
-; CPU:process|Register_File:Reg_file_inst|rf[8][7]                ; Stuck at GND due to stuck port data_in ;
-; CPU:process|Register_File:Reg_file_inst|rf[8][8]                ; Stuck at GND due to stuck port data_in ;
-; CPU:process|Register_File:Reg_file_inst|rf[8][9]                ; Stuck at GND due to stuck port data_in ;
-; CPU:process|Register_File:Reg_file_inst|rf[8][10]               ; Stuck at GND due to stuck port data_in ;
-; CPU:process|Register_File:Reg_file_inst|rf[8][11]               ; Stuck at GND due to stuck port data_in ;
-; CPU:process|Register_File:Reg_file_inst|rf[8][12]               ; Stuck at GND due to stuck port data_in ;
-; CPU:process|Register_File:Reg_file_inst|rf[8][13]               ; Stuck at GND due to stuck port data_in ;
-; CPU:process|Register_File:Reg_file_inst|rf[8][14]               ; Stuck at GND due to stuck port data_in ;
-; CPU:process|Register_File:Reg_file_inst|rf[8][15]               ; Stuck at GND due to stuck port data_in ;
-; CPU:process|Register_File:Reg_file_inst|rf[8][16]               ; Stuck at GND due to stuck port data_in ;
-; CPU:process|Register_File:Reg_file_inst|rf[8][17]               ; Stuck at GND due to stuck port data_in ;
-; CPU:process|Register_File:Reg_file_inst|rf[8][18]               ; Stuck at GND due to stuck port data_in ;
-; CPU:process|Register_File:Reg_file_inst|rf[8][19]               ; Stuck at GND due to stuck port data_in ;
-; CPU:process|Register_File:Reg_file_inst|rf[8][20]               ; Stuck at GND due to stuck port data_in ;
-; CPU:process|Register_File:Reg_file_inst|rf[8][21]               ; Stuck at GND due to stuck port data_in ;
-; CPU:process|Register_File:Reg_file_inst|rf[8][22]               ; Stuck at GND due to stuck port data_in ;
-; CPU:process|Register_File:Reg_file_inst|rf[8][23]               ; Stuck at GND due to stuck port data_in ;
-; CPU:process|Register_File:Reg_file_inst|rf[8][24]               ; Stuck at GND due to stuck port data_in ;
-; CPU:process|Register_File:Reg_file_inst|rf[8][25]               ; Stuck at GND due to stuck port data_in ;
-; CPU:process|Register_File:Reg_file_inst|rf[8][26]               ; Stuck at GND due to stuck port data_in ;
-; CPU:process|Register_File:Reg_file_inst|rf[8][27]               ; Stuck at GND due to stuck port data_in ;
-; CPU:process|Register_File:Reg_file_inst|rf[8][28]               ; Stuck at GND due to stuck port data_in ;
-; CPU:process|Register_File:Reg_file_inst|rf[8][29]               ; Stuck at GND due to stuck port data_in ;
-; CPU:process|Register_File:Reg_file_inst|rf[8][30]               ; Stuck at GND due to stuck port data_in ;
-; CPU:process|Register_File:Reg_file_inst|rf[8][31]               ; Stuck at GND due to stuck port data_in ;
-; CPU:process|Register_File:Reg_file_inst|rf[9][0]                ; Stuck at GND due to stuck port data_in ;
-; CPU:process|Register_File:Reg_file_inst|rf[9][1]                ; Stuck at GND due to stuck port data_in ;
-; CPU:process|Register_File:Reg_file_inst|rf[9][2]                ; Stuck at GND due to stuck port data_in ;
-; CPU:process|Register_File:Reg_file_inst|rf[9][3]                ; Stuck at GND due to stuck port data_in ;
-; CPU:process|Register_File:Reg_file_inst|rf[9][4]                ; Stuck at GND due to stuck port data_in ;
-; CPU:process|Register_File:Reg_file_inst|rf[9][5]                ; Stuck at GND due to stuck port data_in ;
-; CPU:process|Register_File:Reg_file_inst|rf[9][6]                ; Stuck at GND due to stuck port data_in ;
-; CPU:process|Register_File:Reg_file_inst|rf[9][7]                ; Stuck at GND due to stuck port data_in ;
-; CPU:process|Register_File:Reg_file_inst|rf[9][8]                ; Stuck at GND due to stuck port data_in ;
-; CPU:process|Register_File:Reg_file_inst|rf[9][9]                ; Stuck at GND due to stuck port data_in ;
-; CPU:process|Register_File:Reg_file_inst|rf[9][10]               ; Stuck at GND due to stuck port data_in ;
-; CPU:process|Register_File:Reg_file_inst|rf[9][11]               ; Stuck at GND due to stuck port data_in ;
-; CPU:process|Register_File:Reg_file_inst|rf[9][12]               ; Stuck at GND due to stuck port data_in ;
-; CPU:process|Register_File:Reg_file_inst|rf[9][13]               ; Stuck at GND due to stuck port data_in ;
-; CPU:process|Register_File:Reg_file_inst|rf[9][14]               ; Stuck at GND due to stuck port data_in ;
-; CPU:process|Register_File:Reg_file_inst|rf[9][15]               ; Stuck at GND due to stuck port data_in ;
-; CPU:process|Register_File:Reg_file_inst|rf[9][16]               ; Stuck at GND due to stuck port data_in ;
-; CPU:process|Register_File:Reg_file_inst|rf[9][17]               ; Stuck at GND due to stuck port data_in ;
-; CPU:process|Register_File:Reg_file_inst|rf[9][18]               ; Stuck at GND due to stuck port data_in ;
-; CPU:process|Register_File:Reg_file_inst|rf[9][19]               ; Stuck at GND due to stuck port data_in ;
-; CPU:process|Register_File:Reg_file_inst|rf[9][20]               ; Stuck at GND due to stuck port data_in ;
-; CPU:process|Register_File:Reg_file_inst|rf[9][21]               ; Stuck at GND due to stuck port data_in ;
-; CPU:process|Register_File:Reg_file_inst|rf[9][22]               ; Stuck at GND due to stuck port data_in ;
-; CPU:process|Register_File:Reg_file_inst|rf[9][23]               ; Stuck at GND due to stuck port data_in ;
-; CPU:process|Register_File:Reg_file_inst|rf[9][24]               ; Stuck at GND due to stuck port data_in ;
-; CPU:process|Register_File:Reg_file_inst|rf[9][25]               ; Stuck at GND due to stuck port data_in ;
-; CPU:process|Register_File:Reg_file_inst|rf[9][26]               ; Stuck at GND due to stuck port data_in ;
-; CPU:process|Register_File:Reg_file_inst|rf[9][27]               ; Stuck at GND due to stuck port data_in ;
-; CPU:process|Register_File:Reg_file_inst|rf[9][28]               ; Stuck at GND due to stuck port data_in ;
-; CPU:process|Register_File:Reg_file_inst|rf[9][29]               ; Stuck at GND due to stuck port data_in ;
-; CPU:process|Register_File:Reg_file_inst|rf[9][30]               ; Stuck at GND due to stuck port data_in ;
-; CPU:process|Register_File:Reg_file_inst|rf[9][31]               ; Stuck at GND due to stuck port data_in ;
-; CPU:process|Register_File:Reg_file_inst|rf[10][0]               ; Stuck at GND due to stuck port data_in ;
-; CPU:process|Register_File:Reg_file_inst|rf[10][1]               ; Stuck at GND due to stuck port data_in ;
-; CPU:process|Register_File:Reg_file_inst|rf[10][2]               ; Stuck at GND due to stuck port data_in ;
-; CPU:process|Register_File:Reg_file_inst|rf[10][3]               ; Stuck at GND due to stuck port data_in ;
-; CPU:process|Register_File:Reg_file_inst|rf[10][4]               ; Stuck at GND due to stuck port data_in ;
-; CPU:process|Register_File:Reg_file_inst|rf[10][5]               ; Stuck at GND due to stuck port data_in ;
-; CPU:process|Register_File:Reg_file_inst|rf[10][6]               ; Stuck at GND due to stuck port data_in ;
-; CPU:process|Register_File:Reg_file_inst|rf[10][7]               ; Stuck at GND due to stuck port data_in ;
-; CPU:process|Register_File:Reg_file_inst|rf[10][8]               ; Stuck at GND due to stuck port data_in ;
-; CPU:process|Register_File:Reg_file_inst|rf[10][9]               ; Stuck at GND due to stuck port data_in ;
-; CPU:process|Register_File:Reg_file_inst|rf[10][10]              ; Stuck at GND due to stuck port data_in ;
-; CPU:process|Register_File:Reg_file_inst|rf[10][11]              ; Stuck at GND due to stuck port data_in ;
-; CPU:process|Register_File:Reg_file_inst|rf[10][12]              ; Stuck at GND due to stuck port data_in ;
-; CPU:process|Register_File:Reg_file_inst|rf[10][13]              ; Stuck at GND due to stuck port data_in ;
-; CPU:process|Register_File:Reg_file_inst|rf[10][14]              ; Stuck at GND due to stuck port data_in ;
-; CPU:process|Register_File:Reg_file_inst|rf[10][15]              ; Stuck at GND due to stuck port data_in ;
-; CPU:process|Register_File:Reg_file_inst|rf[10][16]              ; Stuck at GND due to stuck port data_in ;
-; CPU:process|Register_File:Reg_file_inst|rf[10][17]              ; Stuck at GND due to stuck port data_in ;
-; CPU:process|Register_File:Reg_file_inst|rf[10][18]              ; Stuck at GND due to stuck port data_in ;
-; CPU:process|Register_File:Reg_file_inst|rf[10][19]              ; Stuck at GND due to stuck port data_in ;
-; CPU:process|Register_File:Reg_file_inst|rf[10][20]              ; Stuck at GND due to stuck port data_in ;
-; CPU:process|Register_File:Reg_file_inst|rf[10][21]              ; Stuck at GND due to stuck port data_in ;
-; CPU:process|Register_File:Reg_file_inst|rf[10][22]              ; Stuck at GND due to stuck port data_in ;
-; CPU:process|Register_File:Reg_file_inst|rf[10][23]              ; Stuck at GND due to stuck port data_in ;
-; CPU:process|Register_File:Reg_file_inst|rf[10][24]              ; Stuck at GND due to stuck port data_in ;
-; CPU:process|Register_File:Reg_file_inst|rf[10][25]              ; Stuck at GND due to stuck port data_in ;
-; CPU:process|Register_File:Reg_file_inst|rf[10][26]              ; Stuck at GND due to stuck port data_in ;
-; CPU:process|Register_File:Reg_file_inst|rf[10][27]              ; Stuck at GND due to stuck port data_in ;
-; CPU:process|Register_File:Reg_file_inst|rf[10][28]              ; Stuck at GND due to stuck port data_in ;
-; CPU:process|Register_File:Reg_file_inst|rf[10][29]              ; Stuck at GND due to stuck port data_in ;
-; CPU:process|Register_File:Reg_file_inst|rf[10][30]              ; Stuck at GND due to stuck port data_in ;
-; CPU:process|Register_File:Reg_file_inst|rf[10][31]              ; Stuck at GND due to stuck port data_in ;
-; CPU:process|Register_File:Reg_file_inst|rf[11][0]               ; Stuck at GND due to stuck port data_in ;
-; CPU:process|Register_File:Reg_file_inst|rf[11][1]               ; Stuck at GND due to stuck port data_in ;
-; CPU:process|Register_File:Reg_file_inst|rf[11][2]               ; Stuck at GND due to stuck port data_in ;
-; CPU:process|Register_File:Reg_file_inst|rf[11][3]               ; Stuck at GND due to stuck port data_in ;
-; CPU:process|Register_File:Reg_file_inst|rf[11][4]               ; Stuck at GND due to stuck port data_in ;
-; CPU:process|Register_File:Reg_file_inst|rf[11][5]               ; Stuck at GND due to stuck port data_in ;
-; CPU:process|Register_File:Reg_file_inst|rf[11][6]               ; Stuck at GND due to stuck port data_in ;
-; CPU:process|Register_File:Reg_file_inst|rf[11][7]               ; Stuck at GND due to stuck port data_in ;
-; CPU:process|Register_File:Reg_file_inst|rf[11][8]               ; Stuck at GND due to stuck port data_in ;
-; CPU:process|Register_File:Reg_file_inst|rf[11][9]               ; Stuck at GND due to stuck port data_in ;
-; CPU:process|Register_File:Reg_file_inst|rf[11][10]              ; Stuck at GND due to stuck port data_in ;
-; CPU:process|Register_File:Reg_file_inst|rf[11][11]              ; Stuck at GND due to stuck port data_in ;
-; CPU:process|Register_File:Reg_file_inst|rf[11][12]              ; Stuck at GND due to stuck port data_in ;
-; CPU:process|Register_File:Reg_file_inst|rf[11][13]              ; Stuck at GND due to stuck port data_in ;
-; CPU:process|Register_File:Reg_file_inst|rf[11][14]              ; Stuck at GND due to stuck port data_in ;
-; CPU:process|Register_File:Reg_file_inst|rf[11][15]              ; Stuck at GND due to stuck port data_in ;
-; CPU:process|Register_File:Reg_file_inst|rf[11][16]              ; Stuck at GND due to stuck port data_in ;
-; CPU:process|Register_File:Reg_file_inst|rf[11][17]              ; Stuck at GND due to stuck port data_in ;
-; CPU:process|Register_File:Reg_file_inst|rf[11][18]              ; Stuck at GND due to stuck port data_in ;
-; CPU:process|Register_File:Reg_file_inst|rf[11][19]              ; Stuck at GND due to stuck port data_in ;
-; CPU:process|Register_File:Reg_file_inst|rf[11][20]              ; Stuck at GND due to stuck port data_in ;
-; CPU:process|Register_File:Reg_file_inst|rf[11][21]              ; Stuck at GND due to stuck port data_in ;
-; CPU:process|Register_File:Reg_file_inst|rf[11][22]              ; Stuck at GND due to stuck port data_in ;
-; CPU:process|Register_File:Reg_file_inst|rf[11][23]              ; Stuck at GND due to stuck port data_in ;
-; CPU:process|Register_File:Reg_file_inst|rf[11][24]              ; Stuck at GND due to stuck port data_in ;
-; CPU:process|Register_File:Reg_file_inst|rf[11][25]              ; Stuck at GND due to stuck port data_in ;
-; CPU:process|Register_File:Reg_file_inst|rf[11][26]              ; Stuck at GND due to stuck port data_in ;
-; CPU:process|Register_File:Reg_file_inst|rf[11][27]              ; Stuck at GND due to stuck port data_in ;
-; CPU:process|Register_File:Reg_file_inst|rf[11][28]              ; Stuck at GND due to stuck port data_in ;
-; CPU:process|Register_File:Reg_file_inst|rf[11][29]              ; Stuck at GND due to stuck port data_in ;
-; CPU:process|Register_File:Reg_file_inst|rf[11][30]              ; Stuck at GND due to stuck port data_in ;
-; CPU:process|Register_File:Reg_file_inst|rf[11][31]              ; Stuck at GND due to stuck port data_in ;
-; Ps2_Key:ps2_inst|debounce:db|state~4                            ; Lost fanout                            ;
-; Ps2_Key:ps2_inst|debounce:db|state~5                            ; Lost fanout                            ;
-; Ps2_Key:ps2_inst|debounce:db|state~6                            ; Lost fanout                            ;
-; Ps2_Key:ps2_inst|debounce:db|state.011                          ; Lost fanout                            ;
-; Total Number of Removed Registers = 263                         ;                                        ;
-+-----------------------------------------------------------------+----------------------------------------+
++------------------------------------------------------------------------------------+
+; Registers Removed During Synthesis                                                 ;
++---------------------------------------------------------------+--------------------+
+; Register name                                                 ; Reason for Removal ;
++---------------------------------------------------------------+--------------------+
+; Ps2_Key:ps2_inst|debounce:db|state~4                          ; Lost fanout        ;
+; Ps2_Key:ps2_inst|debounce:db|state~5                          ; Lost fanout        ;
+; Ps2_Key:ps2_inst|debounce:db|state~6                          ; Lost fanout        ;
+; Ps2_Key:ps2_inst|debounce:db|state.011                        ; Lost fanout        ;
+; CPU:process|Control_Unit:CU_Inst|Register:Register_Flag1|Q[0] ; Lost fanout        ;
+; Total Number of Removed Registers = 5                         ;                    ;
++---------------------------------------------------------------+--------------------+
 
 
 +----------------------------------------------------------------------------------------------------+
@@ -1036,12 +781,12 @@ Encoding Type:  One-Hot
 +----------------------------------------------+-------+
 ; Statistic                                    ; Value ;
 +----------------------------------------------+-------+
-; Total registers                              ; 2947  ;
-; Number of registers using Synchronous Clear  ; 2450  ;
+; Total registers                              ; 3205  ;
+; Number of registers using Synchronous Clear  ; 2706  ;
 ; Number of registers using Synchronous Load   ; 156   ;
-; Number of registers using Asynchronous Clear ; 271   ;
+; Number of registers using Asynchronous Clear ; 273   ;
 ; Number of registers using Asynchronous Load  ; 0     ;
-; Number of registers using Clock Enable       ; 2668  ;
+; Number of registers using Clock Enable       ; 2927  ;
 ; Number of registers using Preset             ; 0     ;
 +----------------------------------------------+-------+
 
@@ -1066,101 +811,112 @@ Encoding Type:  One-Hot
 +---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+---------+
 
 
-+---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
-; Multiplexer Restructuring Statistics (Restructuring Performed)                                                                                                                        ;
-+--------------------+-----------+---------------+----------------------+------------------------+------------+-------------------------------------------------------------------------+
-; Multiplexer Inputs ; Bus Width ; Baseline Area ; Area if Restructured ; Saving if Restructured ; Registered ; Example Multiplexer Output                                              ;
-+--------------------+-----------+---------------+----------------------+------------------------+------------+-------------------------------------------------------------------------+
-; 3:1                ; 32 bits   ; 64 LEs        ; 0 LEs                ; 64 LEs                 ; Yes        ; |Gambling_Tec|Data_Memory:data_mem_inst|RAM[0][20]                      ;
-; 3:1                ; 32 bits   ; 64 LEs        ; 0 LEs                ; 64 LEs                 ; Yes        ; |Gambling_Tec|Data_Memory:data_mem_inst|RAM[1][23]                      ;
-; 3:1                ; 32 bits   ; 64 LEs        ; 0 LEs                ; 64 LEs                 ; Yes        ; |Gambling_Tec|Data_Memory:data_mem_inst|RAM[3][22]                      ;
-; 3:1                ; 32 bits   ; 64 LEs        ; 0 LEs                ; 64 LEs                 ; Yes        ; |Gambling_Tec|Data_Memory:data_mem_inst|RAM[4][9]                       ;
-; 3:1                ; 32 bits   ; 64 LEs        ; 0 LEs                ; 64 LEs                 ; Yes        ; |Gambling_Tec|Data_Memory:data_mem_inst|RAM[5][24]                      ;
-; 3:1                ; 32 bits   ; 64 LEs        ; 0 LEs                ; 64 LEs                 ; Yes        ; |Gambling_Tec|Data_Memory:data_mem_inst|RAM[6][28]                      ;
-; 3:1                ; 32 bits   ; 64 LEs        ; 0 LEs                ; 64 LEs                 ; Yes        ; |Gambling_Tec|Data_Memory:data_mem_inst|RAM[7][25]                      ;
-; 3:1                ; 32 bits   ; 64 LEs        ; 0 LEs                ; 64 LEs                 ; Yes        ; |Gambling_Tec|Data_Memory:data_mem_inst|RAM[8][22]                      ;
-; 3:1                ; 32 bits   ; 64 LEs        ; 0 LEs                ; 64 LEs                 ; Yes        ; |Gambling_Tec|Data_Memory:data_mem_inst|RAM[9][14]                      ;
-; 3:1                ; 32 bits   ; 64 LEs        ; 0 LEs                ; 64 LEs                 ; Yes        ; |Gambling_Tec|Data_Memory:data_mem_inst|RAM[10][26]                     ;
-; 3:1                ; 32 bits   ; 64 LEs        ; 0 LEs                ; 64 LEs                 ; Yes        ; |Gambling_Tec|Data_Memory:data_mem_inst|RAM[11][11]                     ;
-; 3:1                ; 32 bits   ; 64 LEs        ; 0 LEs                ; 64 LEs                 ; Yes        ; |Gambling_Tec|Data_Memory:data_mem_inst|RAM[12][2]                      ;
-; 3:1                ; 32 bits   ; 64 LEs        ; 0 LEs                ; 64 LEs                 ; Yes        ; |Gambling_Tec|Data_Memory:data_mem_inst|RAM[13][10]                     ;
-; 3:1                ; 32 bits   ; 64 LEs        ; 0 LEs                ; 64 LEs                 ; Yes        ; |Gambling_Tec|Data_Memory:data_mem_inst|RAM[14][13]                     ;
-; 3:1                ; 32 bits   ; 64 LEs        ; 0 LEs                ; 64 LEs                 ; Yes        ; |Gambling_Tec|Data_Memory:data_mem_inst|RAM[15][17]                     ;
-; 3:1                ; 32 bits   ; 64 LEs        ; 0 LEs                ; 64 LEs                 ; Yes        ; |Gambling_Tec|Data_Memory:data_mem_inst|RAM[16][10]                     ;
-; 3:1                ; 32 bits   ; 64 LEs        ; 0 LEs                ; 64 LEs                 ; Yes        ; |Gambling_Tec|Data_Memory:data_mem_inst|RAM[17][8]                      ;
-; 3:1                ; 32 bits   ; 64 LEs        ; 0 LEs                ; 64 LEs                 ; Yes        ; |Gambling_Tec|Data_Memory:data_mem_inst|RAM[18][8]                      ;
-; 3:1                ; 32 bits   ; 64 LEs        ; 0 LEs                ; 64 LEs                 ; Yes        ; |Gambling_Tec|Data_Memory:data_mem_inst|RAM[19][25]                     ;
-; 3:1                ; 32 bits   ; 64 LEs        ; 0 LEs                ; 64 LEs                 ; Yes        ; |Gambling_Tec|Data_Memory:data_mem_inst|RAM[20][0]                      ;
-; 3:1                ; 32 bits   ; 64 LEs        ; 0 LEs                ; 64 LEs                 ; Yes        ; |Gambling_Tec|Data_Memory:data_mem_inst|RAM[21][26]                     ;
-; 3:1                ; 32 bits   ; 64 LEs        ; 0 LEs                ; 64 LEs                 ; Yes        ; |Gambling_Tec|Data_Memory:data_mem_inst|RAM[22][26]                     ;
-; 3:1                ; 32 bits   ; 64 LEs        ; 0 LEs                ; 64 LEs                 ; Yes        ; |Gambling_Tec|Data_Memory:data_mem_inst|RAM[23][26]                     ;
-; 3:1                ; 32 bits   ; 64 LEs        ; 0 LEs                ; 64 LEs                 ; Yes        ; |Gambling_Tec|Data_Memory:data_mem_inst|RAM[24][19]                     ;
-; 3:1                ; 32 bits   ; 64 LEs        ; 0 LEs                ; 64 LEs                 ; Yes        ; |Gambling_Tec|Data_Memory:data_mem_inst|RAM[25][17]                     ;
-; 3:1                ; 32 bits   ; 64 LEs        ; 0 LEs                ; 64 LEs                 ; Yes        ; |Gambling_Tec|Data_Memory:data_mem_inst|RAM[26][1]                      ;
-; 3:1                ; 32 bits   ; 64 LEs        ; 0 LEs                ; 64 LEs                 ; Yes        ; |Gambling_Tec|Data_Memory:data_mem_inst|RAM[27][4]                      ;
-; 3:1                ; 32 bits   ; 64 LEs        ; 0 LEs                ; 64 LEs                 ; Yes        ; |Gambling_Tec|Data_Memory:data_mem_inst|RAM[28][24]                     ;
-; 3:1                ; 32 bits   ; 64 LEs        ; 0 LEs                ; 64 LEs                 ; Yes        ; |Gambling_Tec|Data_Memory:data_mem_inst|RAM[29][28]                     ;
-; 3:1                ; 32 bits   ; 64 LEs        ; 0 LEs                ; 64 LEs                 ; Yes        ; |Gambling_Tec|Data_Memory:data_mem_inst|RAM[30][14]                     ;
-; 3:1                ; 32 bits   ; 64 LEs        ; 0 LEs                ; 64 LEs                 ; Yes        ; |Gambling_Tec|Data_Memory:data_mem_inst|RAM[31][18]                     ;
-; 3:1                ; 32 bits   ; 64 LEs        ; 0 LEs                ; 64 LEs                 ; Yes        ; |Gambling_Tec|Data_Memory:data_mem_inst|RAM[32][1]                      ;
-; 3:1                ; 32 bits   ; 64 LEs        ; 0 LEs                ; 64 LEs                 ; Yes        ; |Gambling_Tec|Data_Memory:data_mem_inst|RAM[33][19]                     ;
-; 3:1                ; 32 bits   ; 64 LEs        ; 0 LEs                ; 64 LEs                 ; Yes        ; |Gambling_Tec|Data_Memory:data_mem_inst|RAM[34][25]                     ;
-; 3:1                ; 32 bits   ; 64 LEs        ; 0 LEs                ; 64 LEs                 ; Yes        ; |Gambling_Tec|Data_Memory:data_mem_inst|RAM[35][3]                      ;
-; 3:1                ; 32 bits   ; 64 LEs        ; 0 LEs                ; 64 LEs                 ; Yes        ; |Gambling_Tec|Data_Memory:data_mem_inst|RAM[36][25]                     ;
-; 3:1                ; 32 bits   ; 64 LEs        ; 0 LEs                ; 64 LEs                 ; Yes        ; |Gambling_Tec|Data_Memory:data_mem_inst|RAM[37][13]                     ;
-; 3:1                ; 32 bits   ; 64 LEs        ; 0 LEs                ; 64 LEs                 ; Yes        ; |Gambling_Tec|Data_Memory:data_mem_inst|RAM[38][10]                     ;
-; 3:1                ; 32 bits   ; 64 LEs        ; 0 LEs                ; 64 LEs                 ; Yes        ; |Gambling_Tec|Data_Memory:data_mem_inst|RAM[39][13]                     ;
-; 3:1                ; 32 bits   ; 64 LEs        ; 0 LEs                ; 64 LEs                 ; Yes        ; |Gambling_Tec|Data_Memory:data_mem_inst|RAM[40][15]                     ;
-; 3:1                ; 32 bits   ; 64 LEs        ; 0 LEs                ; 64 LEs                 ; Yes        ; |Gambling_Tec|Data_Memory:data_mem_inst|RAM[41][15]                     ;
-; 3:1                ; 32 bits   ; 64 LEs        ; 0 LEs                ; 64 LEs                 ; Yes        ; |Gambling_Tec|Data_Memory:data_mem_inst|RAM[42][30]                     ;
-; 3:1                ; 32 bits   ; 64 LEs        ; 0 LEs                ; 64 LEs                 ; Yes        ; |Gambling_Tec|Data_Memory:data_mem_inst|RAM[43][19]                     ;
-; 3:1                ; 32 bits   ; 64 LEs        ; 0 LEs                ; 64 LEs                 ; Yes        ; |Gambling_Tec|Data_Memory:data_mem_inst|RAM[44][28]                     ;
-; 3:1                ; 32 bits   ; 64 LEs        ; 0 LEs                ; 64 LEs                 ; Yes        ; |Gambling_Tec|Data_Memory:data_mem_inst|RAM[45][26]                     ;
-; 3:1                ; 32 bits   ; 64 LEs        ; 0 LEs                ; 64 LEs                 ; Yes        ; |Gambling_Tec|Data_Memory:data_mem_inst|RAM[46][8]                      ;
-; 3:1                ; 32 bits   ; 64 LEs        ; 0 LEs                ; 64 LEs                 ; Yes        ; |Gambling_Tec|Data_Memory:data_mem_inst|RAM[47][27]                     ;
-; 3:1                ; 32 bits   ; 64 LEs        ; 0 LEs                ; 64 LEs                 ; Yes        ; |Gambling_Tec|Data_Memory:data_mem_inst|RAM[48][4]                      ;
-; 3:1                ; 32 bits   ; 64 LEs        ; 0 LEs                ; 64 LEs                 ; Yes        ; |Gambling_Tec|Data_Memory:data_mem_inst|RAM[49][4]                      ;
-; 3:1                ; 32 bits   ; 64 LEs        ; 0 LEs                ; 64 LEs                 ; Yes        ; |Gambling_Tec|Data_Memory:data_mem_inst|RAM[50][4]                      ;
-; 3:1                ; 32 bits   ; 64 LEs        ; 0 LEs                ; 64 LEs                 ; Yes        ; |Gambling_Tec|Data_Memory:data_mem_inst|RAM[51][4]                      ;
-; 3:1                ; 32 bits   ; 64 LEs        ; 0 LEs                ; 64 LEs                 ; Yes        ; |Gambling_Tec|Data_Memory:data_mem_inst|RAM[52][5]                      ;
-; 3:1                ; 32 bits   ; 64 LEs        ; 0 LEs                ; 64 LEs                 ; Yes        ; |Gambling_Tec|Data_Memory:data_mem_inst|RAM[53][0]                      ;
-; 3:1                ; 32 bits   ; 64 LEs        ; 0 LEs                ; 64 LEs                 ; Yes        ; |Gambling_Tec|Data_Memory:data_mem_inst|RAM[54][31]                     ;
-; 3:1                ; 32 bits   ; 64 LEs        ; 0 LEs                ; 64 LEs                 ; Yes        ; |Gambling_Tec|Data_Memory:data_mem_inst|RAM[55][15]                     ;
-; 3:1                ; 32 bits   ; 64 LEs        ; 0 LEs                ; 64 LEs                 ; Yes        ; |Gambling_Tec|Data_Memory:data_mem_inst|RAM[56][7]                      ;
-; 3:1                ; 32 bits   ; 64 LEs        ; 0 LEs                ; 64 LEs                 ; Yes        ; |Gambling_Tec|Data_Memory:data_mem_inst|RAM[57][3]                      ;
-; 3:1                ; 32 bits   ; 64 LEs        ; 0 LEs                ; 64 LEs                 ; Yes        ; |Gambling_Tec|Data_Memory:data_mem_inst|RAM[58][29]                     ;
-; 3:1                ; 32 bits   ; 64 LEs        ; 0 LEs                ; 64 LEs                 ; Yes        ; |Gambling_Tec|Data_Memory:data_mem_inst|RAM[59][19]                     ;
-; 3:1                ; 32 bits   ; 64 LEs        ; 0 LEs                ; 64 LEs                 ; Yes        ; |Gambling_Tec|Data_Memory:data_mem_inst|RAM[60][14]                     ;
-; 3:1                ; 32 bits   ; 64 LEs        ; 0 LEs                ; 64 LEs                 ; Yes        ; |Gambling_Tec|Data_Memory:data_mem_inst|RAM[61][23]                     ;
-; 3:1                ; 32 bits   ; 64 LEs        ; 0 LEs                ; 64 LEs                 ; Yes        ; |Gambling_Tec|Data_Memory:data_mem_inst|RAM[62][31]                     ;
-; 3:1                ; 32 bits   ; 64 LEs        ; 0 LEs                ; 64 LEs                 ; Yes        ; |Gambling_Tec|Data_Memory:data_mem_inst|RAM[63][9]                      ;
-; 3:1                ; 32 bits   ; 64 LEs        ; 0 LEs                ; 64 LEs                 ; Yes        ; |Gambling_Tec|CPU:process|Register_File:Reg_file_inst|rf[0][9]          ;
-; 3:1                ; 32 bits   ; 64 LEs        ; 0 LEs                ; 64 LEs                 ; Yes        ; |Gambling_Tec|CPU:process|Register_File:Reg_file_inst|rf[1][10]         ;
-; 3:1                ; 32 bits   ; 64 LEs        ; 0 LEs                ; 64 LEs                 ; Yes        ; |Gambling_Tec|CPU:process|Register_File:Reg_file_inst|rf[2][18]         ;
-; 3:1                ; 32 bits   ; 64 LEs        ; 0 LEs                ; 64 LEs                 ; Yes        ; |Gambling_Tec|CPU:process|Register_File:Reg_file_inst|rf[3][13]         ;
-; 3:1                ; 32 bits   ; 64 LEs        ; 0 LEs                ; 64 LEs                 ; Yes        ; |Gambling_Tec|CPU:process|Register_File:Reg_file_inst|rf[12][30]        ;
-; 3:1                ; 32 bits   ; 64 LEs        ; 0 LEs                ; 64 LEs                 ; Yes        ; |Gambling_Tec|CPU:process|Register_File:Reg_file_inst|rf[13][6]         ;
-; 3:1                ; 32 bits   ; 64 LEs        ; 0 LEs                ; 64 LEs                 ; Yes        ; |Gambling_Tec|CPU:process|Register_File:Reg_file_inst|rf[14][13]        ;
-; 3:1                ; 8 bits    ; 16 LEs        ; 0 LEs                ; 16 LEs                 ; Yes        ; |Gambling_Tec|Ps2_Key:ps2_inst|key_code[5]                              ;
-; 4:1                ; 24 bits   ; 48 LEs        ; 0 LEs                ; 48 LEs                 ; Yes        ; |Gambling_Tec|Data_Memory:data_mem_inst|RAM[2][26]                      ;
-; 4:1                ; 8 bits    ; 16 LEs        ; 0 LEs                ; 16 LEs                 ; Yes        ; |Gambling_Tec|Data_Memory:data_mem_inst|RAM[2][1]                       ;
-; 5:1                ; 4 bits    ; 12 LEs        ; 8 LEs                ; 4 LEs                  ; Yes        ; |Gambling_Tec|Ps2_Key:ps2_inst|counter[0]                               ;
-; 4:1                ; 2 bits    ; 4 LEs         ; 4 LEs                ; 0 LEs                  ; No         ; |Gambling_Tec|Vga_Controller:vga_control|Symbol:slot_0_2|Mux0           ;
-; 4:1                ; 2 bits    ; 4 LEs         ; 4 LEs                ; 0 LEs                  ; No         ; |Gambling_Tec|Vga_Controller:vga_control|Symbol:slot_0_1|Mux0           ;
-; 4:1                ; 2 bits    ; 4 LEs         ; 4 LEs                ; 0 LEs                  ; No         ; |Gambling_Tec|Vga_Controller:vga_control|Symbol:slot_0_0|Mux0           ;
-; 3:1                ; 3 bits    ; 6 LEs         ; 6 LEs                ; 0 LEs                  ; No         ; |Gambling_Tec|Vga_Controller:vga_control|Mux93:color_selector|Selector6 ;
-; 3:1                ; 6 bits    ; 12 LEs        ; 12 LEs               ; 0 LEs                  ; No         ; |Gambling_Tec|CPU:process|Mux:ALUSrc_inst|C[15]                         ;
-; 3:1                ; 2 bits    ; 4 LEs         ; 4 LEs                ; 0 LEs                  ; No         ; |Gambling_Tec|CPU:process|Mux:ALUSrc_inst|C[0]                          ;
-; 3:1                ; 6 bits    ; 12 LEs        ; 12 LEs               ; 0 LEs                  ; No         ; |Gambling_Tec|CPU:process|Mux:ALUSrc_inst|C[6]                          ;
-; 4:1                ; 32 bits   ; 64 LEs        ; 64 LEs               ; 0 LEs                  ; No         ; |Gambling_Tec|CPU:process|ALU:ALU_inst|Mux27                            ;
-; 4:1                ; 8 bits    ; 16 LEs        ; 16 LEs               ; 0 LEs                  ; No         ; |Gambling_Tec|Vga_Controller:vga_control|R[0]                           ;
-; 4:1                ; 3 bits    ; 6 LEs         ; 6 LEs                ; 0 LEs                  ; No         ; |Gambling_Tec|CPU:process|Mux:ALUSrc_inst|C[9]                          ;
-; 9:1                ; 32 bits   ; 192 LEs       ; 192 LEs              ; 0 LEs                  ; No         ; |Gambling_Tec|CPU:process|Register_File:Reg_file_inst|RD1[5]            ;
-; 17:1               ; 32 bits   ; 352 LEs       ; 256 LEs              ; 96 LEs                 ; No         ; |Gambling_Tec|CPU:process|Register_File:Reg_file_inst|RD2[1]            ;
-; 7:1                ; 2 bits    ; 8 LEs         ; 8 LEs                ; 0 LEs                  ; No         ; |Gambling_Tec|Vga_Controller:vga_control|G[6]                           ;
-; 8:1                ; 2 bits    ; 10 LEs        ; 10 LEs               ; 0 LEs                  ; No         ; |Gambling_Tec|Vga_Controller:vga_control|Mux93:color_selector|Selector6 ;
-; 65:1               ; 32 bits   ; 1376 LEs      ; 1376 LEs             ; 0 LEs                  ; No         ; |Gambling_Tec|CPU:process|Mux:MemToReg_inst|C[13]                       ;
-+--------------------+-----------+---------------+----------------------+------------------------+------------+-------------------------------------------------------------------------+
++-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+; Multiplexer Restructuring Statistics (Restructuring Performed)                                                                                                                            ;
++--------------------+-----------+---------------+----------------------+------------------------+------------+-----------------------------------------------------------------------------+
+; Multiplexer Inputs ; Bus Width ; Baseline Area ; Area if Restructured ; Saving if Restructured ; Registered ; Example Multiplexer Output                                                  ;
++--------------------+-----------+---------------+----------------------+------------------------+------------+-----------------------------------------------------------------------------+
+; 4:1                ; 2 bits    ; 4 LEs         ; 4 LEs                ; 0 LEs                  ; Yes        ; |Gambling_Tec|CPU:process|Control_Unit:CU_Inst|Register:Register_Flag1|Q[0] ;
+; 3:1                ; 32 bits   ; 64 LEs        ; 0 LEs                ; 64 LEs                 ; Yes        ; |Gambling_Tec|Data_Memory:data_mem_inst|RAM[0][2]                           ;
+; 3:1                ; 32 bits   ; 64 LEs        ; 0 LEs                ; 64 LEs                 ; Yes        ; |Gambling_Tec|Data_Memory:data_mem_inst|RAM[1][8]                           ;
+; 3:1                ; 32 bits   ; 64 LEs        ; 0 LEs                ; 64 LEs                 ; Yes        ; |Gambling_Tec|Data_Memory:data_mem_inst|RAM[3][17]                          ;
+; 3:1                ; 32 bits   ; 64 LEs        ; 0 LEs                ; 64 LEs                 ; Yes        ; |Gambling_Tec|Data_Memory:data_mem_inst|RAM[4][26]                          ;
+; 3:1                ; 32 bits   ; 64 LEs        ; 0 LEs                ; 64 LEs                 ; Yes        ; |Gambling_Tec|Data_Memory:data_mem_inst|RAM[5][12]                          ;
+; 3:1                ; 32 bits   ; 64 LEs        ; 0 LEs                ; 64 LEs                 ; Yes        ; |Gambling_Tec|Data_Memory:data_mem_inst|RAM[6][5]                           ;
+; 3:1                ; 32 bits   ; 64 LEs        ; 0 LEs                ; 64 LEs                 ; Yes        ; |Gambling_Tec|Data_Memory:data_mem_inst|RAM[7][28]                          ;
+; 3:1                ; 32 bits   ; 64 LEs        ; 0 LEs                ; 64 LEs                 ; Yes        ; |Gambling_Tec|Data_Memory:data_mem_inst|RAM[8][7]                           ;
+; 3:1                ; 32 bits   ; 64 LEs        ; 0 LEs                ; 64 LEs                 ; Yes        ; |Gambling_Tec|Data_Memory:data_mem_inst|RAM[9][15]                          ;
+; 3:1                ; 32 bits   ; 64 LEs        ; 0 LEs                ; 64 LEs                 ; Yes        ; |Gambling_Tec|Data_Memory:data_mem_inst|RAM[10][23]                         ;
+; 3:1                ; 32 bits   ; 64 LEs        ; 0 LEs                ; 64 LEs                 ; Yes        ; |Gambling_Tec|Data_Memory:data_mem_inst|RAM[11][4]                          ;
+; 3:1                ; 32 bits   ; 64 LEs        ; 0 LEs                ; 64 LEs                 ; Yes        ; |Gambling_Tec|Data_Memory:data_mem_inst|RAM[12][28]                         ;
+; 3:1                ; 32 bits   ; 64 LEs        ; 0 LEs                ; 64 LEs                 ; Yes        ; |Gambling_Tec|Data_Memory:data_mem_inst|RAM[13][23]                         ;
+; 3:1                ; 32 bits   ; 64 LEs        ; 0 LEs                ; 64 LEs                 ; Yes        ; |Gambling_Tec|Data_Memory:data_mem_inst|RAM[14][28]                         ;
+; 3:1                ; 32 bits   ; 64 LEs        ; 0 LEs                ; 64 LEs                 ; Yes        ; |Gambling_Tec|Data_Memory:data_mem_inst|RAM[15][29]                         ;
+; 3:1                ; 32 bits   ; 64 LEs        ; 0 LEs                ; 64 LEs                 ; Yes        ; |Gambling_Tec|Data_Memory:data_mem_inst|RAM[16][17]                         ;
+; 3:1                ; 32 bits   ; 64 LEs        ; 0 LEs                ; 64 LEs                 ; Yes        ; |Gambling_Tec|Data_Memory:data_mem_inst|RAM[17][28]                         ;
+; 3:1                ; 32 bits   ; 64 LEs        ; 0 LEs                ; 64 LEs                 ; Yes        ; |Gambling_Tec|Data_Memory:data_mem_inst|RAM[18][19]                         ;
+; 3:1                ; 32 bits   ; 64 LEs        ; 0 LEs                ; 64 LEs                 ; Yes        ; |Gambling_Tec|Data_Memory:data_mem_inst|RAM[19][19]                         ;
+; 3:1                ; 32 bits   ; 64 LEs        ; 0 LEs                ; 64 LEs                 ; Yes        ; |Gambling_Tec|Data_Memory:data_mem_inst|RAM[20][19]                         ;
+; 3:1                ; 32 bits   ; 64 LEs        ; 0 LEs                ; 64 LEs                 ; Yes        ; |Gambling_Tec|Data_Memory:data_mem_inst|RAM[21][19]                         ;
+; 3:1                ; 32 bits   ; 64 LEs        ; 0 LEs                ; 64 LEs                 ; Yes        ; |Gambling_Tec|Data_Memory:data_mem_inst|RAM[22][14]                         ;
+; 3:1                ; 32 bits   ; 64 LEs        ; 0 LEs                ; 64 LEs                 ; Yes        ; |Gambling_Tec|Data_Memory:data_mem_inst|RAM[23][28]                         ;
+; 3:1                ; 32 bits   ; 64 LEs        ; 0 LEs                ; 64 LEs                 ; Yes        ; |Gambling_Tec|Data_Memory:data_mem_inst|RAM[24][19]                         ;
+; 3:1                ; 32 bits   ; 64 LEs        ; 0 LEs                ; 64 LEs                 ; Yes        ; |Gambling_Tec|Data_Memory:data_mem_inst|RAM[25][18]                         ;
+; 3:1                ; 32 bits   ; 64 LEs        ; 0 LEs                ; 64 LEs                 ; Yes        ; |Gambling_Tec|Data_Memory:data_mem_inst|RAM[26][5]                          ;
+; 3:1                ; 32 bits   ; 64 LEs        ; 0 LEs                ; 64 LEs                 ; Yes        ; |Gambling_Tec|Data_Memory:data_mem_inst|RAM[27][2]                          ;
+; 3:1                ; 32 bits   ; 64 LEs        ; 0 LEs                ; 64 LEs                 ; Yes        ; |Gambling_Tec|Data_Memory:data_mem_inst|RAM[28][24]                         ;
+; 3:1                ; 32 bits   ; 64 LEs        ; 0 LEs                ; 64 LEs                 ; Yes        ; |Gambling_Tec|Data_Memory:data_mem_inst|RAM[29][5]                          ;
+; 3:1                ; 32 bits   ; 64 LEs        ; 0 LEs                ; 64 LEs                 ; Yes        ; |Gambling_Tec|Data_Memory:data_mem_inst|RAM[30][18]                         ;
+; 3:1                ; 32 bits   ; 64 LEs        ; 0 LEs                ; 64 LEs                 ; Yes        ; |Gambling_Tec|Data_Memory:data_mem_inst|RAM[31][4]                          ;
+; 3:1                ; 32 bits   ; 64 LEs        ; 0 LEs                ; 64 LEs                 ; Yes        ; |Gambling_Tec|Data_Memory:data_mem_inst|RAM[32][4]                          ;
+; 3:1                ; 32 bits   ; 64 LEs        ; 0 LEs                ; 64 LEs                 ; Yes        ; |Gambling_Tec|Data_Memory:data_mem_inst|RAM[33][21]                         ;
+; 3:1                ; 32 bits   ; 64 LEs        ; 0 LEs                ; 64 LEs                 ; Yes        ; |Gambling_Tec|Data_Memory:data_mem_inst|RAM[34][22]                         ;
+; 3:1                ; 32 bits   ; 64 LEs        ; 0 LEs                ; 64 LEs                 ; Yes        ; |Gambling_Tec|Data_Memory:data_mem_inst|RAM[35][1]                          ;
+; 3:1                ; 32 bits   ; 64 LEs        ; 0 LEs                ; 64 LEs                 ; Yes        ; |Gambling_Tec|Data_Memory:data_mem_inst|RAM[36][7]                          ;
+; 3:1                ; 32 bits   ; 64 LEs        ; 0 LEs                ; 64 LEs                 ; Yes        ; |Gambling_Tec|Data_Memory:data_mem_inst|RAM[37][23]                         ;
+; 3:1                ; 32 bits   ; 64 LEs        ; 0 LEs                ; 64 LEs                 ; Yes        ; |Gambling_Tec|Data_Memory:data_mem_inst|RAM[38][26]                         ;
+; 3:1                ; 32 bits   ; 64 LEs        ; 0 LEs                ; 64 LEs                 ; Yes        ; |Gambling_Tec|Data_Memory:data_mem_inst|RAM[39][24]                         ;
+; 3:1                ; 32 bits   ; 64 LEs        ; 0 LEs                ; 64 LEs                 ; Yes        ; |Gambling_Tec|Data_Memory:data_mem_inst|RAM[40][10]                         ;
+; 3:1                ; 32 bits   ; 64 LEs        ; 0 LEs                ; 64 LEs                 ; Yes        ; |Gambling_Tec|Data_Memory:data_mem_inst|RAM[41][25]                         ;
+; 3:1                ; 32 bits   ; 64 LEs        ; 0 LEs                ; 64 LEs                 ; Yes        ; |Gambling_Tec|Data_Memory:data_mem_inst|RAM[42][20]                         ;
+; 3:1                ; 32 bits   ; 64 LEs        ; 0 LEs                ; 64 LEs                 ; Yes        ; |Gambling_Tec|Data_Memory:data_mem_inst|RAM[43][16]                         ;
+; 3:1                ; 32 bits   ; 64 LEs        ; 0 LEs                ; 64 LEs                 ; Yes        ; |Gambling_Tec|Data_Memory:data_mem_inst|RAM[44][9]                          ;
+; 3:1                ; 32 bits   ; 64 LEs        ; 0 LEs                ; 64 LEs                 ; Yes        ; |Gambling_Tec|Data_Memory:data_mem_inst|RAM[45][15]                         ;
+; 3:1                ; 32 bits   ; 64 LEs        ; 0 LEs                ; 64 LEs                 ; Yes        ; |Gambling_Tec|Data_Memory:data_mem_inst|RAM[46][4]                          ;
+; 3:1                ; 32 bits   ; 64 LEs        ; 0 LEs                ; 64 LEs                 ; Yes        ; |Gambling_Tec|Data_Memory:data_mem_inst|RAM[47][5]                          ;
+; 3:1                ; 32 bits   ; 64 LEs        ; 0 LEs                ; 64 LEs                 ; Yes        ; |Gambling_Tec|Data_Memory:data_mem_inst|RAM[48][10]                         ;
+; 3:1                ; 32 bits   ; 64 LEs        ; 0 LEs                ; 64 LEs                 ; Yes        ; |Gambling_Tec|Data_Memory:data_mem_inst|RAM[49][10]                         ;
+; 3:1                ; 32 bits   ; 64 LEs        ; 0 LEs                ; 64 LEs                 ; Yes        ; |Gambling_Tec|Data_Memory:data_mem_inst|RAM[50][10]                         ;
+; 3:1                ; 32 bits   ; 64 LEs        ; 0 LEs                ; 64 LEs                 ; Yes        ; |Gambling_Tec|Data_Memory:data_mem_inst|RAM[51][10]                         ;
+; 3:1                ; 32 bits   ; 64 LEs        ; 0 LEs                ; 64 LEs                 ; Yes        ; |Gambling_Tec|Data_Memory:data_mem_inst|RAM[52][22]                         ;
+; 3:1                ; 32 bits   ; 64 LEs        ; 0 LEs                ; 64 LEs                 ; Yes        ; |Gambling_Tec|Data_Memory:data_mem_inst|RAM[53][9]                          ;
+; 3:1                ; 32 bits   ; 64 LEs        ; 0 LEs                ; 64 LEs                 ; Yes        ; |Gambling_Tec|Data_Memory:data_mem_inst|RAM[54][1]                          ;
+; 3:1                ; 32 bits   ; 64 LEs        ; 0 LEs                ; 64 LEs                 ; Yes        ; |Gambling_Tec|Data_Memory:data_mem_inst|RAM[55][12]                         ;
+; 3:1                ; 32 bits   ; 64 LEs        ; 0 LEs                ; 64 LEs                 ; Yes        ; |Gambling_Tec|Data_Memory:data_mem_inst|RAM[56][6]                          ;
+; 3:1                ; 32 bits   ; 64 LEs        ; 0 LEs                ; 64 LEs                 ; Yes        ; |Gambling_Tec|Data_Memory:data_mem_inst|RAM[57][21]                         ;
+; 3:1                ; 32 bits   ; 64 LEs        ; 0 LEs                ; 64 LEs                 ; Yes        ; |Gambling_Tec|Data_Memory:data_mem_inst|RAM[58][12]                         ;
+; 3:1                ; 32 bits   ; 64 LEs        ; 0 LEs                ; 64 LEs                 ; Yes        ; |Gambling_Tec|Data_Memory:data_mem_inst|RAM[59][0]                          ;
+; 3:1                ; 32 bits   ; 64 LEs        ; 0 LEs                ; 64 LEs                 ; Yes        ; |Gambling_Tec|Data_Memory:data_mem_inst|RAM[60][3]                          ;
+; 3:1                ; 32 bits   ; 64 LEs        ; 0 LEs                ; 64 LEs                 ; Yes        ; |Gambling_Tec|Data_Memory:data_mem_inst|RAM[61][27]                         ;
+; 3:1                ; 32 bits   ; 64 LEs        ; 0 LEs                ; 64 LEs                 ; Yes        ; |Gambling_Tec|Data_Memory:data_mem_inst|RAM[62][27]                         ;
+; 3:1                ; 32 bits   ; 64 LEs        ; 0 LEs                ; 64 LEs                 ; Yes        ; |Gambling_Tec|Data_Memory:data_mem_inst|RAM[63][16]                         ;
+; 3:1                ; 32 bits   ; 64 LEs        ; 0 LEs                ; 64 LEs                 ; Yes        ; |Gambling_Tec|CPU:process|Register_File:Reg_file_inst|rf[0][14]             ;
+; 3:1                ; 32 bits   ; 64 LEs        ; 0 LEs                ; 64 LEs                 ; Yes        ; |Gambling_Tec|CPU:process|Register_File:Reg_file_inst|rf[1][17]             ;
+; 3:1                ; 32 bits   ; 64 LEs        ; 0 LEs                ; 64 LEs                 ; Yes        ; |Gambling_Tec|CPU:process|Register_File:Reg_file_inst|rf[2][20]             ;
+; 3:1                ; 32 bits   ; 64 LEs        ; 0 LEs                ; 64 LEs                 ; Yes        ; |Gambling_Tec|CPU:process|Register_File:Reg_file_inst|rf[3][19]             ;
+; 3:1                ; 32 bits   ; 64 LEs        ; 0 LEs                ; 64 LEs                 ; Yes        ; |Gambling_Tec|CPU:process|Register_File:Reg_file_inst|rf[4][6]              ;
+; 3:1                ; 32 bits   ; 64 LEs        ; 0 LEs                ; 64 LEs                 ; Yes        ; |Gambling_Tec|CPU:process|Register_File:Reg_file_inst|rf[5][6]              ;
+; 3:1                ; 32 bits   ; 64 LEs        ; 0 LEs                ; 64 LEs                 ; Yes        ; |Gambling_Tec|CPU:process|Register_File:Reg_file_inst|rf[6][6]              ;
+; 3:1                ; 32 bits   ; 64 LEs        ; 0 LEs                ; 64 LEs                 ; Yes        ; |Gambling_Tec|CPU:process|Register_File:Reg_file_inst|rf[7][1]              ;
+; 3:1                ; 32 bits   ; 64 LEs        ; 0 LEs                ; 64 LEs                 ; Yes        ; |Gambling_Tec|CPU:process|Register_File:Reg_file_inst|rf[8][18]             ;
+; 3:1                ; 32 bits   ; 64 LEs        ; 0 LEs                ; 64 LEs                 ; Yes        ; |Gambling_Tec|CPU:process|Register_File:Reg_file_inst|rf[9][31]             ;
+; 3:1                ; 32 bits   ; 64 LEs        ; 0 LEs                ; 64 LEs                 ; Yes        ; |Gambling_Tec|CPU:process|Register_File:Reg_file_inst|rf[10][6]             ;
+; 3:1                ; 32 bits   ; 64 LEs        ; 0 LEs                ; 64 LEs                 ; Yes        ; |Gambling_Tec|CPU:process|Register_File:Reg_file_inst|rf[11][19]            ;
+; 3:1                ; 32 bits   ; 64 LEs        ; 0 LEs                ; 64 LEs                 ; Yes        ; |Gambling_Tec|CPU:process|Register_File:Reg_file_inst|rf[12][6]             ;
+; 3:1                ; 32 bits   ; 64 LEs        ; 0 LEs                ; 64 LEs                 ; Yes        ; |Gambling_Tec|CPU:process|Register_File:Reg_file_inst|rf[13][6]             ;
+; 3:1                ; 32 bits   ; 64 LEs        ; 0 LEs                ; 64 LEs                 ; Yes        ; |Gambling_Tec|CPU:process|Register_File:Reg_file_inst|rf[14][6]             ;
+; 3:1                ; 8 bits    ; 16 LEs        ; 0 LEs                ; 16 LEs                 ; Yes        ; |Gambling_Tec|Ps2_Key:ps2_inst|key_code[7]                                  ;
+; 4:1                ; 24 bits   ; 48 LEs        ; 0 LEs                ; 48 LEs                 ; Yes        ; |Gambling_Tec|Data_Memory:data_mem_inst|RAM[2][24]                          ;
+; 4:1                ; 8 bits    ; 16 LEs        ; 0 LEs                ; 16 LEs                 ; Yes        ; |Gambling_Tec|Data_Memory:data_mem_inst|RAM[2][6]                           ;
+; 5:1                ; 4 bits    ; 12 LEs        ; 8 LEs                ; 4 LEs                  ; Yes        ; |Gambling_Tec|Ps2_Key:ps2_inst|counter[1]                                   ;
+; 4:1                ; 2 bits    ; 4 LEs         ; 4 LEs                ; 0 LEs                  ; No         ; |Gambling_Tec|Vga_Controller:vga_control|Symbol:slot_1_0|Mux0               ;
+; 4:1                ; 2 bits    ; 4 LEs         ; 4 LEs                ; 0 LEs                  ; No         ; |Gambling_Tec|Vga_Controller:vga_control|Symbol:slot_0_2|Mux0               ;
+; 3:1                ; 2 bits    ; 4 LEs         ; 4 LEs                ; 0 LEs                  ; No         ; |Gambling_Tec|Vga_Controller:vga_control|Mux93:color_selector|Selector15    ;
+; 4:1                ; 2 bits    ; 4 LEs         ; 4 LEs                ; 0 LEs                  ; No         ; |Gambling_Tec|Vga_Controller:vga_control|Symbol:slot_1_1|Mux0               ;
+; 3:1                ; 8 bits    ; 16 LEs        ; 16 LEs               ; 0 LEs                  ; No         ; |Gambling_Tec|CPU:process|Mux:ALUSrc_inst|C[14]                             ;
+; 3:1                ; 2 bits    ; 4 LEs         ; 4 LEs                ; 0 LEs                  ; No         ; |Gambling_Tec|CPU:process|Mux:ALUSrc_inst|C[1]                              ;
+; 3:1                ; 6 bits    ; 12 LEs        ; 12 LEs               ; 0 LEs                  ; No         ; |Gambling_Tec|CPU:process|Mux:ALUSrc_inst|C[2]                              ;
+; 4:1                ; 32 bits   ; 64 LEs        ; 64 LEs               ; 0 LEs                  ; No         ; |Gambling_Tec|CPU:process|ALU:ALU_inst|Mux16                                ;
+; 4:1                ; 8 bits    ; 16 LEs        ; 16 LEs               ; 0 LEs                  ; No         ; |Gambling_Tec|Vga_Controller:vga_control|B[5]                               ;
+; 4:1                ; 3 bits    ; 6 LEs         ; 6 LEs                ; 0 LEs                  ; No         ; |Gambling_Tec|CPU:process|Mux:ALUSrc_inst|C[10]                             ;
+; 5:1                ; 2 bits    ; 6 LEs         ; 6 LEs                ; 0 LEs                  ; No         ; |Gambling_Tec|Vga_Controller:vga_control|Mux93:color_selector|Selector15    ;
+; 17:1               ; 32 bits   ; 352 LEs       ; 352 LEs              ; 0 LEs                  ; No         ; |Gambling_Tec|CPU:process|Register_File:Reg_file_inst|RD2[15]               ;
+; 17:1               ; 32 bits   ; 352 LEs       ; 352 LEs              ; 0 LEs                  ; No         ; |Gambling_Tec|CPU:process|Register_File:Reg_file_inst|RD1[13]               ;
+; 7:1                ; 2 bits    ; 8 LEs         ; 8 LEs                ; 0 LEs                  ; No         ; |Gambling_Tec|Vga_Controller:vga_control|B[6]                               ;
+; 8:1                ; 2 bits    ; 10 LEs        ; 10 LEs               ; 0 LEs                  ; No         ; |Gambling_Tec|Vga_Controller:vga_control|Mux93:color_selector|Selector15    ;
+; 65:1               ; 32 bits   ; 1376 LEs      ; 1376 LEs             ; 0 LEs                  ; No         ; |Gambling_Tec|CPU:process|Mux:MemToReg_inst|C[19]                           ;
+; 20:1               ; 2 bits    ; 26 LEs        ; 26 LEs               ; 0 LEs                  ; No         ; |Gambling_Tec|Vga_Controller:vga_control|Mux93:color_selector|Selector19    ;
++--------------------+-----------+---------------+----------------------+------------------------+------------+-----------------------------------------------------------------------------+
 
 
 +-------------------------------------------------------+
@@ -3260,31 +3016,29 @@ Note: In order to hide this table in the UI and the text report file, please set
 Note: In order to hide this table in the UI and the text report file, please set the "Show Parameter Settings in Synthesis Report" option in "Analysis and Synthesis Settings -> More Settings" to "Off".
 
 
-+--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
-; Port Connectivity Checks: "Data_Memory:data_mem_inst"                                                                                                                                ;
-+-------------------+--------+----------+----------------------------------------------------------------------------------------------------------------------------------------------+
-; Port              ; Type   ; Severity ; Details                                                                                                                                      ;
-+-------------------+--------+----------+----------------------------------------------------------------------------------------------------------------------------------------------+
-; addr_kb[31..4]    ; Input  ; Info     ; Stuck at GND                                                                                                                                 ;
-; addr_kb[3]        ; Input  ; Info     ; Stuck at VCC                                                                                                                                 ;
-; addr_kb[2]        ; Input  ; Info     ; Stuck at GND                                                                                                                                 ;
-; addr_kb[1]        ; Input  ; Info     ; Stuck at VCC                                                                                                                                 ;
-; addr_kb[0]        ; Input  ; Info     ; Stuck at GND                                                                                                                                 ;
-; data_kb[31..8]    ; Input  ; Info     ; Stuck at GND                                                                                                                                 ;
-; code_key          ; Output ; Info     ; Connected to dangling logic. Logic that only feeds a dangling port will be removed.                                                          ;
-; Add_Mone[31..5]   ; Input  ; Info     ; Stuck at GND                                                                                                                                 ;
-; Add_Mone[1..0]    ; Input  ; Info     ; Stuck at GND                                                                                                                                 ;
-; Add_Mone[4]       ; Input  ; Info     ; Stuck at VCC                                                                                                                                 ;
-; Add_Mone[3]       ; Input  ; Info     ; Stuck at GND                                                                                                                                 ;
-; Add_Mone[2]       ; Input  ; Info     ; Stuck at VCC                                                                                                                                 ;
-; Data_Mone[31..10] ; Output ; Info     ; Connected to dangling logic. Logic that only feeds a dangling port will be removed.                                                          ;
-; Add_A             ; Input  ; Warning  ; Declared by entity but not connected by instance. If a default value exists, it will be used.  Otherwise, the port will be connected to GND. ;
-; Data_A            ; Output ; Warning  ; Declared by entity but not connected by instance. Logic that only feeds a dangling port will be removed.                                     ;
-; Add_B             ; Input  ; Warning  ; Declared by entity but not connected by instance. If a default value exists, it will be used.  Otherwise, the port will be connected to GND. ;
-; Data_B            ; Output ; Warning  ; Declared by entity but not connected by instance. Logic that only feeds a dangling port will be removed.                                     ;
-; Add_C             ; Input  ; Warning  ; Declared by entity but not connected by instance. If a default value exists, it will be used.  Otherwise, the port will be connected to GND. ;
-; Data_C            ; Output ; Warning  ; Declared by entity but not connected by instance. Logic that only feeds a dangling port will be removed.                                     ;
-+-------------------+--------+----------+----------------------------------------------------------------------------------------------------------------------------------------------+
++-----------------------------------------------------------------------------------------------------------------------------+
+; Port Connectivity Checks: "Data_Memory:data_mem_inst"                                                                       ;
++-------------------+--------+----------+-------------------------------------------------------------------------------------+
+; Port              ; Type   ; Severity ; Details                                                                             ;
++-------------------+--------+----------+-------------------------------------------------------------------------------------+
+; addr_kb[31..4]    ; Input  ; Info     ; Stuck at GND                                                                        ;
+; addr_kb[3]        ; Input  ; Info     ; Stuck at VCC                                                                        ;
+; addr_kb[2]        ; Input  ; Info     ; Stuck at GND                                                                        ;
+; addr_kb[1]        ; Input  ; Info     ; Stuck at VCC                                                                        ;
+; addr_kb[0]        ; Input  ; Info     ; Stuck at GND                                                                        ;
+; data_kb[31..8]    ; Input  ; Info     ; Stuck at GND                                                                        ;
+; code_key          ; Output ; Info     ; Connected to dangling logic. Logic that only feeds a dangling port will be removed. ;
+; Add_Mone[31..5]   ; Input  ; Info     ; Stuck at GND                                                                        ;
+; Add_Mone[1..0]    ; Input  ; Info     ; Stuck at GND                                                                        ;
+; Add_Mone[4]       ; Input  ; Info     ; Stuck at VCC                                                                        ;
+; Add_Mone[3]       ; Input  ; Info     ; Stuck at GND                                                                        ;
+; Add_Mone[2]       ; Input  ; Info     ; Stuck at VCC                                                                        ;
+; Data_Mone[31..10] ; Output ; Info     ; Connected to dangling logic. Logic that only feeds a dangling port will be removed. ;
+; Add_A[4..3]       ; Input  ; Info     ; Stuck at VCC                                                                        ;
+; Add_A[31..5]      ; Input  ; Info     ; Stuck at GND                                                                        ;
+; Add_A[2..0]       ; Input  ; Info     ; Stuck at GND                                                                        ;
+; Data_A[31..8]     ; Output ; Info     ; Connected to dangling logic. Logic that only feeds a dangling port will be removed. ;
++-------------------+--------+----------+-------------------------------------------------------------------------------------+
 
 
 +------------------------------------------------------------+
@@ -3541,14 +3295,17 @@ Note: In order to hide this table in the UI and the text report file, please set
 +------+-------+----------+----------------------------------------------+
 
 
-+--------------------------------------------------------+
-; Port Connectivity Checks: "Vga_Controller:vga_control" ;
-+------+--------+----------+-----------------------------+
-; Port ; Type   ; Severity ; Details                     ;
-+------+--------+----------+-----------------------------+
-; Q_X  ; Output ; Info     ; Explicitly unconnected      ;
-; Q_Y  ; Output ; Info     ; Explicitly unconnected      ;
-+------+--------+----------+-----------------------------+
++---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+; Port Connectivity Checks: "Vga_Controller:vga_control"                                                                                                                                                        ;
++--------+--------+----------+----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+; Port   ; Type   ; Severity ; Details                                                                                                                                                                          ;
++--------+--------+----------+----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+; Q_X    ; Output ; Info     ; Explicitly unconnected                                                                                                                                                           ;
+; Q_Y    ; Output ; Info     ; Explicitly unconnected                                                                                                                                                           ;
+; state1 ; Input  ; Warning  ; Input port expression (3 bits) is wider than the input port (2 bits) it drives.  The 1 most-significant bit(s) in the expression will be dangling if they have no other fanouts. ;
+; state2 ; Input  ; Warning  ; Input port expression (3 bits) is wider than the input port (2 bits) it drives.  The 1 most-significant bit(s) in the expression will be dangling if they have no other fanouts. ;
+; state3 ; Input  ; Warning  ; Input port expression (3 bits) is wider than the input port (2 bits) it drives.  The 1 most-significant bit(s) in the expression will be dangling if they have no other fanouts. ;
++--------+--------+----------+----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
 
 
 +-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
@@ -3565,17 +3322,17 @@ Note: In order to hide this table in the UI and the text report file, please set
 +-----------------------+-----------------------------+
 ; Type                  ; Count                       ;
 +-----------------------+-----------------------------+
-; arriav_ff             ; 2453                        ;
-;     CLR               ; 36                          ;
+; arriav_ff             ; 2711                        ;
+;     CLR               ; 35                          ;
 ;     ENA               ; 13                          ;
-;     ENA CLR           ; 12                          ;
+;     ENA CLR           ; 15                          ;
 ;     ENA CLR SCLR      ; 20                          ;
 ;     ENA CLR SLD       ; 30                          ;
-;     ENA SCLR          ; 2284                        ;
+;     ENA SCLR          ; 2540                        ;
 ;     ENA SCLR SLD      ; 8                           ;
 ;     SCLR              ; 41                          ;
 ;     plain             ; 9                           ;
-; arriav_lcell_comb     ; 2956                        ;
+; arriav_lcell_comb     ; 3109                        ;
 ;     arith             ; 866                         ;
 ;         0 data inputs ; 167                         ;
 ;         1 data inputs ; 323                         ;
@@ -3585,14 +3342,14 @@ Note: In order to hide this table in the UI and the text report file, please set
 ;         5 data inputs ; 50                          ;
 ;     extend            ; 30                          ;
 ;         7 data inputs ; 30                          ;
-;     normal            ; 2012                        ;
+;     normal            ; 2165                        ;
 ;         0 data inputs ; 1                           ;
 ;         1 data inputs ; 5                           ;
-;         2 data inputs ; 284                         ;
-;         3 data inputs ; 231                         ;
-;         4 data inputs ; 189                         ;
-;         5 data inputs ; 237                         ;
-;         6 data inputs ; 1065                        ;
+;         2 data inputs ; 287                         ;
+;         3 data inputs ; 257                         ;
+;         4 data inputs ; 191                         ;
+;         5 data inputs ; 261                         ;
+;         6 data inputs ; 1163                        ;
 ;     shared            ; 48                          ;
 ;         0 data inputs ; 10                          ;
 ;         1 data inputs ; 36                          ;
@@ -3600,7 +3357,7 @@ Note: In order to hide this table in the UI and the text report file, please set
 ; boundary_port         ; 75                          ;
 ;                       ;                             ;
 ; Max LUT depth         ; 26.00                       ;
-; Average LUT depth     ; 9.89                        ;
+; Average LUT depth     ; 9.87                        ;
 +-----------------------+-----------------------------+
 
 
@@ -3682,7 +3439,7 @@ Note: In order to hide this table in the UI and the text report file, please set
 Info: *******************************************************************
 Info: Running Quartus Prime Analysis & Synthesis
     Info: Version 18.1.0 Build 625 09/12/2018 SJ Lite Edition
-    Info: Processing started: Thu Jun 19 18:54:55 2025
+    Info: Processing started: Thu Jun 19 20:24:05 2025
 Info: Command: quartus_map --read_settings_files=on --write_settings_files=off Gambling_Tec -c Gambling_Tec
 Warning (18236): Number of processors has not been specified which may cause overloading on shared machines.  Set the global assignment NUM_PARALLEL_PROCESSORS in your QSF to an appropriate value for best performance.
 Info (20030): Parallel compilation is enabled and will use 4 of the 4 processors detected
@@ -3717,7 +3474,6 @@ Info (12021): Found 1 design units, including 1 entities, in source file alu.sv
     Info (12023): Found entity 1: ALU File: C:/Users/josee/CE3201_PF/ALU.sv Line: 1
 Info (12021): Found 1 design units, including 1 entities, in source file adder.sv
     Info (12023): Found entity 1: Adder File: C:/Users/josee/CE3201_PF/Adder.sv Line: 1
-Warning (10275): Verilog HDL Module Instantiation warning at Gambling_Tec.sv(134): ignored dangling comma in List of Port Connections File: C:/Users/josee/CE3201_PF/Gambling_Tec.sv Line: 134
 Info (12021): Found 1 design units, including 1 entities, in source file gambling_tec.sv
     Info (12023): Found entity 1: Gambling_Tec File: C:/Users/josee/CE3201_PF/Gambling_Tec.sv Line: 1
 Info (12021): Found 1 design units, including 1 entities, in source file cpu_tb.sv
@@ -3789,9 +3545,9 @@ Info (12021): Found 1 design units, including 1 entities, in source file debounc
     Info (12023): Found entity 1: debounce File: C:/Users/josee/CE3201_PF/debounce.sv Line: 1
 Warning (10236): Verilog HDL Implicit Net warning at Decoder.sv(35): created implicit net for "ALUOP" File: C:/Users/josee/CE3201_PF/Decoder.sv Line: 35
 Info (12127): Elaborating entity "Gambling_Tec" for the top level hierarchy
-Warning (10230): Verilog HDL assignment warning at Gambling_Tec.sv(74): truncated value with size 10 to match size of target (8) File: C:/Users/josee/CE3201_PF/Gambling_Tec.sv Line: 74
+Warning (10230): Verilog HDL assignment warning at Gambling_Tec.sv(79): truncated value with size 10 to match size of target (8) File: C:/Users/josee/CE3201_PF/Gambling_Tec.sv Line: 79
 Info (12128): Elaborating entity "clk_div" for hierarchy "clk_div:div_clo" File: C:/Users/josee/CE3201_PF/Gambling_Tec.sv Line: 37
-Info (12128): Elaborating entity "Vga_Controller" for hierarchy "Vga_Controller:vga_control" File: C:/Users/josee/CE3201_PF/Gambling_Tec.sv Line: 60
+Info (12128): Elaborating entity "Vga_Controller" for hierarchy "Vga_Controller:vga_control" File: C:/Users/josee/CE3201_PF/Gambling_Tec.sv Line: 65
 Warning (10036): Verilog HDL or VHDL warning at Vga_Controller.sv(31): object "Area_screen" assigned a value but never read File: C:/Users/josee/CE3201_PF/Vga_Controller.sv Line: 31
 Warning (10036): Verilog HDL or VHDL warning at Vga_Controller.sv(41): object "Area_marco" assigned a value but never read File: C:/Users/josee/CE3201_PF/Vga_Controller.sv Line: 41
 Info (10008): Verilog HDL or VHDL information: EDA Netlist Writer cannot regroup multidimensional array "R_slot" into its bus
@@ -3955,12 +3711,12 @@ Info (10264): Verilog HDL Case Statement information at Rom_tile.sv(45): all cas
 Warning (10030): Net "sprite_i.data_a" at Rom_tile.sv(18) has no driver or initial value, using a default initial value '0' File: C:/Users/josee/CE3201_PF/Rom_tile.sv Line: 18
 Warning (10030): Net "sprite_i.waddr_a" at Rom_tile.sv(18) has no driver or initial value, using a default initial value '0' File: C:/Users/josee/CE3201_PF/Rom_tile.sv Line: 18
 Warning (10030): Net "sprite_i.we_a" at Rom_tile.sv(18) has no driver or initial value, using a default initial value '0' File: C:/Users/josee/CE3201_PF/Rom_tile.sv Line: 18
-Info (12128): Elaborating entity "ROM" for hierarchy "ROM:rom0" File: C:/Users/josee/CE3201_PF/Gambling_Tec.sv Line: 81
-Warning (10850): Verilog HDL warning at ROM.sv(9): number of words (39) in memory file does not match the number of elements in the address range [0:63] File: C:/Users/josee/CE3201_PF/ROM.sv Line: 9
+Info (12128): Elaborating entity "ROM" for hierarchy "ROM:rom0" File: C:/Users/josee/CE3201_PF/Gambling_Tec.sv Line: 86
+Warning (10850): Verilog HDL warning at ROM.sv(9): number of words (65) in memory file does not match the number of elements in the address range [0:63] File: C:/Users/josee/CE3201_PF/ROM.sv Line: 9
 Warning (10030): Net "RAM.data_a" at ROM.sv(6) has no driver or initial value, using a default initial value '0' File: C:/Users/josee/CE3201_PF/ROM.sv Line: 6
 Warning (10030): Net "RAM.waddr_a" at ROM.sv(6) has no driver or initial value, using a default initial value '0' File: C:/Users/josee/CE3201_PF/ROM.sv Line: 6
 Warning (10030): Net "RAM.we_a" at ROM.sv(6) has no driver or initial value, using a default initial value '0' File: C:/Users/josee/CE3201_PF/ROM.sv Line: 6
-Info (12128): Elaborating entity "Ps2_Key" for hierarchy "Ps2_Key:ps2_inst" File: C:/Users/josee/CE3201_PF/Gambling_Tec.sv Line: 93
+Info (12128): Elaborating entity "Ps2_Key" for hierarchy "Ps2_Key:ps2_inst" File: C:/Users/josee/CE3201_PF/Gambling_Tec.sv Line: 98
 Warning (10036): Verilog HDL or VHDL warning at Ps2_Key.sv(30): object "holding" assigned a value but never read File: C:/Users/josee/CE3201_PF/Ps2_Key.sv Line: 30
 Warning (10036): Verilog HDL or VHDL warning at Ps2_Key.sv(37): object "holding_counter" assigned a value but never read File: C:/Users/josee/CE3201_PF/Ps2_Key.sv Line: 37
 Warning (10230): Verilog HDL assignment warning at Ps2_Key.sv(64): truncated value with size 32 to match size of target (8) File: C:/Users/josee/CE3201_PF/Ps2_Key.sv Line: 64
@@ -3969,7 +3725,7 @@ Warning (10230): Verilog HDL assignment warning at Ps2_Key.sv(92): truncated val
 Info (12128): Elaborating entity "debounce" for hierarchy "Ps2_Key:ps2_inst|debounce:db" File: C:/Users/josee/CE3201_PF/Ps2_Key.sv Line: 166
 Warning (10230): Verilog HDL assignment warning at debounce.sv(28): truncated value with size 32 to match size of target (20) File: C:/Users/josee/CE3201_PF/debounce.sv Line: 28
 Info (10264): Verilog HDL Case Statement information at debounce.sv(24): all case item expressions in this case statement are onehot File: C:/Users/josee/CE3201_PF/debounce.sv Line: 24
-Info (12128): Elaborating entity "CPU" for hierarchy "CPU:process" File: C:/Users/josee/CE3201_PF/Gambling_Tec.sv Line: 108
+Info (12128): Elaborating entity "CPU" for hierarchy "CPU:process" File: C:/Users/josee/CE3201_PF/Gambling_Tec.sv Line: 113
 Info (12128): Elaborating entity "Mux" for hierarchy "CPU:process|Mux:next_PC_inst" File: C:/Users/josee/CE3201_PF/CPU.sv Line: 48
 Info (12128): Elaborating entity "Register" for hierarchy "CPU:process|Register:PC_Register" File: C:/Users/josee/CE3201_PF/CPU.sv Line: 56
 Info (12128): Elaborating entity "Mux" for hierarchy "CPU:process|Mux:RA1_inst" File: C:/Users/josee/CE3201_PF/CPU.sv Line: 63
@@ -3986,7 +3742,7 @@ Info (12128): Elaborating entity "ALU_Decoder" for hierarchy "CPU:process|Contro
 Info (12128): Elaborating entity "Register" for hierarchy "CPU:process|Control_Unit:CU_Inst|Register:Register_Flag1" File: C:/Users/josee/CE3201_PF/Control_Unit.sv Line: 57
 Warning (10230): Verilog HDL assignment warning at Register.sv(12): truncated value with size 10 to match size of target (2) File: C:/Users/josee/CE3201_PF/Register.sv Line: 12
 Info (12128): Elaborating entity "Condition_Check" for hierarchy "CPU:process|Control_Unit:CU_Inst|Condition_Check:inst_Condition_Check" File: C:/Users/josee/CE3201_PF/Control_Unit.sv Line: 72
-Info (12128): Elaborating entity "Data_Memory" for hierarchy "Data_Memory:data_mem_inst" File: C:/Users/josee/CE3201_PF/Gambling_Tec.sv Line: 134
+Info (12128): Elaborating entity "Data_Memory" for hierarchy "Data_Memory:data_mem_inst" File: C:/Users/josee/CE3201_PF/Gambling_Tec.sv Line: 144
 Info (12021): Found 1 design units, including 1 entities, in source file db/altsyncram_ab84.tdf
     Info (12023): Found entity 1: altsyncram_ab84 File: C:/Users/josee/CE3201_PF/db/altsyncram_ab84.tdf Line: 27
 Info (12021): Found 1 design units, including 1 entities, in source file db/mux_elc.tdf
@@ -4007,7 +3763,7 @@ Info (12021): Found 1 design units, including 1 entities, in source file db/cmpr
     Info (12023): Found entity 1: cmpr_99c File: C:/Users/josee/CE3201_PF/db/cmpr_99c.tdf Line: 22
 Info (12033): Analysis and Synthesis generated Signal Tap or debug node instance "auto_signaltap_0"
 Info (11170): Starting IP generation for the debug fabric: alt_sld_fab.
-Info (11172): 2025.06.19.18:55:15 Progress: Loading sld176eced6/alt_sld_fab_wrapper_hw.tcl
+Info (11172): 2025.06.19.20:24:25 Progress: Loading sld176eced6/alt_sld_fab_wrapper_hw.tcl
 Info (11172): Alt_sld_fab.alt_sld_fab: SLD fabric agents which did not specify prefer_host were connected to JTAG
 Info (11172): Alt_sld_fab: Generating alt_sld_fab "alt_sld_fab" for QUARTUS_SYNTH
 Info (11172): Alt_sld_fab: "alt_sld_fab" instantiated alt_sld_fab "alt_sld_fab"
@@ -4038,7 +3794,6 @@ Info (276014): Found 7 instances of uninferred RAM logic
     Info (276004): RAM logic "Vga_Controller:vga_control|Draw_Arrow_Dowm:arro2|font_rom" is uninferred due to inappropriate RAM size File: C:/Users/josee/CE3201_PF/Draw_Arrow_Dowm.sv Line: 32
     Info (276004): RAM logic "Vga_Controller:vga_control|Draw_Arrow:arro|font_rom" is uninferred due to inappropriate RAM size File: C:/Users/josee/CE3201_PF/Draw_Arrow.sv Line: 32
     Info (276004): RAM logic "Vga_Controller:vga_control|Draw_C:colo|font_rom" is uninferred due to inappropriate RAM size File: C:/Users/josee/CE3201_PF/Draw_C.sv Line: 32
-Warning (127007): Memory Initialization File or Hexadecimal (Intel-Format) File "C:/Users/josee/CE3201_PF/db/Gambling_Tec.ram0_ROM_16bd8.hdl.mif" contains "don't care" values -- overwriting them with 0s
 Critical Warning (127005): Memory depth (32) in the design file differs from memory depth (24) in the Memory Initialization File "C:/Users/josee/CE3201_PF/db/Gambling_Tec.ram0_Draw_WIN_933d4d52.hdl.mif" -- setting initial value for remaining addresses to 0
 Info (278001): Inferred 12 megafunctions from design logic
     Info (278004): Inferred divider/modulo megafunction ("lpm_divide") from the following logic: "Vga_Controller:vga_control|Draw_Arrow:arro|Div1" File: C:/Users/josee/CE3201_PF/Draw_Arrow.sv Line: 16
@@ -4125,7 +3880,7 @@ Warning (12241): 7 hierarchies have connectivity warnings - see the Connectivity
 Warning (13024): Output pins are stuck at VCC or GND
     Warning (13410): Pin "VGA_Sync_N" is stuck at VCC File: C:/Users/josee/CE3201_PF/Gambling_Tec.sv Line: 10
 Info (286031): Timing-Driven Synthesis is running on partition "Top"
-Info (17049): 7 registers lost all their fanouts during netlist optimizations.
+Info (17049): 5 registers lost all their fanouts during netlist optimizations.
 Info (144001): Generated suppressed messages file C:/Users/josee/CE3201_PF/output_files/Gambling_Tec.map.smsg
 Info (35024): Successfully connected in-system debug instance "auto_signaltap_0" to all 55 required data inputs, trigger inputs, acquisition clocks, and dynamic pins
 Info (16010): Generating hard_block partition "hard_block:auto_generated_inst"
@@ -4164,16 +3919,16 @@ Warning (21074): Design contains 33 input pin(s) that do not drive logic
     Warning (15610): No output dependent on input pin "Instruction[30]" File: C:/Users/josee/CE3201_PF/Gambling_Tec.sv Line: 2
     Warning (15610): No output dependent on input pin "Instruction[31]" File: C:/Users/josee/CE3201_PF/Gambling_Tec.sv Line: 2
     Warning (15610): No output dependent on input pin "stop" File: C:/Users/josee/CE3201_PF/Gambling_Tec.sv Line: 3
-Info (21057): Implemented 5994 device resources after synthesis - the final resource count might be different
+Info (21057): Implemented 6404 device resources after synthesis - the final resource count might be different
     Info (21058): Implemented 40 input pins
     Info (21059): Implemented 39 output pins
-    Info (21061): Implemented 5903 logic cells
+    Info (21061): Implemented 6313 logic cells
     Info (21064): Implemented 11 RAM segments
-Info: Quartus Prime Analysis & Synthesis was successful. 0 errors, 96 warnings
-    Info: Peak virtual memory: 4985 megabytes
-    Info: Processing ended: Thu Jun 19 18:55:46 2025
-    Info: Elapsed time: 00:00:51
-    Info: Total CPU time (on all processors): 00:01:12
+Info: Quartus Prime Analysis & Synthesis was successful. 0 errors, 94 warnings
+    Info: Peak virtual memory: 4969 megabytes
+    Info: Processing ended: Thu Jun 19 20:24:55 2025
+    Info: Elapsed time: 00:00:50
+    Info: Total CPU time (on all processors): 00:01:15
 
 
 +------------------------------------------+

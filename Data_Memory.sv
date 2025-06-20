@@ -16,13 +16,6 @@ module Data_Memory(
     input  logic [31:0] Add_A,
     output logic [31:0] Data_A,
 
-    input  logic [31:0] Add_B,
-    output logic [31:0] Data_B,
-
-
-    input  logic [31:0] Add_C,
-    output logic [31:0] Data_C,
-
     input  logic [31:0] Add_Mone,
     output logic [31:0] Data_Mone,
 
@@ -54,8 +47,9 @@ module Data_Memory(
 
     // Lectura VGA
     assign Data_A = RAM[Add_A[31:2]];
-    assign Data_B = RAM[Add_B[31:2]];
-    assign Data_C = RAM[Add_C[31:2]];
+	 
+	 
+
     assign Data_Mone = RAM[Add_Mone[31:2]];
 
 

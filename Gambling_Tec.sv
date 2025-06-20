@@ -38,6 +38,11 @@ logic clk25;
 	
 assign VGA_CLK = clk25;
 
+logic [2:0] state1, state2, state3;
+
+assign state1 = data_sym[2:0];
+assign state2 = data_sym[5:3];
+assign state3 = data_sym[7:5];
 
 Vga_Controller #(.N(8)) vga_control(
     .clk(clk25), 
@@ -53,9 +58,9 @@ Vga_Controller #(.N(8)) vga_control(
 	.B(B),
 	.stop(stop),
 	.Money(plata_entrada),
-	.state1(plata_entrada[9:8]), 
-	.state2(plata_entrada[8:7]), 
-	.state3(plata_entrada[6:5])
+	.state1(state1), 
+	.state2(state2), 
+	.state3(state3)
 
 );
 
@@ -109,7 +114,7 @@ CPU process(
 	 
 	 
 	 
-	 
+logic [31:0] data_sym;
 
 Data_Memory data_mem_inst(
 		 .clk(clk),
@@ -127,8 +132,13 @@ Data_Memory data_mem_inst(
 		 .data_kb(key_fixed),
 		 .code_key(sa_mem),
 		 
+		 
+		 
+		 
 		 .Add_Mone(32'd20),
 		 .Data_Mone(plata),
+		 .Add_A(32'd24),
+		 .Data_A(data_sym)
 		 
 
 	);
