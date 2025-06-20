@@ -386,24 +386,24 @@ Symbol #(.x0(360), .x1(390), .y0(210), .y1(270)) slot_0_0 ( .Q_X(Q_X), .Q_Y(Q_Y)
 Symbol #(.x0(460), .x1(490), .y0(210), .y1(270)) slot_0_1 ( .Q_X(Q_X), .Q_Y(Q_Y), .rot_state(state2+2'd2), .visible(slot[0][1]), .R(R_slot[0][1]), .G(G_slot[0][1]), .B(B_slot[0][1])
 );
 
-Symbol #(.x0(560), .x1(590), .y0(290), .y1(350)) slot_0_2 ( .Q_X(Q_X), .Q_Y(Q_Y), .rot_state(state3+2'd2), .visible(slot[0][2]), .R(R_slot[0][2]), .G(G_slot[0][2]), .B(B_slot[0][2])
+Symbol #(.x0(560), .x1(590), .y0(210), .y1(270)) slot_0_2 ( .Q_X(Q_X), .Q_Y(Q_Y), .rot_state(state3+2'd2), .visible(slot[0][2]), .R(R_slot[0][2]), .G(G_slot[0][2]), .B(B_slot[0][2])
 );
 
 // Fila 1 (Y = 290 a 350)
 Symbol #(.x0(360), .x1(390), .y0(290), .y1(350)) slot_1_0 ( .Q_X(Q_X), .Q_Y(Q_Y), .rot_state(state1), .visible(slot[1][0]), .R(R_slot[1][0]), .G(G_slot[1][0]), .B(B_slot[1][0])
 );
 
-Symbol #(.x0(460), .x1(490), .y0(375), .y1(430)) slot_1_1 ( .Q_X(Q_X), .Q_Y(Q_Y), .rot_state(state2), .visible(slot[1][1]), .R(R_slot[1][1]), .G(G_slot[1][1]), .B(B_slot[1][1])
+Symbol #(.x0(460), .x1(490), .y0(290), .y1(350)) slot_1_1 ( .Q_X(Q_X), .Q_Y(Q_Y), .rot_state(state2), .visible(slot[1][1]), .R(R_slot[1][1]), .G(G_slot[1][1]), .B(B_slot[1][1])
 );
 
-Symbol #(.x0(560), .x1(590), .y0(210), .y1(270)) slot_1_2 ( .Q_X(Q_X), .Q_Y(Q_Y), .rot_state(state3), .visible(slot[1][2]), .R(R_slot[1][2]), .G(G_slot[1][2]), .B(B_slot[1][2])
+Symbol #(.x0(560), .x1(590), .y0(290), .y1(350)) slot_1_2 ( .Q_X(Q_X), .Q_Y(Q_Y), .rot_state(state3), .visible(slot[1][2]), .R(R_slot[1][2]), .G(G_slot[1][2]), .B(B_slot[1][2])
 );
 
 // Fila 2 (Y = 375 a 430)
 Symbol #(.x0(360), .x1(390), .y0(375), .y1(430)) slot_2_0 ( .Q_X(Q_X), .Q_Y(Q_Y), .rot_state(state1+2'd1), .visible(slot[2][0]), .R(R_slot[2][0]), .G(G_slot[2][0]), .B(B_slot[2][0])
 );
 
-Symbol #(.x0(460), .x1(490), .y0(290), .y1(350)) slot_2_1 ( .Q_X(Q_X), .Q_Y(Q_Y), .rot_state(state2+2'd1), .visible(slot[2][1]), .R(R_slot[2][1]), .G(G_slot[2][1]), .B(B_slot[2][1])
+Symbol #(.x0(460), .x1(490), .y0(375), .y1(430)) slot_2_1 ( .Q_X(Q_X), .Q_Y(Q_Y), .rot_state(state2+2'd1), .visible(slot[2][1]), .R(R_slot[2][1]), .G(G_slot[2][1]), .B(B_slot[2][1])
 );
 
 Symbol #(.x0(560), .x1(590), .y0(375), .y1(430)) slot_2_2 ( .Q_X(Q_X), .Q_Y(Q_Y), .rot_state(state3+2'd1), .visible(slot[2][2]), .R(R_slot[2][2]), .G(G_slot[2][2]), .B(B_slot[2][2])

@@ -76,7 +76,7 @@ Vga_Controller #(.N(8)) vga_control(
 	 
 	 assign plata_entrada = plata[9:0];
 	 
-	 assign mem_key = plata[9:0];
+	 assign mem_key = data_sym[7:0];
 	 
 
 	
