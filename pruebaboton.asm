@@ -33,6 +33,20 @@ Sumar10:
         SUB     R3, R3, R3
         STR     R3, [R0]
 
+        B       Loop 
+
+Sumargane:
+        SUB     R0, R0, R0        
+        ADD     R0, R0, #0x14       
+        LDR     R1, [R0]          
+        ADD     R1, R1, #0xA     
+        STR     R1, [R0]          
+
+        SUB     R0, R0, R0        
+        ADD     R0, R0, #0x0A
+        SUB     R3, R3, R3
+        STR     R3, [R0]
+
         B       Loop              
 
 Restar10:
@@ -69,7 +83,7 @@ GenSym:
         ADD     R6, R6, #0x29
 
         CMP     R5, R6
-        BEQ     SaveSym
+        BEQ     SaveSym1
 
         B       GenSym
 
@@ -79,11 +93,39 @@ ResetSym:
         
         B       GenSym
 
-SaveSym:
+SaveSym1:
         SUB     R2, R2, R2
+        
+        ADD     R2, R2, #0x2D
+
+
+        CMP     R3, R2
+        BEQ     Sumargane     
+
+
+        SUB     R2, R2, R2
+        
         ADD     R2, R2, #0x04
 
         CMP     R3, R2
-        BEQ     Sumar10     
+        BEQ     Sumargane
+
+
+        SUB     R2, R2, R2
+        ADD     R2, R2, #0x30
+
+        CMP     R3, R2
+        BEQ     Sumargane
+
+        SUB     R2, R2, R2
+        ADD     R2, R2, #0x3E
+        CMP     R3, R2
+        BEQ     Sumargane
+
+        SUB     R2, R2, R2
+        ADD     R2, R2, #0x29
+        CMP     R3, R2
+        BEQ     Sumargane    
+  
 
         B       Restar10
