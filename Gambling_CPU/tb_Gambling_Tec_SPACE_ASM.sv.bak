@@ -1,0 +1,80 @@
+`timescale 1ns/1ps
+
+module tb_Gambling_Tec_SPACE_ASM;
+
+    logic clk, rst;
+
+    // Instancia del DUT
+    Gambling_Tec dut (
+        .clk(clk),
+        .rst(rst)
+    );
+
+    // Clock: 10ns período
+    initial begin
+        clk = 0;
+        forever #5 clk = ~clk;
+    end
+
+    // Proceso principal del testbench
+    initial begin
+        $display("==== TEST JUGADAS CON TECLA SPACE ====");
+        $dumpfile("tb_Gambling_Tec_SPACE_ASM.vcd");
+        $dumpvars(0, tb_Gambling_Tec_SPACE_ASM);
+
+        // Reset sincrónico
+        rst = 1;
+        repeat (3) @(posedge clk);
+        rst = 0;
+
+        // Inicialización: limpiar memoria
+        dut.data_mem.RAM[10] = 32'd0; // Dirección 0x000A – teclado
+        dut.data_mem.RAM[16] = 32'd0; // Dirección 0x0010 – contador circular
+        dut.data_mem.RAM[32] = 32'd0; // Dirección 0x0020 – VGA empaquetado
+
+        // Simulación de 3 jugadas presionando SPACE (0x29)
+        repeat (5) @(posedge clk); // Esperar algunos ciclos
+
+        // Simular presionar SPACE
+        $display(">> Simulando primera jugada (SPACE)...");
+        dut.data_mem.RAM[10] = 32'h29; // teclado = 0x29
+        repeat (2) @(posedge clk);
+        dut.data_mem.RAM[10] = 32'd0;  // soltar tecla
+
+        repeat (10) @(posedge clk); // Esperar que contador se guarde
+
+        // Segunda jugada
+        $display(">> Simulando segunda jugada (SPACE)...");
+        dut.data_mem.RAM[10] = 32'h29;
+        repeat (2) @(posedge clk);
+        dut.data_mem.RAM[10] = 32'd0;
+
+        repeat (10) @(posedge clk);
+
+        // Tercera jugada
+        $display(">> Simulando tercera jugada (SPACE)...");
+        dut.data_mem.RAM[10] = 32'h29;
+        repeat (2) @(posedge clk);
+        dut.data_mem.RAM[10] = 32'd0;
+
+        repeat (10) @(posedge clk); // Esperar verificación de victoria
+
+        // Resultados
+        $display("==== RESULTADOS DE MEMORIA ====");
+        $display("Teclado (dir 10):      %0d", dut.data_mem.RAM[10]);
+        $display("Contador circular:     %0d", dut.data_mem.RAM[16]);
+        $display("Símbolo A (dir 0x1030): %0d", dut.data_mem.RAM[4144]);
+        $display("Símbolo B (dir 0x1040): %0d", dut.data_mem.RAM[4160]);
+        $display("Símbolo C (dir 0x1050): %0d", dut.data_mem.RAM[4176]);
+        $display("VGA salida (dir 32):   %0d", dut.data_mem.RAM[32]);
+        $display("VGA binario:           %032b", dut.data_mem.RAM[32]);
+
+        if (dut.data_mem.RAM[32] != 0)
+            $display("TEST PASO: Direccion VGA fue actualizada correctamente.");
+        else
+            $display("TEST FALLO: Direccion VGA no fue actualizada.");
+
+        $finish;
+    end
+
+endmodule

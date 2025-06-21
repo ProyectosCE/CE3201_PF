@@ -1,0 +1,92 @@
+module CPU(
+    input logic clk, rst
+
+);
+
+logic [31:0] next_PC, PC, RD_IM, RD_DM;
+
+logic [31:0] PC_4, PC_8;
+
+logic [31:0] RD1, RD2;
+
+logic [31:0] ALUResult;
+
+logic ALUZero;
+
+Register #(.N(10)) PC_Register(
+	.clk(clk), 
+    .rst(rst),
+	.D(next_PC),
+	.en(1'b1),
+	.Q(PC)
+);
+
+
+Instruction_Memory #(.N(6), .M(32)) Instr_Mem(
+    .adr(PC),
+    .dount(RD_IM)
+);
+
+
+Register_File #(.N(6), .M(32))(
+    .A1(RD_IM[19:16]),
+    .A2(),
+    .A3(RD_IM[15:12]),
+    .clk(clk),
+    .WE3(1'b1),
+    .R15(PC_8),
+    .RD1(RD1),
+    .RD2(), 
+    .WD3(RD_DM)
+);
+
+logic Extd;
+Extender #(.N(4), .M(32))(
+    .A(RD_IM[11:0]),
+    .Out(Extd)
+);
+
+ALU #(.N(32))(
+    .A(Extd),      
+    .B(RD1),      
+    .ALUCtrl(2'b00), 
+    .Result(ALUResult), 
+    .Zero(ALUZero)    
+);
+
+
+Data_Memory #(.N(6), .M(32))(
+    A1(ALUResult),
+    WD(),
+    clk(clk),
+    WE(),
+    RD(RD_DM)
+);
+
+
+Adder #(.N(4)) PCPlus4(
+    A(3'b100),
+    B(PC),
+    C(PC_4)
+
+);
+
+Adder #(.N(4)) PCPlus8(
+    A(4'b1000),
+    B(PC_4),
+    C(PC_8)
+);
+
+
+Mux #(.N(4)) PCsource(
+    A(RD_DM),
+    B(PC_4),
+	S(1'b1),
+	C(next_PC)
+
+);
+
+
+
+
+endmodule
