@@ -55,9 +55,13 @@
 \renewcommand{\tablename}{Tabla}
 \def\BibTeX{{\rm B\kern-.05em{\sc i\kern-.025em b}\kern-.08em
     T\kern-.1667em\lower.7ex\hbox{E}\kern-.125emX}}
+
+
 \begin{document}
 
-\title{\textbf{Lógica Combinacional y Aritmética}}
+\title{\textbf{Diseño - Proyecto Final:
+		Computador Básico Basado en Arquitectura
+		ARM para Aplicación Específica}}
 
 \author{
     \IEEEauthorblockN{José Bernardo Barquero Bonilla}
@@ -108,8 +112,58 @@ Aquí va el abstract
 Introduccion
 \section{Marco Teórico}
 Marco teórico
-\section{Desarollo}
-Desarollo
+\section{Requerimientos del sistema}
+\subsection{Requerimientos de hardware}
+\begin{enumerate}
+	\item \textbf{CPU con datapath compatible con ARMv4:}
+	\par El sistema debe contar con una unidad central de procesamiento (CPU) basada en la microarquitectura ARMv4, que sea capaz de procesar instrucciones del lenguaje de máquina ARMv4. Esto garantiza la compatibilidad con programas previamente desarrollados y asegurará que se pueda utilizar en proyectos colaborativos con otros ingenieros.
+	\par El utilizar una arquitectura estándar ARMv4 permite la reutilización de componentes y la integración con sistemas existentes, lo que contribuye a la reducción de desechos electrónicos.
+	
+	\item \textbf{Módulo de RAM para almacenamiento de datos en tiempo de ejecución:}
+	\par  El sistema debe contar con suficiente memoria RAM para ejecutar programas dentro de los límites de la arquitectura ARMv4, sin desperdiciar recursos. Esto asegura que el sistema sea eficiente en términos de uso de memoria, evitando el sobrecosto y el derroche de recursos.Se debe considerar el uso de tecnología de memoria eficiente para minimizar el impacto ambiental y el consumo de energía.
+	
+	\item \textbf{Controladores para dispositivos I/O:}
+	\par El sistema debe ser capaz de interactuar con al menos dos tipos de dispositivos de entrada/salida, como teclado PS2, mouse, conexiónes UART. La elección de estos dispositivos debe basarse en la disponibilidad de hardware accesible, evitando el consumo innecesario de materiales nuevos y favoreciendo el uso de componentes ya disponibles y funcionales.
+	
+	\par Seleccionar dispositivos con interfaces más antiguas para la reutilización de hardware existente reducirá la huella de carbono asociada con la fabricación de nuevos productos electrónicos.
+	
+	\item \textbf{Salida de Video VGA:}
+	\par El sistema debe ser capaz de visualizar la salida en un monitor VGA, un estándar de visualización que sigue siendo ampliamente utilizado y que es compatible con la mayoría de las interfaces de hardware más antiguas.
+	
+	\par La reutilización de monitores VGA existentes reduce la necesidad de producir nuevos dispositivos de visualización, lo que disminuye el desperdicio electrónico y promueve la sostenibilidad.
+	
+\end{enumerate}
+\subsection{Requerimientos de software}
+\begin{enumerate}
+	\item \textbf{Interpretador de lenguaje de máquina para ARMv4:}
+	\par El sistema debe incluir un interpretador de lenguaje de máquina para decodificar y ejecutar el set de instrucciones ARMv4. Esto garantizará que la CPU pueda ejecutar correctamente los programas escritos en lenguaje ensamblador ARMv4.
+	
+	\par Se debe asegurar que el interpretador sea eficiente para minimizar el uso de ciclos de reloj, lo que reducirá el consumo de energía y mejorará el rendimiento general.
+	
+	\item \textbf{Aplicación específica en software usando lenguaje ensamblador ARMv4:}
+	\par El sistema debe ejecutar una aplicación específica, desarrollada en lenguaje ensamblador compatible con ARMv4, que aproveche al máximo el poder de procesamiento de la CPU y minimice el uso innecesario de memoria y ciclos de reloj.
+	
+	\par El software debe ser eficiente en cuanto al uso del CPU y la memoria, evitando sobrecargar el sistema y optimizando los recursos.
+	
+	\item \textbf{Interfaz intuitiva para facilitar el uso y la curva de aprendizaje:}
+	\par La aplicación debe ser intuitiva para el usuario, de modo que facilite su uso sin una curva de aprendizaje pronunciada. En particular, debe ser diseñada con accesibilidad en mente, para permitir la adaptación a personas con discapacidades físicas o motoras.
+	
+	\par La interfaz debe ser adaptable, internacionalizable, y fácil de comprender para usuarios con diferentes necesidades y antecedentes. Esto garantizará la inclusión y accesibilidad en el uso de la aplicación.
+\end{enumerate}
+\subsection{Consideraciones Generales}
+\begin{itemize}
+	\item \textbf{Salud y Seguridad Pública:} 
+	\par El diseño del sistema debe garantizar que las interacciones físicas con el hardware sean seguras para el usuario. Además, se debe cuidar que no haya riesgos eléctricos ni otros peligros relacionados con la interfaz de hardware.
+	
+	\item \textbf{Costo Total de la Vida: }
+	\par A lo largo del ciclo de vida del sistema, desde la producción hasta la posible eliminación del hardware, se debe tener en cuenta no solo el costo inicial de los componentes, sino también el mantenimiento, la eficiencia energética, y los costos de reciclaje al final de la vida útil del hardware. Esto contribuirá a minimizar el impacto económico y ambiental del sistema.
+	
+	\item \textbf{Carbono Neto Cero:} 
+	\par El diseño debe ser lo más eficiente posible en términos de consumo de energía. A través de la selección de componentes de bajo consumo y la optimización del uso de ciclos de reloj, se puede reducir la huella de carbono asociada al uso de la CPU y otros dispositivos. Además, la reutilización de componentes y la integración de interfaces antiguas ayudará a minimizar el impacto ambiental de la fabricación de nuevos dispositivos.
+	
+	\item \textbf{Aspectos Culturales, Sociales y Ambientales:}
+	\par El sistema debe ser diseñado de forma que sea accesible y útil para una amplia variedad de usuarios, respetando las diferencias culturales y sociales. La inclusión de opciones para personas con discapacidades motoras o físicas también es un aspecto importante para fomentar la equidad en el acceso a la tecnología.
+\end{itemize}
 
 \section{Análisis de Resultados}
 Análisis de resultados
