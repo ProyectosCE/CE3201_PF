@@ -1,0 +1,52 @@
+# ==============================================================================
+# Global Gitignore para proyectos Altera Quartus II
+# Colocar este archivo en el directorio raíz del proyecto, junto al archivo .qpf
+# ==============================================================================
+
+# Mantener los archivos HDL
+!**/*.vhd
+!**/*.v
+
+# Ignorar todos los archivos generados por Quartus II (de forma recursiva)
+**/*_generation_script*
+**/*_inst.vhd
+**/*.bak
+**/*.cmp
+**/*.done
+**/*.eqn
+**/*.hex
+**/*.html
+**/*.jdi
+**/*.jpg
+# **/*.mif  # Descomenta si quieres ignorar los .mif
+**/*.pin
+**/*.pof
+**/*.ptf.*
+**/*.qar
+**/*.qarlog
+**/*.qws
+**/*.rpt
+**/*.smsg
+**/*.sof
+**/*.sopc_builder
+**/*.summary
+**/*.tcl
+**/*.txt
+**/*~
+**/*example*
+**/*sopc_*
+# **/*.sdc  # Descomenta si deseas ignorar los .sdc
+
+# Ignorar carpetas generadas por Quartus II (de forma recursiva)
+**/db/
+**/incremental_db/
+**/simulation/
+**/timing/
+**/testbench/
+**/*_sim/
+db/
+incremental_db/
+_output_files/
+
+# Archivos sueltos
+**/PLLJ_PLLSPE_INFO.txt
